@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Reports</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog>
+<span>It seems the node/server is not running.<br>Cannot perform function without the server running.<br> <br></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<script type="text/javascript" src="clib.js"></script>
+
+<script>
+
+onload = function init() {
+    /* if server not running or DB not active, disable certain selections */
+    check4ActiveDB().then((res) => {
+        if (res == -3 || res == -2 || res == -1) {
+            document.getElementById("DetRel").disabled = true;
+            document.getElementById("MoveMap").disabled = true;
+            document.getElementById("ByCat").disabled = true;
+            document.getElementById("ProduceBio").disabled = true;
+            document.getElementById("COE").disabled = true;
+            document.getElementById("Tree").disabled = true;
+            document.getElementById("P2PLine").disabled = true;
+            document.getElementById("PhyTree").disabled = true;
+            document.getElementById("FamReg").disabled = true;
+            document.getElementById("IndProf").disabled = true;
+        }
+        if (res == -2) {
+            document.getElementById("Timeline").disabled = true;
+            document.getElementById("OTD").disabled = true;
+            document.getElementById("CrtReport").disabled = true;
+        }
+    })
+}
+
+function checkServer(path) {
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    ws.onerror = function () {
+        const dialog = document.querySelector("dialog");
+        dialog.showModal();
+    }
+    ws.onopen = function() {
+        window.open(path, '_blank');
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<h1>Reports</h1>
+<hr style="width:50%">
+<br>
+
+<input type="button" id="Timeline" onclick="checkServer('Timeline.html')" value="Produce Timeline"/>
+<br> <br>
+<input type="button" disabled id="DetRel" onclick="checkServer('DetermineRelationship.html')" value="Determine Relationship"/>
+<br> <br>
+<input type="button" disabled id="MoveMap" onclick="checkServer('MovementMap.html')" value="Movement Map"/>
+<br> <br>
+<input type="button" disabled id="ByCat" onclick="checkServer('ByCategory.html')" value="By Category"/>
+<br> <br>
+<input type="button" id="OTD" onclick="checkServer('OnThisDay.html')" value="On This Day"/>
+<br> <br>
+<input type="button" id="ProduceBio" onclick="checkServer('Bio.html')" value="Produce Bio"/>
+<br> <br>
+<input type="button" id="COE" onclick="checkServer('COE.html')" value="Calendar of Events"/>
+<br> <br>
+<input type="button" disabled id="Tree" onclick="checkServer('Tree.html')" value="Produce Tree"/>
+<br> <br>
+<input type="button" id="P2PLine" onclick="checkServer('AncestralLine.html')" value="Point to Point Ancestral Line"/>
+<br> <br>
+<input type="button" disabled id="PhyTree" onclick="checkServer('Phylogenetic.html')" value="Produce Phylogenetic Tree"/>
+<br> <br>
+<input type="button" disabled id="FamReg" onclick="checkServer('FamilyRegister.html')" value="Produce Family Register"/>
+<br> <br>
+<input type="button" disabled id="IndProf" onclick="checkServer('IndProfile.html')" value="Produce Individual Profile"/>
+<br> <br>
+<input type="button" disabled id="CrtReport" onclick="checkServer('CreateReport.html')" value="Design a Report"/>
+<br> <br>
+<hr style="width:50%">
+
+</body>
+</html>

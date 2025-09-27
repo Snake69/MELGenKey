@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>General Genealogy-Related Aids - Locale Histories</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+<script>
+
+function doesDataFileExist(fname) {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var pnt = "./Include/" + fname;
+
+    ws.onopen = function() {
+        ws.send("FEXIST" + pnt);
+        ws.onmessage = function(e) {
+            if (e.data == "-1") {
+                var span = document.getElementById("dial1span");
+                var msg = "The file " + fname + " does not exist. Why not? Use<br>" +
+                          "'Help/Info -> Contact Developer of MELGenKey via email' for help.<br> <br>";
+                const dialog1 = document.querySelector("#dial1");
+                span.innerHTML = msg;
+                dialog1.showModal();
+            } else {
+                /* open in a new tab */
+                let a=document.createElement('a');
+                a.target='_blank';
+                a.rel='noopener noreferrer';
+                a.href=e.data;
+                a.click();
+            }
+        }
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>General Genealogy-Related Aids - Locale Histories</h1>
+<hr style="width:50%">
+
+<br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/Europe/Germany/Baden-Wurttemberg/Baden-Wurttemberg.txt")'>Baden-Wurttemberg</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/Europe/Germany/Bavaria/Bavaria.txt")'>Bavaria</button>
+<br> <br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/USA/NY-NJ.txt")'>New York/New Jersey</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/USA/NY/NY.txt")'>New York</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/USA/NJ/NJ.txt")'>New Jersey</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/USA/NJ/SussexCo/SussexCo.txt")'>Sussex County, New Jersey</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/USA/NJ/WarrenCo/WarrenCo.txt")'>Warren County, New Jersey</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/USA/NJ/WarrenCo/KnowltonTwp/KnowltonTwp.txt")'>Knowlton Township, Warren County, New Jersey</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/USA/NJ/HunterdonCo/HunterdonCo.txt")'>Hunterdon County, New Jersey</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/USA/NJ/HunterdonCo/AlexandriaTwp.txt")'>Alexandria Township, Hunterdon County, New Jersey</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/USA/NJ/HunterdonCo/ReadingtonTwp.txt")'>Readington Township, Hunterdon County, New Jersey</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/USA/NJ/HunterdonCo/WestAmwellTwp.txt")'>West Amwell Township, Hunterdon County, New Jersey</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/USA/PA/PA.txt")'>Pennsylvania</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/USA/PA/NEPA.txt")'>NorthEast Pennsylvania</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("LocaleHistories/USA/PA/SusquehannaCo/Friendsville.txt")'>Friendsville, Susquehanna County, Pennsylvania</button>
+<br> <br>
+<hr style="width:50%">
+
+</body>
+</html>

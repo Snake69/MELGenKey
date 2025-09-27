@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Day of the Week Calculator</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    table.center {
+        margin-left:auto; 
+        margin-right:auto;
+        background-color: #fff8e0;
+    }
+</style>
+
+<script>
+
+/* Julian calendar ends with 2 Sep 1752, Gregorian calendar (current calendar) starts with 14 Sep 1752 */
+var IGREG = (11+31*(9+12*1752));
+var JGREG = 2361221;
+var civcheck = new Civil(5,23,1948,1);
+function Initialize() {
+    SetToday(document.ThisForm);
+}
+function SetToday(form) {
+    var now = new Date();
+    var day = now.getDate();
+    var month = now.getMonth() + 1;
+    var year = now.getYear();
+    if (year < 100)
+        year += 1900
+    form.MonthList.selectedIndex = month - 1;
+    form.DayList.selectedIndex = day - 1;
+    form.YearBox.value = year;
+    form.ADBC.selectedIndex = 0;
+    form.IGREG = IGREG;
+    form.JGREG = JGREG;
+    EvalJD(form);
+}
+function SetGreg(form) {
+    form.IGREG = IGREG;
+    form.JGREG = JGREG;
+    EvalCiv(form);
+}
+function SetJulian(form) {
+    form.IGREG = 1.e30;
+    form.JGREG = 1.e30;
+    EvalCiv(form);
+}
+function CancelSubmit(){
+    return false;
+}
+function tolong(val) {
+    if (val >= 0)
+        return Math.floor(val);
+    else
+        return Math.ceil(val);
+}
+function EvalJD(form) {
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onerror = function () {
+        /* could not send Logging message to node (probably because node isn't running) */
+    }
+    ws.onopen = function() {
+        ws.send("DayOfWeek");
+    }
+
+    var id = form.DayList.selectedIndex+1;
+    var mm = form.MonthList.selectedIndex + 1;
+    var iyyy = tolong(form.YearBox.value);
+    var ysgn = 1 - 2 * form.ADBC.selectedIndex;
+    var jy = ysgn * iyyy, ja, jm, jul;
+    if (iyyy < 1) {
+        alert("Enter positive year, then specify CE/AD or BCE/BC\n(There was no year 0.)")
+        return;
+    }
+    if (jy < 0)
+        ++jy;
+    if (mm > 2)
+        jm = mm + 1;
+    else {
+        --jy;
+        jm = mm + 13;
+    }
+    jul = tolong(Math.floor(365.25 * jy) + Math.floor(30.6001 * jm) + id + 1720995);
+    if (id + 31 * (mm + 12 * ysgn * iyyy) >= form.IGREG) {
+        ja = tolong(0.01 * jy);
+        jul += 2 - ja + tolong(0.25 * ja);
+    }
+    civcheck = caldat(jul, form);
+    SetDoW(form, jul);
+    if (civcheck.mm != mm || civcheck.dd != id || civcheck.yyyy != iyyy || civcheck.ab != ysgn)
+        form.dayofweek.value = "invalid date";
+}
+function EvalCiv(form) {
+    form.MonthList.selectedIndex = civcheck.mm - 1;
+    form.DayList.selectedIndex = civcheck.dd - 1;
+    form.YearBox.value = civcheck.yyyy;
+    form.ADBC.selectedIndex = (civcheck.ab > 0 ? 0 : 1) ;
+}
+function Civil(mm, dd, yyyy, ab) {
+    this.mm = mm;
+    this.dd = dd;
+    this.yyyy = yyyy;
+    this.ab = ab;
+}
+function caldat(julian, form) {
+    var civ = new Civil(5, 23, 1948, 1);
+    var ja, jalpha, jb, jc, jd, je;
+    julian = tolong(julian);
+    if (julian > form.JGREG) {
+        jalpha = tolong(((julian - 1867216) - 0.25) / 36524.25);
+        ja=julian + 1 + jalpha - tolong(0.25 * jalpha);
+    } else
+        ja = julian;
+    jb = ja + 1524;
+    jc = tolong(6680 + ((jb - 2439870) - 122.1) / 365.25);
+    jd = tolong(365 * jc + 0.25 * jc);
+    je = tolong((jb - jd) / 30.6001);
+    civ.dd = jb - jd - tolong(30.6001 * je);
+    civ.mm = je - 1
+    if (civ.mm > 12)
+        civ.mm -= 12;
+    civ.yyyy = jc - 4715;
+    if (civ.mm > 2)
+        --civ.yyyy;
+    civ.ab = 1;
+    if (civ.yyyy <= 0) {
+        civ.yyyy = 1 - civ.yyyy;
+        civ.ab = -1;
+    }
+    return civ;
+}
+function SetDoW(form, jull) {
+    var dowstr = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+    var dow = Math.round((jull + 1) % 7);
+    form.dayofweek.value = dowstr[dow];  
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+</head>
+<body onload="Initialize()">
+<h2>Day of the Week Calculator</h2>
+(from https://core2.gsfc.nasa.gov/time/julian.html)
+<br> <br>
+<h4>If changing the year, after change, click outside the year box to update the Day of Week.</h4>
+<h4>The last day of the Julian calendar, 2 Sep 1752, is followed by the first day of the Gregorian calendar
+ (currently used calendar), 14 Sep 1752.</h4>
+<table class="center" border="3" cellspacing="0" cellpadding="5" width="100">
+
+<tr>
+<td>
+<form name = "ThisForm">
+
+<table cellspacing = "0">
+<tr>
+<td>
+<select name="MonthList" onchange = "EvalJD(document.ThisForm)">
+<option selected>Jan<option>Feb<option>Mar<option>Apr<option>May<option>Jun
+<option>Jul<option>Aug<option>Sep<option>Oct<option>Nov<option>Dec
+</select>
+</td>
+
+<td><b>
+<select name="DayList" onchange = "EvalJD(document.ThisForm)">
+<option selected>1<option>2<option>3<option>4<option>5<option>6<option>7<option>8<option>9<option>10
+<option>11<option>12<option>13<option>14<option>15<option>16<option>17<option>18<option>19<option>20
+<option>21<option>22<option>23<option>24<option>25<option>26<option>27<option>28<option>29<option>30<option>31
+</select>
+</b></td>
+
+<td>
+<input type="text" name="YearBox" size="4" onblur="EvalJD(document.ThisForm)">
+</td>
+
+<td><select name="ADBC" onchange="EvalJD(document.ThisForm)">
+<option selected>CE/AD
+<option>BCE/BC
+</select></td>
+
+<td> is&nbsp;a </td>
+
+<td>
+<input type="text" name="dayofweek" size="9" onchange="EvalJD(document.ThisForm)">
+</td>
+</tr>
+
+</table>
+</form>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+
+from familysearch.org
+
+USA Probate Terms
+
+Abstract - An abstract is a summary that contains only the pertinent points of
+  a longer text. Sometimes abstracts are compiled into bound books or volumes.
+Accounts - Accounts are the reports of administrators, executors, guardians,
+  trustees, and conservators of transactions for the estate.
+Administration - Administration is the authority given to the administrator to
+  settle the estate. Also refers to the probate process for intestate estates.
+Administrator (-trix) - When no will exists (intestate), the court appoints
+  an administrator (male) or administratrix (female) to handle the estate
+  proceedings.
+Administrator cum testamento annexo (administrator c.t.a.) - The court
+  appoints an administrator when no executor is named in the will or the
+  executor is unable to serve.
+Administrator de bonis non (administrator d.b.n.) - A successor administrator
+  appointed by the court to handle the remainder of the affairs of the estate
+  (such as upon the death of the administrator).
+Affidavit - An affidavit is a legal written statement made under oath.
+Affinity - Affinity is a relationship by marriage.
+Agnate - Agnate is a relationship through the males of the family.
+Appearance docket - The appearance docket is an index of all cases coming
+  into a court.
+Appraisal - The appraisal is an itemized valuation of real or personal
+  property.
+Appraiser - An appraiser is an impartial person who estimates the value of
+  the personal or real property of the estate.
+Attest - To attest is to witness, offer testimony, or to certify that a
+  copy is genuine.
+Beneficiary - A beneficiary is one who will receive benefit from the estate.
+Bequeath - Bequeath is the act of assigning personal property in a will. (See
+  testament.)
+Bequest - A bequest is the personal property assigned in a will.
+Bond - In most probate cases, the court required the administrator, (and
+  sometimes the executor, guardian, appraiser, and trustee) to post a bond
+  to ensure that he would properly complete his duties. The bond required
+  that a fee be paid to the court if duties weren't adequately performed. One
+  or more persons were required to co-sign the bond as "sureties."
+Bondsman - A bondsman is a person who pledges a sum of money as bond in
+  another's behalf.
+Calendar - A calendar is list or schedule of cases to be presented before
+  the court.
+Case file - The case file is all of the various papers that have been created
+  throughout the probate process. These are bound together and archived by
+  case number. (See estate file or probate estate papers.)
+Claims - Claims are the petitions, registers, accounts, or appeals files
+  with the court.
+Codicil - A codicil is an addendum to a will. (See will.)
+Committee - A committee is a group of people charged with specific duties
+  for a limited time.
+Common law - Common law refers to the body of unwritten law developed in
+  England based on custom and precedent, rather than by statute.
+Community property - Based on Spanish custom, all real and personal property
+  acquired by a couple after marriage, belongs to both husband and wife
+  and is called community property. Arizona, California, Idaho, Louisiana,
+  Nevada, New Mexico, Texas, and Washington are community property states.
+Consanguinity - Consanguinity is a close relation.
+Conjoint will - A conjoint will is made and signed by two or more persons
+  together. (See joint will or will.)
+Conservator - A conservator is a person appointed to manage the affairs of
+  one considered incompetent; protector.
+Contest - To contest a will means to dispute the will.
+Coverture - Coverture refers to the status of married women under English
+  common law.
+Curtesy - Based on English common law, curtesy is a husband's right, upon
+  the death of his wife, to a life estate in land that the wife owned while
+  living, and only applicable if a child had been born to the couple.
+Decedent - The decedent is the person who is deceased.
+Decree - A decree is the judicial decision of the court. In probate,
+  decrees usually involve heirship or distribution.
+Degree of relationship - This is a legal term referring to the degree
+  (generations) of two persons who descend from a common ancestor but not
+  one from the other.
+Devise - Devise is to transfer real property through a will.
+Devisee - A devisee is a person receiving real property through a will.
+Devisor - The devisor is the person transferring real property through a
+  will; testator.
+Distributions - Distributions refer to the manner in which the deceased's
+  possessions are allocated.
+Divisions - Divisions are records in the probate process. These might
+  include commission reports, settlements, decrees of distribution, dower
+  rights, courtesy rights, awards, private disbursement, ledgers, guardians'
+  final report, probate decrees, certificates of devise, assignments of
+  real estate, orders of distribution, or decrees of heirship. When the
+  distribution was completed and payments to the creditors and heirs made,
+  the executor or administrator presented to the court a record or decree
+  of distribution and settlement. This document listed the beneficiaries of
+  the estate and the property each received. This is often the most helpful
+  source of family information in an intestate case.
+Docket - A docket is a list or schedule of cases to be presented before
+  the court.
+Dower rights - The dower rights are the rights that a non-owner spouse has
+  in the real property.
+Entail - To entail is to limit the inheritance of real property to only
+  those in a specified line of descent, such as to the oldest male in
+  each generation.
+Escheat - In cases where no one is entitled to inherit, property reverts
+  to the state, or escheats.
+Estate - The estate is the real and personal property left by the deceased.
+Estate file - The estate file contains information about the property left
+  by the deceased to be dispersed between the surviving heirs. (See case
+  file or probate estate papers.)
+Executor (-trix) - The person (executor = male; executrix = female) who
+  has been named by the testator of the will to manage the estate.
+Feme sole - Feme sole refers to a single woman.
+Fiduciary - The fiduciary is a person who is holding assets for another. In
+  probate, this might be the executor, administrator, guardian, or a trustee.
+Final account - The final account is the final accounting of the estate
+  and how it was distributed. (See settlement.)
+Guardian - A guardian is the person appointed by the court to manage the
+  affairs of a minor or someone incapable of handling his or her own affairs.
+Guardianship - Guardianship is the court appointment of an adult to take
+  care of the child or the child's property.
+Heir - An heir is a person who inherits property upon the death of the owner.
+Holographic will - A holographic will is entirely in the testator's
+  handwriting and not witnessed by anyone. If someone else writes on it,
+  it is invalid. (See will.)
+Imprimis - Imprimis is Latin, meaning "in the first place."
+Index - An index is an organized summary of a set of records or a book that
+  allows a person to find a specific item within the set of records or book.
+Infant - Infant minor not yet of legal age, not necessarily a young child.
+Intestate - Intestate is when an individual dies without leaving a will.
+Inventory - An inventory is an itemized list of property in the estate and
+  an appraisal of its value. Inventory documents may include real estate,
+  personal property, guardians, conservators, partnerships, minors' estates,
+  appraisals, appraisers warrants, and reports. In intestate cases the
+  inventory is very important as it may describe the land, tools, slaves,
+  and other personal property at the time of death. These records are
+  sometimes transcribed in the will books or in separate volumes, but the
+  originals may be in the probate packet.
+Issue - Issue refers to offspring, biological children, or legitimate
+  descendants.
+Joint will - A joint will is made and signed by two or more persons
+  together. (See conjoint will or will.)
+Legacy - A legacy is a gift (bequest) of real or personal property by way
+  of a will.
+Legatee - A legatee is a person receiving real or personal property by way
+  of a will.
+Legator - The legator is the person giving personal property by way of a
+  will. (See devisor or testator.)
+Letters of administration - Letters of Administration refers to the formal
+  document from the court granting authority to handle the affairs of
+  the estate.
+Letters of guardianship - Letters of guardianship refers to the court order
+  appointing a guardian to handle the affairs of a minor or a person deemed
+  incompetent.
+Letters testamentary - Letters testamentary refers to the document approving
+  the appointment of an executor and authorizing that person to administer
+  the estate.
+Lineal - Lineal means being in a direct line from a male or female ancestor.
+Locus sigilli (L.S.) - Locus sigilli is Latin, meaning "in place of the seal."
+Loose papers - Loose papers are a collection of various papers, separate
+  from book records.
+Majority - When a person reaches majority, he or she is of full legal age.
+Minor - A minor is a person who has not yet reached full legal age.
+Minutes - Minutes are the notes made of the probate court proceedings.
+Mystic will - The mystic will is from French tradition (Louisiana). A person
+  goes to a notary (like a lawyer), and writes the will in the presence of
+  two to three witnesses and the notary. The person then puts the will in
+  an envelope and seals it. The witnesses don't sign the will, but they do
+  sign that he put it in the envelope. (See will.)
+Next friend - A person acting in behalf of a minor or one unable to represent
+  himself may be referred to as a next friend until the court appoints a
+  guardian or conservator.
+Notices - Notices are published so that creditors, and others with an
+  interest in the estate, have an opportunity to collect debts or contact
+  the legal representatives. (See publications.)
+Nuncupative will - A nuncupative will is spoken in the presence of witnesses;
+  not valid in some states. (See will.)
+Parcener - A parcener is a joint heir.
+Partition - Partition is to divide into parts or shares.
+Per capita - Per capita is the method of distributing an estate in which
+  each person receives an equal share.
+Per stirpes - The method of distributing an estate in which a group of people
+  (such as the grandchildren whose parent is deceased) receive a share as
+  if they were one person.
+Petition - A petition is an application to a court requesting the right to
+  settle an estate. The petition document from the heirs generally begins
+  the legal probate process. The petition was filed with the court that
+  served the area where the deceased owned property. Additional petitions
+  may be filed in other localities where he owned property or resided. The
+  petition may name the heirs of the deceased, their relationship, and
+  sometimes their residence. Heirs and other interested parties can petition
+  the court throughout the probate process. The petition documents include
+  letters testamentary, letters of administration, guardianship, appointment
+  or change of guardian, redress for misuse or waste of property, list of
+  heirs, and renunciation.
+Primogeniture - Primogeniture is when the first-born son inherits the
+  intestate estate.This practice was based on English common law.
+Probate - Probate relates to all matters and proceedings pertaining to
+  the administration of estates, whether there is a will (testate) or not
+  (intestate).
+Probate estate papers - All of the various papers that have been created
+  throughout the probate process are bound together and archived by case
+  number. (See case file or estate file.)
+Probate fees - Probate fees refer to the compensation paid to the attorney
+  in a probate case.
+Probate packet - Probate packet is the case files placed together in an
+  envelope or tied together with a string.
+Prove - To prove a will means the evidentiary process validating that will.
+Publications - Notices are published so that creditors, and others with an
+  interest in the estate, have an opportunity to collect debts or contact
+  the legal representatives. They include announcements, advertisements,
+  notices to heirs, notices of sales, and notices to creditors. Some state
+  laws require the publications in specified newspapers for two or three
+  weeks. Newspaper clippings may be in the probate packet as evidence of
+  compliance with the law. (See notices.)
+Receipt - A receipt is a written statement that funds, property, or legal
+  documents have been received.
+Register of Wills - The Register of Wills is the name of the office with
+  probate jurisdiction in some localities.
+Register - A register is a bound book in which official matters are recorded
+  by the court clerk.
+Releases - Releases are court documents that release an individual from
+  an obligation. In probate cases, releases might come from the court,
+  executors, administrators, trustees, guardians, heirs, and conservators.
+Relict - A relict is a widow or widower.
+Relinquishment - Relinquishment is to waive one's rights. (See renunciation.)
+Renunciation - Renunciation is to waive one's rights. (See relinquishment.)
+Settlements - Settlements are the final accounting of the estate and how
+  it was distributed. (See final account.)
+Sine prole (s.p.) - Sine prole is Latin, meaning "without offspring."
+Succession - Succession is the process of settling an estate based on
+  Spanish community property law, followed especially in Louisiana.
+Successor administrator (-trix) - A successor administrator is one appointed
+  by the court to handle the remainder of the affairs of the estate (such
+  as upon the death of the administrator). (See administrator de bonis non.)
+Surety - A surety is a person who agrees to be liable for another's debts
+  and obligations in case of default.
+Surrogate - The Surrogate is the court officer with jurisdiction over
+  probate and guardianship matters in New Jersey and New York.
+Testament - Technically, the testament is the document in which the testator
+  distributes (bequeaths) personal property. This term is often dropped from
+  "last will and testament."
+Testamentary - Testamentary items or matters means that they pertain to
+  a will.
+Testate - Testate is when an individual dies having left a will.
+Testator (-trix) - The testator (male) or testatrix (female) is the person
+  making the will or testament.
+Transcript - A transcript is an exact handwritten, typed, or printed copy
+  of a document or set of records.
+Trustee - A trustee is a person who holds legal title to property for the
+  benefit of someone else.
+Unofficious will - An unofficious will is one made in disregard to natural
+  obligations of inheritance. (See will.)
+Unsolemn will - A unsolemn will is one in which no executor is named. An
+  administrator will be appointed by the court. (See will.)
+Videlicet (viz.) - Videlicet is Latin, meaning "namely."
+Widow's allowance - State statute governs the share of real or personal
+  property which a widow can claim from her husband's estate. Often this
+  supersedes other claims and debts to the estate.
+Widow's election - A widow's election is the widow's right to either accept
+  what was granted to her by her husband's will or to accept the share
+  granted to her by state statute.
+Will - Technically, a will is the document in which the testator distributes
+  (devises) real property. This term is often used in place of "last will
+  and testament." (See article on Wills for more information.) (See also:
+  codicil, conjoint will, holographic will, joint will, nuncupative will,
+  mystic will, unofficious will, or unsolemn will.)
+Witness - A witness is a person who attests to actions or events personally
+  seen.
+

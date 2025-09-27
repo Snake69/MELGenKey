@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Map Deed Boundaries</title>
+
+<style>
+    body {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .fieldset-auto-width {
+         display: inline-block;
+    }
+</style>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<script>
+
+var pixperlink, pixperrod, pixperchain;
+onload = function Log() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onerror = function () {
+        /* could not send Logging message to node (probably because node isn't running) */
+    }
+    ws.onopen = function() {
+        ws.send("MapDeed");
+    }
+
+    /* initialize pixel lengths */
+    if (document.getElementById('NOP').value == "Mlink") {
+        pixperlink = Number(document.getElementById('NumPix').value);
+        pixperrod = pixperlink * 25;
+        pixperchain = pixperrod * 4;
+    }        
+    if (document.getElementById('NOP').value == "Mrod") {
+        pixperrod = Number(document.getElementById('NumPix').value);
+        if (pixperrod > 24 && (pixperrod % 25) == 0)
+            pixperlink = pixperrod / 25;
+        else
+            pixperlink = 0;
+        pixperchain = pixperrod * 4;
+    }        
+    if (document.getElementById('NOP').value == "Mchain") {
+        pixperchain = Number(document.getElementById('NumPix').value);
+        if (pixperchain > 3 && (pixperchain % 4) == 0)
+            pixperrod = pixperchain / 4;
+        else
+            pixperrod = 0;
+        if (pixperrod > 24 && (pixperrod % 25) == 0)
+            pixperlink = pixperrod / 25;
+        else
+            pixperlink = 0;
+    }        
+}
+
+</script>
+
+</head>
+<body>
+<h1>Map Deed Boundaries</h1>
+<hr style="width:50%">
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Number of Pixels per Measure</legend>
+<label> <input style='width:4em' type="number" pattern="[1-9]" min="1" max="100" value="1" id="NumPix" name="NumPix" onchange="chgPix()"> Pixels per </label>
+<select id="NOP" onchange="chgPix()">
+  <option value="Mlink">link</option>
+  <option value="Mrod">rod/perch/pole</option>
+  <option value="Mchain">chain</option>
+</select>
+<br> <br>
+<label> (100 links = 1 chain; 25 links = 1 perch/pole/rod; </label>
+<br>
+<label> 4 perches/poles/rods = 1 chain) </label>
+<br>
+<label> e.g, if a link is 1 pixel then 1 perch/pole/rod will be 25 pixels and 1 chain will be 100 pixels </label>
+<br>
+<label> or, (if links are not part of the deed measurements) if a perch/pole/rod is 1 pixel then 1 chain will be 4 pixels </label>
+</fieldset>
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Starting Point for Boundary Map</legend>
+<label> <input style='width:5em' type="number" pattern="[1-9]" min="0" max="999" value="0" id="Vertical" name="Vertical"> Vertical Pixel </label>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<label> <input style='width:5em' type="number" pattern="[1-9]" min="0" max="999" value="0" id="Horizontal" name="Horizontal"> Horizontal Pixel </label>
+</fieldset>
+<br> <br>
+<h2 style="color: red"> 500 Boundary Lines Max!! </h2>
+<h3> If you ever encounter a deed with more than 500 boundary lines specified I'd like to hear about it. </h3>
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend id="lineNum">BoundaryLine 1</legend>
+<select id="Dir1">
+  <option value="Dir">Direction</option>
+  <option value="N">N</option>
+  <option value="S">S</option>
+  <option value="E">E</option>
+  <option value="W">W</option>
+</select>
+<br> <br>
+<label> <input style='width:8em' type="number" pattern="[0-9]" min="0" value="" id="Dist1" name="Dist1"></label>
+<label> chains </label>
+&nbsp; &nbsp; &nbsp;
+<label> <input style='width:8em' type="number" pattern="[0-9]" min="0" value="" id="Dist2" name="Dist2"></label>
+<label> rods/perches/poles </label>
+&nbsp; &nbsp; &nbsp;
+<label> <input style='width:8em' type="number" pattern="[0-9]" min="0" value="" id="Dist3" name="Dist3"></label>
+<label> links </label>
+<br> <br>
+<label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Remainder are Optional: </label>
+&nbsp;
+<label> <input style='width:3em' type="number" pattern="[0-9]" min="0" max="89" id="AngleD1D" name="AngleD1D"> Degrees </label>
+&nbsp; &nbsp; &nbsp;
+<label> <input style='width:3em' type="number" pattern="[0-9]" min="0" max="59" id="AngleD1M" name="AngleD1M"> Minutes </label>
+&nbsp; &nbsp; &nbsp;
+<label> <input style='width:3em' type="number" pattern="[0-9]" min="0" max="59" id="AngleD1S" name="AngleD1S"> Seconds </label>
+&nbsp; &nbsp;
+<select id="AngleDir">
+  <option value="Dir">Angle Direction</option>
+  <option value="E">E</option>
+  <option value="W">W</option>
+</select>
+</fieldset>
+
+<br> <br>
+<button type="button" id="butAdd" onclick='nextLine();'> Add Boundary Line </button>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<button type="button" id="butUndo" onclick='Undo(0);'> Undo Last Boundary Line </button>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<button type="button" id="butRes" onclick='Reset();'> Reset/Restart </button>
+<br> <br> <br> <br> <br>
+
+<fieldset class="fieldset-auto-width">
+<legend>Add Text</legend>
+<label> Text to add: <input id="Txt" name="Txt"></label>
+&nbsp; &nbsp; &nbsp; &nbsp;
+<label> Vertical Placement: <input style='width:5em' type="number" pattern="[1-9]" min="0" max="999" value="0" id="TxtV" name="TxtV"></label>
+&nbsp; &nbsp; &nbsp; &nbsp;
+<label> Horizontal Placement: <input style='width:5em' type="number" pattern="[1-9]" min="0" max="999" value="0" id="TxtH" name="TxtH"></label>
+</fieldset>
+
+<br> <br>
+<button type="button" id="butTxt" onclick='addText();'> Add Text </button>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<button type="button" id="butTxtUndo" onclick='undoText();'> Undo Last Text </button>
+
+<br> <br> <br> <br> <br>
+<label> Boundary lines and text are drawn below. </label>
+<br>
+<label> Print the resulting boundary map by using your browser's Print facility.</label>
+<br> <br>
+
+<script>
+
+var pnt, nxtpnt, mapPoints = [];    // [x][0] - horizontal beginning point
+                                    // [x][1] - vertical beginning point
+                                    // [x][2] - direction
+                                    // [x][3] - distance
+                                    // [x][4] - distance type       NOT USED - if removed, multiple code changes
+                                    // [x][5] - angle, degrees
+                                    // [x][6] - angle, minutes
+                                    // [x][7] - angle, seconds
+                                    // [x][8] - angle, direction
+                                    // [x][9] - horizontal end point
+                                    // [x][10] - vertical end point
+
+function nextLine() {
+    var lineNumTxt = document.getElementById("lineNum").innerHTML, err = '', angle;
+    const lineNumTxtSplit = lineNumTxt.split(" ");
+    if (lineNumTxtSplit[1] == 500) {
+        var span = document.getElementById("dial1span");
+        var msg = "The limit to the number of boundary lines which can be<br>entered has been reached.<br> <br>";
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = msg;
+        dialog1.showModal();
+        return false;
+    }
+    if (document.getElementById('Dir1').value == "Dir")
+        err += "'Direction' for boundary line is a required entry.<br> <br>";
+    if ((document.getElementById('Dist1').value == "" || document.getElementById('Dist1').value == "0") &&
+                     (document.getElementById('Dist2').value == "" || document.getElementById('Dist2').value == "0") &&
+                     (document.getElementById('Dist3').value == "" || document.getElementById('Dist3').value == "0"))
+        err += "A length of boundary line is a required entry.<br> <br>";
+    if (Number(document.getElementById('Vertical').value) > 999)
+        err += "The maximum Vertical Starting Point is 999.<br> <br>";
+    if (Number(document.getElementById('Horizontal').value) > 999)
+        err += "The maximum Horizontal Starting Point is 999.<br> <br>";
+    if (Number(document.getElementById('NumPix').value) > 100 || Number(document.getElementById('NumPix').value) < 1)
+        err += "The 'Number of Pixels per Measure' must be between 1 and 100 inclusive.<br> <br>";
+    if (document.getElementById('AngleDir').value != "Dir")
+        if (document.getElementById('Dir1').value != "N" && document.getElementById('Dir1').value != "S")
+            err += "When a directional angle is involved, 'Direction' must be 'N' or 'S' and 'Angle direction' must be 'E' or 'W'.<br> <br>";
+    if (err != '') {
+        var span = document.getElementById("dial1span");
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = err;
+        dialog1.showModal();
+        return false;
+    }
+    if (document.getElementById('Dir1').value == "N")
+        angle = 270;
+    if (document.getElementById('Dir1').value == "S")
+        angle = 90;
+    if (document.getElementById('Dir1').value == "E")
+        angle = 0;
+    if (document.getElementById('Dir1').value == "W")
+        angle = 180;
+    if (document.getElementById('AngleDir').value != 'Dir')
+        if (document.getElementById('Dir1').value == "N")
+            if (document.getElementById('AngleDir').value == 'W')
+                angle -= (Number(document.getElementById("AngleD1D").value) + (Number(document.getElementById("AngleD1M").value) / 60) +
+                         (Number(document.getElementById("AngleD1S").value) / 3600));
+            else
+                angle += (Number(document.getElementById("AngleD1D").value) + (Number(document.getElementById("AngleD1M").value) / 60) +
+                         (Number(document.getElementById("AngleD1S").value) / 3600));
+        else
+            if (document.getElementById('AngleDir').value == "W")
+                angle += (Number(document.getElementById("AngleD1D").value) + (Number(document.getElementById("AngleD1M").value) / 60) +
+                         (Number(document.getElementById("AngleD1S").value) / 3600));
+            else
+                angle -= (Number(document.getElementById("AngleD1D").value) + (Number(document.getElementById("AngleD1M").value) / 60) +
+                         (Number(document.getElementById("AngleD1S").value) / 3600));
+
+    if (Number(lineNumTxtSplit[1]) == 1) {
+        var hor = Number(document.getElementById('Horizontal').value);
+        var ver = Number(document.getElementById("Vertical").value);
+    } else {
+        var hor = mapPoints[mapPoints.length - 1][9];    // start the new line at the previous line's end points
+        var ver = mapPoints[mapPoints.length - 1][10];
+    }
+    /* figure length of boundary line in pixels */
+    var blinelength = 0;
+    if (document.getElementById('Dist3').value != "")
+        blinelength += (Number(document.getElementById('Dist3').value) * pixperlink);
+    if (document.getElementById('Dist2').value != "")
+        blinelength += (Number(document.getElementById('Dist2').value) * pixperrod);
+    if (document.getElementById('Dist1').value != "")
+        blinelength += (Number(document.getElementById('Dist1').value) * pixperchain);
+
+    pnt = ProcessLines(hor, ver, angle, blinelength);
+    if (pnt != -69) {
+        if (Number(lineNumTxtSplit[1]) == 1) {
+            mapPoints.length = 0;
+            mapPoints.push([Number(document.getElementById('Horizontal').value), Number(document.getElementById("Vertical").value),
+                           document.getElementById('Dir1').value, blinelength, 0, Number(document.getElementById("AngleD1D").value),
+                           Number(document.getElementById("AngleD1M").value), Number(document.getElementById("AngleD1S").value),
+                           document.getElementById('AngleDir').value, pnt.x, pnt.y]);
+        } else
+            mapPoints.push([hor, ver,
+                           document.getElementById('Dir1').value, blinelength, 0, Number(document.getElementById("AngleD1D").value),
+                           Number(document.getElementById("AngleD1M").value), Number(document.getElementById("AngleD1S").value),
+                           document.getElementById('AngleDir').value, pnt.x, pnt.y]);
+        Number(lineNumTxtSplit[1]++);
+        lineNum.innerHTML = lineNumTxtSplit[0] + " " + lineNumTxtSplit[1];
+    }
+}
+
+var txtFirst = 0, txtPoints = [];    // [x][0] - the text
+                                     // [x][1] - horizontal beginning point
+                                     // [x][2] - vertical beginning point
+
+function addText() {
+    var err = "";
+
+    if (document.getElementById('Txt').value == "")
+        err += "There is no text to add.<br> <br>";
+    if (document.getElementById('TxtH').value == "")
+        err += "'Horizontal Placement' is a required entry.<br> <br>";
+    if (document.getElementById('TxtV').value == "")
+        err += "'Vertical Placement' is a required entry.<br> <br>";
+
+    if (err != '') {
+        var span = document.getElementById("dial1span");
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = err;
+        dialog1.showModal();
+        return false;
+    }
+
+    if (!txtFirst) {
+        txtFirst = 1;
+        txtPoints.length = 0;
+    }
+    const c = document.getElementById("deedCanvas");
+    const ctx = c.getContext("2d");
+    ctx.font = "bold 16px Arial";
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'middle';
+
+    ctx.fillText(document.getElementById('Txt').value, document.getElementById('TxtH').value, document.getElementById('TxtV').value);
+    txtPoints.push([document.getElementById('Txt').value, document.getElementById('TxtH').value, document.getElementById('TxtV').value]);
+}
+
+function undoText() {
+    if (txtPoints.length)
+        txtPoints.length--;
+    if (!txtPoints.length)
+        txtFirst = 0
+
+    Undo(1);
+}
+
+function Reset() {
+    document.getElementById('NumPix').value = "1";
+    document.getElementById('NOP').value = "Mlink";
+    document.getElementById('Vertical').value = "0";
+    document.getElementById('Horizontal').value = "0";
+    document.getElementById('Dir1').value = "Dir";
+    document.getElementById('Dist1').value = "";
+    document.getElementById('Dist2').value = "";
+    document.getElementById('Dist3').value = "";
+    document.getElementById('AngleD1D').value = "0";
+    document.getElementById('AngleD1M').value = "0";
+    document.getElementById('AngleD1S').value = "0";
+    document.getElementById('Txt').value = "";
+    document.getElementById('TxtH').value = "";
+    document.getElementById('TxtV').value = "";
+    window.location.reload();
+}
+
+function Undo(txtsw) {
+    const c = document.getElementById("deedCanvas");
+    const ctx = c.getContext("2d");
+    var lineNumC, angle, x;
+    ctx.beginPath();
+    ctx.clearRect(0, 0, 999, 999); 
+    ctx.stroke();
+
+    if (!txtsw) {
+        if (mapPoints.length)
+            mapPoints.length--;
+        if (!mapPoints.length)
+            lineNum.innerHTML = "BoundaryLine 1";
+    }
+
+    /* redraw from beginning */
+    for (lineNumC = 1, x = 0; x < mapPoints.length; x++) {
+        if (mapPoints[x][2] == "N")
+            angle = 270;
+        if (mapPoints[x][2] == "S")
+            angle = 90;
+        if (mapPoints[x][2] == "E")
+            angle = 0;
+        if (mapPoints[x][2] == "W")
+            angle = 180;
+        if (mapPoints[x][8] != 'Dir')
+            if (mapPoints[x][2] == "N")
+                if (mapPoints[x][8] == 'W')
+                    angle -= (mapPoints[x][5] + (mapPoints[x][6] / 60) + (mapPoints[x][7] / 3600));
+                else
+                    angle += (mapPoints[x][5] + (mapPoints[x][6] / 60) + (mapPoints[x][7] / 3600));
+            else
+                if (mapPoints[x][8] == "W")
+                    angle += (mapPoints[x][5] + (mapPoints[x][6] / 60) + (mapPoints[x][7] / 3600));
+                else
+                    angle -= (mapPoints[x][5] + (mapPoints[x][6] / 60) + (mapPoints[x][7] / 3600));
+
+        ProcessLines(mapPoints[x][0], mapPoints[x][1], angle, mapPoints[x][3]);
+        lineNumC++;
+        lineNum.innerHTML = "BoundaryLine " + lineNumC;
+    }
+
+    /* redraw text */
+    ctx.font = "bold 16px Arial";
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    for (x = 0; x < txtPoints.length; x++)
+        ctx.fillText(txtPoints[x][0], txtPoints[x][1], txtPoints[x][2]);
+}
+
+</script>
+
+<hr style="width:50%">
+</body>
+<div style="text-align: center;">&#8593;</div>
+<div style="text-align: center;">North</div>
+
+<canvas id="deedCanvas" width="1000" height="1000"></canvas>
+
+<script>
+
+function ProcessLines(x, y, angle, dist) {
+    const c = document.getElementById("deedCanvas");
+    const ctx = c.getContext("2d");
+
+/*  direction:  due E is 0; due S 90; due W is 180; due N is 270
+                examples:
+                "S 76 degrees E" converts to 90 - 76
+                "S 19 degrees 30 min W" converts to 90 + 19.5
+                "N 31 degrees 40 min W" converts to 270 - 31.3333
+                "N 60 degrees E" converts to 270 + 60
+                to interpret a metes & bounds deed use https://theshygenealogist.wordpress.com/wp-content/uploads/2011/01/survey-compass.jpg
+    distance:  1 chain = 66 feet or 20.1168 meters
+               1 chain = 4 rods or 100 links
+               1 rod = 16.5 feet
+               1 rod = 25 links
+               rod = pole = perch
+               1 link = 7.92 inches */
+
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+
+    nxtpnt = findNewPoint(x, y, angle, dist);
+    if (nxtpnt.x < 0 || nxtpnt.x > 999 || nxtpnt.y < 0 || nxtpnt.y > 999) {
+        var span = document.getElementById("dial1span");
+        var msg = "This line will go off the 'canvas' and can't be drawn.<br>Try making the Number of Pixels per Measure smaller, " +
+                  "or try a different 'Starting Point', or both.<br>'Reset/Restart' must be clicked before changing those options.<br> <br>";
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = msg;
+        dialog1.showModal();
+        return -69;
+    }
+
+    ctx.lineTo(nxtpnt.x, nxtpnt.y);
+    ctx.stroke();
+
+    return nxtpnt;
+}
+
+/* from https://stackoverflow.com/questions/17456783/figure-out-point-y-by-angle-and-distance/27572056#27572056 */
+function findNewPoint(x, y, angle, distance) {
+    var result = {};
+
+    result.x = Math.round(Math.cos(angle * Math.PI / 180) * distance + x);
+    result.y = Math.round(Math.sin(angle * Math.PI / 180) * distance + y);
+    return result;
+}
+
+/* user changed either number of pixels per measure or the measure */
+function chgPix() {
+    if (Number(document.getElementById('NumPix').value) > 100 || Number(document.getElementById('NumPix').value) < 1) {
+        var span = document.getElementById("dial1span");
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = "The 'Number of Pixels per Measure' must be between 1 and 100 inclusive.<br> <br>";
+        dialog1.showModal();
+        return false;
+    }
+
+    if (document.getElementById('NOP').value == "Mlink") {
+        pixperlink = Number(document.getElementById('NumPix').value);
+        pixperrod = pixperlink * 25;
+        pixperchain = pixperrod * 4;
+    }        
+    if (document.getElementById('NOP').value == "Mrod") {
+        pixperrod = Number(document.getElementById('NumPix').value);
+        if (pixperrod > 24 && (pixperrod % 25) == 0)
+            pixperlink = pixperrod / 25;
+        else
+            pixperlink = 0;
+        pixperchain = pixperrod * 4;
+    }        
+    if (document.getElementById('NOP').value == "Mchain") {
+        pixperchain = Number(document.getElementById('NumPix').value);
+        if (pixperchain > 3 && (pixperchain % 4) == 0)
+            pixperrod = pixperchain / 4;
+        else
+            pixperrod = 0;
+        if (pixperrod > 24 && (pixperrod % 25) == 0)
+            pixperlink = pixperrod / 25;
+        else
+            pixperlink = 0;
+    }        
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+</html>

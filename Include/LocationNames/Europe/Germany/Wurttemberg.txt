@@ -1,0 +1,15 @@
+
+Dates                     Location Name
+
+21 Jul 1495-1512          Duchy of Wurttemberg, Holy Roman Empire
+1512-24 Feb 1803          Duchy of Wurttemberg, Holy Roman Empire of the German Nation 
+25 Feb 1803-6 Aug 1806    Electorate of Wurttemberg, Holy Roman Empire of the German Nation
+7 Aug 1806-18 Oct 1813    Kingdom of Wurttemberg, Confederation of the Rhine, First French Empire
+8 Jun 1815-Jul 1867       Kingdom of Wurttemberg, German Confederation
+Jul 1867-Dec 1870         Kingdom of Wurttemberg, North German Confederation
+18 Jan 1871-1918          Kingdom of Wurttemberg, German Empire
+1919-1943                 Free People's State of Wurttemberg, German Empire
+1943-18 Sep 1945          Free People's State of Wurttemberg, Greater German Empire
+19 Sep 1945-24 Apr 1952   Wurttemberg-Baden, Federal Republic of Germany
+25 Apr 1952-present       Baden-Wurttemberg, Federal Republic of Germany
+

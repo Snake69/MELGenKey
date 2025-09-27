@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>  
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Date/Age Calculator</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+<script> 
+
+function dateDiff(start, end) {
+    // Calculate difference in two dates;
+    // take into account the varying number of days in a month, leap years and BC/AD
+    let years = 0, months = 0, days = 0;
+
+    // Parse dates as UTC
+    let startDate = new Date(Date.UTC(start.substring(0, 4), start.substring(5, 7) - 1, start.substring(8, 10)));
+    let endDate = new Date(Date.UTC(end.substring(0, 4), end.substring(5, 7) - 1, end.substring(8, 10)));
+
+    if (endDate.getUTCDate() < startDate.getUTCDate()) {
+        months = -1;
+        let datePtr = new Date(Date.UTC(endDate.getUTCFullYear(), endDate.getUTCMonth(), 0));
+        days = endDate.getUTCDate() + (datePtr.getUTCDate() - startDate.getUTCDate());
+    } else
+        days = endDate.getUTCDate() - startDate.getUTCDate();
+
+    if (((endDate.getUTCMonth() < startDate.getUTCMonth()) || (endDate.getUTCMonth() === startDate.getUTCMonth() &&
+                                                                 endDate.getUTCDate() < startDate.getUTCDate())) &&
+                         ((document.getElementById('bcebdad').checked && document.getElementById('bceddad').checked) ||
+                                                                             document.getElementById('bcebdbc').checked)) {
+        years = -1;
+        months += endDate.getUTCMonth() + (12 - startDate.getUTCMonth());
+    } else
+        months += endDate.getUTCMonth() - startDate.getUTCMonth();
+
+    if (document.getElementById('bcebdad').checked && document.getElementById('bceddad').checked)
+        years += endDate.getUTCFullYear() - startDate.getUTCFullYear();
+
+    if (document.getElementById('bcebdbc').checked && document.getElementById('bceddbc').checked)
+        years += startDate.getUTCFullYear() - endDate.getUTCFullYear();
+
+    if (document.getElementById('bcebdbc').checked && document.getElementById('bceddad').checked)
+        years += startDate.getUTCFullYear() + endDate.getUTCFullYear() - 1;
+
+    return [years, months, days];
+}
+
+function Calculator() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onerror = function () {
+        /* could not send Logging message to node (probably because node isn't running) */
+    }
+    ws.onopen = function () {
+        ws.send("DateAgeCalc");
+    }
+
+    var valueDate1 = document.getElementById('Date1').value;
+    var valueDate2 = document.getElementById('Date2').value;
+    var ageY = document.getElementById('ageYears').value;
+    var ageM = document.getElementById('ageMonths').value;
+    var ageD = document.getElementById('ageDays').value;
+    var Pcnt, wD, sD;
+
+    Pcnt = 0;
+    if (valueDate1)
+        Pcnt++;
+    if (valueDate2)
+        Pcnt++;
+    if (ageY || ageM || ageD) {
+        Pcnt++;
+        /* ensure there is something in all three age fields */
+        if (!ageY) {
+            document.getElementById("ageYears").value = 0;
+            ageY = 0;
+        }
+        if (!ageM) {
+            document.getElementById("ageMonths").value = 0;
+            ageM = 0;
+        }
+        if (!ageD) {
+            document.getElementById("ageDays").value = 0;
+            ageD = 0;
+        }
+    }
+    if (Pcnt != 2) {
+        var span = document.getElementById("dial1span");
+        var msg = "Two unknowns, and only two unknowns, must be entered.<br> <br>(It's possible that an invalid " +
+                  "date has been entered, e.g. 02/29/1999 or 04/31/1901.)<br> <br>";
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = msg;
+        dialog1.showModal();
+        return false;
+    }
+
+    if (document.getElementById('calchg').checked)
+        if ((valueDate1 > "1752-09-02" && valueDate1 < "1752-09-14" && document.getElementById('bcebdad').checked) ||
+            (valueDate2 > "1752-09-02" && valueDate2 < "1752-09-14" && document.getElementById('bceddad').checked)) {
+            var span = document.getElementById("dial1span");
+            var msg = "When taking into account the calendar change, neither a birth date nor a death date<br>can be " +
+                      "entered falling within the range of 3 Sep 1752 to 13 Sep 1752 inclusive since<br>those calendar " +
+                      "days did not exist because of the change-over from the<br>Julian Calendar to the Gregorian Calendar.<br> <br>";
+            const dialog1 = document.querySelector("#dial1");
+            span.innerHTML = msg;
+            dialog1.showModal();
+            return false;
+        }
+
+    if (valueDate1 && valueDate2) {
+        // birth date and death date entered by user; calculate age
+        if (document.getElementById('bcebdad').checked && document.getElementById('bceddbc').checked) {
+            var span = document.getElementById("dial1span");
+            var msg = "Death date must be equal to, or later than, birth date<br>(CE/AD is checked for birth, " +
+                      "BCE/BC is checked for death).<br> <br>";
+            const dialog1 = document.querySelector("#dial1");
+            span.innerHTML = msg;
+            dialog1.showModal();
+            return false;
+        }
+
+        if (document.getElementById('bcebdad').checked && document.getElementById('bceddad').checked && valueDate1 > valueDate2) {
+            var span = document.getElementById("dial1span");
+            var msg = "Death date must be equal to, or later than, birth date.<br> <br>";
+            const dialog1 = document.querySelector("#dial1");
+            span.innerHTML = msg;
+            dialog1.showModal();
+            return false;
+        }
+
+        if (document.getElementById('bcebdbc').checked && document.getElementById('bceddbc').checked &&
+                 (parseInt(valueDate1.substring(0, 4), 10) < parseInt(valueDate2.substring(0, 4), 10) ||
+                (parseInt(valueDate1.substring(0, 4), 10) == parseInt(valueDate2.substring(0, 4), 10) &&
+                 parseInt(valueDate1.substring(5, 7), 10) > parseInt(valueDate2.substring(5, 7), 10)) ||
+                (parseInt(valueDate1.substring(0, 4), 10) == parseInt(valueDate2.substring(0, 4), 10) &&
+                 parseInt(valueDate1.substring(5, 7), 10) == parseInt(valueDate2.substring(5, 7), 10) &&
+                 parseInt(valueDate1.substring(8, 10), 10) > parseInt(valueDate2.substring(8, 10), 10)))) {
+            var span = document.getElementById("dial1span");
+            var msg = "Death date must be equal to, or later than, birth date.<br> <br>";
+            const dialog1 = document.querySelector("#dial1");
+            span.innerHTML = msg;
+            dialog1.showModal();
+            return false;
+        }
+
+        let difference = dateDiff(valueDate1, valueDate2);
+        // if taking into account the calendar change then adjust age if appropriate
+        if (document.getElementById('calchg').checked)
+            if ((valueDate2 > "1752-09-02" && document.getElementById('bceddad').checked) &&
+                (valueDate1 < "1752-09-03" || document.getElementById('bcebdbc').checked)) {
+                // get new date difference
+                var tempDate = new Date(Date.UTC(valueDate2.substring(0, 4), valueDate2.substring(5, 7) - 1, valueDate2.substring(8, 10)));
+                tempDate.setUTCDate(tempDate.getUTCDate() - 10);
+                valueDate2 = [tempDate.getUTCFullYear(), ('0' + (tempDate.getUTCMonth() + 1)).slice(-2), ('0' +
+                    tempDate.getUTCDate()).slice(-2)].join('-');
+                difference = dateDiff(valueDate1, valueDate2);
+            }
+
+        document.getElementById("ageYears").value = difference[0];
+        document.getElementById("ageMonths").value = difference[1];
+        document.getElementById("ageDays").value = difference[2];
+        return false;
+    }
+    if (valueDate1) {
+        // birth date and age entered by user; calculate death date
+        var yearsD = parseInt(valueDate1.substring(0, 4), 10);
+        var monthsD = parseInt(valueDate1.substring(5, 7), 10) - 1;
+        var daysD = parseInt(valueDate1.substring(8, 10), 10);
+        var yearsA = parseInt(ageY, 10);
+        var monthsA = parseInt(ageM, 10);
+        var daysA = parseInt(ageD, 10);
+        // figure death year based upon age and whether birth year is BC or AD
+        if (document.getElementById('bcebdad').checked) {
+            yearsD += yearsA;
+            // if birth is AD then death will be AD
+            document.getElementById('bceddad').checked = true;
+        }
+        else {
+            // if birth is BC then death will be BC if age years are less than birth year
+            if (yearsA < yearsD) {
+                yearsD -= yearsA;
+                document.getElementById('bceddbc').checked = true;
+            }
+            else {
+                yearsD = (yearsA - yearsD) + 1;
+                // there's no year 0
+                document.getElementById('bceddad').checked = true;
+            }
+        }
+        // need to have a 4-character year (and the date needs to be a literal in new Date()) for it to show up correctly on the HTML page
+        var ystr = "" + yearsD;
+        var pad = "0000";
+        var dstr = pad.substring(0, pad.length - ystr.length) + ystr + "-" + (monthsD + 1) + "-" + daysD;
+        wD = new Date(Date.UTC(yearsD, monthsD, daysD));
+        wD.setUTCMonth(wD.getUTCMonth() + monthsA);
+        // kludge to correctly set BC years
+        if (document.getElementById('bceddbc').checked && wD.getUTCFullYear() != yearsD) {
+            wD.setUTCFullYear(wD.getUTCFullYear() - 2);
+            yearsD--;
+        }
+        wD.setUTCDate(wD.getUTCDate() + daysA)
+        // kludge to correctly set BC years
+        if (document.getElementById('bceddbc').checked && wD.getUTCFullYear() != yearsD)
+            wD.setUTCFullYear(wD.getUTCFullYear() - 2);
+        sD = wD;
+        dstr = wD;
+
+        // if taking into account the calendar change then adjust death date if appropriate
+        if (document.getElementById('calchg').checked)
+            if ((valueDate1 < "1752-09-03" || document.getElementById('bcebdbc').checked) && new Date(dstr) >
+                new Date(Date.UTC(1752, 8, 2)) && document.getElementById('bceddad').checked) {
+                wD.setUTCDate(wD.getUTCDate() + 11)
+                dstr = wD;
+            }
+        // we dun need no steekin' timezone
+        if (document.getElementById('bceddbc').checked == true && !yearsA)
+            // if death year should be BC and age is 0 years, it's possible the year could change if the number
+            // of months causes the death date to cross over to the following year; in this case the year should decrease rather than increase
+            if (wD.getUTCFullYear() == (sD.getUTCFullYear() + 1))
+                if (sD.getUTCFullYear() == 1) {
+                    // no year 0
+                    wD.setUTCFullYear(1);
+                    document.getElementById('bceddbc').checked = false;
+                    document.getElementById('bceddad').checked = true;
+                } else
+                    wD.setUTCFullYear(sD.getUTCFullYear() - 1);
+        document.getElementById("Date2").valueAsDate = wD;
+        return false;
+    }
+    else {
+        // death date and age entered by user; calculate birth date
+        var yearsD = parseInt(valueDate2.substring(0, 4), 10);
+        var monthsD = parseInt(valueDate2.substring(5, 7), 10) - 1;
+        var daysD = parseInt(valueDate2.substring(8, 10), 10);
+        var yearsA = parseInt(ageY, 10);
+        var monthsA = parseInt(ageM, 10);
+        var daysA = parseInt(ageD, 10);
+        // figure birth year based upon age and whether death year is BC or AD
+        if (document.getElementById('bceddbc').checked) {
+            yearsD += yearsA;
+            // if death is BC then birth will be BC
+            document.getElementById('bcebdbc').checked = true;
+        }
+        else
+            // if death is AD then birth will be AD if age years are less than death year
+            if (yearsA < yearsD) {
+                yearsD -= yearsA;
+                document.getElementById('bcebdad').checked = true;
+            } else {
+                yearsD = (yearsA - yearsD) + 1;
+                // there's no year 0
+                document.getElementById('bcebdbc').checked = true;
+            }
+        // need to have a 4-character year (and the date needs to be a literal in new Date()) for it to show up correctly on the HTML page
+        var ystr = "" + yearsD;
+        var pad = "0000";
+        var dstr = pad.substring(0, pad.length - ystr.length) + ystr + "-" + (monthsD + 1) + "-" + daysD;
+        wD = new Date(Date.UTC(yearsD, monthsD, daysD));
+        // when calculating the birth date from the death date and an age, the days should be subtracted out first before the months
+        wD.setUTCDate(wD.getUTCDate() - daysA)
+        wD.setUTCMonth(wD.getUTCMonth() - monthsA);
+        // kludge to correctly set BC years
+        if (document.getElementById('bcebdbc').checked && wD.getUTCFullYear() != yearsD) {
+            wD.setUTCFullYear(wD.getUTCFullYear() + 1);
+            yearsD--;
+        }
+        // kludge to correctly set BC years
+        if (document.getElementById('bcebdbc').checked && wD.getUTCFullYear() != yearsD)
+            wD.setUTCFullYear(wD.getUTCFullYear() + 1);
+        sD = wD;
+        dstr = wD;
+
+        // if taking into account the calendar change then adjust birth date if appropriate
+        if (document.getElementById('calchg').checked)
+            if ((valueDate2 > "1752-09-02" && document.getElementById('bceddad').checked) && (new Date(dstr) <
+                new Date(Date.UTC(1752, 8, 14)) || document.getElementById('bcebdbc').checked)) {
+                wD.setUTCDate(wD.getUTCDate() - 11)
+                dstr = wD;
+            }
+
+        // we dun need no steekin' timezone
+        //wD.setMinutes(wD.getMinutes() - wD.getTimezoneOffset());
+        if (document.getElementById('bcebdad').checked == true && !yearsA)
+            // if birth year should be AD and age is 0 years, it's possible the year could change if the number of
+            // months causes the birth date to cross over to the previous year;
+            // in this case the year should increase rather than decrease
+            if (wD.getUTCFullYear() == (sD.getUTCFullYear() - 1))
+                if (sD.getUTCFullYear() == 1) {
+                    // no year 0
+                    wD.setUTCFullYear(1);
+                    document.getElementById('bcebdbc').checked = true;
+                    document.getElementById('bcebdad').checked = false;
+                } else
+                    wD.setUTCFullYear(sD.getUTCFullYear() - 1);
+        document.getElementById("Date1").valueAsDate = wD;
+        return false;
+    }
+}
+
+function ageReset() {
+    document.getElementById("ageYears").value = '';
+    document.getElementById("ageMonths").value = '';
+    document.getElementById("ageDays").value = '';
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<h2 style="color: red"> Date/Age Calculator <br> <br> </h2>
+
+<h4> It seems that many times when the age was given on headstones, in obituaries, etc <br>
+     it was calculated by always assigning 30 days to a month as well as not taking into <br>
+     account leap years. This calculation uses the actual days in each month and accounts <br>
+     for leap years, so the result here may not agree with what is shown elsewhere. <br>
+<br> <br>
+     <input type="checkbox" id="calchg" name="calchg" value="calchg"> <label> Check here to
+     take into account the change in calendar from Julian to Gregorian (it was <br>
+     changed at different times in different parts of the world; this calculation will use <br>
+     the time it was changed in Great Britain and it's colonies which includes America). <br>
+     This means, for example, that a person born on 1 Sep 1752 and dieing on 15 Sep 1752 will be 3 days old <br>
+     at the time of death. (2 Sep 1752 was followed by 14 Sep 1752 with the change in calendars.) <br>
+     Also, using the Julian Calendar, the year began on 25 Mar. However, for this calculation and display, the year <br>
+     will always start with 1 Jan. </label> <br>
+
+<br> <br> </h4>
+
+<h3> Fill in 2 unknowns (either 2 dates, or 1 date and the age) and the third unknown will be calculated. <br> <br> </h3>
+<!-- Choose dates and/or age -->
+<b> Birth Date: <input type="date" id = "Date1"> </b>
+<input type="radio" id="bcebdad" name="bcebd" value="bcebdad" checked> <label>CE/AD</label>
+<input type="radio" id="bcebdbc" name="bcebd" value="bcebdbc"> <label>BCE/BC</label>
+<br>
+<b> Death Date: <input type="date" id = "Date2"> </b>
+<input type="radio" id="bceddad" name="bcedd" value="bceddad" checked> <label>CE/AD</label>
+<input type="radio" id="bceddbc" name="bcedd" value="bceddbc"> <label>BCE/BC</label>
+<br>
+<b> Age: <input type="number" size="6" min="0" max="99999" id = "ageYears"> years &nbsp; &nbsp; </b>
+<b> <input type="number" size="3" min="0" max="11" id = "ageMonths"> months &nbsp; &nbsp; </b>
+<b> <input type="number" size="3" min="0" max="30" id = "ageDays"> days &nbsp; &nbsp; &nbsp; &nbsp; </b>
+<button type="button" onclick='ageReset()'> Reset Age to Null </button>
+<br>
+<br>
+
+<button type="submit" onclick = "Calculator()"> Calculate </button> <br><br>
+
+</body>
+</html>

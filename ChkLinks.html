@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Link Checker for Active DataBase</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+</head>
+<body>
+<dialog id="dial1">
+<span>It seems the node/server is not running.<br>Cannot perform function without the server running.<br> <br></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial2">
+<span id="dial2span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>Link Checker for Active DataBase</h1>
+<span id="TitleDBName"></span>
+<hr style="width:50%">
+
+<h4> Here Web links specified in the active Family DataBase will be checked for availability. <br>
+     For a link to be recognized and checked, it must begin with "http://" or "https://". <br> <br>
+     Click the Continue button to begin checking. <br>
+<br> <br> </h4>
+
+<button type = "button" id = "cButton" onClick = "ChkLinks(); document.body.style.cursor = 'wait'; this.disabled = true;"> Continue </button>
+
+<h4> Checking may take some time depending upon the size of the DataBase and the number of links to be checked. <br> </h4>
+
+<br>
+<hr style="width:50%">
+
+<script>
+var Notifications;
+
+onload = function init() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var UserPrefs = {};
+
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1)
+            document.getElementById("TitleDBName").innerHTML = '(' + e.data + ')'; 
+    }
+    UserPrefs.length = 0;
+    ws.onopen = function() {
+        ws.send("GetUserPrefs");
+    }
+    ws.onmessage = function(e) {
+        try {
+            UserPrefs = JSON.parse(e.data);
+            if (UserPrefs.length === 0)
+                Notifications = 1;    // default is notifications on
+            else
+                Notifications = UserPrefs.Not;
+        } catch (error) {
+            alert("Error getting User Preferences.");
+        }
+    }
+    ws.onerror = function(error) {
+        // do nothing
+    }
+}
+
+function ChkLinks () {
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    ws.onopen = function() {
+        ws.send("ChkLinks");
+        ws.onmessage = function(e) {
+            if (e.data.search("Web Links Report") == -1) {
+                var span = document.getElementById("dial2span");
+                span.innerHTML = e.data;
+                const dialog = document.querySelector("#dial2");
+                dialog.showModal();
+                document.body.style.cursor = 'default';
+                document.getElementById("cButton").disabled = false;  // re-enable button
+            } else {
+                /* open in a new tab */
+                var w = window.open('about:blank');
+                w.document.open();
+                w.document.write(e.data);
+                w.document.close();
+                if (Notifications == 1) {
+                    var audio = new Audio('Include/Sounds/AirplaneDing.wav');
+                    audio.play();
+                }
+                document.body.style.cursor = 'default';
+                document.getElementById("cButton").disabled = false;  // re-enable button
+            }
+        }
+    }
+    ws.onerror = function () {
+        const dialog = document.querySelector("#dial1");
+        dialog.showModal();
+        document.body.style.cursor = 'default';
+        document.getElementById("cButton").disabled = false;  // re-enable button
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+</body>
+</html>

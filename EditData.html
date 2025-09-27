@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Edit Family Data</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+</head>
+<body>
+<h1>Edit Family Data</h1>
+<span id="TitleDBName"></span>
+<hr style="width:50%">
+
+<h4> Here changes may be made to the active Family DataBase using your favorite editor. Any changes will be made to the <br>
+     plain text version of the Family Data. After completing the changes, 'Verify Family Data' from the Main Menu will need to <br>
+     be run in order to make full use of MELGenKey. Also, after successful verification, <br>
+     'Import, Create or Remove a Family DataBase -> Create HTML Version of Family DataBase' may be optionally run. <br>
+<br> <br> </h4>
+
+<h2 style="color: red"> This function is not yet available. <br> <br> </h2>
+
+<br>
+<hr style="width:50%">
+
+<script>
+onload = function init() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1)
+            document.getElementById("TitleDBName").innerHTML = '(' + e.data + ')'; 
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+</body>
+</html>

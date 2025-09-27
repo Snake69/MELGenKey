@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Slideshow</title>
+
+<style type="text/css">
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .fieldset-auto-width {
+         display: inline-block;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial2">
+<span id="dial2span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>Slideshow</h1>
+<span id="TitleDBName"></span>
+<br>
+<hr style="width:50%">
+
+<script type="text/javascript" src="clib.js"></script>
+
+<script>
+
+onload = function init() {
+    /* if server not running or DB not active, disable certain selections */
+    check4ActiveDB().then((res) => {
+        var span = document.getElementById("dial1span");
+        const dialog1 = document.querySelector("#dial1");
+        if (res == -3 || res == -2 || res == -1) {
+            document.getElementById("imgtypes").disabled = true;
+
+            if (res == -1) {
+                span.innerHTML = "No Family DataBase is active. No images to show.<br>Activate a Family Database.<br> <br>";
+                dialog1.showModal();
+            }
+            if (res == -2) {
+                span.innerHTML = "It seems the node/server is not running.<br>Cannot create a Slideshow.<br> <br>";
+                dialog1.showModal();
+            }
+        }
+    })
+
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1)
+            document.getElementById("TitleDBName").innerHTML = '(' + e.data + ')'; 
+    }
+}
+
+</script>
+
+<form id="Slideshow" method="POST">
+<input type="hidden" name="ORIGIN" value="Slideshow">
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Delay Between Images</legend>
+<label> <input type="text" pattern="[0-9]" id="Delay" name="Delay" value="3" min='0' > Seconds (null = 0) </label>
+</fieldset>
+<br> <br>
+<fieldset id="imgtypes" class="fieldset-auto-width">
+<legend>How to Show Images</legend>
+<p><label> <input type="radio" name="WinType" value="Sep" checked="checked"> New Separate Window </label></p>
+<p><label> <input type="radio" name="WinType" value="Tab" > New Tab </label></p>
+</fieldset>
+<br> <br>
+<fieldset id="imgtypes" class="fieldset-auto-width">
+<legend>Which type of images to show? (all optional)</legend>
+<label> <input type="checkbox" id="Bio" name="Bio"> Biographies </label>
+<br>
+<label> <input type="checkbox" id="Maps" name="Maps"> Maps </label>
+<br>
+<label> <input type="checkbox" id="Misc" name="Misc"> General Miscellaneous </label>
+<br>
+<label> <input type="checkbox" id="NewsDeaths" name="NewsDeaths"> Deaths Appearing in Newspapers </label>
+<br>
+<label> <input type="checkbox" id="NewsBirths" name="NewsBirths"> Births Appearing in Newspapers </label>
+<br>
+<label> <input type="checkbox" id="NewsMarrs" name="NewsMarrs"> Marriages Appearing in Newspapers </label>
+<br>
+<label> <input type="checkbox" id="NewsOth" name="NewsOth"> Other Appearing in Newspapers </label>
+<br>
+<label> <input type="checkbox" id="People" name="People"> People </label>
+<br>
+<label> <input type="checkbox" id="RecsAF" name="RecsAF"> Armed Forces Records </label>
+<br>
+<label> <input type="checkbox" id="RecsBap" name="RecsBap"> Baptismal Records </label>
+<br>
+<label> <input type="checkbox" id="RecsBible" name="RecsBible"> Bible Records </label>
+<br>
+<label> <input type="checkbox" id="RecsBirth" name="RecsBirth"> Birth Records </label>
+<br>
+<label> <input type="checkbox" id="RecsCensus" name="RecsCensus"> Census Records </label>
+<br>
+<label> <input type="checkbox" id="RecsDeath" name="RecsDeath"> Death Records </label>
+<br>
+<label> <input type="checkbox" id="RecsDeed" name="RecsDeed"> Deed Records </label>
+<br>
+<label> <input type="checkbox" id="RecsMarr" name="RecsMarr"> Marriage Records </label>
+<br>
+<label> <input type="checkbox" id="RecsWill" name="RecsWill"> Probate Records </label>
+<br>
+<label> <input type="checkbox" id="RecsOth" name="RecsOth"> Other Records </label>
+<br>
+<label> <input type="checkbox" id="Headstones" name="Headstones"> Headstones </label>
+</fieldset>
+
+<br> <br> <br>
+<button type="button" id="button" onclick='sendFormData2Node(); this.disabled = true;'> Start Slideshow </button>
+
+</form>
+
+<script>
+
+var images = [], intID, w, imageCnt;
+
+function sendFormData2Node() {
+    var formData = new FormData(document.getElementById("Slideshow"));
+    var tabPage = '<!DOCTYPE html> <html> <head> <title>Slideshow Image</title> </head> <body> <center> <img id="slideshowImage" src=""> ' +
+                  '</center> </body> </html>';
+    let formDataJSON = {};
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    document.getElementById("button").disabled = true;  // disable button
+
+    for (const [key, value] of formData.entries())
+        formDataJSON[key] = value;
+
+    ws.onopen = function() {
+        ws.send("Slideshow" + JSON.stringify(formDataJSON));
+        ws.onmessage = function(e) {
+            if (e.data.search("SlideshowOK") == -1) {
+                var span = document.getElementById("dial2span");
+                const dialog2 = document.querySelector("#dial2");
+                span.innerHTML = e.data;
+                dialog2.showModal();
+                document.getElementById("button").disabled = false;  // re-enable button
+            } else {
+                if (formDataJSON["WinType"] == "Tab")
+                    /* create a new tab Window for the Slideshow images */
+                    w = window.open('about:blank');
+                else
+                    /* create a new separate Window for the Slideshow images */
+                    w = window.open('', '_blank', 'toolbar=0,location=0,menubar=0');
+                w.document.open();
+                w.document.write(tabPage);
+                imageCnt = images.length = 0;
+
+                /* get DB path */
+                ws.send("DoSlideshow" + JSON.stringify(formDataJSON));
+                ws.onmessage = function(e) {
+                    images = e.data.split(",");
+                    const imageElement = w.document.getElementById('slideshowImage');
+
+                    intID = setInterval(displayImage, formDataJSON["Delay"] * 1000, imageElement);
+                }
+            }
+        }
+    }
+    document.getElementById("button").disabled = false;  // re-enable button
+}
+
+function displayImage(where) {
+    where.src = images[imageCnt];
+    imageCnt++;
+    if (imageCnt == images.length || w.closed) {
+        w.document.close();
+        clearInterval(intID);
+        var span = document.getElementById("dial2span");
+        const dialog2 = document.querySelector("#dial2");
+        if (imageCnt == images.length)
+            span.innerHTML = "Slideshow finished";
+        else
+            span.innerHTML = "Slideshow canceled";
+        dialog2.showModal();
+        document.getElementById("button").disabled = false;  // re-enable button in Slideshow form
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<br>
+<hr style="width:50%">
+
+</body>
+</html>

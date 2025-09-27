@@ -1,0 +1,1597 @@
+A discussion of the change in calendar
+(from the Internet)
+
+BEGIN
+
+Did you know that people living in 1752 lost 11 days?!  September 3 through
+September 13, 1752 is missing from the calendar.
+
+Actually, what happened is that Pope Gregory XIII in 1582 decreed that the
+calendar be changed from the Julian to what we call the Gregorian calendar.
+This was based in part on the work of an obscure Polish astronomer named
+Nicolaus Copernicus (1473-1543).  The Gregorian calendar was not adopted
+all at once everywhere.  England changed calendars in 1752.
+
+The eleven days were removed from the calendar to get it back into sync with
+various astrological events.  The average Julian year consists of 365.25
+days, the average Gregorian year consists of 365.2425 days.  Under the
+Julian calendar an extra day was inserted every fourth year which is a
+little too much.  Under the Gregorian calendar an extra day is inserted
+every fourth year with the exception of the turns of centuries (with the
+further exception of every fourth century).
+
+END
+
+
+
+More calendar stuff
+(from the Internet)
+
+BEGIN
+
+Birth Dates & Calendars
+
+Beginning in 45 B.C., many parts of the world used the Julian calendar to
+mark the passage of time.  According to the Julian calendar, March 25 was
+the first day of the year and each year was 365 days 6 hours long.  In 1582,
+Pope Gregory XIII determined that the Julian Calendar was incorrect:  each day
+was just a little bit too long.  This meant that the human calendar wasn't
+keeping up with nature's calendar, and the seasons kept arriving slightly
+earlier in the year.  To solve the problem, Pope Gregory XIII created the
+Gregorian calendar - the calendar that we use officially in the United States
+- with the first day of the year set to January 1.  He also had everyone jump
+ahead by 10 days to make up for the days lost by using the Julian calendar.
+
+The practice of writing double dates resulted from this switch to the
+Gregorian calendar, and also from the fact that not all countries accepted
+the new calendar at the same time.  For example, England and the American
+colonies didn't officially accept the new calendar until 1752.  Before 1752,
+the English government still observed March 25 as the first of the year,
+but most of the population observed January 1.  For this reason, many people
+wrote dates falling between January 1 and March 25 with both years.
+
+By the time England and the colonies adopted the new Gregorian calendar,
+the discrepancy between the two calendars was eleven days, instead of ten.
+To resolve the discrepancy, the government ordered that September 2, 1752,
+be followed by September 14, 1752.  Some people also added 11 days to their
+birth dates (a fact that is not noted on their birth certificates).
+
+END
+
+
+
+Even more calendar stuff
+(from the Internet)
+
+BEGIN
+
+THE AMAZING 80% YEAR OF 1752
+
+The modern calendar is a compilation of usages dating from the days of Julius
+Caesar, when the Greek astronomer and mathematician Sosigenes devised for
+Rome a calendar only essentially familiar to us as our present-day calendar.
+It was during the late 16th century that work of the 6th century Anglo-Saxon
+monk, Bede, was submitted to Pope Gregory XIII who accepted the calculations
+and made the decision to issue a more accurate calendar which ultimately
+was accepted. The Gregorian calendar was adopted by most Roman Catholic
+countries. Many protestant countries did not accept the new calendar until
+the 18th century, including Britain ... which meant America as well.
+
+The British finally accepted the Gregorian calendar for itself and all its
+possessions effective March 25, 1752.  But, a remarkable 2-step change was
+made which is little realized today.  Read on ...
+
+It is most important that the reader understand that the British used to
+change the year number on March 25th and not January 1st as we do today.
+On March 24, 1751 the next day would be March 25, 1752 advancing the year
+as usual.  But, a somewhat confusing phenomenon occurred, and for present
+day imaginations, comprehension requires close attention.
+
+1.  First, it was decreed that 1752 should end with December 31st and not
+be carried on to the next March 25th.
+
+2.  Second, it was also decreed that the arrival of September 2, 1752 should
+be called September 14, 1752.
+
+For the sake of clarity we explain; the period of January 1 - March 24,
+1751 was the end of an epoch.  The year of 1752 began on March 25th and
+ended with December 31 1752, thus the earlier days of 1752 never existed,
+as the deleted days of September 2-13 also never existed.  The year 1752
+was a very short year; 72 days shorter, in fact.
+
+Of course, dates may be recomputed from the old to the new calendars.
+For instance, George Washington's birthday was February 11, 1731 as far as
+his mother was concerned.  Today, we must reckon his birthday as February
+22, 1732 in consideration of the new calendar.  To put it in perspective,
+if we count backwards from today the actual number of days since G.W was
+born, we would come up with February 22, 1732 using the present-day calendar.
+
+To convert from the old Julian to the new Gregorian calendar, one must add
+10 to 13 days to the old date, and sometimes change the year one extra when
+the date considered falls within the period January 1 - March 24.  This is
+crucially important to those interested in genealogy and historical research.
+Documented dates before March 25, 1752 do not necessarily always corroborate
+a stated period of time.  And, references to any New Year's Day before 1752,
+in Great Britain, meant March 25th.
+
+END
+
+
+
+From "The World Almanac and Book of Facts 2004" ...
+
+BEGIN
+
+  The Julian calendar, under which all Western nations measured time until
+AD 1582, was authorized by Julius Caesar in 46 BC.  It called for a year of
+365 1/4 days, starting in January, with every fourth year being a leap year
+or 366 days.  St. Bede the Venerable, an Anglo-Saxon monk, announced in AD
+730 that the Julian year was 11 min. 14 sec too long, a cumulative error
+of about a day every 128 years, but nothing was done about this for centuries.
+  By 1582 the accumulated error was estimated at 10 days.  In that year
+Pope Gregory XIII decreed that the day following Oct. 4, 1582, should be
+called Oct. 15, thus dropping 10 days and initiating the Gregorian calendar.
+  The Gregorian calendar continued a system devised by the monk Dionysuis
+Exiguus (6th century), starting from the first year following the birth
+of Jesus Christ, which was inaccurately taken to be year 753 in the Roman
+calendar.  Leap years were continued but, to prevent further displacements,
+centesimal years (years ending in 00) were made common years, not leap years,
+unless divisible by 400.  Under this plan, 1600 and 200 are leap years
+(as is 2004); 1700, 1800, and 1900 are not.
+  The Gregorian calendar was adopted at once by France, Italy, Spain,
+Portugal, and Luxembourg.  Within 2 years most German Catholic states,
+Belgium, and parts of Switzerland and the Netherlands were brought under the
+new calendar, and Hungary followed in 1587.  The rest of the Netherlands,
+along with Denmark and the German Protestant states, made the change in
+1699-1700.
+  The British government adopted the Gregorian calendar and imposed it on
+all its possessions, including the American colonies, in 1752, decreeing
+that the day following Sept. 2, 1752, should be called Sept. 14, a loss of
+11 days.  All dates preceding were marked OS, for Old Style.  In addition,
+New Year's Day was moved to Jan. 1 from Mar. 25 (under the old reckoning,
+for example, Mar. 24, 1700, had been followed by Mar. 25, 1701).  Thus George
+Washington's birthdate, which was Feb. 11, 1731, OS, became Feb. 22, 1732,
+NS (New Style).  In 1755 Sweden also went Gregorian.
+  In 1793 the French revolutionary government adopted a calendar of 12
+months of 30 days with 5 extra days in September of each common year and
+a 6th every 4th year.  Napolean reinstated the Gregorian calendar in 1806.
+  The Gregorian system later spread to non-European regions, replacing
+traditional calendars at least for official purposes.  Japan in 1873, Egypt
+in 1875, China in 1912, and Turkey in 1925 made the change, usually in
+conjunction with political upheaval.  In China, the republican government
+began reckoning years from its 1911 founding.  After 1949, the People's
+Republic adopted the Common, or Christian Era, year count, even for the
+traditional lunar calendar, which is also retained.  In 1918 the Soviet
+Union decreed that the day after Jan. 31, 1918, OS, would be Feb. 14,
+1918, NS.  Greece changed over in 1923.  For the first time in history,
+all major nations had one calendar.  The Russian Orthodox church and some
+other Christian sects retained the Julian calendar.
+  To convert from the Julian to the Gregorian calendar, add 10 days to
+dates, Oct. 5, 1582, through Feb. 28, 1700; after that date add 11 days
+through Feb. 28, 1800; 12 days through Feb. 28, 1900; and 13 days through
+Feb. 28, 2100.
+  A century consists of 100 consecutive years.  The 1st century AD may
+be said to have run from the years 1 through 100.  The 20th century by
+this reckoning consisted of the years 1901 through 2000 and technically
+ended Dec. 31, 2000, as did the 2nd millenium AD.  The 21st century thus
+technically began Jan. 1, 2001.
+
+END
+
+
+
+A little more explanation concerning the calendar ...
+
+BEGIN
+
+From: hayesstw.spamless@yahoo.com (Steve Hayes)
+Subject: Re: April first, calendars and software...
+Date: Fri, 10 Oct 2003 05:40:03 GMT
+
+On Thu, 09 Oct 2003 22:37:48 -0400, Denis Beauregard <no@spam.com> wrote:
+
+>Is there some good explanation about the first day of the year
+>in England and France depending on the time period ?
+>
+>I was at a genealogy course tonite and the teacher said something
+>about that which is different of what I thought previously, so I
+>would like to know the truth.  
+>
+>For example, I thought the year begun the March 1st in old England,
+>until 1752 (ditto for USA).  I say that because genealogy softwares
+>generating a double year does so for records in January and February
+>until 1752.  But the teacher said that the beginning of the year, in 
+>England, was changed from April 1st to January 1st in 1669.
+>
+>Or is it that FTM is wrong in generating double year in January
+>and February only ?
+
+Before 1752 the year in England began on 25 March, which was the feast
+of the Annunciation in the Christian calendar. It was a logical starting
+place, because it was the hypothetical date on which Jesus was conceived,
+and then born 9 months later on 25 December. Whether it was the actual date
+or not is a moot point, but that is not really relevant to your question.
+
+In 1752 the beginning of the year was changed to 1 January (which came into
+effect on 1 Jan 1753), and Great Britain switched to the Gregorian Calendar
+for most purposes, so they dropped 11 days from the calendar.
+
+One purpose for which it did not switch was the fiscal year, because
+accountants are like that. They don't like changing the length of the
+financial year because it messes up their figures. So the financial year
+continued to begin on 25 March, Julian, which was 6 April, Gregorian,
+at least in 1753.
+
+That is why Brits still have to do their income tax on 6 April.
+
+Such was the conservatism of the accountancts that when the gap between
+Julian and Gregorian stretched to 12 days in 1800, they did not move to
+7 April, and when it stretched to 13 days in 190 they did not change the
+beginning of the fiscal year to 8 April. It did not change in 2000 because
+2000 is divisible by 400, so the gap is still 13 days.
+
+So the Brit tax inspectors are at least 200 years behing the times.
+
+Steve Hayes
+http://www.geocities.com/Athens/7734/stevesig.htm
+
+  Gregorian Calendar
+
+How do we keep track of time? When do we plant our crops, how do we know when
+to observe religious holidays? Societies need some way to keep track of time,
+and complex calendars (the word comes from the Roman term for the beginning of
+the month) were developed early in human history.  In agricultural societies
+the seasonal cycle of the Sun is crucial, but for shorter periods the lunar
+cycle suggests itself as well.  Historically the problem was that the year
+does not contain a whole number of days or months. The mean interval between
+successive vernal equinoxes (365.2424 days), is about 11 minutes less than
+365 1/4 days; the synodic period of the Moon (the time between successive
+full moons or new moons) is about 29 1/2 days, and thus 12 months add up to
+about 354 days. Constructing a calendar that incorporates both the movements
+of the Sun and Moon is therefore not a simple business. Various solutions
+have been tried.
+
+The Egyptian calendar was perhaps the simplest solution. The year was made
+up of twelve months of thirty days each, and five days were added at the
+end. Since this meant an error of about 1/4 day per year, the starting date
+of the year slowly drifted forward with respect to the seasons until after
+1460 years it had returned to where it started. The rising of the Nile,
+the crucial event in the Egyptian agricultural cycle, was predicted by the
+heliacal rising of Sirius,[1] <#fn0> the brightest star in the heavens. No
+attention was paid to the Moon.
+
+Most cultures in the ancient Near East relied on a calendar in which months
+had alternating lengths of 29 and 30 days and added a month about every
+third year. Thus, in ancient Israel the elders added an extra month of
+29 days every third year after the sixth month (Adar). But these 29 days
+would not make up entirely for the entire deficit of 3 x 11 1/4 days, and
+therefore in some years two extra months had to be added. In the Greek city
+states months were added haphazardly as needed and no consistent system of
+intercalation was ever developed.
+
+The most sophisticated system of keeping the motions of both the Sun and Moon
+harnessed in a single calendar was developed in Mesopotamia. By the Persian
+period, ca. 500, the system incorporated the so-called Metonic cycle (we name
+it after the Greek Meton, ca. 425 BCE) in which the following relationship
+is used: 19 solar years contain 6939 3/4 days; 110 months of 29 days plus 125
+months of 30 days add up to 6940 days. 19 years, then, contained 235 months,
+and starting in (on our calendar) 499 BC, the calendar in that part of the
+world was regulated on a cycle of intercalating 7 extra months in 19 years,
+as shown in the following scheme (in which a dash indicates a year of 12
+months and a VI or XII indicated a year in which a month was added after
+the sixth or twelfth month):**
+
+*- - XII - - XII - XII - - XII - - XII - - VI - XII*
+
+After a few irregularities, starting in 384 BCE, this scheme was rigorously
+adhered to, through the Greek and Roman conquests, until 75 CE, when
+cuneiform texts ceased.
+
+For convenience, the month was usually subdivided into smaller time
+periods. The Greeks divided the month into three periods of ten days,
+but a division of seven days was older and more common in the Near East.
+We find the seven-day week already in /Genesis/. The names that we assign
+to the days have their origin in the division of the day into 24 hours,
+which originated in Egypt. In the Hellenistic period (300 BCE - 100 BCE)
+it became common to assign a ruling planet (including the Sun and Moon)
+to each hour of the day. The common order of the wandering heavenly bodies
+was Saturn-Jupiter-Mars-Sun-Venus-Mercury-Moon. The first hour of the first
+day was assigned to the Sun, the second to Venus, the third to Mercury,
+etc., repeating the cycle in the order given above. The 24th hour was thus
+assigned to Mercury and the first hour of the second day to the Moon. Naming
+the days after the planets that rule their first hours, we thus arrive at the
+sequence Sun's day-Moon's day-Mars's day-Mercury's day-Jupiter's day-Venus's
+day-Saturn's day.[2] <#fn1> The modern English variations on these names
+are due to substituting Nordic or Saxon gods for some of the Roman names:
+Tiw for Mars, Wotan for Mercury, Thor for Jupiter, Frigg for Venus.
+
+Our civil method for reckoning time, then has a mixed origin. Our division
+of the hour into minutes and seconds is derived from the sexagesimal system
+of the Mesopotamians; the division of the day into 24 hours originated with
+the Egyptians; the seven-day week originated in the ancient Near East,
+while the names are derived from a Greek convention developed during the
+Hellenistic period. Our calendar is based on the motion of the Sun alone,
+but our various religious calendars are based on a combination of the motions
+of the Sun and Moon.  Our civil calendar derives from the Romans with some
+alterations. Its origin is described nicely in the "Calendar" article in
+the 11th edition of the /Encyclopedia Britannica/ (1910), which reads in part:
+
+    The civil calendar of all European [and American] countries has been
+    borrowed from that of the Romans. Romulus[3] <#fn2> is said to have
+    divided the year into ten months only, including in all 304 days, and
+    it is not very well known how the remaining days were disposed of. The
+    ancient Roman year commenced with March, as is indicated by the names
+    September, October, November, December, which the last four months
+    still retain. July and August, likewise, were anciently denominated
+    Quintillis and Sextillis, their present appellations having been bestowed
+    in compliment to Julius Caesar and Augustus. In the reign of Numa[4]
+    <#fn3> two months were added to the year, January at the beginning and
+    February at the end; and this arrangement continued till the year 452
+    BC., when the Decemvirs[5] <#fn4> changed the order of the months, and
+    placed February after January. The months now consisted of twenty-nine
+    and thirty days alternately, to correspond with the synodic revolution of
+    the moon [full moon to full moon], so that the year contained 354 days;
+    but a day was added to make the number odd, which was considered more
+    fortunate, and the year therefore consisted of 355 days. This differed
+    from the solar year by ten whole days and a fraction; but to restore
+    the coincidence, Numa ordered an additional or intercalary month to
+    be inserted every second year between the 23d and 24th of February,
+    consisting of twenty-two and twenty-three days alternately, so that
+    four years constituted 1465 days, and the mean length of the year was
+    consequently 366 1/4 days. The additional month was called /Mercedinus/ or
+    /Mercedonius/, from /merces/, wages, probably because the wages of workmen
+    and domestics were usually paid at this season of the year. According to
+    the above arrangement, the year was too long by one day, which rendered
+    another correction necessary. As the error amounted to twenty-four days
+    in as many years, it was ordered that every third period of eight years,
+    instead of containing four intercalary months, amounting in all to ninety
+    days, should contain only three of those months, consisting of twenty-two
+    days each. The mean length of the year was thus reduced to 365 1/4 days;
+    but it is not certain at what time the octennial periods, borrowed from
+    the Greeks, were introduced into the Roman calendar, or whether they
+    were at any time strictly followed. It does not even appear that the
+    length of the intercalary month was regulated by any certain principle,
+    for a discretionary power was left with the pontiffs,[6] <#fn5> to whom
+    the care of the calendar was committed, to intercalate more or fewer
+    days according as the year was found to differ more or less from the
+    celestial motions. This power was quickly abused to serve political
+    objects, and the calendar consequently thrown into confusion. By giving
+    a greater of less number of days to the intercalary month, the pontiffs
+    were enabled to prolong the term of a magistracy or hasten the annual
+    elections; and so little care had been taken to regulate the year,
+    that, at the time of Julius Caesar, the civil equinox differed from the
+    astronomical by three months, so that the winter months were carried
+    back into autumn and the autumnal into summer.
+
+    In order to put an end to the disorders arising from the negligence or
+    ignorance of the pontiffs, [Julius] Caesar abolished the use of the
+    lunar year and the intercalary month, and regulated the civil year
+    entirely by the sun. With the advice and assistance of Sosigenes,[7]
+    <#fn6> he fixed the mean length of the year at 365 1/4 days, and
+    decreed that every fourth year should have 366 days, the other years
+    having each 365. In order to restore the vernal equinox to the 25th
+    of March, the place it occupied in the time of Numa, he ordered two
+    extraordinary months to be inserted between November and December in
+    the current year, the first to consist of thirty three, and the second
+    of thirty-four days. The intercalary month of twenty-three days fell
+    into the year of course, so that the ancient year of 355 days received
+    an augmentation of ninety days; and the year on that occasion contained
+    in all 445 days. This was called the last year of confusion. The first
+    Julian year commenced with the 1st of January of the 46th before the
+    birth of Christ, and the 708th from the foundation of the city.
+
+    In the distribution of the days through the several months, Caesar
+    adopted a simpler and more commodious arrangement than that which
+    has since prevailed. He had ordered that the first, third, fifth,
+    seventh, ninth, and eleventh months, that is January, March, May,
+    July, September and November, should have each thirty-one days, and
+    the other months thirty, excepting February, which in common years
+    should have only twenty-nine day, but every fourth year thirty days.
+    This order was interrupted to gratify the vanity of Augustus, by giving
+    the month bearing his name as many days as July, which was named after
+    the first Caesar. A day was accordingly taken from February and given
+    to August; and in order that three months of thirty-one days might
+    not come together, September and November were reduced to thirty days,
+    and thirty-one given to October and December. For so frivolous a reason
+    was the regulation of Caesar abandoned, and a capricious arrangement
+    introduced, which it requires some attention to remember. [8]
+
+    The additional day which occurred every fourth year was given to February,
+    as being the shortest month, and was inserted in the calendar between
+    the 24th and 25th day. February having then twenty-nine days, the 25th
+    was the 6th of the calends of March, /sexto calendas/; the preceding,
+    which was the additional or intercalary day, was called /bis-sexto
+    calendas/,--hence the term /bissextile/, which is still employed to
+    distinguish the year of 366 days. The English denomination of /leap
+    year/ would have been more appropriate if that year had differed from
+    common years in /defect/, and contained only 364 days. In the modern
+    calendar the intercalary day is still added to February, not, however,
+    between the 24th and 25th, but as the 29th.
+
+    . . .
+
+    Although the Julian method of intercalation is perhaps the most
+    convenient that could be adopted, yet, as it supposes the year too long
+    by 11 minutes 14 seconds, it could not without correction very long
+    answer the purpose for which it was devised, namely, that of preserving
+    always the same interval of time between the commencement of the year
+    and the equinox. Sosigenes could scarcely fail to know that this year
+    was too long; for it had been shown long before, by the observations
+    of Hipparchus [ca. 125 BCE], that the excess of 3651/4 days above a
+    true solar year would amount to a day in 300 years. The real error is
+    indeed more than double of this, and amounts to a day in 128 years;
+    but in the time of Caesar the length of the year was an astronomical
+    element not very well determined. In the course of a few centuries,
+    however, the equinox sensibly retrograded towards the beginning of the
+    year. When the Julian calendar was introduced, the equinox fell on the
+    25th of March. At the time of the Council of Nicea, which was held in
+    325, it fell on the 21st . . . .
+
+The Julian Calendar was naturally adopted by the successor of the Roman
+Empire, Christian Europe with the Papacy at its head. By about 700 CE it
+had become customary to count years from the starting point of the birth
+of Christ (later corrected by *Johannes Kepler* <../People/kepler.html>
+to 4 BCE). But the equinox kept slipping backwards on the calendar one
+full day every 130 years. By 1500 the vernal equinox fell on the 10th or
+11th of March and the autumnal equinox on the 13th or 14th of September,
+and the situation was increasingly seen as a scandal. The most important
+feast day on the Christian calendar is Easter, when the suffering, death,
+and resurrection of Christ are celebrated. In the New Testament we find
+that Christ's crucifixion occurred in the week of Passover. On the Jewish
+calendar, Passover was celebrated at the full moon of the first month
+(Nissan) of spring. In developing their own calendar (4th century CE),
+Christians put Easter on the first Sunday after the first full moon after
+the spring equinox. If the equinox was wrong, then Easter was celebrated
+on the wrong day. Most other Christian observances (e.g., the beginning of
+Lent, Pentecost) are reckoned backward or forward from the date of Easter. An
+error in the equinox thus introduced numerous errors in the entire religious
+calendar. Something had to be done. After the unification of the Papacy in
+Rome, in the fifteenth century, Popes began to consider calendar reform. After
+several false starts, a commission under the leadership of the Jesuit
+mathematician and astronomer *Christoph Clavius <../People/clavius.html>*
+(1537-1612) succeeded. Several technical changes were instituted having to
+do with the calculation of Easter, but the main change was simple. In 1582
+Pope Gregory XIII (hence the name Gregorian Calendar) ordered ten days to
+be dropped from October, thus restoring the vernalequinox at least to an
+average of the 20th of March, close to what it had been at the time of
+the Council of Nicea. In order to correct for the loss of one day every
+130 years, the new calendar dropped three leap years every 400 years.
+Henceforth century years were leap years only if divisible by 400. 1600
+and 2000 are leap years; 1700, 1800 and 1900 are not.
+
+The new calendar, although controversial among technical astronomers,
+was promulgated from Rome and adopted immediately in Catholic countries.
+Protestant countries followed suit more slowly. Protestant regions
+in Germany, and the northern Netherlands adopted the calendar within
+decades. The English, always suspicious of Rome during this period, retained
+the Julian Calendar. Further, while others now began the new year uniformly
+on 1 January, the English began it on 25 March (an older custom). Now, for
+example, the date 11 February 1672 in England was 21 February 1673 on the
+Continent. After 1700 in which the Julian Calendar had a leap year but the
+Gregorian did not, the difference was eleven days. The English and their
+American colonies finally adopted the Gregorian Calendar in the middle of
+the eighteenth century. George Washington was born on 11 February on the
+Julian Calendar; we celebrate his birthday on 22 February.
+
+Note, finally, that the Gregorian Calendar is useless for astronomy because
+it has a ten-day hiatus in it. For the purpose of calculating positions
+backward in time, astronomers use the Julian Date.
+
+**
+
+------------------------------------------------------------------------
+* Notes*
+[1]The time of year when Sirius comes out of the rays of the Sun and is
+first visible on the eastern horizon at sunrise.
+[2]See Otto Neugebauer, /The Exact Science in Antiquity/, 2d ed.  (Providence:
+Brown University Press, 1957), pp. 82-86.
+[3]Legendary founder and first king of Rome, ca. 750 BC.
+[4]Numa Pompilius, second legendary king of Rome, ca. 700 BC.
+[5]/Decemviri/: any college of ten magistrates in ancient Rome. The most
+famous college was the /decemviri legibus scribendis/, or the "composers of
+the Twelve Tables," who ruled Rome absolutely for a few years around 450 BC.
+[6]Roman high priests.
+[7]A Greek astronomer and mathematician who flourished in the first century
+BC None of his writings have survived and we know about him only through the
+writings of Pliny (d. 79 AD). Pliny tells us that Sosigenes was consulted
+by Julius Caesar about the calendar /(Natural Histories/, xviii, 25).
+[8]Thirty days has September, April, June, and November . . .
+
+*Citation*/
+Gregorian Reform of the Calendar: Proceedings of the Vatican Conference
+to Commemorate its 400th Anniversary, 1582-1992/, ed. G. V. Coyne, M. A.
+Hoskin, and O. Pedersen (Vatican City: Pontifical Academy of Sciences,
+Specolo Vaticano, 1983). Jean Meeus and Denis Savoie, "The history of the
+tropical year," /Journal of the British Astronomical Association/, 102 #1
+(1992): 40-42
+
+------------------------------------------------------------------------
+ICONBAR (Graphic Browsers)
+<http://es.rice.edu/cgi-bin/imagemap/ES/humsoc/Galileo/Imap/iconbar.map>
+TEXT NAVIGATOR (Text Browsers) <../galileo_textnav.html>
+galileo@rice.edu <../HtmlTools/mailform.html>
+
+          Copyright ©1995 Albert Van Helden <../HtmlTools/cpnotice.html>
+
+END
+
+
+
+Newsgroups: alt.genealogy
+Subject: Re: Accurate old dates?
+Date: Mon, 15 Sep 2003 11:19:25 -0400
+
+BEGIN
+
+The story is complicated and the dates vary but In 1582 Pope Gregory XIII
+(hence the name Gregorian Calendar) ordered ten days to be dropped from
+October, thus restoring the vernalequinox at least to an average of the
+20th of March.
+
+This was slowly implemented over subsequent decades and the English and
+their colonies finally adopted it in 1752 being pretty much the last holdouts.
+
+http://es.rice.edu/ES/humsoc/Galileo/Things/gregorian_calendar.html
+Is a pretty good account of the story going way back :)
+
+BTW Tuesday was after the Norse god Tiw.
+
+    Title: Introduction and Adoption of the Gregorian Calendar in Europe
+    Author: Robert Wilde
+    Date: 2001
+
+European History
+The Gregorian Calendar
+
+Despite territorial, political and linguistic differences, Europe uses
+the same calendar. Wherever you are in the continent, the rest is either
+just entering, just leaving, or in the middle of, the same date. This
+dating system, used by Europe and the rest of the 'westernized' world, was
+introduced in 1582; it is the Gregorian Calendar. However, this uniformity
+is a modern luxury, and for most of the early modern and modern period
+Europe operated under several calendars which were weeks, and in the case
+of Ottoman territories years, apart. This is an account of the introduction,
+and adoption, of the Gregorian Calendar.
+
+Until 1582 Europe operated in the Julian Calendar, a system of dating which
+used a year of 365 days, with a 366th every four years. Unfortunately,
+the Julian calendar had a minor error: the average Julian year was 365
+days and 6 hours (the extra quarter being added in the leap years), while
+the actual solar year is 365 days, 5 hours, 48 minutes and 46 seconds, a
+difference of just over eleven minutes. (Please note: there is some debate
+among astronomers and other parties as to what actually constitutes the
+solar year, and these figures can vary by several seconds.) As a result,
+for every Julian year that passed the human calendar became increasingly
+out of synch with the natural solar cycle.
+
+Considered alongside a human lifespan, eleven minutes a year is almost
+irrelevant as it takes over a 130 years to gain a whole day. However, by 1582
+the Julian calendar had been in use for well over a millennia and a half, and
+Europe had become 12 days removed from the natural cycle. Seasons appeared
+earlier in the year, and the informal agricultural calendar - the time for
+ploughing, sowing and harvesting - was drifting apart from the original
+traditions. Twelve days may still seem small, especially given the varying
+onset of our seasons, but it was of great concern for the Catholic Church,
+whose calendar of festivals was being distorted. The date of Easter was
+heavily disputed throughout early Christian history, but the Church Council of
+Nicea attempted to standardize it in 325 AD. Adopting a compromise between the
+various divisions, Easter was to celebrated on the Sunday after the vernal
+(spring) Equinox, which in 325 AD was March 21st. However, because of the
+Julian calendar, the vernal equinox was occurring earlier and earlier in
+the calendar year, and March 21st was slowly shifting into summer.
+
+After a long tradition of concern for Easter's changing season, the process
+that led to the Gregorian calendar began during the office of Pope Paul III
+(1534 - 49), when he began to consult with astronomers to find an answer. He
+also initiated the Council of Trent (1545 - 63) which discussed matters
+relating to the whole Christian faith. This Council, in conjunction with
+Pope Pius V (1559 - 65), introduced changes to the lunar calendar and
+leap year system via a new Breviary and Missal. Consequently, when Pope
+Gregory XIII was elected in 1572, the problem was still as great as ever,
+but people were suggesting solutions already grounded in years of thought.
+
+Gregory established a commission to investigate, which was led by Christopher
+Clavius, one of the astronomers approached by Pope Paul III over twenty
+years earlier. Clavius built on the work of another astronomer, Luigi Lilio,
+and in 1582 Gregory issued a Papal Bull entitled Inter Gravissimas. This
+introduced the 'Calendar', which incorporated reforms to the old Julian system
+and made an immediate change to the existing date. Known as the 'New Style'
+(with the Julian referred to as the 'Old Style'), this calendar would later
+take the Pope's name - hence 'Gregorian'.
+
+A Latin transcription of the Inter Gravissimas can be found here, along
+with French and English translations. The reforms were:
+
+- Leap years were to occur every four years (a continuation of the existing
+custom), unless it was a centennial year. These were no longer automatically
+leap years; instead, centennial years followed the same pattern as normal
+years: every fourth centennial year was a leap year.
+
+Put simply, Gregory decreed that while 1600 was to remain a leap year,
+1700, 1800 and 1900 would not have any extra days, but following these three
+2000 would again be a leap year, and so on. These five dates, including our
+very recent 2000, were explicitly stated in the Inter Gravissimas. (Note:
+The Julian calendar merely had a leap year every four years. It was sheer
+coincidence that, once the Roman numerals were changed into numbers, the
+years were, and remained, divisible by four.)
+
+- The extra leap day was moved from within February itself to February 29th.
+
+- 10 days were dropped from the existing date: October 4th 1582 was followed
+by October 15, 1582.
+
+- The rules for the positioning of Easter were changed.
+
+- Contrary to many reports, the Bull made no mention of, or change to,
+the date of New Years day.
+
+Pope Gregory had intended to stabilize a changing calendar by reforming the
+frequency of leap years. These changes were not perfect, because the Gregorian
+Calendar remained slightly out of sync with the Solar year. However, the
+difference is less than thirty seconds and, depending on which calculation
+of the solar year you use, will only gain an extra day roughly every 3000
+or 10,000 years. Equally, Gregory's omission of ten days - instead of the
+twelve that had been lost under the Julian calendar - restored the vernal
+equinox to the 21st March; the date set by the Nicene Council. However,
+under this system the equinox varies between the 19th and the 22nd; this
+result was probably a compromise by Gregory and the astronomers.
+
+Gregory's Inter Gravissimas commanded all Christians to abolish the old
+methods and adopt his new provisions. The Bull also allowed for some
+difficulties, ordering distant areas to change in whichever year the news
+reached them. However, the European switch from Old Style to New Style was
+complicated by much more than geographic extent.
+
+The Pope is head of the Catholic Church, and has no authority over
+Protestants; indeed, in the 16th century many were actively opposed to
+'Popery'. Of the countries that immediately adopted Gregory's reforms all were
+officially Catholic. Italy, Poland and Portugal followed the Bull precisely,
+moving straight from the 4th to the 15th of October, while France, Belgium,
+Luxembourg and parts of the Netherlands and Switzerland converted later
+in the year. By 1585 many of the Catholic regions in Germany, Austria and
+the Czech/Slovak territories had also adopted the Gregorian calendar;
+Hungary followed in 1587. Conversely, the Protestant nations kept the
+Julian calendar, causing a division that lasted for over a century, while
+the Eastern Orthodox Church also rejected the New Style.
+
+Aside from Prussia, which moved from the 22nd August to the 2nd September
+in 1610, the next round of changes occurred during 1700/01, when Denmark
+(which then included Norway) and the remainder of Germany, Switzerland
+and the Netherlands became Gregorian. (One Swiss canton, St. Gallen,
+held out until 1724). However, these Protestant states continued to
+reject Gregory's rules for the determination of Easter until 1776. The
+next nation to convert was Britain in 1752, at which point another full
+Julian cycle had elapsed requiring the omission of an extra eleventh day:
+the 2nd September was followed by the 14th. This date also saw the calendar
+adopted throughout the British Empire: the lands later known as the USA
+had now become Gregorian. Sweden changed a year later, in 1753.
+
+At this point in history the Gregorian Calendar was still a Christian device,
+prompted by, and designed around, religious festivals. While western Europe
+was predominantly Christian, and now Gregorian, large parts of central and
+eastern Europe were under Muslim rule. Consequently, these countries had no
+intention, or over-riding religious need, to change. Although the Gregorian
+calendar slowly spread across the world during the 18th and 19th centuries,
+the situation in Europe remained static until 1912.
+
+As the Ottoman Empire slowly collapsed several countries followed their
+independence with a switch to the Gregorian calendar, including Albania in
+1912. However, the process that finally united the calendars of Europe was
+ignited by the 1st World War. Some countries were forced into accepting
+the reforms by an occupying army - these included Latvia and Lithuania -
+while others, notably Russia, switched in the aftermath of a revolution. The
+post-war division of the Ottoman Empire led to many of the Baltic countries
+adopting the Gregorian calendar, and Turkey itself followed at the end
+of 1926. Additionally, while the Eastern Orthodox Church has never fully
+accepted the calendar, it did introduce several changes during 1923 that
+brought them closer together.
+
+These were the years when each country officially adopted the Gregorian
+Calendar; in practice, many people within each state continued to use the
+Old Style for long after this. Some Protestants remained opposed to the
+reforms, but large numbers of people simply preferred the Julian method,
+which was too long-standing and ingrained for them to change. Unfortunately,
+there is no definitive list of the dates when each country changed. Although
+many of the adoptions are well recorded, such as those of France and Italy,
+the situation in some countries is more confused. In theory, a trawl through
+each nation's legislation would reveal the results, but the changing geography
+and political identities within Europe makes this a large task. Consequently,
+online charts and lists will normally give several possible dates for
+several countries, which include Bulgaria and Scotland.
+
+The Gregorian reforms of 1582 were never intended to unify the calendars
+of Europe, just those of the Christian nations. Indeed, the changes listed
+in Gregory's Bull may seem very slight, comprising of an alteration which
+only affected one year in a hundred, the loss of ten days and other minor
+clarifications. However, the Inter Gravissimas began a chain of events
+that are still ongoing in the world, over four hundred years later, and
+the Gregorian Calendar has ceased to be a primarily Christian institution.
+
+URL: http://www.tondering.dk/claus/calendar.html
+
+END
+
+
+
+Concerning the "double dates" (two years) used on documents prior to 1752 ...
+
+BEGIN
+
+From: Joseph Klett <Joseph.Klett@sos.state.nj.us>
+Date: Nov 29, 2006
+
+Without seeing the document, I (personally) would not assume that it is
+even 1687/88.  Eights are often mistaken in colonial scripts because of
+how they had to be scribed; however, usually it's a case where an eight is
+misread as another number, not vice versa.
+
+Since John describes this as "8/7" and not the reverse, this rendering
+would be an anomaly for 1688/87--though still plausible since, as Mr.
+Siskin points out, the year might have been written first as 1688 (based
+on popular practice) and then "/7" added to clarify the legal date.
+
+It is important to retain these references in dates in historical
+transcriptions, and whenever practical in historical writing, because when
+the first or second year is dropped (as in Mr. Siskin's statement that
+"The date is March 17, 1688"), another researcher could interpret it as
+meaning 1688/89 since the legal date March 17, 1688 would mean 1688/89
+based on our present use of the calendar. And then the year can shift by
+one in historical writings, as I have seen happen.
+
+In journals and record books where documents were entered/dated
+chronologically, you will see, say, February/March 1687 followed by April
+1688. Often in loose documents, however, there is no corroboration of the
+year and so, if only one year is written for dates in Jan-Mar (in English
+documents prior to 1752), it should usually be assumed that the reference
+is to the last months of the (previous) legal year, not the first months
+of the (new) calendar year as we know it.
+
+This is obviously important for archivists, genealogists and historian
+to understand as it has direct bearing on establishing the chronology
+of events, etc. I won't name names, but two humorous, though initially
+perplexing examples, come to mind. Both cases involved references made by
+persons charged with interpreting historical documents, but unfamiliar with
+or mislead by "double-dating" and the old, English legal calendar.  In one
+case, a caption fabricated a story relating to how the parties involved in
+a major land transaction anticipated, many months prior, that an agreement
+would be reached on a certain date in the future (the document was dated
+in Jan-Mar and the agreement referenced had occurred in the previous,
+though seemingly upcoming, fall). In the other case, a genealogy of German
+families (done by an American) added double-years for dates from the 16th-
+and 17th centuries based on the fact that English did this till 1752.
+
+It's also important to remember, too, that in Quaker documents, the references
+to 1st through 12th Mo. instead of the months' names are tied to what was
+considered the legal year at the time--to which Quakers generally adhered
+religiously in their records.  So before 1753, I believe, "2nd Mo." means
+April, while after that it means February.
+
+Joe Klett
+NJ State Archives
+
+END
+
+
+
+from NGS Monthly
+Feb 2020
+
+BEGIN
+
+The Creation of Leap Year and Its Effects on Genealogy
+Aaron Goodwin
+
+This Saturday is February 29th, a relatively uncommon occurrence as days
+go. It's a leap day in a leap year. Unless you're like Dinah Shore, Tony
+Robbins, or Ja Rule, all of whom share a birthday that day, you may not
+even notice. For the rest of us, it's a subtle reminder that calendars
+change. For genealogists in particular, it reminds us that subtle changes
+in calendars require our attention in researching key times and places.
+
+Our calendar, and the most commonly used calendar in the world, is the
+Gregorian calendar, named after Pope Gregory XIII who commissioned it in
+1582. In order to best understand the Gregorian calendar and its significance,
+however, we need to first understand its predecessor, the Julian calendar,
+and its accomplishments.
+
+Among the world's earliest calendars, many were lunar, which determined
+the length of year by tracking the position of the Moon. Lunar calendars
+differed from solar calendars, which determined the length of a year by
+tracking the position of the Earth relative to the Sun. The difference
+between a lunar year measured by Moon phases and a solar year measured by
+Earth's orbit around the Sun is about 11 minutes.
+
+Later calendars attempted to account for the 11-minute difference and its
+accumulated effects by periodically adjusting themselves to synchronize the
+two measurements. In these cases, the occasional months added are referred
+to as intercalary or interstitial months. The calendars that employed these
+methods are referred to as lunisolar.
+
+Prior to the reign of Julius Caesar, the Roman calendar was lunisolar,
+but was also complicated at best. Early Roman calendars consisted of ten
+months with a vaguely defined winter period. Over time, this winter period
+was replaced by the two additional months of January and February. The
+calendar, however, was still problematic as it had become completely
+unconnected to the solar year. One solution was to develop a thirteenth,
+intercalary month of 23 days called Mercedonius, which was inserted within
+the month of February. That solution, however, was politicized as Roman
+consuls determined when and for how long to hold Mercedonius, adjusting
+the calendar to fit their political needs.
+
+To standardize the Roman calendar, Julius Caesar turned to the Egyptian
+calendar, which consisted of 365 days. To keep the calendar attached
+to the Sun (a solar year is 365.2421 days), Egyptian astronomers
+inserted an intercalary month from time to time. Ceasar and the Egyptian
+philosopher Sosigenes of Alexandria combined forces to adapt the calendar
+slightly. Instead of depending on astronomers to determine when an intercalary
+month should be inserted, they simply added one day every fourth year,
+which was added to the end of February. With these parameters the Julian
+calendar was introduced by edict and began 1 January 45 BCE.
+
+For all its improvements, the Julian calendar was still slightly longer
+than the solar year. Over the centuries the slight inaccuracy compounded
+until the calendar was ten days behind by the beginning of the 16th
+century. Pope Gregory XIII sought to improve the accuracy by making two
+key adjustments. First, he updated the calendar by removing ten days from
+October 1582. Second, he determined that leap years (generally every four
+years) should not be counted in centennial years that are not divisible by
+four. So the years 1700, 1800, and 1900 were not leap years, but 2000 was.
+
+As with the Julian calendar, the Gregorian calendar was adopted over
+time by most of the Western world. But the adoption wasn't automatic or
+universal. Protestant German states, for example, didn't adopt it until 1700,
+nor did Great Britain until 1752.
+
+A key feature of the Gregorian calendar was that the year began on 1 January,
+just as the original Julian calendar had. While most of Europe and its
+colonies elsewhere adopted the calendar, the start of the year varied by
+location and period. In England, the new year was either 25 March or 25
+December until shortly after the Norman Conquest in 1066. Between 1087 and
+1155, it was 1 January. Then from 1155 until 1752, England's year began
+25 March. Finally, from 1752 until the present, the Gregorian calendar
+was adopted, and New Year's Day was once again January 1st. Each European
+country has a different history for its New Year's Day.
+
+Genealogists researching in England, its territories, or former territories
+don't need special knowledge of calendrical history if they're researching
+after 1752. But researchers of colonial America, for example, do need to
+be aware of some of these details. English colonies in the Americas used
+25 March as the beginning of the calendar year until 1752. That means that
+dates written on documents need to be considered and recorded thoughtfully.
+
+A twin born in colonial America late on the evening of 24 March 1741 may be
+followed just a few minutes later by the birth of a sibling in the early
+morning hours of 25 March 1742. Unless one is familiar with the Gregorian
+calendar and its adoption by the British, one might think they were born a
+year apart. When we record these two births, we clarify the situation by
+adding a bracketed slash and the Gregorian year (e.g. 24 March 1741[/2]
+and 25 March 1742). The brackets signal to the reader the fact that the
+researcher has added the clarification based on her knowledge of the calendar
+in use in the time and place she's researching.
+
+If you're researching people of the English colonies, the details given here
+should suffice in preparing you to understand dates as they're written. But
+if you're researching Spanish, French, or Dutch colonies, for instance,
+you'll need to conduct additional research to understand when the Gregorian
+calendar was adopted locally and how dates were recorded.
+
+For more details about the Julian and Gregorian calendars, New Year's Days,
+and other world calendars, see, for example, "General Chronology," New Advent
+(http://www.newadvent.org/cathen/03738a.htm : accessed 27 February 2020),
+especially the sections titled "Beginning of the Year," "The Gregorian
+Reform," and "Julian Period." For more details about Leap Day, see,
+for example, Stephen Wood, "5 Things You May Not Know About Leap Day,"
+History (https://www.history.com/news/why-do-we-have-leap-year : accessed
+26 February 2020).
+
+END
+
+
+
+from https://www.newadvent.org/cathen/03738a.htm
+
+BEGIN
+
+General Chronology
+
+    CHRISTIAN ERA
+    PRE-CHRISTIAN CHRONOLOGY
+    REGNAL YEARS
+    INDICTIONS
+    BEGINNING OF THE YEAR
+    THE GREGORIAN REFORM
+    JULIAN PERIOD
+    OTHER ERAS
+    DAYS OF THE MONTH AND WEEK
+    THE CENTURY 
+
+Chronology (Greek chronos time, logos, discourse), the science of
+time-measurement, has two branches:
+
+    Mathematical Chronology, which determines the units to be employed in
+    measuring time, and
+    Historical Chronology, of which we here treat, and which fixes in the
+    general course of time the position of any particular occurrence, or,
+    as it is generally termed, its date.
+
+It is thus for history what latitude and longitude are for geography. The
+first requisite in any system of historical chronology is an era, that
+is to say a fixed point of time, the distance from which shall indicate
+the position of all others. The term era, the derivation of which is not
+certainly known, appears first to have been employed in France and Spain to
+signify a number or rule. Since the need of a definite system of chronology
+was first recognized by mankind, many and various eras have been employed at
+different periods and by different nations. For practical purposes it is most
+important to understand those which affect Christian history.
+
+Christian era
+
+Foremost among these is that which is now adopted by all civilized peoples
+and known as the Christian, Vulgar, or Common Era, in the twentieth
+century of which we are now living. This was introduced about the year
+527 by Dionysius Exiguus, a Scythian monk resident at Rome, who fixed its
+starting point in the year 753 from the foundation of Rome, in which year,
+according to his calculation, the birth of Christ occurred. Making this the
+year 1 of his era, he counted the years which followed in regular course
+from it, calling them years "of the Lord", and we now designate such a date
+A.D. (i.e. Anno Domini). The year preceding A.D. 1 is called Ante Christum
+(A.C.) or Before Christ (B.C.). It is to be noted that there is no year 0
+intervening, as some have imagined, between B.C. and A.D. It is supposed
+by many that the calculation of Dionysius was incorrect, and that the birth
+of Christ really occurred three years earlier than he placed it, or in the
+year of Rome 750 which he styles 3 B.C. This, however, is immaterial for the
+purposes of chronology, the first year of the Christian Era being that fixed,
+rightly or wrongly, by Dionysius. His system was adopted but gradually,
+first in Italy, then in other parts of Christendom. England would appear
+to have been among the earliest regions to have made use of it, under the
+influence of the Roman missioners, as it is found in Saxon charters of the
+seventh century. In Gaul it made its appearance only in the eighth, and its
+use did not become general in Europe until after A.D. 1000; accordingly in
+French the term millésime was frequently used to signify a date A.D. In
+Spain, although not unknown as early as the seventh century, the use of
+the Christian Era, as will presently be shown, did not become general until
+after the middle of the fourteenth century.
+
+Pre-Christian chronology
+
+Of the chronological systems previously in use it will be sufficient to
+briefly describe a few.
+
+The Greeks dated events by Olympiads, or periods of four years intervening
+between successive celebrations of the Olympic games, and this mode of
+computation, having been largely adopted at Rome, continued to be frequently
+used in the first centuries of Christianity. The Olympiads started from
+776 B.C., and consequently A.D. 1 was the fourth year of the 194th Olympiad.
+
+The Romans frequently reckoned from the traditional foundation of their city
+(ab urbe conditâ--A.U.C.), which date, as has been said, coincided with 753
+B.C. They likewise often designated years by the names of the consuls then
+in office (e.g. console Planco). Sometimes the Romans dated by post-consular
+years (i.e. so long after the consulate of a well-known man). Naturally
+the regnal years of Roman emperors presently supplanted those of consuls,
+whose power in later times was merely nominal, and from the emperors this
+method of describing dates was imitated by popes, kings, and other rulers,
+with or without the addition of the year A.D. It became in fact universal
+in the Middle Ages, and it subsists in documents, both ecclesiastical and
+civil, down to our own day.
+
+Regnal years
+
+The pontifical years of the popes are historically important (see
+chronological list in article POPE). Care must be taken, of course,
+in the case of such dates, to observe from what point of time each
+reign is reckoned. In an elective monarchy like the papacy there is
+necessarily an interval between successive reigns, which is occasionally
+considerable. Moreover, the reckoning is sometimes from the election of a
+pontiff, sometimes from his coronation.
+
+In determining dates by the regnal years of other sovereigns there are of
+course various points to which attention must be paid. Confining ourselves
+to English history, the earlier kings after the Norman Conquest dated
+their reigns only from their coronation, or some other public exhibition of
+sovereignty, so that there was sometimes an interval of days or even weeks
+between the close of one reign and the commencement of the next. Only from
+the accession of Richard II (22 June, 1377) was the reign of a monarch held
+to begin with the death or deposition of his predecessor. Even subsequently
+to this it was reckoned sometimes from the day itself upon which the preceding
+monarch ceased to reign, sometimes from the day following. Not till the first
+year of Queen Elizabeth was it enacted that the former should be the rule. In
+certain particular instances the matter was still further complicated. King
+John dated his reign from his coronation, 27 May, 1199, but this being
+the Feast of the Ascension, his years were counted from one occurrence of
+this festival to the next, and were accordingly of varying length. Edward
+I dated from noon, 20 November, 1272, and in consequence this day in each
+year of his reign was partly in one regnal year and partly in another. In
+the civil wars of York and Lancaster, Henry VI and Edward IV equally
+ignored the period during which his rival assumed or recovered power, and
+counted their years continuously onwards from the time when they mounted the
+throne. Charles II, though he began to reign de facto only at the Restoration
+(29 May, 1660), reckoned his years, de jure, from his father's execution,
+30 January, 1648-9, ignoring the Commonwealth and Protectorate. Queen Mary
+Tudor reckoned her reign from the death of Edward VI, 6 July, 1553, but
+the interval until 19 July of the same year being occupied by the abortive
+reign of Lady Jane Grey, public documents in her name commence only with
+the latter date. William III and Mary II began to reign 13 Feb., 1688-9, as
+"William and Mary". Mary died 28 December, 1694, when the style was altered
+to "William" alone; but no change was made in the computation of regnal
+years. Within the year, it was long usual to specify dates by reference
+to some well-known feast in the ecclesiastical calendar, as, for instance,
+"the Friday before Pentecost" or "the day of St. John the Baptist".
+
+Indictions
+
+In papal and other documents, another epoch is often added, namely, the
+Indiction. This had originally been a period of fifteen years, at the
+close of which the financial accounts of the Roman Empire were balanced;
+but for purposes of chronology the indictions are conventional periods
+of fifteen years, the first of which began in the reign of Constantine the
+Great. Unlike the Olympiads, the indictions themselves were not numbered, but
+only the place of a year in the indiction in which it fell. Thus indictione
+quartâ; signifies not "in the fourth indiction", but "in the fourth year
+of its indiction", whatever this was. It was obvious that such an element
+of computation could serve only to verify more precisely the date of a year
+already approximately known. Moreover, the indictions were calculated on
+different systems, which have to be understood and distinguished:
+
+    The Greek, Constantinian, or Constantinopolitan Indictions were reckoned
+    from 1 September, 312. These were chiefly used in the East.
+
+    The Imperial, Cæsarean, or Western Indictions commenced with 24
+    September, 312. These were usually adopted in Western Christendom. They
+    appear to have been of Anglo-Saxon origin, and to have owed their
+    popularity to the authority of the Venerable Bede. The day he chose
+    for the starting point was due to an erroneous astronomical calculation
+    which made the autumnal equinox fall on 24 September. Further confusion
+    was caused by the mistake of some chroniclers who wrongly began the
+    indictional cycle a year late--24 September, 313.
+
+    The Roman, Papal, or Pontifical Indictions, introduced in the ninth
+    century, made the series start from the first day of the civil year,
+    which was in some cases 25 December, in others 1 January. This system
+    was also common in Western Christendom, but in spite of its appellation
+    it was by no means exclusively used in papal documents.
+
+Beginning of the year
+
+The date at which the year commenced varied at different periods and in
+different countries. When Julius Caesar reformed the calendar (45 B.C.) he
+fixed 1 January as New Year's Day, a character which it seems never quite to
+have lost, even among those who for civil and legal purposes chose another
+starting point. The most common of such starting points were 25 March (Feast
+of the Annunciation, "Style of the Incarnation") and 25 December (Christmas
+Day, "Style of the Nativity"). In England before the Norman Conquest (1066)
+the year began either on 25 March or 25 December; from 1087 to 1155 on 1
+January; and from 1155 till the reform of the calendar in 1752 on 25 March,
+so that 24 March was the last day of one year, and 25 March the first day
+of the next. But though the legal year was thus reckoned, it is clear
+that 1 January was commonly spoken of as New Year's Day. In Scotland,
+from 1 January, 1600, the beginning of the year was reckoned from that
+day. In France the year was variously reckoned: from Christmas Day, from
+Easter eve, or from 25 March. Of all starting points a movable feast like
+Easter is obviously the worst. From 1564 the year was reckoned in France
+from 1 January to 31 December. In Germany the reckoning was anciently from
+Christmas, but in 1544 and onwards, from 1 January to 31 December. In Rome
+and a great part of Italy, it was from 25 December, until Pope Gregory XIII
+reformed the calendar (1582) and fixed 1 January as the first day of the
+year. The years, however, according to which papal Bulls are dated still
+commence with Christmas Day. Spain, with Portugal and Southern France,
+observed an era of its own long after the rest of Christendom had adopted
+that of Dionysius. This era of Spain or of the Cæsars, commenced with
+1 January, 38 B.C., and remained in force in the Kingdom of Castile and
+Leon till A.D. 1383, when a royal edict commanded the substitution of the
+Christian Era. In Portugal the change was not made till 1422. No satisfactory
+explanation has been found of the date from which this era started.
+
+The Gregorian reform
+
+The introduction of the Gregorian Calendar entailed various discrepancies
+between the dates which different people assigned to the same events. The
+Julian system of time-measurements, introduced by Cæsar, was not sufficiently
+accurate, as it made the year slightly too long, with the result that by the
+sixteenth century it had fallen ten days in arrear, so that, for instance,
+the day of the vernal equinox, which should have been called 21 March, was
+called 11 March. To remedy this, besides substituting an improved system
+which should prevent the error from operating in future, it was necessary to
+omit ten full days in order to bring things back to the proper point. Pope
+Gregory XIII, who introduced the reformed system, or "New Style", ordained
+that ten days in October, 1582, should not be counted, the fourth of that
+month being immediately followed by the fifteenth. He moreover determined
+that the year should begin with 1 January, and in order to prevent the Julian
+error from causing retardation in the future as in the past, he ruled that
+three leap years should be omitted in every four centuries, viz. those of
+the centennial years the first two figures of which are not exact multiples
+of four, as 1700, 1800, 1900, 2100, etc. The New Style (N.S.) was speedily
+adopted by Catholic States, but for a long time the Protestant States
+retained the Old (O.S.), from which there followed important differences
+in marking dates according as one or other style was followed. In the
+first place there was the original difference of ten days between them,
+increased to eleven by the O.S. 29 February in A.D. 1700, to twelve days
+in 1800, and to thirteen in 1900. Moreover, the period from 1 January to
+24 March inclusive, which was the commencement of the year according to
+N.S., according to O.S. was the conclusion of the year previous. From want
+of attention to this, important events have sometimes been misquoted by a
+year. In illustration may be considered the death of Queen Elizabeth. This
+occurred in what was then styled in England 24 March 1602, being the last
+day of that year. In France and wherever the N.S. prevailed, this day was
+described as 3 April, 1603. To avoid all possible ambiguity such dates are
+frequently expressed in fractional form as 24 March/3 April, 1602/3. In
+our modern histories years are always given according to N.S., but dates
+are otherwise left as they were originally recorded. Thus Queen Elizabeth
+is said to have died 24 March, 1603. Not till 1700 was the Gregorian reform
+accepted by the Protestant States of Germany and the Low Countries, and not
+till 1752 by Great Britain, there being by that time a difference of eleven
+days between O.S. and N.S. Sweden, after some strange vacillation, followed
+suit in 1753. O.S. was still followed by Russia and other Eastern Orthodox
+countries well into the twentieth century, and their dates consequently
+were thirteen days behind those of the rest of Christendom.
+
+Julian period
+
+The Christian Era has this disadvantage for chronological purposes, that dates
+have to be reckoned backwards or forwards according as they are B.C. or A.D.,
+whereas in an ideally perfect system all events would be reckoned in one
+sequence. The difficulty was to find a starting point whence to reckon,
+for the beginnings of history in which this should naturally be placed
+are those of which chronologically we know least. At one period it was
+attempted to date from the Creation (A.M. or Anno Mundi), that event being
+placed by Christian chronologists, such as Archbishop Usher, in 4004 B.C.,
+and by the Jews in 3761 B.C. But any attempt thus to determine the age of
+the world has been long since abandoned. In the year 1583, however--that
+following the Gregorian reform--Joseph Justus Scaliger introduced a basis
+of calculation which to a large extent served the purpose required,
+and, according to Sir John Herschel, first introduced light and order
+into chronology. This was the Julian Period--one of 7980 Julian years,
+i.e. years of which every fourth one contains 366 days. The same number of
+Gregorian years would contain 60 days less. For historians these commence
+with the midnight preceding 1 January, 4713 B.C., for astronomers with the
+following noon. The period 7980 was obtained by multiplying together 28,
+19, and 15, being respectively the number of years in the Solar Cycles
+the Lunar Cycle, and the Roman Indiction, and the year 4713 B.C. was that
+for which the number of each of these subordinate cycles equals 1. The
+astronomical day is reckoned from noon to noon instead of from midnight to
+midnight. Scaliger calculated his period for the meridian of Alexandria to
+which Ptolemy had referred his calculation.
+
+Other eras
+
+Various eras employed by historians and chroniclers may be briefly mentioned,
+with the dates from which they were computed.
+
+    The Chinese Era dates probably from 2700 B.C., and time is computed by
+      cycles of sixty lunar years, each shorter by eleven days than ordinary
+      solar years.
+    Era of Abraham, from 1 October, 2016 B.C.
+    Era of the Olympiads, 13 July, 776 B.C., and continued to A.D. 396
+      (Olympiad 293).
+    Era of the Foundation of Rome, 21 April, 753 B.C.
+    Era of Nabonassar, 26 February, 747, the basis of all calculations
+      of Ptolemy.
+    Era of Alexander, 12 November, 324 B.C.
+    Greek Era of Seleucus, 1 September, 312 B.C.
+    Era of Tyre, 19 October, 125 B.C.
+    Cæsarian Era of Antioch, 9 August, 48 B.C., instituted to commemorate
+      the battle of Pharsalia.
+    Julian Era, 1 January, 45 B.C., instituted on the Julian reformation
+      of the calendar.
+    Era of Spain or of the Cæsars, 1 January, 38 B.C.
+    Era of Augustus, 2 September, 31 B.C., instituted to commemorate the
+      Battle of Actium.
+    Egyptian Year, 29 August, 26 B.C., instituted on the reformation of
+      the Egyptian calendar by Augustus.
+    Era of Martyrs or of Diocletian, 29 August, A.D. 284, employed by
+      Eusebius and early ecclesiastical writers.
+    Era of the Armenians, 9 July A.D. 552, commemorates the consummation of
+      the Armenian schism by their condemnation of the Council of Chalcedon.
+    Era of the Hegira, 16 July, A.D. 622, dates from the entrance of Mohammed
+      into Medina after his flight from Mecca; its years are lunar, of 354
+      days each, except in intercalary years, of which there are eleven in
+      each cycle of thirty. In these there are 355 days.
+    Persian Era of Yezdegird III, 16 June, A.D. 632. 
+
+At the French Revolution it was determined to introduce an entirely new
+system of chronology, dating from that event and having no affinity with
+any previously adopted. In the first form this was the Era of Liberty,
+commencing 1 January, 1789. This was soon replaced by the Republican Era,
+at first appointed to commence 1 January, 1792, and afterwards 22 September,
+1792. This was the date of the proclamation of the Republic, which coincided
+with the autumnal equinox, calculated on the meridian of Paris. The year was
+divided into twelve months of thirty days each, and the days into decades,
+weeks being abolished. The months had names given to them according to
+their seasonal character.
+
+    The autumnal months (22 Sept. onwards) were Vendémiaire (Vintage),
+      Brumaire (Foggy), Frimaire (Sleety).
+    Winter Months: Nivose (Snowy), Pluviose (Rainy), Ventose (Blowy).
+    Spring Months: Germinal (Budding), Floréal (Flowery), Prairial (Meadowy).
+    Summer Months: Messidor (Harvesting), Thermidor (Torrid), Fructidor
+      (Fruitful).
+
+As these months contained only 360 days, five jours complémentaires were
+added at the end of Fructidor, officially called Primidi, Duodi, Tridi,
+Quartidi, Quintidi, but commonly known as Sans-culottides. Olympic or
+leap years occurred every fourth year of the Republic, and had a sixth
+intermediary day called Sextidi. The period thus terminated was called
+Franciade. This calendar was enforced in France till 1 January, 1806, when
+it was abolished by Napoleon, and the use of the Gregorian calendar resumed.
+
+Days of the month and week
+
+Various methods have been devised for ascertaining upon what day of the week
+any given date falls. The best known is that of Dominical Letters, which
+has this disadvantage, that a table is usually required to find out what
+is the Dominical Letter for the year in question. Complication is likewise
+caused by the necessity of passing from one letter to another in leap years,
+on reaching the intercalary day in February. The following method is free
+from these inconveniences, and can be worked without any reference to tables:
+
+The days of the week are numbered according to their natural order,
+viz. Sunday=1, Monday=2, Tuesday=3, Wednesday=4, Thursday=5, Friday=6,
+Saturday=7. (At the time from which the Christian Era starts there were of
+course no weeks, such a measure of time not being known among the Greeks
+and Romans. Counting backwards, however, according to our present system, we
+can divide all time into weeks, and it is to be noted that in the Christian
+period the order of days of the week has never been interrupted. Thus,
+when Gregory XIII reformed the Calendar, in 1582, Thursday, 4 October,
+was followed by Friday, 15 October. So in England, in 1752, Wednesday, 2
+September, was followed by Thursday, 14 September. What we style 14 August,
+1907, the Russians style 1 August, but both call it Wednesday.) For our
+present purpose the year commences with March; January and February being
+reckoned as the 11th and 12th months of the preceding year; thus 29 February,
+when it occurs, is the last day of the year and causes no further disturbance.
+
+As a matter of fact, it is found by computation that 1 March of the year
+known as A.D. 1 was a Tuesday. Assigning to this year the figure 1 as its
+year number, to March the figure 1 as its month number, and adding these to
+1, the day number of 1 March, we get 3, indicating Tuesday the third day of
+the weeks. From this first datum all the rest follows. The succeeding days
+of March increase their figures each by 1, on account of the increased day
+number. When 7 is passed it is only the figures which remain, after division
+by that number, which are to be considered; thus 11 may be treated as 4 (7+4)
+and 30 as 2 (28+2). In general, any exact multiple of 7 (14, 21, 28) may be
+added or subtracted when convenient without affecting the result. Instead
+of adding any number (e.g. 1 or 4) we may subtract its difference from 7 or
+a multiple of 7 (e.g. 6 or 3). The remainder 0 in a division is equivalent
+to 7, and thus in calculating for the day of the week it signifies Saturday.
+
+As the days of the leading month, so those of the months preceding it follow
+naturally. As March contains 31 days (i.e. 28+3), April necessarily begins
+with a day 3 places later in the weekly sequence, and its month number instead
+of 1 is 4. So of other months, according to the number of days in that which
+preceded. The following are the month numbers throughout the year which never
+change:--March 1; April 4; May 6; June 2; July 4; August 0; September 3;
+October 5; November 1; December 3; January 6; February 2. A.D. 1, being a
+common year of 365 days (or 52 weeks+1 day), ends with the same day of the
+week--Tuesday--with which it commenced. Consequently the next year, A.D. 2,
+commences a day later, with Wednesday for 1 March, and as its year number
+is increased to 2, we get 2+1+1=4. So in A.D. 3, the year number becomes 3,
+and 1 March is Thursday. But on account of 29 February preceding 1 March,
+A.D. 4, this day falls 366 days (or 52 weeks+2 days) after 1 March, A.D. 3,
+or on Saturday, and its year number must be increased to 5; 5+1+1=7. Thus, to
+find the number belonging to any year within its own century, we must find how
+many days beyond an exact number of weeks there have been since that century
+commenced. As every common year contains one day more than fifty-two weeks,
+and every leap year two days more, by adding at any period the number of leap
+years which there have been in the century to the total number of years in
+the same, we obtain the number of days required. To obtain the number of
+leap years, we divide the last two figures of the date (i.e. those in the
+tens and units place) by four. The quotient (neglecting any remainder) shows
+the number of leap years; which, added to the same two figures, gives the
+number of days over and above the sets of fifty-two weeks which the years
+contain. Thus, for example, the year '39 of any century (939, 1539, 1839,
+1939) will have 6 for its year number; for in such year 48 extra days will
+have accumulated since the corresponding day of the centurial year (00),
+viz. 1 day for each of the 30 common years, and 18 days for the 9 leap years.
+
+The century
+
+One more element of calculation remains to be considered - the Century. We
+begin with the Julian system, or Old Style (O.S.)--according to which all
+centuries contain 75 common years of 365 days, and 25 leap years of 366,
+and accordingly 125 days in all, over and above 5200 weeks. But 125 days=17
+weeks+6 days. Therefore a Julian century ends with the day of the week two
+days previous to that with which if began, and the succeeding century will
+begin with the day of the week, one day earlier than its predecessor. Thus,
+A.D. 1 March, 1300, being Tuesday, in 1400 it would be Monday, in 1500 Sunday,
+in 1600 Saturday. Having obtained the centurial number for any century, we
+add to it the year numbers of the years which follow to the close of that
+century. Centurial numbers O.S. are obtained by subtracting the centurial
+figure or figures (viz. those preceding 00) from the multiple of 7 next
+above, the remainder being the number required. Thus for A.D. 1100 the
+centurial number is 3 (14-11), for 1500, 6 (21-15), for 1900, 2 (21-19).
+
+Under the N.S. three centuries in every four contain 76 common years and 24
+leap years, and thus have only 124 days over 5200 weeks, or 17 weeks and 5
+days, and end with the day of the week three earlier than they began. The
+following century, beginning two days earlier than that which it follows,
+has its centurial number less by 2. Thus 1 March, A.D. 1700, was Monday,
+and the centurial number 0 (or 7). 1 March, 1800, was Saturday, and the
+centurial number 5. Every fourth centurial year N.S., being a leap year
+(1600, 2000, 2400, etc.), has 366 days; and the century to which it belongs,
+like those of the O.S., diminishes its centurial number only by 1 from the
+preceding. N.S. having been introduced in the sixteenth century, it is only
+for dates 15-- and upwards that N.S. centurial numbers are required. They
+are as follows: for 1500=3; 1600=2; 1700=7; 1800=5; 1900=3; 2000=2. It will
+be seen that the same figures constantly recur. Leap year centuries (with
+the first two figures exactly divisible by 4) having the centurial number 2,
+and the three centuries following having 7 (or 0), 5, and 3 respectively,
+after which 2 comes round again. The centurial number N.S. can be obtained
+from that of O.S. if the difference of days between O.S. and N.S. be
+allowed for. This is done by subtracting the said difference from the
+O.S. centurial number, increased by as many times 7 as the subtraction
+requires. As we have seen, for the sixteenth and seventeenth centuries,
+the difference was 10 days; for the eighteenth, 11; for the nineteenth,
+12; for the twentieth and twenty-first, 13. Thus:
+
+A.D. 1500 etc. 	C. N. (O.S.) = 6	(N.S.) = 3 	(6+7-10).
+A.D. 1600 	do. = 5	do. = 2 	(5+7-10).
+A.D. 1700 	do. = 4	do. = 0 	(7) (4+7-11).
+A.D. 1800 	do. = 3	do. = 5 	(3+14-12).
+A.D. 1900 	do. = 2	do. = 3 	(2+14-13).
+A.D. 2000 	do. = 1	do. = 2 	(1+14-13).
+
+Rule to find day of week for any date: Take the sum of the centurial
+number+year number+month number+day number; divide this by 7; the remainder
+gives day of week, O.S. or N.S., according to century number used.
+
+Examples
+
+(1) King John was crowned 27 May, 1199. What day?
+Century (O.S.)		Year 		Month		Day	
+3	+ 	4	+	6 or
+6(27=21+6)	+	27	= 40 = 7x5+5
+Therefore the day was Thursday.
+
+(2) Waterloo was fought 18 June, 1815. What day?
+Century (N.S.)		Year 		Month		Day	
+5	+ 	18 or
+4(18=14+4)	+ 	2	+	18 	= 43 = 7x6+1
+Therefore the day was Sunday, as readers of "Vanity Fair" will recollect.
+
+(3) Columbus discovered the New World 12 October, 1492. What day?
+Century (O.S.)		Year 		Month		Day	
+0	+ 	3	+	5 	+	12	= 20/7; remainder 6
+Therefore the day was Friday.
+
+(4) If St. Patrick died 17 March, 463, required the day of the week.
+Century (O.S.)		Year 		Month		Day	
+3	+ 	1	+	1 	+	17	= 22/7; remainder 1
+Therefore the day was Sunday.
+
+(5) Mary Queen of Scots was executed 8 February, 1587 (1586/7), which was
+    a Wednesday. Was this O.S.or N.S.?
+Century (O.S.)		Year 1586 		Month		Day	
+6	+ 	2	+	2 	+	8	= 18 =Wednesday
+It was O.S.
+
+According to N.S. it would be:--
+Century (N.S.)		Year 1586 		Month		Day	
+3	+ 	2	+	2 	+	8	= 15 =Sunday
+This is an illustration of February being reckoned in the preceding year.
+
+About this page
+
+APA citation. Gerard, J. (1908). General Chronology. In The Catholic
+Encyclopedia. New York: Robert Appleton Company. Retrieved June 25, 2020
+from New Advent: http://www.newadvent.org/cathen/03738a.htm
+
+MLA citation. Gerard, John. "General Chronology." The Catholic
+Encyclopedia. Vol. 3. New York: Robert Appleton Company, 1908. 25 Jun. 2020
+<http://www.newadvent.org/cathen/03738a.htm>.
+
+Transcription. This article was transcribed for New Advent by Rick McCarty.
+
+Ecclesiastical approbation. Nihil Obstat. November 1, 1908. Remy Lafort,
+S.T.D., Censor. Imprimatur. +John Cardinal Farley, Archbishop of New York.
+
+Contact information. The editor of New Advent is Kevin Knight. My email
+address is webmaster at newadvent.org. Regrettably, I can't reply to every
+letter, but I greatly appreciate your feedback - especially notifications
+about typographical errors and inappropriate ads.
+
+Copyright © 2020 by Kevin Knight. Dedicated to the Immaculate Heart of Mary.
+
+END
+
+
+
+from https://www.history.com/news/why-do-we-have-leap-year
+
+BEGIN
+
+    Feb 20, 2020
+
+5 Things You May Not Know About Leap Day
+
+The extra day tacked on to every fourth year is a subtle admission that
+even something as regular and simple as a calendar can be more complicated
+than we think.
+
+    Stephen Wood
+
+Nearly every four years, we add an extra day to the calendar in the form
+of February 29, also known as Leap Day. Put simply, these additional 24
+hours are built into the calendar to ensure that it stays in line with
+the Earth's movement around the Sun. While the modern calendar contains
+365 days, the actual time it takes for Earth to orbit its star is slightly
+longer-roughly 365.2421 days. The difference might seem negligible, but
+over decades and centuries that missing quarter of a day per year can add
+up. To ensure consistency with the true astronomical year, it is necessary
+to periodically add in an extra day to make up the lost time and get the
+calendar back in synch with the heavens.
+
+1. Many ancient calendars had entire leap months
+
+Many calendars, including the Hebrew, Chinese and Buddhist calendars, are
+lunisolar, meaning their dates indicate the position of the Moon as well as
+the position of Earth relative to the sun. Since there is a natural gap of
+roughly 11 days between a year as measured by lunar cycles and one measured by
+the Earth's orbit, such calendars periodically require the addition of extra
+months, known as intercalary or interstitial months, to keep them on track.
+
+Intercalary months, however, were not necessarily regular. Historians are
+still unclear as to how the early Romans kept track of their years, mostly
+because the Romans themselves may not have been entirely sure. It appears
+that the early Roman calendar consisted of ten months plus an ill-defined
+winter period, the varying length of which caused the calendar to become
+unpegged from the solar year. Eventually, this uncertain stretch of time
+was replaced by the new months of January and February, but the situation
+remained complicated. They employed a 23-day intercalary month known as
+Mercedonius to account for the difference between their year and the solar
+year, inserting it not between months but within the month of February for
+reasons that may have been related to lunar cycles.
+
+To make matters even more confusing, the decision of when to hold Mercedonius
+often fell to the consuls, who used their ability to shorten or extend the
+year to their own political ends. As a result, by the time of Julius Caesar,
+the Roman year and the solar year were thoroughly out of sync.
+
+2. Julius Caesar introduced Leap Day, with help from the Egyptians...
+
+The Mercedonius-when-we-feel-like-it system apparently irked Caesar, the
+general-turned-consul-turned-dictator of Rome who drastically altered the
+course of European history. In addition to conquering Gaul and transforming
+Rome from a republic into an empire, Caesar re-ordered the Roman calendar,
+giving us the blueprint off of which much of the world still operates to
+this day.
+
+During his time in Egypt, Caesar became convinced of the superiority of
+the Egyptian solar calendar, which featured 365 days and an occasional
+intercalary month which was inserted when astronomers observed the correct
+conditions in the stars. Caesar and the philosopher Sosigenes of Alexandria
+made one important modification: instead of relying on the stars, they
+would simply add a day to every fourth year. In keeping with the Roman
+tradition of messing with the length of February, that day would fall in
+the second month of the year-thus Leap Day was born. Caesar added two
+extra-long months to the year 46 BCE to make up for missed intercalations,
+and the Julian Calendar took effect on January 1st, 45 BCE.
+
+3. ...but their math was a little off
+
+By the 16th century, scholars had noticed that time was still
+slipping-Caesar's calculation that a year lasted 365.25 days was close,
+but still overestimated the solar year by 11 minutes. This was a problem
+for the Catholic Church, as the date of Easter had drifted away from its
+traditional place, the first Sunday after the first full moon following
+the vernal equinox, by roughly ten days. Pope Gregory XIII commissioned a
+modified calendar, one which kept Leap Day but accounted for the inaccuracy
+by eliminating it on centurial years not divisible by 400 (1700, 1800, and
+1900 were not leap years, but 2000 was). The introduction of the Gregorian
+Calendar marked the last change to the Western calendar as we know it today.
+
+Experts note that the Gregorian calculation of a solar year-365.2425
+days-is still not perfect, and thus another correction will be
+necessary. Thankfully, the Gregorian calendar is only off by about one day
+every 3,030 years, so mankind has some time before this becomes a problem.
+
+4. Leap Day is often associated with marriage, proposals and flipping
+gender roles
+
+Curiously, many Leap Day customs have revolved around romance and
+marriage. Tradition holds that in 5th-century Ireland, St. Bridget lamented
+to St. Patrick that women were not allowed to propose marriage to men. So
+legend has it that St. Patrick designated the only day that does not occur
+annually, February 29, as a day on which women would be allowed to propose
+to men. In some places, Leap Day thus became known as Bachelor's Day.
+
+This tradition hopped the Irish Sea to Scotland and England, where the
+British added a twist-if a man rejected a woman's proposal, he owed her a
+debt of several pairs of fine gloves, perhaps to hide the fact that she did
+not have an engagement ring. In Greek tradition, however, it is considered
+bad luck to marry on Leap Day, and statistics suggest that Greek couples
+continue to take this superstition seriously.
+
+5. People born on Leap Day are called 'Leaplings'
+
+There are only about 5 million people in the whole world who were born
+on February 29, with the odds of being born on Leap Day standing at about
+1-in-1,461. Several famous people-including actress and singer Dinah Shore
+(born 1916), motivational speaker Tony Robbins (born 1960) and hip-hop
+artist Ja Rule (born 1976)-are leaplings. Leaplings technically only get
+to celebrate their birthdays once every four years, but they do get to be
+part of an elite group.
+
+By
+Stephen Wood
+
+END
+
+
+
+from
+https://www.history.com/news/6-things-you-may-not-know-about-the-gregorian-calendar
+
+BEGIN
+
+Updated:
+    Aug 22, 2018
+Original:
+    Sep 13, 2012
+
+6 Things You May Not Know About the Gregorian Calendar
+
+Explore the history of the Gregorian calendar, which Britain and its colonies
+adopted 260 years ago.
+
+    Jennie Cohen
+
+1. The original goal of the Gregorian calendar was to change the date of
+Easter.  In 1582, when Pope Gregory XIII introduced his Gregorian calendar,
+Europe adhered to the Julian calendar, first implemented by Julius Caesar
+in 46 B.C. Since the Roman emperor's system miscalculated the length of
+the solar year by 11 minutes, the calendar had since fallen out of sync
+with the seasons. This concerned Gregory because it meant that Easter,
+traditionally observed on March 21, fell further away from the spring
+equinox with each passing year.
+
+2. Leap years don't really occur every four years in the Gregorian calendar.
+The Julian calendar included an extra day in February every four years. But
+Aloysus Lilius, the Italian scientist who developed the system Pope Gregory
+would unveil in 1582, realized that the addition of so many days made the
+calendar slightly too long. He devised a variation that adds leap days in
+years divisible by four, unless the year is also divisible by 100. If the
+year is also divisible by 400, a leap day is added regardless. While this
+formula may sound confusing, it did resolve the lag created by Caesar's
+earlier scheme-almost.
+
+3. The Gregorian calendar differs from the solar year by 26 seconds
+per year.  Despite Lilius' ingenious method for syncing the calendar
+with the seasons, his system is still off by 26 seconds. As a result, in
+the years since Gregory introduced his calendar in 1582, a discrepancy of
+several hours has arisen. By the year 4909, the Gregorian calendar will be
+a full day ahead of the solar year.
+
+4. Some Protestants viewed the Gregorian calendar as a Catholic plot.
+Though Pope Gregory's papal bull reforming the calendar had no power
+beyond the Catholic Church, Catholic countries-including Spain, Portugal
+and Italy-swiftly adopted the new system for their civil affairs. European
+Protestants, however, largely rejected the change because of its ties to
+the papacy, fearing it was an attempt to silence their movement. It wasn't
+until 1700 that Protestant Germany switched over, and England held out until
+1752. Orthodox countries clung to the Julian calendar until even later,
+and their national churches have never embraced Gregory's reforms.
+
+5. Britain's adoption of the Gregorian calendar sparked riots and
+protest-maybe.  According to some accounts, English citizens did not react
+kindly after an act of Parliament advanced the calendar overnight from
+September 2 to September 14, 1752. Rioters supposedly took to the streets,
+demanding that the government 'give us our 11 days.' However, most
+historians now believe that these protests never occurred or were greatly
+exaggerated. On the other side of the Atlantic, meanwhile, Benjamin Franklin
+welcomed the change, writing, 'It is pleasant for an old man to be able
+to go to bed on September 2, and not have to get up until September 14.'
+
+6. Before the Gregorian calendar's adoption, the English new year
+began on March 25, or Lady Day.  Julius Caesar's calendar reform of 46
+B.C. instituted January 1 as the first of the year. During the Middle Ages,
+however, European countries replaced it with days that carried greater
+religious significance, such as December 25 (the anniversary of Jesus'
+birth) and March 25 (the Feast of the Annunciation). The latter, known as
+Lady Day because it celebrates the Virgin Mary, marked the beginning of
+the year in Britain until January 1, 1752.
+
+
+By
+Jennie Cohen
+
+END
+

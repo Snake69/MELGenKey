@@ -1,0 +1,2059 @@
+# American Revolution Events
+# v20250903
+# any line with the # character in column 1 is considered a comment line
+# comment lines are not included in MELGenKey Reports
+       1759 -1768, New England Planters immigrate to Nova Scotia, Canada
+              to take up lands left vacant after the Expulsion of the
+              Acadians. [2]
+ 8 Sep 1760 Pierre de Rigaud, Governor of New France, capitulates to Field
+              Marshal Jeffrey Amherst. This ends most fighting in North
+              America between France and Great Britain in the French and
+              Indian War. Amherst becomes the First British Governor-General
+              of territories that would later become Canada plus lands (Ohio
+              Country and Illinois Country) west of the American Colonies. [2]
+25 Oct 1760 King George II of Great Britain dies and is succeeded by his
+              grandson George III. [2] George III tried to rule both England
+              and the colonies without any attention to the wishes of the
+              people. His obstinacy and narrow-mindedness helped to drive
+              the colonies into revolt, and secured for them the sympathy
+              of many leading Whigs in England. [3]
+       1761 The Navigation Laws of 1651 and 1660, which had been unenforced,
+              were now revived. Warships were placed along the coast to stop
+              the trade which had grown up with France, Spain, and their
+              West Indian colonies. [3]
+            The "Writs of Assistance" were issued as a means of assistance
+              in the enforcement of the navigation acts. They caused bitter
+              dissatisfaction in New England, which had become the centre
+              for smuggling. These Writs of Assistance were general search
+              warrants given to customs officials in which they themselves
+              could enter the name of any person suspected of concealing
+              smuggled goods, which were not described, and they, therefore,
+              could break into and search any house at any time. [3]
+            James Otis, the leading lawyer of Massachusetts, made a
+              celebrated speech in Boston denying the right of the English
+              government to issue Writs of Assistance, or even to pass an act
+              of trade which levied a tax on the colonies. Of this speech
+              John Adams said: "It breathed into this nation the breath of
+              life." [3]
+       1763 -1766 Pontiac's Rebellion; previously allied with France,
+              Native American tribes in the Great Lakes region resist the
+              policies of the British under Amherst. [2]
+            Patrick Henry appeared in the "Parsons' Cause," and vindicated
+              the right of the colonies to manage their own affairs. The
+              scarcity of the tobacco crop had caused a law to be passed in
+              Virginia, in 1755 and again in 1758, which fixed the price of
+              tobacco at two pence per pound. These laws fell heavily on the
+              parsons, whose salary was paid in tobacco; with the price of
+              tobacco low, they would, therefore, get little money. They
+              appealed to England against the laws of 1755 and 1758, and
+              the King upheld their plea. Patrick Henry opposed the Crown,
+              asserting that "by annuling or disallowing acts of so salutary
+              a nature, from being the father of his people (the King)
+              degenerates into a tyrant, and forfeits all rights to his
+              subjects' obedience." [5]
+10 Feb 1763 Signing of the Treaty of Paris ending the Seven Year's War,
+              also known as the French and Indian War in North America.
+              France ceded all mainland North American territories, except New
+              Orleans, in order to retain her Caribbean sugar islands. Britain
+              gained all territory east of the Mississippi River; Spain kept
+              territory west of the Mississippi, but exchanged East and West
+              Florida for Cuba. [1]
+ 7 Oct 1763 Proclamation of 1763; wary of the cost of defending the colonies,
+              George III prohibited all settlement west of the Appalachian
+              mountains without guarantees of security from local Native
+              American nations. The intervention in colonial affairs offended
+              the thirteen colonies' claim to the exclusive right to govern
+              lands to their west. [1]
+ 5 Apr 1764 Sugar Act; the first attempt to finance the defense of the
+              colonies by the British Government. In order to deter smuggling
+              and to encourage the production of British rum, taxes on
+              molasses were dropped; a levy was placed on foreign Madeira
+              wine and colonial exports of iron, lumber and other goods had
+              to pass first through Britain and British customs. The Act
+              established a Vice-Admiralty Court in Halifax, Nova Scotia to
+              hear smuggling cases without jury and with the presumption of
+              guilt. These measures led to widespread protest. [1]
+ 1 Sep 1764 The Currency Act [5] prohibited American colonies from issuing
+              their own currency, angering many American colonists. [4]
+       1764 Beginnings of Colonial Opposition. American colonists responded
+              to the Sugar Act and the Currency Act with protest. In
+              Massachusetts, participants in a town meeting cried out
+              against taxation without proper representation in Parliament,
+              and suggested some form of united protest throughout the
+              colonies. By the end of the year, many colonies were practicing
+              nonimportation, a refusal to use imported English goods. [4]
+            King George III, and his friends in Parliament, demanded that
+              the American Colonies pay a share of the English debt incurred
+              during the French and Indian War. [3]
+       1765 Organized Colonial Protest. American colonists responded to
+              Parliament's acts with organized protest. Throughout the
+              colonies, a network of secret organizations known as the
+              Sons of Liberty was created, aimed at intimidating the stamp
+              agents who collected Parliament's taxes. Before the Stamp Act
+              could even take effect, all the appointed stamp agents in the
+              colonies had resigned. The Massachusetts Assembly suggested
+              a meeting of all the colonies to work for the repeal of the
+              Stamp Act. All but four colonies were represented. The Stamp
+              Act Congress passed a "Declaration of Rights and Grievances,"
+              which claimed that American colonists were equal to all other
+              British citizens, protested taxation without representation,
+              and stated that, without colonial representation in Parliament,
+              Parliament could not tax colonists. In addition, the colonists
+              increased their nonimportation efforts. [6]
+22 Mar 1765 Stamp Act; seeking to defray some of the costs of garrisoning the
+              colonies, Parliament required all legal documents, newspapers
+              and pamphlets required to use watermarked, or 'stamped' paper
+              on which a levy was placed. [1] The Stamp Act was Parliament's
+              first direct tax on the American colonies. [2] [4] [6]
+24 Mar 1765 Parliament enacts the Quartering Act, requiring the Colonies
+              to provide housing, food, and other provisions to British
+              troops. The act is resisted or circumvented in most of the
+              colonies. In 1767 and again in 1769, Parliament suspended the
+              governor and legislature of New York for failure to comply. [2]
+15 May 1765 Quartering Act; Colonial assemblies required to pay for
+              supplies to British garrisons. The New York assembly argued
+              that it could not be forced to comply. [1]
+29 May 1765 Patrick Henry introduced a resolution in the Virginia Assembly
+              denying the right of Parliament to legislate on the internal
+              concerns of Virginia. [3] "If this be treason, make the most
+              of it." - Patrick Henry, Virginia Convention. [4]
+30 May 1765 Virginian Resolution; the Virginian assembly refused to comply
+              with the Stamp Act. [1]
+ 5 Jun 1765 Several hundred Woodbridge (NJ) "Sons of Liberty" gathered at
+              "the Liberty Oak, on the square" to celebrate the repeal of
+              the Stamp Act. [7]
+14 Aug 1765 Massachusetts colonists challenge British rule by an Elm
+              (Liberty Tree) [9]
+25 Aug 1765 In protest over the stamp tax, American colonists sacked and
+              burned the home of Massachusetts governor Thomas Hutchinson. In
+              1774 he was exiled to Britain. [10]
+ 7 Oct 1765 -25 Oct 1765; Stamp Act Congress; representatives from nine of
+              the thirteen colonies declare the Stamp Act unconstitutional
+              as it was a tax levied without their consent. [1] The Stamp
+              Act Congress was the first independent colonial conference
+              and convened in New York in response to a call from the
+              Massachusetts House of Representatives. [4]
+19 Oct 1765 A Declaration of Rights and Grievances adopted; petitions
+              Parliament and the king to repeal the Stamp Act. [2]
+ 1 Nov 1765 the stamp act goes into effect in the British colonies; colonists
+              reacted strongly with flags at half mast and burning of stamps
+              [8]
+23 Nov 1765 Fredrick County, Maryland repudiated the British Stamp Act [8]
+11 Feb 1766 Stamp Act declared unconstitutional in Virginia [9]
+19 Feb 1766 1,000 armed "sons of Liberty" in Brunswick Town, North Carolina
+              confront Royal Governor William Tryon in resistance of the
+              Stamp Act. [4]
+26 Feb 1766 The Woodbridge (NJ) "Sons of Liberty" passed a resolution
+              condemning the Stamp Act as "unconstitutional," while still
+              expressing loyalty to King George III. [7]
+18 Mar 1766 Declaratory Act; Parliament finalises the repeal of the Stamp
+              Act, [1] [2] [19] but declares that it has the right to tax
+              colonies.  [1] Some in Parliament thought the army should be
+              used to enforce the Stamp Act, others commended the colonists
+              for resisting a tax passed by a legislative body in which they
+              were not represented. After act was repealed, the colonies
+              abandoned their ban on imported British goods. The repeal of
+              the Stamp Act did not mean that Great Britain was surrendering
+              any control over its colonies. The Declaratory Act stated
+              that Parliament could make laws binding the American colonies
+              "in all cases whatsoever." [6]
+21 May 1766 Liberty Pole erected in New York City commons in celebration
+              of the Stamp Act repeal. An intermittent skirmish with the
+              British garrison over the removal of this and other poles,
+              and their replacement by the Sons of Liberty, rages until the
+              Province of New York is under the control of the revolutionary
+              New York Provincial Congress in 1775. [2]
+27 Jul 1766 Following a dispute over reimbursement for their expenses
+              in Elizabethtown (NJ), officers of the British Twenty-eighth
+              Regiment rioted, leading some of their men to break open the
+              local jail and free prisoners and cause other property damage,
+              before marching to Amboy and the troop transports they were
+              leaving New Jersey on. The commander at Amboy ordered them
+              off the ships and made them apologize and pay compensation
+              for property damages, but the incident left local people with
+              considerable resentment towards redcoats. [7]
+       1766 Resistance to the Quartering Act in New York. New York served as
+              headquarters for British troops in America, so the Quartering
+              Act had a great impact on New York City. When the New York
+              Assembly refused to assist in quartering troops, a skirmish
+              occurred in which one colonist was wounded. Parliament suspended
+              the Assembly's powers but never carried out the suspension,
+              since the Assembly soon agreed to contribute money toward the
+              quartering of troops. [6]
+29 Jun 1767 Townshend Revenue Act (Townshend Duties); duties on tea, glass,
+              lead, paper and paint to help pay for the administration of
+              the colonies, named after Charles Townshend, the Chancellor
+              of the Exchequer. John Dickinson publishes Letter from a
+              Philadelphian Farmer in protest. Colonial assemblies condemn
+              taxation without representation. [1]
+       1767 In response to new taxes, the colonies again decided to
+              discourage the purchase of British imports. [6]
+            "Letters from a Farmer in Pennsylvania to the Inhabitants of
+              the British Colonies." Originally published in a newspaper,
+              this widely reproduced pamphlet by John Dickinson declared that
+              Parliament could not tax the colonies, called the Townshend
+              Acts unconstitutional, and denounced the suspension of the
+              New York Assembly as a threat to colonial liberties. [6]
+            Parliament temporarily deprived New York of its legislative
+              rights because the New York Legislature had refused to supply
+              quarters for British troops. [3]
+       1768 Samuel Adams wrote a statement (Massachusetts Circular Letter),
+              approved by the Massachusetts House of Representatives, which
+              attacked Parliament's persistence in taxing the colonies without
+              proper representation, and which called for unified resistance
+              by all the colonies. Many colonies issued similar statements. In
+              response, the British governor of Massachusetts dissolved the
+              state's legislature. British Troops Arrive in Boston. Although
+              the Sons of Liberty threatened armed resistance to arriving
+              British troops, none was offered when the troops stationed
+              themselves in Boston. [6]
+   Apr 1768 Britain's Secretary of State for the Colonies, Lord Hillsborough,
+              orders colonial governors to stop their own assemblies from
+              endorsing Adams' circular letter. Hillsborough also orders
+              the governor of Massachusetts to dissolve the general court
+              if the Massachusetts assembly does not revoke the letter. By
+              month's end, the assemblies of New Hampshire, Connecticut and
+              New Jersey have endorsed the letter. [2]
+ 9 Apr 1768 John Hancock refuses to allow two British customs agents to go
+              below deck of his ship, considered by some to be the first act
+              of physical resistance to British authority in the colonies [9]
+   May 1768 A British warship armed with 50 cannons sails into Boston
+              harbor after a call for help from custom commissioners who
+              are constantly being harassed by Boston agitators. In June,
+              a customs official is locked up in the cabin of the Liberty,
+              a sloop owned by John Hancock. Imported wine is then unloaded
+              illegally into Boston without payment of duties. Following
+              this incident, customs officials seize Hancock's sloop. After
+              threats of violence from Bostonians, the customs officials
+              escape to an island off Boston, then request the intervention
+              of British troops. [2]
+10 Jun 1768 British customs officials seize John Hancock's ship, "The
+              Liberty", on the suspicion that Hancock had illegally unloaded
+              cargo without paying [9]
+   Jul 1768 The governor of Massachusetts dissolves the general court after
+              the legislature defies his order to revoke Adams' circular
+              letter. In August, in Boston and New York, merchants agree
+              to boycott most British goods until the Townshend Acts are
+              repealed. In September, at a town meeting in Boston, residents
+              are urged to arm themselves. Later in September, English warships
+              sail into Boston Harbor, then two regiments of English infantry
+              land in Boston and set up permanent residence to keep order. [2]
+18 Jul 1768 Boston Gazette publishes "Liberty Song", America's 1st patriotic
+              song [9]
+ 1 Aug 1768 Boston Non-Importation Agreement [5]
+ 1 Oct 1768 British troops arrive in Boston in response to political unrest
+              [1] and to enforce the Townshend duties (taxes on paint,
+              paper, tea, etc., passed in Jun 1767) and clamp down on local
+              radicals. The troops' presence doesn't sit well with locals
+              and leads to street fights. [13]
+       1769 The Virginia House of Burgesses passed resolutions condemning
+              Britain's actions against Massachusetts, and stating that only
+              Virginia's governor and legislature could tax its citizens. The
+              members also drafted a formal letter to the King, completing
+              it just before the legislature was dissolved by Virginia's
+              royal governor. [6]
+            Lord North repealed all the taxes except that on tea, which was
+              retained for principle's sake. English merchants, suffering from
+              the "Non-importation Agreements," had petitioned parliament
+              to repeal the taxes, but the retention of the tea tax caused
+              the conciliatory effect to be lost. [3]
+17 May 1769 Washington criticizes "taxation without representation" [12]
+       1770 Because of the reduced profits resulting from the colonial
+              boycott of imported British goods, Parliament withdrew all of
+              the Townshend Act (1767) taxes except for the tax on tea. [6]
+            In response to Parliament's relaxation of its taxation laws,
+              the colonies relaxed their boycott of British imported goods
+              (1767). [6]
+            Conflict between Citizens and British Troops in New York. After
+              a leading New York Son of Liberty issued a broadside attacking
+              the New York Assembly for complying with the Quartering Act
+              (1765), a riot erupted between citizens and soldiers, resulting
+              in serious wounds but no fatalities. [6]
+19 Jan 1770 Golden Hill (Lower Manhattan) incident in which British troops
+              wound civilians, including one death. [2]
+28 Jan 1770 Lord North becomes Prime Minister of Great Britain. [2]
+ 5 Mar 1770 Boston Massacre. The arrival of troops in Boston provoked
+              conflict between citizens and soldiers. A group of soldiers
+              surrounded by an unfriendly crowd opened fire, killing
+              three Americans [6] (including Crispus Attucks, American
+              slave, b. 1723) [2] and fatally wounding two more. A violent
+              uprising was avoided only with the withdrawal of the troops
+              to islands in the harbor. The soldiers were tried for murder,
+              but convicted only of lesser crimes; noted patriot John Adams
+              was their principal lawyer. [6] While radicals will call it
+              the Boston Massacre, the British will call it the incident
+              on King Street. [13] This event that would contribute to the
+              outbreak of the American Revolutionary War (also known as the
+              American War of Independence) five years later. [2]
+12 Apr 1770 Repeal of the Townshend Revenue Act [1]
+16 May 1771 Battle of Alamance, North Carolina, [2] [4] (present-day
+              Alamance County) [2] the first battle fought against
+              Britain. Eleven hundred North Carolina Royal Militiamen defeat
+              two thousand Regulators [4] (rebels), [2] ending the War of
+              the Regulation. [4]
+       1772 The Watauga Association in what would become Tennessee declares
+              itself independent. [2]
+ 9 Jun 1772 Gaspee Affair. [2] Attack on the "Gaspee." After [6] eight [16]
+              boatloads of men [6] led by merchant John Brown [16] attacked a
+              grounded British customs schooner near Providence, Rhode Island,
+              the royal governor offered a reward for the discovery of the men,
+              planning to send them to England for trial. The removal of the
+              "Gaspee" trial to England outraged American colonists. [6] The
+              "Gaspee" was burned.  None of the perpetrators were discovered
+              by the British. [16]
+ 2 Nov 1772 Boston: anti-English Committee of Correspondence forms.
+              [9] Samuel Adams called for a Boston town meeting to create
+              committees of correspondence to communicate Boston's position
+              to the other colonies. Similar committees were soon created
+              throughout the colonies. [6] This represents an important move
+              toward cooperation, mutual action, and the development of a
+              national identity among Americans. [13]
+       1773 As a result of the Gaspee incident, the Virginia House of
+              Burgesses appointed a Committee of Correspondence to keep in
+              touch with other colonies. Other Colonial Legislatures soon
+              made provision for committees of the same sort. [3]
+10 May 1773 Tea Act; in an effort to support the ailing East India Company,
+              Parliament exempted its tea from import duties and allowed the
+              Company to sell its tea directly to the colonies. Americans
+              resented what they saw as an indirect tax subsidising a British
+              company. [1]
+   Jul 1773 Publication of Thomas Hutchinson letters; in these letters,
+              Hutchinson, the Massachusetts governor, advocated a 'great
+              restraint of natural liberty', convincing many colonists of
+              a planned British clamp-down on their freedoms. [1]
+14 Oct 1773 American Revolutionary War: The United Kingdom's East India
+              Company tea ships' cargo are burned at Annapolis, Maryland. [9]
+16 Oct 1773 Philadelphia Resolutions criticize Tea Act [12]
+ 5 Nov 1773 John Hancock is elected as moderator at a Boston town meeting
+              that resolves that anyone who supports the Tea Act is an
+              "Enemy to America" [9]
+15 Dec 1773 Association of the Sons of Liberty in New York published by
+              local Sons of Liberty. [2]
+16 Dec 1773 Boston Tea Party. [2] [6] When British tea ships arrived
+              in Boston harbor, many citizens wanted the tea sent back to
+              England without the payment of any taxes. The royal governor
+              insisted on payment of all taxes. A group of men [6] (members
+              of the Sons of Liberty) [2] disguised as Mohawk Indians [2] [6]
+              (led by Samuel Adams) boarded the ships and dumped all the tea
+              (342 chests) in the harbor. [6]
+26 Dec 1773 expulsion of tea ships from Philadelphia [9]
+       1774 Benjamin Franklin, Massachusetts' agent in London, is questioned
+              before Parliament. [2]
+            Lord Dunmore's War [2]
+            New England Prepares for War. British troops began to fortify
+              Boston, and seized ammunition belonging to the colony of
+              Massachusetts. Thousands of American militiamen were ready
+              to resist, but no fighting occurred. Massachusetts created
+              a Provincial Congress, and a special Committee of Safety to
+              decide when the militia should be called into action. Special
+              groups of militia, known as Minute Men, were organized to be
+              ready for instant action. [6]
+ 5 Mar 1774 John Hancock delivers the fourth annual Massacre Day oration,
+              a commemoration of the Boston Massacre, and denounces the
+              presence of British troops in Boston, enhancing Hancock's
+              stature as a leading Patriot [9]
+ 7 Mar 1774 British close port of Boston to all commerce [9]
+25 Mar 1774 Parliament passes the Boston Port Act [12]
+28 Mar 1774 British Parliament adopts the Coercive Acts [12] (also called
+              the Intolerable Acts). [13] In response to the Boston Tea Party,
+              Parliament passed several acts to punish Massachusetts. The
+              Boston Port Bill banned the loading or unloading of any ships
+              in Boston harbor. The Administration of Justice Act offered
+              protection to royal officials in Massachusetts, allowing them
+              to transfer to England all court cases against them involving
+              riot suppression or revenue collection. The Massachusetts
+              Government Act put the election of most government officials
+              under the control of the Crown, essentially eliminating the
+              Massachusetts charter of government. [6]
+31 Mar 1774 Boston Port Act, one of the "Intolerable Acts". [5] The Kingdom
+              of Great Britain orders the port of Boston, Massachusetts
+              closed pursuant to the Boston Port Act. [2]
+ 5 Apr 1774 Benjamin Franklin publishes "An Open Letter to Lord North" [12]
+20 May 1774 Administration of Justice Act, one of the "Intolerable Acts" [5]
+            Massachusetts Government Act, one of the "Intolerable Acts" [5]
+23 May 1774 Chestertown tea party (tea dumped into Chester River) [9]
+ 1 Jun 1774 Boston Port Bill: British government orders Port of Boston
+              closed [9]
+ 2 Jun 1774 Parliament completes the Coercive Acts with the Quartering Act.
+              [12] British troops could now be quartered in any occupied
+              dwelling. [6]
+22 Jun 1774 Quebec Act, one of the "Intolerable Acts" [5]
+12 Jul 1774 Citizens of Carlisle Penn, pass a declaration of independence [9]
+13 Aug 1774 In a town meeting the "respectable Freeholders and Inhabitants"
+              of Burlington County's Mansfield Township (NJ) voiced their
+              support of the continued boycott of imported British goods as
+              a protest against the Townshend Acts. [7]
+ 1 Sep 1774 The Powder Alarm, General Gage's secret raid on the Cambridge
+              powder magazine. [2]
+ 5 Sep 1774 To protest Britain's actions, Massachusetts suggested a return
+              to nonimportation, but several states preferred a congress of
+              all the colonies to discuss united resistance. The colonies
+              soon named delegates to a congress - the First Continental
+              Congress - met in Philadelphia [6] through 26 Oct 1774. [16]
+              The Congress sat in Carpenters Hall. They affirmed the right of
+              the colonies to life, liberty and property. Fifty-six delegates
+              attended, half of whom were lawyers. [16]
+            Twelve of the thirteen colonies sent a total of fifty-six
+              delegates to the First Continental Congress. Only Georgia was
+              not represented. One accomplishment of the Congress was the
+              Association of 1774, which urged all colonists to avoid using
+              British goods, and to form committees to enforce this ban. [6]
+10 Oct 1774 Battle of Point Pleasant, when Chief Cornstalk, with over a
+              thousand Shawnees and Mingos, launched a surprise attack on
+              the colonial militia at Point Pleasant. [4] (Disputed as to
+              whether it was a battle of the American Revolution or the
+              culmination of Lord Dunmore's War.) [5]
+14 Oct 1774 1st Continental Congress makes Declaration of Colonial Rights
+              in Philadelphia. [9]
+19 Oct 1774 Burning of the HMS Peggy Stewart. [2]
+20 Oct 1774 Congress creates the Continental Association [12] (prohibition
+              of trade with Great Britain). [5]
+21 Oct 1774 First display of the word "Liberty" on a flag, raised by
+              colonists in Taunton, Massachusetts and which was in defiance
+              of British rule in Colonial America. [9]
+24 Oct 1774 Galloway's Plan rejected. [5]
+25 Oct 1774 Congress petitions English king to address grievances. [12]
+26 Oct 1774 Minute Men organized in colonies. [9]
+            Petition to the King. [2]
+13 Dec 1774 First incident of American Revolution - 400 attack Ft William
+              and Mary, New Hampshire. [9]
+22 Dec 1774 A "Tea Party" inspired by the Boston incident of the previous
+              year was held in Greenwich (NJ). Tea unloaded from a British
+              ship by a captain afraid of docking at Philadelphia was burned
+              by around forty protestors dressed as Indians. The Cumberland
+              County Historical Society erected a monument to the incident
+              at Market Square in Greenwich in 1908. [7]
+       1775 New England Restraining Act. Parliament passed an act banning
+              trade between the New England colonies and any other country
+              besides Great Britain. [6]
+            New England Resists. British troops continued to attempt to seize
+              colonial ammunition, but were turned back in Massachusetts,
+              without any violence. Royal authorities decided that force
+              should be used to enforce recent acts of Parliament; war seemed
+              unavoidable. [6]
+            Congress Searches for Foreign Aid. When a congressional
+              committee began to investigate the possibility of foreign aid
+              in the war against Great Britain, France expressed interest. [6]
+            -1783, American Revolutionary War. [2]
+23 Jan 1775 London merchants petition for reconciliation with America [12]
+25 Jan 1775 Americans drag cannon up hill to fight British (Gun Hill Road,
+              Bronx) [9]
+ 9 Feb 1775 British Parliament declares Massachusetts colony is in rebellion
+              [2] [9]
+22 Mar 1775 Edmund Burke presents his 13 articles to the Westminster
+              Parliament [9]
+23 Mar 1775 Patrick Henry delivers his speech - "Give me liberty, or give
+              me death!" - [2] [4] at Virginia Convention, [4] St. John's
+              Episcopal Church, Richmond, Virginia. [2]
+30 Mar 1775 King George endorses New England Restraining Act [12]
+18 Apr 1775 The British advancement by sea begins; [2] the Rides of Paul
+              Revere and William Dawes ("One if by land, two if by sea
+              ...") [4] from Charleston to Lexington warning the "regulars
+              are coming!" [9]
+19 Apr 1775 British troops planned to destroy American ammunition at
+              Concord. When the Boston Committee of Safety learned of
+              this plan, it sent Paul Revere and William Dawes to alert
+              the countryside and gather the Minute Men. Minute Men and
+              British troops met at Lexington, where a shot from a stray
+              British gun (shot "heard round the world") lead to more British
+              firing. The Americans only fired a few shots; several Americans
+              were killed. The British marched on to Concord and destroyed
+              some ammunition, but soon found the countryside swarming
+              with militia. At the end of the day, many were dead on both
+              sides. [6] American militiamen fought 700 British troops. The
+              battle broke out at Concord. Seventy-three British soldiers
+              were killed, and over two hundred were wounded. The Americans
+              lost 49 soldiers and suffered 39 wounded. This marked the true
+              beginning of the Revolutionary War. [16]
+            Paul Revere, William Dawes and Samuel Prescott are captured
+              by British troops riding from Lexington to Concord, Prescott
+              escapes to warn Concord [9]
+20 Apr 1775 Gunpowder incident [2]
+            The Siege of Boston begins, following the battles at Lexington
+              and Concord. [2]
+22 Apr 1775 Provincial Convention assembled at New York and delegates to
+              the Continental Congress appointed [15]
+23 Apr 1775 King George III of Great Britain declared, "The colonies are
+              in open and avowed rebellion. The die is now cast. The colonies
+              must either submit or triumph." [16]
+ 5 May 1775 Benjamin Franklin arrived in Philadelphia from London where
+              he had lived since 1764. He soon began working with Thomas
+              Paine on a pamphlet urging independence from Britain, an idea
+              proposed by physician Benjamin Rush. [10]
+ 9 May 1775 Skenesboro, New York (now Whitehall, New York) captured by Lt
+              Samuel Herrick. [2]
+10 May 1775 A small Colonial militia led by Ethan Allen [2] [4] (and his
+              Green Mountain Boys) [4] and Colonel Benedict Arnold captures
+              Fort Ticonderoga. [2] [4]
+            The Second Continental Congress convened in Philadelphia [2]
+              [6] with representatives from the Thirteen Colonies. [2] John
+              Hancock was elected president of Congress. [6] Continental
+              Congress issues paper currency for 1st time. [8]
+20 May 1775 The Mecklenburg Declaration of Independence [2] [4] is allegedly
+              signed in Charlotte, North Carolina. [2]
+22 May 1775 Provisional Congress at New York; Committee of Safety appointed
+              [15]
+31 May 1775 Mecklenburg Resolutions [2] [12] adopted in the Province of
+              North Carolina [2] reject the power of the British in North
+              Carolina [12]
+ 6 Jun 1775 Marinus Willett and a small group of Sons of Liberty confront
+              British soldiers and seize five wagonloads of weapons as the
+              Redcoats evacuate New York City. [12]
+10 Jun 1775 John Adams proposed that Congress consider the forces in Boston
+              a Continental army, and suggested the need for a general. He
+              recommended George Washington for the position. Congress began
+              to raise men from other colonies to join the army in New England,
+              and named a committee to draft military rules. [6]
+11 Jun 1775 The American Revolutionary War's first naval engagement,
+              the Battle of Machias, results in the capture of a small
+              British naval vessel. [2]
+12 Jun 1775 British General Thomas Gage put martial law in effect,
+              and stated that any person helping the Americans would
+              be considered a traitor and rebel. [6] The British offer a
+              pardon to all colonists who lay down their arms. There would
+              be only two exceptions to the amnesty: Samuel Adams and John
+              Hancock, if captured, were to be hanged. [2] When Americans
+              began to fortify a hill (Bunker Hill) against British forces,
+              British ships in the harbor discovered the activity and opened
+              fire. British troops -- 2,400 in number -- arrived shortly
+              after. Although the Americans -- 1,000 in number -- resisted
+              several attacks, eventually they lost the fortification. [6]
+14 Jun 1775 The Continental Army is established [2] [9] by the Continental
+              Congress, marking the birth of the United States Army. [2]
+15 Jun 1775 The Second Continental Congress votes unamimously to appoint
+              George Washington head of the Continental Army. [11]
+            The Americans occupied Bunker Hill overlooking Boston during the
+              evening. The British, commanded by General Gage, had no choice
+              but to attack the Americans. On the afternoon of the 17th,
+              Gage's forces attacked. In a hard fought battle, the American
+              were forced to withdraw. While the British were victorious,
+              they suffered heavy losses. [16]
+16 Jun 1775 Washington accepted the nomination to lead the army. To pay
+              for the army, Congress issued bills of credit, and the twelve
+              colonies represented in the Congress promised to share in
+              repaying the bills. [6]
+17 Jun 1775 The Battle of Bunker Hill was actually fought [10] [20] on
+              Breed's Hill near Boston. It lasted less than 2 hours and was
+              the deadliest of the Revolutionary War. The British captured the
+              hill on their third attempt but suffered over 1,000 casualties
+              vs. about 400-600 for the Americans. Patriotic hero Dr. Joseph
+              Warren died in the battle. Patriot General William Prescott
+              allegedly told his men, "Don't one of you fire until you see
+              the whites of their eyes!" British casualties were estimated
+              at 226 dead and 828 wounded, while American casualties were
+              estimated at 140 dead and 301 wounded. [10]
+19 Jun 1775 George Washington is commissioned by the Continental Congress
+              as commander in chief of the Continental Army. [19]
+22 Jun 1775 1st Continental currency issued ($3,000,000). [9]
+30 Jun 1775 Congress impugns Parliament and adopts Articles of War. [12]
+ 2 Jul 1775 Washington arrives in Cambridge, MA to take command of the
+              Continental Army. [2]
+ 3 Jul 1775 George Washington takes command of the Continental Army at
+              Cambridge, Massachusetts. [2] [6]
+ 5 Jul 1775 Olive-Brach Petition; congress endorses [1] [2] a proposal
+              asking for recognition of American rights, the ending of the
+              Intolerable Acts in exchange for a cease fire. George III
+              rejected the proposal and on 23 Aug 1775 declared the colonies
+              to be in open rebellion. [1]
+ 6 Jul 1775 Declaration of the Causes and Necessity of Taking Up Arms issued
+              [2]
+ 8 Jul 1775 The Olive Branch Petition is signed by the Continental Congress
+              of the Thirteen Colonies of North America. [2]
+19 Jul 1775 500 Minute Men under Robert Howe attack and burn Fort
+              Johnson, near Brunswick Town, NC, which had been under British
+              control, leaving the Cape Fear River unguarded throughout the
+              Revolutionary War. [4]
+25 Jul 1775 Maryland issues currency depicting George III trampling Magna
+              Carta. [9]
+26 Jul 1775 The office that would later become the United States Post
+              Office Department is established by the Second Continental
+              Congress. Benjamin Franklin of Pennsylvania takes office as
+              Postmaster General. [2] [12]
+27 Jul 1775 Founding of the U.S. Army Medical Department: The Second
+              Continental Congress passes legislation establishing "an
+              hospital for an army consisting of 20,000 men." [2]
+29 Jul 1775 Founding of the U.S. Army Judge Advocate General's Corps:
+              General George Washington appoints William Tudor as Judge
+              Advocate of the Continental Army. [2]
+ 5 Aug 1775 The New Jersey Provincial Congress ordered that 54 companies
+              of Minute Men, of 64 men each, be raised and organized into
+              battalions. The Minute Men were required to have "their own
+              firelocks upon their shoulders, 23 cartridges in their cartouch
+              [sic] boxes; the worm, priming wire and 12 flints in their
+              pockets and a pound of powder and three pounds of bullets at
+              home." [7]
+22 Aug 1775 England's King George III proclaimed the American colonies to
+              be in a state of open rebellion. [6]
+23 Aug 1775 King George III delivers his Proclamation of Rebellion to the
+              Court of St James's stating that the American colonies have
+              proceeded to a state of open and avowed rebellion. [2]
+ 1 Sep 1775 King George refuses Olive Branch Petition. [12]
+17 Sep 1775 The Invasion of Canada begins with the Siege of Fort
+              St. Jean. [2]
+25 Sep 1775 Ethan Allen surrenders to British forces after attempting
+              to capture Montreal during the Battle of Longue-Pointe. [2]
+              Ethan Allen is captured. [12]
+            Benedict Arnold's expedition to Quebec sets off from Cambridge,
+              Massachusetts. [2]
+ 9 Oct 1775 The Continental Congress authorizes formation of two military
+              regiments from New Jersey: the First New Jersey Regiment,
+              also known as the "Jersey Blues" from the name adopted during
+              the French and Indian War, and the Second New Jersey, whose
+              soldiers primarily came from the western counties of provincial
+              New Jersey. [18]
+10 Oct 1775 Howe named commander in chief of British army. [12]
+13 Oct 1775 The Continental Congress establishes the Continental Navy
+              (predecessor of the United States Navy). [2]
+18 Oct 1775 The Burning of Falmouth (now Portland, Maine). [2]
+23 Oct 1775 Continental Congress approves resolution barring blacks from
+              army. [9]
+24 Oct 1775 British naval fleet attacks Norfolk, Virginia. [12]
+27 Oct 1775 King George III expands on his Proclamation of Rebellion
+              in the Thirteen Colonies in his speech from the throne at the
+              opening of Parliament. [2] [12]
+28 Oct 1775 British proclamation forbids residents from leaving Boston. [12]
+ 5 Nov 1775 Washington condemns Guy Fawkes festivities. [12]
+ 7 Nov 1775 Lord Dunmore promises freedom to male slaves who join British
+              army. [9]
+ 8 Nov 1775 Washington seeks to make militias into a military. [12]
+10 Nov 1775 The Continental Marines were organized under authority of the
+              Continental Congress. Congress commissioned Samuel Nicholas to
+              raise two Battalions of Marines. That very day, Nicholas set up
+              shop in Philadelphia's Tun Tavern. He appointed Robert Mullan,
+              then the proprietor of the tavern, to the job of chief Marine
+              Recruiter serving, of course, from his place of business at
+              Tun Tavern. [10] The Continental Marines would become the
+              modern day United States Marine Corps. [2]
+            Ninety Six, SC, Patriots sieged (ended 21 Nov). [5]
+11 Nov 1775 Mohawk military leader Joseph Brant goes to London to solicit
+              more support from the government and to persuade the Crown
+              to address past Mohawk land grievances in exchange for their
+              participation as allies in the impending war. [9]
+12 Nov 1775 Abigail Adams leads rhetorical charge against Britain. [12]
+            General Washington forbids recruiting officers enlisting blacks.
+              [9]
+            US Gen. Montgomery began his siege of St. John's and brought
+              about the surrender of 600 British troops. [10]
+13 Nov 1775 American forces under Gen. Richard Montgomery captured
+              Montreal. [2] [10] This was part of a two-pronged attack on
+              Canada, with the goal of capturing Quebec entrusted to Benedict
+              Arnold, who was leading a force through a hurricane ravaged
+              Maine wilderness. In 2006 Thomas A. Desjardin authored "Through A
+              Howling Wilderness," an account of Arnold's march to Quebec. [10]
+29 Nov 1775 The American Congress formed the Committee of Secret
+              Correspondence with the mission of corresponding with friends
+              in Great Britain, Ireland and other parts of the world. In
+              Apr 1777 its title was changed to Committee for Foreign
+              Affairs. Members included Benjamin Franklin, Benjamin Harrison,
+              John Jay, Thomas Johnson and John Dickinson. [10]
+ 3 Dec 1775 The USS Alfred becomes the first vessel to fly the Grand
+              Union Flag [2] [9] (the precursor to the Stars and Stripes);
+              the flag is hoisted by John Paul Jones. [2]
+ 5 Dec 1775 Henry Knox begins transport of fifty-nine captured cannons
+              (taken from Fort Ticonderoga and Fort Crown Point) from upstate
+              New York to Cambridge, MA. Trip took 56 days to complete. [2]
+ 8 Dec 1775 Americans begin siege of Quebec [12]
+ 9 Dec 1775 Patriots gain control of Virginia; [12] Lord Dunmore
+              (1730-1809), governor of Virginia, lost decisively at the
+              American Revolution Battle of Great Bridge. Following that
+              defeat, Dunmore loaded his troops, and many Virginia Loyalists,
+              onto British ships. Smallpox spread in the confined quarters, and
+              some 500 of the 800 members of his Ethiopian Regiment died. [10]
+11 Dec 1775 Virginia and NC patriots rout Loyalist troops and burn Norfolk
+              [5]
+15 Dec 1775 The First New Jersey Battalion of the Continental Army completed
+              its organization and enlisted for one year's service. The unit
+              was composed in part of existing militia companies from Essex
+              County. [7]
+18 Dec 1775 In Philadelphia Benjamin Franklin, John Jay and Francis Daymon,
+              members of the Committee of Secret Correspondence, met for
+              the first of 3 times at Carpenter's Hall with French agent
+              Chevalier Julien-Alexandre Achard de Bonvouloir regarding
+              French support for American Independence. [10]
+22 Dec 1775 Congress Creates a Navy. Congress began to plan for aggressive
+              action against British ships stocked with ammunition. It
+              authorized the building of four armed ships, and began
+              to formulate rules for a navy. Congress named Esek Hopkins
+              commodore of the fledgling American navy. Soon after, Congress
+              authorized privateering, and issued rules for dealing with
+              enemy vessels and plunder. [6]
+            Col. Thomson with 1,500 rangers and militia capture Loyalists
+              at Great Canebrake, SC [5]
+23 Dec 1775 Snow Campaign, in SC, so-called because patriots are impeded
+              by 15" of snow (ends 30 Dec) [5]
+31 Dec 1775 Battle of Quebec; the British repulsed an attack by Continental
+              Army generals Richard Montgomery [2] [10] and Benedict Arnold
+              at Quebec during a raging snowstorm; [10] Montgomery was killed
+              [2] [10] (b. 1738). [2]
+       1776 New Hampshire ratifies the first state constitution [2]
+            over 30,000 British troops arrive in New York harbor [4]
+   Jan 1776 Gen Schuyler disarms the royalists in Tryon County, New York [15]
+ 1 Jan 1776 Gen George Washington hoists Continental Union Flag [9]
+            Daniel Morgan taken prisoner in attempt to take Quebec City [5]
+            Norfolk, Virginia is burned by combined Royal Navy and
+              Continental Army action. [2]
+ 2 Jan 1776 Congress publishes the Tory Act [12]
+ 5 Jan 1776 Assembly of New Hampshire adopts its 1st state constitution [9]
+ 7 Jan 1776 Samuel Adams writes that the confederation is not dead, but
+              sleepeth [12]
+10 Jan 1776 Thomas Paine (1737-1809), British emigre and propagandist,
+              anonymously published "Common Sense," a scathing attack on
+              King George III's reign over the colonies and a call for
+              complete independence. The first 1,000 sold within days at
+              2 shillings. By the end of the year some 150,000 copies were
+              sold, greatly affecting public sentiment and the deliberations
+              of the Continental Congress leading up to the Declaration of
+              Independence. An instant bestseller in both the colonies and in
+              Britain, Paine boldly stated that King George III was a tyrant
+              and that Americans should shed any sentimental attachment to
+              the monarchy. America, he argued, had a moral obligation to
+              reject monarchy. [10]
+            North Carolina governor calls on Loyalists to combat rebels [12]
+13 Jan 1776 British raid Prudence Island in Narragansett Bay [12]
+16 Jan 1776 Continental Congress approves enlistment of free blacks [9]
+17 Jan 1776 The Council of Safety in Savannah, Georgia, issues an arrest
+              warrant for the colony's royal governor, James Wright. Patriots
+              led by Major Joseph Habersham of the Provincial Congress then
+              took Wright into custody and placed him under house arrest. [12]
+27 Jan 1776 Henry Knox's "noble train of artillery" arrives in Cambridge,
+              Massachusetts. [2]
+ 9 Feb 1776 Future New Jersey Governor Joseph Bloomfield becomes captain of
+              the third New Jersey Regiment of Foot in the Continental Army
+              [12]
+10 Feb 1776 Washington writes from Charleston, "Without men, without arms,
+              without ammunition, there is little to be done." [6]
+13 Feb 1776 Patrick Henry named colonel of First Virginia battalion [12]
+27 Feb 1776 Patriots defeat loyalists at the Battle of Moore's Creek, NC. [2]
+              [12] This setback will largely quiet loyalist activity in the
+              Carolinas for three years. [13]
+ 2 Mar 1776 Americans begin shelling British troops in Boston [9]
+            Patriot militia units arrest the Royal Governor of Georgia
+              James Wright and attempt to prevent capture of supply ships
+              in the Battle of the Rice Boats. [2]
+ 3 Mar 1776 -4 Mar 1776 Battle of Nassau. [2] The first amphibious landing
+              of the United States Marine Corps [2] [6] begins the Battle
+              of Nassau. [2]
+            Continental fleet, including the Sloop Katy (later the
+              Providence), captures New Providence Island in the Bahamas [4]
+            Silas Deane, Connecticut delegate to the Continental Congress,
+              leaves for France on a secret mission. The Committee of Congress
+              for Secret Correspondence, consisting of Benjamin Franklin,
+              Benjamin Harrison, John Dickinson, John Hay and Robert Morris,
+              instructed Deane to meet with French Foreign Minister Charles
+              Gravier, comte de Vergennes, to stress America's need for
+              military stores and assure the French that the colonies were
+              moving toward "total separation". [12]
+ 4 Mar 1776 -5 Mar 1776 Fortification of Dorchester Heights results in
+              British forces evacuating Boston. [2]
+17 Mar 1776 British forces evacuate Boston [2] [4] [19] to Nova Scotia [4],
+              ending the Siege of Boston, [2] [19] after George Washington and
+              Henry Knox place artillery in positions overlooking the city. [2]
+26 Mar 1776 Patriot physician Ebenezer Elmer, addressing Captain Joseph
+              Bloomfield's company of the Third New Jersey Battalion in
+              Cumberland County as it left for the Revolutionary War, said:
+              "And, having by your valour and activity, procured peace and
+              tranquility to your oppressed & bleeding county, may you all
+              return home to your friends, loaded with trophies of victory,
+              & crowned with wreaths of unfading laurels." [7]
+29 Mar 1776 Putnam named commander of New York troops [12]
+   Apr 1776 The Newly formed Continental Army departs its first winter
+              encampment at Cambridge, Massachusetts [2]
+ 3 Apr 1776 Congress authorizes privateers to attack British vessels [12]
+ 4 Apr 1776 Washington begins march to New York [12]
+ 6 Apr 1776 Congress opens all U.S. ports to international trade [12]
+            Ships of the Continental Navy fail in their attempt to capture
+              a Royal Navy dispatch boat. [2]
+12 Apr 1776 With the Halifax Resolves, the North Carolina Provincial
+              Congress authorizes its Congressional delegation to vote for
+              independence from Britain. [2]
+ 2 May 1776 France & Spain agreed to give weapons to American rebels [9]
+ 4 May 1776 Rhode Island declares independence [12] and becomes the first
+              American colony to renounce allegiance to King George III [2]
+            Providence Plantations declares its independence from the
+              Kingdom of Great Britain. [2]
+15 May 1776 The Fifth Virginia Convention instructs its Continental Congress
+              delegation to propose a resolution of independence from Great
+              Britain, paving the way for the United States Declaration of
+              Independence. [15]
+19 May 1776 A Continental Army garrison surrenders in the Battle of The
+              Cedars. [15]
+ 7 Jun 1776 Richard Henry Lee presents the "Lee Resolution" to the
+              Continental Congress. [2] [6] The motion is seconded by
+              John Adams and will lead to the United States Declaration of
+              Independence. [2]
+            U.S. Navy captures first British warship ... Captain John
+              Barry and the USS Lexington captures the Edward [9]
+ 8 Jun 1776 The First and Second Battalions, New Jersey Continental Line,
+              engaged in combat with British forces in Canada. [7]
+            American attackers are driven back at the Battle of
+              Trois-Rivieres. [2] Patriots fail to take Three Rivers,
+              Quebec. [5]
+11 Jun 1776 The Continental Congress selects Thomas Jefferson of Virginia,
+              John Adams of Massachusetts, Benjamin Franklin of Pennsylvania,
+              Roger Sherman of Connecticut and Robert R. Livingston of
+              New York to the Committee of Five to draft a declaration of
+              independence. [2] [12] A draft was submitted to Congress for
+              review on 28 Jun. [12]
+12 Jun 1776 Virginia's Colonial legislature; first to adopt a Bill of Rights;
+              [6] written by George Mason [12]
+14 Jun 1776 The New Jersey Provincial Congress ordered the arrest of Royal
+              Governor William Franklin, the son of Patriot leader Benjamin
+              Franklin. [7]
+15 Jun 1776 Delaware declares independence [12]
+21 Jun 1776 The New Jersey Provincial Congress passed a resolution to
+              form a government "for regulating the internal police of this
+              Colony." [7]
+24 Jun 1776 A committee of ten members of the Provincial Congress was
+              appointed to draw up a state constitution. [7]
+25 Jun 1776 General William Howe arrived off Staten Island with a fleet and
+              an army prepared to capture New York and subdue the rebellion
+              there and in New Jersey. [7]
+26 Jun 1776 The New Jersey Provincial Congress, meeting in Trenton, ordered
+              militiamen to suppress Tory demonstrators in Hunterdon County
+              and ordered arrests of others in Upper Freehold and Shrewsbury
+              Townships, where Loyalist agents were active and somewhat
+              successful in exploiting Quaker ambivalence about the war and
+              translating it into opposition to the Patriot cause. [7]
+28 Jun 1776 Patriots decisively defeat the British Navy at Fort Moultrie,
+              South Carolina. [5] The Battle of Sullivan's Island leads to
+              the commemoration of Carolina Day. [2]
+            Final draft of Declaration of Independence submitted to
+              Continental Congress. [9]
+            Thomas Hickey, Continental Army private and bodyguard to
+              General George Washington, is hanged for mutiny and sedition. [2]
+29 Jun 1776 Virginia state constitution adopted and Patrick Henry made
+              governor [9]
+            Battle of Turtle Gut Inlet [14]
+ 1 Jul 1776 At the instigation of British agents, the Cherokee attack
+              along the entire southern frontier. [5]
+            -4 Jul 1776, Congress debates and revises the Declaration of
+              Independence. [5]
+ 2 Jul 1776 New Jersey's Provincial Congress adopted the state's first
+              constitution. William Livingston was chosen as the first governor
+              under the new statute, which was the only one of the original
+              state constitutions granting the right of suffrage to women,
+              providing they were property owners. [7]
+            Continental Congress passed a resolution saying "These United
+              Colonies are, and of right, out to be, free and independent
+              states" [6] severing ties with the Kingdom of Great Britain
+              [2] [20] although the wording of the formal Declaration of
+              Independence is not published until 4 Jul. [2]
+ 4 Jul 1776 Former New Jersey Royal Governor William Franklin (son of
+              Patriot leader Benjamin Franklin), arrested and detained at
+              his Burlington estate, arrived in Connecticut as a prisoner
+              of war. He was exchanged in 1778 and returned to New York to
+              head a Loyalist group that waged war on New Jersey Patriots. [7]
+            Cloudy, 76 degrees F - Philadelphia, PA. [6]
+            Declaration of Independence signed [2] [6] in Philadelphia PA. [6]
+            New York abstains on Declaration of Independence vote. [6]
+            The United States of America (including the State of Rhode Island
+              and Providence Plantations) declares its independence from the
+              Kingdom of Great Britain. Philadelphia is the first of eight
+              cities that will serve as a temporary capital until 1800. [2]
+ 6 Jul 1776 American Declaration of Independence announced on front page of
+              "PA Evening Gazette". [9]
+ 8 Jul 1776 The Declaration of Independence was proclaimed for the first
+              time in New Jersey in Trenton, to "Cloud acclamation." [7]
+            Col John Nixon gives the 1st public reading of the Declaration of
+              Independence [2] [9] to an assemblage of citizens in Philadelphia
+              [9] after which church bells (possibly including the Liberty
+              Bell) are rung. [2]
+ 9 Jul 1776 Sons of Liberty order African slaves to topple statue of King
+              George III in Bowling Green (New York City). [2]
+            The fourth Provisional Congress assembled at White Plains;
+              Declaration of Independence adopted. [15]
+            George Washington orders the Declaration of Independence to be
+              read out to members of the Continental Army in Manhattan,
+              while thousands of British troops on Staten Island prepare
+              for the Battle of Long Island. [2]
+12 Jul 1776 Articles of Confederation. [4]
+14 Jul 1776 George Washington refuses a letter from General Howe addressed
+              to George Washington Esq. rather than General Washington. [6]
+15 Jul 1776 Lyndley's Fort, SC, Patriots fend off attack by Indians and
+              Tories dressed as Indians. [5]
+ 1 Aug 1776 Ambushed by Cherokees, Patriots are saved by a mounted charge
+              at Seneca, SC. [5]
+ 2 Aug 1776 Formal signing of the US Declaration of Independence [2] [9]
+              by 56 people (date most accepted by modern historians). [9]
+10 Aug 1776 Tugaloo River, SC - Andrew Pickens defeats Cherokees. [5]
+            Word of the United States Declaration of Independence reaches
+              London. [2]
+12 Aug 1776 General George Washington writes to Major General Charles Lee
+              that the Continental Army's situation had deteriorated due to
+              an outbreak of smallpox and problems with desertion. Washington
+              feared that the superior British navy might blockade New York,
+              thus isolating the city from communications with other states.
+              Washington was correct that the British intended to capture
+              New York City and gain control of the Hudson River, a victory
+              that would divide the rebellious colonies in half. British
+              General William Howe's large army landed on Long Island,
+              however, 10 days later than they had planned, on 22 Aug.
+              Finally, on 27 Aug, the Redcoats marched against the Patriot
+              position at Brooklyn Heights, overcoming the Americans at
+              Gowanus Pass and then outflanking the entire Continental
+              Army. The Americans suffered 1,000 casualties to the British
+              loss of only 400 men during the fighting. After the victory,
+              Howe chose not to follow the advice of his subordinates and
+              did not storm the Patriot redoubts at Brooklyn Heights, where
+              he could have taken the Patriots' military leadership prisoner
+              and ended the rebellion. General Washington ordered a retreat
+              to Manhattan by boat. The British could easily have prevented
+              this retreat and captured most of the Patriot officer corps,
+              including Washington. General William Howe and his brother,
+              Admiral Richard Howe, however, still hoped to convince the
+              Americans to rejoin the British empire in the wake of the
+              humiliating defeat, instead of forcing the former colonies
+              into submission after executing Washington and his officers
+              as traitors. Indeed, on 11 Sep, Benjamin Franklin, John Adams
+              and other congressional representatives reopened negotiations
+              with the Howe brothers on Staten Island; the negotiations fell
+              through when the British refused to accept American independence.
+              The British captured New York City on 15 Sep; it would remain
+              in British hands until the end of the war. [12]
+            Andrew Pickens' detachment surrounded by 185 Cherokee Indians,
+              forms a ring and fires outward. It is known as the "Ring
+              Fight." Col. Williamson and Andrew Pickens defeat Cherokee
+              Indians and burn Tamassy, an Indian town. [5]
+21 Aug 1776 After adopting the new state constitution, the New Jersey
+              Provincial Congress adjourned. [7]
+22 Aug 1776 Lord Howe with 24,000 men land at Gravesend, L.I. [15]
+27 Aug 1776 The organization of a new New Jersey state government under
+              the newly adopted Constitution began. [7]
+            British forces under General William Howe and his brother,
+              Admiral Richard Viscount Howe, defeat Patriot forces under
+              General George Washington at the Battle of Brooklyn Heights in
+              New York. [2] [12] The Americans suffered 1,000 casualties to
+              the British loss of only 400 men during the fighting. After the
+              victory, Howe chose not to follow the advice of his subordinates
+              and did not storm the Patriot redoubts at Brooklyn Heights,
+              where he could have taken the Patriots' military leadership
+              prisoner and ended the rebellion. [12]
+30 Aug 1776 British win the Battle of Long Island. [4]
+            Gen Washington retires from Long Island to New York. [15]
+31 Aug 1776 William Livingston was chosen as the first governor of the
+              state of New Jersey under the Constitution of 1776. [2]
+              [7] The governor was elected by the legislature to serve a
+              one-year term. [7]
+ 7 Sep 1776 According to American colonial reports, Ezra Lee makes the
+              [2] world's first submarine attack [2] [12] in the Turtle,
+              attempting to attach a time bomb to the hull of HMS Eagle in
+              New York Harbor (no British records of this attack exist). [2]
+ 9 Sep 1776 Continental Congress decrees that United Colonies be called
+              United States. [2] [6] [19]
+10 Sep 1776 Nathan Hale volunteers to spy behind British lines. [2] [12]
+11 Sep 1776 An American delegation consisting of Benjamin Franklin, John
+              Adams and Edward Rutledge met with British Admiral Richard
+              Lord Howe [10] on Staten Island [2] to discuss terms upon
+              which reconciliation between Britain and the colonies might
+              be based. The talks were unsuccessful. [2] [10]
+12 Sep 1776 Nathan Hale leaves Harlem Heights Camp (127th St) for spy
+              mission. [9]
+15 Sep 1776 British forces land at Kip's Bay during the New York
+              Campaign. [2] New York is taken by General Howe. [6] British
+              forces occupy New York City. [19]
+16 Sep 1776 Despite the American failure to stop the British invasion of
+              New York City the previous day at Kip's Bay, the successful [12]
+              Battle of Harlem Heights [2] [12] restored public confidence in the
+              American troops and lifted the spirits of the Continental
+              Army. The Americans and British each lost approximately 70
+              troops in the fighting. One of the Americans lost was the
+              Ranger leader, Captain Thomas Knowlton. [12]
+19 Sep 1776 Col. Williamson's patriots attacked by Cherokees at Coweecho
+              River, NC. [5]
+21 Sep 1776 -22 Sep 1776, Great Fire of New York. [2]
+22 Sep 1776 Captain [6] Nathan Hale [2] [6] (b. 1755) [2] is captured by
+              the British on Long Island; he is denied a clergyman and [6]
+              hung; [2] [6] his last words were, "I only regret that I have
+              but one life to give for my country." [6]
+11 Oct 1776 Benedict Arnold defeated at the Battle of Valcour Island
+              (Lake Champlain), but delayed British advance [5] until 1777. [2]
+26 Oct 1776 Benjamin Franklin sets sail for France on a mission to seek
+              French support for the American Revolution. [9]
+28 Oct 1776 British troops attack and capture Chatterton Hill from the
+              Continental Army. [2] The Americans retreat from White Plains,
+              New York. British casualties (c300) higher than American
+              (c200). [5]
+31 Oct 1776 King speaks for first time since independence declared. [12]
+13 Nov 1776 -21 Nov 1776, George Washington makes his headquarters at
+              the home of Peter Zabriskie in Hackensack, NJ with his army
+              encamped at Fort Lee. [18]
+14 Nov 1776 The St. James Chronicle of London carries an item announcing
+              "The very identical Dr. Franklyn [Benjamin Franklin], whom Lord
+              Chatham [former leading parliamentarian and colonial supporter
+              William Pitt] so much caressed, and used to say he was proud
+              in calling his friend, is now at the head of the rebellion in
+              North America." [12]
+16 Nov 1776 A British and Hessian force stormed Fort Washington, New York,
+              and captured [2] [7] 2,600 Americans. Morale on the New Jersey
+              side of the Hudson, where soldiers watched the disaster,
+              plummeted, and the Americans evacuated supplies inland as
+              British raiders began to cross the river, isolating Fort Lee. [7]
+            1st gun salute for an American warship in a foreign port - US
+              Andrew Doria at Fort St Eustatius (Dutch Caribbean isalnd). [9]
+            The United Provinces (Low Countries) recognize the independence
+              of the United States. [2]
+19 Nov 1776 British General Charles Cornwallis crossed the Hudson River
+              and his men scaled the Palisades in preparation for a move on
+              Fort Lee as American troops accelerated their departure from
+              the fort. The British occupied Fort Lee the following day. [7]
+            Congress pleads for soldiers. [12]
+20 Nov 1776 British forces land at the Palisades and then attack Fort
+              Lee. [2] Lord Cornwallis captures Fort Lee from Nathanael
+              Greene. [5] The Continental Army starts to retreat across New
+              Jersey. [2]
+21 Nov 1776 As the main American army under General George Washington
+              withdrew across New Jersey, Governor William Livingston ordered
+              his militia to rally to support Washington's retreat and control
+              potential Loyalist uprisings. The initial response was less
+              than stellar, but British looting provided an incentive as
+              Dec 1776 dawned. [7]
+            Washington orders General Lee to New Jersey. [12]
+29 Nov 1776 The Battle of Fort Cumberland, Nova Scotia, comes to an end
+              with the arrival of British reinforcements. [2]
+30 Nov 1776 British General William Howe, then in the process of driving
+              the remnants of General George Washington's American army out
+              of New Jersey, optimistically advised Lord George Germain,
+              Secretary of State for America, that he intended to decisively
+              crush the rebellion in America in the forthcoming year. [7]
+ 3 Dec 1776 General George Washington writes to Congress from his
+              headquarters in Trenton, New Jersey, to report that he had
+              transported much of the Continental Army's stores and baggage
+              across the Delaware River to Pennsylvania. [12]
+ 8 Dec 1776 George Washington's retreating army crosses Delaware River
+              from NJ. [9]
+13 Dec 1776 American General Charles Lee, a former British officer, was
+              captured while dallying at Basking Ridge as the British army
+              crossed New Jersey in pursuit of the retreating Americans. [7]
+20 Dec 1776 To avoid British forces who were advancing on Philadelphia,
+              the Continental Congress began meeting in Baltimore. [2]
+22 Dec 1776 Skirmishing between New Jersey militiamen and Hessians began
+              at Ironworks Hill in Mount Holly. Fighting continued the
+              following day, preventing Hessian troops under Colonel Carl
+              von Donop from moving to Bordentown, where they would have
+              been in position to reinforce the Hessian garrison in Trenton
+              in case of an emergency. [7]
+23 Dec 1776 -26 Dec 1776, Battle of Iron Works Hill. [2]
+            Tom Paine publishes "American Crisis", "These are the times
+              that try men's souls." [9]
+            Continental Congress negotiates a war loan of $181,500 from
+              France. [9]
+25 Dec 1776 On Christmas night, General George Washington led 2,400 men
+              across the Delaware River in rain, sleet and snow at McKonkey's
+              Ferry, north of Trenton. At 4:00 AM the following morning, the
+              force began to march south in two columns towards Trenton. [7]
+26 Dec 1776 Battle of Trenton. [2] At around 8:00 AM, General Washington's
+              force attacked Colonel Johann Rall's 1,500-man Trenton
+              garrison. The Americans inflicted almost 1,000 casualties, most
+              of them prisoners, on Rall's Hessians, and mortally wounded the
+              colonel himself in a victory that saved the Revolution. Despite
+              legend, folklore and British blame-shifting, the Hessians were
+              not drunk as a result of a Christmas celebration, but were
+              in a precarious tactical position and caught by surprise by
+              Washington's daring maneuvers and impeccable leadership. [7]
+              Hessian Captain Andreas Wiederholdt captured. [14]
+       1777 -1779, Indian raids on Montague and the Minisink Valley
+              (NJ). [17]
+ 2 Jan 1777 Following the Second Battle of Trenton along Assunpink Creek,
+              which resulted in a stalemate, General George Washington
+              disengaged his army from contact with the British and slipped
+              away during the night, headed for Princeton. [7]
+ 3 Jan 1777 American General George Washington defeats British General
+              Lord Cornwallis at the Battle of Princeton. [15] Washington
+              quickly moved on to Morristown, where he established a winter
+              camp and rebuilt his army. [7]
+ 4 Jan 1777 New Jersey mounted militiamen captured a British supply wagon
+              train in Somerset County, in the beginning stages of what came
+              to be called the "forage war" in which British attempts to
+              gather supplies in the countryside were subjected to continual
+              harassment by militiamen and New Jersey Continental troops. [7]
+ 6 Jan 1777 General William Howe ordered Elizabethtown abandoned by British
+              troops due to constant harassment by the New Jersey militia
+              as the forage war heated up. [7]
+            -28 May 1778, [5] Washington winters in Morristown, NJ. [4]
+ 8 Jan 1777 The abandonment of most British outposts in New Jersey
+              was completed, leaving only New Brunswick and Perth Amboy
+              occupied. [7]
+12 Jan 1777 Continental Army General Hugh Mercer died of the bayonet wounds
+              he had received at the battle of Princeton. Mercer County was
+              subsequently named in his honor. [7]
+15 Jan 1777 The people of New Connecticut, [2] [10] a chunk of upstate
+              New York, [10] declared their independence. [2] [10] The tiny
+              republic became the state of Vermont in 1791. [10] Westminster
+              is the temporary capital. [2]
+20 Jan 1777 Battle of Millstone, New Jersey (Forage War). [2]
+28 Jan 1777 British plan to isolate New England. [12]
+ 1 Feb 1777 A British force skirmished with New Jersey militiamen at
+              Drake's Farm, near Springfield, as the "forage war" between
+              the British seeking supplies in the countryside and the local
+              militia heated up. [7]
+ 5 Feb 1777 Georgia formally adopts a new state constitution and becomes
+              the first U.S. state to abolish the inheritance practices of
+              primogeniture and entail. [12]
+ 8 Feb 1777 The Forage War continued as New Jersey militia attacked a
+              British force gathering supplies in Quibbletown, today the
+              New Market section of Piscataway Township. [7]
+19 Feb 1777 Congress overlooks Benedict Arnold for promotion. [12]
+21 Feb 1777 George Weedon is promoted to brigadier general. [12]
+            British ambassador Joseph Yorke demands dismissal of Governor
+              John de Graaff for saluting US flag. [9]
+23 Feb 1777 The "forage war" continued. British Lieutenant-colonel Charles
+              Mawhood led a British force out of Perth Amboy towards Rahway,
+              then known as "Spanktown." New Jersey General "Scotch Willie"
+              Maxwell was happy to accommodate the colonel's apparent desire
+              for a fight. Mawhood tried to outflank a line of militiamen
+              with a company of grenadiers from the Forty-second Highland
+              Regiment, but Scotch Willie had hidden some of his Jerseymen
+              in a position outflanking the advance, and they rose and shot
+              the regulars to ribbons. [7]
+ 4 Mar 1777 The Continental Congress returned to Philadelphia after the
+              threat to it by British forces was ended. [2]
+ 8 Mar 1777 Regiments from Ansbach and Bayreuth, sent to support
+              Great Britain in the American Revolutionary War, mutiny in
+              the town of Ochsenfurt. [2]
+ 2 Apr 1777 New Jersey militiamen gathered up horses, cattle and sheep near
+              Secaucus to keep them out of British hands. Due to a lack of
+              boats, they had to swim the livestock across the Hackensack
+              River. [7]
+13 Apr 1777 American forces are ambushed and defeated in [2] the Battle
+              of Bound Brook, New Jersey. [2] [12]
+20 Apr 1777 New York adopts state constitution. [12]
+21 Apr 1777 British attack Danbury, Connecticut. [12]
+26 Apr 1777 Sybil Ludington, 16-year-old daughter of American Colonel Henry
+              Ludington, makes a 40-mile ride in the early hours of the night
+              [2] from NY to Ct rallying her fathers militia. [9]
+            British regulars, under Major General William Tryon, burn and
+              loot Danbury, CT. [2]
+27 Apr 1777 The Battle of Ridgefield: A British invasion force engages
+              and defeats Continental Army regulars and militia irregulars
+              at Ridgefield, Connecticut; [2] however, Benedict Arnold's
+              troops force a British retreat. [5] The result is a tactical
+              British victory and a strategic Patriot victory. [2]
+21 May 1777 The force under George Washington's direct command encamped at
+              Morristown reported 7,363 officers and men "fit for duty and on
+              duty." Arms and ammunition were arriving in large quantities
+              from France, including 19,000 muskets and 1,000 barrels of
+              gunpowder during the month of Mar 1777 alone. [7]
+23 May 1777 Meigs Expedition claims sole Patriot victory on Long Island. [12]
+28 May 1777 -2 Jul 1777, Middlebrook encampment. [2]
+ 4 Jun 1777 An act providing for the "confiscation of property of all
+              citizens of New Jersey who joined the enemies of the state
+              and country," in other words, Loyalists, passed the New Jersey
+              legislature. [7]
+            The Republic of New Connecticut moves its capital to Windsor. [2]
+13 Jun 1777 Gilbert du Motier, Marquis de Lafayette lands near Charleston,
+              South Carolina, [2] [12] in order to help the Continental
+              Congress to train its army. [2]
+14 Jun 1777 Flag Resolution (possibly designed by Hopkinson, likely sewn by
+              Betsy Ross). [4] Stars and Stripes adopted, [2] [6] replacing
+              Grand Union flag. [6]
+16 Jun 1777 Battle of Bennington - New England's Green Mountain Boys rout
+              British. [9]
+20 Jun 1777 New Jersey Militia General Philemon Dickinson led 400 New
+              Jersey militiamen and 50 Pennsylvania riflemen in an attack
+              on a British foraging party in Middlesex County, capturing 9
+              prisoners and 40 wagons. [7]
+26 Jun 1777 Battle of Short Hills. [2]
+ 1 Jul 1777 British forces approached Fort Ticonderoga on Lake Champlain. The
+              fort was commanded by General Schuyler. After putting up a
+              token defense, Schuyler moved his forces to Fort Edward on
+              the Hudson. British forces, under the command of General
+              Burgoyne, advanced slowly on Fort Edwards, arriving after
+              three weeks, and captured the fort. Remaining at the fort
+              for almost another month, Burgoyne sent 800 of his men to
+              Vermont to obtain supplies. These troops were defeated by
+              local militia. With autumn approaching, Burgoyne knew that he
+              had to reach Albany. American forces, now under the command
+              of General Gates, fortified themselves along the way. A final
+              battle was fought at Freeman's farm, where the Americans were
+              victorious once again. Burgoyne withdrew to fortified positions
+              at Saratoga. When it became clear to Burgoyne that there would be
+              no relief force from the South, he surrendered his troops to the
+              Americans. This proved to be the turning point of the war. [3]
+ 5 Jul 1777 Fort Ticonderoga abandoned by the Americans due to advancing
+              British troops placing cannon on Mount Defiance. [2]
+ 6 Jul 1777 Siege of Fort Ticonderoga: After a bombardment by British
+              artillery under General John Burgoyne, American forces
+              retreat from Fort Ticonderoga, New York and British retake
+              Fort Ticonderoga. [2]
+ 7 Jul 1777 American forces retreating from Fort Ticonderoga are defeated in
+              [2] the Battle of Hubbardton. [2] [12]
+ 8 Jul 1777 Delegates in Vermont, which was not one of the Thirteen Colonies,
+              establish a republic and adopt a constitution (the Republic
+              of New Connecticut changes its name to the Vermont Republic) -
+              the first in what is now the territory of the United States to
+              prohibit slavery. (Vermont would become the fourteenth state
+              in 1791.) Windsor remains the capital. [2]
+ 9 Jul 1777 New York elects Brigadier General George Clinton as the first
+              governor of the independent state of New York. [12]
+10 Jul 1777 British General Richard Prescott captured in Rhode Island. [12]
+27 Jul 1777 Lafayette arrives in Philadelphia. [4]
+31 Jul 1777 The U.S. Second Continental Congress passes a resolution
+              that the services of [2] 19-year-old French aristocrat,
+              Marie-Joseph Paul Roch Yves Gilbert du Motier, Marquis de
+              Lafayette [12] "be accepted, and that, in consideration of
+              his zeal, illustrious family and connexions, he have the rank
+              and commission of major-general of the United States." [2]
+              de Lafayette accepts -- without pay. [12]
+ 6 Aug 1777 Patriots under Herkimer defeat the British under St. Leger at
+              Fort Stanwix, in the Mohawk Valley in Oriskany, New York. [4]
+              Gen. Herkimer mortally wounded [15] The bloody battle prevents
+              American relief of the Siege of Fort Stanwix. [2]
+16 Aug 1777 The Americans led by General John Stark rout British and
+              Brunswick troops under Friedrich Baum at the Battle of Bennington
+              in Walloomsac, New York. [2] [5]
+23 Aug 1777 British withdraw from Fort Stanwix, NY, upon hearing of Benedict
+              Arnold's approach. [5]
+25 Aug 1777 British General Howe lands at Head of Elk, Maryland. [4]
+ 3 Sep 1777 Flag of the United States flown in battle for the 1st time
+              at Cooch's Bridge, Delaware, a skirmish during American
+              Revolutionary War. [2] [9]
+11 Sep 1777 Battle of Brandywine, [2] [4] Chester County, [2] PA - Under
+              General Howe, [4] the British defeat Washington's troops [2] [4]
+16 Sep 1777 Washington and Howe meet 10 miles north of Brandywine for the
+              "Battle of the Clouds" which was "rained out" [4]
+19 Sep 1777 British [2] [4] (under Burgoyne) [4] forces win a tactically
+              expensive victory over the Continental Army [2] (under Gates)
+              [4] in the First Battle of Saratoga [2] [4] at Freeman's Farm,
+              NY. [4]
+20 Sep 1777 Near Paoli, Pennsylvania, General Charles Grey and nearly 5,000
+              British soldiers launch a surprise attack on a small regiment
+              of Patriot troops commanded by General Anthony Wayne in what
+              becomes known as the Paoli Massacre. Not wanting to lose the
+              element of surprise, Grey ordered his troops to empty their
+              muskets and to use only bayonets or swords to attack the
+              sleeping Americans under the cover of darkness. [12]
+21 Sep 1777 Paoli Massacre, PA. [5]
+26 Sep 1777 British [2] [4] under Howe [4] occupy Philadelphia. [2] [4]
+27 Sep 1777 United States of America moves its temporary capital from
+              Philadelphia to Lancaster for one day, following the capture
+              of Philadelphia by British forces. [2]
+30 Sep 1777 Continental Congress flees to York, Pa as British forces advance.
+              [9]
+   Oct 1777 Kingston burnt by Gen. Vaughan. [15]
+ 4 Oct 1777 Troops under George Washington are repelled by British troops
+              under William Howe [2] at Germantown, Pennsylvania. [6]
+ 6 Oct 1777 British forces capture Forts Clinton and Montgomery [2] [15]
+              on the Hudson River. [2]
+ 7 Oct 1777 Battle of Stillwater, Gen. Frazer killed. [15]
+            Burgoyne loses second battle of Freeman's Farm, NY at Bemis
+              Heights (Second Battle of Saratoga). [2] [4]
+17 Oct 1777 Major General John [1] Burgoyne surrenders to Patriot [2]
+              Major General Horatio [1] Gates at Saratoga, NY [2] [4] in a
+              turning point in the Revolutionary War. [1] The surrender of
+              6,000 British regulars at Saratoga will shock London and help
+              induce France to enter the war on the American side. [13]
+22 Oct 1777 American defenders of Fort Mercer (NJ) on the Delaware River
+              repulse [2] [4] repeated Hessian attacks [2] in the Battle of
+              Red Bank. [2] [14]
+23 Oct 1777 British fleet suffers defeat at Fort Mifflin, Pennsylvania. [12]
+29 Oct 1777 Hancock resigns as president of Congress. [12]
+ 2 Nov 1777 John Paul Jones sets sail. [12]
+ 3 Nov 1777 Washington learns of Conway cabal. [12]
+15 Nov 1777 After 16 months of debate [2] the Second Continental Congress
+              approved the Articles of Confederation, [2] [10] precursor to
+              the U.S. Constitution. The structure of the Constitution was
+              inspired by the Iroquois Confederacy of six major northeastern
+              tribes. The matrilineal society of the Iroquois later inspired
+              the suffragist movement. [10]
+16 Nov 1777 British capture Fort Mifflin, PA. [4]
+17 Nov 1777 Articles of Confederation submitted to the states [2] [12]
+              for ratification. [2]
+18 Nov 1777 Capture of Fort Mercer. [2]
+27 Nov 1777 New Jersey Militia General Philemon Dickinson led a force
+              of 1,400 militiamen on a massive raid on Staten Island and
+              captured 200 men of the Loyalist New Jersey Volunteers, most
+              of them recently recruited in Bergen County. [7]
+28 Nov 1777 John Adams replaces Silas Deane. [12]
+ 2 Dec 1777 Legend has it that on this night Philadelphia housewife and
+              nurse Lydia Darragh single-handedly saves the lives of General
+              George Washington and his Continental Army when she overhears
+              the British planning a surprise attack on Washington's army
+              for the following day. Using a cover story that she needed to
+              buy flour from a nearby mill just outside the British line,
+              Darragh passed the information to American Lieutenant Colonel
+              Thomas Craig the following day. [12]
+ 5 Dec 1777 A British advance column met unexpected resistance at Germantown,
+              Penn. Gen. Howe refrained from a direct attack on Whitemarsh,
+              where Gen. Wasinington was based, and the battle dissolved in
+              a series of inconclusive skirmishes that lasted 3 days. The
+              Americans lost 90 men killed or wounded and the British lost
+              60. [10]
+ 7 Dec 1777 Americans repulse British at Whitemarsh, PA. [4]
+11 Dec 1777 Battle of Matson's Ford. [2]
+17 Dec 1777 France formally recognizes the United States. [2] [12]
+18 Dec 1777 The United States celebrates its first Thanksgiving, marking
+              the recent victory by the American rebels over British General
+              John Burgoyne at Saratoga in October. [2] [9]
+19 Dec 1777 -19 Jun 1778, Continental Army in third winter quarters at
+              Valley Forge, Pennsylvania. [2]
+       1778 Van Steuben arrives at Valley Forge. [4]
+            -1779, Major General Israel Putnam choses Redding Connecicut
+              as his winter encampment to keep an eye on the storehouses in
+              Danbury, Connecticut. [2]
+            Saint Pierre and Miquelon were attacked by a force led by
+              Newfoundland's Governor John Montagu and the population
+              deported by the British as retaliation for French support of
+              the American Revolutionary War. The residents were sent to
+              France and their homes were destroyed. [2]
+ 5 Feb 1778 Articles of Confederation ratified by 1st state, South Carolina.
+              [9]
+ 6 Feb 1778 In Paris the Treaty of Alliance and the Treaty of Amity
+              and Commerce are signed by the United States and France [2]
+              (the French Alliance) [5] signaling official recognition of
+              the new republic. [1] [2] France offered further aid. [16]
+            Britain declares war on France. [6]
+14 Feb 1778 The US ship Ranger takes the recently adopted Stars and
+              Stripes to a foreign port for the first time as it arrived in
+              France. [6] The United States flag is formally recognized by a
+              foreign naval vessel for the first time, when French Admiral
+              Toussaint-Guillaume Picquet de la Motte renders a nine gun
+              salute to USS Ranger, commanded by John Paul Jones. [2]
+23 Feb 1778 Baron von Steuben arrives at Valley Forge, Pennsylvania [2]
+              [9] to help to train the Continental Army. [2]
+ 7 Mar 1778 British General William Howe replaced by Henry Clinton. [4]
+16 Mar 1778 British Colonel Charles Mawhood's raiding party skirmished
+              with local militia under Captain Samuel Hugg at Mantua Creek
+              Bridge. [7]
+18 Mar 1778 Lieutenant Colonel and privateer captain Elijah Hand and his
+              Cumberland Militia drive British troops from Quinton's Bridge,
+              Salem County, NJ. [14]
+21 Mar 1778 Loyalist raiders under Colonel John Simcoe massacred New
+              Jersey militiamen, inadvertently killing a Loyalist judge in
+              the process, in a night bayonet attack at Hancock's Bridge. [7]
+ 5 Apr 1778 A combined British and Loyalist raiding party from New York
+              and Sandy Hook destroyed the salt works on the Manasquan River,
+              at today's Union Landing. [7]
+ 6 Apr 1778 The British and Loyalist raiders who destroyed the Manasquan
+              River salt works the day before landed at Shark River, but
+              rough weather and sniping militiamen intervened and they were
+              only able to partly destroy the salt works at that location. [7]
+ 8 Apr 1778 John Adams arrives in Paris to replace Silas Deane. [12]
+10 Apr 1778 John Paul Jones sets out to raid British ships. [12]
+22 Apr 1778 John Paul Jones leads American raid on Whitehaven, England. [12]
+23 Apr 1778 John Paul Jones burns Whitehaven, England. [12]
+ 1 May 1778 In a rollicking May Day celebration at Valley Forge, the men of
+              General William Maxwell's Continental Army New Jersey Brigade,
+              some dressed as Indians and well fortified with whiskey,
+              marched, hats adorned with cherry blossoms, with "mirth and
+              Jollity" in honor of "King Tammany." [7]
+            The Battle of Crooked Billet begins in Hatboro, Pennsylvania. [2]
+              [9]
+20 May 1778 Battle of Barren Hill, Pennsylvania. Lafayette with 500 men
+              and about 50 Oneida Indians successfully evade British
+              onslaught. [5]
+27 May 1778 During the course of a larger raid into Monmouth County (NJ)
+              intended to destroy mills and salt works, Loyalist raiders
+              attacked the Matawan home of Patriot militia leader Major John
+              Burrowes, hoping to capture him. Burrowes climbed out a window
+              and swam Matawan Creek to successfully escape. [7]
+17 Jun 1778 British peace offer rejected by Congress. [6]
+18 Jun 1778 British abandon Philadelphia [2] [5] and return to New York. [5]
+19 Jun 1778 Washington's troops finally leave Valley Forge. [6]
+21 Jun 1778 Lieutenant Colonel Clarke of the British Seventh Regiment
+              issued an order condemning the "irregularity and excesses
+              that have been committed these few days," - looting the homes
+              and farms of New Jersey civilians in the British march from
+              Philadelphia to New York -- adding that his officers should
+              "prevent its happening again," and threatened punishment "with
+              the utmost Severity." His edict had no discernible effect on
+              the conduct of his men. [7]
+25 Jun 1778 A combined Continental and Militia force under New Jersey Major
+              Joseph Bloomfield (a future governor of New Jersey) made contact
+              with and hung within a quarter-mile of the British army crossing
+              the state, closing with and firing on the enemy "several times
+              during the night." Bloomfield's detachment "took 15 prisoners &
+              had several skirmishes with the Jagers [sic]," with the Major
+              personally claiming three German Jaeger prisoners. [7]
+27 Jun 1778 Liberty Bell came home to Philaelphia after the British departure.
+              [9]
+28 Jun 1778 The Battle of Monmouth Court House, fought west of Freehold
+              (NJ) between George Washington's Continental Army and Sir
+              Henry Clinton's British army, which was withdrawing from
+              Philadelphia to New York, [7] ended in a tactical draw, [2]
+              [7] but was an American moral victory, as the Continental army
+              stood up to the best of the British and held the field at the
+              end of the day. [7] The British withdraw from Monmouth Court
+              House under cover of darkness. [2] In addition, "Molly Pitcher"
+              (probably Mary Ludwig Hayes) would become an American icon
+              because of the battle. [7]
+ 3 Jul 1778 Iroquois allied to Britain [2] kill 360 people (men, women &
+              children) in the Wyoming Valley massacre. [2] [9]
+ 4 Jul 1778 George Rogers Clark captured Kaskaskia, [2] [4] a French
+              village near Detroit, [4] during the Illinois campaign. [2]
+10 Jul 1778 Louis XVI of France declares war on the Kingdom of Great
+              Britain. [2]
+27 Jul 1778 The United States of America moves its temporary capital from
+              York back to Philadelphia. [2]
+            First Battle of Ushant: British and French fleets fight to a
+              standoff. [2]
+ 8 Aug 1778 French and American forces besiege Newport, RI. [4]
+21 Aug 1778 British forces begin besieging the French outpost at
+              Pondichery. [2]
+28 Aug 1778 Col. Baylor's troop surprised at Tappan, New York. [15]
+29 Aug 1778 British and American forces battle indecisively at the Battle
+              of Rhode Island. [2]
+ 7 Sep 1778 France invades Dominica in the British West Indies, before
+              Britain is even aware of France's involvement in the war. [2]
+14 Sep 1778 Benjamin Franklin sent to France as American minister. [6]
+27 Sep 1778 Colonel George Baylor and his Third Continental Dragoons,
+              116 officers and men, were stationed at Paramus (NJ) with
+              orders to march north when Baylor moved his men to watch a
+              Hackensack River crossing, quartering them at Overkill (today's
+              River Vale) in local homes. In a 650-man night bayonet attack
+              forever after known locally as the "Baylor Massacre," the
+              British overran the dragoons, who had unaccountably neglected
+              to post sentries in all directions. Casualty accounts vary,
+              but the Americans apparently lost 15 men killed and 54 wounded
+              and captured. Several survivors subsequently died of wounds. [7]
+            The Continental Congress fled Philadelphia after the American
+              defeat at the Battle of Brandywine, and briefly met in Lancaster,
+              Pennsylvania. [2]
+30 Sep 1778 The Continental Congress continued to move away from
+              Philadelphia, settling in York, Pennsylvania. [2]
+ 6 Oct 1778 British and Loyalist landing parties burn the privateer port of
+              Chestnut Neck, Gloucester County, NJ (Battle of Chestnut Neck).
+              [14]
+ 8 Oct 1778 The Pulaski Legion, a Continental Army outfit, arrived at
+              Little Egg Harbor (NJ) to counter Colonel Patrick Ferguson's
+              expedition. The Legion, a combined arms infantry/cavalry unit,
+              camped on a farm near the Quaker settlement of Middle of the
+              Shore (today's Tuckerton). Lieutenant Juliat (who had previously
+              deserted from the British) deserted from the Legion and informed
+              Ferguson, who was still in the area, of the unit's location
+              and the British commander launched a surprise night bayonet
+              attack on 15 Oct, killing between thirty and fifty men. [7]
+11 Nov 1778 led by William Butler, British redcoats, Tory rangers and Seneca
+              Indians in central New York [2] [11] attack a fort and village
+              killed more than 40 people [2] in the Cherry Valley Massacre.
+              [2] [11]
+29 Nov 1778 Colonel Christian Febiger, commanding the Second Virginia
+              Regiment stationed at Hackensack, wrote to General George
+              Washington that "My Regiment is hardly sufficient to keep
+              necessary Guards for our own Security, which renders it very
+              severe Duty to keep a Guard at the Liberty Pole and parties
+              out to intercept the Villains that are dayly carrying Supplies
+              to the Enemy." [7]
+30 Nov 1778 -3 Jun 1779, Majority of Continental Army in fourth winter
+              quarters at Middlebrook encampment [2]
+10 Dec 1778 John Jay is elected president of the Continental Congress [12]
+15 Dec 1778 British and French fleets clash in the Battle of St. Lucia. [2]
+29 Dec 1778 Three thousand British soldiers under the command of
+              Lieutenant Colonel Archibald Campbell capture Savannah, Georgia
+              successfully launch their southern strategy; [2] and a month
+              later, Augusta. Patriots retreat to South Carolina. [4]
+       1779 Gen. Sullivan ravages the country of the Six Nations [15]
+13 Jan 1779 A British raiding party captured Ensign Abraham Allen and
+              three other New Jersey militiamen at Bergen Point. [7]
+22 Jan 1779 Famed Tory outlaw Claudius Smith meets his end on the gallows
+              in Goshen, New York. In the wake of his death, Patriot civilians
+              hope for relief from guerilla warfare in upstate New York. [12]
+26 Jan 1779 Engagement at Burke County Jail [12]
+ 3 Feb 1779 Maj. Gen. Moultrie defeats British detachment at Port Royal
+              Island, SC [5]
+10 Feb 1779 The Battle of Carr's Fort [12]
+14 Feb 1779 The Battle of Kettle Creek. [2] Patriots Andrew Pickens and
+              Elijah Clarke beat Loyalists at Kettle Creek, [5] GA. [2] [5]
+23 Feb 1779 -25 Feb 1779, American George Rogers Clark captures Vincennes
+              (in what is now Indiana) on the Wabash in the Western campaign
+              [5]
+ 3 Mar 1779 British Lt. Col. Jacques Marcus Prevost defeats Americans
+              under Gen. John Ashe at Brier Creek, GA [5]
+27 Mar 1779 British raiders captured four Continental Army privates in a
+              raid near today's Hoboken (NJ). [7]
+17 Apr 1779 Local militiamen chased a gang of Tory raiders from Pompton
+              to Hoebuck (NJ), killing one. [7]
+27 Apr 1779 Loyalists, described by locals as "well armed villains,"
+              attacked the Hibernia Iron Works (NJ) and made off with
+              equipment and other goods. [7]
+29 Apr 1779 The British brig Delight, a two-masted vessel designed for
+              inshore action, ran aground on Peck's Beach in Cape May County
+              (NJ), where local militiamen captured both crew and vessel. [7]
+11 May 1779 Maj. General Augustin Prevost (brother of Jacques) breaks his
+              siege when American forces under Maj. Gen. Lincoln approaches
+              (ends 13 May) [5]
+18 May 1779 Militiamen removed planks in the bridge at New Bridge Crossing
+              on the Hackensack River in order to slow the advance of British
+              troops raiding Bergen County (NJ). [7]
+ 1 Jun 1779 Benedict Arnold, [2] [12] a general in the Continental Army
+              during the American Revolutionary War, is court-martialed [2]
+              [12] for malfeasance. [2]
+16 Jun 1779 Spain declares war on Great Britain [2] [9] in support of the
+              US, and the siege of Gibraltar begins. [9]
+20 Jun 1779 Stono River, SC, Maj. Gen. Lincoln inflicts extensive British
+              casualties in indecisive battle [5]
+ 2 Jul 1779 The Continental Congress returned to Philadelphia following
+              British withdrawal. [2]
+ 3 Jul 1779 -14 Jul 1779, Tryon's raid [2]
+ 5 Jul 1779 Tryon's division lands in East Haven, Connecticut, met with
+              spirited resistance from a band of local militia, take Black
+              Rock Fort [2]
+ 6 Jul 1779 Battle of Grenada: The French defeat British naval forces
+              during the American Revolutionary War. [2]
+ 7 Jul 1779 Battle of Fairfield Destroy 54 barns, 47 storehouses, burned
+              83 homes, two churches, and municipal buildings including a
+              schoolhouse, the courthouse and the local jail. [2]
+ 8 Jul 1779 Fairfield, CT burned by British [4]
+11 Jul 1779 Battle of Norwalk weakly opposed by about 50 local militia,
+              easily dispersed. The destruction of the village and its
+              commercial infrastructure destroyed. [2]
+16 Jul 1779 Patriot "Mad" Anthony Wayne [4] and Light infantry of the
+              Continental Army seize a fortified British Army position in
+              a midnight bayonet attack at the Battle of Stony Point (NY). [2]
+19 Jul 1779 Massachusetts begins ill-fated Penobscot expedition [9]
+            British post at Paulus Hook surprised by Maj. Lee [15]
+13 Aug 1779 The Royal Navy defeats the Penobscot Expedition with the most
+              significant loss of United States naval forces prior to the
+              attack on Pearl Harbor. [2]
+19 Aug 1779 Major Henry "Light Horse Harry" Lee led a successful surprise
+              night attack on a British garrison at Paulus Hook (in today's
+              Jersey City), taking 158 prisoners. [7]
+16 Sep 1779 The Franco-American Siege of Savannah begins. [2]
+23 Sep 1779 John Paul Jones, naval commander of the United States, on board
+              the USS Bonhomme Richard, wins the Battle of Flamborough Head [2]
+              and captures British man-of-war Serapis near English coast. [4]
+24 Sep 1779 Congress awarded Major "Light Horse Harry" Lee a gold medal
+              and $15,000 to be divided among the troops who took part in
+              his raid on Paulus Hook (NJ). [7]
+27 Sep 1779 The Continental Congress appoints John Adams to travel to
+              France as minister plenipotentiary in charge of negotiating
+              treaties of peace and commerce with Great Britain during the
+              Revolutionary War. [12]
+            John Jay is appointed minister to Spain [12]
+28 Sep 1779 The Tappan Massacre "No Flint" Grey kills 30 Americans by
+              bayonet [4]
+            Samuel Huntington is elected President of the Continental
+              Congress, succeeding John Jay. [2] [9]
+29 Aug 1779 Newtown, NY, after two massacres, American forces burn Indian
+              villages [5]
+ 9 Oct 1779 Patriots fail to recapture Savannah, GA [4]
+18 Oct 1779 The Franco-American Siege of Savannah is lifted. [2]
+12 Nov 1779 A group of 20 slaves who had fought in the war submitted
+              a petition to the New Hampshire General Assembly, while the
+              war was still being fought. Lawmakers decided the time was not
+              right. 6 of the slaves were later freed. In 2013 a state Senate
+              committee recommended that the state posthumously emancipate
+              14 of the slaves who died in bondage. On 7 Jun 2013, they were
+              granted posthumous emancipation when Gov. Maggie Hassan signed
+              a largely symbolic bill that supporters hope will encourage
+              future generations to pursue social justice. [10]
+ 1 Dec 1779 -23 Jun 1780, [5] Washington establishes winter quarters at
+              Morristown [12]
+23 Dec 1779 A British fleet sailed out of New York to begin the Southern
+              Campaign, the last significant effort to defeat the American
+              Revolution, leaving a garrison of 13,000 British and German
+              troops in the city. Together with Loyalist cadres, that force
+              continued to harass New Jersey Patriots over the next several
+              years with operations ranging from small raids to significant
+              incursions into the state. [7]
+            Benedict Arnold court-martialed for improper conduct [9]
+       1780 the Indians under Brant ravage the Mohawk Valley [15]
+15 Jan 1780 Congress establishes the Court of Appeals in Cases of Capture
+              to provide for final adjudication of appeals from state court
+              prize cases involving disposition of ships and cargo allegedly
+              seized from the British. [2]
+16 Jan 1780 Battle of Cape St. Vincent. [2]
+            British demonstrate naval supremacy in The Moonlight Battle [12]
+28 Jan 1780 A stockade known as Fort Nashborough is founded on the banks
+              of the Cumberland River.Two years later the site is renamed
+              Nashville. [2]
+ 1 Feb 1780 Some 8,000 British forces under General Henry Clinton arrive
+              in Charleston, South Carolina, from New York. [2]
+            New York cedes to Congress its western claims, including
+              territory west of Lake Ontario. In 1792 New York will sell
+              the Erie Triangle to Pennsylvania. [2]
+29 Feb 1780 Continental Army Quartermaster General Nathanael Greene wrote
+              from Morristown (NJ): "Our provisions are in a manner, gone. We
+              have not a ton of hay at command, nor magazine [supply point]
+              to draw from. Money is extremely scarce, and worth little
+              when we get it. We have been so poor in camp for a fortnight,
+              (two weeks) that we could not forward the public dispatches,
+              for want of cash to support the expresses." [7]
+14 Mar 1780 Bombardment of Fort Charlotte: After a two-week siege, Spanish
+              general, colonial governor of Louisiana, and Viceroy of New
+              Spain Bernardo de Galvez captures Fort Charlotte, taking the
+              port of Mobile (in present-day Alabama) from the British. Fort
+              Charlotte was the last remaining British frontier post capable
+              of threatening New Orleans in Spanish Louisiana. Its fall drove
+              the British from the western reaches of West Florida and reduced
+              the British military presence in West Florida to its capital,
+              Pensacola. [2]
+17 Mar 1780 George Washington grants the Continental Army a holiday
+              "as an act of solidarity with the Irish in their fight for
+              independence". [2]
+30 Mar 1780 Loyalist raiders in Monmouth County (NJ) looted the home of John
+              Russell, whom they reviled for his attacks on Staten Island,
+              killing Russell and wounding his son. [7]
+ 8 Apr 1780 Siege of Charleston: British Army troops under General Henry
+              Clinton and naval forces under Admiral Mariot Arbuthnot besiege
+              Charleston, South Carolina. British ships sail past Fort Moultrie
+              on Sullivan's Island to occupy Charleston Harbor. Washington will
+              order reinforcements to Charleston, but the city falls on May
+              12 in what is arguably the worst American defeat of the war. [2]
+19 Apr 1780 General George Washington welcomed distinguished visitors
+              "the Chevalier de la Luzerne, Minister of France, with another
+              French gentleman, and Don Juan de Miralles, a gentleman of
+              distinction from Spain," to the Ford Mansion, his Morristown
+              (NJ) headquarters. [7]
+24 Apr 1780 General George Washington put on a show for his distinguished
+              French visitor, the Chevalier de la Luzerne: "... a field of
+              parade being prepared under the direction of the Baron Steuben,
+              four battalions of our army were presented for review, by the
+              French minister, attended by his Excellency and our general
+              officers. Thirteen cannon, as usual, announced their arrival in
+              the field, and they received from the officers and soldiers the
+              military honors due to their military rank. In the evening,
+              General Washington and the French minister attended a ball
+              provided by our principal officers, at which were present a
+              numerous collection of ladies and gentlemen of distinguished
+              character." [7]
+29 Apr 1780 General George Washington's Morristown (NJ) guest, the
+              Spanish diplomat Don Juan de Miralles, who had fallen ill with
+              "a violent biliary complaint" died, and was "inter'd ... at
+              Morris Town." A funeral procession proceeded from Washington's
+              headquarters at the Ford mansion to the cemetery. [7]
+ 2 May 1780 Congress issues "Instructions to Privateers" [14]
+ 6 May 1780 Siege of Charleston: Fort Moultrie falls to the British. [2]
+12 May 1780 The British take Charleston, SC, capture a large patriot army,
+              and deal the rebels one of their worst defeats of the war.
+              The British lose 255 men. The Americans were lead by General
+              Benjamin Lincoln. The Charleston move is part of a broader
+              British strategy to hang on to the southern colonies, at least,
+              now that the war is stalemated in Pennsylvania and New York. [13]
+21 May 1780 Sir John Johnson from Canada makes an incursion into Johnstown,
+              New York [15]
+25 May 1780 The men of the Fourth and Eighth Connecticut regiments, encamped
+              in Jockey Hollow, near Morristown (NJ), mutinied and refused
+              to obey orders. The soldiers were distraught from a lack of
+              food and pay over the long and exceptionally hard winter,
+              but were talked into discontinuing their armed protest by
+              officers they respected. [7]
+29 May 1780 Battle of Waxhaws: A clash between Continental Army forces
+              under Abraham Buford and a mainly Loyalist force led by Banastre
+              Tarleton occurs near Lancaster, South Carolina in the Waxhaws
+              area (close to present-day Buford). The British destroyed the
+              American forces. The British continued attacking after the
+              Continentals lay down their arms, killing 113 and critically
+              wounding all but 53 that remained. [2]
+            The treatment of Patriot prisoners by British Colonel Banastre
+              Tarleton and his Loyalist troops leads to the coining of a
+              phrase that comes to define British brutality for the rest of
+              the War for Independence: "Tarleton's Quarter." [12]
+ 6 Jun 1780 Hessian General Wilhelm Von Knyphausen, who had moved 6,000
+              British and Hessian troops from Manhattan to Staten Island,
+              crossed over to Elizabethtown, New Jersey, at midnight, hoping
+              to push through Hobart's gap to Morristown the following
+              day. Hannah Ogden Caldwell, wife of American clergyman and
+              Patriot activist Reverend James Caldwell, was killed during
+              his subsequent advance when a British soldier fired into her
+              house in Connecticut Farms (today's Union). [7]
+ 7 Jun 1780 American resistance from Militia and Continentals stiffened as
+              General Knyphausen moved beyond Connecticut Farms and the attack
+              ground to a halt when General "Scotch Willie" Maxwell arrived
+              with reinforcements and took command on the scene with more
+              militiamen and the remainder of his New Jersey Brigade. Maxwell
+              conducted a fighting withdrawal beyond Connecticut Farms and
+              across the Rahway River towards Springfield. By nightfall on
+              7 Jun, Knyphausen gave up and withdrew. [7]
+20 Jun 1780 A British Officer complained in the pages of the Royal
+              Gazette that the New Jersey Patriots protested too much about
+              the death of Hannah Caldwell, killed when a British soldier
+              fired into her house in Connecticut Farms (Union) earlier in
+              the month. The officer claimed that the soldier was merely
+              returning fire, and that the ultimate blame should be placed
+              on the New Jersey militia for practicing guerilla warfare,
+              which encouraged random return fire. [7]
+            Battle of Ramsour's Mill, NC. 1,000 Tories under Lt. Col. John
+              Moore and Maj. Nicholas Welch were defeated after an attack
+              by 500 militiamen under Col. Francis Locke and Maj. Joseph
+              McDowell. [4]
+23 Jun 1780 General Knyphausen made his second incursion of the month
+              into New Jersey in hopes of capturing Hobart's Gap and
+              Morristown. This time he was supported by diversionary forces to
+              the north. The British column moved through Connecticut farms
+              but was slowed, then halted, in a stiff fight at Springfield,
+              and Knyphausen withdrew once more. [7]
+            The Battle of Springfield gave rise to a bit of New Jersey
+              folklore, the tale of Reverend James Caldwell, a Patriot pastor
+              whose wife was killed by British fire earlier in the month,
+              handing out Watts hymnals on his church steps to soldiers
+              for use as "wadding" in their muskets while crying "Give
+              'em Watts boys." The story is best taken with more than the
+              proverbial grain of salt. Continental soldiers, and by this
+              stage of the war, militiamen as well, came to a fight with
+              prepared musket cartridges including powder and ball wrapped
+              in paper, and would likely have had no need for "wadding." [7]
+              The Battle of Springfield was fought in and around Springfield,
+              New Jersey (including Short Hills, formerly of Springfield,
+              now of Millburn Township). [2]
+ 1 Jul 1780 The first meeting of the Association for Retaliation, an
+              extra-legal organization created for the sole purpose of
+              harassing known local Loyalists and their suspected sympathizers
+              still residing in Monmouth County, was held in Freehold (NJ). The
+              group pledged to use the same violent tactics employed by Tory
+              refugee groups that raided the county against those perceived to
+              be Loyalists, and drafted a constitution entitled "The Articles
+              of Association for Purposes of Retaliation," a document that
+              clearly exemplifies the principle of an "eye for an eye." [7]
+11 Jul 1780 French troops arrive at Newport, RI, to aid the American cause
+              [4]
+21 Jul 1780 General Anthony Wayne led a raid on a Loyalist blockhouse
+              at Bull's Ferry, now part of Hackensack (NJ). Although they
+              outnumbered the enemy considerably, Wayne's men failed to take
+              the blockhouse, and were only able to capture some cattle. [7]
+            Battle of Colson's Mill, NC (close to the junction of the
+              Rocky and Pee Dee Rivers). Tories defeated by Patriots under
+              Col. William Lee Davidson. [2]
+ 6 Aug 1780 Patriots defeat Tories at Hanging Rock, SC [4]
+16 Aug 1780 Battle of Camden. British General Cornwallis gains a humiliating
+              victory over Gates in South Carolina. [2]
+11 Sep 1780 Sugarloaf Massacre: A small detachment of militia from
+              Northampton County are attacked by Native Americans and
+              Loyalists near Little Nescopeck Creek. [2]
+21 Sep 1780 During the American Revolution, American General Benedict
+              Arnold meets with British Major John Andre to discuss handing
+              over West Point to the British, in return for the promise of a
+              large sum of money and a high position in the British army. [12]
+              Benedict Arnold gives the British the plans to West Point. [2]
+23 Sep 1780 British Major John Andre arrested, leading to the exposure of
+              Benedict Arnold's plans to cede West Point to the British. [2]
+              [5]
+25 Sep 1780 Benedict Arnold's plan to cede West Point to the British
+              uncovered [4]
+26 Sep 1780 Battle of Charlotte [2]
+ 2 Oct 1780 Thirty-one-year-old British Major John Andre, [2] [12] an
+              accomplice of Benedict Arnold, [12] is hanged as a spy by
+              U.S. military forces [2] [12] in Tappan, New York [12]
+ 7 Oct 1780 King's Mountain, SC: battle lasts 65 minutes. American troops
+              (and the Overmountain Men) led by Isaac Shelby and John
+              Sevier defeat Maj. Patrick Ferguson and one-third of General
+              Cornwallis's army [5] (credited with turning the tide of the
+              war in the South). Cornwallis falls back into South Carolina. [4]
+14 Oct 1780 Washington names Nathanael Greene commander of the Southern
+              Army. [4]
+            Battle of Shallowford, Surry, NC [4]
+16 Oct 1780 The British-led Royalton raid is the last Native American raid
+              on New England. [2]
+ 5 Nov 1780 French-American force under Colonel LaBalme is defeated by
+              Miami Chief Little Turtle [9]
+ 9 Nov 1780 In the Battle of Fishdam Ford a force of British and Loyalist
+              troops fail in a surprise attack against the South Carolina
+              Patriot militia under Brigadier General Thomas Sumter. [2]
+              Sumter evades Wemyss in South Carolina. [12]
+   Dec 1780 Continental Army enters sixth winter with encampments in New
+              York's Hudson Highlands and Pompton and Morristown New Jersey.
+              [2]
+27 Dec 1780 Americans raid Hammonds Store [12]
+       1781 Final version of Articles of Confederation [4]
+            Battle of Elizabethtown (Bladen Co, NC). Seventy Patriots under
+              Col. Thomas Robeson defeat 400 Tories (thanks to Patriot "Spy"
+              Sally Salter). [4]
+            Maj. Ross and Butler make an incursion into Johnstown, New York;
+              W. Butler killed [15]
+ 1 Jan 1781 The Pennsylvania Line regiments of the Continental Army,
+              encamped for the winter at Jockey Hollow near Morristown (NJ),
+              mutinied over a lack of supplies, length of service time and
+              pay issues. [7]
+ 5 Jan 1781 Richmond, Virginia, is burned by British naval forces led by
+              Benedict Arnold. [2] [9]
+ 8 Jan 1781 The Pennsylvania Line mutiny, which began in Morristown (NJ)
+              on New Year's Day, ended in a negotiated settlement. [7]
+17 Jan 1781 Battle of Cowpens: Brigadier General [2] Daniel Morgan's
+              Continental regiments routed British forces [10] under Lieutenant
+              Colonel Banastre Tarleton [2] at Cowpens, South Carolina. Some
+              100 British soldiers were killed, 299 wounded and 600 taken
+              prisoner. 12 Americans were killed. [10]
+20 Jan 1781 Soldiers of the New Jersey regiments camped at Pompton (NJ)
+              mutinied, asking for the same settlement terms their fellow
+              soldiers of the much larger Pennsylvania Line received. Instead,
+              they were forced to surrender and the three sergeants who led
+              the rebellion were executed. [7]
+24 Jan 1781 Light Horse and Swamp Fox raid Georgetown, South Carolina [12]
+30 Jan 1781 Maryland finally ratifies Articles of Confederation [12]
+              13th state to do so. [9] The Articles of Confederation were
+              first approved by the Continental Congress in 1777. Then,
+              they were sent to each state for ratification. The Articles
+              required unanimous ratification by the states in order to take
+              effect. Some states resisted approving the Articles because
+              of a dispute over western lands. A number of the states had
+              large Western land holdings, while others had none. Those
+              states without western holdings felt that those with holdings
+              were receiving an unfair advantage. They felt that, since
+              all the states had fought for independence, including the
+              land to the west, it would be unfair if only the states that
+              held western land would be allowed to sell them to pay off
+              their war debt. Maryland continued to hold out, until 1781,
+              when New York surrendered her Western claims and Virginia was
+              on the verge of doing the same. [16]
+ 1 Feb 1781 American Brigadier General William Lee Davidson (Davidson
+              College namesake) dies in combat attempting to prevent General
+              Charles Cornwallis' army from crossing the Catawba River at
+              Cowan's Ford in Mecklenburg County, North Carolina. [12]
+ 2 Feb 1781 Nathanael Greene finds fortification at Steele's Tavern [12]
+ 3 Feb 1781 Greene crosses the Yadkin with Kosciusko's boats [12]
+            British forces seize the Dutch-owned Caribbean island Sint
+              Eustatius. [2]
+ 1 Mar 1781 Ratification of the Articles of Confederation [1]
+ 2 Mar 1781 Articles of Confederation adopted by Continental Congress [5]
+ 9 Mar 1781 Spanish siege of Pensacola begins [12]
+15 Mar 1781 Battle of Guilford Courthouse. [2] [4] Near present-day
+              Greensboro, North Carolina, [2] General Nathanael Greene's
+              American forces (4,400) and Charles, Second Earl Cornwallis'
+              British forces (1,900) finally met in battle. Although the
+              British claimed the field of battle, their greater losses, more
+              than a quarter of the army, greatly weakened them ("Another such
+              victory would destroy the British Army" - Charles James Fox). [4]
+24 Apr 1781 Phillips and Arnold launch attack on Petersburg, Virginia [12]
+25 Apr 1781 Nathanael Greene defeated at Hobkirk's Hill, SC [4]
+29 Apr 1781 French fleet occupies Tobago during American War of Independence
+              [9]
+            French fleet stopped Britain from seizing the Cape of Good Hope
+              [9]
+            British and French ships clash in the Battle of Fort Royal
+              off the coast of Martinique. [2]
+15 May 1781 Continentals capture Fort Granby, South Carolina [12]
+22 May 1781 Patriot siege of Ninety Six, South Carolina, begins [12]
+ 3 Jun 1781 Jack Jouett rides to warn Thomas Jefferson of British attack [9]
+ 6 Jun 1781 Americans recapture Augusta, GA [4]
+18 Jun 1781 British hold off Americans at Ninety Six, SC [4]
+ 6 Jul 1781 "Mad" Anthony Wayne repulsed at Green Springs Farm, VA; [4]
+              the last major engagement of the Revolutionary War prior to
+              the Colonial's final victory at Yorktown in October. [10]
+16 Aug 1781 Professed Loyalist and Pinelands bandit Joe Mulliner was hanged
+              near either Pleasant Mills or Woodbury (NJ). His alleged, if
+              unlikely, grave site, defined by a succession of markers over
+              the years, lies alongside the Pleasant Mills/Weekstown Road. [7]
+20 Aug 1781 George Washington begins to move his troops south to fight
+              Cornwallis [9]
+24 Aug 1781 A small force of Pennsylvania militia is ambushed and overwhelmed
+              by an American Indian group, which forces George Rogers Clark
+              to abandon his attempt to attack Detroit. [2]
+ 1 Sep 1781 Members of an elite light infantry detachment selected from
+              the New Jersey Brigade crossed the Delaware River on their
+              way south to participate in the Yorktown Campaign. [7]
+ 5 Sep 1781 Battle of Virginia Capes, where the French Fleet defeats the
+              British rescue fleet, trapping Cornwallis at Yorktown [6]
+            Battle of the Chesapeake: The British Navy is repelled by
+              the French Navy, contributing to the British surrender at
+              Yorktown. [2]
+ 6 Sep 1781 The Battle of Groton Heights takes place, resulting in a
+              British victory. [2]
+ 8 Sep 1781 The Battle of Eutaw Springs in South Carolina, [2] [4] the
+              war's last significant battle in the Southern theater, ends in a
+              narrow British tactical victory [2] against Nathanael Greene. [4]
+15 Sep 1781 French fleet drives British naval force from Chesapeake Bay [4]
+28 Sep 1781 American forces backed by a French fleet begin their siege of
+              Yorktown Heights, Virgina [2] [6]
+17 Oct 1781 Edward Hawke died, 1st Baron Hawke, English admiral (b. 1705) [2]
+19 Oct 1781 Seige of Yorktown ends. [2] [4] Cornwallis surrounded on land
+              and sea by Americans and French; Cornwallis (and 7000 of his men)
+              surrenders, Yorktown, VA. [4] After a long period of inactivity,
+              the British decided to pursue the Southern strategy. The British
+              were initially successful, but soon found themselves only in a
+              tenuous control of coastal cities. After a number of tactical
+              defeats, General Cornwallis, the British commander, retired
+              to Yorktown, awaiting relief from the British fleet. American
+              and French forces converged on him, however, and he was forced
+              to surrender. The surrender at Yorktown marked the last major
+              campaign of the war. [16]
+27 Oct 1781 News of the British surrender at Yorktown on 19 Oct reached
+              Trenton, where it was celebrated "with every mark of joy
+              and festivity ... in the evening the whole village was
+              illuminated." [7]
+28 Oct 1781 The American victory at Yorktown was formally celebrated "with
+              great eclat" in Trenton, capped by "an elegant entertainment" in
+              the afternoon and "brilliant illuminations" in the evening. [7]
+24 Nov 1781 Patriot clergyman Reverend James Caldwell was shot and killed
+              by an American sentry on duty at Elizabethtown (NJ). It was
+              believed that Loyalists had bribed the sentry to commit the act,
+              and he was tried and executed for murder. [7]
+   Dec 1781 Continental Army returns to Hudson Highlands and Morristown
+              New Jersey for its seventh winter encampment. [2]
+12 Dec 1781 Second Battle of Ushant: A British fleet led by HMS Victory
+              defeats a French fleet. [2]
+27 Feb 1782 The British House of Commons votes against further war,
+              informally recognizing American independence. [2]
+ 5 Mar 1782 British Government authorises peace negotiations. [1]
+16 Mar 1782 Spanish troops capture the British-held island of Roatan. [2]
+ 3 Apr 1782 Loyalist raider and "Pine Robber" John Bacon was discovered by
+              local militia in a tavern near Tuckerton (NJ) and was killed
+              in the subsequent fight. [7]
+ 9 Apr 1782 Battle of the Saintes begins. [2]
+12 Apr 1782 Revolutionary commander Captain Joshua Huddy (b.1735) was
+              hanged as a scapegoat in New Jersey by loyalists headed by
+              Captain Richard Lippincott outraged by the killing of loyalist
+              soldier Philip White. [10]
+11 Jul 1782 British evacuate Savannah, GA. [4]
+19 Aug 1782 Battle of Blue Licks: The last major engagement of the war,
+              almost ten months after the surrender of the British commander
+              Charles Cornwallis following the Siege of Yorktown. [2]
+27 Aug 1782 Battle of the Combahee River. [2]
+13 Sep 1782 Franco-Spanish troops launch the unsuccessful "grand assault"
+              during the Great Siege of Gibraltar. [2]
+14 Sep 1782 Review of the French troops under General Rochambeau by General
+              George Washington at Verplanck's Point, New York. [2]
+25 Oct 1782 Loyalists massacred local militiamen on Long Beach Island (NJ)
+              in a surprise night attack. [7]
+   Nov 1782 Continental Army moves into its eighth and final winter quarters,
+              at the New Windsor Cantonment and in the Hudson Highlands. [2]
+ 7 Nov 1782 The sentence of British Captain Charles Asgill, chosen to
+              be hanged in retaliation for the Loyalist lynching of New
+              Jersey Patriot Captain Joshua Huddy, was cancelled by order
+              of General George Washington. Asgill's mother wrote the French
+              king requesting that her son be spared and Washington complied,
+              defusing the situation. [7]
+30 Nov 1782 Treaty of Paris: In Paris, representatives from the United
+              States and the Great Britain sign preliminary peace articles
+              [2] [6] (later formalized as the 1783 Treaty of Paris). [2]
+ 4 Dec 1782 A force of Continental dragoons commanded by Colonel William
+              Washington-General George Washington's second cousin once
+              removed-corners Loyalist Colonel Rowland Rugeley and his
+              followers in Rugeley's house and barn near Camden, South
+              Carolina. [12]
+14 Dec 1782 British leave Charleston, SC. [4]
+27 Dec 1782 The last recorded land encounter of the American Revolution,
+              a skirmish between Patriot militia and Loyalist raiders, took
+              place at Cedar Bridge Tavern, in today's Stafford Township
+              (NJ). [7]
+20 Jan 1783 The Kingdom of Great Britain signed preliminary articles of
+              peace with France, setting the stage to the official end
+              of hostilities in the American Revolutionary War later that
+              year. [2]
+            Great Britain surrenders East Florida and West Florida to Spain.
+              [2]
+ 3 Feb 1783 Spain formally recognized American independence. [11]
+ 5 Feb 1783 Sweden recognizes US independence. [9]
+ 7 Feb 1783 French and Spanish forces lift the Great Siege of Gibraltar. [2]
+10 Mar 1783 USS Alliance under Captain Barry fights and wins last naval
+              battle of US Revolutionary War off Cape Canaveral. [9]
+11 Apr 1783 Congress proclaimed "the cessation of hostilities on land and
+              sea." [3]
+15 Apr 1783 Preliminary articles of peace ending the American Revolutionary
+              War (or American War of Independence) are ratified. [2] [4]
+18 Apr 1783 Fighting ceases in the American Revolution, eight years to
+              the day since it began. [9]
+ 2 May 1783 Architect Pierre Charles L'Enfant is promoted by brevet to
+              Major of Engineers in recognition of his service to American
+              liberty. [9]
+18 May 1783 First United Empire Loyalists reach Parrtown, Saint John,
+              New Brunswick, Canada after leaving the United States. [9]
+26 May 1783 A Great Jubilee Day held at North Stratford, Connecticut
+              celebrated the end of fighting in the American Revolution. [2]
+25 Jul 1783 The war's last action, the Siege of Cuddalore, is ended by a
+              preliminary peace agreement. [2]
+ 3 Sep 1783 The definitive treaty was signed at Paris ("Treaty of Paris")
+              declaring US independence and ending the Revolutionary War. [2]
+              [3] [19] [20] It provided: 1. That the boundaries of America
+              should be similar to those of the colonies under the treaty
+              of 1763 and the King's proclamation of the same year; thus
+              the northern boundary followed the southern boundary of
+              Canada. From the point where the 45th parallel reached the
+              St. Lawrence it followed the channel of that river to the
+              Great Lakes and connecting waters to the northwest corner of
+              the Lake-of-the-Woods, and thence due west to the source of
+              the Mississippi River; 2. That Congress would recommend the
+              States to pass relief acts for loyalists; 3. That the United
+              States was to have fishing rights off Newfoundland; 4. That
+              private debts should be payable at the close of the war;
+              5. That the British armies were to be withdrawn at once from
+              all posts in the United States, taking no negroes with them;
+              6. That the navigation of the Mississippi was to be free to
+              subjects of both countries. [3]
+31 Oct 1783 General George Washington formally received the news that the
+              Treaty of Paris had been signed, and that the United States
+              was now independent, at his headquarters at Rockingham, in
+              Kingston, New Jersey. [7]
+ 2 Nov 1783 General George Washington delivered his farewell address to
+              the Continental Army from his headquarters at Rockingham,
+              near Princeton. [7]
+ 3 Nov 1783 Washington orders Continental Army disbanded. [9]
+25 Nov 1783 The last British troops evacuate New York three months after
+              the signing of the Treaty of Paris, marking the end of British
+              rule, and General George Washington triumphantly returns with
+              the Continental Army. [2]
+26 Nov 1783 The United States of America moves its temporary capital from
+              Philadelphia to Princeton. [2]
+            The United States of America moves its temporary capital from
+              Princeton to Annapolis. [2]
+ 4 Dec 1783 General Washington bids his officers farewell at Fraunce's
+              Tavern, NYC. [8]
+23 Dec 1783 George Washington resigns as commander-in-chief of the army
+              and retires to his home at Mount Vernon, Va. [8]
+14 Jan 1784 Ratification Day, United States - [2] The Revolutionary War
+              formally ends, [8] Continental Congress ratifies the Treaty
+              of Paris. [2] [12]
+ 9 Apr 1784 The Treaty of Paris, ratified by the United States Congress on
+              14 Jan 1784, is ratified by King George III of the Kingdom of
+              Great Britain, ending the American Revolutionary War. Copies
+              of the ratified documents are exchanged on 12 May 1784. [2]
+12 May 1784 Ratified treaties are exchanged in Paris between the two
+              nations. [2]
+   Aug 1784 "The state of Frankland," later known as Franklin, secedes
+              from North Carolina. [2]
+   Oct 1784 The Treaty of Fort Stanwix imposes a peace on those members
+              of the Iroquois Confederacy that sided with the British in
+              the Revolution. The war's aftermath will prove devastating
+              to Native Americans. With no European allies to rely upon,
+              Indian tribes will be under increasing pressure from settlers
+              moving west out of the original 13 states. [13]
+ 1 Nov 1784 The United States of America moves its temporary capital from
+              Annapolis to Trenton. [2]
+       1785 Congress refuses admission of Franklin to the Union. [2]
+11 Jan 1785 The United States of America moves its temporary capital from
+              Trenton to New York City. [2]
+28 Nov 1785 Treaty of Hopewell. [2]
+       1786 Shays's Rebellion; Massachusetts rebellion led by the
+              Revolutionary War veteran Daniel Shays against high taxes. [1]
+       1787 Northwest Ordinance. [2]
+            Delaware, Pennsylvania and New Jersey ratify the constitution. [2]
+10 Apr 1787 A "Petition Against the Return of Tories" was promulgated by
+              a group of New Jerseyans adamantly opposed to reintegrating
+              Loyalists into post-Revolutionary War society. One signer
+              referred to the Loyalists as "atrocious monsters of
+              wickedness." [7]
+25 May 1787 Constitutional Convention; adoption of the American Constitution.
+              [1]
+17 Sep 1787 After weeks of debate, the Constitution of the United States
+              was approved. It called for a strong central government in
+              the United States. Thirty-nine delegates, representing 12 of
+              13 states, signed the document. [16]
+       1788 North Carolina reconquers Franklin, which ceases to exist. [2]
+            Georgia, Connecticut, Massachusetts, Maryland, South Carolina,
+              New Hampshire, Virginia and New York ratify the constitution [2]
+              The first state to ratify the US Constitution was Delaware. New
+              Hampshire was the ninth state to sign; it provided the final
+              vote needed for the two-thirds majority, at which point the
+              Constitution took effect. The only State to vote against the
+              Constitution was North Carolina. [16]
+       1789 United States presidential election. [2]
+            Constitution goes into effect. [2]
+            George Washington is inaugurated as President in New York City. [2]
+            The First United States Congress passes the Judiciary Act of
+              1789 and Hamilton tariff. [2]
+            Jay-Gardoqui Treaty. [2]
+21 Nov 1789 North Carolina becomes the 12th state to ratify the Constitution,
+              with a vote of 194-77. [2]
+ 1 Jun 1796 Last of Britain's troops withdraws from US. [9]
+
+
+Citations -
+1.  www.bl.uk
+2.  wikipedia.org
+3.  "Croscup's United States History", George E Croscup, B.A., 1911
+4.  Usenet, newsgroup - soc.history.war.us-revolution
+5.  USHistory.org
+6.  "Encyclopedia of American History", Richard B Morris, 1953
+7.  "350 Years of New Jersey History", Joseph G Bilby, James M Madden and Harry Ziegler, 2014
+8.  gcal, various sources, www.gnu.org/software/gcal
+9.  HistoryOrb.com (renamed OnThisDay.com Jun 2016)
+10.  www.timelinesdb.com
+11.  The Arizona Republic, Phoenix, Arizona
+12.  history.com
+13.  www.nps.gov
+14.  "The Cape May Navy", J P Hand & Daniel P Stites, 2018
+15.  Dan Burrows, from "Historical Collections of the State of New York", John W. Barber and Henry Howe, 1844
+16.  https://www.multieducator.net/
+17.  www.sussexhistory.org
+18.  https://www.newjerseyalmanac.com/timeline.html
+19.  www.foxnews.com
+20.  join1440.com
+

@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>General User Preferences</title>
+
+<style type="text/css">
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .fieldset-auto-width {
+         display: inline-block;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog class="dial2" id="dial2">
+<span class="dial2span" id="dial2span">Save User Preferences?<br> <br></span>
+<form method="dialog">
+<button class="OK">Yes</button>
+<button class="CANCEL">Cancel</button>
+</form>
+</dialog>
+
+<dialog id="dial3">
+<span class="dial3span" id="dial3span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<script>
+var FamDBChgSW = 0, DBnames = [], UserPrefs = {}, UserPrefsChg = {};
+onload = (event) => {
+    UserPrefs.length = UserPrefsChg.length = 0;
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    ws.onopen = function() {
+        /* get user's preferences */
+        ws.send("GetUserPrefs");
+        ws.onmessage = function(e) {
+            UserPrefs = JSON.parse(e.data);
+            UserPrefsChg = JSON.parse(e.data);
+            if (UserPrefs.length == 0) {
+                /* no user preferences, fill in defaults */
+                UserPrefs.CSHelp = "1";
+                UserPrefs.Speech = "1";
+                UserPrefs.ButClk = "1";
+                UserPrefs.Not = "1";
+                UserPrefs.BM = "1";
+                UserPrefs.NumCol = "75";
+                UserPrefs.LogSize = "200";
+                UserPrefs.NumLFiles = "5";
+                UserPrefs.FamDB = "NoAction";
+
+                document.getElementById('CSHelp').value = "On";
+                document.getElementById('Speech').value = "On";
+                document.getElementById('ButClk').value = "On";
+                document.getElementById('Not').value = "On";
+                document.getElementById('BM').value = "On";
+                document.getElementById('NumCol').value = "75";
+                document.getElementById('LogSize').value = "200";
+                document.getElementById('NumLFiles').value = "5";
+
+                UserPrefsChg = { ...UserPrefs };
+            } else {
+                if (UserPrefs.CSHelp == 1)
+                    document.getElementById('CSHelp').value = "On";
+                else
+                    document.getElementById('CSHelp').value = "Off";
+                if (UserPrefs.Speech == 1)
+                    document.getElementById('Speech').value = "On";
+                else
+                    document.getElementById('Speech').value = "Off";
+                if (UserPrefs.ButClk == 1)
+                    document.getElementById('ButClk').value = "On";
+                else
+                    document.getElementById('ButClk').value = "Off";
+                if (UserPrefs.Not == 1)
+                    document.getElementById('Not').value = "On";
+                else
+                    document.getElementById('Not').value = "Off";
+                if (UserPrefs.BM == 1)
+                    document.getElementById('BM').value = "On";
+                else
+                    document.getElementById('BM').value = "Off";
+                document.getElementById('NumCol').value = UserPrefs.NumCol;
+                document.getElementById('LogSize').value = UserPrefs.LogSize;
+                document.getElementById('NumLFiles').value = UserPrefs.NumLFiles;
+            }
+            /* get all Family DB names */
+            DBnames.length = 0;
+            ws.send("AllDBNames");
+            ws.onmessage = function(e) {
+                DBnames = e.data.split(",");
+    
+                /* fill in all Family DB names */
+                var listbox = '';
+                listbox += '<option value="NoAction">No Action</option>';
+                listbox += '<option value="None">None</option>';
+                for (i = 0; i < DBnames.length; i++)
+                    listbox += '<option value="' + DBnames[i] + '">' + DBnames[i] + '</option>';
+                document.getElementById('FamDB').innerHTML = listbox;
+                var z = document.getElementById("FamDB");
+                for (var j = 0; j < z.options.length; j++)
+                    z.options[j].selected = 0;
+                /* highlight FamDB selection */
+                for (var j = 0; j < z.options.length; j++)
+                    if (UserPrefs.FamDB == z.options[j].value) {
+                        z.options[j].selected = 1;
+                        break;
+                    } else
+                        z.options[j].selected = 0;
+            }
+        }
+    }
+}
+</script>
+
+<h1>General User Preferences</h1>
+<br>
+<hr style="width:50%">
+
+<form id="Preferences" method="GET">
+<input type="hidden" name="ORIGIN" value="Preferences">
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend id="ContSenHelp">Context-Sensitive Help</legend>
+<select id="CSHelp" onchange="chgCSHelp()">
+  <option value="On">On</option>
+  <option value="Off">Off</option>
+</select>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend id="VceSph">Voice/Speech</legend>
+<select id="Speech" onchange="chgSpeech()">
+  <option value="On">On</option>
+  <option value="Off">Off</option>
+</select>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend id="Sound">Sound</legend>
+<select id="ButClk" onchange="chgButClk()">
+  <option value="On">Button Clicks On</option>
+  <option value="Off">Button Clicks Off</option>
+</select>
+<select id="Not" onchange="chgNot()">
+  <option value="On">Notification Sounds On</option>
+  <option value="Off">Notification Sounds Off</option>
+</select>
+<select id="BM" onchange="chgBM()">
+  <option value="On">Background Music On</option>
+  <option value="Off">Background Music Off</option>
+</select>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Default Max Line Width for All User-Formatted (as opposed to browser-formatted) Printing</legend>
+<label> <input style='width:4em' type="number" pattern="[1-9]" min="40" max="120" value="75" id="NumCol" name="NumCol" onchange='UserPrefsChg.NumCol = document.getElementById("NumCol").value'></label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Log Area and Files</legend>
+<p>A program log is kept internally until either the node/server ends or the log reaches a determined size<br>
+at which time the internal log is written to disk. Old log files are retained based upon user<br>
+preferences, and the files are rotated with the oldest file being deleted.<p>
+<label> <input style='width:4em' type="number" pattern="[1-9]" min="1" max="200" value="200" id="LogSize" name="LogSize" onchange='UserPrefsChg.LogSize = document.getElementById("LogSize").value'> Size of Internal Log Area to Key Writing (in megabytes, 1 megabyte = 1,000,000 characters) </label>
+<br>
+<label> <input style='width:4em' type="number" pattern="[1-9]" min="1" max="20" value="5" id="NumLFiles" name="NumLFiles" onchange='UserPrefsChg.NumLFiles = document.getElementById("NumLFiles").value'> Number of Log Files to Keep </label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Family DataBase to Load and Activate at Boot</legend>
+<p>Selecting No Action means whatever Family DataBase, if any, was active when quitting the previous<br>
+running of MELGenKey will be active at the next running.<br>
+(Note - User Preference for Family DataBase takes precedence over whatever actions are made in the<br>
+"Family DataBase Activation" menu item.)<p>
+<select id="FamDB" name="FamDB" size='2' onchange="FamDBChange()">
+</select>
+</fieldset>
+
+<br> <br> <br>
+
+</form>
+
+<button type="button" onclick="window.close()">Cancel</button>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<button type="button" onclick="Save()">Save</button>
+
+<script>
+
+function Save() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var errormsgs = '';
+    var dial2 = document.getElementById('dial2');
+    var okButton = dial2.querySelector('button.OK');
+    dial2.showModal();
+
+    dial2.addEventListener('click', async function handleButtonClicks(e) {
+        if (e.target.tagName !== 'BUTTON')
+            return;
+        dial2.removeEventListener('click', handleButtonClicks);
+        if (e.target === okButton) {
+            errormsgs = await checkUP();
+            var span = document.getElementById("dial3span");
+            const dialog3 = document.querySelector("#dial3");
+            if (errormsgs != "") {
+                span.innerHTML = errormsgs;
+                dialog3.showModal();
+            } else {
+                var tosend = "WriteUserPrefs " + JSON.stringify(UserPrefsChg);
+                ws.send(tosend);
+                ws.onmessage = function(e) {
+                    if (e.data == "failed") {
+                        var dial3span = document.getElementById("dial3span");
+                        var msg = 'Could not save User Preferences!<br>Any changes made to User Preferences will not take effect.<br> <br>';
+                        dial3span.innerHTML = msg;
+                        const dialog = document.querySelector("#dial3");
+                        dialog.showModal();
+                    } else {
+                        if (FamDBChgSW) {
+                            /* changes were made to Family DB to Load & Activate; make changes to MELGenKeyInfo and save MELGenKeyInfo.txt
+                               file if needed */
+                            var FamDBselected;
+                            if (document.getElementById('FamDB').value != "NoAction") {
+                                if (document.getElementById('FamDB').value == "None")
+                                    FamDBselected = "999";
+                                else
+                                    FamDBselected = document.getElementById('FamDB').value;
+
+                                var tosend = "ChangeActiveDB" + ',' + FamDBselected;
+                                const ws = new WebSocket('ws://localhost:3000/');
+                                ws.onopen = function() {
+                                    ws.send(tosend);
+
+                                    ws.onmessage = function(e) {
+                                        /* don't do anything; the modal coming up next is enough */
+                                    } 
+                                }
+                            }
+                        }
+                        var dial3span = document.getElementById("dial3span");
+                        var msg = 'User Preferences saved.<br> <br>';
+                        dial3span.innerHTML = msg;
+                        const dialog = document.querySelector("#dial3");
+                        dialog.showModal();
+                    }
+                }
+            }
+        }
+    })
+}
+
+function FamDBChange() {
+    FamDBChgSW = 1;
+    UserPrefsChg.FamDB = null;
+    var z = document.getElementById("FamDB");
+    for (var j = 0; j < z.options.length; j++)
+        if (z.options[j].selected == 1) {
+            UserPrefsChg.FamDB = z.options[j].value
+            break;
+        }
+}
+
+async function checkUP () {
+    var returnMsgs = '', toCheck;
+
+    toCheck = document.getElementById("NumCol").value;
+    if (toCheck < 40 || toCheck > 120)
+        returnMsgs += '"Default Max Line Width for All User-Formatted Printing" must be between 40 and 120 inclusive.<br><br>';
+    toCheck = document.getElementById("LogSize").value;
+    if (toCheck < 1 || toCheck > 200)
+        returnMsgs += '"Size of Internal Log Area to Key Writing" must be between 1 and 200 inclusive.<br><br>';
+    toCheck = document.getElementById("NumLFiles").value;
+    if (toCheck < 1 || toCheck > 20)
+        returnMsgs += '"Number of Log Files to Keep" must be between 1 and 20 inclusive.<br><br>';
+
+    return returnMsgs;
+}
+
+function chgNot() {
+    var z = document.getElementById("Not");
+    if (z.options[0].selected == 1)
+        UserPrefsChg.Not = 1;
+    else
+        UserPrefsChg.Not = 0;
+}
+
+function chgCSHelp() {
+    var z = document.getElementById("CSHelp");
+    if (z.options[0].selected == 1)
+        UserPrefsChg.CSHelp = 1;
+    else
+        UserPrefsChg.CSHelp = 0;
+}
+
+function chgSpeech() {
+    var z = document.getElementById("Speech");
+    if (z.options[0].selected == 1)
+        UserPrefsChg.Speech = 1;
+    else
+        UserPrefsChg.Speech = 0;
+}
+
+function chgButClk() {
+    var z = document.getElementById("ButClk");
+    if (z.options[0].selected == 1)
+        UserPrefsChg.ButClk = 1;
+    else
+        UserPrefsChg.ButClk = 0;
+}
+
+function chgBM() {
+    var z = document.getElementById("BM");
+    if (z.options[0].selected == 1)
+        UserPrefsChg.BM = 1;
+    else
+        UserPrefsChg.BM = 0;
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<br>
+<hr style="width:50%">
+
+</body>
+</html>

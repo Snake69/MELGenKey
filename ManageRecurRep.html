@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Manage Recurring Reports</title>
+
+<style type="text/css">
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .fieldset-auto-width {
+         display: inline-block;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span">There are no recurring reports to manage.<br>Create recurring reports at "Reports -> On This Day" or<br>"Reports -> Calendar of Events".<br><br></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog class="dial2" id="dial2">
+<span class="dial2span" id="dial2span"></span>
+<form method="dialog">
+<button class="OK">OK</button>
+<button class="CANCEL">Cancel</button>
+</form>
+</dialog>
+
+<dialog id="dial3">
+<span class="dial3span" id="dial3span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog class="dial4" id="dial4">
+<span>All Recurring On This Day Reports successfully established.<br><br></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<script>
+
+var recurParams = [{}], recurParamsChg = [{}], DBnames = [];
+
+onload = (event) => {
+    Object.keys(recurParams).length = Object.keys(recurParamsChg).length = 0;
+    const fieldset = document.getElementById("RepBut");
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    ws.onopen = function() {
+        /* get user's inventory of recurring reports */
+        ws.send("GetRecur");
+        ws.onmessage = function(e) {
+            recurParams = JSON.parse(e.data);
+            recurParamsChg = JSON.parse(e.data);
+            if (recurParams[0].name === undefined || recurParams[0].name === null) {
+                /* no recurring reports */
+                const dialog1 = document.querySelector("#dial1");
+                dialog1.showModal();
+            } else {
+                for (var x = 0; x < Object.keys(recurParams).length; x++) {
+                    // Create the button element
+                    const button = document.createElement("button");
+                    button.id = recurParams[x].name;
+                    button.name = recurParams[x].name;
+                    button.type = "button";
+                    button.textContent = recurParams[x].name;
+                    button.onclick = () => (bringUp(button.id));  
+                    // Append the button to the fieldset
+                    fieldset.appendChild(button);
+                    fieldset.appendChild(document.createElement('br'));
+                    fieldset.appendChild(document.createElement('br'));
+                }
+                /* get all Family DB names */
+                DBnames.length = 0;
+                ws.send("AllDBNames");
+                ws.onmessage = function(e) {
+                    DBnames = e.data.split(",");
+                }
+            }
+        }
+    }
+}
+
+</script>
+
+<h1>Manage Recurring Reports</h1>
+<hr style="width:50%">
+
+<form id="ManageRec" method="GET">
+<input type="hidden" name="ORIGIN" value="ManageRec">
+
+<br> <br>
+<fieldset id="RepBut" class="fieldset-auto-width">
+<legend>Click a report button to bring up its parameters</legend>
+
+<br>
+</fieldset>
+
+<br> <br>
+
+<button type="button" id="buttonR" onclick='Save();'> Save Recurring Reports </button>
+
+<br> <br>
+<br> <br>
+
+<div hidden id="divRecur">
+<label>Report ID: </label> <label id="idR"></label>
+<br>
+<label>Report Type: </label> <label id="typeR"></label>
+<br>
+<label>Report Frequency: </label> <label id="freqR"></label>
+<br>
+<label>Next Report to be Sent: </label> <label id="nextR"></label>
+<br> <br>
+<label>Active: </label>
+<select id="activeR" onchange="repActive()">
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+</select>
+<br> <br>
+<label>Type of Events to Include: </label><br>
+<select id="typesR" name="typesR" size='3' multiple="multiple" onchange="typesRChange()">
+  <option value="FamDB">Family DataBase</option>
+  <option value="General">General Events</option>
+  <option value="Births">Births of Notable People</option>
+  <option value="Deaths">Deaths of Notable People</option>
+  <option value="FrIndWar">French and Indian War</option>
+  <option value="RevWar">American Revolutionary War</option>
+  <option value="WarOf1812">War of 1812</option>
+  <option value="CivilWar">American Civil War</option>
+  <option value="WWI">World War I</option>
+  <option value="WWII">World War II</option>
+  <option value="KorWar">Korean War</option>
+  <option value="VietWar">Vietnam War</option>
+  <option value="EuroNA">European Colonization of North America</option>
+  <option value="USGeo">United States Geography</option>
+  <option value="CanadaGeo">Canada Geography</option>
+  <option value="WorldGeo">World Geography (except Canada &amp; US)</option>
+  <option value="MLB">Major League Baseball</option>
+</select>
+<br>
+Select multiple types by holding down the CTRL (Windows, Linux) or COMMAND (Mac) key while pressing the left mouse button.<br>
+<br> <br>
+<label>Family Database to Include: </label><br>
+<select id="FamDB" name="FamDB" size='2' onchange="FamDBChange()">
+</select>
+<br>
+Optionally select one.<br>
+<br> <br>
+<label>Family Events to Omit: </label><br>
+<select id="omitR" name="omitR" size='3' multiple="multiple" onchange="omitRChange()">
+  <option value="OBirths">Births</option>
+  <option value="OBaptisms">Baptisms</option>
+  <option value="ODeaths">Deaths</option>
+  <option value="OMarriages">Marriages</option>
+  <option value="OBurials">Burials</option>
+  <option value="ODeeds">Land Records</option>
+  <option value="OResidences">Residences</option>
+  <option value="OOccupations">Occupations</option>
+  <option value="IPeople">Images of People</option>
+</select>
+<br>
+Select multiple types of Family events to omit by holding down the CTRL (Windows, Linux) or COMMAND (Mac) key while<br>
+pressing the left mouse button.<br>
+<br> <br>
+<label>Look of Report: </label><br>
+<select id="lookR" name="lookR" size='2' multiple="multiple" onchange="lookRChange()">
+  <option value="YrOnly">Show only year on report</option>
+  <option value="DateRepeat">Do not repeat identical dates on report</option>
+</select>
+<br>
+Select multiple looks by holding down the CTRL (Windows, Linux) or COMMAND (Mac) key while pressing the left mouse button.<br>
+<br> <br>
+<label>Relay Host (usually your ISP): <input type="text" id="hostR" name="hostR" onchange="hostRChange()"></label>
+<br> <br>
+<label>Login: <input type="text" id="loginR" name="loginR" onchange="loginRChange()"></label>
+<br> <br>
+<label>Password: <input type="text" id="passwdR" name="passwdR" onchange="passwdRChange()"></label>
+<br> <br>
+<label>Port: <input type="text" id="portR" name="portR" onchange="portRChange()"></label>
+<br> <br>
+<label>From: <input type="text" id="fromR" name="fromR" onchange="fromRChange()"></label>
+<br> <br>
+<label>To: <input type="text" id="toR" name="toR" onchange="toRChange()"></label>
+<br> <br>
+<label>Subject (default: "On This Day Report for [day month]"): <input type="text" id="subjectR" name="subjectR" onchange="subjectRChange()"></label>
+<br> <br>
+<label>Time of Day to Send Daily Report (24-hour time, 0000 = midnight): </label>
+<input style='width:3em' type="number" pattern="[0-9]" onchange="set2Pos()" min="00" max="23" value="00" id = "timeHR" name="timeHR">
+<input style='width:3em' type="number" pattern="[0-9]" onchange="set2Pos()" min="00" max="59" value="00" id = "timeMR" name="timeMR">
+<br> <br>
+<br> <br>
+
+<button type="button" id="buttonC" onclick='Clear();'> Clear Settings </button>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<button type="button" id="buttonR" onclick='Reset();'> Reset to Previously Saved Settings </button>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<button type="button" id="buttonD" onclick='deleteReport();'> Delete Report </button>
+</div>
+
+</form>
+
+<script>
+
+var whichParams;
+
+function deleteReport() {
+    var dial2 = document.getElementById('dial2');
+    var okButton = dial2.querySelector('button.OK');
+    var cancelButton = dial2.querySelector('button.CANCEL');
+    var dial2span = document.getElementById("dial2span");
+    var msg = 'Delete report "' + recurParams[whichParams].name + '"?<br> <br>';
+    const fieldset = document.getElementById("RepBut");
+    const legend = fieldset.querySelector('legend');
+    legend.textContent = "Click a report button to bring up its parameters";
+    dial2span.innerHTML = msg;
+    dial2.showModal();
+
+    dial2.addEventListener('click', function handleButtonClicks(e) {
+        if (e.target.tagName !== 'BUTTON')
+            return;
+        dial2.removeEventListener('click', handleButtonClicks);
+        if (e.target === okButton) {
+            recurParams.splice(whichParams, 1);
+            recurParamsChg.splice(whichParams, 1);
+            while(fieldset.firstChild)
+                fieldset.removeChild(fieldset.firstChild); 
+            fieldset.insertBefore(legend, fieldset.firstChild);
+
+            for (var x = 0; x < Object.keys(recurParams).length; x++) {
+                // Create the button element
+                const button = document.createElement("button");
+                button.id = recurParams[x].name;
+                button.name = recurParams[x].name;
+                button.type = "button";
+                button.textContent = recurParams[x].name;
+                button.onclick = () => (bringUp(button.id));  
+                // Append the button to the fieldset
+                fieldset.appendChild(button);
+                fieldset.appendChild(document.createElement('br'));
+                fieldset.appendChild(document.createElement('br'));
+            }
+            document.getElementById("divRecur").style.display = 'none';
+        }
+    })
+}
+
+function Clear () {
+    var j, z;
+
+    document.getElementById('activeR').value = "no";
+    recurParamsChg[whichParams].active = 0;
+    z = document.getElementById("typesR");
+    for (j = 0; j < z.options.length; j++)
+        z.options[j].selected = 0;
+    recurParamsChg[whichParams].include.length = 0;
+    z = document.getElementById("omitR");
+    for (j = 0; j < z.options.length; j++)
+        z.options[j].selected = 0;
+    recurParamsChg[whichParams].omits.length = 0;
+    z = document.getElementById("FamDB");
+    for (j = 0; j < z.options.length; j++)
+        z.options[j].selected = 0;
+    z.options[0].selected = 1;
+    recurParamsChg[whichParams].FamDBName = null;
+    z = document.getElementById("lookR");
+    for (j = 0; j < z.options.length; j++)
+        z.options[j].selected = 0;
+    recurParamsChg[whichParams].look.length = 0;
+    document.getElementById("hostR").value = '';
+    document.getElementById("loginR").value = '';
+    document.getElementById("passwdR").value = '';
+    document.getElementById("portR").value = '';
+    document.getElementById("fromR").value = '';
+    document.getElementById("toR").value = '';
+    document.getElementById("subjectR").value = '';
+    document.getElementById("timeHR").value = '';
+    document.getElementById("timeMR").value = '';
+    recurParamsChg[whichParams].host = null;
+    recurParamsChg[whichParams].login = null;
+    recurParamsChg[whichParams].passwd = null;
+    recurParamsChg[whichParams].port = null;
+    recurParamsChg[whichParams].from = null;
+    recurParamsChg[whichParams].to = null;
+    recurParamsChg[whichParams].subject = null;
+    recurParamsChg[whichParams].hour = null;
+    recurParamsChg[whichParams].minute = null;
+}
+
+function Reset () {
+    var j, z;
+
+    recurParamsChg[whichParams] = deepCopy (recurParams[whichParams]);
+
+    if (recurParams[whichParams].active == 1)
+        document.getElementById('activeR').value = "yes";
+    else
+        document.getElementById('activeR').value = "no";
+    z = document.getElementById("typesR");
+    for (j = 0; j < z.options.length; j++)
+        z.options[j].selected = 0;
+    for (j = 0; j < z.options.length; j++)
+        for (i = 0; i < recurParams[whichParams].include.length; i++)
+            if (recurParams[whichParams].include[i] == z.options[j].value) {
+                z.options[j].selected = 1;
+                break;
+            } else
+                z.options[j].selected = 0;
+
+    z = document.getElementById("omitR");
+    for (j = 0; j < z.options.length; j++)
+        z.options[j].selected = 0;
+    for (var j = 0; j < z.options.length; j++)
+        for (var i = 0; i < recurParams[whichParams].omits.length; i++)
+            if (recurParams[whichParams].omits[i] == z.options[j].value) {
+                z.options[j].selected = 1;
+                break;
+            } else
+                z.options[j].selected = 0;
+
+    z = document.getElementById("FamDB");
+    for (j = 0; j < z.options.length; j++)
+        z.options[j].selected = 0;
+    for (var j = 0; j < z.options.length; j++)
+        if (recurParams[whichParams].FamDBName == z.options[j].value) {
+            z.options[j].selected = 1;
+            break;
+        } else
+            z.options[j].selected = 0;
+    if (document.getElementById("typesR").options[0].selected == 0)
+        z.options[0].selected = 1;
+
+    z = document.getElementById("lookR");
+    for (j = 0; j < z.options.length; j++)
+        z.options[j].selected = 0;
+    for (var j = 0; j < z.options.length; j++)
+        for (var i = 0; i < recurParams[whichParams].look.length; i++)
+            if (recurParams[whichParams].look[i] == z.options[j].value) {
+                z.options[j].selected = 1;
+                break;
+            } else
+                z.options[j].selected = 0;
+
+    document.getElementById("hostR").value = recurParams[whichParams].host;
+    document.getElementById("loginR").value = recurParams[whichParams].login;
+    document.getElementById("passwdR").value = recurParams[whichParams].passwd;
+    document.getElementById("portR").value = recurParams[whichParams].port;
+    document.getElementById("fromR").value = recurParams[whichParams].from;
+    document.getElementById("toR").value = recurParams[whichParams].to;
+    document.getElementById("subjectR").value = recurParams[whichParams].subject;
+    document.getElementById("timeHR").value = recurParams[whichParams].hour;
+    document.getElementById("timeMR").value = recurParams[whichParams].minute;
+}
+
+function Save () {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var errormsgs = '';
+    var dial2 = document.getElementById('dial2');
+    var okButton = dial2.querySelector('button.OK');
+    var cancelButton = dial2.querySelector('button.CANCEL');
+    var dial2span = document.getElementById("dial2span");
+    var msg = 'Save reports?<br>(All changes to all the recurring reports will be saved.)<br> <br>';
+    dial2span.innerHTML = msg;
+    dial2.showModal();
+
+    dial2.addEventListener('click', async function handleButtonClicks(e) {
+        if (e.target.tagName !== 'BUTTON')
+            return;
+        dial2.removeEventListener('click', handleButtonClicks);
+        if (e.target === okButton) {
+            errormsgs = await checkRecurringReports();
+            var span = document.getElementById("dial2span");
+            const dialog2 = document.querySelector("#dial2");
+            if (errormsgs != "") {
+                span.innerHTML = errormsgs;
+                dialog2.showModal();
+            } else {
+                const dialog4 = document.querySelector("#dial4");
+                dialog4.showModal();
+
+                var tosend = "WriteRecur " + JSON.stringify(recurParamsChg);
+                ws.send(tosend);
+                ws.onmessage = function(e) {
+                    if (e.data == "failed") {
+                        var dial3span = document.getElementById("dial3span");
+                        var msg = 'Could not save the Recurring Reports File!<br> <br>';
+                        dial3span.innerHTML = msg;
+                        const dialog = document.querySelector("#dial3");
+                        dialog.showModal();
+                    } else {
+                        recurParams[whichParams] = deepCopy (recurParamsChg[whichParams]);
+                        var dial3span = document.getElementById("dial3span");
+                        var msg = 'Recurring Reports saved.<br> <br>';
+                        dial3span.innerHTML = msg;
+                        const dialog = document.querySelector("#dial3");
+                        dialog.showModal();
+                    }
+                }
+            }
+        }
+    })
+}
+
+function bringUp (id) {
+    for (var x = 0; x < Object.keys(recurParamsChg).length; x++)
+        if (recurParamsChg[x].name == id) {
+            whichParams = x;
+            document.getElementById("idR").innerHTML = recurParamsChg[x].name;
+            if (recurParamsChg[x].name.substring(0, 3) == "OTD") {
+                if (!recurParamsChg[x].active) {
+                    document.getElementById("freqR").innerHTML = "inactive";
+                    document.getElementById("nextR").innerHTML = "inactive";
+                } else {
+                    document.getElementById("freqR").innerHTML = "daily";
+                    const now = new Date();
+                    var nowRep = new Date();
+                    nowRep.setHours(recurParamsChg[x].hour, recurParamsChg[x].minute);
+                    if (nowRep > now)
+                        document.getElementById("nextR").innerHTML = "today at " + recurParamsChg[x].hour + recurParamsChg[x].minute +
+                                                                     " (24-hour time)";
+                    else
+                        document.getElementById("nextR").innerHTML = "tomorrow at " + recurParamsChg[x].hour + recurParamsChg[x].minute +
+                                                                     " (24-hour time)";
+                }
+                document.getElementById("typeR").innerHTML = "On This Day Report";
+            } else
+                if (recurParamsChg[x].name.substring(0, 3) == "CAL")
+                    document.getElementById("typeR").innerHTML = "Calendar of Events Report";
+            if (recurParamsChg[x].active == 1)
+                document.getElementById('activeR').value = "yes";
+            else
+                document.getElementById('activeR').value = "no";
+            /* highlight event types included */
+            var z = document.getElementById("typesR");
+            for (var j = 0; j < z.options.length; j++)
+                z.options[j].selected = 0;
+            for (var j = 0; j < z.options.length; j++)
+                for (var i = 0; i < recurParamsChg[x].include.length; i++)
+                    if (recurParamsChg[x].include[i] == z.options[j].value) {
+                        z.options[j].selected = 1;
+                        break;
+                    } else
+                        z.options[j].selected = 0;
+
+            /* highlight Family types to omit */
+            var z = document.getElementById("omitR");
+            for (var j = 0; j < z.options.length; j++)
+                z.options[j].selected = 0;
+            for (var j = 0; j < z.options.length; j++)
+                for (var i = 0; i < recurParamsChg[x].omits.length; i++)
+                    if (recurParamsChg[x].omits[i] == z.options[j].value) {
+                        z.options[j].selected = 1;
+                        break;
+                    } else
+                        z.options[j].selected = 0;
+
+            /* fill in all Family DB names */
+            var listbox = '';
+            for (i = 0; i < DBnames.length; i++)
+                listbox += '<option value="' + DBnames[i] + '">' + DBnames[i] + '</option>';
+            document.getElementById('FamDB').innerHTML = listbox;
+            /* highlight Family DataBase included */
+            var z = document.getElementById("FamDB");
+            for (var j = 0; j < z.options.length; j++)
+                z.options[j].selected = 0;
+            for (var j = 0; j < z.options.length; j++)
+                if (recurParamsChg[x].FamDBName == z.options[j].value) {
+                    z.options[j].selected = 1;
+                    break;
+                } else
+                    z.options[j].selected = 0;
+            if (document.getElementById("typesR").options[0].selected == 0)
+                z.options[0].selected = 1;
+
+            /* highlight looks included */
+            var z = document.getElementById("lookR");
+            for (var j = 0; j < z.options.length; j++)
+                z.options[j].selected = 0;
+            for (var j = 0; j < z.options.length; j++)
+                for (var i = 0; i < recurParamsChg[x].look.length; i++)
+                    if (recurParamsChg[x].look[i] == z.options[j].value) {
+                        z.options[j].selected = 1;
+                        break;
+                    } else
+                        z.options[j].selected = 0;
+
+            document.getElementById("hostR").value = recurParamsChg[x].host;
+            document.getElementById("loginR").value = recurParamsChg[x].login;
+            document.getElementById("passwdR").value = recurParamsChg[x].passwd;
+            document.getElementById("portR").value = recurParamsChg[x].port;
+            document.getElementById("fromR").value = recurParamsChg[x].from;
+            document.getElementById("toR").value = recurParamsChg[x].to;
+            document.getElementById("subjectR").value = recurParamsChg[x].subject;
+            document.getElementById("timeHR").value = recurParamsChg[x].hour;
+            document.getElementById("timeMR").value = recurParamsChg[x].minute;
+
+            break;
+        }
+
+    document.getElementById("divRecur").style.display = 'block';
+}
+
+function repActive () {
+    if (document.getElementById('activeR').value == "no") {
+        document.getElementById("freqR").innerHTML = "inactive";
+        document.getElementById("nextR").innerHTML = "inactive";
+        recurParamsChg[whichParams].active = 0;
+    } else {
+        const now = new Date();
+        var nowRep = new Date();
+        nowRep.setHours(document.getElementById('timeHR').value.toString(), document.getElementById('timeMR').value.toString());
+        if (nowRep > now)
+            document.getElementById("nextR").innerHTML = "today at " + document.getElementById('timeHR').value.toString() +
+                                                         document.getElementById('timeMR').value.toString() + " (24-hour time)";
+        else
+            document.getElementById("nextR").innerHTML = "tomorrow at " + document.getElementById('timeHR').value.toString() +
+                                                         document.getElementById('timeMR').value.toString() + " (24-hour time)";
+        document.getElementById("freqR").innerHTML = "daily";
+        recurParamsChg[whichParams].active = 1;
+    }
+}
+
+function set2Pos() {
+    number = document.getElementById('timeHR').value.toString();
+    while (number.length < 2)
+        number = "0" + number;
+    document.getElementById('timeHR').value = number;
+    recurParamsChg[whichParams].hour = number;
+
+    number = document.getElementById('timeMR').value.toString();
+    while (number.length < 2)
+        number = "0" + number;
+    document.getElementById('timeMR').value = number;
+    recurParamsChg[whichParams].minute = number;
+
+    repActive();
+}
+
+function typesRChange() {
+    recurParamsChg[whichParams].include.length = 0;
+    var z = document.getElementById("typesR");
+    for (var j = 0; j < z.options.length; j++)
+        if (z.options[j].selected == 1)
+            recurParamsChg[whichParams].include.push(z.options[j].value);
+}
+
+function FamDBChange() {
+    recurParamsChg[whichParams].FamDBName = null;
+    var z = document.getElementById("FamDB");
+    for (var j = 0; j < z.options.length; j++)
+        if (z.options[j].selected == 1) {
+            recurParamsChg[whichParams].FamDBName = z.options[j].value
+            break;
+        }
+}
+
+function omitRChange() {
+    recurParamsChg[whichParams].omits.length = 0;
+    var z = document.getElementById("omitR");
+    for (var j = 0; j < z.options.length; j++)
+        if (z.options[j].selected == 1)
+            recurParamsChg[whichParams].omits.push(z.options[j].value);
+}
+
+function lookRChange() {
+    recurParamsChg[whichParams].look.length = 0;
+    var z = document.getElementById("lookR");
+    for (var j = 0; j < z.options.length; j++)
+        if (z.options[j].selected == 1)
+            recurParamsChg[whichParams].look.push(z.options[j].value);
+}
+
+function hostRChange() {
+    recurParamsChg[whichParams].host = document.getElementById("hostR").value;
+}
+
+function loginRChange() {
+    recurParamsChg[whichParams].login = document.getElementById("loginR").value;
+}
+
+function passwdRChange() {
+    recurParamsChg[whichParams].passwd = document.getElementById("passwdR").value;
+}
+
+function portRChange() {
+    recurParamsChg[whichParams].port = document.getElementById("portR").value;
+}
+
+function fromRChange() {
+    recurParamsChg[whichParams].from = document.getElementById("fromR").value;
+}
+
+function toRChange() {
+    recurParamsChg[whichParams].to = document.getElementById("toR").value;
+}
+
+function subjectRChange() {
+    recurParamsChg[whichParams].subject = document.getElementById("subjectR").value;
+}
+
+/* copy nested object */
+function deepCopy(obj) {
+    if (typeof obj !== 'object' || obj === null)
+        return obj;
+
+    const newObj = Array.isArray(obj) ? [] : {};
+
+    for (const key in obj)
+        if (obj.hasOwnProperty(key))
+            newObj[key] = deepCopy(obj[key]);
+
+    return newObj;
+}
+
+async function checkRecurringReports () {
+    var formDataJSON, returnMsgs = '';
+
+    for (const recurReport of recurParamsChg) {
+        formDataJSON = '{"ORIGIN":"ManageRR","Month":"1","Day":"1"';
+
+        if (recurReport.include.indexOf("FamDB") != -1)
+            formDataJSON += ',"FamDB":"' + recurReport.FamDBName + '"';
+        if (recurReport.include.indexOf("General") != -1)
+            formDataJSON += ',"General":"General"';
+        if (recurReport.include.indexOf("Births") != -1)
+            formDataJSON += ',"Births":"Births"';
+        if (recurReport.include.indexOf("Deaths") != -1)
+            formDataJSON += ',"Deaths":"Deaths"';
+        if (recurReport.include.indexOf("FrIndWar") != -1)
+            formDataJSON += ',"FrIndWar":"FrIndWar"';
+        if (recurReport.include.indexOf("RevWar") != -1)
+            formDataJSON += ',"RevWar":"RevWar"';
+        if (recurReport.include.indexOf("WarOf1812") != -1)
+            formDataJSON += ',"WarOf1812":"WarOf1812"';
+        if (recurReport.include.indexOf("CivilWar") != -1)
+            formDataJSON += ',"CivilWar":"CivilWar"';
+        if (recurReport.include.indexOf("WWI") != -1)
+            formDataJSON += ',"WWI":"WWI"';
+        if (recurReport.include.indexOf("WWII") != -1)
+            formDataJSON += ',"WWII":"WWII"';
+        if (recurReport.include.indexOf("KorWar") != -1)
+            formDataJSON += ',"KorWar":"KorWar"';
+        if (recurReport.include.indexOf("VietWar") != -1)
+            formDataJSON += ',"VietWar":"VietWar"';
+        if (recurReport.include.indexOf("EuroNA") != -1)
+            formDataJSON += ',"EuroNA":"EuroNA"';
+        if (recurReport.include.indexOf("USGeo") != -1)
+            formDataJSON += ',"USGeo":"USGeo"';
+        if (recurReport.include.indexOf("CanadaGeo") != -1)
+            formDataJSON += ',"CanadaGeo":"CanadaGeo"';
+        if (recurReport.include.indexOf("WorldGeo") != -1)
+            formDataJSON += ',"WorldGeo":"WorldGeo"';
+        if (recurReport.include.indexOf("MLB") != -1)
+            formDataJSON += ',"MLB":"MLB"';
+
+        if (recurReport.omits.indexOf("OBirths") != -1)
+            formDataJSON += ',"OBirths":"on"';
+        if (recurReport.omits.indexOf("OBaptisms") != -1)
+            formDataJSON += ',"OBaptisms":"on"';
+        if (recurReport.omits.indexOf("ODeaths") != -1)
+            formDataJSON += ',"ODeaths":"on"';
+        if (recurReport.omits.indexOf("OMarriages") != -1)
+            formDataJSON += ',"OMarriages":"on"';
+        if (recurReport.omits.indexOf("OBurials") != -1)
+            formDataJSON += ',"OBurials":"on"';
+        if (recurReport.omits.indexOf("ODeeds") != -1)
+            formDataJSON += ',"ODeeds":"on"';
+        if (recurReport.omits.indexOf("OResidences") != -1)
+            formDataJSON += ',"OResidences":"on"';
+        if (recurReport.omits.indexOf("OOccupations") != -1)
+            formDataJSON += ',"OOccupations":"on"';
+        if (recurReport.omits.indexOf("IPeople") != -1)
+            formDataJSON += ',"IPeople":"on"';
+
+        if (recurReport.look.indexOf("YrOnly") != -1)
+            formDataJSON += ',"YrOnly":"YrOnly"';
+        if (recurReport.look.indexOf("DateRepeat") != -1)
+            formDataJSON += ',"DateRepeat":"DateRepeat"';
+
+        formDataJSON += ',"Active":"' + recurReport.active + '"';
+
+        formDataJSON += ',"hostR":"' + recurReport.host + '","loginR":"' + recurReport.login + '","passwdR":"' + recurReport.passwd +
+                        '","portR":"' + recurReport.port + '","fromR":"' + recurReport.from + '","toR":"' + recurReport.to +
+                        '","subjectR":"' + recurReport.subject + '","timeHR":"' + recurReport.hour +
+                        '","timeMR":"' + recurReport.minute + '"}';
+        const message = await checkRecurringNode(formDataJSON, recurReport.name);
+        returnMsgs += message;
+    }
+    return returnMsgs;
+}
+
+async function checkRecurringNode(formDataJSON, rname) {
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    ws.onopen = function() {
+        ws.send("RecurringOnThisDay" + formDataJSON);
+    }
+
+    try {
+        const message = await waitForMessage(ws);
+        if (message.search("On This Day Report Established") == -1)
+            return ("Recurring Report " + rname + "<br><br>" + message);
+        else
+            return "";
+    } catch (error) {
+        console.error("Error receiving message:", error);
+    }
+}
+
+async function waitForMessage(ws) {
+    const promise = new Promise((resolve) => {
+        ws.onmessage = (event) => {
+            resolve(event.data);
+        }
+    })
+    const result = await promise;
+    return result;
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<br>
+<hr style="width:50%">
+
+</body>
+</html>

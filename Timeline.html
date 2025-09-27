@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Produce Timeline</title>
+
+<style type="text/css">
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .fieldset-auto-width {
+         display: inline-block;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial2">
+<span id="dial2span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>Produce Timeline</h1>
+<span id="TitleDBName"></span>
+<br>
+<hr style="width:50%">
+
+<script type="text/javascript" src="clib.js"></script>
+
+<script>
+
+var Notifications, UserPrefs = {};
+
+onload = function init() {
+    /* if server not running or DB not active, disable certain selections */
+    check4ActiveDB().then((res) => {
+        var span = document.getElementById("dial1span");
+        const dialog1 = document.querySelector("#dial1");
+        if (res == -3 || res == -2 || res == -1) {
+            document.getElementById("IndID").disabled = true;
+            document.getElementById("ChildID").disabled = true;
+            document.getElementById("FamID").disabled = true;
+            document.getElementById("OBirths").disabled = true;
+            document.getElementById("OBaptisms").disabled = true;
+            document.getElementById("ODeaths").disabled = true;
+            document.getElementById("OMarriages").disabled = true;
+            document.getElementById("OBurials").disabled = true;
+            document.getElementById("ODeeds").disabled = true;
+            document.getElementById("OResidences").disabled = true;
+            document.getElementById("OOccupations").disabled = true;
+            document.getElementById("IPeople").disabled = true;
+
+            if (res == -1) {
+                span.innerHTML = "No Family DataBase is active.<br>Family-related options will be disabled.<br> <br>";
+                dialog1.showModal();
+            }
+            if (res == -3) {
+                span.innerHTML = "The active Family DataBase is not verified.<br>Family-related options will " +
+                                 "be disabled.<br> <br>";
+                dialog1.showModal();
+            }
+        }
+        if (res == -2) {
+            document.getElementById("General").disabled = true;
+            document.getElementById("Births").disabled = true;
+            document.getElementById("Deaths").disabled = true;
+            document.getElementById("FrIndWar").disabled = true;
+            document.getElementById("RevWar").disabled = true;
+            document.getElementById("WarOf1812").disabled = true;
+            document.getElementById("CivilWar").disabled = true;
+            document.getElementById("WWI").disabled = true;
+            document.getElementById("WWII").disabled = true;
+            document.getElementById("KorWar").disabled = true;
+            document.getElementById("VietWar").disabled = true;
+            document.getElementById("EuroNA").disabled = true;
+            document.getElementById("USGeo").disabled = true;
+            document.getElementById("WorldGeo").disabled = true;
+            document.getElementById("CanadaGeo").disabled = true;
+            document.getElementById("MLB").disabled = true;
+        }
+    })
+
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1)
+            document.getElementById("TitleDBName").innerHTML = 'Active Family DataBase - ' + e.data; 
+        else
+            document.getElementById("TitleDBName").innerHTML = 'Active Family DataBase - none'; 
+    }
+
+    UserPrefs.length = 0;
+    ws.onopen = function() {
+        ws.send("GetUserPrefs");
+    }
+    ws.onmessage = function(e) {
+        try {
+            UserPrefs = JSON.parse(e.data);
+            if (UserPrefs.length === 0)
+                Notifications = 1;    // default is notifications on
+            else
+                Notifications = UserPrefs.Not;
+        } catch (error) {
+            alert("Error getting User Preferences.");
+        }
+    }
+    ws.onerror = function(error) {
+        // do nothing
+    }
+}
+
+</script>
+
+<h3>
+Timeline events will include only items which have a date attached (whether it be just a year or a full date).<br>
+Both Start and End Dates are required.<br>
+Start and End Dates apply to ALL included types of events.<br>
+</h3>
+
+<form id="Timeline" method="POST">
+<input type="hidden" name="ORIGIN" value="Timeline">
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Both Start and End Dates are Required</legend>
+<label> <input type="date" id="SDate" name="SDate" value="SDate"> Start Date </label>
+<input type="radio" id="SAD" name="SADBC" value="SAD" checked> <label>CE/AD</label>
+<input type="radio" id="SBC" name="SADBC" value="SBC"> <label>BCE/BC</label>
+<br> <br>
+<label> <input type="date" id="EDate" name="EDate" value="EDate"> End Date </label>
+<input type="radio" id="EAD" name="EADBC" value="EAD" checked> <label>CE/AD</label>
+<input type="radio" id="EBC" name="EADBC" value="EBC"> <label>BCE/BC</label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>People to Include from Active Family DataBase (optional, enter neither, one or both)</legend>
+<label> <input type="text" pattern="[0-9.]" id="IndID" name="IndID"> Individual (enter ID#) </label>
+<br> <br>
+<label> OR </label>
+<br> <br>
+<label> <input type="text" id="ChildID" name="ChildID"> Child of Individual, if applicable (enter Roman Numeral) </label>
+<br> <br>
+<label> AND/OR </label>
+<br> <br>
+<label> <input type="text" id="FamID" name="FamID"> Family (enter ID#) </label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Events to Omit from Family Data (all optional)</legend>
+<label> <input type="checkbox" id="OBirths" name="OBirths"> Births </label>
+<br> <br>
+<label> <input type="checkbox" id="OBaptisms" name="OBaptisms"> Baptisms </label>
+<br> <br>
+<label> <input type="checkbox" id="ODeaths" name="ODeaths"> Deaths </label>
+<br> <br>
+<label> <input type="checkbox" id="OMarriages" name="OMarriages"> Marriages </label>
+<br> <br>
+<label> <input type="checkbox" id="OBurials" name="OBurials"> Burials </label>
+<br> <br>
+<label> <input type="checkbox" id="ODeeds" name="ODeeds"> Deeds </label>
+<br> <br>
+<label> <input type="checkbox" id="OResidences" name="OResidences"> Residences </label>
+<br> <br>
+<label> <input type="checkbox" id="OOccupations" name="OOccupations"> Occupations </label>
+<br> <br>
+<label> <input type="checkbox" id="IPeople" name="IPeople"> Images of People </label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Other Types of Events Outside of Family Data to Include (all optional)</legend>
+<label> <input type="checkbox" id="General" name="General" value="General"> General Events </label>
+<br> <br>
+<label> <input type="checkbox" id="Births" name="Births" value="Births"> Births of Notable People </label>
+&nbsp; &nbsp;
+<label> <input type="checkbox" id="Deaths" name="Deaths" value="Deaths"> Deaths of Notable People </label>
+<br> <br>
+<label> <input type="checkbox" id="FrIndWar" name="FrIndWar" value="FrIndWar"> French and Indian War </label>
+&nbsp; &nbsp;
+<label> <input type="checkbox" id="RevWar" name="RevWar" value="RevWar"> American Revolutionary War </label>
+<br> <br>
+<label> <input type="checkbox" id="WarOf1812" name="WarOf1812" value="WarOf1812"> War of 1812 </label>
+&nbsp; &nbsp;
+<label> <input type="checkbox" id="CivilWar" name="CivilWar" value="CivilWar"> American Civil War </label>
+<br> <br>
+<label> <input type="checkbox" id="WWI" name="WWI" value="WWI"> World War I </label>
+&nbsp; &nbsp;
+<label> <input type="checkbox" id="WWII" name="WWII" value="WWII"> World War II </label>
+<br> <br>
+<label> <input type="checkbox" id="KorWar" name="KorWar" value="KorWar"> Korean War </label>
+&nbsp; &nbsp;
+<label> <input type="checkbox" id="VietWar" name="VietWar" value="VietWar"> Vietnam War </label>
+<br> <br>
+<label> <input type="checkbox" id="EuroNA" name="EuroNA" value="EuroNA"> European Colonization of North America </label>
+<br> <br>
+<label> <input type="checkbox" id="USGeo" name="USGeo" value="USGeo"> United States Geography </label>
+&nbsp; &nbsp;
+<label> <input type="checkbox" id="CanadaGeo" name="CanadaGeo" value="CanadaGeo"> Canada Geography </label>
+<br> <br>
+<label> <input type="checkbox" id="WorldGeo" name="WorldGeo" value="WorldGeo"> World Geography (except Canada &amp; US) </label>
+<br> <br>
+<label> <input type="checkbox" id="MLB" name="MLB" value="MLB"> Major League Baseball </label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Look of the Report (optional)</legend>
+<label> <input type="checkbox" id="DateRepeat" name="DateRepeat" value="DateRepeat"> Do Not Show Repeat Identical Dates for Events on Report </label>
+</fieldset>
+<br> <br> <br>
+<button type="button" id="button" onclick='sendFormData2Node(); document.body.style.cursor = "wait"; this.disabled = true;'> Create Timeline </button>
+
+<h4>Creating a Timeline Report may take some time depending upon the settings above and the size of the Family DataBase. <br> </h4>
+
+</form>
+
+<script>
+
+function sendFormData2Node() {
+    var formData = new FormData(document.getElementById("Timeline"));
+    let formDataJSON = {};
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    for (const [key, value] of formData.entries())
+        formDataJSON[key] = value;
+
+    ws.onopen = function() {
+        ws.send("Timeline" + JSON.stringify(formDataJSON));
+        ws.onmessage = function(e) {
+            if (e.data.search("Timeline Report") == -1) {
+                var span = document.getElementById("dial2span");
+                const dialog2 = document.querySelector("#dial2");
+                span.innerHTML = e.data;
+                dialog2.showModal();
+                document.body.style.cursor = 'default';
+                document.getElementById("button").disabled = false;  // re-enable button
+            } else {
+                /* open in a new tab */
+                var w = window.open('about:blank');
+                w.document.open();
+                w.document.write(e.data);
+                w.document.close();
+                if (Notifications == 1) {
+                    var audio = new Audio('Include/Sounds/AirplaneDing.wav');
+                    audio.play();
+                }
+                document.body.style.cursor = 'default';
+                document.getElementById("button").disabled = false;  // re-enable button
+            }
+        }
+    }
+    document.body.style.cursor = 'default';
+    document.getElementById("button").disabled = false;  // re-enable button
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<br>
+<hr style="width:50%">
+
+</body>
+</html>

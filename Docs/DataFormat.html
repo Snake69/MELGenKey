@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+
+<style>
+    #header {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+<title>Family DataBase Format</title>
+</head>
+<body>
+<h1 id="header">Family DataBase Format</h1>
+<hr style="width:50%">
+
+<pre>
+
+Use these formatting guidelines to create plain text files by hand for importing as a Family DataBase.
+
+
+Format of a MEL Genealogy Key (MELGenKey) Family DataBase
+
+A Family DataBase consists of 1 or more Family Groups. A Family DataBase is in plain text (human readable) format.
+
+All Family Groups consist of:
+  Head of Family Section (required)
+  Account Section (optional)
+  Citation Section (required, minimum number of lines - 3, maximum number of lines - unlimited)
+  Children Section (required, minimum number of lines - 4, maximum number of lines - unlimited)
+  Delimiter Section (required, 3 lines)
+
+Head of Family Section consists of (one Head of Family Section is required; there may be more than one):
+  Line 1 (Head of Family)
+    ID# followed by 2 spaces followed by name (first, middle, last - no prefixes, titles nor suffixes)
+      Note - "OPEN" instead of "name" is acceptable; in this case there should be nothing else for this Family Group and Line 1 should be
+             followed by the Delimiter Section
+  Line 2 - literal "Father - " followed by ID# (optional, if present followed by 2 spaces) followed by name of Father (first, middle, last -
+           no prefixes, titles nor suffixes) of person named on Line 1
+  Line 3 - literal "Mother - " followed by ID# (optional, if present followed by 2 spaces) followed by name of Mother (first, middle, last - 
+           no prefixes, titles nor suffixes) of person named on Line 1
+    Note - Line 2 or Line 3 (or both) must contain an ID#
+  Line 4 - null
+Note - another (one or more) Head of Family Section(s) may follow
+Note - any name (except Head of Family) may be "name unknown" (without the quotes)
+Note - any name may be "------ SURNAME" or "FIRSTNAME ------" (without the quotes)
+       (Head of Family can be "------ SURNAME" but cannot be "FIRSTNAME ------")
+
+
+Account Section (optional) consists of:
+  Timeline (optional, if present may contain any number of lines)
+    Line 1 - literal "Timeline -" (required if Timeline is present)
+    Line 2 - columns 1 - 11 contains a date in the form ddbmmmbyyyy where dd = day, mmm = alpha month abbreviation (Jan, Feb, Mar, etc),
+               yyyy = year, b = space
+             column 7 may also contain a 'c' for circa, 'd' for double date (when the date is a double date, the year should reflect
+               the Julian year even if that makes the Timeline events seem out of sequence), a '<' for before or a '>' for after
+             column 12 is either a space or a '-' ('-' indicates a span of time, and, if present, should be immediately followed by another date)
+      Note - for a date, dd and mmm are optional, yyyy is required
+      Note - if Line 2 runs into the next line, do not repeat the date and start the continuation line in column 15
+      Note - Line 2 may be repeated any number of times
+      Note - at least one Line 2 is required if Timeline is present
+    Last line - null
+
+  Notes (optional, if present may contain any number of lines)
+    Line 1 - literal "Notes -" (required if Notes is present)
+    Line 2 - format unspecified; continuation lines may start in column 1
+      Note - at least one Line 2 is required if Notes is present
+      Note - separate multiple items with a semi-colon (;) or a null line
+    Last line - null
+
+  Questions (optional, if present may contain any number of lines)
+    Line 1 - literal "Questions -" (required if Questions is present)
+    Line 2 - format unspecified; continuation lines may start in column 1
+      Note - at least one Line 2 is required if Questions is present
+      Note - separate multiple items with a semi-colon (;) or a null line
+    Last line - null
+
+  Extras (optional, if present may contain any number of lines)
+    Line 1 - literal "Extras -" (required if Extras is present)
+    Line 2 - format unspecified; continuation lines may start in column 1
+      Note - at least one Line 2 is required if Extras is present
+      Note - separate multiple items with a semi-colon (;) or a null line
+    Last line - null
+
+  Explanations (optional, if present may contain any number of lines)
+    Line 1 - literal "Explanations -" (required if Explanations is present)
+    Line 2 - format unspecified; continuation lines may start in column 1
+      Note - at least one Line 2 is required if Explanations is present
+      Note - separate multiple items with a semi-colon (;) or a null line
+    Last line - null
+
+
+Citation Section (required) consists of:
+  Line 1 - literal "Citation -" or "Citations -" (required)
+  Line 2 - sequentially numeric Citation ID# (required if more than 1 Citation)
+    Note - If Citation ID# is present, it must be followed by a period and then two spaces
+           Citation Name (required)
+           Citation Pointer (optional, pointer to citation material included with DataBase)
+    Note - Line 2 may be repeated any number of times
+    Note - if Citation Pointer is present, Citation Name should be followed by a comma and a space
+  Last line - null
+
+
+Children Section (required) consists of:
+  Line 1 - literal "Children:" or "Children by NAME and NAME:" (required) (use the second literal if the head of the family or any of his/her
+             spouses were married more than once)
+  Line 2 - null (required)
+  Line 3 - Child # (required, sequential lower case Roman Numeral followed by a period and two spaces)
+           Child ID# (optional) - indicating this child has its own Family Group
+           Child Name (required, enter first name and optional middle name; no surname, prefixes, titles nor suffixes)
+             (Child first name may be "name unknown", "son, name unknown" or "daughter, name unknown" without the quotes; if Child first name is one of these literals then Child middle name cannot be present)
+   Notes - Line 3 may be repeated any number of times
+           The Roman Numeral associated with any child may be preceded by an ID and two spaces. This indicates that this child has his or her own Family Group.
+
+
+Delimiter Section consists of 3 consecutive null lines:
+  Line 1 - null
+  Line 2 - null
+  Line 3 - null
+
+
+
+<a href="FamilyGroupExample.jpg" target="_blank" rel="noopener noreferrer">Image of an example of a Family Group</a>.
+
+See an example of user-created files in the Include folder/directory.
+
+
+
+Extra notes ...
+
+Each Family Group is a separate entity.
+
+Each and every item in a Family Group "Account Section" (Timeline, Notes, Questions, Extras and Explanations)
+and the Children Section must be cited. An "item" is generally considered a line. However, one "item" may contain multiple lines or
+multiple continuation lines grouped together. One "item" may also contain multiple citations. For example, an "item" stating:
+
+Joe Smith married Henrietta Jones; buried in Graceland Cemetery.
+
+could look like this:
+
+Joe Smith married Henrietta Jones; [1] [2] buried in Graceland Cemetery. [3]
+
+Citation #1 and Citation #2 are used to show the marriage, and Citation #3 is used to show where Joe Smith is buried.
+
+
+Each Family Group:
+
+Line 1 must start in column 1 with the Family ID.  Family ID contains only
+numerics and one period (.).  There must be at least 2 numerics.  The first
+and last character of the Family ID must be numeric.  Family IDs must be
+sequential from one family to the next.  Each Family ID is unique.
+
+A Family ID normally looks like:
+n.n
+
+The n to the left of the period normally indicates the generation (but may not be exact).  The n
+to the right of the period is a sequential identifier within that generation.
+
+n = 1 or more numerics
+
+The Family ID must be followed by 2 spaces which in turn is followed with
+the name (first, middle, last) of the Head of the Family. The Head of the
+Family is normally defined as a blood relative.
+
+Timeline - c in column before year indicates "circa" (about)
+           - in column after month indicates BCE or BC (Before Christian Era or Before Christ)
+           d indicates "double date" (AKA "dual date", "double year")
+             (a "dual date" can lead to an irregular sequence of dates, e.g., 13 Jand1700 falls chronologically AFTER 25 Apr 1700,
+              'd' is omitted when proper year is unclear or when double date is not made clear by Source)
+           &lt; indicates before
+           &gt; indicates after
+           date may appear only when it is not EXACTLY the same as previous date; blank date means to use previous
+             date (e.g., "c1902" is not the same as "1902"), however it is not an error to have two consecutive dates exactly the same
+           ? in place of a number in a date when number not known
+           Timeline events are in sequence as best as can be accomplished ... the following:
+                    1949 living in ...
+                    1949 moved to ...
+             15 Jul 1949 so and so died
+                Jul 1949 obit published
+             20 Jul 1949 so and so buried
+                    1949 another event
+
+             would indicate that the first and second 1949 events occurred before 15 Jul 1949, the second 1949 event occurred after the
+               first 1949 event, the third 1949 event occurred after 20 Jul 1949, and the Jul 1949 event occurred between 15 Jul 1949 and
+               20 Jul 1949
+
+Timeline contains only dated events or items.  Events/items for which there is no date is placed in the Notes area.
+
+Notes
+Each person who has associated notes has a separate Note line.
+Multiple notes for the same person are separated by a semicolon (;).
+Notes are not in in any specified sequence.
+
+Citation/Citations/Source/Sources
+When there is more than 1 citation/source, each citation/source is numbered in the Citation Section.
+Each event in the Timeline should be cited with [n] where n = the Citation number.  Each item in all other areas of the Account Section are
+also cited.  An item without a Citation reference means to use the Citation Reference following the next item.  However, each individual
+appearing in the Account Section must be cited at least once.
+
+
+Format of the index File<br>
+<br>
+LastName, FirstName MiddleName  FGID ...
+<br>
+LastName is the person's last name. LastName must be followed by a comma and a whitespace.<br>
+FirstName is the person's first name.<br>
+MiddleName is the person's middle name. There can be multiple MiddleName's, or none.<br>
+FirstName, if unknown, must be substituted with "------" (without the quotes).<br>
+FirstName and MiddleName must be followed by a whitespace. And the final occurrence of a name on the line must be followed by two whitespaces.<br>
+FGID is the Family Group ID in the Family DataBase where the name appears. There may be multiple FGID's. Each FGID except the last must be
+followed by a comma and a whitespace.<br>
+<br>
+Note - The contents of the index file do not need to be sorted. The contents of the file will be sorted when the Family DataBase is verified
+("Verify Family Data" on the main menu).<br>
+<br>
+<br>
+<br>
+Structure & Format Guidelines for the Directory/Folder Containing the User Created Files to Import ...<br>
+<br>
+Structure looks like:<br>
+Import directory/folder
+    if importing user-created files then body and/or text files (minimum - 1 file, maximum - unlimited)
+    if importing a Gedcom then one (and one only) Gedcom file (with a .ged extension)
+    index file 
+    tableofcontents file 
+    miscellaneous files (unlimited number)
+    UnsureIfRelated directory/folder
+        directories/folders, plain text files and/or image files (unlimited number)
+    Other directory/folder
+        any number of files and/or directories/folders
+    Reference directory/folder
+        plain text files (unlimited number)
+        directory/folder (unlimited number)
+    Images directory/folder
+        tableofcontents file
+        Biographies directory/folder
+            images (unlimited number)
+        Maps directory/folder
+            normally would contain sub-directories/folders which indicate location (e.g., a sub-directory/folder named USA, and within USA another sub-directory/folder named NY, etc)
+        Misc directory/folder
+        Newspapers directory/folder
+            normally would contain sub-directories/folders which indicate type (e.g., Birth, Death, Marriage, etc)
+        People directory/folder
+            images (unlimited number)
+        Records directory/folder
+            normally would contain sub-directories/folders which indicate type (e.g., Birth, Death, Marriage, etc)
+<br>
+The name of the Import directory/folder can be anything allowed by your operating system. Within this directory/folder will reside all the files
+with which the MELGenKey Family DataBase will be built. If importing a GEDCOM, then the GEDCOM file should be in the Import directory/folder. If
+importing user-created files then "body" and/or "text" file(s) should be in the Import directory/folder as explained next. All other files and
+sub-directories/folders are optional and may exist whether importing a GEDCOM or user-created files.<br>
+<br>
+The "Family Groups" must be in files named "body" or "text" (case insensitive) if importing from user-created files. If there is more than
+one "body" and/or "text" file then there must be a sequential number attached to each file name (e.g., body1, text3, body4, etc). That
+portion of the filename called "body" or "text", can be mixed, but each sequential number must be unique (e.g., there cannot be files
+in the directory/folder named "body234" and "text234"). The files should be numbered sequentially in the way the data within the files should
+be added to the MELGenKey Family DataBase. For an explanation of the format of the contents of the "body" and "text" files see elsewhere in
+this file.<br>
+<br>
+There may also be an "index" file (case insensitive). For an explanation of the format of the contents of the "index" file see elsewhere
+in this file. There may also be a "tableofcontents" file (case insensitive) pertaining to the files previously mentioned. If a
+"tableofcontents" file does not exist it will be created. All of the files previously mentioned are optional except there must be at least
+one "body" or "text" file (if importing from user-created files) or one GEDCOM file (if importing from a GEDCOM). All the files previously
+mentioned must be in the top level of the directory/folder (i.e., they cannot reside within sub-directories/folders).<br>
+<br>
+There may be sub-directories/folders named "UnsureIfRelated", "Other", "Images" and "Reference" (all case insensitive). "Images" normally
+contains files of citation/source material in graphical form. "Reference" normally contains files of citation/source material in plain text
+form. "UnsureIfRelated" normally contains files of plain text and/or image information pertaining to people who may or may not be related to
+people appearing in the Family DataBase. All the aforementioned sub-directories/folders are optional. Any sub-directory/folder present will
+be imported verbatim.<br>
+<br>
+Any file in the top level of the directory/folder which is unknown to MELGenKey will be imported into the "Other" sub-directory/folder. Some
+files that may exist in the "Other" sub-directory/folder are meaningful to MELGenKey. These include (file names exactly as shown):<br>
+AdditionalInfoNotIncluded.txt - list of people for whom there is additional info that is not included in this DataBase (e.g., this could be for living people not made public)<br>
+Bibliography.txt - list of reference material used in this DataBase<br>
+DBinfo.txt - info describing this DataBase (used by MELGenKey); this file has a particular format (see elsewhere in this file for a description of the format)<br>
+Dedication.txt - dedication<br>
+DevHistory.txt - development history regarding this DataBase<br>
+FamilyObscurities.txt - obscure info pertaining to some people and/or families appearing in this DataBase<br>
+Founders.txt - list of people in this DataBase who founded something<br>
+Introduction.txt - introduction to this DataBase<br>
+NotablePeople.txt - info with regard to some notable people appearing in this DataBase<br>
+Notes.txt - miscellaneous notes pertaining to this DataBase<br>
+Preface.txt - preface to this DataBase<br>
+README.txt - basic info pertaining to this DataBase<br>
+ReleaseNotes.txt - notes pertinent to the current release of this DataBase<br>
+ResearchToDo.txt - notes pertaining to additional research which could/should be done regarding this DataBase<br>
+Statistics.txt - some statistics regarding this DataBase<br>
+SurnameRecap.txt - general notes with regard to some surnames appearing in the DataBase<br>
+UsersGuide.txt - a guide for using this DataBase<br>
+<br>
+If the file DBinfo.txt is not provided, it will be created by MELGenKey. If the file DBinfo.txt is provided, info will be appended to it by
+MELGenKey. A tableofcontents file will be created for the "Other" sub-directory/folder.<br>
+<br>
+<br>
+<br>
+Format of the DBinfo.txt File<br>
+<br>
+A pound sign (#) in column 1 in any line identifies that line as a comment.<br>
+All fields except DBName, DBVersion and DBDescription may have multiple values; separate multiple values using a semi-colon (;).<br>
+Enclose a set of values within quotes (").<br>
+Do not use quotes (") within any field value.<br>
+All field names and values are optional.<br>
+A null field value can be shown as "".<br>
+All field value lengths are unlimited.<br>
+The following are all field names which are meaningful to MELGenKey, some of which are shown with example field values. All field names
+are optional. Also, if creating your own DBinfo.txt file to be imported, other field names and field values may be added to the file.
+Additional fields will be appended to the file by MELGenKey when it is imported.<br>
+DBName = "Sands of Time II - KILLE"
+DBVersion = "20231111"
+DBDescription = "Main Surnames: Kille, Deckelmann. Main Geographical Areas: NY, Germany."
+DBCreator = "Marshall Lake"
+DBCreatorAddr = "19136 E Tonto Verde Drive, Rio Verde, AZ  85263"
+DBCreatorEmail = "sot2@mlake.net; marshallelake@gmail.com"
+DBCreatorPhone = "480-588-6478 (land line); 602-587-4655 (cell)"
+DBCreatorURL = "www.mlake.net"
+DBCreatorLiveChat = ""
+MessageBoard = ""
+Blog = ""
+<br>
+<br>
+<br>
+Structure of a MELGenKey Family DataBase Directory/Folder ...<br>
+<br>
+Family DataBase directory/folder (the name will be the same as the name applied to the Family DataBase at the time of import)
+    PlainText
+        body (there can be 1 to an unlimited number of body files; each body file will have a sequential number attached beginning at 0)
+        index (optional)
+        tableofcontents (if not imported, it will be created at import time by MELGenKey)
+    UnsureIfRelated (directory/folder; optional, will exist if it existed in the Import directory/folder)
+    Other (directory/folder; at a minimum contains a file named "DBinfo.txt" (without the quotes))
+    Reference (directory/folder; optional, will exist if it existed in the Import directory/folder)
+    Images (directory/folder; optional, will exist if it existed in the Import directory/folder)A
+    HTML (directory/folder; optional, will exist if the HTML version of the Family DataBase was created using MELGenKey)
+<br>
+<br>
+<br>
+
+</pre>
+<hr style="width:50%">
+
+</body>
+</html>

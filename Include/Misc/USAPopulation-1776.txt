@@ -1,0 +1,25 @@
+
+Population in 1776
+
+BEGIN
+
+Roughly, the population of the United States in 1776 was:
+
+Georgia                23,375
+Delaware               35,496
+Rhode Island           58,196
+New Hampshire          62,396
+New Jersey            117,431
+South Carolina        124,244
+New York              162,920
+Connecticut           183,881
+North Carolina        197,200
+Maryland              202,599
+Massachusetts         235,308
+Pennsylvania          240,057
+Virginia              447,016
+
+Total               2,090,119
+
+END
+

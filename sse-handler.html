@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head><title>SSE Handler</title></head>
+<body>
+<script>
+var Notifications;
+
+onload = function init() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var UserPrefs = {};
+
+    UserPrefs.length = 0;
+    ws.onopen = function() {
+        ws.send("GetUserPrefs");
+    }
+    ws.onmessage = function(e) {
+        try {
+            UserPrefs = JSON.parse(e.data);
+            if (UserPrefs.length === 0)
+                Notifications = 1;    // default is notifications on
+            else
+                Notifications = UserPrefs.Not;
+        } catch (error) {
+            alert("Error getting User Preferences.");
+        }
+    }
+    ws.onerror = function(error) {
+        // do nothing
+    }
+}
+
+const sse = new EventSource('http://localhost:3000/events');
+
+sse.addEventListener('monitorweb-update', (event) => {
+    try {
+        const data = JSON.parse(event.data);
+        const message = data.message;
+        if (Notifications == 1) {
+            var audio = new Audio('Include/Sounds/AirplaneDing.wav');
+            audio.play();
+        }
+        // Forward to all open pages with the correct type
+        window.parent.postMessage({ type: 'sse', sseEventType: 'monitorweb-update', message: message }, '*');
+    } catch (error) {
+        console.error('Error parsing SSE data:', error);
+    }
+})
+
+sse.addEventListener('verify-progress-update', (event) => {
+    try {
+        const data = JSON.parse(event.data);
+        const message = data.message;
+        // Forward to all open pages with the correct type
+        window.parent.postMessage({ type: 'sse', sseEventType: 'verify-progress-update', message: message }, '*');
+    } catch (error) {
+        console.error('Error parsing SSE data:', error);
+    }
+})
+
+sse.onerror = (e) => {
+    console.error('SSE error in handler:', e);
+}
+</script>
+</body>
+</html>

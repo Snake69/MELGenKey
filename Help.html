@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>MELGenKey Help</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .fieldset-auto-width {
+         display: inline-block;
+    }
+</style>
+</head>
+<body>
+
+<dialog id="dial1">
+<span>It seems the node/server is not running.<br>Cannot perform function without the server running.<br> <br></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial2">
+<span id="dial2span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>Help, Documentation and Info</h1>
+<span id="TitleDBName"></span>
+<hr style="width:50%">
+<br>
+
+<script type="text/javascript" src="clib.js"></script>
+
+<script>
+
+/*prepare an email for sending */
+function SendEmail() {
+    const windowRef = window.open(`mailto:MarshallELake@gmail.com?subject=MELGenKey (V20250926)`, '_blank');
+
+    windowRef.focus();
+    setTimeout(function() {
+        if(!windowRef.document.hasFocus())
+            windowRef.close();
+    }, 500);
+}
+
+onload = function init() {
+    /* if server not running (res = -2) or no active DB (res = -1), disable certain selections */
+    check4ActiveDB().then((res) => {
+        if (res == -2) {
+            document.getElementById("Locales").disabled = true;
+            document.getElementById("Locations").disabled = true;
+            document.getElementById("Maps").disabled = true;
+            document.getElementById("Misc").disabled = true;
+        }
+        if (res == -2 || res == -1) {
+            document.getElementById("Intro").disabled = true;
+            document.getElementById("Preface").disabled = true;
+            document.getElementById("Recap").disabled = true;
+            document.getElementById("Readme").disabled = true;
+            document.getElementById("Notes").disabled = true;
+            document.getElementById("Release").disabled = true;
+            document.getElementById("DevHistory").disabled = true;
+            document.getElementById("Notable").disabled = true;
+            document.getElementById("Biblio").disabled = true;
+            document.getElementById("Dedication").disabled = true;
+            document.getElementById("Todo").disabled = true;
+            document.getElementById("Founders").disabled = true;
+            document.getElementById("Obscurities").disabled = true;
+            document.getElementById("Stats").disabled = true;
+            document.getElementById("Guide").disabled = true;
+            document.getElementById("DBinfo").disabled = true;
+        }
+    })
+
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1)
+            document.getElementById("TitleDBName").innerHTML = 'Active Family DataBase - ' + e.data; 
+        else
+            document.getElementById("TitleDBName").innerHTML = 'Active Family DataBase - none'; 
+    }
+}
+
+</script>
+
+<script>
+
+function doesOptFileExist(path) {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var ptf;
+
+    ws.onerror = function () {
+        if (ws.readyState == 3) {
+            const dialog1 = document.querySelector("#dial1");
+            dialog1.showModal();
+        }
+    }
+    ws.onopen = function() {
+        ws.send("DBLocation");
+    }
+    ws.onmessage = function(e) {
+        ptf = './' + e.data + '/Other/' + path;
+
+        ws.send("FEXIST" + ptf);
+        ws.onmessage = function(e) {
+            if (e.data == "-1") {
+                var span = document.getElementById("dial2span");
+                var msg = "The file '" + path + "' for the active DataBase does not exist.<br>This file is optional.<br> <br>";
+                const dialog2 = document.querySelector("#dial2");
+                span.innerHTML = msg;
+                dialog2.showModal();
+            }
+            else
+                window.open(e.data, '_blank');
+        }
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<fieldset class="fieldset-auto-width">
+<legend>MELGenKey Related</legend>
+<br>
+<input type="button" onclick="window.open('Docs/Overview.html','_blank')" value="MEL Genealogy Key (MELGenKey) Overview"/>
+<br> <br>
+<input type="button" onclick="window.open('Docs/UsingSystem.html','_blank')" value="Using MELGenKey"/>
+<br> <br>
+<input type="button" onclick="window.open('Docs/Readme.html','_blank')" value="MELGenKey Readme"/>
+<br> <br>
+<input type="button" onclick="window.open('Docs/DevHistory.html','_blank')" value="MELGenKey Development History"/>
+<br> <br>
+<input type="button" onclick="window.open('Docs/FAQ.html','_blank')" value="MELGenKey Frequently Asked Questions"/>
+<br> <br>
+<input type="button" onclick="window.open('Docs/DataFormat.html','_blank')" value="Data Format and Notes"/>
+<br> <br>
+<input type="button" onclick="window.open('Docs/Addons.html','_blank')" value="MELGenKey Add-ons"/>
+<br> <br>
+<button type="button" onclick="SendEmail()">Contact Developer of MELGenKey via email</button>
+<br> <br>
+</fieldset>
+<br> <br> <br>
+<!-- all the following use files created by the creator of the active Family DataBase  (files in "Other" directory of active Family DataBase) -->
+<fieldset class="fieldset-auto-width">
+<legend>Active DataBase Related</legend>
+<br>
+<button type="button" id="Intro" onclick="doesOptFileExist('Introduction.txt')">Active DataBase - Introduction</button>
+<br> <br>
+<button type="button" id="Preface" onclick="doesOptFileExist('Preface.txt')">Active DataBase - Preface</button>
+<br> <br>
+<button type="button" id="Recap" onclick="doesOptFileExist('SurnameRecap.txt')">Active DataBase - Surname Recap</button>
+<br> <br>
+<button type="button" id="Readme" onclick="doesOptFileExist('README.txt')">Active DataBase - Some Explanatory Notes</button>
+<br> <br>
+<button type="button" id="Notes" onclick="doesOptFileExist('Notes.txt')">Active DataBase - Miscellaneous Notes</button>
+<br> <br>
+<button type="button" id="Release" onclick="doesOptFileExist('ReleaseNotes.txt')">Active DataBase - Release Notes</button>
+<br> <br>
+<button type="button" id="DevHistory" onclick="doesOptFileExist('DevHistory.txt')">Active DataBase - Development History</button>
+<br> <br>
+<button type="button" id="Notable" onclick="doesOptFileExist('NotablePeople.txt')">Active DataBase - Notable People</button>
+<br> <br>
+<button type="button" id="Biblio" onclick="doesOptFileExist('Bibliography.txt')">Active DataBase - Bibliography</button>
+<br> <br>
+<button type="button" id="Dedication" onclick="doesOptFileExist('Dedication.txt')">Active DataBase - Dedication</button>
+<br> <br>
+<button type="button" id="Todo" onclick="doesOptFileExist('ResearchToDo.txt')">Active DataBase - Research To Do</button>
+<br> <br>
+<button type="button" id="Founders" onclick="doesOptFileExist('Founders.txt')">Active DataBase - Founders</button>
+<br> <br>
+<button type="button" id="Obscurities" onclick="doesOptFileExist('FamilyObscurities.txt')">Active DataBase - Family Obscurities</button>
+<br> <br>
+<button type="button" id="Stats" onclick="doesOptFileExist('Statistics.txt')">Active DataBase - Statistics</button>
+<br> <br>
+<button type="button" id="Guide" onclick="doesOptFileExist('UserGuide.txt')">Active DataBase - User Guide</button>
+<br> <br>
+<button type="button" id="DBinfo" onclick="doesOptFileExist('DBinfo.txt')">Active DataBase - Creator &amp; Status of Data</button>
+<br> <br>
+</fieldset>
+<br> <br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>General Genealogy Aids</legend>
+<br>
+<input type="button" id="Locales" onclick="location.href='GenInfo-Locales.html'" value="Locale Histories"/>
+<br> <br>
+<input type="button" id="Locations" onclick="location.href='GenInfo-Locations.html'" value="Place Names"/>
+<br> <br>
+<input type="button" id="Maps" onclick="location.href='GenInfo-Maps.html'" value="Maps"/>
+<br> <br>
+<input type="button" id="Misc" onclick="location.href='GenInfo-Misc.html'" value="Misc"/>
+<br> <br>
+</fieldset>
+<br> <br>
+<hr style="width:50%">
+
+</body>
+</html>

@@ -1,0 +1,625 @@
+# Canada Geographical Events
+# v20250414
+# any line with the # character in column 1 is considered a comment line
+# comment lines are not included in MELGenKey Reports
+      c1003 Norse captain Leif Ericson is believed to have reached the Island
+              of Newfoundland circa 1000 AD. They establish a colony in 1003
+              at L'Anse aux Meadows. They later abandoned the site. First
+              European settlement in the Americas, excluding Greenland. [1]
+24 Jun 1497 John Cabot, explorer, discovers Canada. [2] Genoese navigator
+              John Cabot lands the Matthew of Bristol somewhere on the
+              northern Atlantic coast of North America, claiming the land
+              for England by the Doctrine of discovery. The precise location
+              of Cabot's landing is widely debated but generally believed to
+              be on Newfoundland, already inhabited by the Beothuk people. [1]
+29 Jun 1534 Jacques Cartier discovers Prince Edward Islands, Canada. [3]
+24 Jul 1534 Explorer Jacques Cartier claims the Gaspe Peninsula, already
+              inhabited by Indigenous St. Lawrence Iroquoians, for France
+              under the Doctrine of Discovery. He returns to France with
+              two Iroquois captives. [1]
+       1541 Charlesbourg-Royal, Quebec, Canada founded; first French
+              settlement; short-lived. [1]
+       1583 Explorer Humphrey Gilbert lands in present-day St. John's and
+              lays claim to the island of Newfoundland for the Kingdom
+              of England under the Doctrine of Discovery. He dies at sea
+              and permanent settlement by the British had to await better
+              planned attempts. [1]
+            Harbour Grace, Newfoundland and Labrador, Canada founded [1]
+       1587 Mantle Site, Wendat (Huron) Ancestral Village, Ontario, Canada
+              founded. [1]
+       1599 Tadoussac, Quebec, Canada founded. Oldest continuously inhabited
+              French-established settlement in the Americas, and the oldest
+              European-established settlement in Quebec. [1]
+       1604 The French explorer and geographer Samuel de Champlain sails the
+              coast of New England from Maine to Cape Cod and establishes
+              a colony in present-day Nova Scotia. [6]
+            Canso, Nova Scotia, Canada founded. [1]
+24 Jun 1604 Samuel de Champlain discovers the mouth of the Saint John River,
+              site of Reversing Falls and the present day city of Saint John,
+              New Brunswick, Canada. [1]
+26 Jun 1604 The French settled at a site in the Baie Francis (present day
+              Bay of Fundy), at the mouth of the Saint Croix River which
+              separates present day New Brunswick and Maine, on a small
+              island named Saint Croix. [1]
+       1605 French colonists under Samuel de Champlain establish the
+              first permanent European settlement in the future Canada at
+              Port-Royal, founding the colony that would become known as
+              Acadia. [1]
+ 3 Jul 1608 Samuel de Champlain founds city of Quebec. [1] [3] It became
+              the capital of New France. [1]
+       1610 Cupids, Newfoundland and Labrador, Canada founded. [1]
+       1631 Under Charles I, the Scots were forced to abandon their Nova
+              Scotia colony in its infancy. [1]
+       1634 Beauport, Quebec, Canada founded; became a borough of Quebec
+              City in Jan 2002. [1]
+ 4 Jul 1634 The city of Trois-Rivieres is founded in New France (now
+              Quebec, Canada). [1]
+       1638 Sillery, Quebec, Canada founded, now part of Quebec City. [1]
+            Sainte-Foy, Quebec, Canada founded; merged with the City of
+              Quebec in 2002. [1]
+       1642 Sorel, Quebec, Canada founded (present-day Sorel-Tracy). [1]
+17 May 1642 Paul de Chomedey, Sieur de Maisonneuve (1612-1676) founds the
+              Ville Marie de Montreal with the majority of immigrants coming
+              directly from France led by Paul de Chomedey and Jeanne Mance,
+              a lay woman. [1]
+       1646 Chateau-Richer, Quebec, Canada founded. [1]
+       1647 La Prairie, Quebec, Canada founded as a mission by the Jesuits;
+              the first parish was founded in 1667. [1]
+       1650 Saint-Ours, Quebec, Canada founded. [1]
+       1651 Cap-de-la-Madeleine, Quebec, Canada founded, became a borough
+              of Trois-Rivieres in Jan 2002. [1]
+            Sainte-Anne-de-Beaupre, Quebec, Canada founded. [1]
+       1654 War between France and England broke out. Led by Major Robert
+              Sedgwick, a flotilla from Boston, under orders from Oliver
+              Cromwell, arrived in Acadia to chase the French out. The
+              flotilla seized La Tour's fort, then Port-Royal. [1]
+       1655 Cap-Saint-Ignace, Quebec, Canada founded. [1]
+       1657 Longueuil, Quebec, Canada founded. [1]
+       1660 Placentia, Newfoundland, Canada founded (originally
+              Plaisance). [1]
+       1664 L'Ange-Gardien, Quebec, Canada founded. [1]
+       1665 Chambly, Quebec, Canada founded. [1]
+       1666 Charlesbourg, Quebec, Canada founded. [1]
+            Saint-Jean-sur-Richelieu, Quebec, Canada founded. [1]
+       1667 Boucherville, Quebec, Canada founded. [1]
+       1668 Saint-Nicolas, Quebec, Canada founded. [1]
+       1669 Neuville, Quebec, Canada founded. [1]
+       1670 Repentigny, Quebec, Canada founded. [1]
+       1672 Varennes, Quebec, Canada founded. [1]
+            Vercheres, Quebec, Canada founded. [1]
+       1673 L'Ancienne-Lorette, Quebec, Canada founded. [1]
+       1674 Pointe-aux-Trembles, Quebec, Canada founded (now part of
+              Montreal). [1]
+       1675 Lachine, Quebec, Canada founded, [1]
+            Lavaltrie, Quebec, Canada founded, [1]
+       1676 Contrecoeur, Quebec, Canada founded, [1]
+            Loretteville, Quebec, Canada founded, [1]
+       1677 Sainte-Anne-de-Bellevue, Quebec, Canada founded, [1]
+       1678 La Pocatiere, Quebec, Canada founded, [1]
+            Montmagny, Quebec, Canada founded, [1]
+       1679 Levis, Quebec, Canada founded, [1]
+            L'Islet, Quebec, Canada founded, [1]
+            Saint-Augustin-de-Desmaures, Quebec, Canada founded, [1]
+       1681 Baie-Saint-Paul, Quebec, Canada founded, [1]
+            Berthierville, Quebec, Canada founded, [1]
+            Saint-Francois, Quebec, Canada founded, [1]
+       1682 Riviere-du-Loup, Quebec, Canada founded, [1]
+       1683 Lachenaie, Quebec, Canada founded, [1]
+       1684 Becancour, Quebec, Canada founded, [1]
+       1687 Riviere-des-Prairies, Quebec, Canada founded (now part of
+              Montreal), [1]
+       1690 Oka, Quebec, Canada founded, [1]
+       1696 Rimouski, Quebec, Canada founded, [1]
+            Sault-au-Recollet, Quebec, Canada founded (now part of Montreal).
+              [1]
+       1700 Mascouche, Quebec, Canada founded. [1]
+       1701 Nicolet, Quebec, Canada founded. [1]
+       1703 Saint-Sulpice, Quebec, Canada founded. [1]
+       1711 Pointe-Claire, Quebec, Canada founded. [1]
+11 Apr 1713 The Treaty of Utrecht was actually a group of documents. The
+              treaties were among several European states, including France,
+              Spain, Great Britain, Savoy, and the Dutch Republic, and they
+              helped end the War of the Spanish Succession. In North America,
+              France ceded to Great Britain its claims to the Hudson's
+              Bay Company territories in Rupert's Land, Newfoundland and
+              Acadia. France retained its other pre-war North American
+              possessions, including Ile-Saint-Jean (now Prince Edward
+              Island) as well as Ile Royale (now Cape Breton Island),
+              on which it erected the Fortress of Louisbourg. [1]
+       1715 Les Cedres, Quebec, Canada founded. [1]
+       1716 Kahnawake, Quebec, Canada founded. [1]
+       1717 L'Assomption, Quebec, Canada founded. [1]
+            The Indigenous settlement of Kanesatake is founded at the
+              confluence of the St.Lawrence and Ottawa rivers. It is founded
+              by the Sulpician Order under a royal charter as a home for
+              Catholic converts of the Indigenous peoples of the region,
+              including the Mohawk. The lands' ownership becomes disputed
+              between the Order and the Indigenous residents over the
+              original land grant and title. The settlement would later be
+              the location of the Oka Crisis. The land remains disputed. [1]
+       1719 Longue-Pointe, Quebec, Canada founded. [1]
+       1720 Saint-Laurent, Quebec, Canada founded. [1]
+       1721 Saint-Jean-Port-Joli, Quebec, Canada founded. [1]
+       1722 Louiseville, Quebec, Canada founded. [1]
+       1723 Terrebonne, Quebec, Canada founded. [1]
+       1729 Pabos, Quebec, Canada founded (now part of Chandler). [1]
+       1732 Lanoraie, Quebec, Canada founded. [1]
+       1733 Saint-Vincent-de-Paul, Quebec, Canada founded (integrated into
+              Laval in 1965). [1]
+       1736 Chateauguay, Quebec, Canada founded. [1]
+       1738 Pointe-du-Lac, Quebec, Canada founded (merged with Trois-Rivieres
+              in 2002). [1]
+            Saint-Joseph-de-Beauce, Quebec, Canada founded. [1]
+       1739 Saint-Mathias-sur-Richelieu, Quebec, Canada founded. [1]
+       1740 L'Ile-Perrot and Notre-Dame-de-l'Ile-Perrot, Quebec, Canada
+              founded. [1]
+       1741 Sainte-Genevieve and Pierrrefonds, Quebec, Canada founded. [1]
+       1742 Les Ecureuils, Quebec, Canada founded. [1]
+       1745 Sainte-Marie, Quebec, Canada founded. [1]
+            Sainte-Rose, Quebec, Canada founded. [1]
+       1746 Saint-Henri, Quebec, Canada founded. [1]
+21 Jun 1749 Halifax, Nova Scotia, is founded [1] [3] and settled by the
+              British, marking the first time that public rather than private
+              capital was used to settle a British colony in the Americas. The
+              Indigenous Mi'kmaq consider Britain's unilateral action as a
+              violation of treaties signed after Father Rale's War in 1726,
+              starting Father Le Loutre's War. British colonists would
+              drive French and Mi'kmaq inhabitants from peninsular Nova
+              Scotia but are repelled from Acadian settlements further north
+              (present-day New Brunswick). [1]
+       1752 Saint-Constant, Quebec, Canada founded. [1]
+       1753 Saint-Philippe, Quebec, Canada founded. [1]
+       1754 First settlers at Riverport [now in Lunenburg County, Nova
+              Scotia]. [5]
+       1757 Saint-Hyacinthe, Quebec, Canada founded. [1]
+       1759 First settlers at Chester [now in Lunenburg County, Nova
+              Scotia]. [5]
+       1760 First settlers at Canning [now in Kings County, Nova Scotia]. [5]
+            First settlers at Greenwich [now in Kings County, Nova
+              Scotia]. [5]
+10 Feb 1763 The Treaty of Paris ended the French and Indian War/Seven Years'
+              War. It was signed by Great Britain, France and Spain, with
+              Portugal in agreement. Preferring to keep Guadeloupe, France
+              gave up Canada to Britain. [1]
+ 7 Oct 1763 By the Royal Proclamation of 1763, King George III of Great
+              Britain created the Province of Quebec in the St. Lawrence
+              valley, the part of the former French province of Canada
+              that was settled by people of French descent. The Great Lakes
+              basin was barred to European settlement, reserved as exclusive
+              "hunting grounds" for the "several nations or tribes of
+              Indians" under the king's "protection." [1]
+       1764 Amherst, Nova Scotia, Canada founded. [1]
+            Charlottetown, Prince Edward Island, Canada founded. [1]
+       1766 Moncton, New Brunswick, Canada founded. [1]
+       1768 Beloeil, Quebec, Canada founded. [1]
+            L'Acadie, Quebec, Canada founded. [1]
+            Saint-Eustache, Quebec, Canada founded. [1]
+14 Jul 1769 St. John's Island is partitioned from Nova Scotia, becoming
+              a separate colony from the mainland. The colony is renamed
+              Prince Edward Island in 1798. [1]
+       1774 By the Quebec Act, the territory of the Province of Quebec was
+              expanded to take over part of the Indian Reserve, including
+              much of what is now southern Ontario, Illinois, Indiana,
+              Michigan, Ohio, Wisconsin and parts of Minnesota. [1]
+       1783 Kingston, Ontario, Canada founded. Formerly known as Fort
+              Frontenac. In 1673, the original fort was built and called
+              Fort Cataraqui. It was later renamed Fort Frontenac. It was
+              abandoned and razed in 1689, then rebuilt in 1695. [1]
+       1784 Cornwall, Ontario, Canada founded by a group of United Empire
+              Loyalists led by Lieutenant-Colonel John Johnson. [1]
+22 May 1784 Over 3,000,000 acres (1,200,000 ha) of land is purchased by
+              the British Crown from the Mississaugas of the Credit First
+              Nation in present-day Ontario for £1180.00. [1]
+18 Jun 1784 New Brunswick and Cape Breton Island are partitioned from Nova
+              Scotia, becoming separate colonies. Cape Breton re-joins Nova
+              Scotia in 1820. [1]
+25 Oct 1784 Under the terms of the Haldimand Proclamation, 550,000 acres
+              (220,000 ha) of the lands purchased from the Mississaugas
+              is granted to the Mohawks and the other Five Nations of the
+              Haudenosaunee Confederacy. The land is a tract extending 6
+              miles (9.7 km) on either side of the Grand River from source
+              to mouth. However, it is later determined that the head of
+              the Grand River was outside of the lands purchased from the
+              Mississaugas. In 1792, Governor Simcoe unilaterally reduces
+              the land grant to 270,000 acres (110,000 ha). Later land sales,
+              government actions, and the creation of the Six Nations of the
+              Grand River reserve would reduce the lands under Indigenous
+              possession to a small fraction of the original grant. The land
+              grant and its management is the basis of the Grand River land
+              dispute between the Six Nations and Canada. [1]
+       1785 Fredericton, New Brunswick, Canada founded. [1]
+            Sydney, Nova Scotia, Canada founded. [1]
+       1789 Santa Cruz de Nuca, British Columbia, Canada founded (only
+              Spanish settlement in Canada). [1]
+26 Dec 1791 The Province of Quebec was divided into two parts, Lower
+              Canada and Upper Canada. The Province of Upper Canada (French:
+              province du Haut-Canada) was a British colony located in what
+              is now the southern portion of the Province of Ontario in
+              Canada. Upper Canada officially existed from 26 December 1791
+              to 10 February 1841. Its name reflected its position higher up
+              the river or closer to the headwaters of the St. Lawrence River
+              than that of Lower Canada, present-day southern Quebec. The
+              division was effected so that Loyalist American settlers and
+              British immigrants in Upper Canada could have English laws and
+              institutions, and the French-speaking population of Lower Canada
+              could maintain French civil law and the Catholic religion. [1]
+       1793 York, Upper Canada founded. [1]
+            Ancaster, Ontario, Canada founded. [1]
+ 1 Feb 1796 The capital of Upper Canada is moved from Newark to York. [1] [3]
+       1797 Windsor, Ontario, Canada founded. [1]
+       1798 St. John's Island is renamed Prince Edward Island. [1]
+       1800 Hull, Quebec, Canada founded; formerly known as Wright's Town [1]
+   Sep 1803 The North West Company organized an overland expedition from
+              Montreal to James Bay and a second expedition by sea. In
+              September 1803, the overland party met the company's ship at
+              Charlton Island in what is now Nunavut. There, they lay claim
+              to the territory that drained into the Arctic in the name of
+              the North West Company. [1]
+       1807 Prince George, British Columbia, Canada founded, expanded from
+              the fur-trading post of Fort George, established by the North
+              West Company. [1]
+       1811 Settlement began of the Red River Colony, a 300,000 square
+              kilometres (120,000 sq mi; five times that of Scotland) area,
+              by Thomas Douglas, 5th Earl of Selkirk via a land grant from
+              the Hudson's Bay Company, of which he was a part-owner. The
+              territory later became part of Manitoba and the Missouri
+              Territory. [1]
+       1812 Kamloops, British Columbia, Canada founded, expanded from the
+              fur-trading posts of Fort Cumcloups (Fort Kamloops) and Fort
+              She-whaps (Shuswap), founded by the Pacific Fur and North
+              West Companies. [1]
+       1815 Hamilton, Ontario, Canada founded. [1]
+       1816 Cambridge, Ontario, Canada founded; originally named Shades Mill;
+              renamed Galt in 1827. [1]
+       1821 Alexandria, British Columbia, Canada founded, expanded from
+              the fur-trading post of Fort Alexandria, founded by the North
+              West Company. [1]
+   Jul 1821 The North West Company of Montreal and the Hudson's Bay Company
+              merged, with a combined territory that was further extended
+              by a license to the watershed of the Arctic Ocean on the north
+              and the Pacific Ocean on the west. [1]
+       1826 London, Ontario, Canada founded. [1]
+            Ottawa, Ontario, Canada founded, originally known as Bytown. [1]
+19 Aug 1826 Canada Co. chartered to colonize Upper Canada (Ontario). [2]
+       1827 Guelph, Ontario, Canada founded. [1]
+            Oakville, Ontario, Canada founded. [1]
+            Langley, British Columbia, Canada founded. [1]
+       1833 Kitchener, Ontario, Canada founded; formerly Berlin; renamed
+              in 1916. [1]
+ 6 Mar 1834 York, Upper Canada, is incorporated as Toronto. [1]
+23 Jul 1840 The Province of Canada is created by the Act of Union (from
+              Upper Canada and Lower Canada). [1] [2]
+10 Feb 1841 The Province of Canada or the United Province of Canada was
+              created by combining Lower Canada and Upper Canada. It was
+              a British colony in North America from 1841 to 1867. Its
+              formation reflected recommendations made by John Lambton,
+              1st Earl of Durham in the Report on the Affairs of British
+              North America following the Rebellions of 1837. The Province
+              of Canada ceased to exist at Canadian Confederation on 1 Jul
+              1867, when it was redivided into the modern Canadian provinces
+              of Ontario and Quebec. [1]
+       1843 Victoria, British Columbia, Canada founded. [1]
+       1844 The United Kingdom moves the capital of the Crown Colony of
+              the United Province of Canada from Kingston to Montreal. [1]
+       1847 Brantford, Ontario, Canada founded, originally known as Brant's
+              Ford. [1]
+       1849 The United Kingdom moves the capital of the Crown Colony of
+              the United Province of Canada from Montreal to Toronto. [1]
+13 Jan 1849 Colony of Vancouver Island is formed as a British crown
+              colony. [1]
+ 7 Sep 1850 -9 Sep 1850, The Robinson Treaties are signed between the Ojibwa
+              and the British Crown, surrendering the northern shores of
+              Lake Superior and Lake Huron for £2,160 and an annual payment
+              of £600. [1]
+       1852 The United Kingdom moves the capital of the Crown Colony of
+              the United Province of Canada from Toronto to the city of
+              Quebec. [1]
+       1854 Windsor, Ontario, Canada incorporated as a village. [1]
+13 Oct 1854 The Surrender of the Saugeen Peninsula is signed between the
+              Chippewa and the Crown, surrendering the lands of the Saugeen
+              Peninsula (Bruce Peninsula) in Canada West in exchange for
+              reserves and interest on the sale of the surrendered lands. [1]
+       1856 The United Kingdom moves the capital of the Crown Colony of
+              the United Province of Canada from the city of Quebec back
+              to Toronto. [1]
+31 Dec 1857 Queen Victoria chooses Ottawa, then a small logging town,
+              as the capital of Canada. [1] [3]
+       1858 The United Kingdom moves the capital of the Crown Colony of
+              the United Province of Canada from Toronto back to the city
+              of Quebec. [1]
+            Windsor, Ontario, Canada becomes a town. [1]
+            New Westminster, British Columbia, Canada founded. [1]
+ 2 Aug 1858 The continental portion of Canada's part of Oregon Country
+              organized as the Colony of British Columbia. [1]
+       1859 A boundary commission was set up to delineate the border between
+              Vancouver Island and the Washington State coast. The commission
+              could not come to agreement on where the middle of the Strait
+              was so in 1859 things came to a head during the bloodless Pig
+              War. [1]
+            The United Kingdom moves the capital of the Crown Colony of
+              the United Province of Canada from the city of Quebec back to
+              Toronto. [1]
+       1862 Victoria, British Columbia, Canada incorporated. [1]
+            Prince Albert, Saskatchewan, Canada founded, originally known
+              as Isbister's Settlement. [1]
+       1866 The United Kingdom moves the capital of the Crown Colony of
+              the United Province of Canada from the city of Quebec to
+              Ottawa. [1]
+ 2 Aug 1866 Colony of Vancouver Island and Colony of British Columbia merge to
+              form United Colonies of Vancouver Island and British Columbia.
+              [1]
+       1867 Vancouver, British Columbia, Canada founded, originally known
+              as Gastown. [1]
+ 1 Jul 1867 The United Kingdom unites its colonies of New Brunswick,
+              Nova Scotia, and the Crown Colony of the United Province of
+              Canada [1] as the Dominion of Canada. [1] [2] Ottawa is the
+              capital. Sir John A. Macdonald is sworn in as the first Prime
+              Minister of Canada. This date is commemorated annually in
+              Canada as Canada Day, a national holiday. [1]
+ 9 Apr 1869 Hudson Bay Company cedes its territory to Canada. [3]
+27 Jan 1870 Manitoba & Northwest Territories incorporated. [3]
+15 Jul 1870 The United Kingdom ceded most of its remaining land in North
+              America to Canada, with Rupert's Land and the North-Western
+              Territory becoming the North-West Territories. The Rupert's
+              Land Act 1868 transferred the region to Canada as of 1869,
+              but it was only consummated in 1870 when [pounds]300,000 were
+              paid to the Hudson's Bay Company. At this time, the Manitoba
+              Act took effect, and a small square of the newly acquired
+              region surrounding the city of Winnipeg was made the province
+              of Manitoba. [1]
+            The actual border between Newfoundland & Quebec is still
+              unknown. Mapmakers have mostly made their own guesses until
+              1927, pretending that the border was more known than it really
+              was. The problem didn't stop in 1927. [1]
+20 Jul 1871 The Crown Colony of British Columbia joins the Dominion of Canada
+              as the sixth province. British Columbia joined the Canadian
+              confederation following The Great Confederation Debates in
+              the spring of 1870 and the Confederation Negotiations of the
+              following summer and winter. [1]
+ 3 Aug 1871 Treaty 1 is signed between the Chippewa and Swampy Cree First
+              Nations and the Crown surrendering lands in Manitoba. [1]
+21 Aug 1871 Treaty 2 is signed between the Chippewa Cree First Nation and
+              the Crown surrendering lands in Manitoba and Saskatchewan. [1]
+       1873 Winnipeg, Manitoba, Canada founded; formerly known as Fort Rouge
+              (built in 1738, abandoned by 1749). [1]
+ 1 Jul 1873 The British colony of Prince Edward Island joined Canada as the
+              seventh province by an Act of Parliament (and, as part of the
+              terms of union, was guaranteed a ferry link, a term which was
+              deleted upon completion of the Confederation Bridge in 1997). [1]
+ 3 Oct 1873 Treaty 3 is signed between the Ojibwe First Nations and the
+              Canadian Crown, surrendering lands in Northwestern Ontario
+              (present-day) and Manitoba. [1]
+26 Jul 1874 The borders of Ontario were provisionally expanded north and
+              west. When the Province of Canada was formed, its borders were
+              not entirely clear, and Ontario claimed to eventually reach all
+              the way to the Rocky Mountains and Arctic Ocean. With Canada's
+              acquisition of Rupert's Land, Ontario was interested in clearly
+              defining its borders, especially since some of the new areas
+              it was interested in were rapidly growing. After the federal
+              government asked Ontario to pay for construction in the new
+              disputed area, the province asked for an elaboration on its
+              limits, and its boundary was moved north to the 51st parallel
+              north. [1]
+15 Sep 1874 Treaty 4 is signed between the Cree First Nations and the Crown
+              of Canada, surrendering lands in present-day Saskatchewan,
+              Alberta and Manitoba. [1]
+20 Sep 1875 Treaty 5 is signed between the Saulteaux and Swampy Cree First
+              Nations and the Canadian Crown, surrendering lands in Manitoba,
+              Saskatchewan and Ontario. [1]
+12 Apr 1876 The District of Keewatin was created by the passage of the
+              Keewatin Act in a central separate strip from the North-West
+              Territories, in order to provide government for the growing
+              area north of Manitoba and west of Ontario. [1]
+   Aug 1876 -Sep 1876, Treaty 6 is signed between the Plain and Wood Cree
+              First Nations and the Canadian Crown, surrendering lands in
+              present-day Alberta and Saskatchewan. [1]
+ 7 Oct 1876 The District of Keewatin was created from a central strip of
+              the North-West Territories to provide government for the
+              growing area north of Manitoba and west of Ontario; while
+              the North-West Territories consisted of several districts,
+              Keewatin had an elevated status and many sources note it
+              distinct from the rest of the North-West Territories. [1]
+22 Sep 1877 Treaty 7 is signed by the Nakoda and Blackfoot First Nations and
+              the Canadian Crown, surrendering lands in southern present-day
+              Alberta. [1]
+ 1 Sep 1880 The United Kingdom ceded its Arctic Islands to Canada, and
+              they were made part of the North-West Territories. [1]
+       1881 Brandon, Manitoba, Canada founded. [1]
+ 1 Jul 1881 Manitoba's borders were expanded to a larger postage stamp
+              province taking land easterly from the District of Keewatin to
+              the western boundary of Ontario. Since the province's eastern
+              border was defined as the "western boundary of Ontario", the
+              exact definition of which was still unclear, Ontario disputed
+              a portion of the new region. [1]
+23 Dec 1881 Manitoba was expanded, gaining land from the District of Keewatin
+              and North-West Territories to the west, north, and east. Since
+              the province's new eastern border was defined as the "western
+              boundary of Ontario", the exact definition of which was still
+              unclear, Ontario disputed a portion of the new region. [1]
+       1882 Regina, Saskatchewan, Canada founded. [1]
+            Moose Jaw, Saskatchewan, Canada settled. [1]
+       1883 Saskatoon, Saskatchewan, Canada founded. [1]
+            Swift Current, Saskatchewan, Canada settled. [1]
+       1884 Calgary, Alberta, Canada founded; formerly known as Fort Calgary
+              (in 1875, Fort Brisebois was established, renamed Fort Calgary
+              in Jun 1876). [1]
+       1886 Nelson, British Columbia, Canada founded. [1]
+ 7 May 1886 The southwestern border of the District of Keewatin was adjusted
+              to conform to the boundaries of the new provisional districts of
+              the North-West Territories created in 1882, returning some land
+              to the North-West Territories. The provisional districts were
+              the District of Alberta, the District of Athabasca, District
+              of Assiniboia and the District of Saskatchewan, which all
+              remained administrative areas of the North-West Territories,
+              unlike the District of Keewatin. [1]
+ 6 Apr 1886 The City of Vancouver, Canada was incorporated. The population
+              of the city was about 1,000. [4]
+12 Aug 1889 The dispute between Manitoba and Ontario ended as Ontario's
+              borders were finalized in accordance with the Canada (Ontario
+              Boundary) Act, 1889, which extended the province west to the
+              Lake of the Woods and north to the Albany River. [1]
+       1890 Lethbridge, Alberta, Canada founded, formerly known as Fort
+              Whoop-Up. [1]
+       1892 Edmonton, Alberta, Canada founded, formerly known as Fort
+              Edmonton. [1]
+            Windsor, Ontario, Canada becomes a city. [1]
+            Estevan, Saskatchewan, Canada settled. [1]
+       1893 Kamloops, British Columbia, Canada founded. [1]
+       1894 Yorkton, Saskatchewan, Canada founded. [1]
+ 2 Oct 1895 Keewatin covered the portion of the North-West Territories north
+              of Manitoba on the mainland, and all islands within Hudson,
+              James, and Ungava Bays. The portion between the District of
+              Keewatin, Ontario, and Hudson Bay was not in a district, and was
+              assigned to the District of Keewatin by an Order of Council. Four
+              additional provisional districts of the North-West Territories
+              were formed, the District of Yukon, the District of Ungava,
+              the District of Mackenzie, and the District of Franklin. [1]
+       1896 Dawson City, Yukon, Canada founded, capital of the Yukon
+              Territory until 1952. [1]
+18 Dec 1897 Southampton Island, Coats Island, Akimiski Island, and other
+              islands were transferred from the North-West Territories to the
+              District of Keewatin, and the Boothia Peninsula and Melville
+              Peninsula were transferred from the District of Keewatin to
+              the North-West Territories. [1]
+13 Jun 1898 Yukon Territory was created from the District of Yukon in
+              the northwestern part of the North-West Territories, and the
+              Quebec Boundary Extension Act, 1898 expanded the borders of
+              Quebec north to the Eastmain River. [1]
+       1899 Estevan, Saskatchewan, Canada incorporated as a village. [1]
+ 8 Jul 1899 Treaty 8 is signed by the Cree, Beaver, Chipewyan First Nations
+              and the Canadian Crown, surrendering 840,000 square kilometres
+              (320,000 sq mi) of lands in present-day British Columbia,
+              Alberta and Saskatchewan. [1]
+23 May 1901 The eastern border of Yukon Territory was adjusted to the
+              eastern edge of the Peel River watershed, and also to include
+              some more islands. [1]
+       1903 Moose Jaw, Saskatchewan, Canada incorporated as a city. [1]
+21 Sep 1903 Swift Current, Saskatchewan, Canada became a village. [1]
+       1905 Cranbrook, British Columbia, Canada founded. [1]
+ 1 Sep 1905 The provinces of Alberta and Saskatchewan were created from
+              the North-West Territories. Saskatchewan's western border and
+              Alberta's eastern border run concurrent with the 4th meridian
+              or the 110 degrees W longitude. Saskatchewan's eastern border
+              is not a meridian, but instead follows a staircase-shaped
+              Dominion Land Survey range line. Alberta's southern and northern
+              borders are the same as Saskatchewan's: the southern border
+              is the Canada-United States border or the 49th parallel and
+              the northern border is the 60th parallel. Alberta's western
+              border runs along peaks of the Rocky Mountain ridge and then
+              extends north to the 60th parallel. The District of Keewatin
+              became an administrative unit of the Northwest Territories. [1]
+       1906 The North-West Territories were renamed the Northwest
+              Territories. [1]
+            Estevan, Saskatchewan, Canada became a town. [1]
+            North Battleford, Saskatchewan, Canada founded. [1]
+28 Aug 1906 Treaty 10 is signed between several First Nations, including
+              the Cree and Chipewyan, and the Crown, surrendering 220,000
+              square kilometres (85,000 sq mi) in northern Saskatchewan
+              and Alberta. Additional nations signed on later in 1906 and
+              1907. [1]
+15 Mar 1907 Swift Current, Saskatchewan, Canada became a town when the
+              population reached 550 people. [1]
+26 Sep 1907 The Dominion of Newfoundland was a British dominion from 1907
+              (before which the territory had the status of a British colony,
+              self-governing from 1855) to 1949. The Dominion of Newfoundland
+              was situated in northeastern North America along the Atlantic
+              coast and comprised the island of Newfoundland and Labrador on
+              the mainland. Newfoundland never became independent according to
+              the modern meaning of the word. The Statute of Westminster 1931
+              would have made Newfoundland much closer to being independent,
+              but not completely. However, the government of Newfoundland
+              did not ratify it, and furthermore, abolished itself in 1934
+              because of bankruptcy. [1]
+11 Apr 1908 A boundary treaty redefined the maritime border with the United
+              States. Among other changes, this "de-enclaved" Horseshoe
+              Reef in Lake Erie by making the water around it contiguous
+              with the water on the American side of the border. [1]
+       1911 The Pas, Manitoba, Canada founded, expanded from Fort
+              Paskoyac. [1]
+15 May 1912 Manitoba, Ontario, and Quebec were all expanded into their
+              present-day boundaries. The Northwest Territories is now only
+              situated north of the 60th parallel (except Hudson Bay and
+              James Bay islands) with three districts, Keewatin, Mackenzie
+              and Franklin. [1]
+       1915 Prince George, British Columbia, Canada founded, expanded from
+              Fort George. [1]
+ 1 Jun 1925 The maritime boundaries of the Northwest Territories were
+              extended to the North Pole. [1]
+11 Mar 1927 A decision of the Judicial Committee of the British Privy Council
+              of 1927 decided the issue of the border between the Dominion
+              of Newfoundland and Canada in favour of Newfoundland. The issue
+              had been the precise boundary between the Canadian province of
+              Quebec and Labrador, part of Newfoundland. The boundary ruling
+              clarified that a large area of the disputed land belonged
+              to Newfoundland, not to Canada. Maps prior to 1927 wildly
+              disagreed on the actual position of the border, instead of
+              agreeing upon marking the area as being disputed. Maps after
+              1927 tended to agree with the decision, but due to protests,
+              some mapmakers in Quebec still disagreed. In the 60's, logos
+              of the two biggest political parties of Quebec (PLQ & UN)
+              both included the shape of the province as including all of
+              Labrador. Disagreements persist even today (to a lesser extent),
+              as Quebec insists on including the rest of the gulf's basin
+              in its maps, separated with a dotted line saying 1927 border,
+              non-final. Newfoundland complains in 2014, even though older
+              electoral maps showed the same. [1]
+11 Nov 1930 Sverdrup Islands are ceded to Canada by Norway, in exchange for
+              British recognition of Norway's sovereignty over Jan Mayen. [1]
+ 7 Feb 1931 Statute of Westminster 1931 allows dominions to become
+              independent. Dominion of Canada decides to become almost
+              independent, whereas Newfoundland does not sign. [1]
+11 Dec 1931 By the Statute of Westminster 1931, Canada gains full control
+              over its foreign policy and thus independence from the United
+              Kingdom. Ottawa remains the capital. [1]
+       1934 The Dominion of Newfoundland, because of financial difficulties,
+              was obliged to give up its self-governing status and the
+              Commission of Government took its place. [1]
+       1934 Yellowknife, Northwest Territories, Canada founded. [1]
+       1942 Iqaluit, Nunavut, Canada founded. [1]
+       1948 Air Force Island, Prince Charles Island, and Foley Island are
+              discovered and added to Northwest Territories. [1]
+31 Mar 1949 The Dominion of Newfoundland and its dependency of Labrador
+              joined Canada as the tenth province, named Newfoundland as
+              proclaimed by the British North America Act 1949. St. John's
+              yields to Ottawa as the capital. [1]
+       1950 Alert, Nunavut, Canada founded, world's northernmost
+              permanently-inhabited place. [1]
+       1956 Corner Brook, Newfoundland and Labrador, Canada founded [1]
+       1973 Galt, Ontario, Canada, the towns of Preston and Hespeler,
+              the village of Blair and parts of Waterloo township merged
+              to form Cambridge. [1]
+13 Mar 1974 The maritime border with Denmark was defined, notably "skipping"
+              Hans Island which lies directly between Ellesmere Island and
+              Greenland, and which was technically on neither side of the
+              border. [1]
+17 Apr 1982 Canada becomes a fully sovereign, independent state from the
+              United Kingdom after the passing of the Canada Act. Ottawa
+              remains the capital. [1]
+ 1 Apr 1999 The Canadian territory of Nunavut was created from the
+              Northwest Territories. The provisional districts are no longer
+              administrative areas of the Northwest Territories. [1]
+       2001 Lachenaie, Quebec, Canada merged with Terrebonne. [1]
+            L'Acadie, Quebec, Canada merged with Saint-Jean-sur-Richelieu. [1]
+ 6 Dec 2001 The province of Newfoundland was renamed Newfoundland and
+              Labrador. [1]
+       2002 Charlesbourg, Quebec, Canada becomes a borough of Quebec City. [1]
+            Lachine, Quebec, Canada merged into Montreal. [1]
+            Gatineau, Quebec, Canada formed by merging five cities. [1]
+ 1 Apr 2003 Yukon Territory was renamed Yukon, though it remained a
+              territory. [1]
+27 Nov 2006 The House of Commons of Canada approves a motion introduced
+              by Prime Minister Stephen Harper recognizing the Quebecois
+              as a nation within Canada. [1]
+14 Jun 2022 An agreement to redefine the maritime border with Denmark was
+              announced, so that it passes through Hans Island rather than
+              skipping over it. [1]
+
+
+Citations -
+1.  wikipedia.org
+2.  gcal, various sources, www.gnu.org/software/gcal
+3.  HistoryOrb.com (renamed OnThisDay.com Jun 2016)
+4.  www.timelinesdb.com
+5.  archive.org
+6.  https://www.learner.org
+

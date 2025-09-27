@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>MEL Genealogy Key (MELGenKey)</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog>
+<span>It seems the server is not running.<br>Most functions will be disabled.<br> <br></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>MEL Genealogy Key (MELGenKey)</h1>
+<h4>v20250926</h4>
+<br>
+<h2>Main Menu</h2>
+<hr style="width:25%">
+
+<script>
+
+onload = function getData() {
+    /* non-SSE communications */
+    const ws = new WebSocket('ws://localhost:3000/');
+    var swnd = 0;
+
+    ws.onerror = function (evt) {
+        if (ws.readyState == 3) {
+            const dialog = document.querySelector("dialog");
+            dialog.showModal();
+            document.getElementById("dbcreate").disabled = true; 
+            document.getElementById("dbverify").disabled = true; 
+            document.getElementById("dbact").disabled = true; 
+            document.getElementById("dbdsp").disabled = true; 
+            document.getElementById("dbedit").disabled = true; 
+            document.getElementById("dbreports").disabled = true; 
+            document.getElementById("dbsearch").disabled = true; 
+            document.getElementById("DBName").innerHTML = '[none]';
+            swnd = 1;
+        }
+    }
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+
+    ws.onmessage = function(e) {
+        if (e.data !== '-1')
+            document.getElementById("DBName").innerHTML = e.data;
+        else {
+            /* no DB active */
+            document.getElementById("dbverify").disabled = true; 
+            document.getElementById("dbdsp").disabled = true; 
+            document.getElementById("dbedit").disabled = true; 
+            document.getElementById("DBName").innerHTML = '[none]';
+            swnd = 1;
+        }
+
+        if (!swnd) {
+            ws.send("ID");
+            ws.onmessage = function(e) {
+                if (e.data === '')
+                    document.getElementById("ID").innerHTML = "unspecified";
+                else
+                    document.getElementById("ID").innerHTML = e.data;
+
+                ws.send("DBStatus");
+                ws.onmessage = function(e) {
+                    switch(e.data) {
+                        case '0':
+                            document.getElementById("DBStatus").innerHTML = "unverified";
+                            break;
+                        case '1':
+                            document.getElementById("DBStatus").innerHTML = "verified";
+                            break;
+                        case '2':
+                            document.getElementById("DBStatus").innerHTML = "data modified, unverified";
+                            break;
+                        case '3':
+                            document.getElementById("DBStatus").innerHTML = "data modified, verified";
+                            break;
+                        case '4':
+                            document.getElementById("DBStatus").innerHTML = "data failed verification";
+                            break;
+                        default:
+                            document.getElementById("DBStatus").innerHTML = "unknown";
+                    }
+                }
+            }
+        }
+    }
+}
+
+</script>
+
+<iframe id="sse-frame" src="sse-handler.html" style="display:none;"></iframe>
+
+<h3> Active DataBase = <span id="DBName"></span>
+<br> <br>
+        Focus ID Within Active DB = <span id="ID"></span>
+<br> <br>
+        Active DB Status = <span id="DBStatus"></span> </h3>
+<hr style="width:25%">
+<br>
+<input type="button" id="dbcreate" onclick="location.href='Create.html'" value="Import, Create or Remove a Family DataBase"/>
+<br> <br>
+<input type="button" id="dbverify" onclick="window.open('Verify.html','_blank')" value="Verify Family Data"/>
+<br> <br>
+<input type="button" id="dbact" onclick="window.open('Activation.html','_blank')" value="Family DataBase Activation"/>
+<br> <br>
+<input type="button" id="dbdsp" onclick="location.href='Display.html'" value="Display Family Data"/>
+<br> <br>
+<input type="button" id="dbedit" onclick="window.open('EditData.html','_blank')" value="Edit Family Data"/>
+<br> <br>
+<input type="button" id="dbreports" onclick="location.href='Reports.html'" value="Reports"/>
+<br> <br>
+<input type="button" id="dbsearch" onclick="location.href='SIA.html'" value="Search/Inspect/Analyze Family Data"/>
+<br> <br>
+<input type="button" onclick="location.href='Misc.html'" value="Miscellaneous Functions"/>
+<br> <br>
+<input type="button" onclick="location.href='Help.html'" value="Help/Info/Docs"/>
+<br> <br>
+<hr style="width:50%">
+
+<script>
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+</body>
+</html>

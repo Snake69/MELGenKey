@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Family DataBase Activation</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>Family DataBase Activation</h1>
+<hr style="width:50%">
+
+<h4> Here the Family DataBase to be active may be selected. (Most functions are performed only on the active Family DataBase.) <br>
+     When this page is first displayed the Family DataBase which is currectly active (if there is one) will be "checked". <br>
+     Click on the associated checkbox (circle) for a Family DataBase to activate, then click the 'Save' button. The 'Save' button <br>
+     must be clicked for any changes to take effect. <br>
+<br> <br> </h4>
+
+Activation Indicator & DataBase Name <br>
+<div id="list_div"></div>
+
+<script type="text/javascript"> {
+    /* get activity status of all imported databases */
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("AllDBNameDBActive");
+
+        ws.onmessage = function(e) {
+            if (e.data == "") {
+                /* no DBs */
+                var span = document.getElementById("dial1span");
+                var msg = 'No DataBases are available.<br>Import a database by clicking "Import, Create or Remove a Family DataBase" ' +
+                          'in the top level menu.<br> <br>';
+                const dialog1 = document.querySelector("#dial1");
+                span.innerHTML = msg;
+                dialog1.showModal();
+            } else {
+                /* list all imported DBs & their status; allow user to change status */
+                var findings = e.data.split(","), origactive;
+                var label = document.createElement("label");
+                var description, asw = 0;
+                const br = document.createElement("br");
+                const p = document.createElement("p");
+                const hr = document.createElement("hr");
+
+                var ul = document.createElement('ul');
+                document.getElementById('list_div').innerHTML = '';
+                for (var i = 0; i < findings.length; i += 2) {
+                    var li = document.createElement('li');
+                    var radio = document.createElement("input");
+                    radio.type = "radio";
+                    radio.name = "rdo";
+                    radio.value = findings[i + 1];
+                    if (findings[i] == "yes") {
+                        radio.checked = true;
+                        asw = 1;
+                        origactive = findings[i + 1];
+                    }
+                    else
+                        radio.checked = false;
+                    li.appendChild(radio);
+                    var text = document.createTextNode(findings[i + 1]);
+                    li.appendChild(text);
+                    li.setAttribute('style', 'display: block;');    // remove the bullet
+                    ul.appendChild(li);
+                }
+                /* add an extra radio box to allow for no DBs to be active */
+                var li = document.createElement('li');
+                li.appendChild(br);
+                li.setAttribute('style', 'display: block;');    // remove the bullet
+                ul.appendChild(li);
+                li = document.createElement('li');
+                var radio = document.createElement("input");
+                radio.type = "radio";
+                radio.value = "999";
+                radio.name = "rdo";
+                if (!asw) {
+                    /* if no DBs active then turn this one on */
+                    radio.checked = true;
+                    origactive = '999';
+                }
+                li.appendChild(radio);
+                var text = document.createTextNode("No DataBase Active");
+                li.appendChild(text);
+                li.setAttribute('style', 'display: block;');    // remove the bullet
+                ul.appendChild(li);
+
+                list_div.appendChild(ul);
+
+                const button = document.createElement("button");
+                button.innerHTML = "Save";
+                button.onclick = function () { saveClicked(document.getElementsByName('rdo'), origactive) };
+                document.body.appendChild(br);
+                document.body.appendChild(button);
+                document.body.appendChild(p);
+                document.body.appendChild(hr);
+            }
+        }
+    }
+    ws.onerror = function () {
+        var span = document.getElementById("dial1span");
+        var msg = "It seems the node/server is not running.<br>Cannot perform function without the server running.<br> <br>";
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = msg;
+        dialog1.showModal();
+    }
+}
+
+function saveClicked(radio, orig) {
+    /* "Save" clicked; if any changes, save */
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    for (i = 0; i < radio.length; i++) {
+        if (radio[i].checked && radio[i].value != orig) {
+            var tosend = "ChangeActiveDB" + ',' + radio[i].value;  /* radio[i].value contains the DBName which will become active */
+            const ws = new WebSocket('ws://localhost:3000/');
+            ws.onopen = function() {
+                ws.send(tosend);
+
+                ws.onmessage = function(e) {
+                    var span = document.getElementById("dial1span");
+                    var msg = e.data;
+                    const dialog1 = document.querySelector("#dial1");
+                    span.innerHTML = msg;
+                    dialog1.showModal();
+                } 
+                window.location.reload();
+            }
+            break;
+            ws.onerror = function () {
+                var span = document.getElementById("dial1span");
+                var msg = "It seems the node/server is not running.<br>Cannot perform function without the server running.<br> <br>";
+                const dialog1 = document.querySelector("#dial1");
+                span.innerHTML = msg;
+                dialog1.showModal();
+            }
+        }
+        if (radio[i].checked && radio[i].value == orig) {
+            /* no change */
+            var span = document.getElementById("dial1span");
+            var msg = "Active DataBase not changed.<br> <br>";
+            const dialog1 = document.querySelector("#dial1");
+            span.innerHTML = msg;
+            dialog1.showModal();
+            break;
+        }
+    }
+}
+
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+</body>
+</html>

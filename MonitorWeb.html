@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Monitor Web Pages for Content Changes</title>
+
+<style type="text/css">
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .fieldset-auto-width {
+        display: inline-block;
+    }
+    .button-group > button {
+        margin-right: 12em;
+    }
+
+    .button-group > button:last-child {
+        margin-right: 0;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog class="dial" id="dial">
+<span class="dialspan" id="dialspan">Delete Web Address from list?<br> <br></span>
+<form method="dialog">
+<button class="OK">Yes</button>
+<button class="CANCEL">Cancel</button>
+</form>
+</dialog>
+
+<dialog class="dial2" id="dial2">
+<span class="dial2span" id="dial2span">Save Web Addresses?<br> <br></span>
+<form method="dialog">
+<button class="OK">Yes</button>
+<button class="CANCEL">Cancel</button>
+</form>
+</dialog>
+
+<dialog id="dial3">
+<span class="dial3span" id="dial3span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog class="dial4" id="dial4">
+<span class="dial4span" id="dial4span">Changes have been made and not saved. Do you really want to Cancel?<br> <br></span>
+<form method="dialog">
+<button class="OK">Yes, Continue With Cancel</button>
+<button class="CANCEL">Do NOT Cancel</button>
+</form>
+</dialog>
+
+<script>
+var MonURLs = [{}], MonURLsChg = [{}];
+onload = (event) => {
+    Object.keys(MonURLs).length = Object.keys(MonURLsChg).length = 0;
+    const ws = new WebSocket('ws://localhost:3000/');
+  
+    ws.onopen = function() {
+        /* get URLs & criteria */
+        ws.send("GetMonURLs");
+        ws.onmessage = function(e) {
+            MonURLs = JSON.parse(e.data);
+            MonURLsChg = JSON.parse(e.data);
+
+            fillSelect();
+        }
+    }
+}
+
+function fillSelect () {
+    var listbox = '';
+
+    listbox += '<option value="AddURL">Add Web Address</option>';
+    for (var i = 0; i < Object.keys(MonURLsChg).length; i++)
+        listbox += '<option value="' + MonURLsChg[i].URL + '">' + MonURLsChg[i].URL + '</option>';
+    document.getElementById('URL').innerHTML = listbox;
+    var z = document.getElementById("URL");
+    for (var j = 0; j < z.options.length; j++)
+        z.options[j].selected = 0;
+    document.getElementById("delBut").style.visibility = 'hidden';
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<h1>Monitor Web Pages for Content Changes</h1>
+<br>
+This function monitors the page/file which is pointed to by the supplied Web Address. It does not traverse through pages/files/links<br>
+which might be called by the page/file to which the address points. If it is desired to, for example, monitor multiple files or pages<br>
+then add multiple Web Addresses, each one pointing to a different file or page to monitor for changes.<br>
+<br>
+<hr style="width:50%">
+
+<form id="MonURLs" method="GET">
+<input type="hidden" name="ORIGIN" value="MonURLs">
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Web Pages/Addresses being Monitored</legend>
+<br>Click a Web address to bring up it's parameters for editing.<br>Or click "Add Web Address" to add a new address.<br> <br>
+<select id="URL" name="URL" size='3' onchange="URLChange()">
+</select>
+</fieldset>
+
+<br> <br> <br>
+
+</form>
+
+<div class="button-group">
+<button type="button" onclick="Cancel()">Cancel</button>
+<button type="button" id="delBut" onclick="delEntry()">Delete Entry</button>
+<button type="button" onclick="Save()">Save</button>
+</div>
+
+<br> <br>
+
+<div hidden id="divURL">
+<p>Note - The full Web Address must be entered including the protocol (http or https).<br>
+e.g., www.google.com will fail and https://www.google.com will work.<br>
+Additionally, using http for a https Web Site may fail depending upon how the site is configured.<br><br>
+<label>Web Page/Address: </label> <input type="text" id="urlR"></label>
+<br> <br>
+<label>Check Interval: </label>
+<select id="intervalR" name="intervalR" size='1'">
+  <option value="daily">daily</option>
+  <option value="weekly">weekly</option>
+  <option value="monthly">monthly</option>
+</select>
+<br> <br>
+<label>Active: </label>
+<select id="activeR"">
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+</select>
+<br> <br>
+<button type="button" id="divURLbut" onclick="Complete()">Click to Complete the Add/Edit</button>
+</div>
+
+<script>
+
+function Save() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var errormsgs = '';
+    var dial2 = document.getElementById('dial2');
+    var okButton = dial2.querySelector('button.OK');
+    dial2.showModal();
+
+    dial2.addEventListener('click', async function handleButtonClicks(e) {
+        if (e.target.tagName !== 'BUTTON')
+            return;
+        dial2.removeEventListener('click', handleButtonClicks);
+        if (e.target === okButton) {
+            var span = document.getElementById("dial3span");
+            const dialog3 = document.querySelector("#dial3");
+            var tosend = "WriteMonURLs " + JSON.stringify(MonURLsChg);
+            ws.send(tosend);
+            ws.onmessage = function(e) {
+                var dial3span = document.getElementById("dial3span");
+                if (e.data == "failed")
+                    var msg = 'Could not save Web Addresses!<br>Any changes made to Web Addresses to Monitor will not take effect.<br> <br>';
+                else {
+                    MonURLs = structuredClone(MonURLsChg);
+                    var msg = 'Web Addresses saved and monitoring initiated.<br> <br>';
+                }
+                dial3span.innerHTML = msg;
+                const dialog = document.querySelector("#dial3");
+                dialog.showModal();
+            }
+        }
+    })
+}
+
+var addOrEdit, whichURL;
+function URLChange() {
+    var URL = null, x;
+    var z = document.getElementById("URL");
+    for (var j = 0; j < z.options.length; j++)
+        if (z.options[j].selected == 1) {
+            URL = z.options[j].value
+            break;
+        }
+
+    if (URL != "AddURL") {
+        document.getElementById('urlR').value = URL;
+        addOrEdit = 1;   // existing URL being edited
+        for (x = 0; x < Object.keys(MonURLsChg).length; x++)
+            if (URL == MonURLsChg[x].URL) {
+                whichURL = x;
+                document.getElementById("intervalR").options[MonURLsChg[x].Interval].selected = 1;
+                document.getElementById("activeR").options[MonURLsChg[x].Active].selected = 1;
+                break;
+            }
+    } else {
+        addOrEdit = 2;   // URL being added
+        document.getElementById('urlR').value = "";
+    }
+
+    document.getElementById("divURL").style.display = 'block';
+    if (addOrEdit == 1)
+        document.getElementById("delBut").style.visibility = 'visible';
+    else
+        document.getElementById("delBut").style.visibility = 'hidden';
+}
+
+/* user is adding or editing a Web address & parameters; validate */
+var hash;
+async function Complete () {
+    var errormsgs = '';
+    var URL = document.getElementById('urlR').value;
+
+    if (document.getElementById('urlR').value == "")
+        errormsgs += "'Web Page/Address' is a required entry.<br><br>";
+    else
+        if (addOrEdit == 2)
+            for (var x = 0; x < Object.keys(MonURLsChg).length; x++)
+                if (URL == MonURLsChg[x].URL)
+                    errormsgs += "The 'Web Page/Address' trying to be added is already in the list. " +
+                                 "A specific 'Web Page/Address' can appear only once.<br><br>";
+    if (errormsgs == "") {
+        const message = await checkURL(URL);
+        errormsgs += message;
+    }
+
+    var span = document.getElementById("dial3span"), intT, actT;
+    const dialog3 = document.querySelector("#dial3");
+    if (errormsgs != "")
+        span.innerHTML = errormsgs;
+    else {
+        for (intT = 0; intT < 3; intT++)
+            if (document.getElementById("intervalR").options[intT].selected == 1)
+                break;
+        for (actT = 0; actT < 2; actT++)
+            if (document.getElementById("activeR").options[actT].selected == 1)
+                break;
+        if (addOrEdit == 2) {
+            MonURLsChg[Object.keys(MonURLsChg).length] = { URL: document.getElementById('urlR').value, Interval: intT, hash: hash, Active: actT };
+            span.innerHTML = "Web Address added. Current content recorded.<br><br>";
+            document.getElementById("urlR").value = "";
+            document.getElementById("divURL").style.display = 'none';
+        } else {
+            MonURLsChg[whichURL].URL = document.getElementById('urlR').value;
+            MonURLsChg[whichURL].Interval = intT;
+            MonURLsChg[whichURL].hash = hash;
+            MonURLsChg[whichURL].Active = actT;
+            span.innerHTML = "Web Address edited. Current content recorded.<br><br>";
+        }
+        fillSelect();
+    }
+    dialog3.showModal();
+}
+
+async function checkURL(URL) {
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    ws.onopen = function() {
+        ws.send("ValidateURL" + URL);
+    }
+
+    try {
+        const message = await waitForMessage(ws);
+        if (message == "failed")
+            return ("Cannot find " + URL + "<br><br>");
+        else {
+            hash = message;
+            return "";
+        }
+    } catch (error) {
+        console.error("MonitorWeb.html: Error receiving message:", error);
+    }
+}
+
+async function waitForMessage(ws) {
+    const promise = new Promise((resolve) => {
+        ws.onmessage = (event) => {
+            resolve(event.data);
+        }
+    })
+    const result = await promise;
+    return result;
+}
+
+/* delete a Web address entry from the list */
+function delEntry () {
+    var dial = document.getElementById('dial');
+    var okButton = dial.querySelector('button.OK');
+    dial.showModal();
+
+    dial.addEventListener('click', async function handleButtonClicks(e) {
+        if (e.target.tagName !== 'BUTTON')
+            return;
+        dial.removeEventListener('click', handleButtonClicks);
+        if (e.target === okButton) {
+            MonURLsChg.splice(whichURL, 1);
+            document.getElementById("divURL").style.display = 'none';
+            fillSelect();
+        }
+    })
+}
+
+/* user clicked Cancel */
+function Cancel () {
+    if (JSON.stringify(MonURLsChg) !== JSON.stringify(MonURLs)) {
+        var dial4 = document.getElementById('dial4');
+        var canButton = dial4.querySelector('button.CANCEL');
+        dial4.showModal();
+
+        dial4.addEventListener('click', async function handleButtonClicks(e) {
+            if (e.target.tagName !== 'BUTTON')
+                return;
+            dial4.removeEventListener('click', handleButtonClicks);
+            if (e.target == canButton)
+                return;
+            else
+                window.close();
+        })
+    } else
+        window.close();
+}
+
+</script>
+
+<br>
+<hr style="width:50%">
+
+</body>
+</html>

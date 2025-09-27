@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+
+<style>
+    #header {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+<title>MELGenKey Readme</title>
+
+</head>
+<body>
+<h1 id="header">MELGenKey Readme</h1>
+<hr style="width:50%">
+<br>
+<h2>Project Title</h2>
+<br>
+MEL Genealogy Key (or MELGenKey)<br>
+v20250926<br>
+An aid for genealogists. A "full stack" application written in JavaScript, HTML and CSS.<br>
+<br>
+<br>
+<br>
+<h2>Project Description</h2>
+<br>
+MELGenKey is a menu-based application offering many functions useful to a genealogist including database management, creation of HTML
+versions of a DataBase & Web sites, search aid (records and data), verify/inspect/analyze data, reports, auto-updating of
+MELGenKey Family DataBases and various on-line DataBases/Trees, and many other functions.<br>
+<br>
+MELGenKey should run on Microsoft Windows, MacOS and/or Linux as is.<br>
+<br>
+<br>
+<br>
+<h2>Technologies Used</h2>
+<br>
+MELGenKey is written in vanilla JavaScript. No frameworks have been used. External libraries have been used only when necessary.<br>
+<br>
+<br>
+<br>
+<h2>Requirements</h2>
+<br>
+browser (tested with Firefox, Chromium, Brave, Opera, Vivaldi)<br>
+  Note - using Brave, if node/server not recognized or not connected, in Brave go to Settings -> Shields and disable "Trackers & ads blocking"<br>
+platform (developed on Linux, tested on Linux & Windows)<br>
+node.js (using v20.11.1 during development)<br>
+external libraries: fs-extra (v10.0.1), websocket (v1.0.34), node-schedule (v2.1.1), nodemailer (v6.9.15) and fuse (v6.6.2)<br>
+<br>
+<br>
+<br>
+<h2>Project Objectives</h2>
+<br>
+1.  Run as is on Linux, Apple or Windows.<br>
+2.  Provide all functions useful to genealogists in one place.<br>
+3.  Ability to sync trees on host machine, any other host machines running MELGenSys and utilizing the same tree, and any public tree sites (e.g., WikiTree.com, Ancestry.com, FamilySearch.org, etc).<br>
+4.  Simple to use for everyone, including computer-challenged users.<br>
+5.  Always Open Source.<br>
+<br>
+<br>
+<br>
+<h2>Installation Instructions</h2>
+<br>
+Install nodejs on your computer if not already installed. Download the MELGenKey zip file. Create an empty directory/folder, likely in your home
+directory. Place the MELGenKey zip file in this newly created directory/folder. Navigate into this newly created directory/folder. Extract the
+MELGenKey zip file. After the extract finishes, remove the MELGenKey zip file if you like. While in the MELGenKey root directory/folder, type
+"npm install" (without the quotes) and press RETURN. At this point everything should be installed.<br>
+<br>
+To run, while still in the MELGenKey root directory/folder, type "node MELGenKeySS.js" (without the quotes) and press RETURN. This starts the
+server portion of MELGenKey. To start the client, double-click on the icon labeled "MELGenKey.html". Or, in the address line of your browser
+of choice enter the proper address to access "MELGenKey.html".<br>
+<br>
+For perhaps a more complete MELGenKey installation guide, see the file "Overview.html" in the "Docs" directory/folder.<br>
+<br>
+A test DataBase is included with the project. Create an empty directory/folder, likely in your home directory. Navigate into the Notes
+directory/folder located in the MELGenKey root directory (where MELGenKey is installed). Copy the file "TestDB-26Sep2025.zip" into the empty
+directory/folder just created. Navigate into this directory/folder. Unzip "TestDB-26Sep2025.zip". Delete "TestDB-26Sep2025.zip". Execute the
+MELGenKey server. Execute the MELGenKey client. In the main menu of the client, click "Import, Create or Remove a Family DataBase". In the next
+menu, click "Import a Family DataBase from User Created Files". On the ensuing form, enter the location of the files to import. This would be
+the name of the directory/folder which houses the files unzipped from "TestDB-26Sep2025.zip". (Note - If the directory/folder was created in
+your home directory, just entering the name of the directory/folder is enough. If the directory/folder was created someplace else, then
+enter the full path to the directory/folder. In the form, enter a name to assign to the Family DataBase ... maybe "TestDB". After completing
+the form, click "Import DB". The DataBase should import successfully with no fatal errors. There may be some "Attention" messages, but you
+don't need to worry about these regarding this Test DataBase.<br>
+<br>
+<br>
+<br>
+<h2>Usage Instructions</h2>
+<br>
+Usage instructions are fairly self-explanatory after loading the application. Each function is described in full in the menu function
+"Help/Info/Docs -> Using MELGenKey" (click the button labeled "Help/Info/Docs" in the main menu, then click the button labeled
+"Using MELGenKey" in the menu which follows). For some basic "getting started" instructions see
+"Help/Info/Docs -> MELGenKey Frequently Asked Questions".<br>
+<br>
+<br>
+<br>
+<h2>Documentation</h2>
+<br>
+In the application, click the button labeled "Help/Info/Docs" on the main menu.<br>
+<br>
+<br>
+<br>
+<h2>Support Information</h2>
+<br>
+If you have questions or need additional help, send an email to <a href="mailto:marshallelake@gmail.com"> MarshallELake @ gmail dot com</a> or
+<a href="mailto:genealogy@mlake.net"> Marshall Lake @ mlake dot net</a>.<br>
+<br>
+You may also click the button labeled "Help/Info/Docs" on the main menu, then click the button labeled
+"Contact Developer of MELGenKey via email".<br>
+<br>
+<br>
+<br>
+<h2>Project Roadmap</h2>
+<br>
+MELGenKey is a work-in-progress and not all menu functions are available with the current version (v20250926). As new functions become available
+and/or improvements are made to the application new versions of MELGenKey will become available.<br>
+<br>
+Also, see "Help/Info/Docs -> MELGenKey Development History".<br>
+<br>
+<br>
+<br>
+<h2>Project Status</h2>
+<br>
+Active/In development.<br>
+<br>
+<br>
+<br>
+<h2>Contribution Guidelines</h2>
+<br>
+If you would like to help/contribute with development, <a href="../Notes/Notes2PossibleContributors.html">see this file</a> for some info. After reading this file,
+if you would like to help, drop me a note at <a href="mailto:marshallelake@gmail.com"> MarshallELake @ gmail dot com</a>.
+<br>
+<br>
+Future: Third party add-ons or extensions may be developed to be included in MELGenKey. See
+"Miscellaneous Functions -> Import Add-on for MELGenKey" and "Help/Info/Docs -> MELGenKey Add-ons".<br>
+<br>
+To report a bug, send an email to <a href="mailto:marshallelake@gmail.com"> MarshallELake @ gmail dot com</a> or 
+<a href="mailto:genealogy@mlake.net"> Marshall Lake @ mlake dot net</a>.<br>
+<br>
+In the application, you may also use "Help/Info/Docs -> Contact Developer of MELGenKey via email" or
+"Miscellaneous Functions -> Send Suggestions/Ideas to Developer of MELGenKey".<br>
+<br>
+<br>
+<br>
+<h2>Acknowledgments</h2>
+<br>
+Even though I've been the only developer on this project (so far), I consider it very much a community project. I've received inspiration
+from many that will go unnamed, all the people that I have exchanged info with over the years, all the people I've read from and listened
+to over the years, all the genealogy-related groups I've been involved in over the years - I've gotten ideas and inspiration from all of
+them. They are all a part of this project.<br>
+<br>
+Shout out to stackoverflow.com as an aid in learning JavaScript and for helping solve problems along the way.<br>
+<br>
+ChatGPT and Gemini have also provided assistance.<br>
+<br>
+<br>
+<h2>License Information</h2>
+<br>
+GNU GPLv3<br>
+<br> <br>
+<hr style="width:50%">
+
+</body>
+</html>

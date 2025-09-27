@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Display Family Data</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>Display Family Data</h1>
+<span id="TitleDBName"></span>
+<hr style="width:50%">
+
+<h4> Here the active Family DataBase may be displayed. Click 'HTML Family Data' to show the HTML version of the data. <br>
+     Click 'Plain Text Family Data' to show the plain text version of the data. The HTML version is better for viewing <br>
+     on a computer. The plain text version may be better for printing and sharing. <br>
+<br> <br> </h4>
+
+<script>
+function doesDataExist(which) {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var tob, pt;
+
+    ws.onopen = function() {
+        ws.send("DBLocation");
+        ws.onmessage = function(e) {
+            if (which == "HTML") {
+                tob = './' + e.data + '/HTML/tableofcontents.html';
+                pt = './' + e.data + '/HTML';
+            } else {
+                tob = './' + e.data + '/PlainText/tableofcontents';
+                pt = './' + e.data + '/PlainText';
+            }
+
+            ws.send("FEXIST" + tob);
+            ws.onmessage = function(e) {
+                if (e.data == "-1") {
+                    if (which == "HTML") {
+                        var span = document.getElementById("dial1span");
+                        var msg = "The HTML version of this DataBase does not seem to exist.<br>Use " +
+                                  "'Import, Create or Remove a Family DataBase -> Create HTML Version of Family DataBase'<br>" +
+                                  "to create a HTML version of this data.<br> <br>";
+                        const dialog1 = document.querySelector("#dial1");
+                        span.innerHTML = msg;
+                        dialog1.showModal();
+                    } else {
+                        var span = document.getElementById("dial1span");
+                        var msg = "The file tableofcontents (a required file) does not exist; assuming Plain Text<br>version does not exist. " +
+                                  "Use<br>'Import, Create or Remove a Family DataBase -> Import a Family DataBase from a GEDCOM'<br>and/or<br>" +
+                                  "'Import, Create or Remove a Family DataBase -> Import a Family DataBase from User Created Files'<br>to " +
+                                  "create and import a Plain Text version of the Family DataBase.<br> <br>";
+                        const dialog1 = document.querySelector("#dial1");
+                        span.innerHTML = msg;
+                        dialog1.showModal();
+                    }
+                } else {
+                    // open in a new tab
+                    if (which == "HTML")
+                        window.open(e.data, '_blank');
+                    else
+                        window.open(e.data.substring(0, e.data.indexOf("tableofcontents") - 1), '_blank');
+                }
+            }
+        }
+    }
+    ws.onerror = function () {
+        var span = document.getElementById("dial1span");
+        var msg = "It seems the node/server is not running.<br>Cannot perform function without the server running.<br> <br>";
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = msg;
+        dialog1.showModal();
+    }
+}
+
+onload = function init() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1)
+            document.getElementById("TitleDBName").innerHTML = '(' + e.data + ')'; 
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<button type="button" onclick='doesDataExist("HTML")'>HTML Family Data</button>
+<br> <br>
+<button type="button" onclick='doesDataExist("PT")'>Plain Text Family Data</button>
+<br> <br>
+<hr style="width:50%">
+
+</body>
+</html>

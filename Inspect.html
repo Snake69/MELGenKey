@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>  
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Inspect Active DataBase</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .fieldset-auto-width {
+         display: inline-block;
+         width: 75%;
+    }
+</style>
+
+</head>  
+
+<body>  
+
+<dialog id="dial1">
+<span>It seems the node/server is not running.<br>Cannot perform function without the server running.<br> <br></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial2">
+<span id="dial2span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>Inspect Active DataBase</h1>
+<span id="TitleDBName"></span>
+<br>
+<hr style="width:50%">
+
+<form id="Inspect" method="POST">
+<input type="hidden" name="ORIGIN" value="Inspect">
+
+<h4> This function will inspect the active Family DataBase for errors (and possible errors) <br>
+     concerning the data. It is similar to Verify in that both Inspect and Verify look for errors <br>
+     with the data. The difference is that Verify looks for data errors which will cause other functions in <br>
+     MELGenKey to perform incorrectly; Inspect looks for deeper errors with the data. For example, Verify <br>
+     will pick up on a Head of Family which does not have an associated ID. Inspect will pick up on <br>
+     a person marrying before they were born. <br> <br>
+     The active Family DataBase must pass Verification before it can be Inspected. <br> <br>
+     Click to view the inspection checks which are performed -> <input type="button" 
+     onclick="window.open('Docs/InspectionChecks.html','_blank')" value="inspection steps performed"/><br><br>
+     Click the 'Continue' button to perform the inspection. <br>
+<br> <br> </h4>
+
+<button type="button" id="button" onclick="Continue(); document.body.style.cursor = 'wait'; this.disabled = true;"> Continue </button>
+
+<h4> Inspection may take some time depending upon the size of the DataBase. <br> </h4>
+
+</form>
+
+<script>
+
+function Continue() {
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    ws.onopen = function() {
+        ws.send("DBStatus");
+        ws.onmessage = function(e) {
+            if (e.data != 1 && e.data != 3) {
+                const dialog2 = document.querySelector("#dial2");
+                var span = document.getElementById("dial2span");
+                span.innerHTML = "The active Family DataBase is not verified.<br>The Family DataBase must successfully " +
+                                 "pass verification before it can be inspected.<br> <br>";
+                dialog2.showModal();
+                document.body.style.cursor = 'default';
+                document.getElementById("button").disabled = false;  // re-enable button
+            } else {
+                ws.send("INSPECT");
+                ws.onmessage = function(e) {
+                    var w = window.open('about:blank');
+                    w.document.open();
+                    w.document.write(e.data);
+                    w.document.close();
+                    if (Notifications == 1) {
+                        var audio = new Audio('Include/Sounds/AirplaneDing.wav');
+                        audio.play();
+                    }
+                    document.body.style.cursor = 'default';
+                    document.getElementById("button").disabled = false;  // re-enable button
+                }
+            }
+        }
+    }
+    ws.onerror = function () {
+        const dialog = document.querySelector("#dial1");
+        dialog.showModal();
+        document.body.style.cursor = 'default';
+        document.getElementById("button").disabled = false;  // re-enable button
+    }
+}
+
+var Notifications;
+
+onload = function init() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var UserPrefs = {};
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1)
+            document.getElementById("TitleDBName").innerHTML = '(' + e.data + ')'; 
+    }
+
+    UserPrefs.length = 0;
+    ws.onopen = function() {
+        ws.send("GetUserPrefs");
+    }
+    ws.onmessage = function(e) {
+        try {
+            UserPrefs = JSON.parse(e.data);
+            if (UserPrefs.length === 0)
+                Notifications = 1;    // default is notifications on
+            else
+                Notifications = UserPrefs.Not;
+        } catch (error) {
+            reject(error);
+        }
+    }
+    ws.onerror = function(error) {
+        reject(error);
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<hr style="width:50%">
+
+</body>
+</html>

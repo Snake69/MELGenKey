@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Search</title>
+
+<style type="text/css">
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .fieldset-auto-width {
+         display: inline-block;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog id="dial2">
+<span id="dial2span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial3">
+<span>"Individual Web Sites" checked but no individual sites selected.</span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>Search</h1>
+<hr style="width:50%">
+
+<h4> Here a search will be performed based upon the information entered in the form below. A search may be performed<br>
+     on the active Family DataBase and/or the entire Web, or specific Web sites.<br>
+     Fill in any information below, then click the 'Search' button.<br>
+<br> <br> </h4>
+
+<h2>Fill in any information.<br>
+The more information, the more specific the matches.</h2>
+When searching the Active DataBase, the only searching criteria used are "Search for a Person Named" and exact year.
+<br> <br> <br>
+
+<form id="Search" method="POST">
+<input type="hidden" name="ORIGIN" value="Search">
+
+<br>
+<fieldset class="fieldset-auto-width">
+<legend>Search:</legend>
+<label> <input type="checkbox" id="ActiveDB" name="ActiveDB" onclick='toggleSCit()'> Active DataBase </label>
+<br> <br>
+<label> <input type="checkbox" id="Web" name="Web"> Entire Web </label>
+<br> <br>
+<label> <input type="checkbox" id="IndSites" name="IndSites" onclick='toggleIndSites()'> Individual Web Sites </label>
+</fieldset>
+<br> <br>
+
+<div id="divSC">
+<label> <input type="checkbox" name="SCit"> Do Not Search Source/Citation Sections in DataBase(s) </label>
+</div>
+<br> <br>
+
+<div id="divInd">
+Select multiple sites by holding down the CTRL (Windows, Linux) or COMMAND (Mac) key<br>
+<select id="IndSitesLB" name="IndSitesLB" size='5' multiple="multiple">
+</select>
+</div>
+<br> <br>
+
+<br>
+<fieldset class="fieldset-auto-width">
+<legend>Search for a Person Named:</legend>
+<label> First <input type="text" name="firstname"> </label>
+<label> Middle <input type="text" name="middlename"> </label>
+<label> Last <input type="text" name="lastname"> </label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Alternate Last Name:</legend>
+<input type="text" name="altlastname">
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>A Second Person (spouse, parent, child, sibling, associate):</legend>
+<label> First <input type="text" name="firstname2"> </label>
+<label> Middle <input type="text" name="middlename2"> </label>
+<label> Last <input type="text" name="lastname2"> </label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Alternate Second Person Last Name:</legend>
+<input type="text" name="altlastname2">
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Place:</legend>
+<input type="text" name="place">
+</fieldset>
+<fieldset class="fieldset-auto-width">
+<legend>Year:</legend>
+<input style='width:7em' min="1" max="99999" type="number" name="year">
+</fieldset>
+<fieldset class="fieldset-auto-width">
+<legend id="yrleeway">Year +/-</legend>
+<select id="Dir1">
+  <option value="exact">exact</option>
+  <option value="yr1">+/- 1</option>
+  <option value="yr2">+/- 2</option>
+  <option value="yr3">+/- 3</option>
+  <option value="yr4">+/- 4</option>
+  <option value="yr5">+/- 5</option>
+</select>
+</fieldset>
+
+<br> <br> <br>
+<button type="button" onclick='sendFormData2Node()'> Search </button>
+
+<h4>The search results for the Active Family DataBase, all imported Family DataBases, the Web, and each<br>
+of the individual sites will be output to separate tabs. <br> </h4>
+
+</form>
+
+<script>
+
+function sendFormData2Node() {
+    var formData = new FormData(document.getElementById("Search"));
+    let formDataJSON = {};
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    for (const [key, value] of formData.entries())
+        formDataJSON[key] = value;
+
+    ws.onopen = function() {
+        ws.send("SEARCH" + JSON.stringify(formDataJSON));
+        ws.onmessage = function(e) {
+            if (e.data.search("Search Results") == -1) {
+                var span = document.getElementById("dial2span");
+                span.innerHTML = e.data;
+                const dialog = document.querySelector("#dial2");
+                dialog.showModal();
+            } else {
+                if (document.getElementById('ActiveDB').checked == true) {
+                    /* open in a new tab */
+                    var w = window.open('about:blank');
+                    w.document.open();
+                    w.document.write(e.data);
+                    w.document.close();
+                }
+                let base = "https://google.com/search?q=";
+                var WebWindow, term;
+                term = '"' + formDataJSON.firstname + ' ' + formDataJSON.middlename + ' ' + formDataJSON.lastname + '"|"' +
+                       formDataJSON.lastname + ', ' + formDataJSON.firstname + ' ' + formDataJSON.middlename + '" ';
+                if (formDataJSON.altlastname != '')
+                    term += '|"' + formDataJSON.firstname + ' ' + formDataJSON.middlename + ' ' +
+                            formDataJSON.altlastname + '"|"' + formDataJSON.altlastname + ', ' + formDataJSON.firstname +
+                            ' ' + formDataJSON.middlename + '" ';
+                if (formDataJSON.firstname2 != '' || formDataJSON.middlename2 != '' || formDataJSON.lastname2 != '')
+                    term += '"' + formDataJSON.firstname2 + ' ' + formDataJSON.middlename2 + ' ' + formDataJSON.lastname2 +
+                            '"|"' + formDataJSON.lastname2 + ', ' + formDataJSON.firstname2 + ' ' +
+                            formDataJSON.middlename2 + '" ';
+                if (formDataJSON.altlastname2 != '')
+                    term += '|"' + formDataJSON.firstname2 + ' ' + formDataJSON.middlename2 + ' ' +
+                            formDataJSON.altlastname2 + '"|"' + formDataJSON.altlastname2 + ', ' + formDataJSON.firstname2 +
+                            ' ' + formDataJSON.middlename2 + '" ';
+                if (formDataJSON.place != '')
+                    term += '"' + formDataJSON.place + '" ';
+                if (formDataJSON.year != '') {
+                    if (document.getElementById('Dir1').value == 'exact')
+                        term += '"' + formDataJSON.year + '"';
+                    if (document.getElementById('Dir1').value == 'yr1')
+                        term += (Number(formDataJSON.year) - 1) + "|" + formDataJSON.year + "|" +
+                                (Number(formDataJSON.year) + 1);
+                    if (document.getElementById('Dir1').value == 'yr2')
+                        term += (Number(formDataJSON.year) - 2) + "|" + (Number(formDataJSON.year) - 1) + "|" +
+                                formDataJSON.year + "|" + (Number(formDataJSON.year) + 1) + "|" +
+                                (Number(formDataJSON.year) + 2);
+                    if (document.getElementById('Dir1').value == 'yr3')
+                        term += (Number(formDataJSON.year) - 3) + "|" + (Number(formDataJSON.year) - 2) + "|" +
+                                (Number(formDataJSON.year) - 1) + "|" + formDataJSON.year + "|" +
+                                (Number(formDataJSON.year) + 1) + "|" + (Number(formDataJSON.year) + 2) + "|" +
+                                (Number(formDataJSON.year) + 3);
+                    if (document.getElementById('Dir1').value == 'yr4')
+                        term += (Number(formDataJSON.year) - 4) + "|" + (Number(formDataJSON.year) - 3) + "|" +
+                                (Number(formDataJSON.year) - 2) + "|" + (Number(formDataJSON.year) - 1) + "|" +
+                                formDataJSON.year + "|" + (Number(formDataJSON.year) + 1) + "|" +
+                                (Number(formDataJSON.year) + 2) + "|" + (Number(formDataJSON.year) + 3) + "|" +
+                                (Number(formDataJSON.year) + 4);
+                    if (document.getElementById('Dir1').value == 'yr5')
+                        term += (Number(formDataJSON.year) - 5) + "|" + (Number(formDataJSON.year) - 4) + "|" +
+                                (Number(formDataJSON.year) - 3) + "|" + (Number(formDataJSON.year) - 2) + "|" +
+                                (Number(formDataJSON.year) - 1) + "|" + formDataJSON.year + "|" +
+                                (Number(formDataJSON.year) + 1) + "|" + (Number(formDataJSON.year) + 2) + "|" +
+                                (Number(formDataJSON.year) + 3) + "|" + (Number(formDataJSON.year) + 4) + "|" +
+                                (Number(formDataJSON.year) + 5);
+                }
+
+                if (document.getElementById('Web').checked == true)
+                    // do entire Web
+                    WebWindow = window.open(base + term, "_blank");
+                if (document.getElementById('IndSites').checked == true) {
+                    // do individual sites
+                    var x = document.getElementById("IndSitesLB"), didone = 0;
+                    for (var i = 0; i < x.options.length; i++)
+                        if (x.options[i].selected) {
+                            didone = 1;
+                            WebWindow = window.open(base + "site:" + x.options[i].value + ' ' + term, "_blank");
+                        }
+                    if (!didone) {
+                        const dialog = document.querySelector("#dial3");
+                        dialog.showModal();
+                    }
+                }
+            }
+        }
+    }
+}
+
+function toggleSCit () {
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data === '-1') {
+            /* no DB active */
+            document.getElementById("ActiveDB").disabled = true; 
+            return false;
+        }
+    }
+
+    if (document.getElementById('ActiveDB').checked == true) 
+        document.getElementById("divSC").style.display = 'block';
+    else
+        document.getElementById("divSC").style.display = 'none';
+}
+
+function toggleIndSites () {
+    if (document.getElementById('IndSites').checked == true) 
+        document.getElementById("divInd").style.display = 'block';
+    else
+        document.getElementById("divInd").style.display = 'none';
+}
+
+onload = function init() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var sites = [], sites2 = [], listbox;
+
+    /* populate the individual sites list */
+    sites.length = sites2.length = 0;
+    ws.onopen = function() {
+        ws.send("INDSITES");
+        ws.onmessage = function(e) {
+            sites = e.data.split(',');
+            for (i = 0; i < sites.length; i++)
+                sites2.push(sites[i].split('\t'));
+            for (i = 0; i < sites2.length; i++)
+                listbox += '<option value="' + sites2[i][0] + '">' + sites2[i][1] + '</option>';
+            document.getElementById('IndSitesLB').innerHTML = listbox;
+        }
+    }
+    toggleSCit();
+    toggleIndSites();
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<br> <br>
+<hr style="width:50%">
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+
+    <title>General Notes</title>
+
+<style type="text/css">
+    * {
+        text-align: center;
+    }
+    textarea {
+        text-align: left;
+    }
+    .dialogc {
+        width: 50%;
+    }
+    .dialspan {
+        display: inline-block;
+        width: 50%;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+<script>
+    /* to prevent Firefox FOUC, this must be here */
+    let FF_FOUC_FIX;
+</script>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span>There are currently no General Notes.<br> <br></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial2">
+<span>Could not save the General Notes!<br> <br></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial3">
+<span>Saved General Notes.<br> <br></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog class="dialogc" id="dialogc">
+<span class="dialcspan" id="dialogcspan"></span>
+<form method="dialog">
+<button class="OK">OK</button>
+<button class="CANCEL">Cancel</button>
+</form>
+</dialog>
+
+    <h1>General Notes</h1>
+    <textarea autofocus id="journal-entry" rows="40" cols="80"></textarea>
+    <br> <br>
+    <button onclick="saveEntry()">Save Notes</button>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <button onclick="Print()">Print General Notes</button>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <button onclick="cancel()">Cancel</button>
+    <div id="entries"></div>
+
+<script>
+
+function saveEntry() {
+    const entryText = document.getElementById("journal-entry");
+    if (entryText) {
+        const ws = new WebSocket('ws://localhost:3000/');
+
+        ws.onopen = function() {
+            ws.send("PutGenNotes " + entryText.value);
+            ws.onmessage = function(e) {
+                if (e.data == 'failed') {
+                    const dialog = document.querySelector("#dial2");
+                    dialog.showModal();
+                } else {
+                    notesBegin = entryText.value;
+                    const dialog = document.querySelector("#dial3");
+                    dialog.showModal();
+                }
+            }
+        }
+    }
+}
+
+/* user wants to Print textarea; reformat area to print depending upon user-selected max line length */
+function Print () {
+    var indent = 2, ctext, bpos, lpos, spacepos, ll, x, newlinesw;
+    var body = document.getElementById("journal-entry").value;
+
+    ll = prompt('Enter the maximum character line length for printing:', '75');
+    if (!ll)
+        /* user canceled */
+        return;
+    if (ll < 40) {
+        ctext = "The value " + ll + " is unacceptably low. Try again.";
+        alert(ctext);
+        return;
+    } else
+        if (ll < 50 || ll > 120) {
+            ctext = "The value " + ll + " is outside the normal range. Click OK to confirm the value, or click Cancel.";
+            if (confirm(ctext) != true)
+                return;
+        }
+
+    /* reformat based upon user-selected line length (ll) */
+    for (newlinesw = lpos = bpos = 0; bpos < body.length; bpos++) {
+        if (body[bpos] == '\n') {
+            lpos = 0
+            continue;
+        }
+        if (lpos >= ll) {
+            for (x = bpos; lpos != 0; lpos--, x--)
+                if (body[x] == ' ') {
+                    spacepos = x;
+                    break;
+                }
+            if (!lpos) {
+                newlinesw = 1;
+                spacepos = bpos;
+            }
+
+            body = body.substring(0, spacepos) + "\n" + body.substring(spacepos + 1 - newlinesw);
+            bpos = spacepos + newlinesw;
+            newlinesw = lpos = 0;
+            continue;
+        }
+        lpos++;
+    }
+
+    var winContents1 = '<!doctype html> <html lang="en"><head> <meta charset="utf-8"/> <link rel="shortcut icon" ' +
+                       'href="Include/favicon.ico"> <title> General Notes </title>' + '</head> <body id="Body"> ' +
+                       "<style type='text/css'> @media print { @page { margin-left: 0.5in; margin-right: 0.5in; " +
+                       "margin-top: 0; margin-bottom: 0; } #printPB { display: none; } } </style> <pre>\n";
+    var winContents2 = "\n</pre> <button id='printPB' onclick='window.print()'>Print</button> </body> </html>";
+
+    var w = window.open('about:blank');
+    w.document.open();
+    w.document.write(winContents1 + body + winContents2);
+    w.document.close();
+}
+
+var notesBegin;
+
+function cancel () {
+    const entryText = document.getElementById("journal-entry");
+
+    if (entryText.value != notesBegin) {
+        var dialogc = document.getElementById('dialogc');
+        var okButton = dialogc.querySelector('button.OK');
+        var cancelButton = dialogc.querySelector('button.CANCEL');
+        var dialogcspan = document.getElementById("dialogcspan");
+        dialogcspan.innerHTML = "Changes have been made to the General Notes. If you Cancel you will lose those changes. " +
+                                "Click OK to continue canceling. Click Cancel to cancel the cancel. :) <br> <br>";
+        dialogc.showModal();
+
+        dialogc.addEventListener('click', function handleButtonClicks(e) {
+            if (e.target.tagName !== 'BUTTON')
+                return;
+            dialogc.removeEventListener('click', handleButtonClicks);
+            if (e.target === cancelButton)
+                return false;
+            else
+                window.close();
+        })
+    } else
+        window.close();
+}
+
+// Load General Notes on page load
+onload = function() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    const entryText = document.getElementById("journal-entry");
+
+    ws.onopen = function() {
+        ws.send("GetGenNotes");
+        ws.onmessage = function(e) {
+            if (e.data == '') {
+                notesBegin = '';
+                const dialog = document.querySelector("#dial1");
+                dialog.showModal();
+            } else
+                notesBegin = entryText.value = e.data;
+        }
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+</body>
+</html>

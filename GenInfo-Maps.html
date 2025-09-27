@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>General Genealogy-Related Aids - Maps</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+<script>
+
+function doesDataFileExist(fname) {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var pnt = "./Include/" + fname;
+
+    ws.onopen = function() {
+        ws.send("FEXIST" + pnt);
+        ws.onmessage = function(e) {
+            if (e.data == "-1") {
+                var span = document.getElementById("dial1span");
+                var msg = "The file " + fname + " does not exist. Why not? Use<br>" +
+                          "'Help/Info -> Contact Developer of MELGenKey via email' for help.<br> <br>";
+                const dialog1 = document.querySelector("#dial1");
+                span.innerHTML = msg;
+                dialog1.showModal();
+            } else {
+                /* open in a new tab */
+                let a=document.createElement('a');
+                a.target='_blank';
+                a.rel='noopener noreferrer';
+                a.href=e.data;
+                a.click();
+            }
+        }
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>General Genealogy-Related Aids - Maps</h1>
+<hr style="width:50%">
+
+<br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/1607-1776.jpg")'>Colony of Virginia (1607-1776)</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/Connecticut/ConnecticutColony.png")'>Connecticut Colony (1636-1776)</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/NewNetherland-1649.jpg")'>USA - New Netherland (1649)</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/c1650.jpg")'>USA - c1650</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/1663-1776.jpg")'>USA - 1663-1776</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/c1750.jpg")'>USA - c1750</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/1754.jpg")'>USA - 1754</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/FrenchAndIndianWar.png")'>French & Indian War</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/NY-NJ-PA-Quebec1775.jpg")'>USA - NY, NJ, PA, Quebec (1775)</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/1775.gif")'>USA - 1775</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/Colony13.jpg")'>USA - The 13 Colonies</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/1782-1802.png")'>USA - 1782-1802</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/RatesOfTravel1800.jpg")'>USA - Travel Time (1800)</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/1803.jpg")'>USA - 1803</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/NE-1812.png")'>War of 1812 (north)</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/1834.jpg")'>USA - 1834</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/1856.jpg")'>USA - 1856</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/1863.png")'>USA - 1863</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/Expansion.png")'>USA Expansion</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/RREast.jpg")'>USA Railroads (1827-1850, east)</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/RRWest.jpg")'>USA Railroads (1827-1850, west)</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/IndianTerritory/index.html")'>USA - Indian Territory</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/NewYork/index.html")'>USA - New York</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/NewJersey/index.html")'>USA - New Jersey</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/USA/Pennsylvania/index.html")'>USA - Pennsylvania</button>
+<br> <br>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/Europe/1815.jpg")'>Europe - 1815</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/Europe/1820.gif")'>Europe - 1820</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/Europe/Migration-5thCentury.png")'>Europe - 5th Century Migration</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/Europe/Germany/1803.jpg")'>Germany - 1803</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/Europe/Germany/1871.jpg")'>Germany - 1871</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/Europe/Germany/1871-1918.jpg")'>Germany - 1871-1918</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/Europe/Germany/Germany.jpg")'>Germany</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/Europe/Germany/KgrWuerttemberg.png")'>Wuerttemberg</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/Europe/Ireland/Medieval.jpg")'>Ireland - medieval</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/Europe/Ireland/Counties.jpg")'>Ireland Counties</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/Europe/Ireland/Dioceses.jpg")'>Ireland Dioceses</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Maps/Europe/Ireland/ProbateDistricts.jpg")'>Ireland Probate Districts</button>
+<br> <br>
+
+<hr style="width:50%">
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>General Genealogy-Related Aids - Miscellaneous</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+<script>
+
+function doesDataFileExist(fname) {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var pnt = "./Include/" + fname;
+
+    ws.onopen = function() {
+        ws.send("FEXIST" + pnt);
+        ws.onmessage = function(e) {
+            if (e.data == "-1") {
+                var span = document.getElementById("dial1span");
+                var msg = "The file " + fname + " does not exist. Why not? Use<br>" +
+                          "'Help/Info -> Contact Developer of MELGenKey via email' for help.<br> <br>";
+                const dialog1 = document.querySelector("#dial1");
+                span.innerHTML = msg;
+                dialog1.showModal();
+            } else {
+                /* open in a new tab */
+                let a=document.createElement('a');
+                a.target='_blank';
+                a.rel='noopener noreferrer';
+                a.href=e.data;
+                a.click();
+            }
+        }
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>General Genealogy-Related Aids - Miscellaneous</h1>
+<hr style="width:50%">
+
+<br>
+<button type="button" onclick='doesDataFileExist("Misc/1902.txt")'>1902</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/USAPopulation-1776.txt")'>USA Population - 1776</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Aging.txt")'>Aging</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/AmericanRevolutionaryWar.txt")'>American Revolutionary War</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Calendars.txt")'>Calendars</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/CauseOfDeath.txt")'>Causes of Death</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Diseases.txt")'>Diseases</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Epidemics.txt")'>Epidemics</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Wars.txt")'>Wars</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/GeoInfo.txt")'>Geographical Information</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/NamingPatterns.txt")'>Naming Patterns</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/DutchNames.txt")'>Dutch Names</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Nicknames.txt")'>Nicknames</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Johannes.txt")'>The Name 'Johannes'</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/SurnameEvolution.jpg")'>Surname Evolution</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Occupations.txt")'>Occupations</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/comic.jpg")'>Comic 1</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/comic2.jpg")'>Comic 2</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/comic3.jpg")'>Comic 3</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Quakers.txt")'>Quakers</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/CommonAncestor.txt")'>Common Ancestor</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/RelationshipChart1.jpg")'>Relationship Chart 1</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/RelationshipChart2.jpg")'>Relationship Chart 2</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/SignersOfDeclarationOfIndependence.txt")'>Signers of the Declaration of Independence</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/LegalAge.txt")'>Legal Age</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Glossary.txt")'>Genealogical Glossary</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/USProbateTerms.txt")'>US Probate Terms</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/OldDeedTerms.pdf")'>Old Deed Terms</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/DeedMeasurements.jpg")'>Deed Measurements</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/NJ-Deeds.txt")'>New Jersey Deeds</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/NJProprietors.txt")'>New Jersey Proprietors</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/NJ-Churches.txt")'>New Jersey Churches</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/NJ-NativeAmericanConveyances.pdf")'>New Jersey Native American Conveyances</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/SourceDesignations.txt")'>Source Designations</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Sources.jpg")'>A Word About Sources</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/EmigrationFromGermany.txt")'>Emigration from Germany</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Mayflower.txt")'>The Mayflower</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Money.html")'>Money</button>
+<br> <br>
+<button type="button" onclick='doesDataFileExist("Misc/Origins")'>Origins</button>
+<br> <br>
+<hr style="width:50%">
+
+</body>
+</html>

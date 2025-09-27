@@ -1,0 +1,806 @@
+# War of 1812 Events
+# v20250618
+# any line with the # character in column 1 is considered a comment line
+# comment lines are not included in MELGenKey Reports
+ 1 Feb 1793 France declares war on Great Britain. [1]
+20 Aug 1794 General Anthony Wayne defeats a Native American confederation
+              at the Battle of Fallen Timbers, paving the way for the
+              settlement of present-day Ohio. [1]
+18 May 1803 War resumed between the United Kingdom of Great Britain and
+              Ireland and the First French Empire. [3]
+30 Apr 1804 The Louisiana Purchase is finalized, adding more than 800,000
+              square miles to the western frontier of the United States. [1]
+ 3 Nov 1804 Quashquame's treaty with William Henry Harrison causes many
+              Sauk to ally with British. [3]
+ 4 Dec 1804 Napoleon is crowned Emperor of France following a coup d'etat. [1]
+22 May 1805 Essex Decision. [3]
+21 Oct 1805 Battle of Trafalgar. [3]
+18 Apr 1806 Non-Importation Act passed. [1] [3]
+21 Nov 1806 Napoleon issues the Berlin Decrees. [1] [3]
+31 Dec 1806 Monroe-Pinkney Treaty. [3]
+22 Jun 1807 HMS Leopard fires on the USS Chesapeake. [1]
+11 Nov 1807 Orders in Council. [3]
+17 Dec 1807 Milan Decree. [3]
+22 Dec 1807 Embargo Act. [3]
+11 Nov 1807 Great Britain passes the 1807 Orders in Council, restricting
+              international trade with France. [1]
+22 Dec 1807 Embargo Act Passed. [1]
+ 1 Mar 1809 Non-Intercourse Act. [3]
+ 4 Mar 1809 James Madison is sworn in [1] [3] as the 4th President of the
+              United States. [1]
+17 Apr 1809 Bayonne Decree. [3]
+19 Apr 1809 Erskine Agreement. [3]
+30 Sep 1809 Treaty of Fort Wayne. [3]
+23 Mar 1810 Rambouillet Decree. [3]
+ 1 May 1810 Macon's Bill No. 2. [3]
+ 5 Aug 1810 Cadore letter. [3]
+ 2 Feb 1811 Trade with the United Kingdom closed. [3]
+10 Mar 1811 Henry letters. [3]
+16 May 1811 The American frigate USS President fires on the British sloop
+              HMS Little Belt. [1]
+ 9 Oct 1811 Major General Isaac Brock is appointed Administrator of Upper
+              Canada. [1]
+ 4 Nov 1811 12th United States Congress convenes. [3]
+11 Nov 1811 Battle of Tippecanoe. [1]
+       1812 The War of 1812 begins with a poorly-coordinated three-pronged
+              U.S. invasion of Canada by badly trained and poorly led American
+              forces, which fails on all three fronts. The U.S. enjoys
+              more success on the high seas, where its warships win a
+              series of single-ship duels with the Royal Navy, and American
+              privateers enjoy an early and rich harvest of unsuspecting
+              British merchant ships. [2]
+            The War of 1812 is one of the forgotten wars of the United
+              States. The war lasted for over two years, and while it ended
+              much like it started - in stalemate - it was in fact a war
+              that once and for all confirmed American Independence. The
+              offensive actions of the United States failed in every attempt
+              to capture Canada. On the other hand, the British army was
+              successfully stopped when it attempted to capture Baltimore and
+              New Orleans. There were a number of American naval victories in
+              which American vessels proved themselves superior to similarly
+              sized British vessels. These victories coming after victories
+              in the Quasi War (an even more forgotten war) launched American
+              naval tradition. [4]
+14 Mar 1812 Congress authorizes war bonds to finance War of 1812. [5]
+ 4 Apr 1812 United States President James Madison enacts a ninety-day
+              embargo on trade with the United Kingdom. [3]
+11 May 1812 Prime Minister Spencer Perceval assassinated. [3]
+ 1 Jun 1812 President James Madison's war message. [3]
+            U.S. President James Madison asks the Congress to declare war
+              on the United Kingdom. [3]
+ 8 Jun 1812 Robert Banks Jenkinson, 2nd Earl of Liverpool becomes Prime
+              Minister of United Kingdom. [3]
+16 Jun 1812 Lord Castlereagh announces to Parliament Repeal of Orders in
+              Council. [3]
+18 Jun 1812 America declared war on Great Britain, [1] [3] [6] [12]
+              and is signed by President James Madison. [3] War of 1812
+              begins. [3] [6] [12] New Jersey's role in the conflict was
+              largely relegated to militia duty in coastal defense, although
+              several New Jerseyans of note, including Zebulon Pike, William
+              Bainbridge and James Lawrence, served in the army and navy, and
+              a regular army regiment, the Fifteenth United States Infantry,
+              was raised in the state. [6] The War of 1812 ends (in 1815)
+              in a draw, except that Native Americans lose power. [3]
+23 Jun 1812 War of 1812: Great Britain revokes the restrictions on American
+              commerce, thus eliminating one of the chief reasons for going
+              to war. [3]
+22 Jun 1812 A mob in Baltimore destroys the printing offices of an anti-war
+              newspaper. [1]
+23 Jun 1812 Finalized Repeal of Orders in Council. [3]
+            U.S. Navy clashes with HMS Belvidera: An American squadron
+              headed by USS President engages the British frigate Belvidera,
+              which escapes to take word of the outbreak of war to Halifax,
+              Canada. [2]
+29 Jun 1812 Schooners Sophia and Island Packet taken by the British in the
+              St. Lawrence River. [3]
+ 1 Jul 1812 United States doubles customs duties. [3]
+12 Jul 1812 General William Hull invades Upper Canada [1] [3] at Sandwich
+              [3] from Detroit. [1]
+15 Jul 1812 British squadron captures USS Nautilus: Four days after sailing
+              from New York, the brig Nautilus, commanded by Lieutenant
+              William Crane, encounters a British squadron consisting of
+              the frigates Shannon, Guerriere, Belvidera, and Aeolus,
+              and the ship of the line Africa. After a spirited chase,
+              the British force Nautilus to surrender. [2]
+16 Jul 1812 Battle of River Canard. [3]
+17 Jul 1812 British capture Fort Mackinac: [1] [2] [3] In the northwest, news
+              of war reaches the British before the Americans. In response,
+              50 British regulars, 180 local fur traders, 280 Ottawas and
+              Ojibwes under John Askin, Jr. of the Indian Department for
+              British North America, and 115 Menominees, Ochethi Šakowiŋs,
+              and Ho-Chunks under fur trader Robert Dickson, land on Mackinac
+              Island in Michigan Territory and train their cannon on the fort
+              from the heights above. Surprised, outnumbered, and fearing
+              attack by members of the indigenous nations if they resist,
+              the Americans surrender without firing a shot. 57 Americans
+              captured. Loss of the fort emboldens many indigenous people
+              to join the British in the war. [2]
+19 Jul 1812 Attack at Sackets Harbor, New York. [3]
+   Aug 1812 British and American negotiators met at Ghent, Belgium to
+              negotiate a settlement in the War of 1812. They reached an
+              agreement that restored all territory as it had been before
+              the war - without resolving the territorial issues. [4]
+ 5 Aug 1812 Skirmish near Brownstown, Michigan. [1] [3]
+ 8 Aug 1812 British General Isaac Brock embarks at Port Dover for the relief
+              of Amherstburg. [3]
+            Battle of Maguaga. [3]
+15 Aug 1812 British forces bombard Detroit. [1]
+            Fort Dearborn massacre. [3]
+16 Aug 1812 British capture Detroit: [1] [2] [3] The surrender of Fort
+              Detroit is the first major U.S. defeat of the War of 1812. 7
+              Americans killed, 1,593 Americans captured. After initially
+              invading Canada, U.S. forces under Brigadier General William
+              Hull withdraw to Michigan Territory and take refuge in Fort
+              Detroit. British General Isaac Brock brilliantly uses his force
+              of regulars and militia, as well as warriors from the Wyandot,
+              Ottawa, Potawatomi, Ojibwe, Shawnee, Ho-Chunk, Sauk, Menominee,
+              and Grand River Iroquois nations led by Chief Tecumseh, to
+              persuade General Hull to surrender, warning of an attack by
+              militant members of the indigenous nations if he refuses. Many
+              U.S. soldiers under Hull are angry at the surrender. The
+              defeat ends U.S. invasion plans in the Old Northwest for the
+              remainder of the year and undermines American morale. [2]
+19 Aug 1812 USS Constitution defeats HMS Guerriere: [1] [2] [3] [7]
+              After narrowly escaping from a British squadron in a heroic
+              multi-day chase off the Atlantic Coast in July, the U.S. frigate
+              Constitution defeats the British frigate Guerriere. British
+              killed 15, wounded 63, missing 24. Americans killed 7, wounded
+              7. Because British cannon balls appear to bounce off the
+              American ship's sides, [2] Constitution earns the nickname
+              "Old Ironsides." [2] [3] [7] With four successful cruises,
+              Constitution becomes the most famous U.S. ship of the War
+              of 1812 and is still maintained as a commissioned U.S. Navy
+              vessel today. [2]
+            The Great Louisiana hurricane struck New Orleans, damaging both
+              the U.S. and the British fleet. [3]
+ 3 Sep 1812 Massacre at Pigeon Roost. [3]
+ 4 Sep 1812 The Siege of Fort Harrison begins when the fort is set on
+              fire. [3]
+ 5 Sep 1812 The Siege of Fort Wayne begins when Chief Winamac's forces
+              attack two soldiers returning from the fort's outhouses. [3]
+            First siege of Fort Madison begins. [3]
+12 Sep 1812 U.S. General William Henry Harrison reinforces Fort Wayne. [3]
+14 Sep 1812 British Major A. C. Muir's expedition at Fort Wayne. [3]
+15 Sep 1812 A second supply train sent to relieve Fort Harrison
+              is ambushed in the Attack at the Narrows. [3]
+21 Sep 1812 Raid on Gananoque. [3]
+ 7 Oct 1812 U.S. General James Winchester's army arrives near Fort
+              Defiance. [3]
+ 9 Oct 1812 In a naval engagement on Lake Erie, U.S. Navy Lieutenant Jesse
+              Elliott captures the brigs, Caledonia and Detroit. [3]
+13 Oct 1812 British victory at Queenston Heights: [1] [2] In the Battle
+              at Queenston Heights, [2] [3] the United States suffers its
+              second major defeat of the war. To secure a foothold in Canada
+              before the onset of winter, U.S. forces cross the Niagara River
+              and seize Queenston Heights. Although initially successful,
+              reinforcements are not forthcoming because American militiamen
+              refuse to cross the Canadian border. The British, under Major
+              General Isaac Brock, and their Grand River Iroquois allies
+              under Captain John Norton, assault the Heights and defeat and
+              capture the bulk of the American invasion force. Although
+              victorious, [2] General Brock is killed. [2] [8] British
+              killed 21, wounded 85, captured 17. Americans killed 100,
+              wounded 170, captured 958. [2]
+18 Oct 1812 Capture of HMS Frolic. [3]
+            HMS Poictiers captures USS Wasp. [3]
+25 Oct 1812 USS United States [2] [3] [6] commanded by Stephen Decatur, [3]
+              [5] captures HMS Macedonian: [2] [3] [5] Cruising between the
+              Azores and Cape Verde Islands, the U.S. frigate United States
+              defeats the British frigate Macedonian. British killed 36,
+              wounded 68. Americans killed 5, wounded 7. In a battle lasting
+              about two hours, American gunnery severely damages Macedonian's
+              rigging and hull, and the British ship surrenders. The Americans
+              sail Macedonian home as a prize of war, and the British ship
+              is incorporated into the U.S. Navy as a high-profile trophy
+              ship that publicizes the U.S. victory against the "Mistress
+              of the Seas." [2]
+   Nov 1812 British blockade South Carolina and Georgia. [3]
+ 5 Nov 1812 James Madison reelected. [3]
+ 9 Nov 1812 Escape of HMS Royal George. [3]
+19 Nov 1812 Commodore Isaac Chauncey attacks Kingston Harbour. [3]
+22 Nov 1812 Spur's Defeat. [3]
+23 Nov 1812 Americans retreat from Eastern Canada. [3]
+27 Nov 1812 Americans attack Fort Erie redoubts. [3]
+28 Nov 1812 Skirmish at Frenchman Creek. [3]
+ 3 Dec 1812 William Eustis resigns as Secretary of War. [3]
+ 3 Dec 1812 James Monroe serves as Secretary of War. [3]
+17 Dec 1812 U.S. forces attack a Lenape village in the Battle of the
+              Mississinewa. [3]
+26 Dec 1812 Great Britain blockades Chesapeake Bay and Delaware Bay. [3]
+28 Dec 1812 William Henry Harrison formally resigns as Governor of Indiana
+              Territory and takes the rank of Brigadier General. [1]
+29 Dec 1812 USS Constitution defeats HMS Java: [1] [2] After returning
+              to Boston in September, Constitution sails for the South
+              Atlantic. On December 29, off the coast of Brazil, Constitution
+              defeats the British frigate Java. After a fierce battle lasting
+              almost three hours, the British surrender. British killed
+              22-60, wounded 101. Americans killed 9, wounded 26. Java
+              suffers heavy damage, forcing the Americans to set it on
+              fire and sink it after the battle. The three U.S. frigate
+              victories in 1812 eventually induce the Royal Navy to change
+              its tactics. In 1813, the Royal Navy orders its frigates not
+              to engage American frigates alone. [2]
+            Paul Hamilton resigns as Secretary of the Navy. [3]
+       1813 More battles are fought than any other year of the War of
+              1812. The Americans secure the Old Northwest, but the British
+              prevail elsewhere. American losses in men, money, and equipment
+              are steep. Although no one realizes it at the time, 1813 is
+              the high water mark of American attempts to conquer Canada. [2]
+            Tensions between the National Creek Muscogees (who favor
+              assimilation into American society) and the "Red Sticks"
+              faction (who advocate retaining traditional ways) erupts in
+              a civil war. American troops and militias become involved in
+              the conflict. [2]
+ 9 Jan 1813 Great Britain declares war on the United States. [1]
+12 Jan 1813 William Jones serves as Secretary of the Navy. [3]
+13 Jan 1813 John Armstrong replaces William Eustis as Secretary of War. [1]
+18 Jan 1813 -22 Jan 1813, Americans are defeated at Frenchtown: After
+              defeating a small enemy force at Frenchtown on the River
+              Raisin in Michigan Territory on January 18, U.S. forces
+              are overwhelmed by an army of British soldiers and warriors
+              from indigenous nations four days later. British killed 24,
+              wounded 158. Americans killed 975, wounded 27, captured
+              648. The following day, indigenous warriors kill somewhere
+              between 30 and 100 wounded and abandoned American prisoners
+              in an apparent retaliation for actions committed by the
+              Americans. "Remember the Raisin!" becomes a popular rallying
+              cry for American settlers in the West. [2]
+22 Jan 1813 Battle of Frenchtown. [3]
+23 Jan 1813 River Raisin massacre. [3]
+ 4 Feb 1813 British mount first of many raids in the Chesapeake Bay. [2]
+ 5 Feb 1813 John Armstrong serves as Secretary of War. [3]
+ 7 Feb 1813 Raid on Elizabethtown. [3]
+16 Feb 1813 104th Regiment of Foot (New Brunswick Fencibles) commences
+              march from Fredericton to Upper Canada. [3]
+22 Feb 1813 Battle of Ogdensburg. [1] [3]
+24 Feb 1813 USS Hornet defeats HMS Peacock: While cruising off the coast
+              of South America, the U.S. sloop of war Hornet encounters the
+              British brig sloop Peacock off the mouth of the Demerara River
+              off the coast of Guyana. During the short battle, American
+              gunnery shatters the British ship. As the American victors
+              transfer the British prisoners to Hornet, Peacock suddenly
+              sinks. Nine British and three American sailors drown as a
+              result. British killed 14, wounded 33.  Americans killed 4,
+              wounded 4. [2]
+   Mar 1813 USS Essex rounds Cape Horn, preys on British whaling ships. [3]
+ 3 Mar 1813 Admiral George Cockburn's squadron arrives in Lynnhaven Bay. [3]
+ 4 Mar 1813 James Madison inaugurated for the second term as President. [1]
+19 Mar 1813 Sir James Lucas Yeo appointed Commander-in-chief of the Lake Squadrons. [3]
+27 Mar 1813 Oliver Hazard Perry takes command of the flotilla at Lake
+              Erie. [1]
+30 Mar 1813 British blockade from Long Island to Mississippi. [3]
+   Apr 1813 Commerce raids begin in Chesapeake Bay. [3]
+ 6 Apr 1813 Lewes, Delaware bombarded by British. [3]
+13 Apr 1813 Capture of Mobile, Alabama. [3]
+15 Apr 1813 Americans occupy West Florida. [3]
+27 Apr 1813 Attack on York [modern day Toronto]; General Zebulon Pike is
+              killed. [1] [9] York, the capital of Upper Canada, is captured
+              [2] [3] [9] and the public buildings are burned. [2]
+29 Apr 1813 Raid on Frenchtown, Maryland by a British flotilla under the
+              command of Admiral George Cockburn. [1]
+ 1 May 1813 American forces evacuate York. [1]
+            -9 May 1913, Americans defend Fort Meigs against a siege by
+              British soldiers and warriors from indigenous nations. [2]
+ 3 May 1813 Royal Marines land and burn Havre de Grace, Maryland. [1]
+ 5 May 1813 Sir James Lucas Yeo arrives at Quebec. [3]
+26 May 1813 British blockade middle states and southern states. [3]
+27 May 1813 Engagement at Fort George. [1] Americans capture Fort George. [2]
+              [3] [6]
+            British abandon Fort Erie. [3]
+            Colonel John Harvey retreats to Burlington Heights. [3]
+29 May 1813 Battle at Sackets Harbor. [1] Americans defend Sackets Harbor
+              against a British assault [2] led by Sir George Prevost and
+              Sir James Lucas Yeo. [3]
+ 1 Jun 1813 HMS Shannon captures USS Chesapeake: [1] [2] [3] As the War
+              of 1812 continues, British sea power makes itself felt. The
+              Royal Navy blockades many U.S. ports. The frigate Chesapeake
+              sails from Boston Harbor on June 1, 1813, to engage HMS
+              Shannon. Captain James Lawrence of Chesapeake receives a
+              mortal wound early in the battle. Carried below, he issues
+              his last order: "Tell the men to fire faster and don't give up
+              the ship!" [2] Lawrence died days later. [1] British Marines
+              and sailors board the vessel and bloody hand-to-hand combat
+              ensues. After 15 minutes, Chesapeake surrenders. British killed
+              23, wounded 56.  Americans killed 48, wounded 99. "Don't
+              give up the ship!" becomes a powerful rallying cry for the
+              U.S. Navy that persists even today. [2]
+ 3 Jun 1813 Capture of U.S. sloops Growler and Eagle near Ile aux Noix. [3]
+ 6 Jun 1813 Battle of Stoney Creek: [1] [2] [3] British defeat the Americans
+              on the Niagara front in Upper Canada. [2] [3] The British
+              force numbered 700 under John Vincent, the American force
+              was twice its size under William Winder and John Chandler. [3]
+ 8 Jun 1813 Skirmish at Forty Mile Creek. [3]
+ 9 Jun 1813 Americans abandon Fort Erie. [3]
+13 Jun 1813 British vessels repulsed at Burlington, Vermont. [3]
+19 Jun 1813 Commodore Barclay's squadron appears off of Cleveland, Ohio. [3]
+20 Jun 1813 USS Constellation attempts capture of blockading vessels off
+              Hampton, Virginia. [3]
+22 Jun 1813 Battle of Craney Island. [1] [3]
+22 Jun 1813 After learning of American plans for a surprise attack on Beaver
+              Dams in Ontario, Laura Secord sets out on a 30 kilometer journey
+              on foot to warn Lieutenant James FitzGibbon [3] which results
+              in a British surprise victory at the Battle of Beaver Dams. [5]
+24 Jun 1813 Battle of Beaver Dams: [1] [2] [3] Planned as a surprise attack
+              on a small British force harassing Fort George, the Battle of
+              Beaver Dams results in a serious defeat for the U.S. forces
+              in the Niagara campaign of 1813. The American plan is foiled
+              by Canadian resident Laura Secord, who makes a heroic 20-mile
+              trek through the wilderness at night to warn the British. During
+              the afternoon of June 24, a large force of Grand River Iroquois
+              ambush the Americans in the forest. Lieutenant Colonel Charles
+              Boerstler surrenders the entire American force to the British
+              after his troops run low on ammunition. British killed 15,
+              wounded 25. Americans killed 50, wounded 525. Months later,
+              U.S. forces evacuate Fort George and withdraw to New York. [2]
+25 Jun 1813 Burning of Hampton, Virginia. [1]
+ 5 Jul 1813 Three weeks of British raids on Fort Schlosser, Black Rock and
+              Plattsburgh, New York commence. [3]
+ 8 Jul 1813 Final siege of Fort Madison begins, fort defeated sometime in
+              September. [3]
+            Action at Butler's Farm. [3]
+26 Jul 1813 General Henry Procter quits the siege of Fort Meigs. [3]
+27 Jul 1813 Battle of Burnt Corn: [2] [3] In present-day Alabama, U.S. forces
+              attack "Red Stick" warriors carrying supplies furnished by
+              the governor of Spanish-controlled Florida. This marks the
+              beginning of America's Creek War. [2]
+            Privateer Teazer (ship) blown up in Mahone Bay, Nova Scotia. [3]
+31 Jul 1813 Raid on Plattsburg. [3]
+            Second occupation of York. [3]
+ 2 Aug 1813 Defense of Fort Stephenson: Americans defeat British General
+              Henry Proctor's attempt to storm the post in Ohio. [2] [3]
+ 4 Aug 1813 Commodore Oliver Hazard Perry sails fleet into Lake Erie. [3]
+ 5 Aug 1813 Dominica vs. Decatur. [3]
+ 7 Aug 1813 U.S. schooners Hamilton and Scourge flounder on Lake Ontario. [3]
+10 Aug 1813 Battle of St. Michaels. [1]
+            Naval engagement ships Julia and Pert captured. [3]
+12 Aug 1813 Capture of USS Argus. [3]
+17 Aug 1813 "Andruss' detachment," composed of militia companies from
+              Hunterdon, Middlesex, Sussex, Monmouth and Essex Counties
+              (NJ), left the New Jersey militia base at Paulus Hook en route
+              to garrison Fort Richmond on Staten Island. The militiamen
+              remained on duty there through 25 Sep. The New Jersey militia
+              spent the War of 1812 as garrison troops for various coastal
+              defense positions. [6]
+30 Aug 1813 In retaliation for the U.S. attack at Burnt Corn, Muscogee
+              "Red Sticks" assault Fort Mims in present-day Alabama,
+              overwhelming the garrison after several hours of bitter
+              fighting. Resistance is desperate, as women and boys take
+              the place of fallen defenders. Few escape the fort. Native
+              Americans killed 100, wounded 200-300.  Americans killed
+              250-275. The assault convinces the U.S. to launch a major
+              campaign to crush militant Muscogees. [2]
+ 7 Sep 1813 The United States gets its nickname, Uncle Sam. The name is
+              linked to Samuel Wilson, a meat packer from Troy, New York,
+              who supplied barrels of beef to the United States Army during
+              the War of 1812. Wilson (1766-1854) stamped the barrels with
+              "U.S." for United States, but soldiers began referring to the
+              grub as "Uncle Sam's." The local newspaper picked up on the
+              story and Uncle Sam eventually gained widespread acceptance
+              as the nickname for the U.S. federal government. [10]
+10 Sep 1813 U.S. naval victory on Lake Erie: "We have met the enemy and they
+              are ours ..." So writes Master Commandant Oliver Hazard Perry
+              after defeating the British squadron on Lake Erie. [2] [3] [7]
+              Following a hard-fought but decisive naval engagement lasting
+              three hours, the entire British squadron surrenders. British
+              killed 41, wounded 93, captured 306. Americans killed 277,
+              wounded 96. The battle secures Lake Erie for the United States
+              and allows U.S. commanders to move troops and supplies by
+              water, and to regain the initiative in the Old Northwest. [2]
+11 Sep 1813 British troops arrive in Mount Vernon and prepare to march to
+              and invade Washington, D.C.. [3]
+25 Sep 1813 Capture of HMS Boxer. [3]
+26 Sep 1813 General William Henry Harrison lands in Canada, Detroit
+              liberated. [3]
+28 Sep 1813 Burlington Races. [3]
+ 5 Oct 1813 Battle of the Thames: [1] [2] A major victory for the United
+              States. Following the U.S. naval victory on Lake Erie, American
+              land forces under Major General William Henry Harrison pursue
+              retreating British soldiers and warriors from indigenous
+              nations. Major General Henry Procter commands the British
+              soldiers, and Chief Tecumseh leads the Shawnee, Lenape,
+              Ottawa, Ojibwe, Wyandot, Ho-Chunk, Potawatomi, Kickapoo,
+              Sauk, Meskwaki, and Muscogee warriors. Harrison's forces,
+              led by mounted Kentucky volunteers under Colonel Richard
+              M. Johnson, catch the British near Moraviantown, Canada, at the
+              Thames River. A mounted charge by the Kentuckians breaks the
+              British line. Confused and disordered, most British soldiers
+              surrender. After a short, stubborn fight, the warriors
+              withdraw. [2] Tecumseh is killed in the battle. [1] [2]
+              British and Native Americans killed 45, wounded 30, captured
+              600. Americans killed 7, wounded 22. Michigan Territory is
+              restored to the United States and Tecumseh's confederacy of
+              warriors is shattered. With the United States now ascendant
+              in the region, many indigenous nations agree to peace. [2]
+ 7 Oct 1813 Andrew Jackson establishes camp at Fayetteville, TN to recruit
+              American forces to combat the Creeks in Alabama. [1]
+26 Oct 1813 A combined force of British regulars, Canadian militia,
+              and Mohawks defeat the Americans in the Battle of the
+              Chateauguay. [3]
+ 3 Nov 1813 Battle of Tallushatchee. [3]
+ 4 Nov 1813 Great Britain offers the United States peace negotiations. [3]
+ 6 Nov 1813 General James Wilkinson's flotilla runs past the batteries at
+              Fort Wellington. [3]
+ 9 Nov 1813 Battle of Talladega. [3]
+10 Nov 1813 Skirmish at Hoople's Creek. [3]
+11 Nov 1813 Battle of Crysler's Farm: [1] [2] [3] British victory ends
+              the U.S. offensive that has targeted Montreal. The Americans
+              do not fight badly, but their commander, Brigadier General
+              Thomas P. Boyd, sends his soldiers into battle intermittently
+              in a seemingly uncoordinated offensive. Major General James
+              Wilkinson is too ill to lead the men himself. By late afternoon
+              the American army retreats. British and Native Americans killed
+              61, wounded 151, missing 13. Americans killed 102, wounded
+              237, captured 120. [2] This defeat causes the Americans to
+              abandon their Saint Lawrence campaign. [3]
+13 Nov 1813 Skirmish at Nanticoke. [3]
+15 Nov 1813 Funeral of General Covington at French Mills. [3]
+            General James Wilkinson's army goes into winter quarters. [3]
+16 Nov 1813 British extend naval blockade along U.S. coast. [3]
+29 Nov 1813 Battle of Autossee. [1]
+ 9 Dec 1813 U.S. forces burn Newark, Upper Canada. [2]
+10 Dec 1813 Burning of Newark. [3]
+            Major General David Adams burned Nuyaka. [3]
+15 Dec 1813 Skirmish at Thomas McCrae's house. [3]
+19 Dec 1813 -31 Dec 1813, British destroy Lewiston, Fort Schlosser, Black
+              Rock, and Buffalo. [3]
+            Capture of Fort Niagara. [1] [3]
+30 Dec 1813 British retaliate for Newark burning by [2] burning Buffalo, New
+              York. [2] [3]
+       1814 With Napoleon Bonaparte's defeat in Europe, the British strengthen
+              their forces in North America, and for the United States the
+              war becomes mainly defensive. The war's bloodiest battles are
+              fought in 1814 on the Niagara front. In spite of some defeats,
+              U.S. soldiers fight with greater skill and determination. For
+              the British, reinforcements from Europe and elsewhere enable
+              them to take the offensive by invading upper New York, Coastal
+              Maine, the Chesapeake Bay, Cumberland Island in Georgia,
+              and the Gulf Coast. [2]
+            Hartford Convention-Americans in the Northeast continued their
+              significant opposition to the War of 1812. A minority of New
+              Englanders called for secession from the Union. Delegates
+              from Massachusetts, Connecticut and Rhode Island convened
+              in Hartford from 15 Dec 1814 to 5 Jan 1815. A number of the
+              radical Federalists at the convention called for secession of
+              the New England states from the Union. The majority, however,
+              voted for a platform demanding a change in the Constitution,
+              requiring a two-thirds vote by Congress to impose an embargo,
+              admit a western state into the Union or begin a war, except
+              in the case of an invasion. [4]
+23 Jan 1814 Battles of Emuckfaw and Enotachopo Creek. [3]
+24 Jan 1814 Battle of Enotachopco. [3]
+27 Jan 1814 Battle of Calebee Creek. [3]
+ 4 Mar 1814 Battle of Longwoods. [3]
+19 Mar 1814 Winfield Scott is promoted to Brigadier General at the age of
+              27. [1]
+27 Mar 1814 -28 Mar 1814, Battle of Horseshoe Bend: In the climactic battle
+              in the Creek War, U.S. forces under Major General Andrew
+              Jackson defeat Muscogee "Red Sticks" at their encampment on a
+              bend in the Tallapoosa River in present-day Alabama. [2] [3]
+              [5] Intense close combat continues through the night. The "Red
+              Sticks" are unwilling to surrender. Native Americans killed 917.
+              Americans and allies (Muscogees) killed 70, wounded 206. [2]
+28 Mar 1814 Royal Navy defeats USS Essex. [2]
+            In the Battle of Valparaiso, two American naval vessels are
+              captured by two Royal Navy vessels of equal strength. [3]
+30 Mar 1814 Battle of Lacolle Mill: [2] [3] American attack repulsed in
+              Lower Canada. [2]
+ 4 Apr 1814 Napoleon abdicates and is exiled to Elba off the coast of Tuscany;
+              Great Britain now turns its focus to the war in America. [1]
+ 7 Apr 1814 -8 Apr 1814, British raid Pettipaug (present-day Essex),
+              Connecticut. [2]
+11 Apr 1814 Napoleon abdicates French throne for the first time. [3]
+20 Apr 1814 HMS Orpheus defeats USS Frolic. [3]
+14 Apr 1814 United States repeals Embargo Act and Nonimportation Act. [3]
+25 Apr 1814 British extend blockade to New England. [3]
+29 Apr 1814 Capture of HMS Epervier. [3]
+ 1 May 1814 General William Clark leaves St. Louis for Prairie du Chien. [3]
+ 6 May 1814 Raid on Fort Oswego. [3]
+14 May 1814 Skirmish at Otter Creek. [3]
+18 May 1814 Lieutenant Colonel Robert McDouall relieves Fort Mackinac. [3]
+29 May 1814 Skirmish at Sandy Creek. [3]
+ 6 Jun 1814 General William Clark establishes Fort Shelby at Prairie du
+              Chien. [3]
+28 Jun 1814 Major William McKay's expedition leaves Fort Mackinac. [3]
+            USS Wasp defeats HMS Reindeer. [3]
+ 3 Jul 1814 American troops under Major General Jacob Brown cross the
+              Niagara River and capture Fort Erie. [1]
+ 5 Jul 1814 Battle of Ojibwe: Americans defeat the British on Niagara
+              River. [2]
+            Battle of Chippawa: [1] [3] [8] American Major General Jacob Brown
+              defeats British General Phineas Riall at Chippawa, Ontario. [3]
+17 Jul 1814 -21 Jul 1814, Siege of Prairie du Chien: Americans surrender
+              Fort Shelby in present-day Wisconsin to British force under
+              Lieutenant Colonel William McKay and Ochethi Šakowin, Ho-Chunk,
+              Menominee, and Ojibwe warriors led by Chief Tete de Chien. [2]
+20 Jul 1814 Trials at Ancaster Bloody Assize. [3]
+            Surrender of Fort Shelby. [3]
+21 Jul 1814 Battle of Rock Island Rapids. [3]
+            Raid on Sault Ste. Marie. [3]
+22 Jul 1814 Treaty of Greenville. [1] [3] US and western tribes ally against
+              Great Britain. [3]
+24 Jul 1814 General Phineas Riall advances toward the Niagara River to halt
+              Jacob Brown's American invaders. [3]
+25 Jul 1814 Battle of Lundy's Lane: [1] [2] [3] According to British Captain
+              John Weeks, "Nothing could resist the obstinate desperation
+              of the Yankees." These words sum up the ferocity of the fight
+              over the British artillery batteries during the Battle of
+              Lundy's Lane. Beginning in the evening, the battle continues
+              past midnight. In the darkness, fighting takes place at
+              close quarters, with both sides firing muskets and cannon at
+              point blank range. Both sides suffer heavy casualties. "Such
+              ... carnage I never beheld," a British eyewitness remarks. "Red
+              coats, blue and gray were promiscuously intermingled, in many
+              places three deep." The Americans withdraw the next day. Many
+              regard Lundy's Lane as the hardest fought engagement of the
+              war. British killed 84, wounded 559, captured or missing 235.
+              Americans killed 173, wounded 571, captured or missing 117. [2]
+26 Jul 1814 Sinclair's squadron arrives off Mackinac Island. [3]
+ 1 Aug 1814 Schooner Nancy warned of Fort Mackinac blockade. [3]
+ 2 Aug 1814 Siege of Fort Erie. [3]
+ 4 Aug 1814 British and their allies from indigenous nations, including 60
+              Menominees, defend Mackinac against American assault. [2]
+ 8 Aug 1814 Peace negotiations begin [1] [3] in Ghent. [3]
+ 9 Aug 1814 Creek people sign treaty at Fort Jackson. [3]
+            -11 Aug 1814, Americans defend Stonington, Connecticut, against
+              British assault. [2]
+10 Aug 1814 Raid on Stonington. [3]
+12 Aug 1814 Capture of USS Somers and USS Ohio on Lake Ontario. [3]
+            General Robert Ross in command of a reinforcement consisting of
+              4,500 veteran British troops arrive at the Chesapeake Bay. [1]
+13 Aug 1814 -17 Sep 1814, Siege of Fort Erie: Following the Battle at
+              Lundy's Lane, the U.S. Army withdraws to Fort Erie, which it
+              enlarges and strengthens. The British, reinforced, besiege
+              the fort. The Americans repulse a British attack on August
+              15. On September 17, in a sortie from Fort Erie, Americans
+              overrun and spike several British artillery batteries before
+              being forced to withdraw. Both sides suffer heavy casualties
+              in the exchange. In addition, both sides suffer from the
+              nearly constant rain. The British, unable to take the fort,
+              withdraw on September 21. British killed 283, wounded 508,
+              captured or missing 748. Americans killed 213, wounded 565,
+              captured or missing 240. U.S. forces abandon Fort Erie and
+              cross into New York in November. [2]
+            Part of Sinclair's squadron arrives at Nottawasaga River. [3]
+14 Aug 1814 Schooner Nancy destroyed. [3]
+            British occupy Pensacola. [3]
+15 Aug 1814 Assault on Fort Erie. [3]
+19 Aug 1814 British troops land at Benedict, Maryland. [1]
+24 Aug 1814 Battle of Bladensburg and capture of Washington City: Landing
+              with a force of more than 4,300 soldiers, sailors, and Marines
+              near Benedict, Maryland, the British march overland toward
+              Washington, DC. A force of poorly trained American militia
+              and some regulars try to stop the British at Bladensburg,
+              but are routed. Captain Joshua Barney and about 500 seamen
+              and Marines do the only real fighting on the American side,
+              but they are soon forced to retreat, leaving the road to
+              Washington open. The British occupy the city and burn the
+              public buildings, including the Capitol and White House. British
+              killed 64, wounded 185. Americans killed 10-26, wounded 40-51,
+              captured 100-120. This is the low point of the war for the
+              United States. [2] The one bright spot in the disaster was
+              the quick thinking of First Lady Dolley Madison, who saved a
+              portrait of George Washington [2] [10] and other White House
+              treasures from the fire. [2]
+25 Aug 1814 On the second day of the Burning of Washington, British troops
+              torch the Library of Congress, United States Treasury,
+              Department of War, and other public buildings. [3]
+27 Aug 1814 Abandonment of Fort Warburton. [1]
+            British occupy Point Lookout, Maryland. [3]
+            Retreating garrison destroys Fort Washington. [3]
+28 Aug 1814 British capture Alexandria, Virginia. [3]
+            Nantucket declares neutrality. [3]
+ 1 Sep 1814 -11 Sep 1814, British occupy 100 miles of coastal Maine from
+              Eastport to Castine. [2]
+            Construction commences on Penetang Road. [3]
+            USS Wasp sinks HMS Avon. [3]
+            General George Prevost moves south toward Plattsburgh. [3]
+ 3 Sep 1814 Capture of Tigress and Scorpion. [3]
+ 4 Sep 1814 Battle of Plattsburgh. [3]
+            John Armstrong, Jr. resigns and James Monroe becomes Secretary
+              of War. [3]
+ 5 Sep 1814 Skirmish at Rock Island Rapids. [3]
+ 6 Sep 1814 Battle of Plattsburgh. [1]
+            Skirmish at Beekmantown. [3]
+            Battle of Credit Island. [3]
+ 8 Sep 1814 Fort Johnson built, abandoned one month later. [3]
+ 9 Sep 1814 Capture of Fort O'Brian. [3]
+11 Sep 1814 U.S. naval victory on Lake Champlain: During the first week
+              in September, the largest British invasion force assembled
+              in Canada begins to march toward Plattsburgh, New York. Its
+              objective is to seize territory in upper New York that can be
+              used as a bargaining chip in the peace negotiations. However,
+              on September 11, the U.S. Navy defeats the British squadron on
+              Lake Champlain. Although the British outnumber the Americans on
+              land by approximately two to one, the land attack is called off
+              because the British commander fears that the U.S. ships might
+              ferry troops north and cut off his line of retreat. British
+              killed 168, wounded 220, captured 317. Americans killed 104,
+              wounded 116. The British retreat from Plattsburgh raises
+              American morale and discourages British negotiators at the
+              peace talks being held at Ghent, in present-day Belgium. [2]
+12 Sep 1814 Battle of North Point; [1] [3] an American detachment halts
+              the British land advance to Baltimore. [3] General Robert
+              Ross is killed. [1]
+            British repulsed at Mobile, Alabama. [3]
+            -14 Sep 1814, Battle of Baltimore: After burning Washington,
+              DC, the British return to their fleet and proceed up the
+              Chesapeake Bay to Baltimore, a large port city dominated by
+              pro-war Democratic-Republicans and home to many privateers
+              harassing British trade on the high seas. After suffering heavy
+              casualties in a victory over American militia at North Point,
+              the British proceed to the outskirts of Baltimore but find
+              the city too well-defended to attack. They withdraw because
+              they cannot get help from the Royal Navy, which is unable to
+              compel the surrender of Fort McHenry, located at the mouth
+              of Baltimore Harbor, despite a 25-hour bombardment. British
+              killed 42-46, wounded 280-296. Americans killed 28, wounded 163,
+              captured 50. A young American lawyer named Francis Scott Key
+              witnesses the bombardment and pens a stirring poem entitled,
+              "The Defence of Fort McHenry." Key suggests the poem can be
+              sung to an English drinking tune, "Anacreon in Heaven." [2]
+              Key was inspired by the sight of a lone U.S. flag still flying
+              over Fort McHenry at daybreak, as reflected in the now-famous
+              words of the "Star-Spangled Banner": "And the rocket's red
+              glare, the bombs bursting in air, Gave proof through the night
+              that our flag was still there." [10] It is soon retitled,
+              "The Star-Spangled Banner," and in 1931 Congress names it
+              the United States's national anthem. [2]
+14 Sep 1814 Battle of Fort Bowyer. [3]
+17 Sep 1814 Counterattack at Siege of Fort Erie. [3]
+26 Sep 1814 British squadron captures USS General Armstrong. [3]
+10 Oct 1814 The United States Revenue Marine attempts to defend the cutter
+              Eagle from the Royal Navy. [3]
+19 Oct 1814 Battle of Cooks Mills: [2] [3] Last battle on the Niagara
+              front. [2]
+21 Oct 1814 United Kingdom offers peace on basis of uti possidetis. [3]
+22 Oct 1814 -17 Nov 1814, McArthur's Raid into Upper Canada. With a
+              force of 720 mounted men, including 70 Shawnees, Lenapes,
+              and Wyandots, Brigadier General Duncan McArthur conducts a
+              deep raid into Upper Canada from Detroit, destroying mills to
+              deprive the British army of food. McArthur's force overruns
+              a militia force at Malcolm's Mills on November 6. This is
+              the only battle during the raid and is the last battle on
+              the Canadian-American frontier. [2]
+26 Oct 1814 Raid through the Thames Valley. [3]
+ 5 Nov 1814 Americans evacuate Fort Erie. [3]
+ 6 Nov 1814 Battle of Malcolm's Mills. [1] [3]
+ 7 Nov 1814 American force under General Andrew Jackson drives British from
+              Spanish Pensacola. [2]
+25 Nov 1814 British fleet sail from Jamaica for New Orleans. [3]
+27 Nov 1814 United Kingdom drops demands for uti possidetis. [3]
+ 1 Dec 1814 Peace delegates reconvene at Ghent. [1]
+14 Dec 1814 Delegates to the Hartford Convention meet in Hartford,
+              Connecticut. [1]
+            British capture a U.S. flotilla of gunboats and secure Lake
+              Borgne on Gulf Coast. [2] [3] [5]
+15 Dec 1814 Hartford Convention convenes: [2] [3] Dismayed by the course of
+              the war and the seemingly destructive policies of the Madison
+              administration in Washington, DC, anti-war Federalists in
+              New England convene the Hartford Convention to air their
+              grievances. Although there is some talk in New England about
+              signing a separate peace and pulling out of the Union,
+              moderates remain firmly in control at Hartford, and the
+              convention proposes a series of constitutional amendments to
+              prevent a renewal of the destructive policies and to better
+              secure New England's position in the Union. [2]
+            United States adopts additional internal taxation. [3]
+23 Dec 1814 British land their troops below New Orleans. [3]
+            General Andrew Jackson surprise attacks British. [3]
+24 Dec 1814 Treaty of Ghent: [1] [2] [3] British and American delegates in
+              present-day Belgium sign a peace treaty Article I provides
+              for the war to end when both sides ratify the agreement. Even
+              though the British comply on December 27, it takes seven weeks
+              for the treaty to reach the United States. In the meantime,
+              the war continues. [2] New Jersey militiamen continued to stand
+              guard along the state's coastline from Sandy Hook to Delaware
+              Bay into the new year of 1815, however, since the United
+              States Senate did not ratify the treaty until Feb 1815. [1]
+              The Battle of New Orleans was fought the following month. [11]
+27 Dec 1814 The American schooner USS Carolina is destroyed. It was the
+              last of Commodore Daniel Patterson's makeshift fleet that
+              fought a series of delaying actions that contributed to Andrew
+              Jackson's victory at the Battle of New Orleans. [3] [5]
+28 Dec 1814 The Treaty of Ghent is ratified by the British. [1]
+            United States rejects conscription proposal. [3]
+ 5 Jan 1815 The Hartford Convention concludes. [1]
+ 8 Jan 1815 Battle of New Orleans. [1] [2] [3] [5] The war had ended on 24 Dec
+              1814 but none of the combatants knew. [5] The British attack
+              is the climax of a British campaign on the Gulf Coast. After
+              three preliminary engagements fought from 23 Dec 1814 to 1
+              Jan 1815, the British launch a major assault against General
+              Andrew Jackson's stout defenses south of New Orleans. They are
+              repulsed with heavy losses, with over 2,000 killed, wounded,
+              missing, or captured, while Jackson's own losses are only
+              70. [2] Edward Packenham killed. [1] It is the last major
+              battle of the War of 1812 and a resounding American victory. [2]
+ 9 Jan 1815 -18 Jan 1815, Battle of Fort St. Philip: British fail to force
+              this post on the lower Mississippi to submit. [2]
+11 Jan 1815 -13 Jan 1815, British defeat U.S. force on Cumberland Island,
+              Georgia. [2]
+13 Jan 1815 British troops capture Fort Peter in St. Marys, Georgia, the
+              only battle of the war to take place in the state. [3]
+15 Jan 1815 British capture of USS President [2] [3] commanded by Commodore
+              Stephen Decatur: [3] After a running duel with HMS Endymion,
+              [2] USS President is captured by a squadron of four British
+              frigates. [3]
+ 1 Feb 1815 Construction commences of Pentanguishene Naval Yard. [3]
+ 4 Feb 1815 United States adopts second enemy trade law. [3]
+ 8 Feb 1815 -12 Feb 1815, British besiege and capture Fort Bowyer: Following
+              the Battle of New Orleans, the British turn their attention
+              towards Mobile, then in Mississippi Territory. Fort Bowyer,
+              commanded by Major William Lawrence, guards the entrance to
+              Mobile Bay. The defending garrison is only 320 strong. On
+              February 8, British vessels encircle the fort as 1,400 British
+              troops land two and a half miles east, isolating the post.
+              Over the next three days, British troops dig trenches to within
+              40 yards of the fort's walls. The Americans surrender at noon
+              on February 12, 1815. British killed 13, wounded 18. Americans
+              killed 1, wounded 10, captured 309. [2]
+12 Feb 1815 Surrender of Fort Bowyer. [3]
+16 Feb 1815 The United States Senate ratifies the Treaty of Ghent. [1]
+17 Feb 1815 U.S. ratifies Treaty of Ghent: [2] [3] The peace treaty reaches
+              Washington, DC, on February 14, 1815. The United States Senate
+              unanimously approves it two days later, and President James
+              Madison completes the ratification process by signing the
+              agreement on February 17. This ends the War of 1812. Neither
+              Great Britain nor the United States loses any territory
+              or surrenders any right. Indigenous nations, however, were
+              unable to recover their lost territories and continued to face
+              additional loss of land to settlers expanding westward. The
+              British make no concessions on the maritime issues that caused
+              the war and hold on to Canada. The United States vindicates
+              its sovereignty and earns international respect for simply
+              having fought the powerful British Empire to a draw. Although
+              the war is now officially over, fighting continues on remote
+              fronts until the news of peace arrives. [2]
+            United States rejects First Bank of the United States'
+              proposal. [3]
+18 Feb 1815 The Treaty of Ghent is declared; [1] the War of 1812 is over. [1]
+              [3]
+20 Feb 1815 USS Constitution defeats HMS Cyane and HMS Levan, [2] not knowing
+              the war is over: [1] In December, 1814, Constitution slips
+              out of Boston and evades the British blockading squadron. On
+              February 20, off the Madeira Islands, the U.S. warship
+              encounters a small Royal Navy frigate and corvette. During
+              the night battle that follows, Constitution manages to
+              outmaneuver its two opponents, defeating them and forcing
+              them to submit. Both ships are manned by American prize
+              crews. Although Levant is retaken on March 12 by a pursuing
+              British squadron, Cyane reaches a U.S. port as a prize of
+              war. British killed 35, wounded 42. Americans killed 4,
+              wounded 14. [2]
+ 1 Mar 1815 Napoleon escaped from Elba, triggering the Hundred Days. [3]
+10 Mar 1815 Treaty of Nicolls' Outpost (unratified). [3]
+23 Mar 1815 Capture of HMS Penguin. [3]
+ 6 Apr 1815 Seven American prisoners are killed and 32 wounded in the
+              "Dartmoor Massacre" at Dartmoor Prison in Devon, England. [1]
+24 Feb 1815 Battle of the Sink Hole. [1] [3] Skirmish on St. Marys River,
+              Georgia: This is the last land battle of the war. [2]
+30 Jun 1815 USS Peacock defeats East India brig Nautilus: The U.S. Navy
+              wins the last engagement of the war. Cruising far from
+              normal lines of communication, Lewis Warrington, captain
+              of the sloop Peacock, does not know the war has ended. Off
+              the coast of present-day Indonesia, he fights and captures
+              the Honorable East India Company brig Nautilus, even though
+              the British officers on the company ship assure him that the
+              war is over. British killed 7, wounded 7. Americans wounded
+              4. Ironically, the first and the last vessels captured in
+              the War of 1812 share the same name. [2]
+
+
+Citations -
+1.  https://www.battlefields.org/learn/articles/war-1812-timeline
+2.  https://ussconstitutionmuseum.org/major-events/war-of-1812-chronology/
+3.  wikipedia.com
+4.  https://www.multieducator.net/
+5.  HistoryOrb.com (renamed OnThisDay.com Jun 2016)
+6.  "350 Years of New Jersey History", Joseph G Bilby, James M Madden and
+    Harry Ziegler, 2014
+7.  www.foxnews.com
+8.  Dan Burrows, from "Historical Collections of the State of New York",
+    John W. Barber and Henry Howe, 1844
+9.  www.timelinesdb.com
+10.  history.com
+11.  gcal, various sources, www.gnu.org/software/gcal
+12.  join1440.com
+

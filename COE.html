@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendar of Events</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+    span { display: flex; justify-content: center; }
+    form { display: flex; justify-content: center; }
+    h1 { text-align: center; }
+    .main-content { display: flex; width: 100%; max-width: 1200px; justify-content: center; }
+    .controls { text-align: center; margin-bottom: 20px; }
+    #currentMonthYearDisplay {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .calendar-container { display: flex; }
+    .month-year-list {
+      width: 150px;
+      margin-right: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+      max-height: 600px; /* limit height for scrolling */
+      overflow-y: auto; /* enable vertical scrolling */
+    }
+    .month-year-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .month-year-list li {
+      margin-bottom: 5px;
+      cursor: pointer;
+      color: #007bff;
+      text-decoration: underline;
+    }
+    .month-year-list li:hover {
+      color: #0056b3;
+    }
+    .calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; max-width: 700px; margin: auto; }
+    .day-header, .day-box {
+      border: 1px solid #ccc;
+      min-height: 100px;
+      padding: 4px;
+      box-sizing: border-box;
+    }
+    .day-header { background: #f0f0f0; font-weight: bold; text-align: center; }
+    .day-box { vertical-align: top; }
+    .event { font-size: 0.9em; margin-top: 4px; padding: 2px; background: #e9f7ef; border-left: 3px solid #28a745; }
+    .event.died { background: #f8d7da; border-left-color: #dc3545; }
+    .event.married { background: #fff3cd; border-left-color: #ffc107; }
+
+    /* Print Styles */
+    @media print {
+      body {
+        padding: 0;
+        margin: 0;
+        display: block; /* override flex for printing */
+      }
+      h1, #TitleDBName, hr, form, .month-year-list {
+        display: none; /* hide these elements during print */
+      }
+      .controls {
+        text-align: center;
+        margin-bottom: 10px;
+        /* ensure currentMonthYearDisplay is visible and centered */
+      }
+      #currentMonthYearDisplay {
+          display: block; /* ensure it's not hidden by other rules */
+          text-align: center;
+          width: 100%;
+      }
+      .main-content {
+        display: block; /* override flex for printing */
+        width: 100%;
+        max-width: none; /* allow calendar to take full width */
+      }
+      .calendar {
+        margin: 0 auto; /* center calendar */
+        max-width: 100%; /* allow calendar to expand */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Calendar of Events</h1>
+<span id="TitleDBName"></span>
+<hr style="width:50%">
+<form method="post" onSubmit = "a=1;">
+    Family Group ID:
+    &nbsp;
+    <input type = "text" id = "IndID" name = "IndID" size = "10" maxlength = "15" value = ""></input>
+    &nbsp; &nbsp; &nbsp;
+    <button type = "button" onClick = "getFamGroup();">Go</button>
+</form>
+<hr style="width:50%">
+<br>
+<div class="controls">
+  <span id="currentMonthYearDisplay"></span>
+</div>
+
+<div class="main-content">
+  <div class="month-year-list" id="monthYearList">
+    <h2>Event Months</h2>
+    <ul id="monthYearUl">
+      </ul>
+  </div>
+  <div class="calendar" id="calendarGrid"></div>
+</div>
+
+<script>
+
+// store the currently displayed month and year
+let currentMonth = new Date().getMonth();
+let currentYear = new Date().getFullYear();
+
+onload = function init() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var dbname = '';
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1) {
+            dbname = e.data;
+            document.getElementById("TitleDBName").innerHTML = '(' + dbname + ')';
+            ws.send("DBStatus");
+            ws.onmessage = function(e) {
+                if (e.data != '1' && e.data != '3') {
+                    alert ("Family DataBase " + dbname +
+                           " is not verified. It must be successfully verified before creating a calendar of events.");
+                    const button = document.getElementById('button');
+                    button.disabled = true;
+                }
+            }
+        }
+    }
+}
+
+var rawData = "";
+var allEvents = []; // store all extracted events globally
+
+function extractDatedEvents(data) {
+    const lines = data.split("\n");
+    const dateRegex = /^\s*(\d{1,2})\s+(\w{3})\s+(\d{4})/i;
+    const events = [];
+
+    for (const line of lines) {
+        const match = line.match(dateRegex);
+        if (match) {
+            const [_, day, monStr, year] = match;
+            const month = new Date(`${monStr} 1, 2000`).getMonth();
+            const fullDate = new Date(year, month, parseInt(day));
+            const descPart = line.slice(match[0].length).trim();
+
+            // remove citation references
+            const cleanedDesc = descPart.replace(/\[\d+]/g, "").trim();
+
+            const type = cleanedDesc.match(/born|died|married/i)?.[0]?.toLowerCase();
+            if (type)
+                events.push({ date: fullDate, type, description: cleanedDesc });
+        }
+    }
+    return events;
+}
+
+function renderCalendar() {
+    const grid = document.getElementById("calendarGrid");
+    // use the global currentMonth and currentYear
+    const month = currentMonth;
+    const year = currentYear;
+    grid.innerHTML = "";
+
+    // update the display heading
+    const monthName = new Date(year, month).toLocaleString('default', { month: 'long' });
+    document.getElementById("currentMonthYearDisplay").textContent = `${monthName} ${year}`;
+
+    const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    for (let d of dayNames) {
+        const div = document.createElement("div");
+        div.className = "day-header";
+        div.textContent = d;
+        grid.appendChild(div);
+    }
+
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    // use allEvents which is populated once after getFamGroup
+    const events = allEvents;
+
+    // pre-fill blank boxes
+    for (let i = 0; i < firstDay; i++)
+        grid.appendChild(document.createElement("div"));
+
+    for (let day = 1; day <= daysInMonth; day++) {
+        const cellDate = new Date(year, month, day);
+        const dayBox = document.createElement("div");
+        dayBox.className = "day-box";
+        dayBox.innerHTML = `<strong>${day}</strong>`;
+
+        const todaysEvents = events.filter(e =>
+            e.date.getFullYear() === cellDate.getFullYear() &&
+            e.date.getMonth() === cellDate.getMonth() &&
+            e.date.getDate() === cellDate.getDate()
+        )
+
+        for (const event of todaysEvents) {
+            const div = document.createElement("div");
+            div.className = `event ${event.type}`;
+            div.textContent = event.description;
+            dayBox.appendChild(div);
+        }
+        grid.appendChild(dayBox);
+    }
+}
+
+function populateMonthYearList() {
+    const monthYearUl = document.getElementById("monthYearUl");
+    monthYearUl.innerHTML = ""; // clear existing list
+
+    const uniqueMonthsYears = new Set();
+    allEvents.forEach(event => {
+        const month = event.date.getMonth();
+        const year = event.date.getFullYear();
+        uniqueMonthsYears.add(`${month}-${year}`);
+    })
+
+    const sortedMonthsYears = Array.from(uniqueMonthsYears).sort((a, b) => {
+        const [monthA, yearA] = a.split('-').map(Number);
+        const [monthB, yearB] = b.split('-').map(Number);
+        if (yearA !== yearB)
+            return yearA - yearB;
+        return monthA - monthB;
+    })
+
+    sortedMonthsYears.forEach(item => {
+        const [month, year] = item.split('-').map(Number);
+        const monthName = new Date(year, month).toLocaleString('default', { month: 'long' });
+        const listItem = document.createElement("li");
+        listItem.textContent = `${monthName} ${year}`;
+        listItem.onclick = () => {
+            currentMonth = month; // update global currentMonth
+            currentYear = year;   // update global currentYear
+            renderCalendar();
+        }
+        monthYearUl.appendChild(listItem);
+    })
+}
+
+async function getFamGroup () {
+    const IndID = document.getElementById("IndID").value.trim();
+    var errs = "", FamGroup;
+
+    rawData = "";
+    /* validate ID */
+    if (IndID == "")
+        errs += "A Family Group ID is required.";
+    else
+        if ((IndID[0] < "0" || IndID[0] > "9") || (IndID[IndID.length - 1] < "0" || IndID[IndID.length - 1] > "9") || !IndID.includes('.'))
+            errs += "The first and last characters in an ID must be numeric, and the ID must contain a period.";
+    if (errs != "") {
+        alert (errs);
+        return;
+    }
+    /* get Family Group */
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("GetFamGroup" + IndID);
+    }
+    try {
+        const message = await waitForMessage(ws);
+        FamGroup = message;
+        if (FamGroup == "NOTFOUND") {
+            alert ("ID " + IndID + " not found in Family DataBase " + document.getElementById("TitleDBName").innerHTML);
+            return;
+        }
+    } catch (error) {
+        console.error("Error receiving message:", error);
+    }
+
+    // extract pertinent Timeline events
+    const pntFG = FamGroup.indexOf("Timeline -");
+    if (pntFG == -1) {
+        alert ("There are no pertinent events in Family Group " + IndID + " in Family DataBase " +
+                document.getElementById("TitleDBName").innerHTML);
+        return;
+    }
+    const Timeline = FamGroup.substring(pntFG + 11, FamGroup.indexOf("\n\n", pntFG + 11) + 1);
+    const linesTL = Timeline.split('\n');
+    for (let i = 0; i < linesTL.length; i++) {
+        const line = linesTL[i];
+        // get pertinent events
+        if (line.includes(" born") || line.includes(" died") || line.includes(" married"))
+            rawData += line + "\n";
+    }
+    if (rawData == "") {
+        alert ("There are no pertinent events in Family Group " + IndID + " in Family DataBase " +
+                document.getElementById("TitleDBName").innerHTML);
+        return;
+    }
+
+    allEvents = extractDatedEvents(rawData); // populate the global allEvents
+    allEvents.sort((a, b) => a.date - b.date); // sort by date ascending
+
+    populateMonthYearList(); // populate the new list
+
+    if (allEvents.length > 0) {
+        const firstEvent = allEvents[0].date;
+        currentMonth = firstEvent.getMonth(); // set global currentMonth
+        currentYear = firstEvent.getFullYear(); // set global currentYear
+        renderCalendar();
+    } else
+        renderCalendar();
+}
+
+async function waitForMessage(ws) {
+    const promise = new Promise((resolve) => {
+        ws.onmessage = (event) => {
+            resolve(event.data);
+        }
+    })
+    const result = await promise;
+    return result;
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+</body>
+</html>

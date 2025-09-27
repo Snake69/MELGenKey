@@ -1,0 +1,285 @@
+
+New Jersey referenced as:
+       1614 -  7 Sep 1664  New Netherland, Dutch Colony
+ 8 Sep 1664 -        1673  Province of New Jersey, Proprietary Colony of Kingdom of England
+       1674 -        1702  Province of East Jersey, Proprietary Colony of Kingdom of England
+                           Province of West Jersey, Proprietary Colony of Kingdom of England
+       1702 - 30 Apr 1707  Province of New Jersey, Royal Colony of Kingdom of England
+ 1 May 1707 -  3 Jul 1776  Province of New Jersey, Royal Colony of Great Britain
+
+Virginia referenced as:
+10 Apr 1606 - 23 May 1673  Colony of Virginia, Proprietary Colony of Kingdom of England
+24 May 1624 - 30 Apr 1707  Colony of Virginia, Royal Colony of Kingdom of England
+ 1 May 1707 -  3 Jul 1776  Colony of Virginia, Royal Colony of Great Britain
+
+Delaware referenced as:
+       1638 -  7 Sep 1664  New Netherland, Dutch Colony
+ 8 Sep 1664 - 30 Apr 1707  Delaware Colony, Proprietary Colony of Kingdom of England
+ 1 May 1707 -  3 Jul 1776  Delaware Colony, Proprietary Colony of Great Britain
+
+Georgia referenced as:
+21 Apr 1732 -        1751  Province of Georgia, Proprietary Colony of Great Britain
+       1752 -  3 Jul 1776  Province of Georgia, Royal Colony of Great Britain
+
+Pennsylvania referenced as:
+ 4 Mar 1681 - 30 Apr 1707  Province of Pennsylvania, Proprietary Colony of Kingdom of England
+ 1 May 1707 -  3 Jul 1776  Province of Pennsylvania, Proprietary Colony of Great Britain
+
+Connecticut referenced as:
+       1635 -        1644  Saybrook Colony, Proprietary Colony of Kingdom of England
+       1638 -        1664  New Haven Colony, Proprietary Colony of Kingdom of England (never chartered)
+ 3 Mar 1636 -        1661  Connecticut Colony, Proprietary Colony of Kingdom of England
+       1662 - 30 Apr 1707  Connecticut Colony, Royal Colony of Kingdom of England
+ 1 May 1707 -  3 Jul 1776  Connecticut Colony, Royal Colony of Great Britain
+
+Maine referenced as:
+       1622 -        1657  Province of Maine, Proprietary Colony of Kingdom of England
+       1658                absorbed by Massachusetts Bay Colony
+
+Massachusetts referenced as:
+       1620 - 13 May 1692  Plymouth Colony, Proprietary Colony of Kingdom of England
+       1628 - 13 May 1692  Massachusetts Bay Colony, Proprietary Colony of Kingdom of England
+14 May 1692 - 30 Apr 1707  Province of Massachusetts Bay, Royal Colony of Kingdom of England
+ 1 May 1707 -  3 Jul 1776  Province of Massachusetts Bay, Royal Colony of Great Britain
+
+New Hampshire referenced as:
+       1629 -        1678  Province of New Hampshire, Proprietary Colony of Kingdom of England
+       1679 - 30 Apr 1707  Province of New Hampshire, Royal Colony of Kingdom of England
+ 1 May 1707 -  3 Jul 1776  Province of New Hampshire, Royal Colony of Great Britain
+
+Rhode Island referenced as:
+       1636 -        1662  Colony of Rhode Island and Providence Plantations, Proprietary Colony of Kingdom of England
+       1663 - 30 Apr 1707  Colony of Rhode Island and Providence Plantations, Royal Colony of Kingdom of England
+ 1 May 1707 -  3 Jul 1776  Colony of Rhode Island and Providence Plantations, Royal Colony of Great Britain
+
+New York referenced as:
+       1614 -  7 Sep 1664  New Netherland, Dutch Colony
+ 8 Sep 1664 -        1685  Province of New York, Proprietary Colony of Kingdom of England
+       1686 - 30 Apr 1707  Province of New York, Royal Colony of Kingdom of England
+ 1 May 1707 -  3 Jul 1776  Province of New York, Royal Colony of Great Britain
+
+Maryland referenced as:
+20 Jun 1632 - 30 Apr 1707  Province of Maryland, Proprietary Colony of Kingdom of England
+ 1 May 1707 -  3 Jul 1776  Province of Maryland, Proprietary Colony of Great Britain
+
+North & South Carolina referenced as:
+30 Oct 1629 -        1662  Province of Carolina, Royal Colony of Kingdom of England
+       1663 - 30 Apr 1707  Province of Carolina, Proprietary Colony of Kingdom of England
+ 1 May 1707 -        1711  Province of Carolina, Proprietary Colony of Great Britain
+       1712 -        1728  Province of North Carolina, Proprietary Colony of Great Britain
+       1712 -        1728  Province of South Carolina, Proprietary Colony of Great Britain
+       1729 - 11 May 1783  Province of North Carolina, Royal Colony of Great Britain
+       1729 -  3 Jul 1776  Province of South Carolina, Royal Colony of Great Britain
+
+Popham Colony:
+       1607 -        1608  Popham Colony, Proprietary Colony of Kingdom of England
+
+Roanoke Colony:
+       1585 -        1590  Roanoke Colony, Proprietary Colony of Kingdom of England
+
+Colony of Louisiana:
+       1682 -        1761  Colony of Louisiana, Kingdom of France
+       1762 -        1762  Colony of Louisiana, Kingdom of France
+                           Colony of Louisiana, Spanish Empire
+       1763 - 20 Mar 1801  Colony of Louisiana, Kingdom of France
+                           Colony of Louisiana, Spanish Empire
+                           Colony of Louisiana, Royal Colony of Great Britain
+21 Mar 1801 - 30 Apr 1803  Colony of Louisiana, Kingdom of France
+                           Colony of Louisiana, Royal Colony of Great Britain
+
+
+
+Northwest Territory -
+13 Jul 1787 organized, gained Ohio, Indiana, Illinois, Michigan, Wisconsin, NE Minnesota
+ 4 Jul 1800 lost Indiana, Illinois, W Michigan, Wisconsin, NE Minnesota
+28 Feb 1803 last day of territory
+
+Southwest Territory -
+26 May 1790 organized, gained Tennessee
+30 Apr 1796 last day of territory
+
+Indiana Territory -
+ 4 Jul 1800 organized, gained Indiana, Illinois, Wisconsin, W Michigan
+ 1 Mar 1803 gained E Michigan
+30 Jun 1805 lost Michigan
+ 1 Mar 1809 lost Illinois, Wisconsin
+10 Dec 1816 last day of territory
+
+Territory of Louisiana -
+ 4 Jul 1805 organized, gained Louisiana, Missouri, Arkansas, Iowa, North Dakota, South Dakota, Nebraska,
+              Oklahoma, Kansas, Colorado, Wyoming, Montana, Minnesota, New Mexico, Texas
+ 3 Jun 1812 last day of territory
+
+Missouri Territory -
+ 4 Jun 1812 organized, gained Arkansas, Iowa, Kansas, Missouri, Nebraska, Oklahoma, Colorado, Minnesota,
+              Montana, New Mexico, North Dakota, South Dakota, Texas, Wyoming
+ 9 Aug 1821 last day of territory
+
+Mississippi Territory -
+ 7 Apr 1798 organized, gained Alabama, Mississippi
+14 May 1812 gained W Florida
+ 9 Dec 1817 last day of territory
+
+Territory of Orleans -
+ 1 Oct 1804 organized, gained Louisiana
+29 Apr 1812 last day of territory
+
+Michigan Territory -
+30 Jun 1805 organized, gained Michigan
+25 Jan 1837 last day of territory
+
+Illinois Territory -
+ 1 Mar 1809 organized, gained Illinois, Wisconsin, E Minnesota
+ 2 Dec 1818 last day of territory
+
+Territory of Alabama -
+ 3 Mar 1817 organized, gained Alabama
+13 Dec 1819 last day of territory
+
+Oregon Country -
+30 Jan 1819 established, gained Oregon, Washington, Idaho, W Montana, NW Wyoming
+14 Aug 1848 renamed Oregon Territory
+12 Feb 1859 last day of territory
+
+Arkansaw Territory -
+ 2 Mar 1819 established, gained Arkansas
+ 4 Jul 1819 organized
+21 Apr 1820 renamed Arkansas Territory
+14 Jun 1836 last day of territory
+
+Florida Territory -
+30 Mar 1822 organized, gained Florida
+ 2 Mar 1845 last day of territory
+
+Republic of Indian Stream -
+ 9 Jul 1832 established, gained NW New Hampshire
+ 4 Aug 1835 last day of republic
+
+Wisconsin Territory -
+ 3 Jul 1836 organized, gained Wisconsin, Minnesota, Iowa, part of North Dakota, part of South Dakota
+28 May 1848 last day of territory
+
+Iowa Territory -
+ 3 Jul 1838 organized, gained Iowa, part of North Dakota, part of South Dakota, W Minnesota
+27 Dec 1846 last day of territory
+
+Republic of Texas -
+ 2 Mar 1836 established, gained Texas
+29 Dec 1845 annexed by US
+18 Feb 1846 transfer of power
+
+Minnesota Territory -
+ 3 Mar 1849 organized, gained Minnesota, part of North Dakota, part of South Dakota
+10 May 1858 last day of territory
+
+State of Deseret -
+12 Mar 1849 formed, gained Utah
+ 4 Apr 1851 dissolved
+
+Utah Territory -
+ 9 Sep 1850 organized, gained Utah, Nevada, W Colorado
+ 2 Mar 1861 lost Nevada, W Colorado
+ 3 Jan 1896 last day of territory
+
+Territory of New Mexico -
+13 Dec 1850 organized, gained New Mexico, part of Texas, part of Oklahoma, part of Kansas, part of Colorado, part of Utah, part of Arizona
+ 4 Aug 1854 gained S Arizona, SW New Mexico
+ 5 Jan 1912 last day of territory
+
+Territory of Washington -
+ 2 Mar 1853 organized, gained Washington, part of Idaho, part of Montana
+13 Feb 1859 gained [remaining] part of Idaho, part of Wyoming
+10 Nov 1889 last day of territory
+
+Kansas Territory -
+30 May 1854 organized, gained Kansas, E Colorado
+28 Jan 1861 last day of territory
+
+Jefferson Territory -
+ 7 Nov 1859 created, gained part of Utah, part of Colorado, part of Kansas, part of Nebraska
+ 5 Jun 1861 last day of territory
+
+Colorado Territory -
+28 Feb 1861 organized, gained part of Colorado
+ 6 Jun 1861 gained [remaining] part of Colorado, part of Utah, part of Kansas, part of Nebraska
+31 Jul 1876 last day of territory
+
+Arizona Territory -
+28 Mar 1861 proclaimed
+24 Feb 1863 organized, gained Arizona
+13 Feb 1912 last day of territory
+
+Nevada Territory -
+ 2 Mar 1861 organized, gained most of Nevada
+14 Jul 1862 gained [remaining] part of Nevada
+30 Oct 1864 last day of territory
+
+Dakota Territory -
+ 2 Mar 1861 organized, gained North Dakota, South Dakota
+ 1 Nov 1889 last day of territory
+
+Idaho Territory -
+ 3 Mar 1863 organized, gained Idaho, Montana, Wyoming
+26 May 1864 lost Montana
+25 Jul 1868 lost Wyoming
+ 2 Jul 1890 last day of territory
+
+Territory of Montana -
+26 May 1864 organized, gained Montana
+ 7 Nov 1889 last day of territory
+
+Nebraska Territory -
+30 May 1854 organized, gained Nebraska, Wyoming, South Dakota, North Dakota, Colorado, Montana
+28 Feb 1867 last day of territory
+
+Wyoming Territory -
+25 Jul 1868 gained Wyoming
+ 9 Jul 1890 last day of territory
+
+Department of Alaska -
+18 Oct 1867 designated
+17 May 1884 organized, gained District of Alaska
+24 Aug 1912 renamed Territory of Alaska
+ 2 Jan 1959 last day of territory
+
+Oklahoma Territory -
+ 2 May 1890 organized, gained W Oklahoma
+15 Nov 1907 last day of territory
+
+Indian Territory -
+30 May 1824 designated, gained E Oklahoma
+15 Nov 1907 last day of territory
+
+Republic of Hawaii -
+12 Aug 1898 annexed
+14 Jun 1900 organized as Hawaii Territory
+20 Aug 1959 last day of territory
+
+District of Columbia -
+30 Mar 1791 formed
+27 Feb 1801 organized
+13 Mar 1847 lost Alexandria County
+
+Confederate States of America -
+ 8 Feb 1861 formed from Alabama, Georgia, Florida, Louisiana, Mississippi & South Carolina
+ 2 Mar 1861 gained Texas
+ 7 May 1861 gained Virginia
+20 May 1861 gained Arkansas
+21 May 1861 gained North Carolina
+ 2 Jul 1861 gained Tennessee
+ 1 Aug 1861 gained Arizona Territory
+28 Nov 1861 gained Missouri
+10 Dec 1861 gained Kentucky
+24 Jul 1866 lost Tennessee
+22 Jun 1868 lost Arkansas
+26 Jun 1868 lost Florida
+ 4 Jul 1868 lost North Carolina
+ 9 Jul 1868 lost Louisiana
+            lost South Carolina
+13 Jul 1868 lost Alabama
+25 Jul 1868 lost Georgia
+26 Jul 1870 lost Virginia
+23 Feb 1870 lost Mississippi
+30 Mar 1870 lost Texas
+            last day of Confederate States of America
+

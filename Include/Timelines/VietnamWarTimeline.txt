@@ -1,0 +1,595 @@
+# Vietnam War Events
+# v20250811
+# any line with the # character in column 1 is considered a comment line
+# comment lines are not included in MELGenKey Reports
+   Aug 1945 Following the defeat of Japan to end World War II, France moves
+              to reassert its control over Indochina, which had become a
+              French colony in 1887. [3]
+   Jul 1946 France proposes granting Vietnam limited self-government. Ho
+              Chi Minh rejects the proposal and, with his organization, the
+              Viet Minh, embarks on a guerrilla war against the French. [3]
+ 4 Aug 1953 President Dwight D. Eisenhower tells the American people the
+              situation in French Indochina is "very ominous for the United
+              States" and asks Congress for $400 million in aid for the
+              French. [3]
+ 7 May 1954 After 55 days of heavy fighting, Viet Minh forces capture the
+              French command post at Dien Bien Phu, and the French commander
+              orders his troops to cease fire. The defeat breaks any will
+              France has to continue the war. [3] This effectively ends
+              the 7 1/2-year Indochina War. [1]
+   Jul 1954 At a conference in Geneva, world powers agree to a divided
+              Vietnam. [1] [3] Communists, led by Ho Chi Minh, control the
+              North. The United States eventually supports an anticommunist
+              government led by Ngo Dinh Diem in the South. [1] Within
+              two years, elections are to be held to unify Vietnam under
+              a single democratic government. South Vietnamese President
+              Ngo Dinh Diem, however, refuses to sign the accords. [3]
+26 Oct 1955 South Vietnam declares itself the Republic of Vietnam, with
+              newly elected Ngo Dinh Diem as president. [2]
+       1959 -1975, Vietnam War, about 4.2 million people died. [4]
+19 May 1959 The North Vietnamese Army establishes Group 559, whose
+              responsibility is to determine how to maintain supply lines to
+              South Vietnam; the resulting route is the Ho Chi Minh trail. [5]
+   May 1959 North Vietnamese forces begin work on a route through Laos and
+              Cambodia to supply and support ongoing guerrilla attacks against
+              South Vietnam. This becomes known as the Ho Chi Minh Trail. [3]
+ 8 Jul 1959 Two U.S. advisors are killed and several more injured in an
+              attack on their living quarters near Saigon. [3] They're the
+              first U.S. personnel killed in South Vietnam. [3] [6]
+31 Aug 1959 A parcel bomb sent by Ngo Dinh Nhu, younger brother and chief
+              adviser of South Vietnamese President Ngo Dinh Diem, fails
+              to kill King Norodom Sihanouk of Cambodia. [5]
+10 Sep 1960 Le Duan replaces Ho Chi Minh as First Secretary of the Vietnamese
+              Communist Party in Hanoi. [1]
+   Nov 1960 Diem faces open rebellion from opponents, communists, and veterans
+              of the resistance against France. He asks for more U.S. aid. [3]
+ 8 Nov 1960 John F. Kennedy beats Richard Nixon in the U.S. presidential
+              election; Lyndon B. Johnson is vice president. [1]
+11 Nov 1960 A military coup against President Ngo Dinh Diem of South
+              Vietnam is crushed. [5]
+20 Dec 1960 The National Liberation Front (NLF), referred to as the Viet
+              Cong or Charlie by the American Army, is established in
+              South Vietnam [2] (backed by the North Vietnamese Communist
+              Party). [1] The Viet Cong were essentially communist rebels
+              in the Democratic State of South Vietnam and became known
+              for their guerrilla war tactics against the Americans. [2]
+       1961 The US government agreed to increase aid to South Vietnam in
+              the fight against Viet Cong rebels. The agreement included
+              paying for a larger Vietnamese army, as well as for more
+              advisors in the field. [7]
+   May 1961 President John F. Kennedy sends helicopters and 400 Green Berets
+              to South Vietnam as military advisors but also authorizes
+              them to conduct covert operations against what's now called
+              the Viet Cong in North Vietnam and Laos. [3]
+18 Nov 1961 United States President John F. Kennedy sends 18,000 military
+              advisors to South Vietnam. [5]
+       1962 The US commitment to Vietnam grew in early 1962 as troop strength
+              was increased to 8,000 men. President Kennedy gave the order
+              to US troops to fire on the Viet Cong if they encountered
+              hostile fire themselves. [7]
+   Jan 1962 U.S. aircraft begin spraying the highly toxic herbicide Agent
+              Orange over rural areas of South Vietnam as part of Operation
+              Ranch Hand. Its danger was not known at the time. [3]
+12 Jan 1962 Operation Chopper, the first American combat mission in the war,
+              takes place. [5]
+27 Feb 1962 Two dissident Republic of Vietnam Air Force pilots bomb the
+              Independence Palace in Saigon in a failed attempt to assassinate
+              South Vietnam President Ngo Dinh Diem. [5]
+ 2 Dec 1962 After a trip to Vietnam at the request of U.S. President John
+              F. Kennedy, U.S. Senate Majority Leader Mike Mansfield becomes
+              the first American official to comment adversely on the war's
+              progress. [5]
+       1963 Diem Government overthrown in Vietnam The Vietnamese military,
+              with the backing of the United States Central Intelligence
+              Agency (CIA), overthrew the regime of Ngo Dinh Diem. The US
+              backed the action, since the Administration felt Diem was both
+              corrupt and not pursuing the war against the Communists with
+              enough vigor. US support for the action effectively deepened
+              the US commitment to South Vietnam. [7]
+11 Jun 1963 Self immolation of Buddhist monk Thich Quang Duc in Saigon
+              sparks outrage around the world and brings attention to the
+              developing conflict. [1]
+   Sep 1963 The Kennedy administration begins pulling back its support of
+              the increasingly unpopular Diem. [3]
+11 Oct 1963 Kennedy signs a memorandum detailing a plan to continue training
+              South Vietnamese personnel but to withdraw U.S. troops from
+              Vietnam by 1965. [3]
+ 1 Nov 1963 -2 Nov 1963, President Diem and his brother Ngo Dinh Nhu are
+              murdered during [2] [3] a U.S.-backed military [3] coup [2]
+              [3] by dissident generals of the South Vietnamese army [1]
+              twenty days before President John F. Kennedy is assassinated
+              in the United States. [2]
+22 Nov 1963 Kennedy is assassinated and Johnson is sworn in as president. [1]
+ 2 May 1964 An explosion sinks the American aircraft carrier USS Card
+              while it is docked at Saigon. Two Viet Cong combat swimmers
+              had placed explosives on the ship's hull. She is raised and
+              returned to service less than seven months later. [5]
+19 Jul 1964 At a rally in Saigon, South Vietnamese Prime Minister Nguyen
+              Khanh calls for expanding the war into North Vietnam. [5]
+20 Jul 1964 Viet Cong forces attack the capital of Dinh Tuong Province,
+              Cai Be, killing 11 South Vietnamese military personnel and
+              40 civilians (30 of whom are children). [5]
+27 Jul 1964 Five thousand more American military advisers are sent to South
+              Vietnam bringing the total number of United States forces in
+              Vietnam to 21,000. [5]
+ 2 Aug 1964 -5 Aug 1964, The North Vietnamese Army allegedly attack two
+              U.S. destroyers sitting in international waters (the Gulf
+              of Tonkin Incident). [2] [3] President Lyndon B. Johnson
+              orders retaliatory air strikes against two North Vietnamese
+              naval bases and an oil facility. Two U.S. aircraft are shot
+              down in the attack. The pilot of one of them becomes the
+              first American to be taken prisoner by North Vietnam. [3]
+              This leads Johnson to seek congressional approval for direct
+              U.S. involvement in Vietnam. [1]
+ 5 Aug 1964 Operation Pierce Arrow: American aircraft from carriers USS
+              Ticonderoga and USS Constellation bomb North Vietnam in
+              retaliation for strikes against U.S. destroyers in the Gulf
+              of Tonkin. [5]
+            U.S. Navy pilot Everett Alvarez Jr. becomes the first American
+              flier to be shot down and captured by North Vietnam; he would
+              be held prisoner until Feb 1973. [8]
+ 7 Aug 1964 In response to the Gulf of Tonkin Incident, the U.S. Congress
+              passes the Gulf of Tonkin Resolution that calls for American
+              military escalation in Vietnam. [2] [3]
+16 Aug 1964 A coup d'etat replaces Duong Van Minh with General Nguyen
+              Khanh as President of South Vietnam. A new constitution is
+              established with aid from the U.S. Embassy. [5]
+10 Nov 1964 McNamara says that U.S. has no plans to send combat troops to
+              Vietnam. [6]
+            Australia began a draft to fulfill its commitment in
+              Vietnam. [11]
+ 1 Dec 1964 U.S. President Lyndon B. Johnson and his top-ranking advisers
+              meet to discuss plans to bomb North Vietnam. [5]
+ 5 Dec 1964 For his heroism in battle earlier in the year, Captain Roger
+              Donlon is awarded the first Medal of Honor of the war. [5]
+24 Dec 1964 Viet Cong operatives bomb the Brinks Hotel in Saigon, South
+              Vietnam to demonstrate they can strike an American installation
+              in the heavily guarded capital. [5]
+       1965 In early 1965, the war in Vietnam underwent significant
+              escalation. In retaliation for attacks on the barracks at
+              Plieku, US forces conducted a series of air attacks against North
+              Vietnam. In March, the US initiated the first sustained attacks
+              against the North, in an action named "rolling thunder." On
+              7 Mar the first two battalions of US combat troops arrived to
+              defend the air base at Danang. [7]
+ 2 Mar 1965 Operation Rolling Thunder - a sustained bombing campaign aimed
+              at North Vietnamese airfields, power plants, munitions storage
+              sites, and the Ho Chi Minh Trail - begins. [3]
+ 8 Mar 1965 Thirty-five hundred United States Marines are the first American
+              land combat forces committed during the Vietnam War. [5]
+30 Mar 1965 A car bomb explodes in front of the United States Embassy,
+              Saigon, killing 22 and wounding 183 others. [5]
+27 May 1965 American warships begin the first bombardment of National
+              Liberation Front targets within South Vietnam. [5]
+ 9 Jun 1965 The Viet Cong commences combat with the Army of the Republic
+              of Vietnam in the Battle of Dong Xoai, one of the largest
+              battles in the war. [5]
+18 Jun 1965 The United States uses B-52 bombers to attack National Liberation
+              Front guerrilla fighters in South Vietnam. [5]
+28 Jul 1965 U.S. President Lyndon B. Johnson announces his order to increase
+              the number of United States troops in South Vietnam from
+              75,000 to 125,000. [5] [8]
+29 Jul 1965 The first 4,000 101st Airborne Division paratroopers arrive in
+              Vietnam, landing at Cam Ranh Bay. [5]
+17 Aug 1965 A Viet Cong deserter alerts U.S. Marines that an attack is
+              imminent at Chu Lai. American leaders send 5,500 Marines in
+              a preemptive strike - the first U.S. ground offensive of the
+              war. The U.S. earns a big victory in the six-day engagement. [3]
+18 Aug 1965 Operation Starlite begins: United States Marines destroy a Viet
+              Cong stronghold on the Van Tuong peninsula in the first major
+              American ground battle of the war. [5]
+ 7 Sep 1965 In a follow-up to August's Operation Starlite, United States
+              Marines and South Vietnamese forces initiate Operation Piranha
+              on the Batangan Peninsula. [5]
+15 Oct 1965 A draft card is burned during an anti-war rally by the Catholic
+              Worker Movement, resulting in the first arrest under a new
+              law. [5]
+22 Oct 1965 173rd Airborne trooper saves comrades. [6]
+23 Oct 1965 The 1st Cavalry Division (Airmobile), in conjunction with South
+              Vietnamese forces, launches an operation seeking to destroy
+              Communist forces during the siege of Plei Me. [5]
+ 8 Nov 1965 The 173rd Airborne is ambushed by over 1,200 Viet Cong in
+              Operation Hump during the Vietnam War, while the 1st Battalion,
+              Royal Australian Regiment fight one of the first set-piece
+              engagements of the war between Australian forces and the Viet
+              Cong at the Battle of Gang Toi. [5]
+ 9 Nov 1965 A Catholic Worker Movement member, Roger Allen LaPorte,
+              protesting against the Vietnam War, sets himself on fire in
+              front of the United Nations building. [5]
+14 Nov 1965 -18 Nov 1965, In the Ia Drang Valley, American troops fight their
+              first large scale battles against the North Vietnamese Army. [1]
+27 Nov 1965 The Pentagon tells U.S. President Lyndon B. Johnson that if
+              planned operations are to succeed, the number of American troops
+              in Vietnam has to be increased from 120,000 to 400,000. [5]
+28 Nov 1965 In response to U.S. President Lyndon B. Johnson's call for
+              "more flags" in Vietnam, Philippine President-elect Ferdinand
+              Marcos announces he will send troops to help fight in South
+              Vietnam. [5]
+16 Dec 1965 General William Westmoreland sends U.S. Secretary of Defense
+              Robert McNamara a request for 243,000 more men by the end of
+              1966. [5]
+   Jan 1966 The Senate Foreign Relations Committee begins hearings questioning
+              the legality of U.S. military operations in Vietnam. [3]
+15 Jul 1966 The United States and South Vietnam begin Operation Hastings to
+              push the North Vietnamese out of the Vietnamese Demilitarized
+              Zone. [1]
+16 Aug 1966 The House Un-American Activities Committee begins investigations
+              of Americans who have aided the Viet Cong. The committee
+              intends to introduce legislation making these activities
+              illegal. Anti-war demonstrators disrupt the meeting and 50
+              people are arrested. [5]
+18 Aug 1966 The Battle of Long Tan ensues after a patrol from the 6th
+              Battalion, Royal Australian Regiment clashes with a Viet Cong
+              force in Phuoc Tuy Province. [5]
+ 9 Oct 1966 South Korean troops commit the Binh Tai Massacre. [5]
+24 Dec 1966 A Canadair CL-44 chartered by the United States military crashes
+              into Binh Thai, South Vietnam killing 129. [5] [6] [9]
+ 6 Jan 1967 United States Marine Corps and ARVN troops launch "Operation
+              Deckhouse Five" in the Mekong River delta. [5]
+15 Apr 1967 Hundreds of thousands of antiwar protesters gather for
+              demonstrations in New York's Central Park, in Washington [1]
+              [3] and in San Francisco. [3]
+24 Apr 1967 American General William Westmoreland says in a news conference
+              that the enemy had "gained support in the United States that
+              gives him hope that he can win politically that which he
+              cannot win militarily". [5]
+28 Apr 1967 Boxer Muhammad Ali refuses his induction into the United
+              States Army [5] [8] [9] and is subsequently stripped of his
+              championship and license. [5] [8]
+   Jul 1967 -Apr 1968, During a series of "border battles" in the remote
+              locations of Dak To, Con Thien and Khe Sanh, U.S. Army and
+              Marines face relentless onslaughts from North Vietnamese. [1]
+ 4 Sep 1967 Operation Swift begins when U.S. Marines engage the North
+              Vietnamese in battle in the Que Son Valley. [5]
+21 Oct 1967 Hundreds of thousands of antiwar protesters gather for
+              demonstrations in New York's Central Park and in Washington. [1]
+   Nov 1967 Communist forces attack U.S. and South Vietnamese positions in
+              the Battle of Dak To. About 1,800 U.S. troops are killed. [3]
+ 2 Nov 1967 US President Lyndon B. Johnson and "The Wise Men" conclude that
+              the American people should be given more optimistic reports
+              on the progress of the war. [5]
+ 3 Nov 1967 The Battle of Dak To begins. [5]
+ 9 Nov 1967 Captain Lance Sijan shot down over North Vietnam. [6]
+11 Nov 1967 In a propaganda ceremony in Phnom Penh, Cambodia, three American
+              prisoners of war are released by the Viet Cong and turned
+              over to "new left" antiwar activist Tom Hayden. [5]
+17 Nov 1967 Acting on optimistic reports that he had been given on November
+              13, U.S. President Lyndon B. Johnson tells the nation that,
+              while much remained to be done, "We are inflicting greater
+              losses than we're taking...We are making progress." [5]
+21 Nov 1967 American General William Westmoreland tells news reporters:
+              "I am absolutely certain that whereas in 1965 the enemy was
+              winning, today he is certainly losing." [5]
+29 Nov 1967 U.S. Secretary of Defense Robert McNamara announces his
+              resignation. [5] [6]
+ 4 Dec 1967 U.S. and South Vietnamese forces engage Viet Cong troops in
+              the Mekong Delta. [5]
+21 Jan 1968 Battle of Khe Sanh: One of the most publicized and controversial
+              battles of the war begins. [5]
+            A group of 31 North Korean commandos trudged undetected for
+              about 40 miles from the border to the presidential Blue
+              House of South Korean President Park Chung-hee in downtown
+              Seoul. South Korean security forces repelled the assault. 28
+              North Koreans and 34 South Koreans were killed. [11]
+24 Jan 1968 The 1st Australian Task Force launches Operation Coburg against
+              the North Vietnamese Army and Viet Cong during wider fighting
+              around Long Binh and Bien Hoa. [5]
+30 Jan 1968 Viet Cong and North Vietnamese armies team up for simultaneous
+              attacks on all U.S. bases plus 110 cities and towns in South
+              Vietnam. Even the U.S. Embassy in Saigon is invaded. [3] The
+              coordinated attacks become known as the Tet Offensive. [3]
+              [5] [9]
+31 Jan 1968 During the Tet Offensive, North Vietnamese and Viet Cong troops
+              launch surprise attacks against approximately one hundred
+              South Vietnamese cities and towns throughout South Vietnam. [1]
+              [2] Viet Cong guerrillas attack the United States embassy [5]
+              [6] in Saigon in the early morning hours. [5]
+   Feb 1968 In the ancient imperial capital of Hue, communist forces execute
+              at least 2,800 people, mostly South Vietnamese civilians. [1]
+ 1 Feb 1968 The execution of Viet Cong officer Nguyen Van Lem by South
+              Vietnamese National Police Chief Nguyen Ngoc Loan is recorded
+              on motion picture film, as well as in an iconic still photograph
+              taken by Eddie Adams. [5]
+17 Feb 1968 The U.S. ends its deadliest week of the war to date, with 543
+              American casualties. [3]
+24 Feb 1968 The Tet Offensive is halted; South Vietnam recaptures Hue. [5]
+25 Feb 1968 One hundred thirty-five unarmed citizens of Ha My village in
+              South Vietnam's Quang Nam Province are killed and buried en
+              masse by South Korean troops in what would come to be known
+              as the Ha My massacre. [5]
+   Mar 1968 U.S. and South Vietnamese troops are finally successful in
+              clearing Viet Cong guerillas from Hue and Saigon. [3]
+ 7 Mar 1968 The United States and South Vietnamese military begin Operation
+              Truong Cong Dinh to root out Viet Cong forces from the area
+              surrounding My Tho. [5]
+10 Mar 1968 Battle of Lima Site 85, concluding the 11th with largest single
+              ground combat loss of United States Air Force members (12)
+              during that war. [5]
+16 Mar 1968 On a "search-and-destroy" operation to locate enemy hideouts,
+              [3] U.S. soldiers kill between 347 and 504 unarmed civilians
+              in My Lai, a Vietnamese village. This event became known as
+              the My Lai massacre [2] [5] and resulted in massive public
+              outrage and fueled the already strong anti-war movement in
+              the US when the news became public. [2]
+31 Mar 1968 Johnson announces he will not run for re-election. [1]
+            In a nationally televised speech, President Johnson says he's
+              halting bombing in Vietnam north of the 20th parallel and
+              proposes starting peace talks. [3]
+12 May 1968 North Vietnamese and Viet Cong forces attack Australian troops
+              defending Fire Support Base Coral. [5]
+26 Jul 1968 South Vietnamese opposition leader Truong Dinh Dzu is sentenced
+              to five years hard labor for advocating the formation of a
+              coalition government as a way to move toward an end to the
+              war. [5]
+31 Oct 1968 Vietnam War October surprise: Citing progress with the Paris
+              peace talks, US President Lyndon B. Johnson announces to the
+              nation that he has ordered a complete cessation of "all air,
+              naval, and artillery bombardment of North Vietnam" effective
+              1 Nov. [5] [9]
+ 5 Nov 1968 Richard Nixon is elected president [1] [3] after making
+              campaign promises to end the draft. He pledges a gradual
+              troop withdrawal. [3]
+11 Nov 1968 Operation Commando Hunt initiated. The goal is to interdict
+              men and supplies on the Ho Chi Minh trail, through Laos into
+              South Vietnam. [5]
+26 Nov 1968 United States Air Force helicopter pilot James P. Fleming rescues
+              an Army Special Forces unit pinned down by Viet Cong fire. He
+              is later awarded the Medal of Honor. [5]
+   Dec 1968 U.S. troops in Vietnam reaches 540,000. [2]
+25 Jan 1969 Nixon appoints Henry Cabot Lodge as chief U.S. negotiator for
+              peace talks in Paris. [3]
+22 Feb 1969 In the middle of another Tet season offensive by North Vietnamese
+              forces against 115 cities, villages, and U.S. bases, 1,140
+              Americans are killed - more than any other single day of the
+              war. [3]
+ 3 Apr 1969 United States Secretary of Defense Melvin Laird announces that
+              the United States will start to "Vietnamize" the war effort. [5]
+ 5 Apr 1969 Massive antiwar demonstrations occur in many U.S. cities. [5]
+10 May 1969 The Battle of Dong Ap Bia begins with an assault on Hill 937. It
+              will ultimately become known as Hamburger Hill. [5]
+   Jul 1969 President Nixon orders the first of many U.S. troop withdrawals
+              from Vietnam in an exit strategy known as Vietnamization. [2]
+25 Jul 1969 U.S. President Richard Nixon declares the Nixon Doctrine, stating
+              that the United States now expects its Asian allies to take
+              care of their own military defense. This is the start of the
+              "Vietnamization" of the war. [5]
+30 Jul 1969 US President Richard Nixon makes an unscheduled visit to
+              South Vietnam and meets with President Nguyen Van Thieu and
+              U.S. military commanders. [5]
+ 4 Aug 1969 At the apartment of French intermediary Jean Sainteny in Paris,
+              American representative Henry Kissinger and North Vietnamese
+              representative Xuan Thuy begin secret peace negotiations. The
+              negotiations will eventually fail. [5]
+ 3 Sep 1969 Communist revolutionary leader Ho Chi Minh dies at the age of
+              79. [2]
+15 Oct 1969 The first Moratorium to End the War in Vietnam, a series of
+              mass demonstrations across the United States, take place;
+              a second happens on 15 Nov. [1]
+ 3 Nov 1969 Nixon goes on television to call for national solidarity on
+              the Vietnam War effort, appealing to a "silent majority"
+              to support his policies. [1] [5]
+12 Nov 1969 Independent investigative journalist Seymour Hersh breaks the
+              story of the My Lai Massacre. [5]
+13 Nov 1969 Anti-war protesters in Washington, D.C. stage a symbolic March
+              Against Death. [5] [6]
+15 Nov 1969 In Washington, D.C., 250,000-500,000 protesters staged a
+              peaceful demonstration against the war, including a symbolic
+              "March Against Death". [5]
+20 Nov 1969 The Plain Dealer publishes explicit photographs of dead villagers
+              from the My Lai Massacre in Vietnam. [5]
+ 1 Dec 1969 The Selective Service conducts its first draft lottery since
+              WWII. [3] [5]
+   Feb 1970 National Security Advisor Henry Kissinger and North Vietnam's
+              Le Duc Tho secretly resume peace negotiations in Paris. [3]
+10 Mar 1970 Captain Ernest Medina is charged by the U.S. military with My
+              Lai war crimes. [5]
+28 Apr 1970 U.S. President Richard Nixon formally authorizes American combat
+              troops to fight communist sanctuaries in Cambodia. [5]
+29 Apr 1970 United States and South Vietnamese forces invade Cambodia to
+              hunt Viet Cong. [5]
+30 Apr 1970 President Nixon announces that American troops will attack enemy
+              locations in Cambodia, which sparks nationwide protests in
+              the US, particularly on college campuses. [2]
+   Apr 1970 U.S. and South Vietnamese forces begin attacking communist
+              bases in the officially neutral country of Cambodia. [3]
+ 1 May 1970 Protests erupt following the announcement by Richard Nixon that
+              the U.S. and South Vietnamese forces would attack Vietnamese
+              communists in a Cambodian Campaign. [5]
+ 4 May 1970 Four days after Nixon announced the expansion of the war
+              into Cambodia, [1] National Guardsmen open fire on anti-war
+              demonstrators at Kent State University in Ohio, killing four
+              [1] [3] [5] [8] and wounding nine. [3] [5] [8]
+ 8 May 1970 Anti-war protests take place across the United States and around
+              the world; [8] in New York, construction workers break up a
+              demonstration on Wall Street. [8] [9]
+ 9 May 1970 In Washington, D.C., 75,000 to 100,000 war protesters demonstrate
+              in front of the White House. [5]
+   Jun 1970 In an effort to reassert control over the war effort, the
+              U.S. Senate repeals the Gulf of Tonkin Resolution and bans
+              American combat troops in Laos and Cambodia. [3]
+24 Aug 1970 Vietnam War protesters bomb Sterling Hall at the University
+              of Wisconsin-Madison, leading to an international manhunt for
+              the perpetrators. [5]
+29 Aug 1970 Chicano Moratorium against the Vietnam War, East Los Angeles,
+              California. Police riot kills three people, including journalist
+              Ruben Salazar. [5]
+ 5 Sep 1970 Operation Jefferson Glenn begins: The United States 101st
+              Airborne Division and the South Vietnamese 1st Infantry Division
+              initiate a new operation in Thua Thien-Hue Province. [5]
+12 Oct 1970 Vietnamization continues as President Nixon announces that
+              the United States will withdraw 40,000 more troops before
+              Christmas. [5]
+ 4 Nov 1970 The United States turns over control of the air base at Binh
+              Thuy in the Mekong Delta to South Vietnam. [5] [6]
+ 5 Nov 1970 The Military Assistance Command, Vietnam reports the lowest
+              weekly American soldier death toll in five years (24). [5]
+ 6 Nov 1970 South Vietnamese forces attack into Cambodia. [6]
+ 9 Nov 1970 The Supreme Court of the United States votes 6-3 against
+              hearing a case to allow Massachusetts to enforce its law
+              granting residents the right to refuse military service in
+              an undeclared war. [5]
+10 Nov 1970 Vietnamization: For the first time in five years, an entire
+              week ends with no reports of American combat fatalities in
+              Southeast Asia. [5]
+17 Nov 1970 Lieutenant William Calley goes on trial for the My Lai
+              Massacre. [5]
+21 Nov 1970 Operation Ivory Coast: A joint United States Air Force and Army
+              team raids the Son Tay prisoner-of-war camp in an attempt to
+              free American prisoners of war thought to be held there. [5]
+   Jan 1971 South Vietnamese troops invade Laos in an attempt to cut off
+              the Ho Chi Minh Trail. Even with U.S. support, they suffer
+              heavy losses and are forced to retreat. [3]
+ 8 Feb 1971 -25 Mar 1971, The South Vietnamese launch operation Lam Son
+              719 against North Vietnamese forces in Laos, which ends in
+              their hasty retreat and defeat. [1]
+23 Apr 1971 Hundreds of Vietnam War veterans opposed to the conflict protest
+              by tossing their medals and ribbons over a wire fence in
+              front of the U.S. Capitol. [8]
+ 6 Jun 1971 The Battle of Long Khanh between Australian and Vietnamese
+              communist forces begins. [5]
+13 Jun 1971 Portions of the Pentagon Papers, which detail how the Johnson
+              Administration expanded the scale of the Vietnam War to the
+              borders of Cambodia and Laos in bombing campaigns without
+              public knowledge, are published in The New York Times. [2]
+              [5] [9]
+18 Aug 1971 Australia and New Zealand decide to withdraw their troops from
+              Vietnam. [5]
+12 Nov 1971 As part of Vietnamization, US President Richard Nixon sets
+              February 1, 1972 as the deadline for the removal of another
+              45,000 American troops from Vietnam. [5]
+29 Feb 1972 Vietnamization: South Korea withdraws 11,000 of its 48,000
+              troops from Vietnam. [5]
+30 Mar 1972 -22 Oct 1972, The Easter Offensive invasion by North Vietnamese
+              forces is successfully repelled by South Vietnamese. [1]
+ 6 Apr 1972 Easter Offensive: American forces begin sustained air strikes
+              and naval bombardments. [5]
+13 Apr 1972 The Battle of An Loc begins. [5]
+22 Apr 1972 Increased American bombing in Vietnam prompts anti-war protests
+              in Los Angeles, New York City, and San Francisco. [5]
+25 Apr 1972 Nguyen Hue Offensive: The North Vietnamese 320th Division
+              forces 5,000 South Vietnamese troops to retreat and traps
+              about 2,500 others northwest of Kontum. [5]
+ 8 May 1972 U.S. President Richard Nixon announces his order to place naval
+              mines in major North Vietnamese ports in order to stem the
+              flow of weapons and other goods to that nation. [5]
+10 May 1972 In the Vietnam War, the US had two fighter ace crews. The USAF's
+              Ritchie and DeBellevue scored their first kill while the USN's
+              Cunningham and Driscoll scored their third, fourth and fifth
+              kills. [5]
+ 8 Jun 1972 Nine-year-old Phan Thi Kim Phuc is burned by napalm, an event
+              captured by Associated Press photographer Nick Ut moments
+              later while the young girl is seen running down a road, in
+              what would become an iconic, Pulitzer Prize-winning photo. [5]
+11 Aug 1972 The last United States ground combat unit leaves South
+              Vietnam. [5] [12]
+23 Oct 1972 Operation Linebacker, a US bombing campaign against North Vietnam
+              in response to its Easter Offensive, ends after five months. [5]
+25 Oct 1972 Nixon suspends bombing of North Vietnam. [10]
+26 Oct 1972 Henry Kissinger declares "Peace is at hand" in Vietnam. [10]
+11 Nov 1972 Vietnamization: The United States Army turns over the massive
+              Long Binh military base to South Vietnam. [5]
+30 Nov 1972 White House Press Secretary Ron Ziegler tells the press that
+              there will be no more public announcements concerning American
+              troop withdrawals from Vietnam because troop levels are now
+              down to 27,000. [5]
+   Dec 1972 Le Duc Tho rejects the terms of a revised peace agreement. In
+              hopes of intimidating North Vietnam into accepting the
+              agreement, Nixon orders Operation Linebacker - an intense aerial
+              bombing of Hanoi and Haiphong over the Christmas holidays. [3]
+18 Dec 1972 President Richard Nixon announces that the United States will
+              engage North Vietnam in Operation Linebacker II, a series of
+              Christmas bombings, after peace talks collapsed with North
+              Vietnam on the 13th. [5]
+26 Dec 1972 As part of Operation Linebacker II, 120 American B-52
+              Stratofortress bombers attacked Hanoi, including 78 launched
+              from Andersen Air Force Base in Guam, the largest single
+              combat launch in Strategic Air Command history. [5]
+30 Dec 1972 The United States halts heavy bombing of North Vietnam. [5]
+   Jan 1973 Kissinger and Le Duc Tho agree on a cease-fire in what comes to be
+              called the Paris Peace Accords. Nixon suspends U.S. military
+              operations in Vietnam. Over the next four months, North
+              Vietnam releases 591 American prisoners of war in what is
+              called Operation Homecoming. [3]
+15 Jan 1973 Citing progress in peace negotiations, President Richard
+              Nixon announces the suspension of offensive action in North
+              Vietnam. [5]
+23 Jan 1973 United States President Richard Nixon announces that a peace
+              accord has been reached in Vietnam. [5]
+27 Jan 1973 The United States and North Vietnam signed the Paris Peace
+              Accords officially ending the Vietnam War. Under its terms,
+              US troops would withdraw from Vietnam. There would be a
+              ceasefire, and US P.O.W.'s would be released. Two years later,
+              the Communists achieved total victory in Vietnam. [7] Colonel
+              William Nolde is killed in action becoming the conflict's
+              last recorded American combat casualty. [5]
+11 Feb 1973 First release of American prisoners of war from Vietnam takes
+              place. [5]
+17 Mar 1973 U.S. Air Force Lt. Col. Robert L. Stirm, a freed prisoner of the
+              Vietnam War, is joyously greeted by his family at Travis Air
+              Force Base in California in a scene captured by Associated Press
+              photographer Slava "Sal" Veder in a photograph that would win
+              the Pulitzer Prize and become iconic; [8] it came to symbolize
+              the end of United States involvement in the Vietnam War. [5]
+29 Mar 1973 The final American combat troops leave South Vietnam. [1] [2]
+              [3] [5] [9] The Selective Service ends the draft, and the
+              U.S. begins a transition to an all-volunteer military. [3]
+15 Aug 1973 The United States bombing of Cambodia ends. [5]
+ 5 Aug 1974 The U.S. Congress places a $1 billion limit on military aid to
+              South Vietnam. [5]
+ 9 Aug 1974 Nixon leaves office. [1]
+   Mar 1975 North Vietnam launches a massive assault on South Vietnam. [2]
+10 Mar 1975 Ho Chi Minh Campaign: North Vietnamese troops attack Ban Me
+              Thuot in the South on their way to capturing Saigon in the
+              final push for victory over South Vietnam. [5]
+11 Mar 1975 North Vietnamese and Viet Cong guerrilla forces establish control
+              over Buon Ma Thuot commune from the South Vietnamese army. [5]
+ 2 Apr 1975 Thousands of civilian refugees flee from Quang Ngai Province
+              in front of advancing North Vietnamese troops. [5]
+ 4 Apr 1975 A United States Air Force Lockheed C-5A Galaxy transporting
+              orphans, crashes near Saigon, South Vietnam shortly after
+              takeoff, killing 172 people. [6] [9]
+21 Apr 1975 President of South Vietnam Nguyen Van Thieu flees Saigon, as
+              Xuan Loc, the last South Vietnamese outpost blocking a direct
+              North Vietnamese assault on Saigon, falls. [15] Thieu resigns
+              after nearly 10 years in office and flees the country. [7]
+25 Apr 1975 As North Vietnamese forces close in on the South Vietnamese
+              capital Saigon, the Australian Embassy is closed and evacuated,
+              almost ten years to the day since the first Australian troop
+              commitment to South Vietnam. [5]
+28 Apr 1975 General Cao Van Vien, chief of the South Vietnamese military,
+              departs for the US as the North Vietnamese Army closed in on
+              victory. [5]
+29 Apr 1975 Operation Frequent Wind: The U.S. begins to evacuate
+              U.S. citizens from Saigon before an expected North Vietnamese
+              takeover. U.S. involvement in the war comes to an end. [5]
+            The North Vietnamese army completes its capture of all parts
+              of South Vietnamese-held Truong Sa Islands. [5]
+30 Apr 1975 Saigon falls. [1] [5] [7] South Vietnam surrenders to communist
+              forces, officially ending the Vietnam War. [5] [7] The North
+              Vietnamese began their offensive in early March when they
+              captured Ban Me Thuot, the capital of Dariac province. The
+              North Vietnamese attack was spearheaded by tanks and other
+              heavy forces. As the North Vietnamese forces advanced, the
+              South Vietnamese Army disintegrated. The United States' only
+              intervention was to airlift key South Vietnamese personnel
+              to safety. [7] The following year, Vietnam is unifed as a
+              communist country, the Socialist Republic of Vietnam. [2]
+13 Nov 1982 Opening of the Vietnam Veteran's Memorial Wall. [1]
+   Jul 1995 Under President Bill Clinton, the U.S. normalizes relations
+              with Vietnam. [1]
+
+
+Citations -
+1.  https://www.usatoday.com/story/news/world/2017/09/11/vietnam-war-timeline-u-s-involvement-over-decades/653693001/
+2.  https://publish.uwo.ca/~acopp2/historyofwar/coldwar/militaryconflicts/vietnamwar/timeline.html
+3.  https://www.moaa.org/micro/vietnam-unchronicled/vietnam-timeline/
+4.  National Geographic magazine
+5.  wikipedia.org
+6.  history.com
+7.  https://www.multieducator.net/
+8.  www.foxnews.com
+9.  gcal, various sources, www.gnu.org/software/gcal
+10.  HistoryOrb.com (renamed OnThisDay.com Jun 2016)
+11.  www.timelinesdb.com
+12.  join1440.com
+

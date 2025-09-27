@@ -1,0 +1,239 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Import DB from User Created Files</title>
+
+<style type="text/css">
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .fieldset-auto-width {
+        display: inline-block;
+    }
+    .dialog2 {
+        width: 50%;
+    }
+    .dialspan {
+        display: inline-block;
+        width: 50%;
+    }
+</style>
+
+<script>
+    /* to prevent Firefox FOUC, this must be here */
+    let FF_FOUC_FIX;
+</script>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog class="dialog2" id="dialog2">
+<span class="dial2span" id="dialog2span"></span>
+<form method="dialog">
+<button class="OK">OK</button>
+<button class="CANCEL">Cancel</button>
+</form>
+</dialog>
+
+<h1>Import DataBase from User Created Files</h1>
+<hr style="width:50%">
+
+<h4> This function will use user-created plain text files as input to import/create a MELGenKey Family DataBase. <br>
+     The contents of the user-created plain text files must be in a particular format. See Help/Info/Docs from the <br>
+     Main Menu for additional information. Fill in the form below and click the 'Import DB' button to continue. <br>
+<br> <br> </h4>
+
+<form id="ImportDB" method="POST">
+
+<input type="hidden" name="ORIGIN" value="ImportDB">
+
+<br>
+<label>Location (Directory/Folder) of Data to Import
+<input type="text" name="dbin_loc">
+</label> 
+
+<br> <br>
+<label>Name to Assign to DataBase on MELGenKey
+<input type="text" name="db_name">
+</label>
+
+<br> <br>
+<label>Focus ID in DataBase
+<input type="text" name="user_dbid">
+</label>
+<label> (optional) </label>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>DataBase Security</legend>
+<p><label> <input type="radio" name="db_prot" value="db_notprot" checked="checked"> Writable/Updatable </label></p>
+<p><label> <input type="radio" name="db_prot" value="db_prot"> Write Protected/NOT Updatable </label></p>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Activate DataBase Upon Successful Import</legend>
+<p><label> <input type="radio" name="db_act" value="db_actyes" checked="checked"> Yes </label></p>
+<p><label> <input type="radio" name="db_act" value="db_actno"> No </label></p>
+</fieldset>
+
+<br> <br>
+<label> <input type="checkbox" id="RemoveDir" name="RemoveDir" > Check Here to Remove the Import Directory/Folder & All It's Contents (only after a successful import) </label>
+<br> <br>
+
+<button type="button" id="button" onclick="sendFormData2Node(); document.body.style.cursor = 'wait'; this.disabled = true;"> Import DB </button>
+
+<h4> Import may take some time depending upon the size of the DataBase. <br> </h4>
+
+</form>
+
+<script>
+
+function sendFormData2Node() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var formData = new FormData(document.getElementById("ImportDB"));
+    let formDataJSON = {};
+
+    for (const [key, value] of formData.entries()) {
+        if (key == 'dbin_loc' && value == '') {
+            var span = document.getElementById("dial1span");
+            span.innerHTML = 'Location of Data to Import is required.<br> <br>';
+            const dialog = document.querySelector("#dial1");
+            dialog.showModal();
+        }
+        if (key == 'db_name' && value == '') {
+            var span = document.getElementById("dial1span");
+            span.innerHTML = 'Name to Assign to DataBase is required.<br> <br>';
+            const dialog = document.querySelector("#dial1");
+            dialog.showModal();
+        }
+        formDataJSON[key] = value;
+    }
+
+    ws.onopen = function() {
+        ws.send("ImportDB" + JSON.stringify(formDataJSON));
+        ws.onmessage = function(e) {
+            if (e.data.search("No fatal errors.") == -1) {
+                var span = document.getElementById("dial1span");
+                span.innerHTML = e.data;
+                const dialog = document.querySelector("#dial1");
+                dialog.showModal();
+                document.body.style.cursor = 'default';
+                document.getElementById("button").disabled = false;  // re-enable button
+            } else {
+                var dialog2 = document.getElementById('dialog2');
+                var okButton = dialog2.querySelector('button.OK');
+                var cancelButton = dialog2.querySelector('button.CANCEL');
+                var dialog2span = document.getElementById("dialog2span");
+                dialog2span.innerHTML = e.data;
+                dialog2.showModal();
+
+                dialog2.addEventListener('click', function handleButtonClicks(e) {
+                    if (e.target.tagName !== 'BUTTON') {
+                        return;
+                    }
+                    dialog2.removeEventListener('click', handleButtonClicks);
+                    if (e.target === okButton) {
+                        var dbin, dbname, dbact, dbid, dbprot, remdir = "no";
+
+                        for (const [key, value] of formData.entries()) {
+                            if (key == 'dbin_loc')
+                                dbin = value;
+                            if (key == 'db_name')
+                                dbname = value;
+                            if (key == 'db_act')
+                                dbact = value;
+                            if (key == 'user_dbid')
+                                dbid = value;
+                            if (key == 'db_prot')
+                                dbprot = value;
+                            if (key == 'RemoveDir')
+                                remdir = "yes";
+                        }
+                        var tosend = "PerformImportDB" + ',' + dbin + ',' + dbname + ',' + dbact + ',' + dbid + ',' + dbprot + ',' + remdir + ",U";
+                        ws.send(tosend);
+
+                        ws.onmessage = function(e) {
+                            var span = document.getElementById("dial1span");
+                            span.innerHTML = e.data;
+                            const dialog = document.querySelector("#dial1");
+                            dialog.showModal();
+                            if (Notifications == 1) {
+                                var audio = new Audio('Include/Sounds/AirplaneDing.wav');
+                                audio.play();
+                            }
+                            document.body.style.cursor = 'default';
+                            document.getElementById("button").disabled = false;  // re-enable button
+                        }
+                    } else {
+                        var span = document.getElementById("dial1span");
+                        span.innerHTML = "Import canceled.<br> <br>";
+                        const dialog = document.querySelector("#dial1");
+                        dialog.showModal();
+                        document.body.style.cursor = 'default';
+                        document.getElementById("button").disabled = false;  // re-enable button
+                    }
+                })
+            }
+        }
+    }
+}
+
+var Notifications;
+
+onload = function init() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var UserPrefs = {};
+
+    UserPrefs.length = 0;
+    ws.onopen = function() {
+        ws.send("GetUserPrefs");
+    }
+    ws.onmessage = function(e) {
+        try {
+            UserPrefs = JSON.parse(e.data);
+            if (UserPrefs.length === 0)
+                Notifications = 1;    // default is notifications on
+            else
+                Notifications = UserPrefs.Not;
+        } catch (error) {
+            reject(error);
+        }
+    }
+    ws.onerror = function(error) {
+        reject(error);
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<br> <br>
+<hr style="width:50%">
+
+</body>
+</html>

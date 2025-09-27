@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Miscellaneous Functions</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    #dial1 {
+        width: 50%;
+    }
+    #dial1span {
+        display: inline-block;
+        width: 50%;
+    }
+    .fieldset-auto-width {
+         display: inline-block;
+    }
+</style>
+
+<script>
+    /* to prevent Firefox FOUC, this must be here */
+    let FF_FOUC_FIX;
+</script>
+
+<script type="text/javascript">
+
+var email, DBinfo;
+
+function PrepEmail() {
+    var pnt;
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    ws.onerror = function () {
+        var span = document.getElementById("dial1span");
+        var msg = "It seems the node/server is not running.<br>The server is needed in order to know the email address " +
+                  "of the Creator of DataBase.<br> <br>";
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = msg;
+        dialog1.showModal();
+    }
+
+    ws.onopen = function() {
+        ws.send("DBInfo");
+        ws.onmessage = function(e) {
+            if (e.data == -1 || e.data == -2) {
+                var span = document.getElementById("dial1span");
+                var msg = 'Email address for Creator of DataBase not available.<br> <br>';
+                const dialog1 = document.querySelector("#dial1");
+                span.innerHTML = msg;
+                dialog1.showModal();
+            } else {
+                DBinfo = e.data;
+                pnt = DBinfo.indexOf("DBCreatorEmail =");
+                if (pnt == -1) {
+                    var span = document.getElementById("dial1span");
+                    var msg = 'Email address for Creator of DataBase not available.<br>Use ' +
+                              '"Miscellaneous Functions -> Display Info for Active DataBase" to see if<br>other contact information ' +
+                              'is provided for the Creator of the Family DataBase.<br> <br>';
+                    const dialog1 = document.querySelector("#dial1");
+                    span.innerHTML = msg;
+                    dialog1.showModal();
+                } else {
+                    email = getData(DBinfo, pnt);
+                    if (email == "not specified") {
+                        var span = document.getElementById("dial1span");
+                        var msg = 'Email address for Creator of DataBase not available.<br>Use ' +
+                                  '"Miscellaneous Functions -> Display Info for Active DataBase" to see if<br>other contact information ' +
+                                  'is provided for the Creator of the Family DataBase.<br> <br>';
+                        const dialog1 = document.querySelector("#dial1");
+                        span.innerHTML = msg;
+                        dialog1.showModal();
+                    } else {
+                        const dialog = document.querySelector("#dial2");
+                        dialog.showModal();
+                    }
+                }
+            }
+        } 
+    }
+
+    const terminationEvent = 'onpagehide' in self ? 'pagehide' : 'unload';
+    window.addEventListener(terminationEvent, (event) => {
+        if (event.persisted === false) {
+            // client is gone
+            ws.onclose = function () { };
+            ws.close();
+        }
+    })
+}
+
+function DoEmail () {
+    var header, pnt, version;
+
+    email = email.replaceAll(';', ',');   /* replace ; (used by MELGenKey) with , (used by mailer) */
+    header = "mailto:" + email + "?subject=";
+    pnt = DBinfo.indexOf("DBName =");
+    if (pnt == -1)
+        header += "Genealogy DataBase";
+    else {
+        header += getData(DBinfo, pnt);
+        pnt = DBinfo.indexOf("DBVersion =");
+        if (pnt != -1) {
+            version = getData(DBinfo, pnt);
+            header += " (" + version + ")";
+        }
+    }
+    /* use a new tab to send email */
+    const windowRef = window.open(header, '_blank');
+    windowRef.focus();
+}
+
+function checkServer(path) {
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    ws.onerror = function () {
+        var span = document.getElementById("dial1span");
+        var msg = "It seems the node/server is not running.<br>Cannot perform function without the server running.<br> <br>";
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = msg;
+        dialog1.showModal();
+    }
+    ws.onopen = function() {
+        window.open(path, '_blank');
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script> 
+
+<script type="text/javascript" src="clib.js"></script>
+
+<script>
+
+/* prepare an email for sending to MELGenKey developer */
+function SendEmail(subj) {
+    const windowRef = window.open("mailto:MarshallELake@gmail.com?subject=" + subj, '_blank');
+
+    windowRef.focus();
+    setTimeout(function(){
+        if(!windowRef.document.hasFocus())
+            windowRef.close();
+    }, 500);
+}
+
+onload = function init() {
+    /* if server not running or DB not active, disable certain selections */
+    check4ActiveDB().then((res) => {
+        if (res == -2 || res == -1) {
+            document.getElementById("SEmail").disabled = true;
+            document.getElementById("BackUp").disabled = true;
+            document.getElementById("PDF").disabled = true;
+            document.getElementById("Slideshow").disabled = true;
+            document.getElementById("DBStats").disabled = true;
+            document.getElementById("SetFocusID").disabled = true;
+            document.getElementById("PassProt").disabled = true;
+            document.getElementById("WriteProt").disabled = true;
+            document.getElementById("CopyDB").disabled = true;
+            document.getElementById("PossConn").disabled = true;
+            document.getElementById("NotesActDB").disabled = true;
+            document.getElementById("AddResDB").disabled = true;
+            document.getElementById("AVIntroDB").disabled = true;
+            document.getElementById("KTDB").disabled = true;
+            document.getElementById("CreateGedcom").disabled = true;
+            document.getElementById("SolveDB").disabled = true;
+            document.getElementById("CreateIndex").disabled = true;
+            document.getElementById("SendData").disabled = true;
+            document.getElementById("MsgBrdDB").disabled = true;
+            document.getElementById("EthDB").disabled = true;
+            document.getElementById("dbinfo").disabled = true;
+        }
+        if (res == -2) {
+            document.getElementById("MsgBrdMGK").disabled = true;
+            document.getElementById("UserPref").disabled = true;
+            document.getElementById("ImportAddOn").disabled = true;
+            document.getElementById("ViewLog").disabled = true;
+            document.getElementById("Merge2DBs").disabled = true;
+            document.getElementById("SplitDB").disabled = true;
+            document.getElementById("alldbinfo").disabled = true;
+            document.getElementById("GenNotes").disabled = true;
+            document.getElementById("MonitorWeb").disabled = true;
+            document.getElementById("MngRecur").disabled = true;
+        }
+        if (res == -3) {
+            document.getElementById("PDF").disabled = true;
+            document.getElementById("KTDB").disabled = true;
+            document.getElementById("SetFocusID").disabled = true;
+            document.getElementById("CreateGedcom").disabled = true;
+            document.getElementById("SolveDB").disabled = true;
+            document.getElementById("CreateIndex").disabled = true;
+            document.getElementById("EthDB").disabled = true;
+        }
+    })
+
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1)
+            document.getElementById("TitleDBName").innerHTML = 'Active Family DataBase - ' + e.data; 
+        else
+            document.getElementById("TitleDBName").innerHTML = 'Active Family DataBase - none'; 
+    }
+}
+
+</script>
+
+</head>
+
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial2">
+<span>You are about to send an email to the Creator of the active Family DataBase.<br>Click OK to continue, or click Cancel.<br><br></span>
+<form method="dialog">
+<button type="submit" onclick="DoEmail()">OK</button>
+<button formmethod="dialog" type="submit">Cancel</button>
+</form>
+</dialog>
+
+<dialog id="dial3">
+<span>It seems the node/server is not running.<br>Cannot perform function without the server running.<br> <br></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial4">
+<span id="dial4span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<h1>Miscellaneous Functions</h1>
+<span id="TitleDBName"></span>
+<hr style="width:50%">
+<br>
+
+<fieldset class="fieldset-auto-width">
+<legend>Related to Active DataBase</legend>
+<br>
+<input type="button" id="BackUp" disabled onclick="checkServer('BackUp.html')" value="Back Up Active DataBase"/>
+<br><br>
+<input type="button" id="PDF" disabled onclick="checkServer('PDF.html')" value="Produce PDF"/>
+<br> <br>
+<input type="button" id="Slideshow" onclick="checkServer('Slideshow.html')" value="Slideshow"/>
+<br> <br>
+<input type="button" id="DBStats" disabled onclick="checkServer('DBStats.html')" value="Active DataBase Stats"/>
+<br> <br>
+<input type="button" id="SetFocusID" onclick="checkServer('SetFocusID.html')" value="Set Focus ID for Active DataBase"/>
+<br> <br>
+<input type="button" id="CopyDB" onclick="checkServer('CopyData.html')" value="Copy Active DataBase"/>
+<br> <br>
+<input type="button" id="PossConn" onclick="PossConn()" value="Browse Possible Connections to Active DataBase"/>
+<br> <br>
+<input type="button" id="NotesActDB" onclick="checkServer('NotesActDB.html')" value="Notes for Active DataBase"/>
+<br> <br>
+<input type="button" id="AddResDB" disabled onclick="checkServer('AddResearch.html')" value="Additional Research Regarding Active DataBase"/>
+<br> <br>
+<input type="button" id="AVIntroDB" disabled onclick="checkServer('AVIntro.html')" value="Audio/Video Intro for Active DataBase"/>
+<br> <br>
+<input type="button" id="KTDB" disabled onclick="checkServer('KnowledgeTree.html')" value="Knowledge Tree for Active DataBase"/>
+<br> <br>
+<input type="button" id="CreateGedcom" disabled onclick="checkServer('GEDCOM.html')" value="Create a GEDCOM from Active DataBase"/>
+<br> <br>
+<input type="button" id="SolveDB" disabled onclick="checkServer('SolveProblem.html')" value="Solve a Problem in Active DataBase"/>
+<br> <br>
+<input type="button" id="CreateIndex" onclick="checkServer('CreateIndex.html')" value="Create an Index for Active DataBase"/>
+<br> <br>
+<input type="button" id="RenumDB" disabled onclick="checkServer('Renumber.html')" value="Renumber Families/People in Active DataBase"/>
+<br> <br>
+<button type="button" id="SendData" onclick='PrepEmail()'>Send Corrected/Additional Data to Creator of Active DataBase</button>
+<br> <br>
+<input type="button" id="MsgBrdDB" disabled onclick="checkServer('MsgBrdDB.html')" value="Access Message Board Regarding Active DataBase"/>
+<br> <br>
+<input type="button" id="EthDB" disabled onclick="checkServer('EthPct.html')" value="Ethnicity Percentages for an Individual in Active DataBase"/>
+<br> <br>
+<button type="button" id="dbinfo" onclick='DBInfo()'>Display Info for Active DataBase</button>
+<br> <br>
+<input type="button" id="PubDB" disabled onclick="checkServer('PubDB.html')" value="Publish"/>
+<br> <br>
+<input type="button" id="ChkLinks" onclick="checkServer('ChkLinks.html')" value="Link Checker for Active DataBase"/>
+<br> <br>
+<input type="button" id="ChatDB" disabled onclick="checkServer('ChatDB.html')" value="Chat With Creator of Active DataBase"/>
+<br><br>
+<button type="button" id="SEmail" onclick="PrepEmail()">Contact Creator/Maintainer/Provider of This Data via email</button>
+<br> <br>
+</fieldset>
+<br> <br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Other</legend>
+<br>
+<input type="button" onclick="window.open('DateAgeCalc.html','_blank')" value="Date/Age Calculator"/>
+<br> <br>
+<input type="button" onclick="window.open('DayOfWeek.html','_blank')" value="Day of the Week Calculator"/>
+<br> <br>
+<input type="button" onclick="window.open('MoneyConv.html','_blank')" value="Money Value Conversion"/>
+<br> <br>
+<input type="button" id="Merge2DBs" disabled onclick="checkServer('MergeDBs.html')" value="Merge Two Family DataBases Into One"/>
+<br> <br>
+<input type="button" id="SplitDB" disabled onclick="checkServer('SplitDB.html')" value="Split One Family DataBase Into Two"/>
+<br> <br>
+<input type="button" id="PassProt" disabled onclick="checkServer('PasswdProtect.html')" value="Password Protection for a DataBase"/>
+<br> <br>
+<input type="button" id="WriteProt" disabled onclick="checkServer('WriteProt.html')" value="Write-protection for a DataBase"/>
+<br> <br>
+<input type="button" onclick="window.open('MapDeed.html','_blank')" value="Map Deed Boundaries"/>
+<br> <br>
+<button type="button" id="SendIdea" onclick='SendEmail("MELGenKey (v20250926) Suggestions")'>Send Suggestions/Ideas to Developer of MELGenKey</button>
+<br> <br>
+<input type="button" id="MsgBrdMGK" disabled onclick="checkServer('MsgBrdMELGenKey.html')" value="Access MELGenKey Message Board"/>
+<br> <br>
+<input type="button" id='GenNotes' onclick="checkServer('GenNotes.html')" value="General Notes"/>
+<br> <br>
+<button type="button" id="alldbinfo" disabled onclick='AllDBInfo()'>Display Info for All DataBases</button>
+<br> <br>
+<input type="button" disabled onclick="checkServer('EditUserInfo.html')" value="Display/Edit Info for User"/>
+<br> <br>
+<button type="button" onclick='MELGenKeyInfo()'>Display Info for MELGenKey</button>
+<br> <br>
+<input type="button" id="UserPref" onclick="checkServer('UserPref.html')" value="General User Preferences"/>
+<br> <br>
+<input type="button" id="ImportAddOn" disabled onclick="checkServer('ImportAddOn.html')" value="Import Add-on for MELGenKey"/>
+<br> <br>
+<input type="button" id="ChatMELGenKey" disabled onclick="checkServer('ChatMELGenKey.html')" value="Chat With MELGenKey Maintainer"/>
+<br> <br>
+<input type="button" id="TimelineFile" disabled onclick="checkServer('TimelineFile.html')" value="Non-Family DataBase Timeline File"/>
+<br> <br>
+<input type="button" id="MonitorWeb" onclick="checkServer('MonitorWeb.html')" value="Monitor Web Pages for Content Changes"/>
+<br> <br>
+<input type="button" id="MngRecur" onclick="checkServer('ManageRecurRep.html')" value="Manage Recurring Reports"/>
+<br> <br>
+<input type="button" id="ViewLog" onclick='ViewLog()' value="MELGenKey Log Messages"/>
+<br> <br>
+</fieldset>
+
+<script>
+
+function MELGenKeyInfo() {
+    var info;
+
+    info = "Program Name - MEL Genealogy Key<br>" +
+           "Also Known As - MELGenKey<br>" +
+           "Program Version - v20250926<br>" +
+           "Program Author - Marshall Lake<br>" +
+           "Contact - marshallelake@gmail.com, genealogy@mlake.net<br><br>" +
+           'Program Description - MELGenKey is a helper application for genealogists. MELGenKey is a "Full Stack" application ' +
+           "written in HTML, CSS and JavaScript. It should run as is on Windows, MacOS or Linux.<br><br>" +
+           "Location of MELGenKey on this computer - ";
+
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    ws.onopen = function() {
+        ws.send("SysLocation");
+        ws.onmessage = function(e) {
+            info += e.data;
+            var span = document.getElementById("dial1span");
+            var msg = info + "<br> <br>";
+            const dialog1 = document.querySelector("#dial1");
+            span.innerHTML = msg;
+            dialog1.showModal();
+        } 
+    }
+
+    ws.onerror = function () {
+        info += "Unknown.<br>node/server is not running.<br>The server is needed in order to know the location of MELGenKey.<br> <br>";
+        var span = document.getElementById("dial1span");
+        var msg = info;
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = msg;
+        dialog1.showModal();
+    }
+}
+
+function DBInfo() {
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    ws.onopen = function() {
+        ws.send("DBInfo");
+
+        ws.onmessage = function(e) {
+            if (e.data == -1) {
+                var span = document.getElementById("dial1span");
+                var msg = 'No DataBase is active.<br>Activate a DataBase via "Family DataBase Activation" from the main menu.<br> <br>';
+                const dialog1 = document.querySelector("#dial1");
+                span.innerHTML = msg;
+                dialog1.showModal();
+            } else {
+                var DBdata = e.data;
+
+                ws.send("DBActiveInfo");
+                    ws.onmessage = function(e) {      /* at this point there's always an active DB meaning we'll always get back data from node */
+                    var span = document.getElementById("dial1span");
+                    var msg = alertFormat (DBdata, e.data);
+                    const dialog1 = document.querySelector("#dial1");
+                    span.innerHTML = msg;
+                    dialog1.showModal();
+                }
+            }
+        } 
+    }
+
+    ws.onerror = function () {
+        var span = document.getElementById("dial1span");
+        var msg = "node/server doesn't seem to be running.<br>The server is needed in order to see info for the active Family DataBase.<br> <br>";
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = msg;
+        dialog1.showModal();
+    }
+}
+
+function alertFormat (DBinfo, ActiveDBInfo) {
+    var fmt = "", data, num = 1, dbpnt = 0, contents;
+
+    if (DBinfo != -2) {
+        fmt += "DataBase Name - ";
+        data = DBinfo.indexOf("DBName =");
+        if (data == -1) {
+            data = ActiveDBInfo.indexOf("DBName =");
+            if (data == -1)
+                fmt += "not specified";
+            else
+                fmt += getData(ActiveDBInfo, data);
+        }
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br>DataBase Version - ";
+        data = DBinfo.indexOf("DBVersion =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br><br>DataBase Description - ";
+        data = DBinfo.indexOf("DBDescription =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br><br>DataBase Creator - ";
+        data = DBinfo.indexOf("DBCreator =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br><br>DataBase Creator Contact Info:";
+        fmt += "<br>Address - ";
+        data = DBinfo.indexOf("DBCreatorAddr =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br>Email - ";
+        data = DBinfo.indexOf("DBCreatorEmail =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br>Phone - ";
+        data = DBinfo.indexOf("DBCreatorPhone =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br>Web Site - ";
+        data = DBinfo.indexOf("DBCreatorURL =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br>Live Chat - ";
+        data = DBinfo.indexOf("DBCreatorLiveChat =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br>DB Message Board - ";
+        data = DBinfo.indexOf("DBMessageBoard =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br>DB Blog - ";
+        data = DBinfo.indexOf("DBBlog =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br><br>Date of Installation of Family DataBase to MELGenKey - ";
+        data = DBinfo.indexOf("DBInstallationDate =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br><br>Location of DataBase on this Computer - ";
+        data = DBinfo.indexOf("DBLocation =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br><br>DataBase Citation - ";
+        data = DBinfo.indexOf("DBCitation =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(DBinfo, data);
+
+        fmt += "<br><br>DataBase edit info:";
+        while (1) {
+            data = DBinfo.indexOf("DBEdits", dbpnt);
+            if (data == -1) {
+                if (num == 1)
+                    fmt += "<br>No edits have been performed to the DataBase.";
+                break;
+            }
+            else {
+                fmt += "<br>Edit #" + num + " performed ";
+                fmt += getData(DBinfo, data);
+                data = DBinfo.indexOf("Change = ", data);
+                if (data == -1)
+                    break;
+                fmt += "<br>The changes made in Edit #" + num + " are noted in the file ";
+                fmt += getData(DBinfo, data) + ' in the "Other" directory/folder';
+                data = DBinfo.indexOf("CreatorInformed = ", data);
+                if (data == -1)
+                    break;
+                fmt += "<br>The creator of the Family DataBase was ";
+                contents = getData(DBinfo, data);
+                if (contents == 'no')
+                    fmt += "NOT ";
+                fmt += "informed of Edit #" + num + '<br>';
+
+                num++;
+                dbpnt = data;
+            }
+        }
+    } else
+         fmt += 'DBinfo.txt file not available for active DataBase. This is an optional file normally provided by the ' +
+                'creator of the data.<br><br>';
+
+    if (DBinfo == -2) {
+        fmt += "DataBase Name - ";
+        data = ActiveDBInfo.indexOf("DBName =");
+        if (data == -1)
+            fmt += "not specified";
+        else
+            fmt += getData(ActiveDBInfo, data);
+    }
+
+    data = ActiveDBInfo.indexOf('DBActive = "yes"');
+    if (data == -1)
+        fmt += "<br><br>***** INTERNAL ERROR. No match on DBActive in ActiveDBInfo. Please report this to MELGenKey maintainer. *****";
+    else
+        fmt += "<br>This Family DataBase is currently active in MELGenKey.";
+
+    fmt += "<br>This DataBase is identified with ID# - ";
+    data = ActiveDBInfo.indexOf("DBUserID =");
+    if (data == -1)
+        fmt += "none";
+    else
+        fmt += getData(ActiveDBInfo, data);
+
+    if (DBinfo == -2) {
+        fmt += "<br><br>DataBase location on this computer - ";
+        data = ActiveDBInfo.indexOf("DBLocation =");
+        if (data == -1)
+            fmt += "unlocated";
+        else
+            fmt += getData(ActiveDBInfo, data);
+    }
+
+    fmt += "<br>DataBase status - ";
+    data = ActiveDBInfo.indexOf("DBStatus =");
+    if (data == -1)
+        fmt += "unknown";
+    else {
+        var status = getData(ActiveDBInfo, data);
+        switch (status) {
+            case '0':
+                fmt += "unverified";
+                break;
+            case '1':
+                fmt += "verified";
+                break;
+            case '2':
+                fmt += "data modified, unverified";
+                break;
+            case '3':
+                fmt += "data modified, verified";
+                break;
+            case '4':
+                fmt += "data failed verification";
+                break;
+            default:
+                fmt += "unknown";
+        }
+    }
+
+    fmt += "<br>DataBase security - ";
+    data = ActiveDBInfo.indexOf("DBSecurity =");
+    if (data == -1)
+        fmt += "unknown";
+    else {
+        var security = getData(ActiveDBInfo, data);
+        if (security == 0)
+            fmt += "Writable/Updatable";
+        else
+            fmt += "Write Protected/NOT Updatable";
+    }
+    fmt += "<br> <br>";
+
+    return (fmt);
+}
+
+function PossConn() {
+    /* view UnsureIfRelated directory */
+    const ws = new WebSocket('ws://localhost:3000/');
+    var pnt;
+
+    ws.onopen = function() {
+        ws.send("DBLocation");
+    }
+    ws.onmessage = function(e) {
+        pnt = './' + e.data + '/UnsureIfRelated';
+
+        ws.send("FEXIST" + pnt);
+        ws.onmessage = function(e) {
+            if (e.data == "-1") {
+                var span = document.getElementById("dial4span");
+                const dialog2 = document.querySelector("#dial4");
+                span.innerHTML = "No such files are available.<br>The 'UnsureIfRelated' directory/folder does not exist.<br> <br>";
+                dialog2.showModal();
+            } else
+                // open in a new tab
+                window.open(e.data, '_blank');
+        }
+    }
+    ws.onerror = function () {
+        const dialog = document.querySelector("#dial3");
+        dialog.showModal();
+    }
+}
+
+function ViewLog() {
+    /* get log messages & display them in a new tab */
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("ViewLog");
+
+        ws.onmessage = function(e) {
+            var w = window.open('about:blank');
+            w.document.open();
+            w.document.write(e.data);
+            w.document.close();
+        }
+    }
+    ws.onerror = function () {
+        var span = document.getElementById("dial1span");
+        var msg = "It seems the node/server is not running.<br>" +
+                  " The server is needed in order to view the Log messages.<br> <br>";
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = msg;
+        dialog1.showModal();
+    }
+}
+
+function getData (DB, p) {
+    var pos1 = DB.indexOf('"', p) + 1;
+    var pos2 = DB.indexOf('"', pos1);
+    var data = DB.substring(pos1, pos2);
+    if (data == "")
+        return ("not specified")
+    else
+        return (data);
+}
+
+</script>
+
+<br> <br>
+<hr style="width:50%">
+
+</body>
+</html>

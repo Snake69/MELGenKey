@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>On This Day</title>
+
+<style type="text/css">
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .fieldset-auto-width {
+         display: inline-block;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial2">
+<span id="dial2span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>On This Day</h1>
+<span id="TitleDBName"></span>
+<hr style="width:50%">
+<br>
+
+<script type="text/javascript" src="clib.js"></script>
+
+<script>
+
+var Notifications, UserPrefs = {};
+
+onload = function init() {
+    /* if server not running or DB not active, disable certain selections */
+    check4ActiveDB().then((res) => {
+        var span = document.getElementById("dial1span");
+        const dialog1 = document.querySelector("#dial1");
+        if (res == -3 || res == -2 || res == -1) {
+            document.getElementById("FamDB").disabled = true;
+            document.getElementById("OBirths").disabled = true;
+            document.getElementById("OBaptisms").disabled = true;
+            document.getElementById("ODeaths").disabled = true;
+            document.getElementById("OMarriages").disabled = true;
+            document.getElementById("OBurials").disabled = true;
+            document.getElementById("ODeeds").disabled = true;
+            document.getElementById("OResidences").disabled = true;
+            document.getElementById("OOccupations").disabled = true;
+            document.getElementById("IPeople").disabled = true;
+
+            if (res == -1) {
+                span.innerHTML = "No Family DataBase is active.<br>Family-related options will be disabled.<br> <br>";
+                dialog1.showModal();
+            }
+            if (res == -3) {
+                span.innerHTML = "The active Family DataBase is not verified.<br>Family-related options will be disabled.<br> <br>";
+                dialog1.showModal();
+            }
+        }
+        if (res == -2) {
+            document.getElementById("General").disabled = true;
+            document.getElementById("Births").disabled = true;
+            document.getElementById("Deaths").disabled = true;
+            document.getElementById("RevWar").disabled = true;
+            document.getElementById("FrIndWar").disabled = true;
+            document.getElementById("WarOf1812").disabled = true;
+            document.getElementById("KorWar").disabled = true;
+            document.getElementById("VietWar").disabled = true;
+            document.getElementById("CivilWar").disabled = true;
+            document.getElementById("WWI").disabled = true;
+            document.getElementById("WWII").disabled = true;
+            document.getElementById("EuroNA").disabled = true;
+            document.getElementById("USGeo").disabled = true;
+            document.getElementById("WorldGeo").disabled = true;
+            document.getElementById("CanadaGeo").disabled = true;
+            document.getElementById("MLB").disabled = true;
+        }
+    })
+
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1)
+            document.getElementById("TitleDBName").innerHTML = 'Active Family DataBase - ' + e.data; 
+        else
+            document.getElementById("TitleDBName").innerHTML = 'Active Family DataBase - none'; 
+    }
+
+    UserPrefs.length = 0;
+    ws.onopen = function() {
+        ws.send("GetUserPrefs");
+    }
+    ws.onmessage = function(e) {
+        try {
+            UserPrefs = JSON.parse(e.data);
+            if (UserPrefs.length === 0)
+                Notifications = 1;    // default is notifications on
+            else
+                Notifications = UserPrefs.Not;
+        } catch (error) {
+            alert("Error getting User Preferences.");
+        }
+    }
+    ws.onerror = function(error) {
+        // do nothing
+    }
+}
+
+</script>
+
+<h3>
+A Family DataBase must be active in order to include Family DataBase events.<br>
+On This Day events will include only items which have a full date attached (month, day & year).<br>
+</h3>
+
+<form id="OnThisDay" method="POST">
+<input type="hidden" name="ORIGIN" value="OnThisDay">
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Both Month and Day are Required</legend>
+<label> <input type="number" size="3" max="12" min="1" id="Month" name="Month" value="1"> Month </label>
+<br> <br>
+<label> <input type="number" size="3" max="31" min="1" id="Day" name="Day" value="1"> Day </label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Check to include (optional)</legend>
+<label> <input type="checkbox" id="FamDB" name="FamDB"> Active Family DataBase </label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Events to Omit from Family DataBase (all optional)</legend>
+<label> <input type="checkbox" id="OBirths" name="OBirths"> Births </label>
+<br> <br>
+<label> <input type="checkbox" id="OBaptisms" name="OBaptisms"> Baptisms </label>
+<br> <br>
+<label> <input type="checkbox" id="ODeaths" name="ODeaths"> Deaths </label>
+<br> <br>
+<label> <input type="checkbox" id="OMarriages" name="OMarriages"> Marriages </label>
+<br> <br>
+<label> <input type="checkbox" id="OBurials" name="OBurials"> Burials </label>
+<br> <br>
+<label> <input type="checkbox" id="ODeeds" name="ODeeds"> Deeds </label>
+<br> <br>
+<label> <input type="checkbox" id="OResidences" name="OResidences"> Residences </label>
+<br> <br>
+<label> <input type="checkbox" id="OOccupations" name="OOccupations"> Occupations </label>
+<br> <br>
+<label> <input type="checkbox" id="IPeople" name="IPeople"> Images of People </label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Other Types of Events Outside of Family DataBase to Include (all optional)</legend>
+<label> <input type="checkbox" id="General" name="General" value="General"> General Events </label>
+<br> <br>
+<label> <input type="checkbox" id="Births" name="Births" value="Births"> Births of Notable People </label>
+&nbsp; &nbsp;
+<label> <input type="checkbox" id="Deaths" name="Deaths" value="Deaths"> Deaths of Notable People </label>
+<br> <br>
+<label> <input type="checkbox" id="FrIndWar" name="FrIndWar" value="FrIndWar"> French and Indian War </label>
+&nbsp; &nbsp;
+<label> <input type="checkbox" id="RevWar" name="RevWar" value="RevWar"> American Revolutionary War </label>
+<br> <br>
+<label> <input type="checkbox" id="WarOf1812" name="WarOf1812" value="WarOf1812"> War of 1812 </label>
+&nbsp; &nbsp;
+<label> <input type="checkbox" id="CivilWar" name="CivilWar" value="CivilWar"> American Civil War </label>
+<br> <br>
+<label> <input type="checkbox" id="WWI" name="WWI" value="WWI"> World War I </label>
+&nbsp; &nbsp;
+<label> <input type="checkbox" id="WWII" name="WWII" value="WWII"> World War II </label>
+<br> <br>
+<label> <input type="checkbox" id="KorWar" name="KorWar" value="KorWar"> Korean War </label>
+&nbsp; &nbsp;
+<label> <input type="checkbox" id="VietWar" name="VietWar" value="VietWar"> Vietnam War </label>
+<br> <br>
+<label> <input type="checkbox" id="EuroNA" name="EuroNA" value="EuroNA"> European Colonization of North America </label>
+<br> <br>
+<label> <input type="checkbox" id="USGeo" name="USGeo" value="USGeo"> United States Geography </label>
+&nbsp; &nbsp;
+<label> <input type="checkbox" id="CanadaGeo" name="CanadaGeo" value="CanadaGeo"> Canada Geography </label>
+<br> <br>
+<label> <input type="checkbox" id="WorldGeo" name="WorldGeo" value="WorldGeo"> World Geography (except Canada &amp; US) </label>
+<br> <br>
+<label> <input type="checkbox" id="MLB" name="MLB" value="MLB"> Major League Baseball </label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Look of the Report (all optional)</legend>
+<label> <input type="checkbox" id="YrOnly" name="YrOnly" value="YrOnly"> Show Only Year for Events on Report </label>
+<br> <br>
+<label> <input type="checkbox" id="DateRepeat" name="DateRepeat" value="DateRepeat"> Do Not Show Repeat Identical Dates for Events on Report </label>
+</fieldset>
+<br> <br> <br>
+
+<button type="button" id="button" onclick='sendFormData2Node(); document.body.style.cursor = "wait"; this.disabled = true;'> Create On This Day Report </button>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<button type="button" id="buttonR" onclick='recurring();'> Establish Recurring Daily Report </button>
+
+<h4> Creating an On This Day Report may take some time depending upon the settings above and the size of the Family DataBase. </h4>
+<br> <br>
+
+<div hidden id="divReccur">
+For a daily "On This Day Report" to be sent via email, the information below is needed.<br><br>
+Notes - Recurring "On This Day Reports" will be based upon the month and day it is sent (i.e., the month/day changes everyday).<br>
+The month and day that is set in the "On This Day Report" form isn't used for Recurring reports.<br>
+The "From:" line in emails is overwritten by some relays (gmail for one).<br>
+The server/node needs to be running at the time the message is to be sent.<br>
+If the Active Family DataBase is included, the info will reflect whatever Family DataBase is active at the time<br>
+the On This Day Report is created rather than whatever Family DataBase is active at the time the report is emailed.<br>
+If all info below is entered and there are no other errors, the settings will be verified to ensure email<br>
+can be sent. If the Relay Host, Login or Password are incorrect an error message will display quickly.<br>
+But, if Port is incorrect it may take several minutes to receive an error message.<br>
+<br>
+<label>Relay Host (usually your ISP): <input type="text" name="hostR"></label>
+<br> <br>
+<label>Login: <input type="text" id="loginR" name="loginR"></label>
+<br> <br>
+<label>Password: <input type="text" id="passwdR" name="passwdR"></label>
+<br> <br>
+<label>Port: <input type="text" id="portR" name="portR"></label>
+<br> <br>
+<label>From: <input type="text" id="fromR" name="fromR"></label>
+<br> <br>
+<label>To: <input type="text" id="toR" name="toR"></label>
+<br> <br>
+<label>Subject (default: "On This Day Report for [day month]"): <input type="text" name="subjectR"></label>
+<br> <br>
+<label>Time of Day to Send Daily Report (enter 24-hour time, 0000 = midnight): <input style='width:3em' type="number" pattern="[0-9]" onchange="set2Pos()" min="00" max="23" value="00" id = "timeHR" name="timeHR"></label>
+<label><input style='width:3em' type="number" pattern="[0-9]" onchange="set2Pos()" min="00" max="59" value="00" id = "timeMR" name="timeMR"></label>
+<br> <br>
+<button type="button" id="buttonRC" onclick='continueRecur();'> Continue Establishing Recurring Daily Report </button>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<button type="button" id="buttonRCan" onclick='cancelRec();'> Cancel </button>
+</div>
+<br> <br>
+
+</form>
+
+<script>
+
+function sendFormData2Node() {
+    var formData = new FormData(document.getElementById("OnThisDay"));
+    let formDataJSON = {};
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    for (const [key, value] of formData.entries())
+        formDataJSON[key] = value;
+
+    ws.onopen = function() {
+        ws.send("OnThisDay" + JSON.stringify(formDataJSON));
+        ws.onmessage = function(e) {
+            if (e.data.search("On This Day Report") == -1) {
+                var span = document.getElementById("dial2span");
+                const dialog2 = document.querySelector("#dial2");
+                span.innerHTML = e.data;
+                dialog2.showModal();
+                document.body.style.cursor = 'default';
+                document.getElementById("button").disabled = false;  // re-enable button
+            } else {
+                /* open in a new tab */
+                var w = window.open('about:blank');
+                w.document.open();
+                w.document.write(e.data);
+                w.document.close();
+                if (Notifications == 1) {
+                    var audio = new Audio('Include/Sounds/AirplaneDing.wav');
+                    audio.play();
+                }
+                document.body.style.cursor = 'default';
+                document.getElementById("button").disabled = false;  // re-enable button
+            }
+        }
+    }
+    document.body.style.cursor = 'default';
+    document.getElementById("button").disabled = false;  // re-enable button
+}
+
+var tosendDR;
+
+function recurring () {
+    document.getElementById("divReccur").style.display = 'block';
+}
+
+function continueRecur () {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var formData = new FormData(document.getElementById("OnThisDay"));
+    let formDataJSON = {};
+
+    for (const [key, value] of formData.entries())
+        formDataJSON[key] = value;
+
+    ws.onopen = function() {
+        ws.send("RecurringOnThisDay" + JSON.stringify(formDataJSON));
+        ws.onmessage = function(e) {
+            if (e.data.search("On This Day Report Established") == -1) {
+                var span = document.getElementById("dial2span");
+                const dialog2 = document.querySelector("#dial2");
+                span.innerHTML = e.data;
+                dialog2.showModal();
+            } else {
+                var span = document.getElementById("dial2span");
+                const dialog2 = document.querySelector("#dial2");
+                span.innerHTML = "Recurring On This Day Report successfully established.<br><br>";
+                dialog2.showModal();
+            }
+        }
+    }
+}
+
+function cancelRec () {
+    document.getElementById("divReccur").style.display = 'none';
+}
+
+function set2Pos() {
+    number = document.getElementById('timeHR').value.toString();
+    while (number.length < 2)
+        number = "0" + number;
+    document.getElementById('timeHR').value = number;
+
+    number = document.getElementById('timeMR').value.toString();
+    while (number.length < 2)
+        number = "0" + number;
+    document.getElementById('timeMR').value = number;
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<br>
+<hr style="width:50%">
+
+</body>
+</html>

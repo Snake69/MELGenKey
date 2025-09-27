@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>  
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Copy Family Data</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    .dialog2 {
+        width: 50%;
+    }
+    .dialspan {
+        display: inline-block;
+        width: 50%;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog class="dialog2" id="dialog2">
+<span class="dial2span" id="dialog2span"></span>
+<form method="dialog">
+<button class="OK">OK</button>
+<button class="CANCEL">Cancel</button>
+</form>
+</dialog>
+
+<h2> Copy Family Data <br> </h2>   
+<span id="TitleDBName"></span>
+<br> <br>
+
+<h4> Note - To copy just a portion of a Family Group use the "Cut &amp; Paste" interprocess <br>
+     communication technique. While displaying either the Plain Text or HTML version of a Family <br>
+     DataBase, copy text by highlighting it with the mouse pointer, and then paste it into another <br>
+     program (e.g., a text editor or the body of an email) that supports the technique. <br>
+
+<br> <br> </h4>
+
+<h3> Copy: <br> </h3>
+<input type="radio" id="DB" name="CopyDB"> <label>Entire active Family DataBase</label>
+<br><br> -OR- <br><br>
+<input type="radio" id="FG" name="CopyDB" checked> <label>Family Group identified as </label>
+<input type="text" id="ID"> <b> (ID or Name) </b>  
+<br> <br> <br> <br>
+<h3> Whether copying entire Family DataBase or just a Family Group, select none, one, or both: <br> </h3>
+<input type="checkbox" id="CITE" ><label>include referenced citation material</label>
+<br>
+<input type="checkbox" id="PICS" ><label>include photos/images of people</label>
+<br> <br> <br> <h3> To: <br> </h3>
+<input type="radio" id="DIR" name="DBOUT" checked> <label>directory/folder named </label>
+<input type="text" id = "DBLOC">
+
+<br> <br> <br> <br>
+<button type="submit" id="button" onclick="CopyData(); document.body.style.cursor = 'wait'; this.disabled = true;"> Proceed </button> <br><br>  
+
+<script>
+
+function CopyData () {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var send2node = '', alerterr = '';
+
+    if (document.getElementById('FG').checked)
+        if (document.getElementById('ID').value == '')
+            alerterr += "When copying a Family Group, that Family Group must be identified with an ID number or a full name.\n\n";
+    if (document.getElementById('DIR').checked)
+        if (document.getElementById('DBLOC').value == '')
+            alerterr += "The path to the directory where the Family Data will be copied is required.<br> <br>";
+
+    if (alerterr != '') {
+        var span = document.getElementById("dial1span");
+        var msg = alerterr;
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = msg;
+        dialog1.showModal();
+        return;
+    }
+
+    send2node += '"which":"';
+
+    if (document.getElementById('DB').checked)
+        send2node += 1;                       // copy entire active DB
+    else
+        send2node += 2;                       // copy selected Family Group(s)
+    send2node += '","id":"';
+    send2node += document.getElementById('ID').value.trim();
+    send2node += '","cite":"';
+    if (document.getElementById('CITE').checked)
+        send2node += 1;                       // include citation material
+    else
+        send2node += 0;
+    send2node += '","pics":"';
+    if (document.getElementById('PICS').checked)
+        send2node += 1;                       // include photos/images of people
+    else
+        send2node += 0;
+    send2node += '","out":"';
+    if (document.getElementById('DIR').checked) {
+        send2node += '1 ';                       // copy to directory/folder
+        send2node += document.getElementById('DBLOC').value.trim();             // location of output directory/folder
+    }
+
+    ws.onopen = function() {
+        ws.send("PreCopyData" + '{"ORIGIN":"CopyData",' + send2node + '"}');
+        ws.onmessage = function(e) {
+            if (e.data.search("No fatal errors.") == -1) {
+                var span = document.getElementById("dial1span");
+                var msg = e.data;
+                const dialog1 = document.querySelector("#dial1");
+                span.innerHTML = msg;
+                dialog1.showModal();
+                document.body.style.cursor = 'default';
+                document.getElementById("button").disabled = false;  // re-enable button
+            } else {
+                var dialog2 = document.getElementById('dialog2');
+                var okButton = dialog2.querySelector('button.OK');
+                var cancelButton = dialog2.querySelector('button.CANCEL');
+                var dialog2span = document.getElementById("dialog2span");
+                dialog2span.innerHTML = e.data;
+                dialog2.showModal();
+
+                dialog2.addEventListener('click', function handleButtonClicks(e) {
+                    if (e.target.tagName !== 'BUTTON') {
+                        return;
+                    }
+                    dialog2.removeEventListener('click', handleButtonClicks);
+                    if (e.target === okButton) {
+                        var tosend = "DoCopyDB";
+                        ws.send(tosend);
+
+                        ws.onmessage = function(e) {
+                            var span = document.getElementById("dial1span");
+                            var msg = e.data;
+                            const dialog1 = document.querySelector("#dial1");
+                            span.innerHTML = msg;
+                            dialog1.showModal();
+                        }
+                        if (Notifications == 1) {
+                            var audio = new Audio('Include/Sounds/AirplaneDing.wav');
+                            audio.play();
+                        }
+                        document.body.style.cursor = 'default';
+                        document.getElementById("button").disabled = false;  // re-enable button
+                    } else {
+                        var span = document.getElementById("dial1span");
+                        var msg = "Copy Active DataBase canceled.<br> <br>";
+                        const dialog1 = document.querySelector("#dial1");
+                        span.innerHTML = msg;
+                        dialog1.showModal();
+                        document.body.style.cursor = 'default';
+                        document.getElementById("button").disabled = false;  // re-enable button
+                    }
+                })
+            }
+        }
+    }
+}
+
+var Notifications;
+
+onload = function init() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var UserPrefs = {};
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1)
+            document.getElementById("TitleDBName").innerHTML = '(' + e.data + ')'; 
+    }
+
+    UserPrefs.length = 0;
+    ws.onopen = function() {
+        ws.send("GetUserPrefs");
+    }
+    ws.onmessage = function(e) {
+        try {
+            UserPrefs = JSON.parse(e.data);
+            if (UserPrefs.length === 0)
+                Notifications = 1;    // default is notifications on
+            else
+                Notifications = UserPrefs.Not;
+        } catch (error) {
+            reject(error);
+        }
+    }
+    ws.onerror = function(error) {
+        reject(error);
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+</body>  
+</html>  

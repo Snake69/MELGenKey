@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Search/Inspect/Analyze Family Data</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+<script>
+
+function checkServer(path) {
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    ws.onerror = function () {
+        const dialog = document.querySelector("dialog");
+        dialog.showModal();
+    }
+    ws.onopen = function() {
+        window.open(path, '_blank');
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+</head>
+<body>
+
+<dialog>
+<span>It seems the node/server is not running.<br>Cannot perform function without the server running.<br> <br></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>Search/Inspect/Analyze Family Data</h1>
+<hr style="width:50%">
+<br>
+
+<script type="text/javascript" src="clib.js"></script>
+
+<input type="button" onclick="checkServer('Search.html')" value="Search"/>
+<br> <br>
+<input type="button" onclick="checkServer('Inspect.html')" value="Inspect"/>
+<br> <br>
+<input type="button" disabled onclick="checkServer('Analyze.html')" value="Analyze"/>
+<br> <br>
+<hr style="width:50%">
+
+</body>
+</html>

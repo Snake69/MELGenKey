@@ -1,0 +1,146 @@
+from https://genfiles.com/articles/legal-age/
+
+BEGIN
+
+Legal Age
+
+Legal age in colonial America is a subject that tends to be incompletely
+understood by many genealogists.  What follows is somewhat generalized,
+and intended as a guide for the use of amateur genealogists interpreting
+records in the American colonies. 1
+
+Actions Only Adults Could Perform
+
+Under British common law, full majority was reached at the age of 21.
+Anyone under 21 was legally an infant.  Only persons who had reached majority
+could perform certain legal actions:
+
+    Buy or sell land without restriction
+    Vote or hold public office
+    Patent land
+    Devise land in a will
+    Execute a bond or promissory note
+    Bring suit in one's own name
+    Be sued in one's own name
+    Serve on a jury
+    Act as a guardian
+    Marry without parental consent
+
+Actions Minors Could Perform
+
+Some legal actions did not require that a person be 21.  For some legal
+actions, the law merely required that the person be judged capable of
+discretion.  The age of 14 was generally accepted under common law as the
+age of discretion, and in rare individual cases (particularly females)
+it could be even lower.  A minor could be judged by courts to be capable,
+just as an elderly person or an idiot could be judged to be incapable.
+Further, a father could give or withhold some or all of the rights of
+majority to a child, by "giving freedom", though actually finding such a
+record is quite rare.
+
+Generally speaking, children aged 14 and over could legitimately perform
+a variety of legal actions:
+
+    Choose their guardian, or replace an existing guardian
+    Apprentice themselves without parental consent
+    Bequeath personal property (but not real property) in a will
+    Witness deeds and contracts
+    Testify in court
+
+Boys aged 16 and over were obliged to serve in militias and could obligate
+themselves to military service without the consent of parents in most of
+the colonies.
+
+Children aged 17 and over could act as an executor so long as other actions
+by adults were not required.  (This is a relatively rare occurrence.)
+
+These actions by minors were accepted without question.  For example, when we
+find record of a child selecting their own guardian or binding themselves as
+apprentices, it is a certainty that the minor was aged 14 or more.  Further,
+if judged by the court to be of sufficient discretion, a child could make a
+will disposing of personal property (but not real property) at the age of 14
+(age 12 for females).  Children could also be witnesses in a court action.
+Children aged 14 or more could legally witness a deed, will, or contract.
+For a variety of practical reasons the parties to such acts might prefer to
+use adults, or at least older children, as witnesses.  However, at one time
+it was common in England to select as a witness a young child who could be
+counted upon to outlive the parties to the transaction.
+
+So strongly was this traditional common law embedded in American society that
+the Virginia colonial legislature deviated from it in only one circumstance.
+In 1727, after the Virginia legislature enacted a statute declaring slaves
+to be subject to the same treatments and laws as real estate, it recognized
+that real estate could not be devised in the will of a minor, and amended
+the statute to permit a child aged 18 or more to bequeath slaves in a will. 2
+
+Minors and Land
+
+The particular case of land transactions deserves special attention.  Minors
+could be landowners, since they could acquire land by gift or inheritance.
+Land was never without title, so a father's will devising land to a minor
+resulted in the minor's immediate ownership regardless of age.  Likewise,
+the land of an intestate person fell immediately to a specific heir, even
+if a minor, under the law of succession.
+
+However, it is relatively rare to find minors selling land.  Nothing in
+the common law prevented a minor from selling land, but the contract
+was unenforceable if the minor later changed his mind.  As Blackstone
+expressed it: "an infant can neither aliene his lands, nor do any legal
+act, nor make a deed, nor indeed any manner of contract ... that is of any
+force or effect." 3  Since the minor could renege on the sale at any time,
+no prudent person would buy from a minor.  The other party to the deed or
+contract was best served by either renting the land (to reduce his risk)
+or by contracting with the infant's guardian, who had the right to dispose
+of the minor's property or bind a minor's estate to a contract.  In cases
+where the infant himself sells land (quite a rare occurrence), we usually
+find contractual language requiring him to reaffirm the sale upon reaching
+majority and usually a subsequent deed upon reaching majority.  Persons under
+21 generally sold land through a guardian, a "next friend", or a parent.
+
+Likewise, nothing in the common law prevented an infant from buying land or
+other property.  But, again, such an action could be later be repudiated
+by the minor.  Therefore, we generally find such purchases made on the
+infant's behalf by an adult guardian or next friend.  Blackstone points
+out that an infant could renege on any contract upon reaching majority:
+"an infant may also purchase lands, but his purchase is incomplete: for,
+when he comes to age, he may either agree or disagree to it, as he thinks
+prudent or proper, without alleging any reason ..." 4
+
+Virginia in 1642 made many of these questions in the case of minor orphans
+moot by enacting a statute to eliminate the "bad effects of tradeing and
+trucking with orphants" by legislating that anyone who attempted to "barter,
+bargain, buy or sell with orphants under age shall lose all that he so
+bartereth" plus a penalty of twice the value.5 To assure enforcement, the
+law provided that the informer would receive half the penalty.  Minors and
+Lawsuits
+
+In the same manner, children were protected from lawsuits.  A child under
+21 could not be sued except in the name of his guardian.  Conversely,
+an infant could initiate a suit only in the name of his guardian or next
+friend.  A minor could, however, be charged with any crime at the age of 14.
+Gender Differences
+
+Females and males were treated identically in all but one minor circumstance.
+Modern gender differences regarding legal age, such as permitting females
+to marry without consent at an earlier age than males, did not exist (at
+least in the south) during the colonial period.
+
+Only one difference is of consequence to genealogists.  Females were judged
+to have reached the age of discretion for purposes of bequeathing a personal
+estate at 12 years.  That is, an unmarried female aged 12 or more could make
+a will, while a male had to be 14.  (At the same age, females had the right
+to reject a marriage - although so rare in America as to be inconsequential,
+common law permitted a girl to be given in marriage as early as the age of 7.)
+
+For a detailed discussion of legal age, see Blackstone, Sir William,
+Commentaries on The Laws of England, Book 1, Chapter 17.  Note that
+specific actions by minors could be altered by colonial legislatures,
+based on local needs.
+
+1.  See Hening, Vol. 4, page 223.
+2.  Blackstone, Book 1, page 465.
+3.  Blackstone, Book 1, page 465.
+4.  Hening, Vol. 1, pp269-70.
+
+END
+

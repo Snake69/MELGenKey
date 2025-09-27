@@ -1,0 +1,104 @@
+
+WAR CHART
+
+BEGIN
+
+WAR                      DATES           AREA
+
+French-Spanish           1565-67         Florida
+English-French           1613-1629       Canada
+Anglo-French             1629            St. Lawrence River
+Pequot War               1636-37         New England
+???                      1640-45         New Netherland
+Iroquois                 1642-53         New Eng.; Acadia
+Anglo-Dutch              Jul 1653        New Netherland
+Bacon's Rebellion        1675-76         Virginia
+King Philip's            1675-76         New England
+War In North             1676-78         Maine
+Culpepper's Reb'n        1677-80         Carolinas
+Leisler's Rebellion      1688-91         New England
+Revolution in MD         1689            Maryland
+Glorious Revolution      1689            New England
+King Willliam's War      1689-97         Canada
+Queen Anne's             1702-13         New England
+Tuscarora                1711-12         Virginia
+Jenkin's Ear             1739-42         Florida
+King George's            1740            GA & VA
+Louisbourg               1745            New England
+Fort Necessity           1754            Ohio
+Anglo-French             1755-58         Canada
+French & Indian          1754-63         New Eng;VA
+Siege of Quebec          1759            Canada
+American Revolution      1775-83         USA
+Wyoming Valley           1782-87         Pennsylvania
+Shay's Rebellion         12/1786-1/1787  Massachusetts
+Whiskey Insurrection     1794            Pennsylvania
+Northwestern Indian      1790-95         Ohio
+War with France          1798-1800       Naval
+War with Tripoli(Naval)  1801-05         North Coast Africa
+Burr's Insurrection      1806-1807       South Mississippi Valley
+Chesapeake (Naval)       1807            Virginia
+Northwestern Indian      1811            Indiana
+Florida Seminole Indian  1812            FL (GA Volunteers)
+War of 1812              1812-15         General
+Peoria Indian            1813            Illinois
+Creek Indian             1813-14         South
+Lafitte's Pirates        1814            Local
+Barbary Pirates          1815            North Coast Africa
+Seminole Indian          1817-18         FL & GA
+Lafitte's Pirates        1821            Galveston
+Arickaree Indian         1823            Missouri River; Dakota Terr
+Fever River Indian       1827            Illinois
+Winnebago Indian         1827            Wisonsin
+Sac & Fox Indian         1831            Illinois
+Black Hawk               1832            Illinois & Wisconsin
+Toledo                   1835-36         Ohio & Michagan
+Texan                    1835-36         Texas
+Indian Stream            1835-36         New Hampshire
+Creek Indian             1836-37         Georgia & Alabama
+Florida (Seminole)       1835-42         FL, GA, & AL
+Sabine / Southwestern    1836-37         Louisiana
+  Indian
+Cherokee                 1836-38         ---
+Osage Indian             1837            Missouri
+Heatherly Distrubance    1836            Missouri
+Mormon                   1838            Missouri
+Aroostook                1839            Maine
+Dorr's Rebellion         1842            Rhode Island
+Mormon                   1844            Illinois
+Mexican                  1846-1848       Mexico
+Cayuse Indian            1847-48         Oregon
+TX & NM Indian           1849-55         ---
+California Indian        1851-52         ---
+Utah Indian              1850-53         ---
+Rogue River Indian       1851,1853,1856  Oregon
+Oregon Indian            1854            Oregon
+Nicaraguan               1854-58         Naval
+Kansas Troubles          1854-59         Kansas
+Yakima Indian            1855            Local
+Klamath & Salmon         1855            Oregon & Idaho
+  River Indian
+Florida Indian           1855-58         Florida
+John Brown's Raid        1859            VA
+War of Rebellion         1860-65         General
+Cheyenne                 1861-64         Local
+Sioux                    1862-63         Minnesota
+Indian Campaign          1865-68         OR, ID, CA
+Fenian Invasion of       1866            From New England
+  Canada
+Indian Campaign          1867-69         KS, CO & Ind. Terr.
+Modac Indian             1872-73         Oregon
+Apaches                  1873            Arizona
+Indian Campaigns         1874-75         KS, CO, TX, NM, &
+                                         Indian Territory
+Cheyenne & Sioux         1876-77         Dakota
+Nez Perce                1877            Idaho
+Bannock                  1878            ID, Washington Terr
+                                         & Wyoming Terr.
+White Riv. (Ute Ind.)    1879            Utah & Coloradp
+Cheyenne                 1878-79         Dakota & Montana
+Spanish-American         1898-99         Cuba
+Phillippine Insurrection 1899-1902       Philippine Islands
+
+END
+

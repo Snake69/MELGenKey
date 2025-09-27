@@ -1,0 +1,837 @@
+
+from
+NGS Monthly
+Jan 2019
+
+BEGIN
+
+Dutch Naming Systems in Early America
+Aaron Goodwin
+
+Among the NGSQ Archives are countless articles on sound genealogical research
+methodology. Some of those articles are so well-written and useful that
+they have become must-use resources for genealogists ever since. One such
+timeless contribution comes from NGS Hall-of-Famer Rosalie Fellows Bailey
+(elected in 2010). In 1953, she published the two-part article, "Dutch
+Systems in Family Naming: New York and New Jersey."[1]
+
+While this work may be particularly helpful for researchers of New York
+and New Jersey, every researcher of the Dutch in early America and their
+descendants throughout the Mid-Atlantic and Midwest will find this resource
+a critical tool in solving their Dutch problems. Those with non-Dutch
+ancestors who lived in New Netherland, New York, and New Jersey may also
+make discoveries here by understanding how the Dutch recorded both first
+and last names, sometimes well into the 18th century.
+
+Revisiting this topic is particularly timely for NGS members as the 2018 NGS
+Conference will be held in May in Grand Rapids, Michigan, the destination
+region of one of the Dutch migrations to the Midwest. The conference features
+eight separate lectures on various aspects of Dutch and Dutch-American
+research. You can find them in the Conference Registration Brochure online
+by searching "dutch."
+
+Readers who take the time to read Bailey's original twenty pages will
+find themselves rewarded with more than mere tidbits about strange and
+befuddling practices. Dutch naming systems are so important, in fact,
+that gaining a thorough understanding of them gives researchers the most
+effective tools they can possibly have to answer longstanding questions and
+identify new avenues of research. The summary below is merely an appetizer,
+whereas Bailey's article provides real meat and a deeper value.
+
+I. The Patronymic
+
+A patronymic is a name that identifies and uses the subject's father's given
+name, the primary naming system among the Dutch in early America. Most of
+Europe had adopted surnames by the 17th century, but it's the same system
+that led, for example, to the English surnames Johnson or Richardson. Those
+names were originally derived from the patronymic that meant son of John or
+son of Richard. Rather than the suffix -son, the Dutch suffix of the same
+meaning can be -szen, -sen, -se, or –z. The feminine version can be -se,
+–sd, –sdr, –sen, or the full suffix sdochter ("daughter of").
+
+As illustrated in Table 1, "Johnson Family of Western Long Island," (all
+tables referenced are in the original article) Jan Barentz van Driest,
+immigrant from Zutphen, Gelderland, to Gravesend, Long Island, was the
+father of Barent Jansen. Barent Jansen was the father of Jan Barentse
+Jansen. By the time he wrote his will in 1757, Jan Barentse Jansen's name
+had evolved into the anglicized surname John Johnson. John Johnson's son,
+Barent Johnson, had several sons including Revolutionary War Major General
+Jeremiah Johnson, whose name entirely obscures his Dutch ancestry. A second
+table, "Ryerson—Ryers—Martense—Adriance," illustrates the spelling
+variations of patronymics as well as their evolution into various surnames.
+
+II. Place-Origin Surname
+
+The place-origin surname, usually prefixed with van (or from) but sometimes
+with de (or the), was also a popular way for the early Dutch-American to
+identify himself and to establish a surname. Those places of origin could
+be of several types: 1) nationality; 2) town or village; 3) small local
+district; 4) named farm-estate for which the subject is owner, leaseholder,
+or tenant; 5) named farm-estate for which the subject is a hired farmhand,
+unrelated to the family in the main dwelling; 6) named field; 7) named
+small farm occupied by a peasant (or boer), often a subdivision of a named
+farm-estate; 8) a named house with a sign; or 9) a local habitat. Table 5,
+"Van Woert—Rutgers—Rutsen," illustrates the evolution of one place-origin
+name, van Woert (from the village of Schoonrewoerd), to three distinct
+surname lines.
+
+III. The Occupational Surname
+
+Dutch-American surnames derived from this category are those such as Bleecker
+(bleacher of cloth), Schenck (filler, butler, cupbearer), Koylert/Cuyler
+(archer), Blauvelt (blue field, referring to a flax farmer), or Clark
+(clerk). These names are sometimes used intermittently with patronymics
+and developing surnames.
+
+IV. Personal-Characteristic Surname
+
+While this type of surname is particularly common among the English, it
+is less so for the Dutch. Examples include Vroom/Vroman (pious or wise
+man), Stille (silent), Krom (bent, crooked, cripple), Krankheyt/Cronkhite
+(sickness, invalid), de Groot (the big man), de Lange (the tall man), de Witt
+(the white man), or de Wint (wind, fuss, braggart). The use of the Dutch de
+(or the) reminds us that not all surnames with de are of French origin.
+
+V. The Order of Names
+
+When two or more of the name components covered above are used together,
+they usually follow a particular order: 1) social status; 2), the first
+name; 3), the patronymic; 4) the surname, if any; 5) place of origin or
+residence; and 6) any term used to indicate occupation. The name Teunis
+Tomassen van Naarden metzlaer, for example, uses the second, third, fifth,
+and sixth elements in order.
+
+Titles that refer to social status are rarely used, but are significant
+when they are. Those titles may include Joncker (member of the nobility);
+de Heer, dr Hr, or dhr (official such as magistrate); Sieur, Sinjeur, or Sr
+(man of standing); Dne, Dom, D., etc. (Domine or Reverend); Dr (doctor of
+law); Mr (master, such as of a guild or of an occupation); Juffrouw or Joffr
+(important married woman); or the very rare Mevrouw (very important woman).
+
+VI. Last Names of Married Women
+
+Under the Dutch naming system, women did not change their name at marriage,
+a particularly useful fact for researchers. Table 8, "Family of the
+Thrice-Married Maritie Damen," illustrates how a woman's identity can prove
+complex family relationships. Maritie Damen married three times and had
+children by each of her first two husbands, but her third husband's children
+were not hers. None of the children have surviving baptism records, a key
+source for Dutch research, but because Maritie's name remained unchanged,
+she is easily found in various records of the City and County of Albany. Her
+name, in combination with other names and stated relationships, firmly
+identifies her husbands and children.
+
+This method of identification is especially useful when a husband had a
+common name. There were, for example, eleven different Claes Janszens
+who were contemporaries; their wives' names delineate them. It's also
+useful when a man went by various name types over time. Teunis Tomassen van
+Naarden (patronymic and place-origin), Teunis Tomassen Quick (patronymic and
+personal-characteristic), Theunis Thoomas (patronymic), and Teunis Thomaszen
+metzlaer (patronymic and occupation [mason]) are proven to refer to the same
+man by finding these variations in combination with his wife, Belitje Jacobs.
+
+A woman's name was determined in much the same way a man's name was. If
+her family had a surname or the name of their place of origin, she may
+use that. In the generation in which a surname was being established,
+her last name might switch back and forth between patronymic and surname
+as her brothers' probably did. Patronymics were most common, which could
+refer to a woman's stepfather as well as her father.
+
+In the earliest Dutch period, however, a woman sometimes used her husband's
+first name as her last, particularly when her father was not known in
+America. Table 9, "Susanna Dircx' Relatives," illustrates this with two
+examples. Albert Andriesz' wife was Annitje Alberts in her mother's 1642
+will. And Jan Jansen Bratt's wife was called Maritie Jans in their joint
+1673 will, but signed her name Maritie Dirck (after her first husband,
+Dirck Dircksz Mayer).
+
+Though it was not the custom in America, some Dutch immigrants used their
+mother's name, especially if she had an established surname while the father
+did not. The immigrant Schuyler brothers were born in Amsterdam to Pieter
+Tjerks and Geertruyt Philips van Schuylder.
+
+Only after English influence began to overcome Dutch naming customs, well
+into the 18th century, did women begin taking their husband's surnames.
+
+VII. Godparents or Sponsors
+
+Records of the Dutch Reformed churches in America are critical research
+tools in Dutch-American research. Not only are women's maiden names recorded
+continuously there, but godparents are also named. The Dutch practice of
+having close relatives serve as godparents means that these records can
+reveal a more extended family. Table 10, "Godparents of Anthony Rutgers'
+Children," illustrates the names and relationships of each godparent for
+each of Anthony's fifteen children. All of them are relatives, including
+grandparents, aunts, uncles, great-aunts, great-uncles, half-siblings,
+and one grandmother's second husband.
+
+It's also useful to know that, although not absolute, the Dutch had a
+tendency to have godparents chosen alternately from each side of the family
+for each successive child's baptism. Once this pattern is established in a
+given family, any disruption to the pattern serves as a clue to a possible
+missing child in that family group.
+
+VIII. First Name of Children
+
+With rare exceptions, Dutch children were named after relatives. In
+particular, the first two boys and first two girls were generally named
+after their grandparents. Other practices were more tendencies than customs,
+including 1) naming the first child for a paternal grandparent; 2) naming the
+first child (if a boy) of a woman's second marriage for her first husband;
+3) alternating each child's name to be taken from one side of the family
+and then the other; 4) giving the name of a child who died to the next
+child born of that gender. The last practice tended to take precedence
+over naming a child for a grandparent. Table 11, "Rutgers—Family Group,"
+illustrates these patterns perfectly.
+
+Customs such as these are powerful research tools. In the absence of church
+records, for example, the names of children in a man's will could reveal
+the names of the testator's parents and inlaws. In some instances, certain
+first names appear regularly in particular families. Seeing them appear in
+other families may suggest a previously unknown intermarriage between the
+two families.
+
+IX. The Diminutive
+
+Diminutive names include both shortened names and terms of
+endearment. Examples of abbreviation include Thys for Matthys,
+Claes for Nicolaes, Jaap for Jacob, and Bartel, Mees, or Meus for
+Bartelmeus. Diminutives were extensively used for girls' names, both in
+abbreviation and in endearment. Similar to the -ie and -y suffix in English
+(e.g. Jenny or Susie) is the Dutch -tje or -je. Maritje is an endearing
+version of Maria, as is Giertje for Geertruy. Female names that are both
+abbreviated and endearing include Grietje for Margriet and Tryntje for
+Catrina.
+
+X. Dutch-English Equivalents of First Names
+
+Lists have been compiled of English equivalents of Dutch names, but Bailey
+warns researchers to use those lists with caution. In actual practice, the
+rendering of a Dutch person's name was the result of a number of variables,
+including phonetic spelling, varying pronunciation in Dutch, English, and
+French, and the skills of the clerk. In one example, the name Neeltje Swem
+appears on the 1703 Staten Island census as Elener Swan. Neeltje is the
+feminine form of Cornelius, so one might expect it to appear in English
+as Cornelia. But Neeltje looks and sounds more like Nellie, the English
+diminutive of Eleanor. So Elener was recorded for Neeltje.
+
+XI. Translation of the Foreign Name: Dutch, English, French
+
+Dutch magistrates and clerks in New Netherland generally attempted to render
+foreign names into Dutch. Charles Bridges, for example, was an Englishman in
+New Netherland, where his name was generally recorded as Carel van Brugge or
+Verbruggen. Even after the English took over New Netherland in 1664, the Dutch
+Reformed churches continued this practice in their record-keeping. In a 1673
+baptism, the father Willem Kerck was actually Englishman William Churchill.
+
+The same is true for French names. Nicholas Dupue's wife is recorded in Dutch
+church records of New York City as Catharina Reynards, Catalina Duvois,
+Catharina de Vos, and Catharina Reynardt. These variations represent no
+conflict in identifying her as one woman. Reynard and Vos are the same,
+as they are the French and Dutch words for fox.
+
+Names were also translated from Dutch to English: Kuyper became Cooper; van
+Langevelt became Longfield; and Thomas Laurenszen Popinga dropped his original
+surname, changed his patronymic to his surname, and became Thomas Lawrence.
+
+XII. Alteration of the Foreign Name: Dutch, English, French
+
+When a name couldn't be effectively translated, phonetic spelling came into
+play. Thus the French girl Adrienne Cuvellier was called Ariaentje Cuvilje
+in Dutch records. George Woolsey was referred to as Jarge Woltzen. These
+were close approximations in pronunciation, producing names that did not
+exist in Dutch, a hint to their non-Dutch origins. Other phonetic spellings
+produced actual Dutch names that sounded the same, perhaps obscuring a
+non-Dutch origin. The English Cole sounds precisely the same as the Dutch
+Cool. The same is true for the English Lake and the Dutch Leek. These are
+just a few of the examples of alterations given.
+
+If your research includes Dutch ancestry in America in the 17th- and
+18th-centuries, you'll want to print out Bailey's two-part article, read it,
+and keep it handy as a constant guide. When you get stuck, pull it out again,
+and re-read it. The threads of Dutch-American research are found in their
+naming customs, and you'll almost certainly find a new thread to pursue.
+
+[1] Rosalie Fellows Bailey, "Dutch Systems in Family Naming: New York and New
+Jersey," Part I, National Genealogical Society Quarterly, 41 (March 1953),
+1-11; and Part II, 41 (December 1953), 109–118); also, "Dutch Systems
+in Family Naming: Corrections to Part I," 41 (September 1953), 98; PDFs,
+NGSQ Archives (https://www.ngsgenealogy.org/cs/ngsq_archives : 23 Jan. 2018).
+
+END
+
+
+
+from
+https://www.whodoyouthinkyouaremagazine.com/feature/scottish-names-and-naming-traditions/
+and
+National Records of Scotland
+
+BEGIN
+
+Scottish naming traditions
+
+If you are researching your Scottish ancestors, it is worth knowing that the
+Scots often named their children following a traditional pattern. This can
+help you confirm relationships although it is important to keep in mind that
+not all families stuck to these rules and the tradition gradually declined
+during the 19th century.
+
+    1st son named after father's father
+    2nd son named after mother's father
+    3rd son named after father
+    1st daughter named after mother's mother
+    2nd daughter named after father's mother
+    3rd daughter named after mother
+
+END
+
+
+
+from the Internet:
+
+BEGIN
+
+Old German Naming Customs
+
+The first name of each Daughter was usually the first name of the Mother.
+
+The first name of the Son was usually the first name of the Father.
+
+Often times the middle name of each child was the name of the baby's
+baptismal sponsor and they were usually called by his/her middle name.
+
+It is also common to use:
+  the mother's maiden name as a second name;
+  the surname of close friends as a second name;
+  give another child exactly the same name as a previous child who had died;
+  give a child the name of a relative or friend who had recently died.
+
+When they left Germany they also left children behind and called the first
+born in the new world after there sons and daughters, so it was not uncommon
+to have two sons or daughters by the same name.
+
+They also used a saint's name for the first name and the child went by the
+middle name. This was very common.
+
+
+Old Irish Naming Customs
+
+1st son was named after the father's father
+2nd son was named after the mother's father
+3rd son was named after the father
+4th son was named after the father's eldest brother
+5th son was named after the mother's eldest brother
+
+1st daughter was named after the mother's mother
+2nd daughter was named after the father's mother
+3rd daughter was named after the mother
+4th daughter was named after the mother's eldest sister
+5th daughter was named after the father's eldest sister
+
+Irish 1800's
+
+First Daughter was named after the Paternal Grandmother
+Second Daughter was named after the Maternal Grandmother
+
+First Son was named after the Paternal Grandfather
+Second Son was named after the Maternal Grandfather
+
+Then alternate names using the Grandmother's, Grandfather's, Mother's,
+Aunt's, and Uncle's names.
+
+Sometimes the Middle name was used. Examples would be Michael Joseph.
+The child maybe named Joesph. If a family member died sometimes they
+used the name again or would call the child after the sister or brother
+would just died.
+
+It's important to consider names in all their forms when looking at
+family use of the traditional naming patterns. A few examples are:
+
+Many of the names that became common in Ireland are actually anglicized
+versions of earlier names. Some examples are Patrick (Pádraig), John
+(Sean), Thomas (Tomaltach), James (Seamus) and William (Liam) for boys
+and Mary (Maire), Anne (Áine), Kathleen (Caitlin), and Bridget (Brigid)
+for girls.
+
+Anglicization of Gaelic names was forced upon the Irish through the
+Penal Laws that outlawed use of the Irish language.
+
+Brigid.
+The Gaelic form of this girl's name is Brighid, pronounced "Bree-id." In
+its most ancient form the name is Brid, pronounced "Breed", a Celtic
+goddess whose name meant power or strength. The Irish use of this name
+is because of the national affection for St. Brigid of fifth and sixth
+century Ireland and should be pronounced with a hard "g". Anglicized, the
+name became Bridget, pronounced "Brid-jit", after the Swedish St. Bridget
+of the 14th century. There are lots of variations or nicknames encountered
+for this name including Brid (Breed), Bride, Breeda, Brigid, Bidelia,
+and Delia.
+
+Margaret.
+This name was popular because of the Irish affection for the 11th century
+St. Margaret, Queen of Scots. In Irish the name is Máiréad, (Maw-rayt
+or Maw-reed). Other variations are Maighread (Meh-reed), Peig, and Peigi.
+
+Mary.
+Originally Máire, (Maw-zhe, Maw-re or Meh-ree), this name had lots of
+variations. Among them were Muire, which meant "devotee of Mary," Mael,
+Moira, Maura, Maurya, Mairin (maw-reen), and Maureen.
+
+Diarmaid.
+Pronounced "Deer-mit", its oldest form is Diarmait. The original holder
+of the name was a warrior in Finn mac Cumhaill's band who had was able
+to make women fall instantly in love with him. Variations of the name
+are Diarmuid, and anglicized, Dermod, Dermot, Darby, Jeremiah, and Jeremy.
+
+John.
+The Irish was originally Eoin, (Oh-en or Oh-een). It derived from the
+Latin Johannes. Sean became a popular Irish form after the Norman French
+introduced Jehan to the island. Other variations are Shaun, Shane, Sion,
+Shawn, and Seaghan, (See-a-gun).
+
+
+Britian and English Welsh Naming Patterns
+English and Welsh 1700-1870
+
+First Daughter was named after the Mother's Mother
+Second Daughter was named after the Mother's Father's Mother
+Third Daughter was named after the Mother
+Fourth Daughter was named after the Mother's oldest Sister
+
+First Son was named after the Father's Father
+Second Son was named after the Mother's Mother
+Third Son was named after the Father
+Fourth Son was named after the Father's oldest Brother
+
+In 18th & 19th Century Britain families generally tended to name their
+children in a specific pattern as follows:
+
+Males
+
+    First-born Son - father's father
+    Second-born Son - mother's father
+    Third-born Son - father
+    Fourth-born Son - father's eldest brother
+    Fifth-born Son - father's 2nd oldest brother or mother's oldest
+                     brother
+
+Females
+
+    First-born Daughter - mother's mother
+    Second-born Daughter - father's mother
+    Third-born Daughter - mother
+    Fourth-born Daughter - mother's eldest sister
+    Fifth-born Daughter - mother's 2nd oldest sister or father's oldest
+                          sister
+
+
+Scottish Naming Patterns
+
+Many Scotts families follow the custom of naming thier children after
+the grandparents in the following manner.
+
+    First born son named for the paternal grandfather.
+    Second son named for the maternal grandfather.
+    Third son named for the father.
+    First born daughter for the paternal grandmother.
+    Second daughter for the maternal grandmother
+    Third daughter for the mother.
+
+This can cause families to have two children with the same name if the
+grandparents had the same name. The process also started over if the
+parent remarried, so it is common to find half brothers or sisters with
+the same names. Not all Scotts families followed this pattern, but many
+that did continued it long after leaving Scotland.
+
+Naming patterns
+
+People of all countries tend to use forenames which run in the family. In
+Scotland families not only use such names but they tend to follow naming
+patterns - the most common of which is:
+
+1st son - named after his paternal grandfather
+2nd son - named after his maternal grandfather
+3rd son - named after his father
+
+1st daughter - named after her maternal grandmother
+2nd daughter - named after her paternal grandmother
+3rd daughter - named after her mother
+
+Although this naming pattern was not always used, it can be a useful
+indication to genealogists. Unfortunately, this pattern is not used to
+the same extent today.
+
+Scottish 1700 - 1800 and early Dutch
+
+First Daughter was named for her Maternal Grandmother
+Second Daughter was named for her Paternal Grandmother
+Third Daughter was named after her Mother
+Other Daughters were named after other Family Members
+
+First Son was named after his Paternal Grandfather (sometimes Maternal)
+Second Son was named after his Maternal Grandfather (sometimes Paternal)
+Third Son was named after his Father
+
+Another way families end up with more than one child with the same name
+is through high child mortality. Before modern medicine fewer children
+survived to adulthood. Parents often reused the name of a dead child
+for the next child born.
+
+SURNAME
+
+In Scotland - as in the rest of Western Europe - there were four main
+ways of acquiring a surname:-
+
+Patronymic - taking the father's Christian name e.g. Robertson
+Occupation - e.g. Smith (the most common surname of all)
+Locality - e.g. Wood
+Nickname - e.g. White, Little.
+
+Patronymics - Lowland names such as Wilson, Robertson, Thomson and
+Johnson are among the most common surnames in Scotland. 'Mac' names
+are also patronymic. MacManus - son of Magnus. 'Mc' is just a printer's
+contraction and has no significance as to etymology.
+
+Occupation - Names which are derived from trades and occupations -
+mostly found in towns. The most common of these is Smith (the most common
+surname in Scotland, England and the USA) but other examples would be
+Taylor (tailor) Baxter (baker) and Cooper (barrel maker).
+
+Locality - In Scotland the tendency is for people to be named after places
+(in England the tendency is the opposite). Examples of such names are
+Morton, Lauder, Menzies and Galloway.
+
+Nickname - Names which could refer to colour or size, e.g. White, Black,
+Small, Little. Scottish names in this category include Campbell (meaning
+'crooked mouth'). Another example of nickname - this time referring to
+the bearers origins - is Scott.
+
+Origins of some Scottish surnames
+
+Fraser - Originally De Frisselle, de Freseliere or De Fresel. The first
+recorded bearer of the name was Sir Simon Frasee who held lands in East
+Lothian. Fortunate marriages enabled the family to acquire lands all
+over Scotland. By such means they acquired Philorth in Buchan in 1375 -
+this became the chief seat of the Frasers. The family was raised to the
+peerage in the person of the first Lord Lovat. To the Gaels the chief
+of the Frasers is known as MacShimidh - 'son of Simon'.
+
+Bruce - A locality name from Normandy - Brix near Cherbourg. The first
+recorded bearer of the name accompanied William the Conqueror and the
+second accompanied King David to Scotland to claim the throne. This was
+the family which produced Robert the Bruce and, although the royal line
+died out in 1314, the name Bruce is today among the hundred commonest
+Scottish surnames.
+
+Robertson - a patronymic name. The first bearer of the name was Robert,
+grandson of Duncan the Fat (Donnchadh Reamhar). The family acquired lands
+in the central Highlands. However, the commonality of the name in Scotland
+can only be explained, not by any connection to the original family,
+but by the large number of people who adopted the name because it was
+their fathers' forename. In Gaelic the clan continues to be called Clann
+Donnacha - Duncan's children - from their descent from Duncan the Fat.
+
+Stewart - an occupational name. It comes from the office of steward which
+was a position of importance under the Crown. Among alternative spellings
+of the name are Stuart and Steward. Mary, Queen of Scots favoured the
+spelling Stuart as there is no 'W' in the French language. To the Gaels
+the Stewarts are known as 'the race of Kings and Tinkers'.
+
+
+German
+
+18th Century PA German Naming Customs
+The Beer Barrel Polka
+
+Internet: http://www.kerchner.com/germname.htm
+
+Date: Written: 18 Aug 1995
+Published Online: 2 Oct 1996
+Last Updated: 23 Feb 2006
+
+Author: Charles F. Kerchner, Jr.
+3765 Chris Drive
+Emmaus PA 18049-1544 USA
+
+Notice: Copyright (1995-2003) Charles F. Kerchner, Jr.
+All Right Reserved.
+Establishing links to this page is encouraged and
+permitted. But, reuse or reprinting it in it's entirety
+or in part in other websites, or in any other media or
+publication, without my permission, is not permitted.
+Printing a hard copy of this report for your own
+personal, non-commercial use is permitted.
+Please notify me of any copyright violations
+of this material you may be aware of. Thank you.
+
+1. At baptism, if two given names were given to the child, the first
+given name was a spiritual, saint's name. The second given name was the
+secular or call name, i.e., "rufnamen", which is the name the person
+was known by, both within the family and to the rest of the world. This
+custom was originally adopted in Germanic and other regions in Europe
+from Roman Catholic tradition and continued by the Protestants in their
+baptismal naming customs. The immigrants from these areas brought the
+custom with them to Pennsylvania. The spiritual name, usually to honor
+a favorite saint, was used repeatedly and was usually given to all the
+children of that family of the same gender. Thus the boys would be Johan
+Adam Kerchner, Johan George Kerchner, etc., or Philip Peter Kerchner,
+Philip Jacob Kerchner, etc. Girls would be named Anna Barbara Kerchner,
+Anna Margaret Kerchner, etc., or Maria Elizabeth Kerchner, Maria Catherine
+Kerchner, etc. But after baptism, these people would not be known as John,
+Philip, Anna, or Maria, respectively. They would instead be known by
+what we would think of now as their middle name, which was their secular
+name. Thus these people would be known respectively as Adam, George,
+Peter, Jacob, Barbara, Margaret, Elizabeth, and Catherine in legal and
+secular records. For males, the saint's name Johan or John for Saint John
+was particularly heavily used by many German families, but also Saint
+George was used by some families for male children. The child's secular
+name was really John, if and only if, at baptism he was named only John,
+usually spelled as Johannes, with no second given name. The name John
+spelled as Johannes is rarely seen spelled as Johannes as a spiritual
+name, i.e., you rarely will see the name at baptism recorded as Johannes
+Adam Kerchner, etc. It is generally always found spelled as Johan or
+Johann when used as a spiritual name. Thus, you find the spiritual name
+of John recorded as Johan Adam Kerchner or Johann Adam Kerchner, not
+Johannes Adam Kerchner. Many researchers, new to German names, who find
+a baptism of an individual with a name such as Johan Adam Kerchner, thus
+mistakenly spend a lot of time looking for a John Kerchner, in legal and
+census records, when he was known after baptism, to the secular world, as
+Adam Kerchner. Also when reading county histories, etc., especially those
+written by individuals in the 20th century, and the author is referring
+to someone as John Kerchner, and you are not looking for a John Kerchner,
+but the history sounds otherwise familiar, further research may turn up
+that this person was really not a John Kerchner, but instead was someone
+else such as a Johan George Kerchner. You would thus find all his 18th
+century records recorded under the name George Kerchner and not John
+Kerchner and therefore after checking the data and correlating the facts
+you may find this is really a story about your missing George Kerchner.
+
+As I said, the use of Saint John was the most common example of this
+custom, but Saint George was often used too. And thus one would find
+children in a family named George Heinrich ......, George Jacob ......,
+George Frederick ....., and of course simply George ..... by itself. In
+these examples the secular or call names would respectively be Heinrich,
+Jacob, Frederick, and George.
+
+This naming custom slowly died out in Pennsylvania during the later part
+of the 19th century, i.e., after the 1870's.
+
+Classic examples of errors caused by not knowing of this naming custom
+are seen in a work titled "Genealogical and Biographical Annals of
+Northumberland County PA", It was published in 1911 by J.L. Floyd &
+Company of Chicago IL. One specific example of this misnaming error in
+that work is on page 659 in the paragraph in the upper left column which
+begins, "John Wetzel ...". This person is not a Johannes or John Wetzel
+but is instead a Johan "George" Wetzel and is known secularly in all legal
+records as George Wetzel. He was married to Eva Elizabeth Kerchner. There
+are many more examples in this work and other county histories written
+by people unfamiliar with 18th Century PA German Naming Customs.
+
+Modern computer programs which generate automatic reports and books
+from genealogical databases are compounding the confusion because these
+programs tend to generate paragraphs and sentences using the first given
+name only, which as I have explained was not the real call name of the
+person in the 18th century. Computer programs need to be modified to
+allow the user to select which given name of the full series of given
+names is the proper call name, i.e, the first or second given name. Or
+better yet, the program should have a setting whereby both given names
+are always used together in tandem in the computer generated text when
+referring to an individual. Oh well, one can only hope. :-)
+
+2. The term "Senior" and "Junior" following a name did not necessarily
+imply a father and son relationship, as it does now. It could have been
+an uncle and nephew who had the same name and lived near each other. It
+could be a grandfather and a grandchild living together, where the father
+has died. It could even be two unrelated individuals with the same name
+but of different ages who lived near each other. So to help friends and
+business associates keep track of who-was-who in their discussions and
+records, they added on the "Sr." or "Jr." which merely meant the older
+and the younger, respectively.
+
+3. The term cousin was widely used to mean an extended family, not the
+specific legal definition we understand it to be today.
+
+4. It was a common practice in some German families to name the first
+born son after the child's paternal grandfather and the second born son
+after the maternal grandfather. Here are several more detailed naming
+patterns practiced by some families.
+
+Pattern A
+
+1st son after the father's father
+2nd son after the mother's father
+3rd son after the father
+4th son after the father's father's father
+5th son after the mother's father's father
+6th son after the father's mother's father
+7th son after the mother's mother's father
+
+1st daughter after the mother's mother
+2nd daughter after the father's mother
+3rd daughter after the mother
+4th daughter after the father's father's mother
+5th daughter after the mother's father's mother
+6th daughter after the father's mother's mother
+7th daughter after the mother's mother's mother
+
+Pattern B
+
+The pattern B for the sons is the same as the above but this pattern
+for daughters was different
+
+1st daughter after the father's mother
+2nd daughter after the mother's mother
+3rd daughter after the mother
+4th daughter after the mother's father's mother
+5th daughter after the father's father's mother
+
+Pattern C
+
+1st son after the father's father
+2nd son after the mother's father
+3rd son after the father's oldest brother
+4th son after the father
+
+1st daughter after the father's mother
+2nd daughter after the mother's mother
+3rd daughter after the mother's oldest sister
+4th daughter after the mother
+
+Whenever a duplicate name occurred in these patterns, the next name
+in the series was used. If a child died in infancy the name was often
+reused for the next child of the same gender. A rare twist occurred
+sometimes. A child's name would be reused when a spouse died and the
+surviving spouse remarried and had more children with the next spouse. I
+found this happened when a spouse had children in Germany and then his
+spouse died. He left his children behind in Germany, possibly with the
+grandparents, and then emigrated to Pennsylvania. Sometime after arrival
+he remarried and named his eldest son born in Pennsylvania by his new
+spouse with the same name as the son still living in Germany. This
+results in two adult children with the same name.
+
+If you are lucky enough to find a family with a lot of children, who
+strictly followed one of these naming patterns, then it may give you
+useful clues to determining the possible names of family members in
+earlier generations.
+
+5. An "in", added to the end of a name, such as Anna Maria Kerchnerin,
+is a Germanic language name ending suffix denoting that the person is
+female. Thus the correct spelling of the last name in the example would
+be Kerchner, not Kerchnerin.
+
+6. An "er" or "ner", added to a surname based on the name of something,
+denoted that the person worked with that object or at that occupation,
+if the main portion of the name was an object or an occupation, or that
+the person was from that geographic location or city, if the main portion
+of the name was a geographic location. Examples: Forst is German for
+a forest, thus Forster is one who worked in a forest or with woodlands
+or was from a forest. Berlin is a city in Germany, thus Berliner is one
+who is from Berlin. Since English is a Germanic rooted language we do
+the same thing in English, i.e., Paint(er), Garden(er), New York(er).
+
+The suffixes mentioned in 5. and 6. above are compounded in many
+cases. The nouns Kirche and Kerche are German words for church. Thus for
+the surname spelled in an early record as Kerchnerin, i.e., Kerch(ner)(in)
+we have a family name which means a person who worked in or near a church,
+and this particular person is female.
+
+7. Frequently the secular name given to the child was also the same as the
+secular given name of one of the baptismal sponsors for the child. Said
+baptismal sponsors frequently were close relatives but also could be
+close and trusted friends and neighbors.
+
+8. In the last half of the 19th century after the first and middle name
+naming convention switched to the way it is today, some families gave all
+the children the same middle name, which was often the maiden name of the
+mother of the children. This same middle name, which if it was a surname,
+could also be that of a famous patriot, such as Benjamin Franklin or
+George Washington. But, if all the children had the same middle name,
+this could be a clue to the maiden name of their mother.
+
+I hope that the above information will be of assistance to individuals
+researching 18th Century Pennsylvania-German names and records.
+
+Sorry, but I cannot give you specific advice or answer questions about
+individual German names. For information on specific names consult one
+of the following excellent books.
+
+For additional information on "German-American Names" consult the book
+by that name written by Professor George F. Jones. See link below.
+
+For additional information on German names, consult the 1967 book written
+by Hans Bahlow. The English version titled "Dictionary of German Names"
+was translated by Edda Gentry. It was published in 1993 by the Max Kade
+Institute for German-American Studies, University of Wisconsin-Madison,
+Madison WI. See link below.
+
+
+More ...
+
+19TH CENTURY NAMING PATTERNS:
+First son: named for his paternal grandfather.
+Second son: named for his maternal grandfather.
+Third son: named after father or father's paternal grandfather.
+Fourth son: named after father's oldest brother or mother's paternal grandfather.
+Fifth son: named after mother's eldest brother or father's material grandfather.
+Sixth son: named after father's second oldest brother or for mother's
+           maternal grandfather.
+
+First dau: named for maternal grandmother.
+Second dau: named for her paternal grandmother.
+Third dau: named after mother or for mother's maternal grandmother.
+Fourth dau: named after mother's oldest sister or for father's paternal grandmother.
+Fifth dau: named after father's eldest sister or for mother's paternal grandmother.
+Sixth dau: named after mother's second oldest sister or for father's
+           paternal grandmother.
+
+With people being what they are, there were all sorts of variations, some
+covered by rules and some by family decision. It was customary to name
+the next daughter/son born within a second marriage for the deceased
+husband/wife. If a father died before his child was born, the child
+was often named for him. If a mother died in childbirth, that child,
+if a girl, was usually named for the mother. Another child was commonly
+named for a child who had died within the family.
+
+DUTCH NAMING PATTERNS:
+The custom was that the lst son be named for paternal grandfather; 2nd
+son named for his maternal grandfather; lst daughter for her maternal
+grandmother; 2nd daughter for her paternal grandmother. If 4 children
+were born then all 4 grandparents are known.
+
+GERMAN NAMING PATTERNS:
+The custom of Germans was to give, at baptism, two names. The first was
+a spiritual or a saint's name in honor of a favorite saint. In my own
+German family, I see Johann Adam, Johann George, Johann Jacob Hetzel and
+some favorite female names were Anna Barbara and Anna Margaret Hetzel,
+all within the same family! The second or middle name was the name the
+person was known by within the family.
+
+It was common practice in some German families to name the first born
+son after the child's paternal grandfather and the second born son after
+the maternal grandfather.
+
+The suffix "in" or "en", added to the end of a name, such as Anna Maria
+Hetzelin denoted female, often an unmarried female.
+
+The definitive URL for German patterns is by Kerchner 18th Century
+Pennsylvania German Naming Patterns
+
+SCOTCH NAMING PATTERNS:
+According to the book "In Search of Scottish Ancestry" the general
+naming pattern in Scotland was to name: The eldest son after the paternal
+grandfather.  The second son after the maternal grandfather.  The third
+after the father.  The oldest daughter after the maternal grandmother.
+The second daughter after the paternal grandmother.  The third daughter
+after the mother.
+
+One variation of above was for the eldest son to be named after the
+mother's father and the eldest daughter after the father's mother.
+
+Since given names change over the years someone doing research on their
+line would need to know the approximate time period when their ancestor
+was born and in what country.
+
+END
+
+

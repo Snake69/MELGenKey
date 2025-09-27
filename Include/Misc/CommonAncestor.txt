@@ -1,0 +1,256 @@
+
+From www.foxnews.com ...
+
+BEGIN
+
+Statisticians: Common Ancestor of All Humans Lived 5,000 Years Ago
+
+Wednesday, July 05, 2006
+
+Whoever it was probably lived a few thousand years ago, somewhere in East
+Asia - Taiwan, Malaysia and Siberia all are likely locations.
+
+He - or she - did nothing more remarkable than be born, live, have children
+and die.
+
+Yet this was the ancestor of every person now living on Earth - the last
+person in history whose family tree branches out to touch all 6.5 billion
+people on the planet today.
+
+That means everybody on Earth descends from somebody who was around as
+recently as the reign of Tutankhamen, maybe even during the Golden Age of
+ancient Greece. There's even a chance that our last shared ancestor lived
+at the time of Christ.
+
+"It's a mathematical certainty that that person existed," said science
+journalist Steve Olson, whose 2002 book "Mapping Human History" traces
+the history of the species since its origins in Africa more than 100,000
+years ago.
+
+It is human nature to wonder about our ancestors - who they were, where
+they lived, what they were like. People trace their genealogy, collect
+antiques and visit historical sites hoping to capture just a glimpse of
+those who came before, to locate themselves in the sweep of history and
+position themselves in the web of human existence.
+
+But few people realize just how intricately that web connects them not just
+to people living on the planet today, but to everyone who ever lived.
+
+With the help of a statistician, a computer scientist and a supercomputer,
+Olson has calculated just how interconnected the human family tree is.
+
+You would have to go back in time only 2,000 to 5,000 years - and probably
+on the low side of that range - to find somebody who could count every
+person alive today as a descendant.
+
+Furthermore, Olson and his colleagues have found that if you go back a
+little farther - about 5,000 to 7,000 years ago - everybody living today
+has exactly the same set of ancestors.
+
+In other words, every person who was alive at that time is either an ancestor
+to all 6 billion people living today, or their line died out and they have
+no remaining descendants.
+
+That revelation is "especially startling," statistician Jotun Hein of
+England's Oxford University wrote in a commentary on the research published
+by the journal Nature <http://www.nature.com/>.
+
+"Had you entered any village on Earth in around 3,000 B.C., the first person
+you would have met would probably be your ancestor," Hein marveled.
+
+It also means that all of us have ancestors of every color and creed.
+Every Palestinian suicide bomber has Jews in his past. Every Sunni Muslim
+in Iraq is descended from at least one Shiite. And every Klansman's family
+has African roots.
+
+How can this be?
+
+It's simple math. Every person has two parents, four grandparents and eight
+great-grandparents. Keep doubling back through the generations - 16, 32,
+64, 128 - and within a few hundred years you have thousands of ancestors.
+
+It's nothing more than exponential growth combined with the facts of life. By
+the 15th century you've got a million ancestors. By the 13th you've got
+a billion. Sometime around the 9th century - just 40 generations ago -
+the number tops a trillion.
+
+But wait. How could anybody - much less everybody - alive today have had
+a trillion ancestors living during the 9th century?
+
+The answer is, they didn't. Imagine there was a man living 1,200 years ago
+whose daughter was your mother's 36th great-grandmother, and whose son was
+your father's 36th great-grandfather. That would put him on two branches
+on your family tree, one on your mother's side and one on your father's.
+
+In fact, most of the people who lived 1,200 years ago appear not twice,
+but thousands of times on our family trees, because there were only 200
+million people on Earth back then.
+
+Simple division - a trillion divided by 200 million - shows that on average
+each person back then would appear 5,000 times on the family tree of every
+single individual living today.
+
+But things are never average. Many of the people who were alive in the
+year 800 never had children; they don't appear on anybody's family tree.
+Meanwhile, more prolific members of society would show up many more than
+5,000 times on a lot of people's trees.
+
+Keep going back in time, and there are fewer and fewer people available to
+put on more and more branches of the 6.5 billion family trees of people
+living today. It is mathematically inevitable that at some point, there
+will be a person who appears at least once on everybody's tree.
+
+But don't stop there; keep going back. As the number of potential ancestors
+dwindles and the number of branches explodes there comes a time when every
+single person on Earth is an ancestor to all of us, except the ones who
+never had children or whose lines eventually died out.
+
+And it wasn't all that long ago. When you walk through an exhibit of Ancient
+Egyptian art from the time of the pyramids, everything there was very
+likely created by one of your ancestors - every statue, every hieroglyph,
+every gold necklace.
+
+If there is a mummy lying in the center of the room, that person was almost
+certainly your ancestor, too.
+
+It means when Muslims, Jews or Christians claim to be children of Abraham,
+they are all bound to be right.
+
+"No matter the languages we speak or the color of our skin, we share ancestors
+who planted rice on the banks of the Yangtze, who first domesticated horses
+on the steppes of the Ukraine, who hunted giant sloths in the forests of
+North and South America, and who labored to build the Great Pyramid of
+Khufu," Olson and his colleagues wrote in the journal Nature.
+
+How can they be so sure?
+
+Seven years ago one of Olson's colleagues, a Yale University statistician
+named Joseph Chang, started thinking about how to estimate when the last
+common ancestor of everybody on Earth today lived.
+
+In a paper published by the journal "Advances in Applied Probability,"
+Chang showed that there is a mathematical relationship between the size of
+a population and the number of generations back to a common ancestor.
+
+Plugging the planet's current population into his equation, he came up with
+just over 32 generations, or about 900 years.
+
+Chang knew that answer was wrong because it relied on some common, but
+inaccurate, assumptions that population geneticists often use to simplify
+difficult mathematical problems.
+
+For example, his analysis pretended that Earth's population has always
+been what it is today. It also assumed that individuals choose their mates
+randomly. And each generation had to reproduce all at once.
+
+Chang's calculations essentially treated the world like one big meet market
+where any given guy was equally likely to pair up with any woman, whether
+she lived in the next village or halfway around the world.
+
+Chang was fully aware of the inaccuracy - people have to select their
+partners from the pool of individuals they have actually met, unless they
+are entering into an arranged marriage.
+
+But even then, they are much more likely to mate with partners who live
+nearby. And that means that geography can't be ignored if you are going to
+determine the relatedness of the world's population.
+
+A few years later Chang was contacted by Olson, who had started thinking
+about the world's interrelatedness while writing his book. They started
+corresponding by e-mail, and soon included in their deliberations Douglas
+Rohde, a Massachusetts Institute of Technology neuroscientist and computer
+expert who now works for Google.
+
+The researchers knew they would have to account for geography to get a
+better picture of how the family tree converges as it reaches deeper into
+the past. They decided to build a massive computer simulation that would
+essentially re-enact the history of humanity as people were born, moved
+from one place to another, reproduced and died.
+
+Rohde created a program that put an initial population on a map of the
+world at some date in the past, ranging from 7,000 to 20,000 years ago.
+Then the program allowed those initial inhabitants to go about their business.
+
+He allowed them to expand in number according to accepted estimates of past
+population growth, but had to cap the expansion at 55 million people due
+to computing limitations.
+
+Although unrealistic in some respects - 55 million is a lot less than the
+6.5 billion people who actually live on Earth today - he found through trial
+and error that the limitation did not significantly change the outcome with
+regard to common ancestry.
+
+The model also had to allow for migration based on what historians,
+anthropologists and archaeologists know about how frequently past populations
+moved both within and between continents.
+
+Rohde, Chang and Olson chose a range of migration rates, from a low level
+where almost nobody left their native home to a much higher one where up
+to 20 percent of the population reproduced in a town other than the one
+where they were born, and one person in 400 moved to a foreign country.
+
+Allowing very little migration, Rohde's simulation produced a date of about
+5,000 B.C. for humanity's most recent common ancestor. Assuming a higher,
+but still realistic, migration rate produced a shockingly recent date of
+around 1 A.D.
+
+Some people even suspect that the most recent common ancestor could have
+lived later than that.
+
+"A number of people have written to me making the argument that the
+simulations were too conservative," Rohde said.
+
+Migration is the key. When a people have offspring far from their birthplaces,
+they essentially introduce their entire family lines into their adopted
+populations, giving their immediate offspring and all who come after them
+a set of ancestors from far away.
+
+People tend to think of preindustrial societies as places where this sort
+of thing rarely happened, where virtually everyone lived and died within a
+few miles of the place where they were born. But history is full of examples
+that belie that notion.
+
+Take Alexander the Great, who conquered every country between Greece and
+northern India, siring two sons along the way by Persian mothers.
+
+Consider Prince Abd Al-Rahman, son of a Syrian father and a Berber mother,
+who escaped Damascus after the overthrow of his family's dynasty and started
+a new one in Spain.
+
+The Vikings, the Mongols, and the Huns all traveled thousands of miles to
+burn, pillage and - most pertinent to genealogical considerations - rape
+more settled populations.
+
+More peaceful people moved around as well. During the Middle Ages, the
+Gypsies traveled in stages from northern India to Europe. In the New World,
+the Navaho moved from western Canada to their current home in the American
+Southwest. People from East Asia fanned out into the South Pacific Islands,
+and Eskimos frequently traveled back and forth across the Bering Sea from
+Siberia to Alaska.
+
+"These genealogical networks, as they start spreading out they really have
+the ability to get virtually everywhere," Olson said.
+
+Though people like to think of culture, language and religion as barriers
+between groups, history is full of religious conversions, intermarriages,
+illegitimate births and adoptions across those lines.
+
+Some historical times and places were especially active melting pots -
+medieval Spain, ancient Rome and the Egypt of the pharaohs, for example.
+
+"And the thing is, you only need one," said Mark Humphrys, an amateur
+anthropologist and professor of computer science at Dublin City University.
+
+One ancestral link to another cultural group among your millions of forbears,
+and you share ancestors with everyone in that group.
+
+So everyone who reproduced with somebody who was born far from their own
+natal home - every sailor blown off course, every young man who set off to
+seek his fortune, every woman who left home with a trader from a foreign
+land - as long as they had children, they helped weave the tight web of
+brotherhood we all share.
+
+Copyright 2006 FOX News Network, LLC. All rights reserved.
+
+END
+

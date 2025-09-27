@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Point to Point Ancestral Line</title>
+
+<style type="text/css">
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .fieldset-auto-width {
+         display: inline-block;
+    }
+</style>
+
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial2">
+<span id="dial2span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<h1>Point to Point Ancestral Line</h1>
+<span id="TitleDBName"></span>
+<br>
+<hr style="width:50%">
+
+<script type="text/javascript" src="clib.js"></script>
+
+<script>
+
+onload = function init() {
+    /* check for server running, DB not active, DB not verified */
+    check4ActiveDB().then((res) => {
+        var span = document.getElementById("dial1span");
+        const dialog1 = document.querySelector("#dial1");
+        if (res == -1) {
+            span.innerHTML = "No Family DataBase is active.<br>Cannot produce Point to Point Ancestral Line.<br> <br>";
+            dialog1.showModal();
+        }
+        if (res == -3) {
+            span.innerHTML = "The active Family DataBase is not verified.<br>Cannot produce Point to Point Ancestral Line.<br> <br>";
+            dialog1.showModal();
+        }
+        if (res == -2) {
+            span.innerHTML = "It seems the node/server is not running.<br>Cannot produce Point to Point Ancestral Line.<br> <br>";
+            dialog1.showModal();
+        }
+    })
+
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1)
+            document.getElementById("TitleDBName").innerHTML = '(' + e.data + ')'; 
+    }
+}
+
+</script>
+
+<h3>
+Show the ancestral line between two people.<br>
+</h3>
+
+<form id="Point2PointLine" method="POST">
+<input type="hidden" name="ORIGIN" value="Point2PointLine">
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Both entries are Required</legend>
+<label> <input type="text" pattern="[0-9.]" id="Person1" name="Person1" value='' placeholder="Person #1"> enter ID# </label>
+<br> <br>
+<label> <input type="text" pattern="[0-9.]" id="Person2" name="Person2" value='' placeholder="Person #2"> enter ID# </label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Data to include in report (all are optional)</legend>
+<label> <input type="checkbox" id="ID" name="ID"> ID </label>
+<br> <br>
+<label> <input type="checkbox" id="DOB" name="DOB"> Date of Birth </label>
+<label> <input type="checkbox" id="DOBYR" name="DOBYR"> Year Only </label>
+<br> <br>
+<label> <input type="checkbox" id="POB" name="POB"> Place of Birth </label>
+<br> <br>
+<label> <input type="checkbox" id="DOD" name="DOD"> Date of Death </label>
+<label> <input type="checkbox" id="DODYR" name="DODYR"> Year Only </label>
+<br> <br>
+<label> <input type="checkbox" id="POD" name="POD"> Place of Death </label>
+<br> <br>
+<label> <input type="checkbox" id="Spouse" name="Spouse"> Spouse </label>
+<br> <br>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Abbreviate Place Names</legend>
+<label> <input type="checkbox" id="ABBR" name="ABBR"> Abbreviate Township (Twp), County (Co) & Region (US state or Canada province) </label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Default # of dots is 2</legend>
+<label> <input type="number" pattern="[0-9]" min="0" max="9" id="Dots" name="Dots" value="2"> # of dots indentation for generations </label>
+</fieldset>
+
+<br> <br>
+<fieldset class="fieldset-auto-width">
+<legend>Direction of Ancestral Flow for Report</legend>
+<input type="radio" id="E2L" name="DFlow" value="E2L" checked> <label>Recent to Distant</label>
+<br>
+<input type="radio" id="L2E" name="DFlow" value="L2E"> <label>Distant to Recent</label>
+</fieldset>
+
+<br> <br> <br>
+<button type="button" id="button" onclick='sendFormData2Node(); this.disabled = true;'> Create Point to Point Report </button>
+
+</form>
+
+<script>
+
+function sendFormData2Node() {
+    var formData = new FormData(document.getElementById("Point2PointLine"));
+    let formDataJSON = {};
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    for (const [key, value] of formData.entries())
+        formDataJSON[key] = value;
+
+    ws.onopen = function() {
+        ws.send("Point2Point" + JSON.stringify(formDataJSON));
+        ws.onmessage = function(e) {
+            if (e.data.search("Point to Point Ancestral Line Report") == -1) {
+                var span = document.getElementById("dial2span");
+                const dialog2 = document.querySelector("#dial2");
+                span.innerHTML = e.data;
+                dialog2.showModal();
+                document.getElementById("button").disabled = false;  // re-enable button
+            } else {
+                /* open in a new tab */
+                var w = window.open('about:blank');
+                w.document.open();
+                w.document.write(e.data);
+                w.document.close();
+                document.getElementById("button").disabled = false;  // re-enable button
+            }
+        }
+    }
+    document.getElementById("button").disabled = false;  // re-enable button
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<br>
+<hr style="width:50%">
+
+</body>
+</html>

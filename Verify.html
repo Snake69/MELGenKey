@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>  
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Verify Active DataBase</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .fieldset-auto-width {
+         display: inline-block;
+         width: 75%;
+    }
+    #verification-progress {
+        width: 40%;
+    }
+</style>
+
+</head>  
+
+<body>  
+
+<dialog id="dial1">
+<span>It seems the node/server is not running.<br>Cannot perform function without the server running.<br> <br></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial2">
+<span id="dial2span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog id="dial3">
+<span>Notice - An HTML version of the active Family DataBase exists.<br>
+      Whether verification is successful or unsuccessful now, the HTML version<br>
+      of the DataBase will be deleted and will need to be re-created.<br><br>
+      Click OK to continue with verification, or click Cancel.<br><br></span>
+<form method="dialog">
+<button type="submit" onclick="DoVerify()">OK</button>
+<button formmethod="dialog" type="submit">Cancel</button>
+</form>
+</dialog>
+
+<h1>Verify Active DataBase</h1>
+<span id="TitleDBName"></span>
+<br>
+<hr style="width:50%">
+
+<form id="Verify" method="POST">
+<input type="hidden" name="ORIGIN" value="Verify">
+
+<h4> This function will verify the active Family DataBase to ensure the format of the data <br>
+     meets with the standards expected by MELGenKey. Without verifying the data many <br>
+     functions in the system will not be available (e.g., Reports, Search/Inspect/Analyze Family Data, <br>
+     and many others). The index, if it exists, will also be verified. <br> <br>
+     Click to view the verification checks which are performed -> <input type="button" 
+     onclick="window.open('Docs/VerificationChecks.html','_blank')" value="what verification checks are performed"/><br><br>
+     Click the 'Continue' button to perform the verification. <br>
+<br> <br> </h4>
+
+<fieldset class="fieldset-auto-width">
+<legend>Include Informational Messages in Report (check none or one)</legend>
+<label> <input type="checkbox" id="IImp" name="IImp"> Include More Important Informational Messages </label>
+<br> <br>
+<label> <input type="checkbox" id="IAll" name="IAll"> Include All Informational Messages </label>
+</fieldset>
+<br> <br> <br>
+
+<fieldset class="fieldset-auto-width">
+<legend>Disable Check for Recent Generations</legend>
+The number entered below is a generation (the number to the left of the period in an ID). This is to disable the check for a Family Group to
+exist with the ID of a child in another Family Group. This would be used, for example, when possible living people are omitted from a Family
+DataBase for public viewing. Additionally, the check ensuring the referenced Family Group exists when verifying the index (if present) is
+also disabled. This check takes precedence over the Auto-Delete check below.<br> <br>
+<label> Disable checks below generation: <input type="number" min="0" id="DisableChk" name="DisableChk"> </label>
+</fieldset>
+<br> <br> <br>
+
+<fieldset class="fieldset-auto-width">
+<legend>Auto-Delete Failed References in Index</legend>
+This option only functions if the index file exists. By checking this box, when an individual is not found in the referenced Family Group, that
+reference in the index is auto-deleted and an error is NOT issued. If that is the only reference for that individual then the entire entry in
+the index is auto-deleted. If the "Disable check" above is engaged and the reference falls within the disable check then the reference will
+NOT be auto-deleted.<br> <br>
+<label> <input type="checkbox" id="AutoDel" name="AutoDel"> Auto-Delete Failed References in Index </label>
+</fieldset>
+<br> <br>
+
+<div class="w3-container" style="display: flex; justify-content: center; align-items: center; height: 20px;">
+<label id="prlabel"></label>
+<progress id="verification-progress" value="0" max="100" style="display: none;"></progress>
+</div>
+
+<button type="button" id="button" onclick="Continue(); document.body.style.cursor = 'wait'; this.disabled = true;"> Continue </button>
+
+<h4> Verification may take some time depending upon the size of the DataBase. <br> </h4>
+
+</form>
+
+<script>
+
+function Continue() {
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    /* check if HTML version exists for active DB */
+    ws.onopen = function() {
+        ws.send("DBLocation");
+        ws.onmessage = function(e) {
+            ws.send("FEXIST./" + e.data + '/HTML/tableofcontents.html');
+            ws.onmessage = function(e) {
+                if (e.data != "-1") {
+                    const dialog = document.querySelector("#dial3");
+                    dialog.showModal();
+                    document.body.style.cursor = 'default';
+                    document.getElementById("button").disabled = false;  // re-enable button
+                } else
+                    DoVerify();
+            }
+        }
+    }
+}
+
+function DoVerify() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    const progressBar = document.getElementById('verification-progress');
+    const prlabel = document.getElementById('prlabel');
+    var infomsg = 0, disable = 0, autodel = 0;
+
+    if (document.getElementById('IAll').checked)
+        infomsg = 2;
+    else
+        if (document.getElementById('IImp').checked)
+            infomsg = 1;
+    if (document.getElementById("DisableChk").value != "")
+        disable = document.getElementById("DisableChk").value;
+    if (document.getElementById('AutoDel').checked)
+        autodel = 1;
+
+    ws.onopen = function() {
+        ws.send("VERIFY" + infomsg + autodel + disable);
+        ws.onmessage = function(e) {
+            if (e.data.search("Verify Report") == -1) {
+                var span = document.getElementById("dial2span");
+                span.innerHTML = e.data;
+                const dialog = document.querySelector("#dial2");
+                dialog.showModal();
+                document.body.style.cursor = 'default';
+                document.getElementById("button").disabled = false;  // re-enable button
+                /* clean up progress bar*/
+                prlabel.innerHTML = "";
+                progressBar.style.display = 'none';
+                progressBar.value = 0;
+            } else {
+                /* open in a new tab */
+                var w = window.open('about:blank');
+                w.document.open();
+                w.document.write(e.data);
+                w.document.close();
+                if (Notifications == 1) {
+                    var audio = new Audio('Include/Sounds/AirplaneDing.wav');
+                    audio.play();
+                }
+                document.body.style.cursor = 'default';
+                document.getElementById("button").disabled = false;  // re-enable button
+                /* clean up progress bar*/
+                prlabel.innerHTML = "";
+                progressBar.style.display = 'none';
+                progressBar.value = 0;
+            }
+        }
+    }
+    ws.onerror = function () {
+        const dialog = document.querySelector("#dial1");
+        dialog.showModal();
+        document.body.style.cursor = 'default';
+        document.getElementById("button").disabled = false;  // re-enable button
+        /* clean up progress bar*/
+        prlabel.innerHTML = "";
+        progressBar.style.display = 'none';
+        progressBar.value = 0;
+    }
+}
+
+var Notifications;
+
+onload = function init() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var UserPrefs = {};
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1)
+            document.getElementById("TitleDBName").innerHTML = '(' + e.data + ')'; 
+    }
+
+    UserPrefs.length = 0;
+    ws.onopen = function() {
+        ws.send("GetUserPrefs");
+    }
+    ws.onmessage = function(e) {
+        try {
+            UserPrefs = JSON.parse(e.data);
+            if (UserPrefs.length === 0)
+                Notifications = 1;    // default is notifications on
+            else
+                Notifications = UserPrefs.Not;
+        } catch (error) {
+            alert("Error getting User Preferences.");
+        }
+    }
+    ws.onerror = function(error) {
+        // do nothing
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+        // Get a reference to the progress bar element
+        const progressBar = document.getElementById('verification-progress');
+        const prlabel = document.getElementById('prlabel');
+
+        if (sseEventType == "monitorweb-update") {
+            alert(e.data.message);
+        } else
+            if (sseEventType == "verify-progress-update") {
+                const progressValue = parseInt(e.data.message.substring(2), 10);
+
+                // Check if the message is a valid number
+                if (!isNaN(progressValue)) {
+                    progressBar.style.display = 'block'; // Make the progress bar visible
+                    progressBar.value = progressValue;  // Update its value
+                    if (e.data.message.startsWith("FB"))
+                        prlabel.innerHTML = "Verifying Family DataBase Body(s):";
+                    else
+                        if (e.data.message.startsWith("SR"))
+                            prlabel.innerHTML = "Sorting References in Index Entries:";
+                        else
+                            if (e.data.message.startsWith("SI"))
+                                prlabel.innerHTML = "Sorting Index Lines:";
+                            else
+                                prlabel.innerHTML = "Working ...";
+                } else
+                    // Handle non-numeric messages
+                    if (e.data.message.startsWith('DI'))
+                        prlabel.innerHTML = "Verifying DataBase Index ...";
+                    else
+                        if (e.data.message.startsWith('CR'))
+                            prlabel.innerHTML = "Verifying Citation File References ...";
+                        else
+                            prlabel.innerHTML = "Working ...";
+            }
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<hr style="width:50%">
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+
+According to US Census Bureau, leading causes of death:
+
+BEGIN
+
+1900
+
+1.  Pneumonia
+2.  Tuberculosis
+3.  Gastrointestinal infections
+4.  Heart disease
+5.  Stroke
+
+1950
+
+1.  Heart disease
+2.  Cancer
+3.  Stroke
+4.  Infant death
+5.  Influenza
+
+2010
+
+1.  Heart disease
+2.  Cancer
+3.  Respiratory diseases
+4.  Stroke
+5.  Alzheimer's disease
+
+END
+
+
+
+from https://groups.io/United-Kingdom
+
+BEGIN
+
+Causes of Death in London - 1632
+
+Abortive & Stilborn              445
+Affrighted                         1
+Aged                             628
+Ague                              43
+Apoplex & Meagrom                 17
+Bit with a mad dog                 1
+Bleeding                           3
+Bloody flux, scowring & flux     348
+Brused, Issues, sores & ulcers    28
+Burnt & Scalded                    5
+Burst & Rupture                    9
+Cancer & Wolf                     10
+Canker                             1
+Childbed                         171
+Chrisomes & Infants             2268
+Cold & Cough                      55
+Colick, Stone & Strangury         56
+Consumption                     1797
+Convulsion                       241
+Cut of the Stone                   5
+Dead in the street & starved       6
+Dropsie & Swelling               267
+Drowned                           34
+Executed & prest to death         18
+Falling Sickness                   7
+Fever                           1108
+Fistula                           13
+Flocks & small Pox               531
+French Pox                        12
+Gangrene                           5
+Gout                               4
+Grief                             11
+Jaundies                          43
+Jawfain                            8
+Impostume                         74
+Kil'd by several accidents        46
+King's Evil                       38
+Lethargie                          2
+Livergrown                        87
+Lunatique                          5
+Made away themselves              15
+Measles                           80
+Murthered                          7
+Over-laid & starved at nurse       7
+Palsie                            25
+Piles                              1
+Plague                             8
+Planet                            13
+Pleurisie & Spleen                36
+Purples & spotted Feaver          38
+Quinsie                            7
+Rising of the Lights              98
+Sciatica                           1
+Scurvey & Itch                     9
+Suddenly                          62
+Surfet                            86
+Swine Pox                          6
+Teeth                            470
+Thrush & Sore mouth               30
+Tympany                           13
+Tissick                           34
+Vomiting                           1
+Worms                             27
+
+END
+

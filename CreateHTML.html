@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .dialog2 {
+        width: 50%;
+    }
+    .dialspan {
+        display: inline-block;
+        width: 50%;
+    }
+</style>
+
+<title>Create HTML Version of Family DataBase</title>
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog class="dialog2" id="dialog2">
+<span class="dial2span" id="dialog2span"></span>
+<form method="dialog">
+<button class="OK">OK</button>
+<button class="CANCEL">Cancel</button>
+</form>
+</dialog>
+
+<h1>Create HTML Version of Family DataBase</h1>
+<span id="TitleDBName"></span>
+<hr style="width:50%">
+
+<form id="CreateHTML" method="POST">
+<input type="hidden" name="ORIGIN" value="CreateHTML">
+
+<h4> This function will create a HTML version of the active Family DataBase. HTML makes it easier to jump around <br>
+     in the data when viewing on a computer. (The Family DataBase must first be successfully verified.) The HTML <br>
+     version of the active Family DataBase is suitable to be used as a Web page. (See "Help/Info/Docs -> Using MELGenKey" and <br>
+     then click on "Create HTML Version of Family DataBase" for an explanation of how to do this.) <br> <br>
+     Click the 'Continue' button to proceed. <br>
+<br> <br> </h4>
+
+<button type="button" id="button" onclick="Continue(); document.body.style.cursor = 'wait'; this.disabled = true;"> Continue </button>
+
+<h4> Creation of a HTML version may take some time depending upon the size of the DataBase. <br> </h4>
+</form>
+
+<script type="text/javascript">
+
+function Continue() {
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    ws.onopen = function() {
+        ws.send("PreCreateHTML");
+        ws.onmessage = function(e) {
+            if (e.data.search("No fatal errors.") == -1) {
+                var span = document.getElementById("dial1span");
+                var msg = e.data;
+                const dialog1 = document.querySelector("#dial1");
+                span.innerHTML = msg;
+                dialog1.showModal();
+                document.body.style.cursor = 'default';
+                document.getElementById("button").disabled = false;   // re-enable button
+            }
+            else {
+                var dialog2 = document.getElementById('dialog2');
+                var okButton = dialog2.querySelector('button.OK');
+                var cancelButton = dialog2.querySelector('button.CANCEL');
+                var dialog2span = document.getElementById("dialog2span");
+                dialog2span.innerHTML = e.data;
+                dialog2.showModal();
+
+                dialog2.addEventListener('click', function handleButtonClicks(e) {
+                    if (e.target.tagName !== 'BUTTON') {
+                        document.body.style.cursor = 'default';
+                        document.getElementById("button").disabled = false;   // re-enable button
+                        return;
+                    }
+                    dialog2.removeEventListener('click', handleButtonClicks);
+                    if (e.target === okButton) {
+                        document.body.style.cursor = 'wait';
+                        document.getElementById("button").disabled = true;
+                        ws.send("DoCreateHTML");
+
+                        ws.onmessage = function(e) {
+                            var span = document.getElementById("dial1span");
+                            var msg = e.data;
+                            const dialog1 = document.querySelector("#dial1");
+                            span.innerHTML = msg;
+                            dialog1.showModal();
+                            if (Notifications == 1) {
+                                var audio = new Audio('Include/Sounds/AirplaneDing.wav');
+                                audio.play();
+                            }
+                            document.body.style.cursor = 'default';
+                            document.getElementById("button").disabled = false;   // re-enable button
+                        }
+                    } else {
+                        var span = document.getElementById("dial1span");
+                        var msg = "Create HTML canceled.<br> <br>";
+                        const dialog1 = document.querySelector("#dial1");
+                        span.innerHTML = msg;
+                        dialog1.showModal();
+                        document.body.style.cursor = 'default';
+                        document.getElementById("button").disabled = false;   // re-enable button
+                    }
+                })
+                document.body.style.cursor = 'default';
+                document.getElementById("button").disabled = false;   // re-enable button
+            }
+        }
+    }
+}
+
+var Notifications;
+
+onload = function init() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1)
+            document.getElementById("TitleDBName").innerHTML = '(' + e.data + ')'; 
+    }
+
+    UserPrefs.length = 0;
+    ws.onopen = function() {
+        ws.send("GetUserPrefs");
+    }
+    ws.onmessage = function(e) {
+        try {
+            UserPrefs = JSON.parse(e.data);
+            if (UserPrefs.length === 0)
+                Notifications = 1;    // default is notifications on
+            else
+                Notifications = UserPrefs.Not;
+        } catch (error) {
+            reject(error);
+        }
+    }
+    ws.onerror = function(error) {
+        reject(error);
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<hr style="width:50%">
+
+</body>
+</html>

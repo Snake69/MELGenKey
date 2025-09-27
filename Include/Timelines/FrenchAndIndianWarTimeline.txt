@@ -1,0 +1,406 @@
+# French & Indian War Events
+# v20231013
+# any line with the # character in column 1 is considered a comment line
+# comment lines are not included in MELGenKey Reports
+25 Oct 1743 France signs a treaty known as the Second Family Compact
+              with Spain and on 15 March 1744 joins Spain's war against
+              England. [2]
+15 Mar 1744 -Oct 1748, King George's War: Conflict over domination in
+              North America ends with no clear victor with the Treaty of
+              Aix-la-Chapelle. [1]
+24 May 1744 France attacks and captures British fort at Canso in Nova
+              Scotia. Massachusetts Governor tries to meet the French
+              threat. - Colonial North America is again plunged into a war
+              precipitated by yet another succession crisis in Europe. On this
+              occasion, it is the War of the Austrian Succession, a war for
+              which the British in Nova Scotia are ill-prepared. Twenty-five
+              years of neglect by Britain has left the defences of the colony
+              in a wretched condition. Canso is virtually defenceless. [2]
+   Jul 1744 The French make an unsuccessful assault on Annapolis Royal,
+              in Nova Scotia. The fort at Annapolis Royal is, in the words
+              of Lieutenant-Governor Mascarene "apt to tumble down in heavy
+              rains or in thaws after frosty weather." Mascarene's fears
+              are soon to be realized. [2]
+27 Dec 1744 Mutiny at Fortress Louisbourg. [2]
+ 5 Feb 1745 Massachusetts decides to attack Fortress Louisbourg. [2]
+30 Apr 1745 4000 New England troops arrive and go ashore. [2]
+16 Jun 1745 Sir Peter Warren captures Fort Louisbourg - his expedition
+              is funded mainly by Massachusetts. The French incite Indian
+              raids into Maine while Sir William Johnson leads his Iroquois
+              warriors into Canada [Quebec]. [2]
+15 Jul 1745 Massachusetts governs Louisbourg. [2]
+28 Nov 1745 The French burn Saratoga, New York. [2]
+10 Sep 1746 Duc d'Anville arrives with 13,000 men in 73 ships. His orders
+              from the King of France: Expel the British from Nova Scotia,
+              then burn Boston, ravage New England. [2]
+       1747 England reimburses Rhode Island for the heavy cost of the
+              Louisbourg Expedition of 1745. [2]
+            The Ohio Company is formed in Virginia. Early real-estate
+              developers hope to make a lot of money selling land to settlers
+              in the wilderness. [2]
+11 Feb 1747 Massachusetts suffers serious defeat - Massacre at Grand Pre,
+              Nova Scotia. [2]
+14 May 1747 First Battle of Cape Finisterre. [2]
+19 Jun 1748 Treaty of Fort Pickawillany gives England access to Ohio area. [2]
+20 Jul 1748 Treaty of Friendship between the Twightwee Nation and the King
+              of Great Britain. [2]
+ 1 Sep 1748 Conrad Weiser, the noted Indian interpreter and agent, "set up
+              the Union Flag on a long Pole", the first time the flag of
+              Great Britain was ever unfurled along the upper Ohio River. [2]
+18 Oct 1748 Louisbourg Fortress is given back to France. Massachusetts,
+              New Hampshire and Connecticut are enraged. [2]
+30 May 1749 Ohio Company chartered. [2]
+15 Jun 1749 The Celeron Expedition. France tries to hold central North
+              America. [2]
+16 Jun 1749 England reimburses Massachusetts for the heavy cost of the
+              Louisbourg Expedition of 1745. [2]
+       1749 England reimburses Connecticut for the heavy cost of the
+              Louisbourg Expedition of 1745. [2]
+29 Jul 1759 France Starts Burying Lead Plates Along the Ohio River. Celeron's
+              Expedition: 250 men in 23 large canoes. [2]
+ 3 Aug 1749 Louisbourg Fortress is handed back to France. [2]
+   Sep 1750 -Oct 1750, England constructs Fort Lawrence. [2]
+ 6 Oct 1750 Ambush at Missaguash River. French-English tension increases. [2]
+12 Apr 1751 France begins construction of Fort Beausejour. [2]
+       1752 -1753, Agitation grows: Tension grows between France and England
+              over land and trading claims. Minor skirmishes break out. [1]
+13 Jun 1752 Logstown Treaty is signed, gives England claim to Ohio. [2]
+21 Jun 1752 English settlement at Pickawillany is destroyed by French. [2]
+ 1 Jul 1752 Marquis de Duquesne arrives at Quebec. [2]
+14 Aug 1752 Peregrine Hopson takes over as the new governor at Halifax,
+              replacing Edward Cornwallis, Cornwallis returns to England. [2]
+22 Nov 1752 Treaty between England and Micmacs in Nova Scotia. [2]
+24 Apr 1753 French Expedition arrives at Presque Isle. [2]
+ 3 May 1753 France begins construction of Fort Presque Isle. [2]
+   Jul 1753 France begins construction of Fort LeBoeuf. [2]
+31 Oct 1753 George Washington leaves Williamsburg, Virginia, with a letter
+              written by Governor Dinwiddie to the French commanding officer
+              at Fort LeBoeuf, demanding that the French forces depart from
+              the area. [2]
+15 Nov 1753 George Washington and Christopher Gist leave Wills Creek
+              (now Cumberland, Maryland), on their way to deliver Governor
+              Dinwiddie's letter to the French commanding officer at Fort
+              LeBoeuf. [2]
+23 Nov 1753 George Washington and Christopher Gist arrive at the Forks of
+              the Ohio, on their way to deliver Governor Dinwiddie's letter
+              to the French commanding officer at Fort LeBoeuf. [2]
+30 Nov 1753 George Washington and Christopher Gist leave Logstown, on their
+              way to deliver Governor Dinwiddie's letter to the French
+              commanding officer at Fort LeBoeuf. [2]
+11 Dec 1753 George Washington and Christopher Gist arrive at Fort LeBoeuf,
+              to deliver Governor Dinwiddie's letter to the French commanding
+              officer there, Jacques Legardeur de Sainte-Pierre. [2] The
+              demand is rejected. [1]
+       1754 The French and Indian War begins in North America. [2] [3] [4]
+              It becomes the Seven Years War when fighting spreads to Europe
+              in 1756. [2] For almost nine years, [3] [4] a war was fought
+              between British and French soldiers in North America. The
+              British were victorious, and France was forced to cede a
+              new sense of independent identity amongst the colonists,
+              who were forced to defend the colonies with limited help from
+              the motherland. [3]
+            Fort de Chartres is renovated and improved. [2]
+   Jan 1754 The first skirmish of the French and Indian War occured when
+              a small force under George Washington engaged and defeated a
+              reconnaissance party of French and Indians near Fort Duquesne
+              (now Pittsburgh, Pennsylvania). [2]
+ 6 Jan 1754 George Washington and Christopher Gist arrive Wills Creek
+              (now Cumberland, Maryland), bringing with them the reply
+              given by the French commanding officer at Fort LeBoeuf to
+              Governor Dinwiddie's letter. There is still a long way to go
+              to get the French reply to Governor Dinwiddie at Williamsburg,
+              Virginia. [2]
+16 Jan 1754 George Washington arrives at Williamsburg, Virginia, and gives to
+              Governor Dinwiddie the reply by the French commanding officer
+              at Fort LeBoeuf. 77 days have gone by between the departure
+              of Dinwiddie's letter from Williamsburg, and the arrival
+              of the reply. This eleven-week time is typical of the slow
+              communications of those times; in fact this was quick work,
+              considering that the trip was made in winter with deep snow
+              on the ground and ice in the rivers for most of the time,
+              and Washington was travelling through primeval wilderness
+              without roads. [2]
+17 Feb 1754 England initiates the construction of Fort Prince George. [2]
+15 Apr 1754 France wins a big one: English Fort Prince George becomes French
+              Fort Duquesne. [2]
+   May 1754 Washington defeats French in a surprise attack (the first battle)
+              and builds Fort Necessity. [1]
+28 May 1754 A 22-year-old lieutenant colonel of the Virginia militia named
+              George Washington successfully defeats a party of French
+              and Indian scouts in southwest Pennsylvania [4] [5] (Battle
+              of Jumonville Glen [2] [4] in what is now Fayette County)
+              [4] as Virginia attempts to lay claim to the territory for
+              its own settlers. The action snowballed into a world war
+              (The French and Indian War, 1754-1763) and began the military
+              career of the first American commander in chief. [4] [5]
+ 3 Jun 1754 Fort Necessity is completed, more or less, England's farthest
+              west outpost in North America. [2]
+ 9 Jun 1754 George Washington is promoted to full Colonel in charge of the
+              Virginia Regiment. [2]
+19 Jun 1754 -11 Jul 1754, Albany Congress. [2]
+ 3 Jul 1754 The Battle of Great Meadows, a.k.a. The Battle of Fort
+              Necessity. English Fort Necessity is attacked by French forces
+              from Fort Duquesne. [2]
+            8 PM, [2] Washington surrenders Fort Necessity to the French. [2]
+              [6]
+            Washington, blamed for the loss of Fort Necessity, will resign. He
+              will later return as a volunteer under British authority. [1]
+28 Aug 1754 The settlement at Hoosick (Rensselaer County, New York)
+              is attacked by a group of French and Indians. Two persons
+              are killed, and the houses, barns, and crops are destroyed.
+              The next day, the settlement of San Coick, south of Hoosick,
+              is also destroyed. [2]
+28 Aug 1754 The settlement at Hoosick (Rensselaer County, New York)
+              is attacked by a group of French and Indians. Two persons
+              are killed, and the houses, barns, and crops are destroyed.
+              The next day, the settlement of San Coick, south of Hoosick,
+              is also destroyed. [2]
+24 Sep 1754 Major General Edward Braddock is appointed Commander in Chief
+              of British forces in the thirteen colonies. [2]
+   Dec 1754 George Washington resigns his commission when Governor Dinwiddie
+              reorganizes the Regiment and reduces officers' rank. [2]
+       1755 Fort Lyttelton construction begins. [2]
+23 Feb 1755 Gen. Braddock arrives in Williamsburg. [2]
+14 Apr 1755 Alexandria Council. [2]
+ 6 Jun 1755 Battle of the Grand Banks. [2]
+11 Jun 1755 Braddock arrives at Fort Beausejour. [2]
+16 Jun 1755 British Capture Fort Beausejour. French Fort Beausejour becomes
+              English Fort Cumberland. [2] This led to the expulsion of
+              the Acadians. [4]
+17 Jun 1755 French Fort Gaspereau captured by England. [2]
+   Jul 1755 The Battle of the Wilderness - British General Braddock's forces
+              are defeated near Fort Duquesne in Pennsylvania, leaving the
+              backwoods of British Territory undefended. [1]
+ 3 Jul 1755 Shawano Indians attack the New River Settlement in
+              Virginia. Several settlers killed. [2]
+ 9 Jul 1755 Start of construction of Fort Lyman, a.k.a. Fort Edward. [2]
+            Battle of the Monongahela. [2]
+   Aug 1755 William Johnson arrives at Lac du Saint Sacrament and renames
+              it Lake George. Begins work on a fortification to later be
+              named Fort William Henry. [1]
+26 Aug 1755 Construction of Fort William Henry begins. [2]
+   Sep 1755 France begins construction of Fort Carillon. [2]
+ 8 Sep 1755 Bloody Morning Scout, [2] Battle of Lake George [2] [4]
+              [7] (French defeated, Dieskau killed) [7] and Bloody Pond
+              Massacre. [2]
+ 9 Sep 1755 William Johnson's forces are engaged in several battles that
+              would collectively be named the Battle of Lake George.
+              This would include the Bloody Morning Scout, an ambush that
+              resulted in the death of British Col. Ephraim Williams and
+              Mohawk King Hendrick. A later engagement would be called the
+              Battle of Bloody Pond. Johnson's forces win the day making
+              him the first British hero of the war. [1]
+10 Sep 1755 Deportation of the Acadians begins. [2]
+16 Oct 1755 Penns Creek Massacre and Leroy Massacre. [2]
+ 9 Dec 1755 The first post office in what is now Canada is established at
+              Halifax, under the direction of Postmaster-General Benjamin
+              Franklin. [2]
+21 Dec 1755 French Ultimatum to England. [2]
+       1756 Because it is situated at a more strategic location (now the
+              town of Fort Loudon, Pennsylvania) Fort Loudoun was built to
+              replace Fort McDowell. [2]
+            Fort Shirley constructed. [2]
+            France constructs Fort Machault, the last new fort built by
+              France. [2]
+27 Mar 1756 Battle of Fort Bull, a French victory. [2]
+18 Apr 1756 Battle of Great Cacapon River (Mercer's Massacre). [2]
+12 May 1756 Marquis de Montcalm, the newly-appointed commander in chief of
+              the French forces in North America, arrives at Quebec. [2]
+18 May 1756 England formally declares war on France. This war is known as
+              the Seven Years War in Europe and Canada, and the French
+              and Indian War in the United States. [2] England hoped to
+              conquer Canada. The final defeat of the French came in 1763
+              with the British victory at the Battle of Quebec on the Plains
+              of Abraham. [8]
+10 Jul 1756 Col. George Washington holds a Council of War at Fort Cumberland
+              to discuss the chain of English forts that is to be built
+              across western Virginia from the Maryland border to the North
+              Carolina border.  It is hoped that this chain of forts will
+              protect the settlers from attacks by the French and their
+              Indian allies. [2]
+13 Jul 1756 Capt. Robert McKenzie is ordered to take command at Fort
+              Pearsall. [2]
+26 Jul 1756 The Easton Conference begins. [2]
+30 Jul 1756 Massacre at Fort Granville. [2]
+15 Aug 1756 Fort Oswego: The French capture this fort on the banks of the
+              Great Lakes, and England loses control of Lake Ontario. [3]
+ 8 Sep 1756 Lieutenant Colonel John Armstrong led 307 men from the Second
+              Battalion of the Pennsylvania Regiment in a daring raid
+              against Kittanning, an important Delaware Indian village
+              situated along the Allegheny River approximately forty miles
+              upriver from the forks of the Ohio. During a fierce engagement,
+              Armstrong's force burned the eastern portion of Kittanning
+              and several surrounding cornfields, destroyed a significant
+              cache of gunpowder and ammunition, and killed several Delaware
+              warriors, including the notorious war leader Captain Jacobs. [2]
+12 Oct 1756 Abandoned Fort Lawrence is burned. As the British army was now
+              using the more substantial facility at Fort Cumberland (the
+              former Fort Beausejour), British forces decided to demolish
+              the abandoned works at Fort Lawrence to prevent the facility
+              being used as shelter by Acadians who may have escaped to
+              nearby forests. [2]
+ 4 Dec 1756 William Pitt becomes the effective Prime Minister of England. [2]
+17 Jan 1757 Battle of La Barbue Creek. Robert Rogers and his men attack a
+              party of French travelling on the ice on Lake Champlain - thirty
+              men in ten sleighs, each pulled by eight horses - at La Barbue
+              Creek (Putnam's Creek) that runs into Lake Champlain almost
+              exactly half-way between the French forts named Ticonderoga
+              and Crown Point. Unfortunately for Rogers, the French were
+              travelling in two groups a few minutes apart, two sleighs
+              in the first group and eight in the second. Rogers Rangers
+              attack the first group before they see the second coming. The
+              sound of gunshots alarms the second group who retreat to
+              Fort Ticonderoga and warn the French soldiers there. The
+              French send men under Captain Basserode, who overtake Rogers
+              near Carillon. A pitched battle is fought, a seesaw affair
+              until Rogers orders his rangers to disperse into the night
+              (a common ranger tactic).  The Rangers lose fourteen killed,
+              six wounded and have another six taken prisoner. Major Rogers
+              himself is wounded twice. Rogers and his surviving men make
+              it back to Fort William Henry to recover. [2]
+18 Mar 1757 Fort William Henry repels a French attack. [2]
+   Apr 1757 William Pitt is forced to resign as Prime Minister of England. [2]
+   Jun 1757 The elder William Pitt (1708-1778), the first Earl of Chatham, was
+              brought into the British government as secretary of state (under
+              an arrangement that gave him the effective decision-making
+              power for military and diplomatic affairs). One of the
+              first things he did was to replace tentative and ineffectual
+              military commanders with younger men charged with carrying
+              out a dynamic offensive strategy. [2]
+   Jul 1757 Fort Carillon is completed. French General Montcalm uses the
+              new Fort Carillon as a base from which to launch his attack
+              on British Fort William Henry on Lake George. [2]
+ 3 Aug 1757 -9 Aug 1757, Fort William Henry: The commander-in-chief of
+              the French forces, Louis-Joseph de Montcalm lays siege to
+              Fort William Henry which Col. Monro finally surrenders. The
+              infamous massacre occurs, later dramatized in James Fenimore
+              Cooper's The Last of the Mohicans. [1]
+ 9 Aug 1757 Draft of the New Jersey Militia to serve in the Army. [2]
+ 8 Dec 1757 Second Battle of Bloody Creek. [2]
+13 Mar 1758 Beside Bald Mountain, at the north end of Lake George [near
+              modern Ticonderoga, in New York State] Rogers Rangers get
+              into deep trouble a long way from home. Robert Rogers is
+              wounded and almost captured; he loses 125 men killed. [2]
+21 May 1758 Ten-year-old Mary Campbell is abducted in western Pennsylvania by
+              Lenape. [4] [6] She is returned six and a half years later. [4]
+ 8 Jun 1758 -26 Jul 1758, The French naval fortress at Louisbourg on Cape
+              Breton Island, Nova Scotia, is sieged [2] [4] for a second
+              time by the British, having been returned to the French after
+              a previous occupation in 1745. (This is the largest battle
+              in North America until the American Civil War over 100 years
+              later and is still the largest amphibious invasion in North
+              American history.) [2] After being used to stage attacks on
+              French Canada the following year, British soldiers reduce
+              the fortress to rubble to prevent its return to the French
+              a second time. The British take control of the Gulf of Saint
+              Lawrence. [4]
+30 Jun 1758 Construction of Fort Bedford begins. [2]
+   Jul 1758 General James Abercrombie and Lord Howe assemble a force of
+              16,000 men on the south shore of Lake George. On July 6th the
+              force arrived at the north end of the Lake and proceeded to
+              head towards Fort Carillon (Ticonderoga). [1] They attacked
+              the fort on July 8th taking a great number of casualties. [1]
+              [2] The day ended in defeat for the British [1] [2] [4]
+              [8] and a victory for Montcalm defending Carillon. [1] [2]
+              Some 3,500 Frenchmen defeated the British army [8] (lead by
+              Gen. Abercrombie) [7] of 15,000, which lost 2,000 men. [8]
+              Lord Howe was killed. [1]
+27 Jul 1758 Louisbourg: The British seize Louisbourg in Nova Scotia opening
+              the route to Canada. [2]
+27 Aug 1758 The French surrender Fort Frontenac on Lake Ontario, [1] [2]
+              destroying their ability to communicate with their troops in
+              the Ohio Valley. [1]
+ 4 Sep 1758 England begins construction of Fort Ligonier, Loyalhanna,
+              Pennsylvania. [2]
+14 Sep 1758 Battle of Grant's Hill. [2]
+   Oct 1758 Treaty of Easton. [2]
+ 2 Oct 1758 Nova Scotia Provincial Parliament is established. [2]
+12 Oct 1758 Battle of Fort Ligonier. [2]
+            Proclamation issued by Governor of Nova Scotia, invites New
+              Englanders to settle there. [2]
+            -13 Oct 1758, A French force attacks General Forbes's army at
+              Fort Ligonier and is repulsed. [2]
+21 Oct 1758 British make peace with the Iroquois, Shawnee and Delaware
+              Indians. [1]
+24 Nov 1758 The French abandon and burn Fort Duquesne. [2]
+25 Nov 1758 British forces under General John Forbes captured Fort Duquesne
+              (the site of present day Pittsburgh, est. 1754). George
+              Washington participated in the campaign. Forbes renamed the site
+              Fort Pitt after William Pitt the Elder, who directed British
+              military policy in the Seven Years' War of 1756-63. Before
+              his arrival, the French had burned the fort and retreated. [8]
+   Dec 1758 Col. George Washington resigns his commission and retires to Mount
+              Vernon awaiting his January wedding to Martha Dandridge. [2]
+18 Apr 1759 Five agents from New England arrived at Halifax to take a look
+              at the land promised by Governor Lawrence. [2]
+ 1 May 1759 The British capture the French Island of Guadeloupe in the
+              Caribbean. [1]
+25 Jun 1759 British take Fort Ticonderoga. [1]
+25 Jul 1759 British take Fort Niagara; [1] [4] French abandon Crown
+              Point. British now control entire western frontier. [1]
+26 Jul 1759 French Fort Carillon becomes English Fort Ticonderoga. [2]
+31 Jul 1759 Battle of Beauport, a French victory. [2]
+ 4 Aug 1759 England takes Crown Point. [2]
+13 Sep 1759 Quebec: British win Battle of Quebec. [1] Montcalm and Wolfe,
+              the commanding generals of both armies, die in battle. [1] [7]
+18 Sep 1759 The Articles of Capitulation of Quebec are signed. [4] The
+              French formally surrendered Quebec to the British. [6]
+ 4 Oct 1759 Fort LeBoeuf and Fort Presque Isle abandoned by France. [2]
+12 Oct 1759 D'Olabaratz's Last Stand. The last French Naval activity on
+              Lake Champlain. [2]
+20 Nov 1759 Battle of Quiberon Bay. [2]
+       1760 Many New England soldiers at Fort Cumberland (Beausejour) and
+              Fort Lawrence return home after their enlistments expire.
+              Governor Lawrence encourages them to stay and to take up land
+              grants - some do (Troop, Tongue, Huston, others). [2]
+            Fort Presque Isle taken over by England. [2]
+            Fort Venango built by England. [2]
+27 Feb 1760 Battle of Fort Dobbs. [2]
+28 Apr 1760 Battle of Sainte-Foy. [2]
+16 May 1760 French siege of Quebec fails. [1]
+ 8 Jul 1760 The Battle of the Restigouche, the last naval engagement of
+              the Seven Years War. [2]
+16 Aug 1760 -24 Aug 1760, Battle of the Thousand Islands. [2]
+ 5 Sep 1760 Peace treaty between the Huron and the British. [2]
+ 8 Sep 1760 Montreal falls to the British; [1] [2] letters are signed
+              finishing the surrender of Canada. [1]
+15 Sep 1760 Functional end of the war. British flag is raised over Detroit,
+              effectively ending the war. [1]
+       1761 British make peace with the Cherokee Indians. [1]
+            Fort Ouiatenon is captured by England. [2]
+   Jan 1762 England declares war on Spain. [2]
+27 Jun 1762 St. John's Captured by France. [2]
+18 Sep 1762 French attempt to retake Newfoundland fails. [1] The final
+              battle in North America of the Seven Years War. [2]
+10 Feb 1763 Treaty of Paris [1] [2] [5] ended the French and Indian
+              War in North America and the Seven Years War in Europe,
+              Asia and Africa. [5] All French possessions east of the
+              Mississippi, except New Orleans, are given to the British.
+              All French possessions west of the Mississippi are given
+              to the Spanish. France regains Martinique, Guadeloupe and
+              St. Lucia. [1] The costs of the war and maintaining an army
+              will lead the British government to impose new taxes on its
+              colonists, with world-shaking results. [9]
+ 7 Oct 1763 Royal Proclamation of 1763. This document has been called the
+              "Magna Carta of Indian Rights" and recently has been held by
+              the courts to have "the force of a statute which has never been
+              repealed". It was issued after the Treaty of Paris ended the
+              Seven Years War and was intended to organize the governments of
+              Britain's new acquisitions on the mainland of North America. [2]
+ 9 Nov 1764 Mary Campbell, a captive of the Lenape during the French and
+              Indian War, is turned over to forces commanded by Colonel
+              Henry Bouquet [6]
+
+
+Citations -
+1.  https://www.frenchandindianwarsociety.org/timeline/
+2.  https://web.archive.org/web/20131221124712/http://ns1763.ca/remem/7yw-timeline-w.html#7yw-begintime
+3.  https://www.multieducator.net/
+4.  wikipedia.org
+5.  history.com
+6.  HistoryOrb.com (renamed OnThisDay.com Jun 2016)
+7.  Dan Burrows, from "Historical Collections of the State of New York",
+    John W. Barber and Henry Howe, 1844
+8.  www.timelinesdb.com
+9.  USHistory.org
+

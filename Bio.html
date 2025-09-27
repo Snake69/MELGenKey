@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Produce Bio</title>
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+</head>
+<body>
+<h1>Produce Bio</h1>
+<span id="TitleDBName"></span>
+<hr style="width:50%">
+<br>
+<br>
+
+<form method="post" onSubmit = "a=1;">
+    Individual ID:
+    &nbsp;
+    <input type = "text" id = "IndID" name = "IndID" size = "10" maxlength = "15" value = ""></input>
+    &nbsp; &nbsp; &nbsp;
+    <button type = "button" onClick = "produceBio();"> Go </button>
+</form>
+<br> <br>
+<span> The bio produced is rudimentary. Expect future improvement. </span>
+
+<br>
+<br>
+<hr style="width:50%">
+<br>
+<br>
+
+<div id="output"></div>
+
+<script>
+
+/* data store */
+const data = {
+    person: {
+        id: null,
+        name: null,
+        birth: { date: null, place: null },
+        death: { date: null, place: null },
+        father: { id: null, name: null },
+        mother: { id: null, name: null },
+        spouses: [],
+        marriages: [],
+        children: [],
+        events: []
+    }
+}
+
+onload = function init() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    var dbname = '';
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1) {
+            dbname = e.data;
+            document.getElementById("TitleDBName").innerHTML = '(' + dbname + ')'; 
+            ws.send("DBStatus");
+            ws.onmessage = function(e) {
+                if (e.data != '1' && e.data != '3') {
+                    alert ("Family DataBase " + dbname + " is not verified. It must be successfully verified before creating a bio.");
+                    const button = document.getElementById('button');
+                    button.disabled = true;
+                }
+            }
+        }
+    }
+}
+
+var FamGroup = '';
+
+async function produceBio () {
+    const IndID = document.getElementById("IndID").value.trim();
+    var errs = "";
+
+    /* validate ID */
+    if (IndID == "")
+        errs += "An Individual ID is required.";
+    else
+        if ((IndID[0] < "0" || IndID[0] > "9") || (IndID[IndID.length - 1] < "0" || IndID[IndID.length - 1] > "9") || !IndID.includes('.'))
+            errs += "The first and last characters in an Individual ID must be numeric, and the Individual ID must contain a period.";
+    if (errs != "") {
+        alert (errs);
+        return;
+    }
+
+    /* get Family Group */
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("GetFamGroup" + IndID);
+    }
+    try {
+        const message = await waitForMessage(ws);
+        FamGroup = message;
+        if (FamGroup == "NOTFOUND") {
+            alert ("ID " + IndID + " not found in Family DataBase " + document.getElementById("TitleDBName").innerHTML); 
+            return;
+        }
+    } catch (error) {
+        console.error("Error receiving message:", error);
+    }
+
+    window.location.reload()
+    // Extract data
+    parseGenealogyData(FamGroup);
+
+    // Construct bio
+    const bioParagraphs = formatBio(data.person);
+
+    /* open in a new tab */
+    var w = window.open('about:blank');
+    w.document.open();
+    // Join paragraphs, wrapping each in <p> tags
+    // document.getElementById("output").innerHTML = bioParagraphs.map(p => `<p>${p}</p>`).join("");
+    w.document.write(bioParagraphs.map(p => `<p>${p}</p>`).join(""));
+    w.document.close();
+}
+
+/* getOrdinalWord(), formatBio(), and parseGenealogyData() provided by Gemini AI */
+
+function getOrdinalWord(n) {
+    const words = ["", "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh",
+                   "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth", "nineteenth", "twentieth"];
+    if (n > 0 && n <= 20)
+        return words[n];
+    const s = ["th", "st", "nd", "rd"];
+    const v = n % 100;
+    return n + (s[(v - 20) % 10] || s[v] || s[0]);
+}
+
+function formatBio(person) {
+    const {
+        name,
+        birth,
+        death,
+        father,
+        mother,
+        spouses,
+        marriages,
+        children,
+        events: originalEvents
+    } = person;
+
+    const paragraphs = [];
+    let mainInfoSentences = [];
+
+    // --- Paragraph 1: Birth, Parents, Marriage Info ---
+    // Birth
+    if (birth?.date) {
+        let originalBirthDate = String(birth.date).trim();
+        let displayBirthDatePart = originalBirthDate;
+        let birthPrefix = "on ";
+        if (originalBirthDate.toLowerCase().startsWith("about ")) { 
+            birthPrefix = "around "; 
+            displayBirthDatePart = originalBirthDate.substring(6).trim(); 
+        } else
+            if (originalBirthDate.startsWith('c')) { 
+                birthPrefix = "around "; 
+                displayBirthDatePart = originalBirthDate.substring(1).trim(); 
+            }
+        
+        if (displayBirthDatePart) 
+            mainInfoSentences.push(`${name} was born ${birthPrefix}${displayBirthDatePart}${birth.place ? ` in ${birth.place}` : ''}.`); 
+        else
+            if (originalBirthDate)
+                mainInfoSentences.push(`${name} was born ${birthPrefix.trim()} an uncertain date${birth.place ? ` in ${birth.place}` : ''}.`);
+            else
+                mainInfoSentences.push(`${name}'s birth details are noted but the date is unclear${birth.place ? ` in ${birth.place}` : ''}.`);
+    } else
+        mainInfoSentences.push(`${name}'s birth details remain uncertain.`); 
+
+    // Parents
+    if (father?.name && mother?.name) 
+        mainInfoSentences.push(`${name} was the child of ${father.name} and ${mother.name}.`); 
+    else
+        if (father?.name) 
+            mainInfoSentences.push(`${name}'s father was ${father.name}, while their mother's name is unrecorded.`); 
+        else
+            if (mother?.name)
+                mainInfoSentences.push(`${name} was born to ${mother.name}; the father's identity is unknown.`); 
+
+    // Marriage(s)
+    if (marriages?.length > 0)
+        marriages.forEach(marriage => {
+            const spouseDetails = spouses.find(s => s.id === marriage.spouseId || s.name === marriage.spouseName);
+            const spouseName = spouseDetails ? spouseDetails.name : marriage.spouseName || "an unnamed spouse";
+            let mSentence = `${name} married ${spouseName}`;
+            if (marriage.date) {
+                let originalMarriageDate = String(marriage.date).trim();
+                let displayMarriageDatePart = originalMarriageDate;
+                let mPrefix = "on ";
+                if (originalMarriageDate.toLowerCase().startsWith("about ")) { 
+                    mPrefix = "around "; 
+                    displayMarriageDatePart = originalMarriageDate.substring(6).trim(); 
+                } else
+                    if (originalMarriageDate.startsWith('c')) { 
+                        mPrefix = "around "; 
+                        displayMarriageDatePart = originalMarriageDate.substring(1).trim(); 
+                    }
+                
+                if (displayMarriageDatePart)
+                    mSentence += ` ${mPrefix}${displayMarriageDatePart}`; 
+                else
+                    if (originalMarriageDate)
+                        mSentence += ` ${mPrefix.trim()} an uncertain date`;
+            }
+            if (marriage.place)
+                mSentence += ` in ${marriage.place}`;
+            mainInfoSentences.push(mSentence + ".");
+        })
+    
+    if (mainInfoSentences.length > 0)
+        paragraphs.push(mainInfoSentences.join(" "));
+
+    // --- Paragraph 2: Children Information ---
+    let childrenRelatedSentences = [];
+    const handledChildBirthOrdinals = new Set(); 
+
+    // Children summary (will be minimal if 'children' array from data.person is empty)
+    if (children && children.length > 0) {
+        const childNames = children.map(c => c.name).filter(Boolean).join(", ");
+        const numChildren = children.length;
+        if (numChildren === 1)
+            childrenRelatedSentences.push(`They had one child, ${childNames || 'whose name is not recorded'}.`);
+        else
+            childrenRelatedSentences.push(`They had ${numChildren} children, including ${childNames || 'some whose names are not recorded'}.`);
+    }
+
+    let nonChildBirthEvents = [];
+
+    (originalEvents || []).forEach(e => {
+        let eventText = e.text ? String(e.text).replace(/\(.*\)/g, '').trim() : "";
+        const originalPersonInvolved = e.personInvolved || "";
+        
+        let prefix = "";
+        if (e.date) {
+            let displayDate = String(e.date).trim(); let circa = false; let isYearLike = false;
+            if (displayDate.toLowerCase().startsWith("about ")) {
+                circa = true;
+                displayDate = displayDate.substring(6).trim();
+            } else
+                if (displayDate.toLowerCase().startsWith('c')) {
+                    circa = true;
+                    displayDate = displayDate.substring(1).trim();
+                }
+            if (/^\d{4}\/\d{1,4}$/.test(displayDate) || /^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{4})$/i.test(displayDate) ||
+                                                        /^\d{4}$/.test(displayDate))
+                isYearLike = true;
+            let finalDateStr = (circa ? "about " : "") + displayDate;
+            if (displayDate) {
+                if (isYearLike && /^\d{4}$/.test(displayDate))
+                    prefix = `In ${finalDateStr}, `;
+                else
+                    if (isYearLike)
+                        prefix = `${finalDateStr}, `;
+                    else
+                        prefix = `On ${finalDateStr}, `;
+            } else
+                if (finalDateStr.trim().match(/^(about|c)$/i))
+                    prefix = `${finalDateStr.trim()} an uncertain date, `;
+        }
+
+        let isThisEventAHandledChildBirth = false;
+        let childNumber = null;
+        let childName = null;
+        let birthSuffix = "";
+
+        const type1ChildBirthRegex = /^child\s*#(\d+),\s*([^,]+?)(?:,\s*)?born(.*)$/i;
+        const type1Match = eventText.match(type1ChildBirthRegex);
+
+        if (type1Match && originalPersonInvolved === name) {
+            childNumber = parseInt(type1Match[1]);
+            childName = type1Match[2].trim();
+            birthSuffix = type1Match[3].trim();
+            isThisEventAHandledChildBirth = true;
+        } else {
+            const type2PersonRegex = /^child\s*#(\d+),\s*([^,]+?),?$/i;
+            const type2PersonMatch = originalPersonInvolved.match(type2PersonRegex);
+            if (type2PersonMatch && eventText.toLowerCase().startsWith("born")) {
+                childNumber = parseInt(type2PersonMatch[1]);
+                childName = type2PersonMatch[2].trim();
+                birthSuffix = eventText.substring("born".length).trim();
+                isThisEventAHandledChildBirth = true;
+            }
+        }
+
+        if (isThisEventAHandledChildBirth && childNumber !== null && childName) {
+            if (!handledChildBirthOrdinals.has(childNumber)) {
+                const ordinal = getOrdinalWord(childNumber);
+                const possessiveSuffix = name.endsWith('s') ? "'" : "'s";
+                let baseSentence = `${prefix}${name}${possessiveSuffix} ${ordinal} child, ${childName}, was born`;
+                let fullSuffix = birthSuffix ? ' ' + birthSuffix.replace(/^\./, '').trim() : '';
+                let childBirthSentence = (baseSentence + fullSuffix).replace(/\s*\.\s*$/, '').trim() + '.';
+                childrenRelatedSentences.push(childBirthSentence);
+                handledChildBirthOrdinals.add(childNumber);
+            } else {
+                // Child # already handled, treat as general event to avoid duplicate formatted sentence
+                nonChildBirthEvents.push({ ...e, processedPrefix: prefix, processedText: eventText,
+                                                 processedSubject: (originalPersonInvolved === name ? name : originalPersonInvolved) });
+            }
+        } else {
+            // Not a child birth event for main subject, or parsing failed
+            nonChildBirthEvents.push({ ...e, processedPrefix: prefix, processedText: eventText,
+                                             processedSubject: (originalPersonInvolved === name ? name : originalPersonInvolved) });
+        }
+    })
+
+    // If children array was empty but we found births in events, add a summary based on events.
+    if (handledChildBirthOrdinals.size > 0 && (!children || children.length === 0)) {
+        let count = handledChildBirthOrdinals.size;
+        let summaryPrefix = `${name} had at least ${count} child${count > 1 ? 'ren' : ''}`;
+        // Prepend this summary if no other summary (from children array) exists
+        if (!childrenRelatedSentences.some(s => s.toLowerCase().includes("they had") ||
+                                                s.toLowerCase().includes(name.toLowerCase() + " and their spouse(s)"))) {
+            childrenRelatedSentences.unshift(summaryPrefix + ".");
+        }
+    }
+
+    if (childrenRelatedSentences.length > 0)
+        paragraphs.push(childrenRelatedSentences.join(" "));
+
+    // --- Paragraph 3: Other Timeline Events ---
+    if (nonChildBirthEvents.length > 0) {
+        const otherEventSentences = nonChildBirthEvents.map(e => {
+            let eventSubject = e.processedSubject || "";
+            let descriptiveText = e.processedText || "";
+            let prefix = e.processedPrefix || "";
+            
+            if (!prefix.trim() && !descriptiveText.trim() && !eventSubject.trim())
+                return null;
+
+            let finalSentence = "";
+            let subjectPrepended = true; // Assume we will prepend subject by default
+
+            if (prefix.match(/^In \d{4}, $/i) && descriptiveText.match(/^-\d{4}\s+/)) {
+                const startYearInPrefix = prefix.match(/(\d{4})/)[0];
+                const endYearMatch = descriptiveText.match(/^-((\d{4})\s+)/);
+                if (endYearMatch && endYearMatch[2]) {
+                    const endYearInText = endYearMatch[2];
+                    const restOfText = descriptiveText.substring(endYearMatch[0].length).trim();
+                    prefix = `In ${startYearInPrefix}-${endYearInText}, `;
+                    descriptiveText = restOfText;
+                }
+            }
+
+            // Condition 1: descriptiveText starts with eventSubject's name.
+            if (descriptiveText && eventSubject && descriptiveText.toLowerCase().startsWith(eventSubject.toLowerCase())) {
+                let strippedText = descriptiveText.substring(eventSubject.length).trim();
+                const firstWord = strippedText.split(' ')[0]?.toLowerCase();
+                const verbsNeedingWas = ["chosen", "elected", "appointed", "named", "designated", "seen", "recorded", "listed", "serving",
+                                         "acting", "working", "residing", "living", "holding", "fined", "involved", "assigned", "purchases",
+                                         "takes"];
+                
+                if (firstWord && verbsNeedingWas.includes(firstWord) && !strippedText.match(/^(is|was|are|were|be|being|been)\b/i))
+                    descriptiveText = "was " + strippedText;
+                else
+                    descriptiveText = strippedText; 
+            } else
+                // Condition 2: descriptiveText starts with a known spouse's name (and eventSubject was the main person)
+                // OR descriptiveText contains eventSubject's name (but not at the start).
+                // In these cases, descriptiveText is likely self-sufficient.
+                if (descriptiveText &&
+                          ((spouses.some(s => s.name && s.name.length > 2 && descriptiveText.toLowerCase().startsWith(s.name.toLowerCase()))) ||
+                           (eventSubject && eventSubject.length > 2 && descriptiveText.toLowerCase().indexOf(eventSubject.toLowerCase()) > 0)))
+                     subjectPrepended = false; // Do not prepend eventSubject
+            // Condition 3: Default - eventSubject will be prepended.
+            // (This path is taken if descriptiveText does not start with eventSubject,
+            // does not start with a spouse's name, and does not contain eventSubject later in the string).
+
+            // Construct the sentence
+            if (prefix)
+                finalSentence += prefix;
+
+            if (subjectPrepended && eventSubject) {
+                if (finalSentence && !finalSentence.endsWith(" ") && !finalSentence.endsWith(", "))
+                    finalSentence += " ";
+                finalSentence += eventSubject;
+            }
+
+            if (descriptiveText) {
+                if (finalSentence && !finalSentence.endsWith(" ") && !finalSentence.endsWith(", "))
+                    finalSentence += " ";
+                finalSentence += descriptiveText;
+            }
+            
+            finalSentence = finalSentence.trim();
+            if (!finalSentence)
+                return null;
+            finalSentence += ".";
+            
+            finalSentence = finalSentence.replace(/\s\s+/g, ' ').replace(/\s+\./g, '.').replace(/\.\.+/g, '.').replace(/,\./g, '.');
+
+            if (finalSentence === "." || (subjectPrepended && eventSubject && finalSentence === (eventSubject + ".") &&
+                               !prefix.trim() && !(e.processedText || "").replace(eventSubject, "").trim().replace(/^was\s+/, "").trim()))
+                return null;
+            return finalSentence;
+        }).filter(sentence => sentence && sentence.trim() !== '.');
+        if (otherEventSentences.length > 0)
+            paragraphs.push(otherEventSentences.join(" "));
+    }
+
+    // --- Paragraph 4: Death Information ---
+    let deathParagraphSentences = [];
+    if (death?.date) {
+        let originalFullDate = String(death.date).trim();
+        let displayDatePart = originalFullDate;
+        let prefixForSentence = "on ";
+        if (originalFullDate.toLowerCase().startsWith("about ")) {
+            prefixForSentence = "around ";
+            displayDatePart = originalFullDate.substring(6).trim();
+        } else
+            if (originalFullDate.startsWith('c')) {
+                prefixForSentence = "around ";
+                displayDatePart = originalFullDate.substring(1).trim();
+            }
+        if (displayDatePart)
+            deathParagraphSentences.push(`${name} passed away ${prefixForSentence}${displayDatePart}${death.place ? ` in ${death.place}` : ''}.`);
+        else
+            if (originalFullDate)
+                deathParagraphSentences.push(`${name} passed away ${prefixForSentence.trim()} an uncertain date${death.place ? ` in ${death.place}` : ''}.`);
+            else
+                deathParagraphSentences.push(`${name} passed away${death.place ? ` in ${death.place}` : ''}.`);
+    }
+    if (spouses?.length > 0) {
+        spouses.forEach(spouse => {
+            if (spouse.death?.date) {
+                let outlivedText = ""; 
+                try {
+                    const mDeath = death?.date ? parseInt(String(death.date).replace(/c|about\s*/i,'').substring(0,4)):null;
+                    const sDeath = parseInt(String(spouse.death.date).replace(/c|about\s*/i,'').substring(0,4));
+
+                    if (mDeath && sDeath && sDeath > mDeath)
+                        outlivedText = ` outlived ${name} and`;
+                }
+                catch(err) {
+                }
+                let oSpouseDeathDate = String(spouse.death.date).trim();
+                let dSpouseDatePart = oSpouseDeathDate;
+                let pSpouseDeath = "on ";
+                if (oSpouseDeathDate.toLowerCase().startsWith("about ")) {
+                    pSpouseDeath = "around ";
+                    dSpouseDatePart = oSpouseDeathDate.substring(6).trim();
+                } else
+                    if (oSpouseDeathDate.startsWith('c')) {
+                        pSpouseDeath = "around ";
+                        dSpouseDatePart = oSpouseDeathDate.substring(1).trim();
+                    }
+                if (dSpouseDatePart)
+                    deathParagraphSentences.push(`${spouse.name}${outlivedText} died ${pSpouseDeath}${dSpouseDatePart}${spouse.death.place ? ' in ' + spouse.death.place : ''}.`);
+                else
+                    if (oSpouseDeathDate)
+                        deathParagraphSentences.push(`${spouse.name}${outlivedText} died ${pSpouseDeath.trim()} an uncertain date${spouse.death.place ? ' in ' + spouse.death.place : ''}.`);
+                    else
+                        deathParagraphSentences.push(`${spouse.name}${outlivedText} died${spouse.death.place ? ' in ' +
+                                                                                            spouse.death.place : ''}.`);
+            }
+        })
+    }
+    if (deathParagraphSentences.length > 0)
+        paragraphs.push(deathParagraphSentences.join(" "));
+
+    return paragraphs.filter(p => p && p.trim() !== '');
+}
+
+function parseGenealogyData(inputText) {
+    const lines = inputText.split('\n');
+    let currentPerson = data.person;
+    let currentSpouse = null;
+    let isTimelineSection = false;
+    let isChildrenSection = false;
+
+    // Pattern for text content that might contain citations. Uses non-capturing groups internally.
+    const textContentPattern = "[^[]*(?:\\[.*?\\][^[]*)*?"; 
+
+    const personIdNameRegex = /^(\d+\.\d+)\s+(.+?)(?:\s+\[|$)/;
+    const fatherRegex = /^Father\s*-\s*(?:(\d+\.\d+)\s+)?(.+?)(?:\s+\[|$)/;
+    const motherRegex = /^Mother\s*-\s*(?:(\d+\.\d+)\s+)?(.+?)(?:\s+\[|$)/;
+    const timelineStartRegex = /^\s*Timeline\s*-/;
+    const childrenStartRegex = /^\s*Children:\s*$/;
+
+    const dateRegexPart = "(c?\\d{4}(?:-\\d{1,2})?(?:-\\d{1,2})?)";
+
+    // Specific Timeline Event Regexes:
+    // Each `(${textContentPattern})` is a capturing group.
+    const birthEventRegex = new RegExp(`^\\s*${dateRegexPart}\\s+(${textContentPattern})\\s+born(?:\\s+in\\s+(${textContentPattern}))?(?:\\s+\\[.*\\])*$`, 'i');
+    const deathEventRegex = new RegExp(`^\\s*${dateRegexPart}\\s+(${textContentPattern})\\s+died(?:\\s+in\\s+(${textContentPattern}))?(?:\\s+\\[.*\\])*$`, 'i');
+    const marriageEventRegex = new RegExp(`^\\s*${dateRegexPart}\\s+(${textContentPattern})\\s+and\\s+(${textContentPattern})\\s+married(?:\\s+in\\s+(${textContentPattern}))?(?:\\s+\\[.*\\])*$`, 'i');
+    const childBornTimelineRegex = new RegExp(`^\\s*${dateRegexPart}\\s+child\\s+#\\d+,\\s+(${textContentPattern}),\\s+born(?:\\s+in\\s+(${textContentPattern}))?(?:\\s+\\[.*\\])*$`, 'i');
+    
+    const childListRegex = /^\s*(\d+\.\d+)\s+\w\.\s+(.+?)\.(?:\s+\[.*\])*$/;
+    let lastProcessedEventDateForBlankHandling = null;
+
+    function processDate(dateStr, charInCol7) {
+        let processedDate = dateStr.trim();
+        let isCirca = false;
+        let isDoubleDate = false;
+
+        if (charInCol7 && charInCol7.toLowerCase() === 'c') {
+            isCirca = true;
+            processedDate = processedDate.replace(/^c/i, ''); 
+        } else
+            if (processedDate.charAt(0).toLowerCase() === 'c') {
+                isCirca = true;
+                processedDate = processedDate.substring(1);
+            }
+
+        if (charInCol7 && charInCol7.toLowerCase() === 'd') {
+            isDoubleDate = true;
+            processedDate = processedDate.replace(/^d/i, ''); // Remove d if it was part of date string
+        }
+        
+        const monthYearRegex = /^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{4})$/i;
+
+        if (isDoubleDate) {
+            const yearMatch = processedDate.match(/(\d{4})$/);
+            if (yearMatch) {
+                const yearStr = yearMatch[0];
+                const yearNum = parseInt(yearStr, 10);
+                if (!isNaN(yearNum)) {
+                    const datePrefixPart = processedDate.substring(0, processedDate.lastIndexOf(yearStr));
+                    processedDate = datePrefixPart + yearStr + "/" + (yearNum + 1);
+                }
+            }
+        }
+        
+        return (isCirca ? "about " : "") + processedDate.trim();
+    }
+
+    for (let i = 0; i < lines.length; i++) {
+        let line = lines[i];
+        let trimmedLine = line.trim();
+        let charInCol7 = line.length >= 7 ? line[6] : null;
+
+        if (timelineStartRegex.test(trimmedLine)) {
+            isTimelineSection = true;
+            isChildrenSection = false;
+            continue;
+        }
+        if (childrenStartRegex.test(trimmedLine)) {
+            isChildrenSection = true;
+            isTimelineSection = false;
+            continue;
+        }
+        if (trimmedLine.startsWith("Questions -") || trimmedLine.startsWith("Notes -") || trimmedLine.startsWith("Extras -") ||
+                                                                                          trimmedLine.startsWith("Citations -"))
+            break;
+
+        if (!isTimelineSection && !isChildrenSection) {
+            let match = personIdNameRegex.exec(trimmedLine);
+            if (match) {
+                const id = match[1];
+                const name = match[2].trim().replace(/\[.*?\]/g, '').trim();
+                if (!data.person.id) {
+                    data.person.id = id;
+                    data.person.name = name;
+                    currentPerson = data.person;
+                } else {
+                    currentSpouse = { id: id, name: name, birth: {}, death: {}, father: {}, mother: {} };
+                    data.person.spouses.push(currentSpouse);
+                    currentPerson = currentSpouse;
+                }
+                continue;
+            }
+            match = fatherRegex.exec(trimmedLine);
+            if (match && currentPerson) {
+                currentPerson.father.id = match[1] ? match[1].trim() : null;
+                currentPerson.father.name = match[2].trim().replace(/\[.*?\]/g, '').trim();
+                if (currentPerson.father.name.toLowerCase() === 'name unknown')
+                    currentPerson.father.name = null;
+                continue;
+            }
+            match = motherRegex.exec(trimmedLine);
+            if (match && currentPerson) {
+                currentPerson.mother.id = match[1] ? match[1].trim() : null;
+                currentPerson.mother.name = match[2].trim().replace(/\[.*?\]/g, '').trim();
+                if (currentPerson.mother.name.toLowerCase() === 'name unknown')
+                    currentPerson.mother.name = null;
+                continue;
+            }
+        } else
+            if (isTimelineSection) {
+                let eventMatch;
+
+                eventMatch = birthEventRegex.exec(trimmedLine);
+                if (eventMatch) {
+                    const date = processDate(eventMatch[1], charInCol7); // Group 1: date
+                    const name = eventMatch[2].replace(/\[.*?\]/g, '').trim(); // Group 2: name
+                    const place = eventMatch[3] ? eventMatch[3].replace(/\[.*?\]/g, '').trim() : null; // Group 3: place
+                    if (name === data.person.name) {
+                        data.person.birth.date = date;
+                        data.person.birth.place = place;
+                    } else {
+                        const spouse = data.person.spouses.find(s => s.name === name);
+                        if (spouse) {
+                            spouse.birth.date = date;
+                            spouse.birth.place = place;
+                        } else
+                            data.person.events.push({ date: date, text: `was born${place ? ' in ' + place : ''}`, personInvolved: name });
+                    }
+                    if (date)
+                        lastProcessedEventDateForBlankHandling = date;
+                    continue;
+                }
+
+                eventMatch = deathEventRegex.exec(trimmedLine);
+                if (eventMatch) {
+                    const date = processDate(eventMatch[1], charInCol7); // Group 1: date
+                    const name = eventMatch[2].replace(/\[.*?\]/g, '').trim(); // Group 2: name
+                    const place = eventMatch[3] ? eventMatch[3].replace(/\[.*?\]/g, '').trim() : null; // Group 3: place
+                    if (name === data.person.name) {
+                        data.person.death.date = date;
+                        data.person.death.place = place;
+                    } else {
+                        const spouse = data.person.spouses.find(s => s.name === name);
+                        if (spouse) {
+                            spouse.death.date = date;
+                            spouse.death.place = place;
+                        } else
+                            data.person.events.push({ date: date, text: `died${place ? ' in ' + place : ''}`, personInvolved: name });
+                    }
+                    if (date)
+                        lastProcessedEventDateForBlankHandling = date;
+                    continue;
+                }
+
+                eventMatch = marriageEventRegex.exec(trimmedLine);
+                if (eventMatch) {
+                    const date = processDate(eventMatch[1], charInCol7); // Group 1: date
+                    const person1Name = eventMatch[2].replace(/\[.*?\]/g, '').trim(); // Group 2: person1Name
+                    const person2Name = eventMatch[3].replace(/\[.*?\]/g, '').trim(); // Group 3: person2Name
+                    const place = eventMatch[4] ? eventMatch[4].replace(/\[.*?\]/g, '').trim() : null; // Group 4: place
+                
+                    let spouseObj = data.person.spouses.find(s => s.name === person2Name || s.name === person1Name);
+                    if (!spouseObj && person2Name.includes("------") && data.person.spouses.length > 0)
+                        spouseObj = data.person.spouses.find(s => person2Name.startsWith(s.name.split(" ")[0]));
+                    if (!spouseObj && person1Name.includes("------") && data.person.spouses.length > 0)
+                        spouseObj = data.person.spouses.find(s => person1Name.startsWith(s.name.split(" ")[0]));
+
+                    if ((person1Name === data.person.name || person2Name === data.person.name) && spouseObj)
+                        data.person.marriages.push({ spouseId: spouseObj.id, spouseName: spouseObj.name, date: date, place: place });
+                    else
+                        data.person.events.push({ date: date, text: `${person1Name} and ${person2Name} married${place ? ' in ' + place : ''}`, personInvolved: `${person1Name} & ${person2Name}` });
+                    if (date)
+                        lastProcessedEventDateForBlankHandling = date;
+                    continue;
+                }
+
+                eventMatch = childBornTimelineRegex.exec(trimmedLine);
+                if (eventMatch) {
+                    const date = processDate(eventMatch[1], charInCol7); // Group 1: date
+                    const childName = eventMatch[2].replace(/\[.*?\]/g, '').trim(); // Group 2: childName
+                    const place = eventMatch[3] ? eventMatch[3].replace(/\[.*?\]/g, '').trim() : null; // Group 3: place
+                
+                    let child = data.person.children.find(c => c.name === childName);
+                    if (child)
+                        child.birthDate = date; // Assuming child object can store birthDate and potentially birthPlace
+                    else
+                        data.person.children.push({ id: null, name: childName, birthDate: date /*, birthPlace: place */ });
+
+                    if (date)
+                        lastProcessedEventDateForBlankHandling = date;
+                    continue;
+                }
+            
+                // GENERIC EVENT HANDLING
+                let dateColumnData = line.length >= 11 ? line.substring(0, 11) : "";
+                let eventText = line.length > 11 ? line.substring(11).trim() : (line.trim() === dateColumnData.trim() ? "" : line.trim());
+                eventText = eventText.replace(/\[.*?\]/g, '').trim();
+
+                let finalDateOutput = "";
+                let currentLineHadDate = false;
+                let rawDateFromCols = dateColumnData.trim();
+
+                if (rawDateFromCols) {
+                    currentLineHadDate = true;
+                    // Use processDate for generic events too for consistency with c/d handling and month-year
+                    finalDateOutput = processDate(rawDateFromCols, charInCol7);
+                } else
+                    if (lastProcessedEventDateForBlankHandling)
+                        finalDateOutput = lastProcessedEventDateForBlankHandling;
+
+                if (eventText) {
+                    let personInvolved = data.person.name;
+                     if (data.person.spouses.length > 0) {
+                         const spouseForEvent = data.person.spouses.find(s => eventText.toLowerCase().includes(s.name.toLowerCase()));
+                         if (spouseForEvent)
+                             personInvolved = spouseForEvent.name;
+                     }
+                     if (eventText.toLowerCase().includes(data.person.name.toLowerCase()) || personInvolved === data.person.name)
+                        personInvolved = data.person.name;
+
+                    data.person.events.push({ date: finalDateOutput, text: eventText, personInvolved: personInvolved });
+                    if (currentLineHadDate)
+                        lastProcessedEventDateForBlankHandling = finalDateOutput;
+                } else
+                    if (currentLineHadDate && !eventText)
+                        lastProcessedEventDateForBlankHandling = finalDateOutput;
+                continue;
+
+            } else
+                if (isChildrenSection) {
+                    const childMatch = childListRegex.exec(trimmedLine);
+                    if (childMatch) {
+                        const id = childMatch[1].trim();
+                        const name = childMatch[2].replace(/\[.*?\]/g, '').trim();
+                        let child = data.person.children.find(c => c.name === name || (c.id && c.id ===id));
+                        if (child) {
+                            child.id = id;
+                            child.name = name;
+                        } else
+                            data.person.children.push({ id: id, name: name, birthDate: null });
+                    }
+                }
+    }
+
+    if (data.person.name && data.person.name.endsWith("------"))
+        data.person.name = data.person.name.replace(/------$/, "").trim();
+    if (data.person.father.name && data.person.father.name.endsWith("------"))
+        data.person.father.name = data.person.father.name.replace(/------$/, "").trim();
+    if (data.person.mother.name && data.person.mother.name.endsWith("------"))
+        data.person.mother.name = data.person.mother.name.replace(/------$/, "").trim();
+    data.person.spouses.forEach(spouse => {
+        if (spouse.name && spouse.name.endsWith("------"))
+            spouse.name = spouse.name.replace(/------$/, "").trim();
+        if (spouse.father.name && spouse.father.name.endsWith("------"))
+            spouse.father.name = spouse.father.name.replace(/------$/, "").trim();
+        if (spouse.mother.name && spouse.mother.name.endsWith("------"))
+            spouse.mother.name = spouse.mother.name.replace(/------$/, "").trim();
+    })
+}
+
+async function waitForMessage(ws) {
+    const promise = new Promise((resolve) => {
+        ws.onmessage = (event) => {
+            resolve(event.data);
+        }
+    })
+    const result = await promise;
+    return result;
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+
+<style>
+    * {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .dialog2 {
+        width: 50%;
+    }
+    .dialspan {
+        display: inline-block;
+        width: 50%;
+    }
+    .fieldset-auto-width {
+         display: inline-block;
+    }
+</style>
+
+<title>Create Index of Proper Names for Family DataBase</title>
+</head>
+<body>
+
+<dialog id="dial1">
+<span id="dial1span"></span>
+<form method="dialog">
+<button type="submit">OK</button>
+</form>
+</dialog>
+
+<dialog class="dialog2" id="dialog2">
+<span class="dial2span" id="dialog2span"></span>
+<form method="dialog">
+<button class="OK">OK</button>
+<button class="CANCEL">Cancel</button>
+</form>
+</dialog>
+
+<h1>Create Index of Proper Names for Family DataBase</h1>
+<span id="TitleDBName"></span>
+<hr style="width:50%">
+
+<form id="CreateIndex" method="POST">
+<input type="hidden" name="ORIGIN" value="CreateIndex">
+
+<h4> This function will create an index of proper names for the active Family DataBase. <br>
+     (The Family DataBase must first be successfully verified.) <br> <br>
+     Select the areas to be indexed, then click the 'Continue' button to proceed. <br>
+     (for an explanation of the areas, see Help/Info/Docs -> Data Format and Notes)
+</h4>
+
+<br>
+<fieldset class="fieldset-auto-width">
+<legend>Areas Within Family Groups to Index (select at least one)</legend>
+<br>
+<label> <input type="checkbox" id="HOF" name="HOF"> Head of Family </label>
+<br> <br>
+<label> <input type="checkbox" id="HOFS" name="HOFS"> Head of Family Section </label>
+<br>
+<label> (includes Head of Family, Father & Mother) </label>
+<br> <br>
+<label> <input type="checkbox" id="TL" name="TL"> Timeline </label>
+<br> <br>
+<label> <input type="checkbox" id="Notes" name="Notes"> Notes </label>
+<br> <br>
+<label> <input type="checkbox" id="Extras" name="Extras"> Extras </label>
+<br> <br>
+<label> <input type="checkbox" id="Exp" name="Exp"> Explanations </label>
+<br> <br>
+<label> <input type="checkbox" id="Qst" name="Qst"> Questions </label>
+<br> <br>
+<label> <input type="checkbox" id="Chld" name="Chld"> Children </label>
+<br> <br>
+<label> <input type="checkbox" id="Cite" name="Cite"> Citations </label>
+</fieldset>
+<br> <br>
+
+<button type="button" id="button" onclick="Continue();"> Continue </button>
+
+<h4> Notes - Indexing relies in part upon capitalization. It's possible that names will be missed, or false names will be added to the index. <br>
+Multiple individuals with the same name will not be distinguished (e.g., two individuals, both named Mary Lake, will occupy one index entry). </h4>
+</form>
+
+<script type="text/javascript">
+
+function Continue() {
+    const ws = new WebSocket('ws://localhost:3000/');
+
+    /* at least one area checkbox should be checked */
+    if (!document.getElementById('HOF').checked && !document.getElementById('HOFS').checked && !document.getElementById('TL').checked &&
+           !document.getElementById('Notes').checked && !document.getElementById('Extras').checked && !document.getElementById('Exp').checked &&
+           !document.getElementById('Qst').checked && !document.getElementById('Chld').checked && !document.getElementById('Cite').checked) {
+        var span = document.getElementById("dial1span");
+        var msg = 'At least one area to index must be checked.';
+        const dialog1 = document.querySelector("#dial1");
+        span.innerHTML = msg;
+        dialog1.showModal();
+        return;
+    }
+    ws.onopen = function() {
+        ws.send("DBIndexExist");
+        ws.onmessage = function(e) {
+            var msg = '';
+            if (e.data == "YES")
+                msg += "An index for " + dbname + " already exists. It will be backed up before creating this new index.<br><br>";
+            ws.send("DBHTMLExist");
+            ws.onmessage = function(e) {
+                if (e.data == "YES")
+                    msg += "A HTML version of " + dbname + " exists. The HTML version will need to be re-created after " +
+                           "creating this new index.<br><br>";
+                var dialog2 = document.getElementById('dialog2');
+                var okButton = dialog2.querySelector('button.OK');
+                var cancelButton = dialog2.querySelector('button.CANCEL');
+                var dialog2span = document.getElementById("dialog2span");
+                dialog2span.innerHTML = msg + " Click OK to continue creating the index or click Cancel.<br><br>";
+                dialog2.showModal();
+
+                dialog2.addEventListener('click', function handleButtonClicks(e) {
+                    if (e.target.tagName !== 'BUTTON')
+                        return;
+                    dialog2.removeEventListener('click', handleButtonClicks);
+                    if (e.target === cancelButton)
+                        return;
+                    else {
+                        var formData = new FormData(document.getElementById("CreateIndex"));
+                        let formDataJSON = {};
+
+                        for (const [key, value] of formData.entries())
+                            formDataJSON[key] = value;
+
+                        ws.send("DBDoIndex" + JSON.stringify(formDataJSON));
+                        ws.onmessage = function(e) {
+                            var span = document.getElementById("dial1span");
+                            var msg = '';
+                            const dialog1 = document.querySelector("#dial1");
+
+                            if (e.data.substring(0, 2) == "OK")
+                                msg += e.data.substring(2) + "<br><br>";
+                            else
+                                msg += "Creation of index for " + dbname + " failed.<br><br>";
+                            span.innerHTML = msg;
+                            dialog1.showModal();
+                        }
+                    }
+                })
+            }
+        }
+    }
+}
+
+var dbname;
+onload = function init() {
+    const ws = new WebSocket('ws://localhost:3000/');
+    ws.onopen = function() {
+        ws.send("DBName");
+    }
+    ws.onmessage = function(e) {
+        if (e.data != -1) {
+            dbname = e.data;
+            document.getElementById("TitleDBName").innerHTML = '(' + dbname + ')'; 
+            ws.send("DBStatus");
+            ws.onmessage = function(e) {
+                if (e.data != '1' && e.data != '3') {
+                    alert ("Family DataBase " + dbname + " is not verified. It must be successfully verified before creating an index.");
+                    const button = document.getElementById('button');
+                    button.disabled = true;
+                }
+            }
+        }
+    }
+
+    ws.onerror = function(error) {
+        reject(error);
+    }
+}
+
+window.addEventListener('message', (e) => {
+    if (e.data.type === 'sse') {
+        const sseEventType = e.data.sseEventType;
+
+        if (sseEventType == "monitorweb-update")
+            alert(e.data.message);
+        if (sseEventType == "verify-progress-update")
+            console.log(e.data.message);
+    }
+})
+
+</script>
+
+<iframe src="sse-handler.html" style="display: none;" id="sse-frame"></iframe>
+
+<hr style="width:50%">
+
+</body>
+</html>

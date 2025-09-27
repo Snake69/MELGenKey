@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Verification Checks Performed</title>
+
+<style>
+    #header {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+</head>
+<body>
+<h1 id="header">Verification Checks Performed</h1>
+<br>
+<hr style="width:50%">
+
+<pre>
+A list of all verification checks performed in "Verify Family Data"
+
+
+Verification checks in Family DataBase:
+
+Check that there is a Family DataBase to verify.
+The first non-blank character in the Family DataBase must be in column 1.
+Three consecutive null lines ends a Family Group.
+Check validity of ID on the Head of Family line.
+The number to the left of the period in the ID (generation) for the Head of Family cannot be less than the previous Head of Family.
+The number to the right of the period in the ID for the Head of Family must be greater than the previous Head of Family if the
+  generation has not increased.
+Check that Family Group ID occurs as a child in another Family Group. (Flagged as an error if not found; flagged as info if it is found.)
+Check that FullName of Head of Family matches as the child's name in referenced Family Group.
+Check that a "Father - " line exists after the Head of Family line.
+If an ID is present in "Father - " line, check that the referenced Family Group exists.
+Check that a "Mother - " line exists after the the "Father - " line.
+If an ID is present in "Mother - " line, check that the referenced Family Group exists.
+Check the format of the Family Group.
+Check that a Citation Section exists for a Family Group.
+Check that a Children Section exists for a Family Group.
+Check for multiple Timeline Sections in the same Family Group.
+Check for multiple Citation Sections in the same Family Group.
+Check for multiple Children Sections in a Family Group.
+Check that first entry in a Timeline Section (if present) contains a date.
+Check for 2 consecutive null lines (other than the delimiter of a Family Group which is 3 consecutive null lines).
+Ensure material pointed to (->) exists.
+The Timeline Section (if present) must immediately follow the Head of Family Section.
+The Citation Section must immediately precede the Children Section.
+The Children Section must be the last section in a Family Group.
+Validate date field in each Timeline event.
+Ensure sequencing of date fields in Timeline Section events.
+When multiple Citations are present, each Timeline event must have at least 1 Citation Reference.
+Valid, numeric Citation numbers are enclosed within [].
+
+
+Verification checks in index file:
+
+Check for a comma indicating the end of the LastName.
+Check for only hyphen, apostrophy, space or alpha in LastName.
+Check for only hyphen, apostrophy, space or alpha in FirstName.
+Check for only hyphen, apostrophy, space or alpha in MiddleName.
+Check for an upper case letter in the LastName.
+Check for an upper case letter in the FirstName.
+Check for an upper case letter in the MiddleName.
+Check for 2 consecutive whitespaces indicating the end of the entire name in an index entry line.
+Check that ID reference appearing in index exists in Family DataBase.
+Check that FullName appearing in index exists in Family Group associated with the ID.
+
+
+Informational checks (these are not errors):
+
+Check for numerical sequence gaps in consecutive Family Group IDs.
+Check that the sequence number in a Family Group ID (number to the right of the period) is 0 when there is an increase in a
+  generation (number to the left of the period) from the previous Family Group ID.
+Check for a Family Group ID marked as OPEN.
+Timeline Section exists.
+An index file exists.
+Added whitespace immediately after comma following LastName in index file.
+Index sorted.
+Null lines in index file.
+Combine entries with continuation lines in index into one line.
+The existence of referenced citation material.
+Ensure each file/directory within the 'Reference' directory/folder is referenced in the Family DataBase.
+Ensure each file within the 'Images' directory/folder is referenced in the Family DataBase.
+Two consecutive identical dates in Timeline Section.
+Point out continuation lines.
+
+</pre>
+<hr style="width:50%">
+
+</body>
+</html>

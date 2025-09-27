@@ -1,0 +1,120 @@
+From a book "The May-Flower & Her Log" the following were passengers on
+the Mayflower:
+
+BEGIN
+
+        NAME                         AGE      OCCUPATION    SOCIAL
+                                                            STATUS
+
+Dea & Gov John Carver              about 60   Merchant      married
+  Mrs. Katherine (Robinson ?) Carver  ?       wife             "
+  Desire Minter                    about 16   companion      single
+  John Howland                           27   servant          "
+  Roger Wilder                     over  21   servant          "
+  William Latham                   about 16   servant          "
+  Mrs. Carver's maid               about 20   maid             "
+  Jasper More                      little boy bound-boy        "
+Elder William Brewster             about 54   printer/pub.  married
+  Mrs. Mary Brewster               about 51   wife             "
+  Love Brewster                    about  7   son            single
+  Wrestling Brewster               lad        son              "
+  Richard More (brothers)          about  6   bound-boy        "
+     ?    More (brothers)             ?       bound-boy        "
+Master Edward Winslow                    25   Printer       married
+  Mrs. Elizabeth (Barker) Winslow  about 23   wife             "
+  George Soule                     about 21   servant        single
+  Elias Story                      under 21   servant          "
+  Ellen More                          ?       bound-girl       "
+Master William Bradford                  30   Fustian maker,
+                                                silk dyer   married
+  Mrs. Dorothy (May) Bradford            23   wife            "
+Dea. & Dr. Samuel Fuller           about 30   Physician     married
+  William Butten                   under 21   servant        single
+Master Isaac Allerton                    32   Tailor        married
+  Mrs. Mary (Norris) Allerton         ?       wife             "
+  Bartholomew Allerton             about  8   son            single
+  Remember Allerton                about  6   daughter         "
+  Mary Allerton                    about  4   daughter         "
+  John Hooke                       lad        servant          "
+Capt Myles Standish                      36   soldier       married
+  Mrs. Rose Standish               under 36   wife             "
+Master Christopher Martin          about 40   tradesman,
+                                                treasure-agent "
+  Mrs. Martin                         ?       wife             "
+  Solomon Prower                   under 21   servant        single
+  John Langemore                   under 21   servant          "
+Master William White               about 30   Wool-carder   married
+  Mrs. Susanna White               about 25   wife             "
+  Resolved White                          5   son            single
+  William Holbeck                  under 21   servant          "
+  Edward Thompson                  under 21   servant          "
+Master William Mullens             over  42   Tradesman     married
+  Mrs. Alice Mullens                  ?       wife             "
+  Joseph Mullens                   over  16   son            single
+  Priscilla Mullens                over  16   daughter         "
+  Robert Carver                    under 21   servant          "
+Master Richard Warren              over  45   farmer        married
+Master Stephen Hopkins             over  35   lay-reader       "
+  Mrs. Elizabeth Hopkins              ?       wife             "
+  Giles Hopkins                    about 15   son            single
+  Constance Hopkins                about 11   daughter         "
+  Demaris Hopkins                  child      daughter         "
+  Edward Dotey (Doty)              over  21   servant          "
+  Edward Leister                   over  21   servant          "
+Master John Crackstone             about 35   ???           widower ?
+  John Crackstone (Jr)             lad        son            single
+Master Edward Tilley (or Tillie)   about 30   silk-worker   married
+  Mrs. Ann Tilley                     ?       wife             "
+  Henry Sampson                           6   cousin         single
+  Humility Cooper                  girl       cousin           "
+Master John Tilley                 over  35   silk-worker   married
+  Mrs. Bridget (Vander Velde) Tilley  ?       2nd wife         "
+  Elizabeth Tilley                       13   daughter       single
+Francis Cooke                      about 38   husbandman    married
+  John Cooke                       about 10   son            single
+James Chilton                      about 40   ???           married
+  Mrs. Susanne Chilton                ?       wife             "
+  Mary Chilton                     girl       daughter       single
+Thomas Rogers                      over  30   ???           married
+  Joseph Rogers                    lad        son            single
+Degory Priest                            41   hatter        married
+John Rigdale                       over  21   ???              "
+  Mrs. Alice Rigdale                  ?       wife             "
+Edward Fuller                      over  25   ???              "
+  Mrs. Fuller                         ?       wife             "
+  Samuel Fuller                    about  5   son            single
+Thomas Tinker                      over  21   ???           married
+  Mrs Tinker                       over  21   wife             "
+  ??  Tinker                          ?       son            single
+John Turner                        over  30   ???           widower ?
+  ??  Turner                          ?       son            single
+  ??  Turner                          ?       son              "
+Francis Eaton                      about 25   Carpenter     married
+  Mrs. Sarah Eaton                    ?       wife             "
+  Samuel Eaton                     infant     son            single
+Gilbert Winslow                          20   Carpenter ?      "
+John Alden                               21   Cooper           "
+Peter Browne                       over  25   Mechanic         "
+John Billington                    over  30   ???           married
+  Mrs. Helen Billington               ?       wife             "
+  John Billington                  about 16   son            single
+  Francis Billington               about 14   son              "
+Moses Fletcher                     over  30   Smith         married
+Thomas Williams                    over  21   ???            single ?
+John Goodman                       over  21   ???            single ?
+Edmond Margeson                    over  21   ???            single ?
+Richard Britterridge               over  21   ???            single ?
+Richard Clarke                     over  21   ???            single ?
+Richard Gardiner                   over  21   ???            single ?
+John Alderton                      over  21   seaman         single ?
+Thomas English                     over  21   seaman         single ?
+William Trevor                     over  21   seaman         single ?
+   ??   Ely                        over  21   seaman         single ?
+
+A footnote in the book states:  "Of course Oceanus Hopkins and Peregrine
+White are properly reckoned May-Flower passengers and should be added to
+the above enumeration of those embarking at Plymouth, to make a complete
+list of the Pilgrim voyagers, whose total was 104."
+
+END
+

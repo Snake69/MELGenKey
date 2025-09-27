@@ -1,0 +1,2416 @@
+
+Main Menu (top level menu)
+  auto-refresh display whenever any of the variables on the page change
+    example: node is running and main menu is displayed; kill node - main menu page doesn't change
+      perhaps force a refresh every so often OR perform the onload routine every so often
+  allow focus ID to be set/changed
+  let user know, when a library isn't installed, which functions won't work; disable appropriate function buttons
+    https://stackoverflow.com/questions/15302618/node-js-check-if-module-is-installed-without-actually-requiring-it
+  if no DB active, in the Main Menu do not show "Focus ID Within Active DB =" line and "Active DB Status =" line
+
+Import, Create or Remove a Family DataBase -> Import a Family DataBase from a GEDCOM
+  if the Gedcom file is a zip file, unzip it before importing
+  function incomplete; add all possible items
+  need to be able to handle importing Gedcom files larger than 200MB
+  allow for a "Combo Import" so that a GEDCOM is imported along with files that belong in the Other directory, index, etc
+  allow data to be created and not imported
+  (see Notes.txt for GEDCOM specs)
+  option to start and stop at certain points
+  for starting point give user option to:
+    enter name - use exact match (verify first), if multiple exact matches send user list to choose from, if no exact matches send user
+      list of near matches, if no near matches send user list of all individuals
+    start with first individual in GEDCOM
+  as part of final result, produce a report
+    list all records/lines/tags which were disregarded/ignored
+  allow for a DATE of (upper or lower case) "FROM 1920 TO 1923" or "1920 TO 1923" or "1920 - 1923" or "1920-1923"
+  certain tags should still show something in family group even if there are no sub-level tags (e.g., if "1 ADOP" is present for an INDI but
+    there are no associated "2 blah" records, then there should be a note saying individual was adopted)
+  EMAIL tag may contain 1 @ or 2 consecutive @'s; if 2, make 1 
+  "Check Here to Choose from a List of Individuals" should auto-uncheck if text is entered in box by user & if
+    "Check Here to Choose from a List of Individuals" is checked by user then text in box should auto-erase
+  handle 0 @.....@ OBJE records; if 1 FILE link-to-file record present, download file
+  remove multiple identical Citation references on same Note line
+  items/events NOT added to the MELGenKey Family DataBase because there was no associated source
+    list items not added in log
+
+Import, Create or Remove a Family DataBase -> Import a Family DataBase from User Created Files
+  if a zip file, unzip it before importing
+  allow only "body" or "text" files with a sequential number appended (e.g., text0.0 and bodya are no good)
+
+Import, Create or Remove a Family DataBase -> Create HTML Version of Family DataBase
+  increase size of font used for Section Headings
+  the links to indexes should all be upper case (e.g., indexA.html rather than indexa.html) even if first letter of surname is lower case
+  link IDs in DevHistory.txt to Family Groups
+  make index a button in tableofcontents and make it stand out at top of page
+  tie not being able to wrap certain IDs with "disable" check in Verify
+    currently Verify is not verifying IDs below the generation specified in the "disable" check; Create HTML is flagging these IDs with
+      informational messages in the Log file - stop putting out info msgs for disabled IDs
+  rewrite comparison code when looking for proper file to point to (3 or 4 places in CreateHTML.js)
+  change filenames created in HTML directory so that they display in a more user-friendly sort order (body1.html, body2.html, etc)
+  file size should be an option; (two options) file size around ----; file size not to exceed ----
+  each "slot" in mapfiles[] must provide for at least 1 Family Group
+  https://www.searchenginejournal.com/page-size-seo/420828/    (search engine optimization)
+  https://css-tricks.com/what-is-the-ideal-page-size-for-quick-loading-pages/     (file loading optimization)
+  https://bluetriangle.com/blog/how-to-optimize-html-to-boost-web-performance
+  https://www.linkedin.com/advice/3/how-can-you-optimize-html-file-size-skills-programming-dmb8e
+  analyze/test Web pages with https://pagespeed.web.dev/
+  https://free-icons.github.io/free-icons/
+  https://www.iconhunt.site/
+  check for amount of free space before creating HTML
+  in tableofcontents, use descriptions "most recent generation of Family History" and "next recent generation of Family History"
+  add user options
+    remove extra newlines (i.e., combine continuation lines) - do it by section (i.e., allow Timeline section to have a different
+      maximum line length than Notes section)
+    max line length - do it by section (i.e., allow Timeline section to have a different maximum line length than Notes section)
+    start and stop at certain points ("certain points" would be via Family Group IDs)
+  more files to wrap? - in Other directory, et al
+  show HTML special characters as: &amp; for &, &lt; for <, &gt; for >, &amp;thing; for &thing, &nbsp; for <space>
+    https://www.teachucomp.com/special-characters-in-html-tutorial/
+  improve HTML
+    link locations to maps (states to dirs, specific locations to specific maps if they exist)
+      result should be in layers (e.g., a link to a city maps to the city itself, the user can back out to the township, the county,
+        the state, the country, the world); see more notes elsewhere here
+      if there is an associated date or time frame then the map MUST be pertinent to that time (Newberry maps)
+      https://geographic.org/geographic_names/index.html
+      http://gov.genealogy.net/search/index
+    add a MAP icon to locations in the book, bring up maps.google.com when clicked
+      googleearth?  https://www.newyorkfamilyhistory.org/blog/using-google-earth-genealogy-putting-your-ancestors-map
+  add favicon.ico link
+  make buttons on Web page somehow stand out (spread them out, color them in?)
+  change the presentation of the Web page to be more presentable and user friendly
+    make it easy to access the index
+    file description on page - beginning and ending IDs
+    add "Usage Guide" button to table of contents page
+  Publish Web Site will be different than Create HTML in that Web site will be customizable
+  add button to Web page tableofcontents.html file "Notify me when Web page updated"; get email address;
+    send email to me containing the found email address; issue alert to user
+  functionality to add to MELGenKey HTML version of DB & to public Web Site
+    (this will also apply "Publish Web Site")
+    hovering over a $ amount or a Li amount will show conversion to other money in same year and the value for current year
+    hovering over a placename will show info for that place
+      when created
+      what it was before creation
+    hovering over a source reference shows source name (from Citation Section) in a pop-up
+    clicking on a location should bring up appropriate map for the appropriate time period in a new tab (see elsewhere here for more notes)
+  emplement a simple recursive search of the UnsureIfRelated directory
+    do multiple recoll indexes:  LAKE Unsure area (already done), KILLE Unsure area
+    user enters a search phrase; use recollq; edit the results to what I need; allow user to click on a result to bring up a file
+    https://www.recoll.org/usermanual/webhelp/docs/RCL.PROGRAM.PYTHONAPI.INTRO.html
+  make the index selections more prominent
+    perhaps add a button to table of contents page for index rather than listing the various indexes at bottom of table of contents page
+
+Import, Create or Remove a Family DataBase -> Deport a Family DataBase
+  back up data
+  do anything if it's the active DB ?
+  add indicator to backed-up directory name so it is known it was deported
+
+Import, Create or Remove a Family DataBase -> Re-Import a Deported Family DataBase
+
+Verify Family Data
+  may need to change Docs, Docs/VerificationChecks.html and/or Include/ExampleOfUserCreatedFiles
+  ran into 1 strange issue where the end of the Family Group was EOL, X, EOL, EOL
+    the X was an undisplayable character (vi didn't even acknowledge the character was there)
+    HOW TO HANDLE THIS ?
+  check for correctness of locale names (different names at different times, area creation times, etc)
+  https://geographic.org/geographic_names/index.html
+  https://www.usgs.gov/us-board-on-geographic-names?utm_source=join1440&utm_medium=email&utm_placement=newsletter&user_id=66c4c490600ae15075980575
+  current US counties:
+    https://en.wikipedia.org/wiki/List_of_counties_by_U.S._state
+    https://en.wikipedia.org/wiki/Index_of_U.S._counties
+  the names of people at the head of family groups with no parents need to be cited
+  check that all children and HOF Line when not a child in another Family Group have gender indicator
+  like:
+    199.0  Herbert Ryder (M) [1]
+
+    Children:
+
+    i.    Fred. (M) [3]
+    ii.   Elizabeth. (F) [3]
+    iii.  name unknown. (U) [3]
+
+  bug
+    "Notes -" header missing, Verify did not catch it
+      how to catch this?
+      what if multiple or all headers are missing?
+      if columns 1-11 of a line contains a date, then we know there must be a Timeline header
+
+  add option on command line to auto-fix problems which can be fixed
+    ask user before fixing
+    do not fix anything
+    accept corrected data from user
+  add check for multiple periods in ID
+  when verifying the index, 2 spaces not being after name can be easily auto-fixed
+  add line number (or exact text in error) to errors
+  check for non-ASCII characters
+  when checking Children Section for match on name in index & first name is "------", look for "name unknown"
+  speed up sorting references in each line of index
+  speed up sorting index - try quicksort algorithm
+    see links in "Other Bookmarks" section in Firefox
+    time Verifying SOT2-LAKE using current sorting technique - 2 hours, 29 minutes
+    time Verifying SOT2-LAKE using quicksort technique
+      MAKE SURE TO USE ORIGINAL INDEX FILE WHEN COMPARING
+  optionally look for broken links
+    https://stackoverflow.com/questions/1591401/javascript-jquery-check-broken-links
+    https://medium.com/sahibinden-technology/how-to-check-broken-links-in-a-single-web-page-programmatically-c36561e3eb2f
+    https://www.eviltester.com/blog/eviltester/javascript/in-browser-automation/writing-a-link-checker-in-the-browser/
+  optionally look for broken email addresses
+    https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript
+    https://mailtrap.io/blog/javascript-email-validation/
+    https://www.zerobounce.net/email-guides/email-validation-javascript/
+    https://www.usebouncer.com/email-validation-javascript/
+    perhaps use this to verify email address (on the server side):
+      https://www.npmjs.com/package/email-existence
+      This will ping the email address; if no response it will return false or else true.
+
+      function doesEmailExist(email) {
+          var emailExistence = require('email-existence');
+          return emailExistence.check(email,function (err,status) {
+              if (status)
+                  return status; 
+              else
+                  throw new Error('Email does not exist');
+          })
+      }
+  any header can appear only once per Family Group
+  look for semi-colons separating facts in Notes section (look for semi-colons by keying off on reserved words)
+  when user verifies a DB with HTML version present, the status flag in MELGenKey.txt should be set to unverified & saved at the same time
+    the HTML version is deleted
+  ensure each event has a citation reference (except where there is only 1 citation)
+  enclose Web addresses within <> (so that they will wrap in CreateHTML)
+    go through DB looking for any string (ending in comma, rt paren, space or \n), starting in http:// or https://,
+      first character cannot be <, last character cannot be >, string must contain at least 1 period, string cannot
+        contain ->,@
+      precede string with http:// if necessary, enclose within <>, then create anchor (<a>)
+    look for code examples for determining a Web link
+    give user option to auto-correct or manual correct
+  https://www.npmjs.com/package/linkifyjs
+  alert displays because HTML version exists & will need to be re-created; click OK; the Continue button does not disable
+  need to check for which button is clicked in alert with addEventListener (see CreateHTML.html)
+  look for filename references in Citations section (or anywhere else in Family Group) which are not formatted properly (no ->)
+  validate FullName - only characters allowed are letters, - and '; no prefixes/titles (Dr, Sir, Pvt, Sgt, Col, etc);
+                      no suffixes (Jr, Sr, roman numerals, PhD, MD)
+  check for duplicate citation lines in same Family Group
+  ensure each citation line is referenced at least once in Family Group
+  if "Children by FullName and FullName:" then there must be multiple marriages in Family Group
+  if "Children:" then there must NOT be multiple marriages in Family Group
+  ensure "child #X, name" and "Child #X, name" in Family Group matches name and Roman Numeral number in Children Section
+  ensure roman numerals are in sequence with no skips
+  index
+    see ~mlake/Dev/CheckIndex
+    ensure first letter of [most] names and initials are upper case
+  General options for Verify
+  allow option to do a full check (format like what I devised) or skeletel check (check basic format, see docs)
+    a basic check allows user to format family info any way he/she wants
+    things which are checked are headings, family ID line, Father line, Mother line, ensure sourcecitation references, timeline dates
+    content can be formatted as the user wishes but some things which must be a certain way:
+      when a timeline event is continued the date field must be blank and the content must be indented 2 positions on the following lines
+    display a dialog where user can checkmark each individual validity check he/she wants to perform
+    each individual check should be able to be allowed or not by the user
+      or the user can select DON'T ASK AGAIN
+    allow for auto-correction where possible
+    incorporate spellchecker into validity-check code
+  output errors
+  output changes made
+  output comments (e.g., when an ID is skipped sequentially ... note it to user
+  "Timeline -"
+    should contain word "living", not "lived"
+    should contain word "working", not "worked"
+    should contain word "sells", not "sold"
+    should contain word "purchases", not "purchased"
+    should contain word "moves", not "moved"
+    should contain "[name] and [name] married", not "[name] married [name]"
+      the second [name] cannot be the same name as the head of the family
+    certain events should be in a certain format (e.g., "born" should always be followed by "in" or a CR)
+    check for more than 1 consecutive blank after the date (starting in column 12) (take into account continuation lines)
+    ensure birthdate for a head-of-family is also in parents' Timeline
+    ensure birthdates & info for children match that in childrens' own family group
+    check for two consecutive dates in Timeline which are exactly the same
+    check for duplicate entries except for date (e.g., "Margaret Good born" appearing more than once - could be in Timeline and/or Notes sections)
+  "Notes -"
+    "known as" - name should be enclosed within quotes
+    should contain word "lived", not "living"
+    should contain word "worked", not "working"
+    should contain "[name] married [name]", not "[name] and [name] married"
+      the second [name] cannot be the same name as the head of the family
+    each line must start in column 1
+    must be blank line between notes
+    check for duplicate notes
+    check for more than 1 consecutive blank
+    source/citation reference must exist if there is more than one Source/Citation
+    source/citation reference must NOT exist if there is only one Source/Citation
+    if multiple source/citation references for a note then they must be sequential
+  "Observations -"
+    each line must start in column 1
+    source/citation reference must exist if there is more than one Source/Citation
+    source/citation reference must NOT exist if there is only one Source/Citation
+  "Extras -"
+    if any of these lines appear they must be preceded by 1 blank line
+      must be followed by a non-blank line
+    if multiple source/citation references for an item then they must be sequential
+  "Further Research -"
+  "Biography -"
+  Other checks:
+    alert (and allow changes) when locations are incorrect based upon available maps
+    spell check
+    double dates out of range (1 Jan - 25 Mar, after 1752)
+    check for possibly-still-living people - point out to user; optionally remove
+    ensure twins, triplets, etc are noted as such
+    ensure double dates/dual dates are in their proper sequence
+    look for dates which should have a 'd' in column 7 of Timeline
+    ensure the only entry in a family group for a child who has his/her own family group is for birth
+    specify right margin (in Notes use semi-colon for breaking lines, what about other sections?)
+    look for unnecessary Timeline entries for children (when a child has its own entry then the only entry in the parents' entry
+      should be birthdate)
+    each event should contain at least one key word (allow user to add to list of key words)
+    try to put certain Notes in a certain sequence; e.g., "born" should be first, "buried" should be last,
+      "died" should be next to last (if "buried" present, last if not)
+    check for correct spelling of all reserved words (married, died, born, etc, states, counties, what else?)
+    check if image reference missing in Source/Citation line
+    ensure each Source/Citation item is spelled exactly the same everywhere in the book that it is used
+    ensure all "links" (->) work
+    ensure a numeric actually is a numeric
+    ensure every name in body of book is in index (missing are some Sources/Citations (e.g., Marshall Edward Lake (1.)) and
+      non-transcribed articles)
+    check for word "married" in each family entry
+    check for missing "living in ..." events (e.g., when parents are shown as "living in ..." during a year after child is born)
+    ensure email addresses are enclosed within <>
+      validate email address - https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript
+    ensure Web addresses are enclosed within <> and start with http:// or https://
+    check Web addresses to make sure page still exists
+    remove extra spaces used for alignment (i.e., ALWAYS have 2 spaces after IDs & wherever else EXCEPT WITH CHILDREN)
+    change 1st to first, 2nd to second, etc
+    use geographical timeline as input to do checks and completions (add correct county name for the time, add correct township name
+      for the time, ensure correct placename (e.g., certain areas would be territories before a certain time, or colonies before a certain
+      time), etc) also, see http://www.geonames.org/
+    compare the current index with the body and point out errors/inconsistencies
+      some indexing errors may be able to be handled programmically
+        names associated with family ID numbers (beginning of family entries, where else?) can be auto-indexed programmically
+        for names as the head of family entries add an asterisk to that index entry ?
+        check referenced files (plain text or graphical images) for further indexing
+    body - 2 spaces after number & before name
+    compare info in new files to old files (dates, what else?)
+    ensure when dashes occur (for a missing name) it's always 6 dashes
+    ensure "transcribed" in files in the Reference directory is noted where appropriate
+  when Auto-Delete Failed References in Index checked, remove any references to files in PlainText files which are removed based upon value of
+    "Disable checks below generation:"
+  save an indication that DB is verified while disabling checks below a particular generation so this can be made use of in other functions
+    such as "Create HTML" where certain IDs are not able to be wrapped because they do not exist & an error msg is generated in log
+  add count of various types of messages (errors, warnings, info) to report
+  when encountering [] which does not contain all numerics, note it with an info message rather than error it
+  add option to auto-remove files in Reference directory which are not used in Family DataBase
+  sometimes in Citations a directory is referenced; in this case no file within the directory should be flagged as non-referenced
+  add option to auto-delete any references in index where the associated individual does not appear in the referenced Family Group
+    this may mean just the reference gets deleted or the entire entry gets deleted
+    for individuals where the reference check is disabled will NOT be auto-deleted if the disabled option is indicated
+  check that last character in each entry in Account Section and Childrens Section is ] (it may not be if Family Group has only 1 Citation)
+  option to check for inactive Web links (Web links must be enclosed within <> ?)
+  option to check for inactive email addresses (email addresses must be enclosed within <> ?)
+  allow for other files (any imported DB, a DB not yet imported) besides the active DB to be verified
+  add form for options
+    fix certain simple things - spelling of reserved words, placement of reserved words
+      auto-fix or ask before fixing
+      include informational output as well as errors in report
+    allow only ":" for Section Headers as in "Children:" 
+    allow only " - for Section Headers as in "Children -"
+    allow either ":" or " -"
+    (allowing these options will need to be handled in other functions as well, e.g. searching for "Children:" or "Children -")
+  at times there are encounters which *could* be an error
+    on Timeline Report - Possible error. Is such-and-such correct?
+  there needs to be additional checks in Childrens Section
+    birthdate sequence
+    Roman Numeral sequence
+  check for the same reference (->) being found or not found just once per Family Group
+  Timeline event should contain "[name] and [name] married", not "[name] married [name]"
+    the second [name] cannot be the same name as the head of the family; HOF name must be first name
+  certain Timeline events should be in a certain format (e.g., "born" should always be followed by "in" or a CR)
+  Timeline events: check for more than 1 consecutive blank after the date (starting in column 12) (take into account continuation lines)
+  see DataFormat.html
+  verifying index:
+    see ~mlake/Dev/CheckIndex
+    allow user to select which checks to perform
+    allow user to set certain formatting checks (e.g., 1 or 2 spaces after name)
+    somehow mark the particular reference for a person which points to the main family group for that person (perhaps surround the reference
+      with [] or (), or follow the reference with *, or some other way)
+      NOTE - ONE OF THE VALIDITY CHECKS MAY BE FOR THE INDEX TO CONTAIN NO SPECIAL CHARACTERS 
+    verify sort order (str.split(",").sort().join(","))
+
+Family DataBase Activation
+  rewrite function to use Select/Option
+  when "MELGenKey DataBase Activation" is clicked provide the user with a list of DBs to choose from
+  allow DB to be deactivated (? - isn't this already being done by clearing the checkbox and saving)
+  NOTE - user can have up to 20 imported DBs at any one time
+  possibly remove MELGenKey DataBase Activation functionality and instead add a DB selection box/area in each function where active DB is used?
+    or perhaps make it a Preference that the user can set
+    or both
+
+Display Family Data -> HTML Family Data
+Display Family Data -> Plain Text Family Data
+
+Edit Family Data
+  some of these may also apply to Import, Create or Remove a Family DataBase -> Import a Family DataBase from User Created Files
+  offer various ways for user to edit DB
+    allow user to use their favorite system editor (vi, notepad, TextEdit (Mac), etc)
+    provide a textarea via HTML (ala NotesActDB.html or GenNotes.html) 
+      see https://github.com/Benarjishyam/collabarative-text-editor
+    provide a form which can be filled in to update/create a Family Group
+      if updating an already existing Family Group, the form will be filled in with data already there; user will then edit
+    user can input a specially formatted file which will auto-update a DB
+  allow for notification to be sent to data creator and to anyone user has shared data with when DataBase is updated
+  any change by user should ripple through database (e.g., ID references), also update index if needed
+  when changes are made to a DB, also alert user to other changes which MELGenKey cannot make (e.g., names or id refs in photos); verification
+    should optionally happen; backup (?) and delete HTML version (if it exists) and alert user it needs to be re-created
+
+Reports -> Produce Timeline
+  take into account a 5-position year in Timeline files (digit in column 12)
+    (the following events were removed from Include/Timelines/GeneralTimeline.txt)
+        -30000 Cro-Magnon man is flourishing, moving from the Near East into
+                 Europe, lives by hunting and gathering. Cro-Magnons painted
+                 caves with drawings of the animals they killed. [7]
+        -25000 Bering Strait is crossed by humans, connecting Asia to the
+                 Americas. [7]
+        -18000 Clay pottery ware is created; humans begin to use raw metals. [7]
+        -10000 Humans make it to the southern most point of South America. [7]
+  7.  Human History Timeline, humanhistorytimeline.com
+
+  add Number of Events to Timeline Report
+  when a child from a Family DB appears in report there's not enough info; perhaps include surname or Family Group ID
+  allow to output events based upon search word(s)
+  allow for multiple start times and multiple end times
+  option to output events occurring only in locations where family(s) lived
+    "Include Only Those Geographical Areas Associated With Selected Individuals or Families"
+  option to output events by location
+  allow for multiple individuals
+    use auto-completion if name entered; if multiple individuals with same name user can select which one(s)
+  allow for multiple family groups
+    use auto-completion if name entered; if multiple people with same name user can select which one(s)
+  allow for the entire active Family DB
+  auto-completion, see:
+    https://stackoverflow.com/questions/36705411/autocomplete-input-to-pull-cities-from-database-with-javascript-jquery-and-php
+    perhaps use the index for auto-complete; if so, let user know
+    for auto-completion, don't just start at beginning of name but start anywhere in name
+  allow user to pick a state (or states) in USA, a county (or counties) in USA, and country (or countries) in world to include
+  allow for multiple IndIDs and/or multiple children and/or multiple FamIDs by separating IDs with some character (whitespace, ;) in text boxes
+  allow for entire active Family DB
+  add option to not include circa-dated events
+  add option to include age for people (in the Family DB) appearing in a Timeline Report event when known
+  allow decimal number on form for ChildID
+  change check for ChildID from valid Roman Numerals to a valid Roman Numeral number (e.g., iiiii would be invalid)
+  allow user to specify a child with it's own ID; in this case go to where the child is specified as being the Head of Family 
+  include USA directory in Timeline Report when appropriate
+  option to include Citations/Sources
+  option to shift non-family events to the right an optionally selected number of columns (so that they can be more easily identified
+    from family-related events)
+  add indication to event lines where event came from
+    (e.g., after event and Citation Reference, add (Gen) for General Timeline, (Fam) for Family DataBase, (WWI) for World War I, etc)
+    add a legend after the end of the report and after Citations which will describe abbreviations
+    (e.g., Gen = General Timeline, Fam = Family DataBase, etc)
+  possibly change form/logic to include individual _OR_ family ??
+    if not, need to add name to unnamed events (living, lives, moves, moved, etc)
+  if doing a report for a child, add child's name into header (same line as where HOF name appears)
+  in form, for start & end dates, allow just year or month & year to be entered
+  add option to include USA state, territory, DC
+  give user option of setting the NEW LINE (continuation line?) column
+  like in OnThisDay Report:
+    allow month & day to be omitted from report (this may be useful if the user is getting a Timeline report for only Births, Deaths, etc)
+  form - add beginning and ending year to selections where appropriate
+
+Reports -> Determine Relationship
+  most recent common ancestor between two people
+  show line to most recent common ancestor between two people
+  relationship of two people (whether it be by blood or by marriage, or a combination)
+  https://www.codeproject.com/Articles/30315/Tree-Relationship-Calculator
+  https://stackoverflow.com/questions/1063666/calculate-family-relationship-from-genealogical-data
+  degree of relationship (see https://www.genealogiequebec.com/blog/en/2017/11/16/relationships-with-family-calculating-and-understanding-the-different-degrees-of-kinship/)
+
+Reports -> Movement Map
+  see https://www.reddit.com/r/dataisbeautiful/comments/1licslz/oc_i_mapped_the_lives_of_4000_of_my_daughters/
+  map an individual's movements
+  map a family's movements
+  map an individual's movements plus all descendants
+
+Reports -> By Category
+
+Reports -> On This Day
+  sort not right as in partial example:
+     1 Jan 2001 child #2, Calvin W., died in North Tonawanda, Niagara County, New York
+     1 Jan 2005 Watson T. Hampton died in Sabal Ponds Wellness Center, Largo, Florida
+     1 Jan 2009 Margaret L. Brands died in Masonic Village, Elizabethtown, Pennsylvania
+     1 Jan-4713 Noon on this day is the epoch for Julian Day (JD).
+     1 Jan- 153 For the first time, Roman consuls begin their year in office on 1 Jan.
+     1 Jan-  45 New Year's Day is celebrated on 1 Jan for the first time in history
+     1 Jan-  42 The Roman Senate posthumously deifies Julius Caesar.
+     1 Jan    1 Origin of Christian Era.
+     1 Jan   89 Governor Lucius Antonius Saturninus of Germany becomes emperor of Rome.
+     1 Jan  193 The Senate chooses Pertinax against his will to succeed Commodus as Roman emperor.
+  recurring message for On This Day
+    allow for html email
+    allow multiple entry fields for Family DB Name (also for non-recurring report, or perhaps force user to use Manage Recurring Reports?)
+      and to whom email is being sent
+  option to output events occurring only in locations where family(s) lived
+  option to output events by location
+  option to include Citation material
+  add Number of Events to Report
+  when a child from a Family DB appears in report there's not enough info; perhaps include surname or Family Group ID
+  add validity checks (month must be 01 through 12, day must be 01 through 31)
+  add check for day 31 (not valid for Sep, Apr, Jun & Nov; Feb, only through 28; allow for leap years)
+  allow one-position entries
+  when form appears the month and day should be today
+  add option to include all Family DBs
+
+Reports -> Produce Bio
+  change system alert to dialog
+  remove the refresh and figure out why the data is appended when doing multiple bios
+  add a Print button to window in new tab
+  fix bugs in some wording
+    in the following lines, Daniel Pierson Case (9.200) is the subject of the bio and Minnie Sturm is the spouse
+      "On 20 Dec 1854, Daniel Pierson Case born in " should be "On 20 Dec 1854, Daniel Pierson Case was born in "
+      "On 19 Jan 1855, Daniel Pierson Case Minnie Sturm born." should be "On 19 Jan 1855, Minnie Sturm was born."
+      "In 1879, Daniel Pierson Case Minnie Sturm living in " should be "In 1879, the family was living in "
+        this is because Daniel Pierson Case is still alive in 1879; if he was deceased then line might be "In 1879, Minnie Sturm living in "
+      "On 8 Jun 1977, Daniel Pierson Case child #3, Rectford David, died." should be "On 8 Jun 1977, the third child, Rectford David, died."
+      there may be more wording bugs to fix; ask Gemini - upload pertinent code & family group 9.200, point out wording errors
+  add some randomness to sentence structure
+  give user options to create bio using AI (user may have to have a login for AI)
+    or to use a <textarea> to display the bio making it editable
+    see Notes/UserUsingGemini.txt 
+  option to abbreviate Township, County, state name (see AncestralLine.html)
+  option to use full date or just year 
+  option to show full date in different formats (dd mmm yyyy, dd fullmonthname yyyy, fullmonthname dd, yyyy, mm/dd/yyyy, etc)
+  enhance bio using Questions, Notes, Extras
+  for using AI, see:
+    https://naturalnode.github.io/natural/
+      https://www.youtube.com/watch?v=nEPyGX-VXdw
+    https://github.com/axa-group/nlp.js
+    https://github.com/spencermountain/compromise/          (English only)
+    https://github.com/winkjs/wink-nlp-utils
+    https://github.com/wooorm/franc
+    https://medium.com/analytics-vidhya/nlp-libraries-for-node-js-and-javascript-bdb605bb803c
+    check out https://www.semrush.com/goodcontent/ai-text-generator/
+    https://www.writecream.com/personal-biography-generator/
+    google:  biography ai
+
+Reports -> Calendar of Evenets
+  line text output
+  calendar-type output
+    such as at https://www.millstonenj.gov/images/HPC/2023-Calendar.pdf
+    see Calendar1.jpg and Calendar2.jpg in Notes/Extras/Forms
+    mark anniversary or event days
+    create a calendar for any year
+    allow a "family" calendar
+      12 month calendar (or how ever many months the user wants)
+      include any number of "degrees" from a particular person in calendar
+    allow calendar including events from selected Timeline files
+    calendar can be textual or graphical
+  allow for recurring notifications
+  for sending recurring emails need:  relay site, login, password, port number
+  allow for events to appear ahead of time by category
+  allow user to set how far ahead for each category
+  allow user to select the event types to include in a calendar: births, deaths, baptisms, marriages, naturalizations, burials, etc
+  allow for notifications via email or an HTML alert
+  remembrances
+    this would be for recent past events
+      deaths
+      births
+      marriages
+    allow user to set time frame 
+      this month
+      all months
+      select months from a list
+      beginning & end date 
+
+Reports -> Produce Tree
+  fan chart
+  other types of charts
+  user can specify where to start
+  user can specify number of generations
+  see https://www.yworks.com/pages/drawing-family-trees-with-javascript
+  see https://familytreemagazine.com/resources/family-tree-chart-types/
+  see https://jamie.works/alternative-family-trees.html
+
+Reports -> Point to Point Ancestral Line
+  allow entry of one ID; show complete ancestry for that ID
+  on form:
+    allow for name or ID # for Person #1 and Person #2
+    allow for MDPA or MDMA (Most Distant Paternal/Maternal Ancestor) in Person #1 or Person #2
+    allow for "focus ID" in Person #1 or Person #2
+    offer an option to use any character (including space & special characters) other than . for indenting
+    allow for Spouse info (DOB, DOBYR, POB, DOD, DODYR, POD)
+    allow for full date (not just year)
+    option to show only state (or country) for place
+    option to show surnames in all caps
+  when Person #1 results in NOT connected, check starting from Person #2
+  add names to 2 people not connected error
+  when including DOB or DOD, if date blank in Family Group use previous date
+  when multiple spouses, include only spouse that's pertinent to the line
+  ensure using the Print button indents properly
+  for spouse, pick up "married", "born" or "died" only in Timeline or Notes sections
+  pick up dates only in Timeline Section
+  when "died" not present in Timeline Section, use year associated with "inventory made" or "will proved" and add a 'c' for circa
+
+Reports -> Produce Phylogenetic Tree
+  check out https://github.com/veg/phylotree.js/
+
+Reports -> Produce Family Register
+
+Reports -> Produce Individual Profile
+  something like this could be an optional way for the user to see info concerning a particular person:
+    make people clickable
+                  |             |--- Date
+                  |--- Birth ---|
+                  |             |--- Place
+                  |
+                  |
+                  |             |--- Date
+                  |--- Death ---|
+                  |             |--- Place
+                  |
+                  |
+                  |--- Parents
+                  |
+                  |
+                  |--- Spouse
+    Individual ---|
+                  |
+                  |--- Children
+                  |
+                  |
+                  |--- Residence
+                  |
+                  |
+                  |--- Occupation
+                  |
+                  |
+                  |--- Military
+                  |
+                  |
+                  |--- Misc
+
+Reports -> Design a Report
+  allow user to create their own reports
+    see algorithm in NSB where formulas can be created by user
+    see algorithm in RP where poker games can be created by user
+    select items by keying off on "reserved words" like twins, triplets, born, died, buried, married
+    provide the capability for a user to create any type of report through some sort of control language
+    for most reports allow user to specify number of generations forward and/or backward from a family or other point
+    Timelines (& Notes? & Sources?) of multiple families to be combined and output
+      Timelines can be by an individual, a family, relationship to a defined degree (e.g., siblings, first cousins, second cousins, etc),
+        a surname, an ancestry, within a generation, a certain time period (1 day to a wide span of days, or a month, a year),
+        anniversary (1 year ago from selected date, 2 years ago, 3 years ago, etc ... also can be 1 year ago, etc within a certain span of time)
+      include world events, USA events, MLB events, family events (option to include source), state events
+      also include things going on at the time ... like Rev War, WWI, WWII, etc
+      user can select particular items from Timeline, e.g. all deed transactions, all entries having to do with wills, all births, etc
+      if 1 day is requested then optionally output only the year with each event
+      optionally output event on one line (remove CRs)
+      optionally include in events relationship identification (e.g., wife of, sister of, mother of, etc)
+    select people by category
+      people who served in Armed Forces
+      people who served during a war
+    location plotter for entire DB
+    "this day in our family" (ala http://www.mlake.net/history.html)
+      output should include relationship of person to user, common ancestor
+    capability to produce a location report of relatives living within a certain distance of a user-supplied location
+    "this day" reports
+      options to include world events, USA events, MLB events, family events (option to include source), state events
+      option to show relationships
+      option to show common ancestor
+      allow a time span on either side of the inputted date to include events
+      allow inputted date to be a month, a year, a decade, a century
+      allow report to be emailed daily
+    save report to file (plain text, PDF) or print
+    a GEDCOM starting from a certain point
+      include only direct ancestry
+      include children
+      include cousins (everyone)
+      go forward from starting point, or backward, or both
+    a storybook (bio) of a family or families
+      see Notes/PseudoCode2CreateBioFromTimeline.txt
+      look into using an open source Natural Language Processing (NLP) library for JavaScript:
+        https://datos.gob.es/en/blog/10-popular-natural-language-processing-libraries
+        Natural, Compromise
+    direct line report (one person's direct line going back ... offer short & long versions)
+  allow user to change design of already-available report as to where info goes and what info shows
+
+Search/Inspect/Analyze Family Data -> Search
+  include full text search at familysearch.org in Internet results
+  when searching the Internet use several search engines - google, Bing, DuckDuckGo, CC Search, Yahoo, Boardreader 
+    see https://nodesource.com/blog/express-going-into-maintenance-mode
+    the following will check if an URL is active:
+      const urlExist = require("url-exist");
+      (async () => {
+          const exists = await urlExist("https://google.com");
+          // Handle result
+          console.log(exists)
+      })();
+
+        for the time being I could use (but apparently the "request" package is being removed eventually):
+          see https://stackoverflow.com/questions/60249127/should-i-use-the-request-module-for-a-new-project
+
+      var http = require('http'),
+          options = {method: 'HEAD', host: 'stackoverflow.com', port: 80, path: '/'},
+          req = http.request(options, function(r) {
+              console.log(JSON.stringify(r.headers));
+          });
+      req.end();
+
+    for making HTTP requests
+      https://www.twilio.com/en-us/blog/http-requests-in-node-js-html
+      https://blog.logrocket.com/5-ways-make-http-requests-node-js/
+      https://stackoverflow.com/questions/6158933/how-is-an-http-post-request-made-in-node-js
+      https://developer.vonage.com/en/blog/5-ways-to-make-http-requests-in-node-js
+
+  for google - https://developers.google.com/custom-search/v1/using_rest
+  https://www.memberstack.com/blog/node-http-request
+  https://medium.com/@MinimalGhost/what-is-axios-js-and-why-should-i-care-7eb72b111dc0
+  https://medium.com/free-code-camp/simple-http-requests-in-javascript-using-axios-272e1ac4a916
+  https://zetcode.com/javascript/axios/
+  https://stackoverflow.com/questions/74560517/axios-request-to-google-searchq-test-return-data-in-weird-format-rather-than-te
+  https://www.digitalocean.com/community/tutorials/js-axios-vanilla-js
+  https://medium.com/@darshankhandelwal12/how-to-scrape-google-organic-search-results-with-node-js-d3abe0274f40
+  https://flaviocopes.com/node-axios/
+  https://dev.to/mikhailzub/how-to-scrape-google-search-organic-results-with-node-js-4id9
+  https://www.scrapingdog.com/blog/nodejs-axios-proxy/
+  https://brightdata.com/blog/how-tos/web-scraping-with-node-js
+
+  web-crawler
+    https://www.zenrows.com/blog/javascript-web-crawler-nodejs#conclusion
+    https://reintech.io/blog/how-to-create-web-crawler-using-node-js
+
+  add factors
+  output hits in a sorted order based upon match score
+  if search doesn't find a match, tell user where mismatch occurs; e.g., if searching for Marshall Lake whose father's name is Harold John Lake,
+     results should say 0 matches because middle name of John doesn't match
+  add STOP SEARCH button ... make visible & enable only after SEARCH button pressed; if STOP SEARCH pressed then display results up to that point
+  Search is finding short names, e.g. entering 'Alex' for firstname and 'Kish' for lastname will match on Alexander Kishbaugh
+    is that what we want?  perhaps mark it as a possible (to determine 'possible' will need to check for space after Alex in familydata)
+    if we leave it like that, make sure to not that in docs (Alex will find Alex, Alexa, Alexander, etc; lex will find nothing)
+  if user enters space after name, it won't find anything - use trim like in Timeline routine
+    also use trim() when searching entire Web
+  when matching on lastname for a child, add routine to look for a sibling who has it's own family
+  always ignore case
+  take into account double (or more) HOFs
+  option to omit particular families (enter family IDs separated by commas or hyphens, use * to omit an entire generation - e.g. 1.*)
+  rank results best to worst, put possibles at end
+    in order to do this, will need to save all matches before outputting results
+  allow for initials
+  matching only on lastname is a special case; if lastname is found then each child in that family group needs to be checked
+  how will I search images?
+    https://ourcodeworld.com/articles/read/580/how-to-convert-images-to-text-with-pure-javascript-using-tesseract-js
+    https://tesseract.projectnaptha.com/
+    https://www.ttmind.com/techpost/HOW-TO-EXTRACT-TEXT-FROM-IMAGE-USING-JAVASCRIPT-OCR-with-Tesseract-js
+    https://towardsdatascience.com/image-to-text-ocr-with-tesseract-js-3540b420e0e7
+    https://www.smashingmagazine.com/2021/06/image-text-conversion-react-tesseract-js-ocr/
+    https://blog.logrocket.com/how-to-extract-text-from-an-image-using-javascript-8fe282fb0e71/
+  what about doc files, rtf files, zip files, etc?
+  when searching images search for the primary name(s) only
+  search through Reference directory
+  results should be clickable and will display the family if clicked, highlight match
+  how to handle short names? (e.g., user enters Ed for firstname)
+  how to handle abbreviated names? (e.g., user enters Wm for firstname)
+  add checkboxes to each line in Search results:
+    Previously Checked
+    Contents Changed Since Last Checked
+    Monitor Contents for Changes?
+  currently, search matching on place names
+    how to avoid matching on place names?
+    https://www.familysearch.org/developers/docs/guides/authorities/place-authority
+  currently, search results erroneous when initials are involved (e.g., if searching for first name of Thomas - "H. Thomas Lake" will match)
+  need to add to report as each match is found
+    # of matches should appear at top of results
+    search should be able to find multiple different people in same family group, one example - if searching for first name of Johan and last
+      name of Kille ... at times the Germans used different middle names with the same first name for different people
+  allow user to use any of several search engines
+    it seems that requesting a search at several individual sites doesn't work as expected (pages get a captcha); perhaps using a
+      different search engine for each individual site will get around that
+    search engines:
+      Google
+      Bing.com
+      Perplexity.ai
+      You.com
+      SearchGPT
+      Yep.com
+      Openverse
+      Yahoo.com
+      Ecosia
+      Aol
+      DuckDuckGo
+      Startpage
+      Swisscows
+      Gibiru
+      Brave
+      Wiki.com
+      X (Formerly Twitter)
+      SlideShare
+      Wayback Machine
+      WolframAlpha
+      LinkedIn
+      Baidu
+      Yandex
+      Sogou
+      Naver
+  allow user to add to list of Individual Sites to search - perhaps keep a private file of individual sites that the user can manage
+  googling and searching a Family DB might be two different types of searches
+    for a Family DB, user might want to search for a person whose parents were such and such, whose children were such and such, etc
+  add more search fields
+    add a third name? fourth?
+    add a second year; if so, lessen yr+/- options
+  add option to search all imported DataBases
+  keep a search score (e.g., matching exactly on name might be worth 5 points; matching exactly on first and last name but not the
+    middle name might be worth 4 points, etc) and output results based upon score
+  use fuse
+  for searching graphical files, see /var/www/html/WORK & recoll
+    does google search graphical files?; if so, add graphical file search just for Family DataBases
+  perhaps this is just for Inspect or Analyze?
+    have different forms depending upon what user is looking for ...
+    a SPOUSE (unknown name or only first name known)
+      base search upon location, timing, names of children
+      (child name could be same [first or maiden] name as unknown spouse, or parent of spouse, or possibly sibling of unknown spouse;
+        ditto for middle name of child
+      obvious - look for same name for known spouse with the same info (dates, kids, location)
+      check the names of neighbors
+    for entering children & siblings ... when one is entered, display another entry point (begin by showing just one child and sibling;
+      there can be an unlimited number of children and siblings)
+  in addition to family data, search Reference/*, PlainText/UnsureIfRelated/* and images
+  when searching active DB, add checkbox to search UnsureIfRelated
+    options to not search Unsure directories or to only search Unsure directories
+  when searching active DB, take into account year in Timeline could be blank
+  when searching active DB, allow for +/- year
+  speed up search of active DB
+  allow user to add, delete, edit list of sites to search
+    will need to validate it
+      using a form will make validating unecessary for:
+        TAB character
+      field 1 = address
+      TAB character
+      field 2 = description (will show in List Box)
+      no null lines
+  allow for automated searches
+  allow words within x number of words from each other
+  allow user to look for certain children with certain parents
+    e.g., a user wants to look for a specific child name with specific parents, or one parent (with surname)
+          a user wants to look for a specific parent name with a specific child
+          a user wants to look for specific sibling names with a specific child
+          a user wants to look for a specific name in a specific locale (county, state, etc)
+          a user wants to look for a specific name in a specific time period
+  search for digital images/collections
+    by surname
+    by place
+  searching/matching points:
+    father - born / died & places
+    mother - born / died & places
+    siblings = born / died & places
+    spouse - born / died & places
+    children - born / died & places, number of
+    third/fourth in a line (e.g., if user wants to look for a "James III" the look for a James who had a James who had a James)
+    where subject lived
+      city          -| 
+      township      -| 
+      county         |- use these for all places
+      state         -| 
+      country       -|
+    time subject lived
+    type of work subject did
+    served in Armed Forces?
+    served in Armed Forces during a war?
+    when & where baptized
+    where buried
+    when marriage
+    NOTEs - for names & dates, allow exact, ? and *
+            for dates allow +/-
+  search Internet, Gedcoms, etc looking for possible matches (perhaps use fuse) which could tie into a Family Group in a MELGenKep DB
+    use matching rules (rules would be different for different types of data (dates, names, places, etc)
+
+Search/Inspect/Analyze Family Data -> Inspect
+  add chronological checks to events for the same person (e.g., a person can't have been born after he/she died)
+  include Notes Section in the check for multiple birth, death, baptismal or burial events
+    e.g., in the Timeline Section there may be an event "23 Jan 2010 Joe Blow born in Binghamton, New York" and in the Notes Section there
+      may be a note "Joe Blow born in Binghamton, New York."
+  some of these checks should be optional and itemized on a select page which the user can checkmark for the check to be performed
+  add link checker option (and/or in Verify)
+  include WARNING or INFO for any item in report which is not an ERROR
+  ensure birthdate, associated info and citation(s) for a head-of-family is also in parents' Timeline
+  ensure children are listed in birth order
+  ensure children numbers (roman numerals) are in sequence with no skips
+  check for potential twins, triplets, etc
+  siblings with same first name
+  check death date for mother versus birth year of children
+  check death date for father versus birth year of children
+  check for person not of age concerning legal documents
+  look for events for an individual after their death date (some are ok like buried, will proved, estate inventory made,
+    court record concerning estate, newspaper article concerning person or estate, etc)
+  checks which user can set:
+    lifespan
+    max age for male to be a father
+    min age for male to be a father
+    check birth year of mother versus birth year of all children
+    max age for female to be a mother
+    min age for female to be a mother
+    max age difference between siblings
+    min age difference between siblings
+    max age difference between spouses
+    max age when baptized
+    max age when marrying
+    min age when marrying
+    max age when retiring
+    min age when retiring
+  check place names against geographical timelines
+    see http://www.geonames.org/
+        https://geonames.nga.mil/geonames/GNSHome/index.html
+  allow user to create his own inspect criteria
+  allow user to filter out particular inspection criteria
+  check surname spelling is consistent
+  check place names are consistent
+  insure married name entered as a maiden name
+  suspicious dates
+    big gaps between children births
+    big gap between marriage & firstborn child
+    children born too close together
+    children born when mother is older than 45 (allow user to specify age)
+    children born when mother is too young
+    children born when father is too young
+    children born before marriage
+  look for problems in a family:  questionable dates, questionable places, large time span between children,
+    large time span between marriage and first child, etc
+  check citations against data to ensure citation says what data shows
+  list of other possible checks:
+    Gender not defined
+    Person beyond normal life span but not marked as deceased
+    person too young for marriage
+    woman too old to have a child
+    Special characters or spacing in names
+    siblings with same first name when both children are alive at same time
+    Persons not connected to others in tree
+
+Search/Inspect/Analyze Family Data -> Analyze
+  goes deeper than Inspect; look for data improvements; look for unusual data (see below)
+    example - find a person named Thomas born between 1801 and 1809 inclusive whose father was John Lake and mother was Henrietta
+              other variables: where born, parents birth range, death range of person or parents, where lived, where buried, where born,
+                names of known children, etc
+              look in active DB or all DBs and/or on the Web or a specific site
+              simple Search is via Search menu item; complex Search is here (Analyze; call it an analytical search)
+                search for parents of a person
+                search for spouse of a person
+                search for children of a person
+                search for siblings of a person
+    https://www.google.com/search?q=analysis+of+genealogical+data&iflsig=AJiK0e8AAAAAY0hNbmpz91PQcKz45mN0EcY1F6cuh9Lf
+    always give reasons for findings
+    children firstname analysis in family groups and throughout lineages
+      who is a child named for?
+      children with the same name born to siblings makes it more likely that name is in the family history of their
+        shared parent
+    naming patterns
+      this could be an important factor in finding a parent with an unknown surname;
+        e.g., in 109.0 in the LakeFamily the mother's surname is unknown, Richard is the firstborn child,
+        the name Richard does not appear in the father's parentage, perhaps the mother's father's name was Richard
+        order of children - children naming pattern (different for different ethnicities)
+        compare grandparents' names to childrens' names
+      when a maiden name is unknown, a child's middle name (or first name) could be the mother's maiden name
+    look for info online for a certain person
+      compare to trees on:
+        wikitree.com
+        geni.com
+        familysearch.org
+        gedmatch.com
+        ftdna.com
+        ancestry.com (user supplies password)
+    add "Suggest" or "Research Suggestions" based upon findings
+    look for an unknown parent
+    use children naming pattern
+    use siblings naming pattern
+    use locale
+    estimate birth year
+    estimate marriage year
+    suggest a middlename for a person when there's only an initial
+    suggest possible maiden names
+    look in UnsureIfRelated directories for possible help
+    look for possible missed connections in data
+    look for possible duplicate families or duplicate individuals
+      possible siblings in different families
+      same couple with similar dates appearing in different family groups
+    look for invalid place names (see WhenPlaceDoesntExist, https://www.familysearch.org/developers/docs/guides/authorities/place-authority, http://www.geonames.org/)
+    look for possibilites for the birthname of a woman when unknown
+    look for possibilites for unknown parents
+    look at Questions, pose possible answers/solutions
+    check citations against Questions ensuring the correct citation is used to show the data in Timeline &/or Notes (e.g., if the stronger
+      citation (a record is stronger than another person's research for instance) is used to show the data in a Question rather than in the
+      Timeline or Notes, correct or alert user)
+    if mother maiden name is unknown, look for children given & middle names which do not occur in father's
+      ancestry - those first/middle names could be the mother's maiden name
+    DNA analysis
+      https://www.ncbi.nlm.nih.gov/genbank/
+      https://www.dnafavorites.com/genetic-genealogy-tools.html
+    allow user to create his/her own analysis
+      perhaps:
+        user clicks on various buttons to form queries (the following examples are from NSB) ...
+          BUTTON - "how many times", "what is the record", "what is the run differential", "what is the winning percentage"
+          BUTTON - "have the", "of the", "has"
+          BUTTON - person names/IDs
+          BUTTON - "won the", "been to the", "in the", "led MLB in"
+          BUTTON - "world series", "post season", "league", "division", stats
+    allow user to input limited info on a person and find possible connections in DB, on Internet & in
+        Unsure* directories; also allow user to find best fit for a person in DB given limited knowns
+        find by full name or just surname:
+            a man or woman by the name of ---- who's spouse is named ----
+            a man and/or woman with children named ---- and ----
+            a man and/or woman married in ---- (place and/or date)
+            a man and/or woman with a child named ---- born in ---- (place and/or date)
+            people who lived in a particular place
+            people who lived during a particular time period
+        a person named ---- with a sibling named ---- and/or ----, etc
+        find all marriages between two surnames
+        etc
+    7th sons of 7th sons
+    intermarriages - # & id of each
+      entire DB
+      in user's line
+      in a specific line
+    number of occupations - blacksmiths, farmers, etc
+    people who served in armed forces
+    people who served during wars
+      just Rev War
+      just Civil War
+      just WWI
+      just WWII
+      just Korean War
+      just French & Indian War
+      just War of 1812
+      just Vietnam War
+    celebrities
+    politicians
+    for a particular person
+      list:
+        parents
+        grand parents
+        etc
+        1st cousins
+        2nd cousins
+        nephews
+        nieces
+        children
+        grand children
+        etc
+    misc:
+      youngest mother
+      youngest father
+      oldest mother
+      youngest married
+      oldest to be married
+      youngest mother
+      most spouses
+      with a surname of .....
+      most generations living at same time
+      most people in family (parents, grandparents, kids, grandkids, etc) living at same time
+      male living longest
+      female living longest
+      most kids
+      longest name
+      shortest name
+      biggest discrepancy in age of spouses when male is older
+      biggest discrepancy in age of spouses when female is older
+    look for possible duplicate Family Groups
+
+Miscellaneous Functions -> Back Up Active DataBase
+  set up auto periodic back up
+    back up just changes or entire DB
+  Save/Transfer portion of data
+  send portion in an email
+  save portion of data to a file
+  print portion of data
+
+Miscellaneous Functions -> Produce PDF
+  window.print() allows user to save to a PDF file
+  will have to reformat text: 80 columns max (using code below), indent for continuation lines will be different depending upon the
+    Section within the Family Group (Timeline - 14, Notes & Questions & Extras & Explanations - 2,
+    Citations - (numbered) min 3 depending upon Citation identifier length & (unnumbered) 2
+  pdfkit
+    const doc = new PDFDocument;
+    doc.fontSize(10);
+    doc.font('Courier')
+       .text(TEXT, {
+            width: 500,
+            align: 'left'
+       })
+    doc.pipe(fs.createWriteStream('../output.pdf'));
+    doc.end();
+  ironpdf may have more options (security (login), searchable, clickable links, etc)
+
+Miscellaneous Functions -> Slideshow
+  after clicking Start Slideshow, first image should come up right away (i.e., no delay showing first image)
+  filter additional file types for showing
+  need to know immediately when/if user closes window showing images
+    currently there's a delay (at most equal to Delay set by user) before "Slideshow Canceled" alert appears after user
+      actually closes window
+  need to check for sub-directories & files within them
+  options:
+    calculate how long slideshow will last based upon number of images, delay, loops, and let user know
+    loop # of times or forever
+    which images:
+      images associated with a particular Family Group
+      UnsureIfRelated
+        specific location
+      Maps
+        specific location
+      Misc 
+        MemorialCards
+    randomize images
+    option to include caption describing image
+    time between slides
+      https://javascript-snippets.autify.com/snippets/others/delay/
+    fade or snap between images
+      https://stackoverflow.com/questions/48950979/javascript-slideshow-with-delay-between-images
+    gallery view
+    buttons
+      cancel
+      pause
+      continue
+      next
+      previous
+      add to or subtract from delay period
+
+Miscellaneous Functions -> Active DataBase Stats
+
+Miscellaneous Functions -> Set Focus ID for Active DataBase
+  bug - in a test DB, there was one Family Group; the DB imported successfully (with no focus ID specified), Verified successfully,
+          and Inspected successfully
+        the begining portion of the Family Group looked like:
+          ---START---
+          1.0  Richard Robbins
+          Father - Richard Robbins
+          Mother - Mary ------
+
+          Timeline -
+                 1716 Cybil Reaves born [1]
+          ---STOP---
+        tried to use this function to set the Focus ID to 1.0 and nothing happened
+          there seemed to be a loop in processing
+
+Miscellaneous Functions -> Copy Active DataBase
+  add email as an option for output 
+  add printing as an option for output
+    print only Family Data, Citation material & images of people (let user know)
+    count # of pages to print in CopyDB() function & alert user - if it's a high number make sure it stands out in alert
+      # of pages = ((# EOLs in Family Data + all included Reference files) / 60) + includeCitations.length + includePeople.length
+  when user enters a name for HOF, use Fuse to search and present user with matches to choose from
+  when selecting Family Group, allow user to select # of descendant generations & # of ancestor generations to include
+    selections already included in CopyData.html; delete lines: <div hidden> & </div>
+  when only Family Group copied, create new tableofcontents file in root directory of copied info
+  when only Family Group copied, for index, copy only pertinent entries
+  copy to:
+      hard drive
+      DVD (might need multiple DVDs)
+      thumb drive
+  start and stop at certain points
+  copy particular sections only (images, text, HTML, etc)
+  copy DataBase, MELGenKey, or both
+  option to make copied DB ready for public viewing (which means eliminating reference material below a particular generation specified by user)
+
+Miscellaneous Functions -> Browse Possible Connections to Active DataBase
+Miscellaneous Functions -> Notes for Active DataBase
+Miscellaneous Functions -> Additional Research Regarding Active DataBase
+Miscellaneous Functions -> Audio/Video Intro for Active DataBase
+
+Miscellaneous Functions -> Knowledge Tree for Active DataBase
+  questions & answers
+
+Miscellaneous Functions -> Create a Gedcom from Active DataBase
+  see Notes.txt for GEDCOM specs
+  see Notes/CreateGedcom
+  start and stop at certain points
+  how will the Others files and the index be included?
+
+Miscellaneous Functions -> Solve a Problem in Active DataBase
+
+Miscellaneous Functions -> Create an Index for Active DataBase
+  processName() - when omitting, add all states, Canada provinces, et al
+    however, some states can be proper names for people (e.g., Montana, York, et al)
+  modify code so that all name pickups use function findProperName()
+  add option to index personal names in files in Reference directory
+  in all Sections, need to pick up names not after/before key words; e.g., in the following line only Nelson Abbott is currently picked up
+      27 Mar 1861 Nelson Abbott, David Dunham and Miller Kline appointed to divide lands of estate of Evans Godown Lake [3]
+  do Children -
+  in Questions -, in lines containing "refers to" or "refer to" check for name after " as "
+  never pick up 1-position surnames
+  never pick up "SSN"
+  in Citations/Citation, in lines containing 2 quotes, after picking up author name look for a second name after " and "
+  in 112.19 (LAKE DB), "Anthonius Jansen Lanen van Pelt" is being index as "van, Anthonius Jansen Lanen"
+  in 111.47 (LAKE DB), "Mayken Hendricks van den Burchgraeff" is being indexed as "van den, Mayken Hendricks"
+  in 17.592, 110.33 & 110.103 (LAKE DB), "James Maher)" is being indexed as Maher), James"
+  in 131.1 (LAKE DB), "Anna de Bruyn de Sille" is being indexed as "de, Anna de Bruyn"
+  in 28.491 (LAKE DB), "Willempje den Boef" is being indexed as "Boef, Willempje den"
+  in 28.491 & 109.203 (LAKE DB), "Pieter den Boef" is being indexed as "Boef, Pieter den"
+  note to user that index does not include names appearing in (or references to) graphical images
+  somehow highlight reference which points to Family Group for index entry
+  maximum line length?; if so, set maximum line length (lines will end with a comma if longer than max)
+    will have to break lines after sorting
+
+Miscellaneous Functions -> Renumber Families/People in Active DataBase
+  body
+    remove multiple periods from any IDs
+      e.g., make 0.0.10 00.10; make 0.0.0.0.200 0000.200; etc
+  image file names 
+  index 
+  Reference
+  other places
+  write a program to go through all SOT-related files and renumber people 
+    starting at 1.0 (rather than 1.) & to get rid of all reference numbers containing more than
+      one decimal point (will have to change any references, also & picture IDs,
+      refs in images, references on hard copy photos), also double the number 
+      of each generation while skipping numbers when an ancestor is unknown
+      (see "Dollarhide System")
+    let user know which images need to be changed
+
+Miscellaneous Functions -> Send Corrected/Additional Data to Creator of Active DataBase
+
+Miscellaneous Functions -> Access Message Board Regarding Active DataBase
+  perhaps set up a discussion server using:
+    Discourse, Lemmy, Discuit, Talkyard, Discord, IRC, NodeBB, Flarum, phpBB, myBB
+  browse, post, respond
+  blog
+    https://www.makeuseof.com/create-static-blog-linux-terminal-with-bashblog/
+    https://github.com/cfenollosa/bashblog
+
+Miscellaneous Functions -> Ethnicity Percentages for an Individual in Active DataBase
+  based upon only the contents of the DB
+  based upon DNA results
+
+Miscellaneous Functions -> Display Info for Active DataBase
+
+Miscellaneous Functions -> Publish
+  book of the active DB
+  Web page of active DB
+
+Miscellaneous Functions -> Link Checker for Active DataBase
+  perhaps require Web address to be enclosed within <> as well as beginning with http or https
+  add options 
+    show all or show just broken
+    status code 403 - link works but access is denied; one reason is it could need a login/passwd to view
+      show on report or not
+  add a progress bar to this function
+  add note to Web site refs which are no longer working (now defunct)
+  how to check email addresses?
+
+Miscellaneous Functions -> Chat With Creator of Active DataBase
+  contact info for Active DB maintainer in DBinfo.txt file
+  see Notes/Extras/JS/WebSocketChatExample
+      Notes/Extras/JS/Chat.md
+      https://www.skysilk.com/blog/2018/create-real-time-chat-app-nodejs/
+
+Miscellaneous Functions -> Contact Creator/Maintainer/Provider of This Data via Email
+  allow user to record a question/correction/comment for sending (any of video, audio, text)
+
+Miscellaneous Functions -> Date/Age Calculator
+  allow for a date to contain only zero or one of month/day and compute appropriately (e.g., if one date is input
+    which contains only a year & age is input then the resulting date might be two years;
+    e.g., birthdate = 1949, age = 3 yrs 5 mns 4 dys the resulting death date will be 1952-1953)
+  check if calculated birth date or death date is later than today's date; if so, issue alert that date is in the future
+  allow user to set dates where Julian Calendar changed over to Gregorian Calendar
+    (e.g., USA & Great Britain (default) - 2 Sep 1752, 14 Sep 1752; Italy, Poland, Portugal & Spain - 4 Oct 1582, 15 Oct 1582; etc)
+    see https://en.wikipedia.org/wiki/List_of_adoption_dates_of_the_Gregorian_calendar_by_country
+
+Miscellaneous Functions -> Day of the Week Calculator
+  change default year
+  allow user to set dates where Julian Calendar changed over to Gregorian Calendar
+    (e.g., USA & Great Britain (default) - 2 Sep 1752, 14 Sep 1752; Italy, Poland, Portugal & Spain - 4 Oct 1582, 15 Oct 1582; etc)
+    see https://en.wikipedia.org/wiki/List_of_adoption_dates_of_the_Gregorian_calendar_by_country
+  replace alert in DayOfWeek.html
+
+Miscellaneous Functions -> Money Value Conversion
+  handle result year being less than beginning year
+  allow for n.n.n pounds entry (pounds.shillings.pence)
+  change alerts to dialogs
+  for result, the trailing 0 is not showing (e.g., $34.40 is showing as $34.4)
+  add other types of money
+  see Notes/Extras/JS/MoneyConversion
+
+Miscellaneous Functions -> Merge Two Family DataBases Into One
+Miscellaneous Functions -> Split One Family DataBase Into Two
+Miscellaneous Functions -> Password Protection for a DataBase
+Miscellaneous Functions -> Write-protection for a DataBase
+
+Miscellaneous Functions -> Map Deed Boundaries
+  add ability for function to read a deed directly (either transcribed or image (jpg or pdf)) and draw the deed boundaries without
+    further user input
+  add ability for quarter degrees angle (I've seen deeds which specify 1/2 degree & 3/4 degree)
+  when user changes "Number of Pixels per Measure" or "Starting Point for Boundary Map" undo and redraw boundary map rather then forcing user to
+    Reset/Restart as is done now (and remove comment in form)
+  allow for 4 inputs
+    rod = perch = pole
+    chains    rods     perches     links
+    yards     feet                 inches
+    meters
+  add other measures
+    chain = 66 ft
+    perch, pole, rod = 16.5 ft (1/4 chain)
+    link = 7.92 in (1/100 chain)
+    feet  
+    meter = 39.37 in 
+  add option for user to set width & height of canvas
+    resize canvas in JavaScript - https://stackoverflow.com/questions/331052/how-to-resize-html-canvas-element
+  for adding text
+    https://codepen.io/chanthy/pen/WxQoVG
+      allow for angled text
+      allow for various colors
+      allow for various fonts
+      allow for various sizes of text
+
+Miscellaneous Functions -> Send Suggestions/Ideas to Developer of MELGenKey
+
+Miscellaneous Functions -> Access MELGenKey Message Board
+  perhaps set up a discussion server using:
+    Discourse, Lemmy, Discuit, Talkyard, Discord, IRC, NodeBB, Flarum, phpBB, myBB
+  browse, post, respond
+  blog
+    https://www.makeuseof.com/create-static-blog-linux-terminal-with-bashblog/
+    https://github.com/cfenollosa/bashblog
+
+Miscellaneous Functions -> General Notes
+Miscellaneous Functions -> Display Info for All Family DataBases
+Miscellaneous Functions -> Display/Edit Info for User
+Miscellaneous Functions -> Display Info for MELGenKey
+
+Miscellaneous Functions -> General User Preferences
+  add settings for Emailed Recurring Reports (relay host, login, password, port)
+  add ability to turn Logging off
+  add ability to turn off notifications
+    break it down by type
+      monitoring Web pages
+      recurring report sent
+      progress notifications for long running processes
+        break this down by process
+  add buttons:
+    Reset/Restart (reset values to what they were before any changes since the last Save (i.e., same as screen refresh))
+    Reset Values to Defaults
+
+Miscellaneous Functions -> Import Add-On for MELGenKey
+
+Miscellaneous Functions -> Chat With MELGenKey Maintainer
+  MELGenKey maintainer chat address in MELGenKey info
+  see Notes/Extras/JS/WebSocketChatExample
+      Notes/Extras/JS/Chat.md
+      https://www.skysilk.com/blog/2018/create-real-time-chat-app-nodejs/
+
+Miscellaneous Functions -> Non-Family DataBase Timeline File
+  allow user to create/edit/delete/validate a Timeline file
+  create:
+    this would necessitate editing the setup page for the Timeline Report
+    this would necessitate editing the source code as it is currently
+    perhaps creating/adding Timeline file could be a separate function; Timeline Report Form will need to acommodate
+      user-created Timeline files (perhaps this would be a type of add-on To MELGenKey)
+      provide a form which can be filled in to update/create a Timeline
+    perhaps allow for additions ahead of time in the source code & setup page for the Timeline Report
+    Timeline file would need to be validated before adding
+  validate:
+    a ] followed by a whitespace followed by a numeric *could* indicate a format error
+    validate date
+      col 1 whitespace, 1, 2, or 3
+      col 2 whitespace or numeric
+        if whitespace, col 1 must be whitespace
+      col 3 whitespace
+      col 4-6 whitespace or valid alpha abbreviated month
+      col 7 whitespace, if year present can be c C -, if date between 1 Jan and 25 Mar and year 1752 or earlier can be d
+      col 8-11 whitespace or numeric; no embedded whitespace, but leading characters can be whitespace
+      col 12 whitespace or numeric
+      col 13 if col 12 numeric must be whitespace; otherwise must be non-whitespace
+      col 1-14 whitespace if continuation line; if so, col 15 must be non-whitespace
+    look for possible redundant timeline events
+      two events, same day & month, different year - look for some matching words
+      event entry, year only - look for dated events in the same year with some matching words
+      event entry, month & year only - look for dated events in the same month & year with some matching words
+      two event entries, same full date - look for some matching words
+      look for two consecutive dates exactly the same
+    validate date sequencing
+    consecutive duplicate dates
+    validate format
+      no blank lines
+      date format
+      indent following line 2 positions if continuation line (can be more than one)
+      column 12 blank
+      column 13 can be -, but if it is it must be followed by a valid date
+      Citations
+      Citation refs present & valid
+      column 13 cannot be space unless it's an indented line then column 15 cannot be blank
+    if date (columns 1-11) not specific try to find a specific date for event
+
+Miscellaneous Functions -> Monitor Web Pages for Content Changes
+  change system alert to dialog
+  will need to handle login/password for pages which require a login
+  allow user to set time and, if weekly or monthly, day/date check performed (cron job run)
+  add ability to optionally look for changes in any links or files called by the Web Address
+    (a full blown traversing, recursive check)
+  add button to reset to before previous Save
+  add button to clear settings
+  add options for user to be notified of a page content change via an email or both alert & email
+  add text to lower half of page telling user when next check is scheduled (like in ManageRecurRep.html)
+  need to handle notifications not sent/delivered because client is offline (see Notes/QueuedSSEMessages.txt)
+
+Miscellaneous Functions -> Manage Recurring Reports
+  if Family DataBase option selected, verify specified DB in parameters exists (if DB no longer exists, Family DataBase in form will
+    be selected but no Family DB will be selected/specified in form; however the old FamDB will still be specified in parameters internally)
+  if user X's tab, if there have been unsaved changes, use beforeunload to alert user
+  might need to change how reports are listed/displayed (if there are many reports it might be too clumsy the way it is)
+    it might be better to use select/option (see MonitorWeb.html)
+  encrypt password before saving; decrypt before using
+    https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/encrypt
+    https://stackoverflow.com/questions/18279141/javascript-string-encryption-and-decryption
+  show password on form as asterisks
+    add "Show" toggle to show actual password (make this optional by adding it to User Preferences)
+  allow for HTML email (looks like it can be done via nodemailer by just setting a parameter)
+  allow user to set frequency of report (daily, weekly, monthly, etc)
+  optionally format email to limit text to column 75, and indent continuation lines
+    see clib.js
+  allow multiple entry fields for Family DB Name & to whom email is being sent
+  when FamDB not included, set FamDBName to null in OTDRecur object
+  validate that FamDBName exists
+
+Miscellaneous Functions -> MELGenKey Log Messages
+
+Help/Indo/Docs -> MEL Genealogy Key (MELGenKey) Overview
+Help/Indo/Docs -> Using MELGenKey
+Help/Indo/Docs -> MELGenKey Readme
+Help/Indo/Docs -> MELGenKey Development History
+Help/Indo/Docs -> MELGenKey Frequently Asked Questions
+Help/Indo/Docs -> Data Format and Notes
+Help/Indo/Docs -> MELGenKey Add-ons
+
+Help/Indo/Docs -> Contact Developer of MELGenKey via email
+  allow user to record a question/correction/comment for sending (any of video, audio, text)
+  code improvements
+  contents of Include directory - changes, additions
+  functions to add or improve
+
+Help/Indo/Docs -> Active DataBase - Introduction
+Help/Indo/Docs -> Active DataBase - Preface
+Help/Indo/Docs -> Active DataBase - Surname Recap
+Help/Indo/Docs -> Active DataBase - Some Explanatory Notes
+Help/Indo/Docs -> Active DataBase - Miscellaneous Notes
+Help/Indo/Docs -> Active DataBase - Release Notes
+Help/Indo/Docs -> Active DataBase - Development History
+Help/Indo/Docs -> Active DataBase - Notable People
+Help/Indo/Docs -> Active DataBase - Bibliography
+Help/Indo/Docs -> Active DataBase - Dedication
+Help/Indo/Docs -> Active DataBase - Research To Do
+Help/Indo/Docs -> Active DataBase - Founders
+Help/Indo/Docs -> Active DataBase - Family Obscurities
+Help/Indo/Docs -> Active DataBase - Statistics
+Help/Indo/Docs -> Active DataBase - User Guide
+Help/Indo/Docs -> Active DataBase - Creator & Status of Data
+Help/Indo/Docs -> Locale Histories
+Help/Indo/Docs -> Place Names
+Help/Indo/Docs -> Maps
+Help/Indo/Docs -> Misc
+
+
+functions to add
+  allow syncing of all public trees (i.e., wikitree.com, familysearch.org, ancestry.com, geni.com, etc)
+  View Deported DBs
+  provide function for user to create certain files using a template or an HTML form:  Family Group (Family DataBase), tableofcontents,
+    DBinfo.txt, index, et al
+  create a Research plan (offer ideas)
+    outline specific goals
+      each goal should have a separate plan
+    key ancestors to research
+    potential record sources
+    a strategy for accessing and analyzing information to build a comprehensive family tree
+    define steps for accessing and using resources
+  colorize photo
+  translate
+    text
+    digital image
+  attempt to define location of a parcel of land by analyzing the deed of the land itself and any surrounding deeds
+    (where the bordering land owners are named)
+    at least show owners of bordering land
+    perhaps this should be part of Miscellaneous Functions -> Map Deed Boundaries (or an option thereof)
+  statistics
+    (most all this info might be in Other/Statistics.txt)
+    total number of families
+    total number of individuals
+    largest families
+    number of births by month
+    number of deaths by month
+    number of marriages by month
+    number of adoptions
+    longest living male (in direct line, everyone blood related, all males)
+    longest living female (in direct line, everyone blood related, all females)
+    allow user to display stats without referring to Other/Statistics.txt; and allow stats to be saved to Other/Statistics.txt
+  password protection
+    allow for password protection to be removed
+  write protection
+    allow for write protection to be modified
+  additional research
+    see Other/ResearchToDo.txt
+    look for missing records (birth cert, death cert, marriage cert, obit, headstone, etc)
+      in direct line of user
+      any area specified by user
+    list Web sites that may help
+      base list upon what is needed and in what locale
+  A/V intro
+    pertaining to data
+    pertaining to MELGenKey
+  solve a problem
+    look in active DB
+    look in all imported DBs
+    allow to go to Internet (familysearch.org, geni.com, etc)
+  display edit info
+    change location of data on computer
+  add a function (perhaps in note form) where the user can suggest an improvement or add a function to MELGenKey
+    when user clicks DONE, the note will be sent to maintainer of MELGenKey
+    do the same thing for Active Family DataBase
+  function to calculate "degrees away" in genealogy terms
+    https://support.ancestry.com/articles/en_US/Support_Site/AncestryDNA-Match-Categories
+    wikitree.com has a "degrees away" function 
+  link multiple MELGenKey DBs
+  provide access to BACKUP directories (list, etc
+  DNA function(s)
+    see Notes/YDNAMatching.txt and Notes/auDNAMatching.txt
+    https://ieeexplore.ieee.org/document/8967097
+    https://www.youtube.com/watch?v=_IGJrfiHd00
+    matching/genetic distance
+      https://dna-explained.com/2016/07/27/y-dna-match-changes-at-family-tree-dna-affect-genetic-distance/
+      https://dna-explained.com/2016/06/29/concepts-genetic-distance/#Infiniteinfinite%20alleles%20model
+      https://dna-explained.com/2016/06/29/concepts-genetic-distance/
+      https://help.familytreedna.com/hc/en-us/articles/6019925167631-Understanding-Y-DNA-Genetic-Distance#step-wise-mutation-model-0-0
+      http://www.johnbrobb.com/Content/DNA/TMRCA&GD.pdf
+      http://www.ydnagroupingapp.com/static/YDNA_App_FAQ.html#FTDNA%20guidelines
+  function to create/edit/remove files in the Other directory
+  function for user to edit/delete/add entries in Include/SiteList.txt
+    backup original before changing/saving new
+
+general/other
+  much of the documentation needs to be expanded upon, or content added/edited
+  add DB Status of "DB no longer available" (DB could be removed by hand)
+    or perhaps delete entry from MELGenKeyInfo.txt
+  allow section named "Further Research -" in Family Groups
+    text within this section can be free flowing
+    citation reference(s) enforced
+  https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md
+  emplement user/password in MELGenKey; different users will have access to only their DBs, General Notes, DB Notes,
+    and any other stuff created by a user
+  make MELGenKey easily accessible from a mobile device
+    https://stackoverflow.com/questions/68624631/access-nodejs-express-server-from-android-phone
+    https://www.geeksforgeeks.org/how-to-run-node-js-with-express-on-mobile-devices/
+  do historical township timelines for all counties (geopolitical creation and changes)
+    townships for all NJ counties are historically described in
+      Include/Timelines/USA-Geography/NJCivilBoundaries.pdf
+  en.wikipedia.org for municipalities in all states
+    use for error checking
+  re-use HTML
+    https://medium.com/front-end-weekly/how-to-build-reusable-html-components-without-component-based-frameworks-2f7747f4c5db
+  reading large files
+    https://betterprogramming.pub/a-memory-friendly-way-of-reading-files-in-node-js-a45ad0cc7bb6
+    optimal maximum file size for loads seems to be 200K (this may only matter for the HTML files)
+    reading large Family DataBase files
+        var fs = require('fs');
+        app.get('/api/csv/:filename', function (req, res) {
+            var filepath = "public/uploads/"+req.params.filename
+            var stream = fs.createReadStream(filepath);
+            stream.pipe(res);
+        });
+
+        OR
+
+        const fs = require('fs');
+        const readStream = fs.createReadStream('large-file.txt');
+
+        readStream.on('data', (chunk) => {
+            console.log(chunk.toString());
+        });
+        readStream.on('end', () => {
+            console.log('Finished reading file');
+        });
+  https://blog.appsignal.com/2021/12/08/nodejs-memory-limits-what-you-should-know.html
+
+  Progress notifications for long-running processes
+    wherever showing progress is used, add a cancel button
+    perhaps move long running processes to worker threads so that user can do other things while the process is running
+    add sound expressing progress every so often (10%, 20%, etc)
+    show progress for:
+      Timeline Report
+      On This Day Report (NOT recurring report)
+      Import DB (both user-created files and Gedcom)
+      Create HTML
+      Copy DB
+    Verify DB - progress implemented, but needs some refinements
+      add progress bar for Verifying Citation File References
+        (key progress off number of files (recursively) in Reference and Images directories)
+
+  categorize citations (e.g., primary, secondary, circumstantial, other researcher's findings)
+    allow user to select which type of Citations/Sources are allowed in the user's DB (NOT in non-user DBs)
+  look into switching from Fuse to FlexSearch
+    perhaps don't use fuse to find Timeline Section heading when verifying - may not be needed
+  Question - What date to use for change-over to USA when specifying location?
+    Solution - let user select which change-over date to use:
+    2 Jul 1776 - Continental Congress voted to separate from Great Britain
+    DEFAULT:
+    4 Jul 1776 - adoption of the Declaration of Independence by the Continental Congress
+                 America declared it's independence
+                 Continental Congress proclaimed the separation of the 13 colonies from Great Britain
+    9 Sep 1776 - Second Continental Congress adopted name United States of America
+    19 Sep 1781 - British General Charles Cornwallis surrendered in Yorktown, Virginia
+    3 Sep 1783 - Treaty of Paris (ending Rev War) signed
+    another option could be for the time span between two dates (4 Jul 1776 & 3 Sep 1783) to use an either/or in
+      the place name (e.g., Georgia, also called Province of Georgia, Royal Colony of Great Britain)
+
+  incorporate audio (e.g., option to play "Taps" at people who died in service)
+  incorporate video
+  change date format in MLB Timeline events from "month day, year" or "month day" to "dd mmm yyyy" or "dd mmm"
+  any location citation in any DB should be able to be seen as both at the time of the event and present day
+    use Google Earth to provide overlays?
+    use Google Earth to provide historical changes in a location?
+      https://www.newyorkfamilyhistory.org/blog/using-google-earth-genealogy-putting-your-ancestors-map
+  add speak option
+    https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/speak
+  add a "for developers" file explaining various files & directories and contents of each; explain how to do an add-on & extension
+  optionally save logins & passwords for site access (e.g., Ancestry, etc)
+
+  Reports
+    add title to report
+    add Ahnentafel report - https://www.wikitree.com/apps/Lake-1012#name=Lake-1012&view=couples
+    add a report with a similar format as in "A Statistical Update of the Lake Family Genealogy"
+    https://dzone.com/articles/top-6-javascript-family-tree-diagram-libraries
+    all reports should have option to include source(s) or not
+    people in Reports should include ID and any other identifying info (e.g., mother of spouse of 3.52)
+    all info produced in reports should be optional
+    output should be to (1) printer, (2) plain text to file, (3) to a PDF file (user can PRINT report and save it as a PDF file) or
+      (4) to an HTML-coded file
+      to save Report as a plain text file:
+        https://stackoverflow.com/questions/65050679/javascript-a-simple-way-to-save-a-text-file
+        https://robkendal.co.uk/blog/2020-04-17-saving-text-to-client-side-file-using-vanilla-js
+    add report - Time Tree
+      https://learnforeverlearn.com/ancestors/
+      https://imgur.com/a/chronological-descendant-family-tree-7kgo3a0
+    either via a script and/or HTML (needs to run on all platforms) ...
+      allow user to enter their [maiden] name and software will zoom to their location in info
+        save name for follow-up provisions
+      add an auto-relation determiner (a user clicks on a name and clicks on a second name, or user enters two names exactly)
+        or relationship to user (plus add notation, eg - 2C1R for 2nd cousin once removed)
+      provide a search facility
+        search results should be links which user can click on
+
+  MELGenKey Notes
+  http://www.family-historian.co.uk/tour
+  https://www.ancestris.org/index.html
+  https://gramps-project.org/blog/
+
+  Date: Fri, 18 Dec 2015 12:43:17 -0800
+  From: Richard Carruthers <leliwite@gmail.com>
+
+  I would love to see an adaptation of the form used in the various publications
+  of Burke's Peerage, Baronetage, and Knightage (i.e.  Burke's Landed Gentry
+  (originally Burke's Commoners), Burke's Colonial Gentry, and Burke's
+  Family Records, etc.). It's called the indented narrative pedigree and I
+  much prefer it to some of the descendancy reports popularised by the New
+  England Historic Genealogical Society (Hist. Gen.).
+  
+  I have done mine by hand for over 850 pages (so far) to document my study
+  of the ERNLE family originally of Earnley, Sussex, from earliest times. I
+  am up to 23 indented generations, each one slightly further indented
+  than the last. It may be a bit harder to follow than some formats due to
+  its repetition of numbering between members of the same generation as the
+  family grows and splits over the generations, but that could, presumably be
+  adapted. Personally I didn't opt for that as I don't care for the sometimes
+  long and unwieldy alphanumeric individual prefixes used by some systems
+  as I find them unsightly, but that is a matter of taste (and, of course,
+  ease of navigation).
+
+  The indented narrative pedigree form can be adapted to work backwards in a
+  direct ancestry report that includes siblings and their descendants working
+  with the forward system at the same time. Indeed, my kinsman and godson,
+  L. H. T. "Tam" Large, of Streat, Sussex has developed precisely this sort
+  of report, though it is all done by hand.
+
+  Another very useful report is an adjustable tree drawing format that allows
+  one to build, see, alter, and print pedigree charts. Most of the ones I have
+  seen use even spacing and waste a lot of paper whereas ideally the format
+  should be adjustable to that one can close up blank and drop generations
+  down further in than their "true" position in order to cram more into the
+  space provided. The ability to omit generations or refer one to another
+  chart for further elucidation would also be great.
+
+  Richard Carruthers, M.A. (Oxon.)
+  formerly a boarder in Lake's House, Shawnigan Lake School, Vancouver
+  Island, British Columbia, named after the first chairman of the Board of
+  Governors, General Sir Percy Lake and his brother, Sir Richard Lake, sometime
+  lieutenant-governor of Saskatchewan, whose five sons all went to Shawnigan
+  and were in Lake's: scions of the English Lake family of baronetcy fame.
+
+  Report example:
+  http://www.burkespeerage.com/royalFamily_UnitedKingdom.php
+
+  check out RootsMagic
+
+  see https://genopro.com/family-tree-software/
+
+  allow user to manually add sites to check (MELGenKey should save sites that are added for next time)
+  emplement a research IQ/rating/score regarding the user
+  emplement a research rating/score regarding the DB and/or for each Family Group
+
+  add a check for obits
+    user supplies specific site(s)
+    user supplies surname(s) to look for
+    user supplies time frame how often to check
+    user can also check on demand
+
+  keep research logs for user - separate logs for separate surnames or complete names or individual IDs or Family Group IDs
+    criteria used for search
+    objective
+    where searched
+    date searched
+    results of search
+    menu function to delete/edit/add-to log
+
+  features to add:
+    allow an unlimited number of hashtags for a family (this will allow searching/comparing all families with the same hashtag)
+    Unicode support (this will allow for foreign characters)
+      https://dmitripavlutin.com/what-every-javascript-developer-should-know-about-unicode/
+      https://stackoverflow.com/questions/13093126/insert-unicode-character-into-javascript
+      https://www.educative.io/answers/how-to-insert-unicode-in-javascript
+      https://medium.com/@RomarioDiaz25/unicode-in-javascript-1af73c863cda
+    full graphical pedigree tree -
+      see both ancestor and descendants at once
+      not limited to either direct descendants or direct ancestors
+      ability to display a second or a third spouse
+      distinguish adoptive parents from biological parents
+      distinguish between true siblings, half-siblings and step-siblings
+      display twins and triplets
+      able to print it, copy & paste it
+    integration -
+      ability to copy & paste tree to a PowerPoint presentation or a Word document
+      ability to copy data to a spreadsheet
+      ability to export data to Gedcom or XML
+    reports can be created in plain text, HTML or PDF, or output to a file so it can be modified by user
+    custom data fields -
+      example, trace the genealogy of a family having a genetic medical disease (in this case, you would use the user-defined fields to
+        store information about the disease, diagnosis and lab results)
+      example, record the performances of each athlete in a hockey team recording the statistics for each season
+      example, military service, you may want to enter the military grade and other relevant military details
+      emotional relationships like friendship, love, harmony, distrust, jealousy and hostility
+      allow for any number of custon data fields
+    auto-completion when entering data
+    ability to compare two families side-by-side
+    ability to produce lists of:
+      spouses
+      siblings
+      children
+      places lived
+    bookmarks - ability to save, delete, edit, go to, associate bookmark with a particular family or person
+    research guidance -
+      auto-review person's timeline, point out what hasn't been recorded
+      check on-line sites to see if research of person or family already in progress by another researcher
+      user inputs goal, provide a list of prioritized research suggestions to help you accomplish goal
+      organize sources into a To-Do List so progress can be tracked
+    allow user to add/include audio
+    allow user to add/include video
+    Potential Problems Report
+    include DNA results
+      https://www.ncbi.nlm.nih.gov/genbank/
+      https://www.dnafavorites.com/genetic-genealogy-tools.html
+    rate citations -
+      primary source
+        birth record
+          image/copy
+          transcription
+          researcher's reference to
+        death record
+        marriage record
+      secondary source
+      circumstantial evidence
+      other researcher
+
+  block URL to outsiders (see https://serverfault.com/questions/767494/block-request-to-certain-url-call-from-server)
+    also, see .htaccess (this may be an Apache-specific thing)
+
+  websockets on node, when closed to Internet ...
+  accept connection - check 'request.origin' to make sure that client is connecting from localhost
+  (http://en.wikipedia.org/wiki/Same_origin_policy)
+
+  monitor Family DBs for changes; if changed, modify MELGenKeyInfo.txt & save (force [re]verification); delete HTML version of DB
+    it appears the only way to do this with any accuracy is to first check for existing/removed body files and/or index file in PlainText
+      directory of a Family DB and then create a hash value for all body files & the index file in the PlainText directory of a Family DB
+      (this info would need to be saved in a file (or files) in order to accomplish this across runnings of node)
+    ask if message should be sent to DB author
+    https://stackoverflow.com/questions/68074935/hash-of-folders-in-nodejs
+    https://stackoverflow.com/questions/63200775/checking-for-changes-in-file-content
+    see Notes/Extras/JS/Hashing
+    see fs.watch
+
+  save all visited Web pages (+ info (date last visited, reason for visit, etc)) where appropriate
+
+  allow for audio/video feedback with regard to either MELGenKey or DB
+
+  in-line help (with question mark)
+  https://tutorialzine.com/2014/07/css-inline-help-tips
+
+  allow comments in file MELGenKeyInfo.txt
+    add comments to MELGenKeyInfo.txt explaining possible values of all the keys
+    add comment that it is an auto-generated file; do not edit directly; edit directly at your own risk
+
+  anytime an ID is entered for any function, show some info (e.g., name, birthdate, death date, names of parents, etc) so user can
+    confirm it's the correct ID
+
+  allow for on-line DBs (familysearch, ancestry, wikitree, etc) to be updated with data from MELGenKey & vice-versa (with user permission)
+
+  when there is a (Sr) or a (I) then all people in that line with same name should be further ID'ed to ensure user identifies proper
+    person (i.e, there should be a (Jr))
+  include a list of photos for all versions (HTML, PDF & plain text)
+  PDF format - will user be able to include embedded images in a printout (since the images will be linked in) ?
+  offer plain text files in two formats ... one for UNIX and one for Windows (or emplement code which will convert as needed for user)
+  transcription/OCR tool for digital files - tesseract
+  do 2 indexes ? ... 1 for names appearing in book and 1 for names appearing in References/* and Images/* which do NOT appear in book
+    and maybe a third for names appearing in Sources
+    and a fourth for names appearing in photos
+  include a place-index or an appendix of places
+  add an index/appendix listing all people in book in Civil War, War of 1812, Rev War, WWI, WWII, Spanish-American War, etc
+    (this will be done programically in MELGenKey)
+    make this a function or add it to an already existing function
+  write a program to change all surnames to all upper case ? (if all surnames were in upper case it would make auto-creating an index easier)
+    write program to create an index - every word (except personal names) which can appear in Timelines, Notes, Questions, etc should appear
+      in a reserved word list; then picking out personal names to index will be easier
+    can I use fuse to create an index?
+  write a program to remove the periods after initials ? only in the index ?
+  change numbering scheme ... or keep same scheme and add two or three
+    new generations (add one or two to number)
+    one possibility ... instead of using 0.*, 0.0.*, etc use - sign or BC
+      or something else to identify generations before 1.
+    scheme should be 1.1, 1.2 ... 1.x; 2.1, 2.2 .... 2.x; 3.1, 3.2 ... 3.x, etc
+      parents should always be the same left number, e.g., I would be 1.1, my father would be 2.1 and my mother would be 2.2
+      using this scheme there's always a number to the right of the decimal point and the number to the left of the decimal point is
+        a true representation of generation
+    redo numbering scheme for distant ancestors ... use 200., 300., 400., etc
+  write program to check the format of a text file based upon template
+    file(s) (n = numeric, a = alpha, A = cap alpha, s = special chars,
+    x = any character, somehow allow specific chars; follow format with
+    min & max # of chars; begin-of-record marker, end-of-record delimiter;
+    rules for entire doc - spellcheck)
+  in the index somehow make the main family reference for each individual
+    stand out (comment on it in the preface) (or maybe there should be index entries when the person only appears in the Father or Mother line?)
+    perhaps do this only in HTML version
+  use images from wpclipart in the PDF version (and the HTML version?)
+    google for "genealogy images" ... lots available
+    images to use -
+      an American flag at each individual who served in the Armed Services
+  PDF version - add an index by page number
+  set up printing capabilities on lulu.com or other publishing sites
+  PDF version - compare index to images versus plain text version to ensure all images are included
+  check for places where no county is specified but county is named for that place in another place in info
+  PDF version -
+    embed links to images rather than the images themselves (question - how will that print?)
+    PDF version should have clickable links
+  allow user to display map overlays (e.g., a Hammond map could overlay a modern Hunterdon Co map to show where things are located in present day)
+  offer context-sensitive help
+    show the relationship of user to person as cursor rolls over name
+    pay attention to User Preferences
+  add an audio story to BOOK
+  give user ability to speak text
+  offer downloadable updates
+  allow user to specify margins, column width for plain text or HTML version
+    prioritize where to break by semi-colon, comma, space
+  user options for all/any output:
+    date display format
+      option to suppress leading zero in dd
+      option to suppress leading zero in mm
+      mm/dd/yyyy
+      dd/mm/yyyy
+      dd mmm yyyy (e.g., 22 Mar 1949)
+      ddmmmyyyy (e.g., 22Mar1949)
+      fullmonth, dd, yyyy
+      dd fullmonth yyyy
+    always include (or not) relationship to user for any/every name displayed
+    beginning column for output
+    ending column for output
+    display/print/both (print to file, hard copy or both ... if file, what format (plain text, HTML, PDF, etc))
+  make a list of "reserved words"
+    twins, triplets, quadruplets, quintuplets
+    married
+    divorced
+    engaged
+    with
+    born
+    died
+    buried
+    lived
+    living
+    moved
+    worked
+    working
+    employed
+    served
+    serving
+    purchase
+    purchases
+    purchased
+    sells
+    sell
+    name unknown
+    daughter
+    son
+    Children
+    Father / father
+    Mother / mother
+    sister
+    brother
+    sibling
+    half-brother
+    half-sister
+    spouse
+
+    state names
+    county names
+    township names
+
+    rents
+    leases
+    owns
+    owned
+    son of
+    daughter of
+
+    deed
+    indenture
+    court
+  include an automated way for a user to send DataBase creator updates/corrections/changes
+    it should somehow always be available with a single click
+    fields for corrected/updated info, source, submitter, explanations, questions
+
+    if DB is changed by user auto-send info to DataBase creator
+
+    allow for auto-updates initiated by DataBase creator (or maybe have a menu selection where user can check for updates) or both
+
+  allow for auto-updates to MELGenKey (or maybe have a menu selection where user can check for updates) or both
+
+  more possible functions:
+  axon.cs.byu.edu/~randy/misc/WishDetails.html
+  - Imports Gedcom 4, Gedcom 5.5, Gedcom 7.0, and GenXML 2.0.
+  - Exports Gedcom 4, Gedcom 5.5, Gedcom 7.0, GenXML 2.0, GedML, HTML, and CSV.
+  - Extract descendants and/or ancestors of a person into a new database.
+  - Write the history of one family inserting the facts of the official history
+  - Calendar of the recurrences of the family
+  - Multiple previews of the tree to print
+  - Functions for the search, for the control of the coherence of the dates and the validity of the connections
+  - Abilities to refine a search adding ulterior conditions
+  - Partial export of archives
+  - Connects the individuals and the families to the senders of the files
+  - Uses the Julian and Gregorian calendar
+  - Order children, spouses, parents and all data
+  - Direct import-export without GEDCOM
+  - Spell and grammar check
+  - Family Tree Chart
+  - Grandma's Box Chart
+  - Pedigree Chart
+  - Fan Chart
+  - Bowtie Chart
+  - Picture Pedigree Chart
+  - Web interface
+  - Dynamic display
+  - Relationship and consanguinity computing
+  - Customization (background color, etc)
+  - Gadgets: birthdays, last births, etc.
+  - Generate detailed HTML reports
+  - Convert Gedcom files to HTML reports
+  - Internet Hyperlinks. Navigate from a genealogy tree to the individual's home page on the web.
+  - Toolbar buttons to select ancestors, descendants, parents, mates, siblings and children.
+  - Print & Print Preview
+  - Copy, Cut & Paste.
+  - ZoomIn / ZoomOut
+  - FuzzyMatch to search names with unknown spelling.
+  - Customizable Web Page Generator
+  - Surname and Full Name Reports
+  - Name Search
+  - Prints Pedigree & Descendant Charts, FGS & Custom Reports
+  - Prints Birthday Calendar
+  - Online Help
+  - Summary page, index pages, surname page, and data pages produced.
+  - User selectable text/background/link colors
+  - User selectable background images
+  - Convert dates between the supported calendars.
+  - Individuals colour coded according to relationship to the tree owner
+  - email info
+  - Statistics on events (date/places)
+
+  other:
+    Build a family tree
+    Record information on your ancestors: dates, locations, relationships, etc.
+    Document research sources and link them to your family tree
+    Print out ancestral charts and reports
+    Share your family tree with others in print and electronically
+    Store photos, audio and video recordings, and scans of your ancestors and documents
+    Protect your information through regular backups
+    Give you hints on where and how to search for more clues
+    Export your information to other genealogy programs
+    Download information directly from certain online resources
+    Map your ancestors through time and space
+    Browse online directly, without switching to a separate web browser
+    connect with Ancestry to upload your family tree and to directly download records from Ancestry into your tree
+    connect with FamilySearch to upload your family tree and to directly download records from FamilySearch into your tree
+      also, FindMyPast, GenealogyBank, MyHeritage and Find A Grave
+    examine two people or families side by side
+    produce a Web page from data
+
+  more:
+    I'm looking for a very good tool for displaying family trees on a web site,
+      and for printing them. Here are set of features that I would like to achieve,
+      or as close as possible:
+
+  1. Flexible choice of which people to show on the tree, not just ancestors,
+     descendants or fan charts. For example, it should be possible to select
+     "all my direct ancestors for 7 generations, plus all their descendants
+     for 2 generations, plus all other spouses with their descendants for
+     2 generations". Personal Ancestral File has a pretty good tool for
+     selecting such sets of people.
+  2. A variety of choices of chart format and style, including box charts.
+  3. Choice of which types of data to include in the chart.
+  4. Intelligent chart layout to minimise the length of long links, and
+     put closely related people close together, and make the chart easy to
+     navigate, and to minimise the number of pages...
+  5. Intelligent layout onto pages, so boxes don't overlap page breaks etc.
+  6. Printed layouts can either be a single large page, printed tiled so the
+     sheets can be stuck together, or multiple sheets of a selectable size
+     with labels showing where links go off one page and reappear on another,
+     page borders, page numbers etc.
+  7. You can manually adjust the automatic layout, and such adjustments can
+     optionally be saved and reapplied even if the automatic layout process
+     is re-done, including if there are changes to the chart. Obviously
+     the changes may be such as to make the manual adjustments meaningless,
+     in which case they are abandoned.
+  8. For web based display, the ability to pan and zoom around the chart,
+     and maybe other "quick navigation" tools.
+  9. For web based display, intelligent tools allowing one to quickly find any
+     person of interest, to see easily whereabouts on the full chart one is
+     so one doesn't get "lost", to see how the person of interest is related
+     to yourself or to people well known to you etc. These tools must work
+     even if the whole chart is too large to see legibly on one screen.
+  10. Relationship markers show how each person on the chart is related to
+      a selected "key" person.
+  11. Links from each individual and marriage on the chart to more detailed
+      information about the person/marriage.
+  12. Optional facility to omit certain information about living people,
+      or optionally to omit them altogether.
+
+  RootsMagic features ... http://wiki.rootsmagic.com/wiki/RootsMagic_8:Feature_List
+
+  handle all errors properly
+
+  whenever copying or outputing data, optionally do not include people born after YYYY (set by user) unless (optionally) there is a death event
+    for that person; allow for living people to be included in a particular line (e.g., if a copy of the DB was being sent to a living
+    descendant the line to the living descendant might want to be included)
+
+  whenever copying or outputing data, option to make surnames all caps
+
+  auto-update the user's on-line trees (info, sources, etc)
+
+  how to start node from a script (cross platform) -
+    https://stackoverflow.com/questions/4018154/how-do-i-run-a-node-js-app-as-a-background-service
+    https://stackoverflow.com/questions/7664605/how-would-you-launch-a-browser-from-the-a-node-js-command-line-script
+    https://stackoverflow.com/questions/8500326/how-to-use-nodejs-to-open-default-browser-and-navigate-to-a-specific-url
+
+  integrate map display
+    https://morioh.com/p/58ee45843ccf
+    perhaps: user clicks on location in Family DB which brings up a map of the area (state, county, township, etc) showing boundary lines at the
+      time referenced where the user clicked (e.g., clicking on a Timeline entry for "1860 living in Broome County, New York" brings up a map of
+      Broome Co, NY in 1860); and allow user to input a year in order to change the map and its boundary lines
+
+  integrate a CLI and/or email interface capable of performing certain functions like some Reports, some Miscellaneous Functions, etc without
+      having to execute MELGenKey
+    see https://github.com/pandawing/awesome-nodejs-cross-platform-cli
+      https://imsaravananm.medium.com/running-cross-platform-scripts-in-nodejs-2af9f06babf7
+      https://deno.com/blog/build-cross-platform-cli
+      http://haoliangyu.github.io/blog/2019/05/13/Tips-on-developing-cross-platform-Node-js-application/
+    Help/Info/Docs (there may be others)
+    perhaps only the functions which don't require node to be running
+
+  see https://stackoverflow.com/questions/tagged/family-tree?sort=votes
+
+  search factor:
+    group families who moved to same areas
+      take into account timing
+      don't take into account timing
+    how related?
+
+  show distance, map, route between locales
+    find "traveled routes" at the time
+    might be two families
+    might just show movement of one family
+    might be between two places
+
+  search genealogy on youtube
+    perhaps I will find free sites for MELGenKey to use
+    or other stuff
+
+  redesign the display in Help.html to be less busy (perhaps add another layer of menu)
+
+  add sound to a Web page
+    pay attention to User Preferences
+    background
+    notifications
+    when a button clicked
+    node sound:
+      https://stackoverflow.com/questions/12543237/play-audio-with-node-js
+      https://thisdavej.com/node-js-playing-sounds-to-provide-notifications/
+      https://copyprogramming.com/howto/how-do-i-play-sound-in-my-node-js-chatroom
+    node speech (could possibly use this instead of, or in addition to, a Progress Bar):
+      https://github.com/Marak/say.js
+      https://github.com/eheikes/tts
+      https://www.plivo.com/docs/voice/use-cases/voice-notification/node
+  add speech for databases, etc
+    add audio button to each Family Group where the text for that Family Group will be spoken
+    pay attention to User Preferences
+    https://dev.to/devsmitra/convert-text-to-speech-in-javascript-using-speech-synthesis-api-223g
+    https://dev.to/asaoluelijah/text-to-speech-in-3-lines-of-javascript-b8h
+    https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API
+    https://www.assemblyai.com/blog/javascript-text-to-speech-easy-way
+
+  add PRINT button to:
+    (user can already print using the browser facility, a Print button will add max line width feature)
+    Plain Text Family display
+    Reference pages that are displayed via HTML display
+
+  Import
+    figure sequence of multiple body & text files based upon contents of files (key off family ID numbers) so that they are sequenced
+      properly when copied to DBs
+    add an option on form for message to be sent to data creator after successful import (if not available in Other files then allow user to
+      enter an email address)
+    check for amount of free space before importing
+    add an option on form to verify DB when it's imported
+    when ID entered show user info (e.g., name, birthdate, death date, parents names, etc) so that user can confirm it's the correct ID
+    allow for child to be entered in ID field (e.g., 28.3, child iii)
+    allow user to provide two tableofcontents files, one for PlainText directory and one for top level directory
+    validate "focus ID in DB" -
+      should be only numeric(s) and period(s)
+      minimum field length - 3 characters
+      at least one of each (numeric & period) must be present
+      first & last characters must be numeric
+      ID must exist in DB
+
+  using the D3.js library for charts, graphs, etc
+    https://stackoverflow.com/questions/31245751/how-do-you-create-a-family-tree-in-d3-js
+    https://stackoverflow.com/questions/32573029/how-to-create-family-tree-with-d3-js
+    https://www.youtube.com/watch?v=DvqeaVSe6Ko
+    http://www.d3noob.org/2014/01/tree-diagrams-in-d3js_11.html
+    https://www.developer.com/design/creating-a-tree-diagram-with-d3-js/
+    https://github.com/erikgartner/dtree
+    https://obituarieshelp.org/free_printable_blank_family_tree.html
+    https://github.com/d3/d3
+    https://d3js.org/
+    https://github.com/ErikGartner/dTree
+    https://jsfiddle.net/rha8sg79/
+    https://observablehq.com/@f72a47e598f0f948/d3-redux
+    https://copyprogramming.com/howto/how-do-you-create-a-family-tree-in-d3-js
+    https://observablehq.com/@d3/d3-hierarchy
+    https://copyprogramming.com/howto/how-to-create-family-tree-with-d3-js
+
+  allow for a tableofcontents file in each directory and sub-directory
+    MELGenKey should always look for a tableofcontents file first when accessing directories and sub-directories
+
+  in column 7 in Timeline section of DB allow < for before and > for after
+
+  limit string lengths to 200MB; let user know when limit reached
+    check already included in Search Report
+    for rdata (a report), check size at each "rdata +=", if over, stop processing report, let user know,
+      and send back what there is at this point in the report processing
+    for [some] reports may have to check as report is accumulated since the entire report may be added to rdata at once
+    for log files, when max length reached, save file and attach date & time to filename
+      use User Preferences:  NumLFiles and LogSize
+      write log to a file when client disconnects or any global exception or size > 200MB; save # of files based upon User
+        Preferences (default 5 days worth); check for, and delete, old files when writing new files)
+    read file if need be when sending log messages to client
+    add a function to display log files
+
+    https://stackoverflow.com/questions/34957890/javascript-string-size-limit-256-mb-for-me-is-it-the-same-for-all-browsers
+    We do storage of large JSON, or XML strings by defining the attribute data
+    type as Binary. Then using TextToBinary from the Binary espace to convert
+    the text prior to storing it, and BinaryToText to convert it back to a text
+    after reading it. Now you do not have to worry about size property of the
+    attribute. You could decide to redesign your entity and create a 1 on 1
+    entity just to store the binary separate from the other attributes of your
+    entity, with the primary key set to the identifier of your original table.
+
+    handling crashes, signals & exceptions - https://blog.heroku.com/best-practices-nodejs-errors
+                                             https://nodejs.org/docs/v0.4.7/api/process.html#event_uncaughtException_
+
+  create a Modal class with constructors & replace all dialog modals using this
+    https://codeshack.io/interactive-modals-javascript/
+    https://alchemical-bytes.medium.com/explore-object-orientation-in-vanilla-javascript-by-building-a-modal-class-for-single-page-5306303b583a
+    https://lowrey.me/modals-in-pure-es6-javascript/
+    https://medium.com/@jkohne/templating-with-es6-classes-83f22b97b234
+
+  replace prompt() in clib.js with modal dialog
+  replace confirm() in clib.js with modal dialog
+
+  perhaps update external libraries to latest versions
+    update fuse first, then test verify (verify is the only place fuse is used)
+    see https://docs.npmjs.com/updating-packages-downloaded-from-the-registry
+    https://docs.npmjs.com/cli/v8/commands/npm-update
+    can I rollback if there are problems?
+      check npm install <package>@<version>
+    if update, update Docs/Readme.html
+
+    see https://stackoverflow.com/questions/27954247/how-to-undo-npm-update
+        https://stackoverflow.com/questions/20764881/why-does-npm-install-say-i-have-unmet-dependencies
+        https://stackoverflow.com/questions/34202617/how-can-i-update-all-node-js-modules-automatically
+
+  add Family DB version # to HTML pages
+  add "created by MELGenKey vyyyymmmdd" to HTML pages
+  add a button (3 buttons?) to HTML version of DB which shows version, development history, contact info
+  add "font size" to HTML pages (like https://vedabase.io/en/library/sb/1/ - click "Settings" at top of page)
+
+  at MELGenKey install time:
+    get info
+      user's info
+      password protect this file (where user info will be) so others can't change it
+      option whether or not to allow incoming access from the outside
+        require outsiders to log-in or not
+      install location (must be a writeable directory/folder)
+      optionally message me (via nodejs)
+        you will receive alerts when MELGenKey is updated
+    allow to uninstall MELGenKey
+
+  if pop-ups are blocked by browser, certain windows are not being displayed
+
+  ideas
+    Tom Whetmore <ttwetmore4@gmail.com>: group records which then get
+    collectively and maybe iteratively "merged" together into a final set of
+    "real person" GEDCOM records. Persons records become the collection of
+    all evidence you have discovered about them.
+
+    Przemek Wiech <pwiech@gmail.com>: integration between the various information sources.
+    The current workflow is manually copying information from somewhere. What
+    is missing is automation that would take data from online databases and
+    match and merge them into your own database.
+    I imagine building a pipeline of separate pieces of software that do these
+    tasks, each task being a totally separate program:
+    - extract data from an online database
+    - convert data between different formats, e.g. GEDCOM <-> Gramps XML
+    - match data to data in my database (automatic or interactive) and output a
+      file with the matches
+    - merge the data into my database (automatic or interactive)
+ 
+    Przemek Wiech <pwiech@gmail.com>: build a database of sources that haven't
+    matched to my database yet and I don't know if and how they match. For
+    example, I'd like to keep a list of all people with a certain last name
+    who were born in a certain village. At some point it's possible that I'll
+    connect them to my family tree.
+
+  handle non-ASCII characters (Unicode)
+    apply the function convertToAscii(string) only when printing (is that enough?)
+
+  maps
+    http://gis.co.hunterdon.nj.us/HistoricBoundaries/
+
+  allow directory structure to be anything
+    preserve directory structure when importing DB
+    when importing Gedcom, allow user to specify structure in form
+
+  CROSS TESTING:
+  try Chrome, Safari, Edge, Epiphany, Chromebook (using both ChromeOS & Linux)
+    include in Readme.html which hardware has been tested & which browsers have been tested
+
+  TESTING:
+    remove active DB by hand; see what happens when accessed
+    remove DBs directory & contents by hand; what happens?
+    edit/delete MELGenKeyInfo.txt; what happens?
+    edit Other/DBinfo.txt; what happens?
+
+  for possible ideas, see https://genealogysoftware.net/
+    Family Historian and Ancestral Sources, Behold, Scrivener and Scapple, Evidentia, MacFamilyTree, GenSmarts, Clooz, and IrfanView
+
+  General Notes & Notes for Active DB
+    set focus in textarea after Save
+
+  add MELGenKey to heading of any output
+
+  when setting up outgoing email (ManageRecurRep.html and OnThisDay.html)
+    make Port: a drop-down menu selection containing Port: 587, 465, 2525
+      make 587 the default
+      ensure text can be entered by user for other port numbers
+      when a user enters settings and attempts to send a test email, provide feedback if it fails:
+        "Connection refused: Please check the host and port number."
+        "Authentication failed: Please check your username and password."
+        "TLS/SSL negotiation failed: Try a different port or encryption method."
+
+  develop a method to score the quality (Quality Score) of info for each family (100 best, 0 worst, show details/factors)
+    and perhaps a quality score for each relationship (parents/child, spouses)
+    take score into account with certain other functions (e.g., Analyze, Inspect, et al)
+    factors:
+      primary evidence
+        parents named in primary evidence
+        parents not named in primary evidence
+        other identifying info
+      secondary evidence
+        parents named in secondary evidence
+        parents not named in secondary evidence
+        other identifying info
+      circumstantial evidence
+      original record vs transcription
+      number of citations regarding the same fact
+    offer suggestions to improve score
+    see "rate citations" elsewhere
+
+  change to allow multiple options without user having to hold down a key
+    this will affect functions: Timeline Report, On This Day, Manage Recurring reports, General User Preferences
+    https://stackoverflow.com/questions/8641729/how-to-avoid-the-need-for-ctrl-click-in-a-multi-select-box-using-javascript
+
+  add to omits (affects On This Day report, Timeline report & Manage Recurring Reports)
+    events for children (any event containing "child #")
+    events containing any unknown names ("------")
+
+  expand upon the contents of Docs/MenuItemsDesc.html
+
+  at import, if table of contents file exists in import directory, it is copied to MELGenKey DB area, if it doesn't exist it is created
+    if table of contents file exists, it could contain bad info
+    what to do about that?
+      one option is to always create the table of contents file but if the user had special info in the file it would be lost
+
+  add
+    list of all most distant ancestors (people with unknown parents)
+    hierarchical chart (tree)
+      entire DB
+      one particular line
+    synopsis/summary of a Family Group (names, living/deceased (with years) for each individual, child has own family, etc)
+
+  ability to convert between different Gedcom versions
+
+  all reported error messages in Verify, Inspect, Analyze, et al would include a link to the cited place in the plain text data;
+    the link, when clicked, should bring up an editor for the user to change the data (anytime any contents of a plain text family DB is
+    changed, the DB should be marked as changed and unverified)
+
+  country-county codes
+    perhaps use at user's option
+    https://www.genuki.org.uk/big/Regions/Codes   and-or   Notes/Extras/County-Codes-1.xlsx
+
+  free genealogy sites to perhaps add to Include/SiteList.txt
+    https://familyhistorydaily.com/genealogy-resources/50-free-genealogy-sites/
+
+  perhaps after reading Family DB I should create a binary tree filling it with the root ID and the parents IDs of all Family Groups
+    in the DB --- perhaps that would make other processes faster (like some reports)
+
+  anywhere a function is referenced in docs or Other, clicking on reference should bring up function
+    in Other, will need to do it when DB is imported
+
+  how does an outsider access a MELGenKey DB ? will they need to run MELGenKey on their system? (I think yes)
+
+  Info for All DBs
+    list all:
+      imported DBs
+      backed up DBs
+      active DB
+      deported DBs
+      re-imported
+      edited
+      verified
+      size
+
+  if I provide an update to a DB but not an update to MELGenKey, do I need to provide another file for download which is MELGenKey-ready
+    and will replace the DB in the DBs directory when installed?
+
+  look into using a script to start MELGenKey server & client
+    https://stackoverflow.com/questions/60727510/opening-a-html-file-in-the-browser-from-npm-script
+    https://docs.npmjs.com/cli/v10/configuring-npm/package-json
+    https://docs.npmjs.com/cli/v10/commands/npm-start
+    https://stackoverflow.com/questions/65663207/npm-start-and-npm-run-client-is-not-working-in-node
+    https://stackoverflow.com/questions/59137818/how-to-run-node-server-js-and-npm-start-with-one-command
+
+  instructions for installing new version of MELGenKey & retaining DBs
+
+  use strict in JS modules
+
+  change structure of user-created files to be imported to look exactly like the structure after import
+    is the only change to have a PlainText directory?
+    this way, a user can copy a DB directly to the MELGenKey DBs directory
+      the MELGenKeyInfo.txt file will need to be created/updated
+      the DBinfo.txt file will need to be created/appended
+    does a DB even need to be installed?
+      instead of installing, a pointer to DB just needs to be set
+
+  bugs
+    sorting reference numbers in index not right (by line - references within the same index entry sorting ok; 41.52 sorting ahead of 5.1127)
+    5.175 had no "Timeline -" header (but did have a Timeline Section); it wasn't caught by Verify; and running Create HTML caused node to crash
+    19.88 Father line is "Father" rather than "Father -"; it wasn't caught by Verify; and running Create HTML caused node to crash
+    Point to Point Ancestral Line, if Spouse is selected, in Notes Section
+      "married Jane Doe in New York" - "Jane Doe in New York" will show on report
+      it seems the spouse appears twice for the last person in line
+      pick up spouse in Timeline Section or Notes Section, and pick him/her up only once
+      consecutive duplicate dates in Timeline Section not being accounted for (picking up blanks)
+    General Notes & Notes for Active DB
+      if no notes, user enters some stuff, doesn't save, refreshes, gets alert saying no notes, but the stuff user entered remains on screen
+      if some notes, user enters some more stuff, doesn't save, refreshes, textarea display reverts to what it was before
+        more stuff was entered by user
+      either is fine (I think) but it should be consistent
+    formatted printing - the way it is currently, if user cancels the formatted print, it cannot be reset or formatted again to a
+      different column width
+    Inspect - get errors; don't kill node; use separate terminal to correct errors; rerun Inspect; got same errors even though they're corrected
+      force read of familydata every time Inspect executes
+    On This Day Report - event dated 2 Sep 1192 sorting before event dated 2 Sep-  44
+
+  create batch file for installing a DB (alone) in Windows
+
+  in Help/Docs
+    have images of the different reports with explanations
+    include a HELP button for each page/function which, if clicked, will bring up an image with explanations for that function
+    continue to provide a Help/Docs menu selection which will show explanations but no images
+
+  for functions which produce error reports (Verify, Inspect, Analysis)
+    make ERROR color red
+    make WARNINGS color yellow
+    Make INFO color green
+    but when printing
+      if user formats report to not exceed a particular column number, the HTML for color inserted into lines will screw up the line length
+      how to print a partiular color on a color printer
+
+  General options for Inspect or Analyze
+    allow user to select phrases to key on and the sequence of such phrases
+      e.g., I'm looking for "Father -", "Mother -", "Timeline -", "Notes -", etc
+    allow user to select a single or a span of Family Groups to inspect or analyze
+    allow for specific analysis
+      analysis (determination, clues, hints) for the spouse for a particular HOF where the spouse is unknown
+      analysis (determination, clues, hints) for the parents when unknown
+      analysis (determination, clues, hints) for unknown children
+      analysis (determination, clues, hints) for unknown siblings
+
+  sometimes takes too long on all pages to determine node/server is down before disabling certain buttons
+    perhaps display a message "loading" or "booting" or "connecting" until something happens
+    or do a quicker check - see Notes/QuickServerCheck.txt
+
+  a different type of server (net); maybe better since it's a streaming connection
+    https://www.knowledgehut.com/tutorials/node-js/socket-services
+
+  tidy up Timeline files (in Include/Timelines) (check for duplicate entries)
+  add button to each HTML page, if pressed brings up documentation for that page
+  check4ActiveDB() in clib.js doesn't seem to be functioning as a promise (see MELGenKey.js & JS/OnThisDay.js)
+  in any html file, any references or pointers (->) should be clickable
+  make all checks a "connection" between client and server (this means replacing all the pre-execution routines at the server)
+
+  include for user to use:
+    https://www.vecteezy.com/free-vector/genealogy
+    https://stock.adobe.com/search?k=genealogy&asset_id=935104578
+    https://www.istockphoto.com/illustrations/family-history-research
+    https://graphicriver.net/genealogy-in-graphics
+    https://giphy.com/
+    genealogy-related images
+    genealogy-related videos
+    genealogy-related jokes
+    genealogy-related cartoons
+    genealogy-related serious stuff
+      flags - for different countries (where a person was born, where a person served in Armed Forces)
+      emblems indicating participation in wars
+
+  think about using the Gedcom format for MELGenKey DBs; everything in MELGenKey would be generated from that
+    perhaps as an option
+
+  sse's
+    change system alert to dialog
+
+  do globals like they should be done (export/import) or, better yet, remove all globals
+    the following functions use global variables; get rid of these global variables:  errors, info, warnings, msgs, rdata
+      On This Day Report
+      Recurring On This Day Report
+
+  upload MELGenKey to github
+    see Github documentation
+      create .gitignore file (see doc link)
+      initialize repository
+        create a README.md file
+      check project for size
+         a project shouldn't be larger than 5 GB
+         any 1 file shouldn't be larger than 50 MB
+         use LFS on Github if too large
+      upload MELGenKey
+    test downloading, installation & importing provided TestDB
+

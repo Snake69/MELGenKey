@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="Include/favicon.ico">
+<title>Using MELGenKey</title>
+
+<style>
+    #header {
+        text-align: center;
+    }
+    body {
+        background-color: #ffffff;
+    }
+</style>
+
+</head>
+<body>
+<h1 id="header">Using MELGenKey</h1>
+<br>
+<hr style="width:50%">
+
+<pre>
+
+Using MELGenKey v20250926
+
+
+Quick Start - see "Help/Info/Docs -> MELGenKey Frequently Asked Questions".
+
+Notes for using MEL Genealogy Key (MELGenKey).
+
+MELGenKey is menu based. The Main (top level) Menu consists of items:  "Import, Create or Remove a Family DataBase", "Verify Family Data",
+"Family DataBase Activation", "Display Family Data", "Edit Family Data", "Reports", "Search/Inspect/Analyze Family Data",
+"Miscellaneous Functions" and "Help/Info/Docs".
+
+The following is a listing of all items in the top level menu (Main Menu) and all sub-menus. Click on an item to see it's description.
+Note that MELGenKey is a work-in-progress and not all menu items (functions) are currently usable. Also note that not all menu items are
+available depending upon certain conditions.
+
+Note - Console error messages regarding "SSE" (Server Side Events) may occur when displaying (or re-displaying) the top level menu (Main Menu).
+These are transient error messages and should not have any effect upon processing.
+
+<a href="MenuItemsDesc.html#item1.1">Import, Create or Remove a Family DataBase</a>
+    <a href="MenuItemsDesc.html#item1.2">Import a Family DataBase from a GEDCOM</a>
+    <a href="MenuItemsDesc.html#item1.3">Import a Family DataBase from User Created Files</a>
+    <a href="MenuItemsDesc.html#item1.4">Create HTML Version of Family DataBase</a>
+    <a href="MenuItemsDesc.html#item1.5">Deport a Family DataBase</a>
+    <a href="MenuItemsDesc.html#item1.6">Re-Import a Deported Family DataBase</a>
+
+<a href="MenuItemsDesc.html#item2.1">Verify Family Data</a>
+
+<a href="MenuItemsDesc.html#item3.1">Family DataBase Activation</a>
+
+<a href="MenuItemsDesc.html#item4.1">Display Family Data</a>
+    <a href="MenuItemsDesc.html#item4.2">HTML Family Data</a>
+    <a href="MenuItemsDesc.html#item4.3">Plain Text Family Data</a>
+
+<a href="MenuItemsDesc.html#item5.1">Edit Family Data</a>
+
+<a href="MenuItemsDesc.html#item6.1">Reports</a>
+    <a href="MenuItemsDesc.html#item6.2">Produce Timeline</a>
+    <a href="MenuItemsDesc.html#item6.3">Determine Relationship</a>
+    <a href="MenuItemsDesc.html#item6.4">Movement Map</a>
+    <a href="MenuItemsDesc.html#item6.5">By Category</a>
+    <a href="MenuItemsDesc.html#item6.6">On This Day</a>
+    <a href="MenuItemsDesc.html#item6.7">Produce Bio</a>
+    <a href="MenuItemsDesc.html#item6.8">Calendar of Events</a>
+    <a href="MenuItemsDesc.html#item6.9">Produce Tree</a>
+    <a href="MenuItemsDesc.html#item6.10">Point to Point Ancestral Line</a>
+    <a href="MenuItemsDesc.html#item6.11">Produce Phylogenetic Tree</a>
+    <a href="MenuItemsDesc.html#item6.12">Produce Family Register</a>
+    <a href="MenuItemsDesc.html#item6.13">Produce Individual Profile</a>
+    <a href="MenuItemsDesc.html#item6.14">Design a Report</a>
+
+<a href="MenuItemsDesc.html#item7.1">Search/Inspect/Analyze Family Data</a>
+    <a href="MenuItemsDesc.html#item7.2">Search</a>
+    <a href="MenuItemsDesc.html#item7.3">Inspect</a>
+    <a href="MenuItemsDesc.html#item7.4">Analyze</a>
+
+<a href="MenuItemsDesc.html#item8.1">Miscellaneous Functions</a>
+    <a href="MenuItemsDesc.html#item8.2">Back Up Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.3">Produce PDF</a>
+    <a href="MenuItemsDesc.html#item8.4">Slideshow</a>
+    <a href="MenuItemsDesc.html#item8.5">Active DataBase Stats</a>
+    <a href="MenuItemsDesc.html#item8.6">Set Focus ID for Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.7">Copy Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.8">Browse Possible Connections to Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.9">Notes for Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.10">Additional Research for Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.11">Audio/Video Intro for Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.12">Knowledge Tree for Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.13">Create a GEDCOM from Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.14">Solve a Problem in Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.15">Create an Index for Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.16">Renumber Families/People in Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.17">Send Corrected/Additional Data to Creator/Maintainer of Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.18">Access Message Board Regarding Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.19">Ethnicity Percentages for an Individual in Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.20">Display Info for Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.21">Publish</a>
+    <a href="MenuItemsDesc.html#item8.22">Link Checker for Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.23">Chat With Creator of Active DataBase</a>
+    <a href="MenuItemsDesc.html#item8.24">Contact Creator/Maintainer/Provider of This Data via email</a>
+    <a href="MenuItemsDesc.html#item8.25">Date/Age Calculator</a>
+    <a href="MenuItemsDesc.html#item8.26">Day of the Week Calculator</a>
+    <a href="MenuItemsDesc.html#item8.27">Money Value Conversion</a>
+    <a href="MenuItemsDesc.html#item8.28">Merge Two Family DataBases Into One</a>
+    <a href="MenuItemsDesc.html#item8.29">Split One Family DataBase Into Two</a>
+    <a href="MenuItemsDesc.html#item8.30">Password Protection for a DataBase</a>
+    <a href="MenuItemsDesc.html#item8.31">Write-protection for a DataBase</a>
+    <a href="MenuItemsDesc.html#item8.32">Map Deed Boundaries</a>
+    <a href="MenuItemsDesc.html#item8.33">Send Suggestions/Ideas to Developer of MELGenKey</a>
+    <a href="MenuItemsDesc.html#item8.34">Access MELGenKey Message Board</a>
+    <a href="MenuItemsDesc.html#item8.35">General Notes</a>
+    <a href="MenuItemsDesc.html#item8.36">Display Info for All Family DataBases</a>
+    <a href="MenuItemsDesc.html#item8.37">Display/Edit Info for User</a>
+    <a href="MenuItemsDesc.html#item8.38">Display Info for MELGenKey</a>
+    <a href="MenuItemsDesc.html#item8.39">General User Preferences</a>
+    <a href="MenuItemsDesc.html#item8.40">Import Add-On for MELGenKey</a>
+    <a href="MenuItemsDesc.html#item8.41">Chat With MELGenKey Maintainer</a>
+    <a href="MenuItemsDesc.html#item8.42">Non-Family DataBase Timeline File</a>
+    <a href="MenuItemsDesc.html#item8.43">Monitor Web Pages for Content Changes</a>
+    <a href="MenuItemsDesc.html#item8.44">Manage Recurring Reports</a>
+    <a href="MenuItemsDesc.html#item8.45">MELGenKey Log Messages</a>
+
+<a href="MenuItemsDesc.html#item9.1">Help/Info/Docs</a>
+    <a href="MenuItemsDesc.html#item9.2">MEL Genealogy Key (MELGenKey) Overview</a>
+    <a href="MenuItemsDesc.html#item9.3">Using MELGenKey</a>
+    <a href="MenuItemsDesc.html#item9.4">MELGenKey Readme</a>
+    <a href="MenuItemsDesc.html#item9.5">MELGenKey Development History</a>
+    <a href="MenuItemsDesc.html#item9.6">MELGenKey Frequently Asked Questions</a>
+    <a href="MenuItemsDesc.html#item9.7">Data Format and Notes</a>
+    <a href="MenuItemsDesc.html#item9.8">MELGenKey Add-ons</a>
+    <a href="MenuItemsDesc.html#item9.9">Contact Developer of MELGenKey via email</a>
+    <a href="MenuItemsDesc.html#item9.10">Active DataBase - Introduction</a>
+    <a href="MenuItemsDesc.html#item9.11">Active DataBase - Preface</a>
+    <a href="MenuItemsDesc.html#item9.12">Active DataBase - Surname Recap</a>
+    <a href="MenuItemsDesc.html#item9.13">Active DataBase - Some Explanatory Notes</a>
+    <a href="MenuItemsDesc.html#item9.14">Active DataBase - Miscellaneous Notes</a>
+    <a href="MenuItemsDesc.html#item9.15">Active DataBase - Release Notes</a>
+    <a href="MenuItemsDesc.html#item9.16">Active DataBase - Development History</a>
+    <a href="MenuItemsDesc.html#item9.17">Active DataBase - Notable People</a>
+    <a href="MenuItemsDesc.html#item9.18">Active DataBase - Bibliography</a>
+    <a href="MenuItemsDesc.html#item9.19">Active DataBase - Dedication</a>
+    <a href="MenuItemsDesc.html#item9.20">Active DataBase - Research To Do</a>
+    <a href="MenuItemsDesc.html#item9.21">Active DataBase - Founders</a>
+    <a href="MenuItemsDesc.html#item9.22">Active DataBase - Family Obscurities</a>
+    <a href="MenuItemsDesc.html#item9.23">Active DataBase - Statistics</a>
+    <a href="MenuItemsDesc.html#item9.24">Active DataBase - User Guide</a>
+    <a href="MenuItemsDesc.html#item9.25">Active DataBase - Creator &amp; Status of Data</a>
+    <a href="MenuItemsDesc.html#item9.26">Locale Histories</a>
+    <a href="MenuItemsDesc.html#item9.27">Place Names</a>
+    <a href="MenuItemsDesc.html#item9.28">Maps</a>
+    <a href="MenuItemsDesc.html#item9.29">Misc</a>
+
+</pre>
+<hr style="width:50%">
+
+</body>
+</html>
