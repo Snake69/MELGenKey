@@ -14,7 +14,6 @@ Import, Create or Remove a Family DataBase -> Import a Family DataBase from a GE
   need to be able to handle importing Gedcom files larger than 200MB
   allow for a "Combo Import" so that a GEDCOM is imported along with files that belong in the Other directory, index, etc
   allow data to be created and not imported
-  (see Notes.txt for GEDCOM specs)
   option to start and stop at certain points
   for starting point give user option to:
     enter name - use exact match (verify first), if multiple exact matches send user list to choose from, if no exact matches send user
@@ -2068,7 +2067,9 @@ general/other
     add an option on form for message to be sent to data creator after successful import (if not available in Other files then allow user to
       enter an email address)
     check for amount of free space before importing
-    add an option on form to verify DB when it's imported
+    add an option on form to verify DB when it's imported successfully
+    add an option on form to create HTML format of DB when it's imported successfully (but only if the verification option is checked AND
+      verification is successful)
     when ID entered show user info (e.g., name, birthdate, death date, parents names, etc) so that user can confirm it's the correct ID
     allow for child to be entered in ID field (e.g., 28.3, child iii)
     allow user to provide two tableofcontents files, one for PlainText directory and one for top level directory
