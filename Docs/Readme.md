@@ -188,7 +188,7 @@ Contribution Guidelines
 
 \
 If you would like to help/contribute with development, [see this
-file](Notes/Notes2PossibleContributors.html) for some info. After
+file](../Notes/Notes2PossibleContributors.html) for some info. After
 reading this file, if you would like to help, drop me a note at
 [MarshallELake @ gmail dot com](mailto:marshallelake@gmail.com).\
 \
