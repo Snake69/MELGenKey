@@ -2402,15 +2402,3 @@ general/other
       On This Day Report
       Recurring On This Day Report
 
-  upload MELGenKey to github
-    see Github documentation
-      create .gitignore file (see doc link)
-      initialize repository
-        create a README.md file
-      check project for size
-         a project shouldn't be larger than 5 GB
-         any 1 file shouldn't be larger than 50 MB
-         use LFS on Github if too large
-      upload MELGenKey
-    test downloading, installation & importing provided TestDB
-
