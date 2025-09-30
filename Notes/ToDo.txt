@@ -1,4 +1,8 @@
 
+priority - complete importing a Gedcom
+
+The task list below is by function (for the most part) and not prioritized.
+
 Main Menu (top level menu)
   auto-refresh display whenever any of the variables on the page change
     example: node is running and main menu is displayed; kill node - main menu page doesn't change
@@ -15,26 +19,26 @@ Import, Create or Remove a Family DataBase -> Import a Family DataBase from a GE
   allow for a "Combo Import" so that a GEDCOM is imported along with files that belong in the Other directory, index, etc
   allow data to be created and not imported
   option to start and stop at certain points
-  for starting point give user option to:
+  for starting/ending point give user option to:
     enter name - use exact match (verify first), if multiple exact matches send user list to choose from, if no exact matches send user
       list of near matches, if no near matches send user list of all individuals
     start with first individual in GEDCOM
   as part of final result, produce a report
-    list all records/lines/tags which were disregarded/ignored
+    list all records/lines/tags which were disregarded/ignored & the reason they were disregarded/ignored
+    one reason is no associated source/citation
   allow for a DATE of (upper or lower case) "FROM 1920 TO 1923" or "1920 TO 1923" or "1920 - 1923" or "1920-1923"
   certain tags should still show something in family group even if there are no sub-level tags (e.g., if "1 ADOP" is present for an INDI but
-    there are no associated "2 blah" records, then there should be a note saying individual was adopted)
+    there are no associated "2 blah" records, then there should still be a note saying individual was adopted)
   EMAIL tag may contain 1 @ or 2 consecutive @'s; if 2, make 1 
   "Check Here to Choose from a List of Individuals" should auto-uncheck if text is entered in box by user & if
     "Check Here to Choose from a List of Individuals" is checked by user then text in box should auto-erase
   handle 0 @.....@ OBJE records; if 1 FILE link-to-file record present, download file
   remove multiple identical Citation references on same Note line
-  items/events NOT added to the MELGenKey Family DataBase because there was no associated source
-    list items not added in log
 
 Import, Create or Remove a Family DataBase -> Import a Family DataBase from User Created Files
   if a zip file, unzip it before importing
-  allow only "body" or "text" files with a sequential number appended (e.g., text0.0 and bodya are no good)
+    change instructions for installing TestDB in Readme.html & Readme.md
+  allow only "body" or "text" files with a sequential number appended (e.g., text0.0 and bodya are not allowed)
 
 Import, Create or Remove a Family DataBase -> Create HTML Version of Family DataBase
   increase size of font used for Section Headings

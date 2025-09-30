@@ -1,5 +1,5 @@
 # Deaths of Notable People
-# v20250927
+# v20250928
 # any line with the # character in column 1 is considered a comment line
 # comment lines are not included in MELGenKey Reports
       - 961 David died and his throne is replaced by his son Solomon [3]
@@ -34698,8 +34698,8 @@
             Viviane Romance died, French actress and producer (b. 1912) [8]
 26 Sep 1991 Billy Vaughn died, American singer and bandleader (b. 1919) [8]
 27 Sep 1991 Joe Hulme died, English footballer and cricketer (b. 1904) [8]
-28 Sep 1991 Miles Davis died, American trumpet player, composer, and
-              bandleader (b. 1926) [8]
+28 Sep 1991 Miles Davis died, [8] [19] American trumpet player, composer,
+              and bandleader (b. 1926) [8]
 30 Sep 1991 Toma Zdravkovic died, Serbian singer-songwriter (b. 1938) [8]
  2 Oct 1991 Hazen Argue died, Canadian politician (b. 1921) [8]
             Demetrios I of Constantinople died (b. 1914) [8]
@@ -40665,8 +40665,8 @@
 27 Sep 2003 Jean Lucas died, French race car driver (b. 1927) [8]
             Donald O'Connor died, American actor, singer, and dancer
               (b. 1925) [8]
-28 Sep 2003 Althea Gibson died, American tennis player and golfer (b. 1927)
-              [8]
+28 Sep 2003 Althea Gibson died, [8] [19] American tennis player and golfer
+              (b. 1927) [8]
             Elia Kazan died, American director, producer, and screenwriter
               (b. 1909) [8]
             George Odlum died, Saint Lucian politician and diplomat (b. 1934)
@@ -57630,6 +57630,7 @@
  8 Sep 2022 Elizabeth II, [8] [19] the longest-reigning British monarch in
               history, [8] died, [8] [19] aged 96, after a reign of 70 years
               [8]
+28 Sep 2022 Rapper Coolio died [19]
 26 Jul 2023 Sinead O'Connor died [19]
 26 Aug 2023 Television host Bob Barker died [19]
 18 Jun 2024 Willie Mays, baseball great, died [19]
