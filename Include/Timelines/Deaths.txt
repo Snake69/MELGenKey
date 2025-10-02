@@ -1,5 +1,5 @@
 # Deaths of Notable People
-# v20250928
+# v20250930
 # any line with the # character in column 1 is considered a comment line
 # comment lines are not included in MELGenKey Reports
       - 961 David died and his throne is replaced by his son Solomon [3]
@@ -24374,8 +24374,8 @@
               Secretary of State for the Colonies (b. 1873) [8]
 19 Sep 1955 John D. Dingell died, Sr., American journalist and politician
               (b. 1894) [8]
-30 Sep 1955 James Dean died [2] [8] in two-car crash in California, [2]
-              American actor [2] [8] (b. 1931) [8]
+30 Sep 1955 James Dean died [2] [8] [19] in two-car crash [2] [19] in
+              California, [2] American actor [2] [8] [19] (b. 1931) [8]
  1 Oct 1955 Charles Christie died, American film producer, founded Christie
               Film Company (b. 1880) [8]
  2 Oct 1955 Humphrey Barclay died, English priest (b. 1882) [8]
@@ -32387,7 +32387,8 @@
 27 Sep 1985 Lloyd Nolan died, American actor (b. 1902) [8]
 30 Sep 1985 Charles Francis Richter died, American seismologist and physicist
               (b. 1900) [8]
-            Simone Signoret died, French actress (b. 1921) [8]
+            Simone Signoret died, [8] [19] oscar-winning [19] French actress
+              (b. 1921) [8]
  1 Oct 1985 Ninian Sanderson died, Scottish race car driver (b. 1925) [8]
             E. B. White died, American essayist and journalist (b. 1899) [8]
  2 Oct 1985 Rock Hudson died [2] [8] of complications of AIDS, [2] American

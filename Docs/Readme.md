@@ -68,8 +68,9 @@ Project Objectives
 3. Ability to sync trees on host machine, any other host machines
 running MELGenSys and utilizing the same tree, and any public tree sites
 (e.g., WikiTree.com, Ancestry.com, FamilySearch.org, etc).\
-4. Simple to use for everyone, including computer-challenged users.\
-5. Always Open Source.\
+4. Every data item in the database must be sourced/cited.\
+5. Simple to use for everyone, including computer-challenged users.\
+6. Always Open Source.\
 \
 \
 \
